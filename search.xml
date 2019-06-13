@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>【大神來六角】六月直播主題：檔案傳輸</title>
+      <link href="/2019/05/22/2019-05-22-god-and-hexschool/"/>
+      <url>/2019/05/22/2019-05-22-god-and-hexschool/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2F%E5%A4%A7%E7%A5%9E-calendar-june.png?alt=media&amp;token=22c95a66-ae36-4fc3-8898-b699a8fce9bf" alt></p><p>同學您好，六角學院固定會在前一個月，釋出下個月的直播節目表到 Google 日曆，歡迎訂閱我們的<a href="/calendar/">行事曆</a>，好方便追蹤您想聽的題目。</p><h2 id="本月主題：檔案傳輸"><a href="#本月主題：檔案傳輸" class="headerlink" title="本月主題：檔案傳輸"></a>本月主題：檔案傳輸</h2><p>身為軟體工程師，最常打交道就是「檔案」，舉凡是圖片、壓縮檔、office 文件都是能透過網際網路進行傳輸，其代表性的雲服務為 <a href="https://aws.amazon.com/tw/s3/" target="_blank" rel="noopener">AWS S3</a>、<a href="https://cloud.google.com/storage/?hl=zh-tw" target="_blank" rel="noopener">Google Cloud Storage</a>、<a href="https://firebase.google.com/" target="_blank" rel="noopener">Firebase Storage</a>，本月直播的主題將會對檔案進行深入探討。</p><p>聽完本月直播，你將會了解：</p><ol><li>底層解析：何謂「檔案」，以計算機概論切入探討「檔案系統」</li><li>HTML5 API：網頁前端如何藉由 JS 來管理檔案</li><li>儲存雲服務：將會介紹 Firebase Storage，進以了解檔案傳輸過程</li><li>圖片解析：常見前端圖片處理方針</li></ol><h2 id="講師介紹"><a href="#講師介紹" class="headerlink" title="講師介紹"></a>講師介紹</h2><h4 id="第一週-從計算機概論切入檔案傳輸"><a href="#第一週-從計算機概論切入檔案傳輸" class="headerlink" title="第一週 -  從計算機概論切入檔案傳輸"></a>第一週 -  從計算機概論切入檔案傳輸</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2Fgonsakon.jpg?alt=media&token=581f922f-e38e-4115-97f6-8d6166145220" width="160" height="160" alt></p><p>為什麼自己電腦的 C 槽檔案，可以透過網頁瀏覽器傳輸資料呢？這次將由六角學院的洧杰校長，帶領各位一探檔案從自己的硬碟 &gt; 瀏覽器 &gt; 對方伺服器的傳輸過程中，背後究竟做了哪些事！</p><ul><li>講座時間：2019/6/6 (四) 19:30~21:00 </li><li>講者姓名：廖洧杰 / 六角學院校長</li><li>講者經歷：六角學院校長 / ModernWeb 2018 講者</li><li>講者介紹：熱愛分享與交流的前端工程師，目前專注於兼容 Desktop / Mobile 網頁前端開發，期間已協助數百位平面設計師、網頁設計師導入標準網頁設計。</li></ul><p>此堂直播適合上過「<a href="https://www.hexschool.com/courses/javascript.html">JavaScript 入門 - 學徒的試煉</a>」的學生，只要你有看到 AJAX 章節，就能充分聽懂本堂課程。</p><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第二週-深入探討-HTML5-File-API-操作細節"><a href="#第二週-深入探討-HTML5-File-API-操作細節" class="headerlink" title="第二週 - 深入探討 HTML5 File API 操作細節"></a>第二週 - 深入探討 HTML5 File API 操作細節</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2F42756604_10215149134234307_7465927219546685440_n.jpg?alt=media&token=649f0a5f-8592-4c7f-8c86-27c75c23cb57" width="160" height="160" alt></p><p>有沒有可能在使用者在夾帶檔案時，就能偵測到對方檔案的資訊呢？這次我們邀請到好想工作室的 chris，來為各位介紹 HTML5 File API 的妙用，為了避免使用者上傳錯誤的檔案類型，以及過大的檔案內容造成伺服器的負擔。chris 將會為我們深入探討如何透過瀏覽器 client 端來管理檔案內容！</p><ul><li>講座時間：2019/6/13 (四) 19:30~21:00 </li><li>講者姓名：Chris</li><li>講者介紹：現代文藝復興的前端技術小工匠</li><li>目前活躍於：<ul><li><a href="https://dwatow.github.io/" target="_blank" rel="noopener">《Chris 技術筆記》設計 × 研究 × 程式</a> </li><li><a href="https://www.facebook.com/GoodideasStudio/" target="_blank" rel="noopener">好想工作室</a></li></ul></li></ul><p>此堂直播適合上過「<a href="https://www.hexschool.com/courses/javascript.html">JavaScript 入門 - 學徒的試煉</a>」的學生，只要你有看到 AJAX 章節，就能充分聽懂本堂課程。</p><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第三週-檔案雲服務介紹"><a href="#第三週-檔案雲服務介紹" class="headerlink" title="第三週 - 檔案雲服務介紹"></a>第三週 - 檔案雲服務介紹</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2Fsection_avator.jpg?alt=media&token=447fd966-bd93-4410-8ac8-4d028d7d1d8a" width="160" height="160" alt></p><p>想要知道檔案雲服務的運作原理嗎？在這堂課上，將會由六角學院的卡斯伯來分享如何藉由 Web 端來介接第三方儲存雲服務，並深入了解背後底層的檔案傳送架構，並更加理解其傳輸脈絡。</p><ul><li>講座時間： 2019/6/20 (四) 19:30~21:00 </li><li>講者姓名：卡斯伯(<a href="https://www.facebook.com/WccCasper/" target="_blank" rel="noopener">粉絲團</a>)</li><li>講者經歷：六角學院共同創辦人 / ModernWeb 研討會講者</li><li>講者介紹：由設計師轉為前端工程師，專長是視覺設計與前端整合、前端技術教育訓練、前端自動化，常用的工具、技術有 Sketch、Sass、Angular.js、Vue.js、Node.js、Gulp 等主流前端技術。</li></ul><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第四週-常見業界前端圖片處理大全"><a href="#第四週-常見業界前端圖片處理大全" class="headerlink" title="第四週 - 常見業界前端圖片處理大全"></a>第四週 - 常見業界前端圖片處理大全</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2F%E6%88%90%E6%99%BA%E9%81%A0.jpg?alt=media&token=b9fa8f01-f83e-4272-a03a-2e478208b1f4" width="160" height="160" alt></p><p>身為前端工程師，天天都在與圖片打交道，這次我們邀請到成智遠老師，來分享他在業界打滾多年中，以及如何優雅地處理圖片的各種細節，同時也會不藏私地傳授十八般武藝，讓您遇到圖片問題時，藉由這份圖片處理大全，腦袋再也不打結！</p><ul><li>講座時間：6/27(四) 19:30~21:00</li><li>講者姓名：成智遠</li><li>講師簡介：對互動技術與網頁前端抱持者極大興趣的開發者，曾參與無數款網頁、遊戲等大小型專案，同時也是飛肯設計學苑講師，並曾擔任致理科技大學、企業公司專業技能內訓講師，累積多年實務與教學經驗，熱愛分享自己所見所學的技術，與幫助學生解決觀念與工作上碰到的難解問題。</li><li>講者經歷：<ul><li>Portal Network 資深前端工程師</li><li>痞客邦PIXNET 資深前端工程師</li><li>米蘭營銷前端工程師</li></ul></li></ul><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><div id="addBlogEvent"></div><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F%E5%A4%A7%E7%A5%9E%E4%BE%86%E5%85%AD%E8%A7%92-%E8%B3%BC%E8%B2%B7%E6%B5%81%E7%A8%8B.png?alt=media&amp;token=e94fb1bc-7a8a-4564-911a-14675442b7ee" alt></p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F%E5%A4%A7%E7%A5%9E%E4%BE%86%E5%85%AD%E8%A7%92-compare.png?alt=media&amp;token=68979e8e-87a4-4490-923b-e7cbfa9833bc" alt></p><div class="text-center my-5"><br>  <a href="https://shop.hexschool.com/order/create?coupon_code=GOD_COMING_JUNE" class="btn btn-danger btn-lg btn-block mt-3 btn-radius mp-click" title="部落格購票" target="_blank" rel="noopener"><i class="fa fa-ticket" aria-hidden="true"></i><span> 立即購票去 </span><i class="fa fa-ticket" aria-hidden="true"></i></a><br></div><h3 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h3><h5 id="Q：如果來不及參加，可以退費嗎？"><a href="#Q：如果來不及參加，可以退費嗎？" class="headerlink" title="Q：如果來不及參加，可以退費嗎？"></a>Q：如果來不及參加，可以退費嗎？</h5><p>A：單場活動可在 <em>活動前三天申請</em> 享全額退費，但就無法獲得錄影。月票活動可在前月底申請，同樣可全額退費。</p><h5 id="Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？"><a href="#Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？" class="headerlink" title="Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？"></a>Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？</h5><p>A：可以任意選單場票，就可獲得單月所有直播課程影片，如四月總計四部。</p><h5 id="Q：真假，只要買單場票，就能獲得全部錄影？"><a href="#Q：真假，只要買單場票，就能獲得全部錄影？" class="headerlink" title="Q：真假，只要買單場票，就能獲得全部錄影？"></a>Q：真假，只要買單場票，就能獲得全部錄影？</h5><p>A：你沒看錯，是真的，我們會固定在第二場結束後與月底，提供錄影連結 mail 給您。</p><h5 id="Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？"><a href="#Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？" class="headerlink" title="Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？"></a>Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？</h5><p>A：可以，請前三天透過<a href="https://m.me/hexschool" target="_blank" rel="noopener">粉絲團</a>或 <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">Line@</a> 敲小幫手來進行更換手續</p><h5 id="Q：買了單場票，之後還想要改成月票可以嗎？"><a href="#Q：買了單場票，之後還想要改成月票可以嗎？" class="headerlink" title="Q：買了單場票，之後還想要改成月票可以嗎？"></a>Q：買了單場票，之後還想要改成月票可以嗎？</h5><p>A：可以，請敲<a href="https://m.me/hexschool" target="_blank" rel="noopener">粉絲團</a>或 <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">Line@</a> 敲小幫手來進行更換手續</p><div class="text-center my-5"><br>  <a href="https://shop.hexschool.com/order/create?coupon_code=GOD_COMING_JUNE" class="btn btn-danger btn-lg btn-block mt-3 btn-radius mp-click" title="部落格購票" target="_blank" rel="noopener"><i class="fa fa-ticket" aria-hidden="true"></i><span> 立即購票去 </span><i class="fa fa-ticket" aria-hidden="true"></i></a><br></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【徵人】【高雄】實習生 1~3 名</title>
+      <link href="/2019/05/13/2019-05-13-internship/"/>
+      <url>/2019/05/13/2019-05-13-internship/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2Fhex-hire-intern-fb.png?alt=media&amp;token=dffc89f2-dc10-4e2f-ba74-e4c45697f692" alt></p><p>六角學院 是一所線上程式開發學習單位，目前已累積超過 15,000 名學員，<strong>讓更多人藉由線上學習在職涯規劃上有更多的選擇</strong>是我們的使命是，如果您贊同我們的理念，歡迎加入六角。</p><p>我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。</p><p>如果以下職缺沒有適合您的，歡迎您毛遂自薦自己的長才，為自己找份適合的職缺，我們歡迎肯主動掌握機會的你/妳。</p><h2 id="【社群經營實習生】"><a href="#【社群經營實習生】" class="headerlink" title="【社群經營實習生】"></a>【社群經營實習生】</h2><p>社群，意即代表對某件事物有相同興趣的一群人。六角學院便是對「程式開發」有興趣的 TA 集結而成，我們希望您的加入，能夠活絡社群上的發展，說著彼此間了解的「共通語言」，讓我們的 TA 因您加入而提升社群的凝聚力。</p><p>工作內容：</p><ol><li>社群營運相關工作</li><li>協助經營社群發展，目前經營管道有 FB 粉絲團、FB 社團、IG、Line@</li><li>協助規劃/執行活動內容</li></ol><p>加分條件：</p><ol><li>對文字敏銳度高，有經營自己的部落格</li><li>對程式開發有極大的興趣</li><li>熱愛接收新知和各類趨勢情報</li><li>有經營自己的社群服務，例 FB、IG、twitter</li></ol><h2 id="【電商數位行銷實習生】"><a href="#【電商數位行銷實習生】" class="headerlink" title="【電商數位行銷實習生】"></a>【電商數位行銷實習生】</h2><p>如何用正確的起手式，讓潛在客戶能夠透過數位傳播工具認識公司產品，是每間公司絕對要會的必備技能，我們會親自帶領您深入戰場，了解何謂「電商數位行銷」。</p><p>工作內容</p><ol><li>操作數位廣告工具，嘗試用各種行銷文案與素材優化廣告內容</li><li>深入理解六角產品開發精神，並協助擬定產品行銷方針</li><li>與社群經營實習生共同規劃/執行活內容</li></ol><p>加分條件</p><ol><li>熟悉 FB/Google Ads 廣告工具操作，理解如何批次修改/上傳廣告素材</li><li>在專題 / 工作經驗中有進行數據分析的相關經驗</li></ol><h2 id="【前端與後端實習生】"><a href="#【前端與後端實習生】" class="headerlink" title="【前端與後端實習生】"></a>【前端與後端實習生】</h2><p>今年，我們將有許多平台開發等待被落實，您將有機會與我們共同開發各種新產品，與共同創辦人們同心協力，打造出讓全亞洲都會使用到的六角平台。</p><p>工作內容</p><ol><li>協助公司既有產品營運</li><li>新產品前後端開發</li></ol><p>必備條件</p><ol><li>必須對其中一端(前端、後端)有足夠的了解</li><li>履歷上需附上作品，以展示您的技術能力</li></ol><p>目前六角使用技術，期待您的加入，提昇我們的開發能量</p><ul><li>後端與資料庫：Node.js、PHP</li><li>前端語言：Vue.js</li><li>版控工具： Github Private Repository</li><li>溝通工具：Slack</li><li>協作工具：GitHub issue、Trello、quip</li><li>伺服器技術：Heroku、Cloudflare</li><li>輔助技能：Hexo、Gulp、Webpack</li></ul><h2 id="【視覺設計實習生】"><a href="#【視覺設計實習生】" class="headerlink" title="【視覺設計實習生】"></a>【視覺設計實習生】</h2><p>在六角學院，包共創辦人，就有一半以上的職員都具備設計背景，就足以了解「設計」對我們來說有多麽重要，我們希望由您的加入，為我們的品牌增添豐富色彩。</p><p>工作內容</p><ol><li>六角學院形象設計</li><li>配合課程設計網頁素材、課程素材、宣傳品</li><li>各式平面設計需求</li></ol><p>加分條件</p><ol><li>插畫技能</li><li>影片剪接</li><li>UI 設計</li><li>使用 Mac, Sketch 軟體</li></ol><hr><h2 id="【薪資與福利】"><a href="#【薪資與福利】" class="headerlink" title="【薪資與福利】"></a>【薪資與福利】</h2><ul><li>1hr /150</li><li>享勞健保</li><li>六角開的課程皆能免費參加</li></ul><h2 id="【工作地點-時間】"><a href="#【工作地點-時間】" class="headerlink" title="【工作地點/時間】"></a>【工作地點/時間】</h2><p>地點：高雄鹽埕區<br>時間：一週最少兩天</p><h2 id="【投遞履歷管道】"><a href="#【投遞履歷管道】" class="headerlink" title="【投遞履歷管道】"></a>【投遞履歷管道】</h2><p>1.郵件地址：請 mail 到 <a href="mailto:service@hexschool.com" target="_blank" rel="noopener">service@hexschool.com</a><br>2.郵件標題：【應徵】XX 實習生_姓名 (XX 請自行代入要應徵的職缺)<br>3.履歷版本：請提供 PDF 或線上履歷<br>4.回覆問題：除履歷外，還請回覆以下兩個問題，好讓我們更加了解您</p><p><strong>問題一：「您對於未來職涯的自己有什麼憧憬，這份工作能幫助您嗎？」</strong></p><p><strong>問題二：「承一，希望六角提供什麼資源，好讓您能盡快達成目標？」</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> jobs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【學員專屬徵才 - 遠端助教】無程式工作經驗者優先錄取</title>
+      <link href="/2019/05/13/2019-05-13-remote-jobs/"/>
+      <url>/2019/05/13/2019-05-13-remote-jobs/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2Fhex-hire-TA-fb.png?alt=media&amp;token=de1fb813-9419-4620-bdee-67cae3c686a9" alt></p><ul><li>你想要轉職工程師，但怕全職投入，卻沒有收入養活自己？</li><li>你想要成為工程師，但是對自己的技能沒有信心？</li><li>你希望學會程式後，也希望有機會一展長才？</li></ul><p>如果以上列表，你的答案是 Yes，同時又是六角學員的話，我們要的就是你！</p><h3 id="徵才職缺與門檻"><a href="#徵才職缺與門檻" class="headerlink" title="徵才職缺與門檻"></a>徵才職缺與門檻</h3><ul><li><strong>網頁排版助教</strong> - 需有完成 CSS、JQ、RWD、BS4 最終作業，並 CSS 與 RWD 皆有達到優的成績。</li><li><strong>JS 助教</strong> - 需有完成 JS、Vue 最終作業</li></ul><h3 id="門檻-Q-amp-A"><a href="#門檻-Q-amp-A" class="headerlink" title="門檻 Q&amp;A"></a>門檻 Q&amp;A</h3><p>Q：我如果只有註冊 RWD &gt; BS4，沒註冊 CSS 與 jQ ，但也相當熟悉可以申請嗎？<br>A：不行，必須四門課都有註冊，且做完最終作業，才可申請。</p><p>Q：申請JS 或網頁排版助教，如果我 CSS、RWD 其中一個作業沒有達優，是否就不能申請這一波申請？<br>A：<em>是的，若您在本週再次繳交，則不符門檻。</em>您可以等下波我們徵召前，提供修改後的作業，以達到優的成績後再行申請。</p><p>Q：如果我 CSS、RWD 成績是A，但有給老師再次檢視，且老師也回信給我說改得都 ok，只差沒給我更新過後的「優」評價的話，可以申請嗎？<br>A：可以，申請時提供 email 給我們確認即可。</p><h3 id="評選機制"><a href="#評選機制" class="headerlink" title="評選機制"></a>評選機制</h3><p><strong>所有符合上述門檻的學員，皆不會落選，此評選機制完全不看您的學歷</strong>，但有優先順序，我們會依照以下機制，將條件優先提供給最需要這份工作的學員。</p><ol><li>全職準備且沒有工作收入者，優先入選</li><li>完全沒有程式工作經驗者，優先入選</li></ol><p>若您尚未被選上，也會提供排隊編號給您，待前面學員工作結束後，便會透過 email 提供到職通知。</p><p>PS：此評選機制是希望真正有意成為工程師的學員可以透過此機制，能夠提早獲得程式工作經驗，有足夠的信心以協接業界。</p><h3 id="這份工作的優點"><a href="#這份工作的優點" class="headerlink" title="這份工作的優點"></a>這份工作的優點</h3><ul><li><strong>知識再吸收</strong>：藉由教學講解，能夠有效幫助自己的知識能夠重新收納整理，讓觀念更加穩固</li><li><strong>信心建立</strong>：讓您藉由知識傳承，讓自己技術能夠再往上一個層次，並有足夠的信心挑戰更好的工作機會。</li><li><strong>工作彈性</strong>：一週可以隨意選擇時數來工作，時間自主性高。</li></ul><h3 id="工作內容"><a href="#工作內容" class="headerlink" title="工作內容"></a>工作內容</h3><ul><li>回覆學員程式問題</li><li>批改學員程式碼 (小節作業、最終作業)</li><li>協助評估課程流暢度，讓課程更臻完善。</li></ul><h3 id="工作時間"><a href="#工作時間" class="headerlink" title="工作時間"></a>工作時間</h3><ul><li>每位應徵者工作長度如下<ul><li>網頁排版助教：2個月</li><li>JS助教：3個月</li></ul></li><li>每週至少三天要在線上，每天工作 2 小時</li><li>工作時間可自由彈性選擇週一~週日時段的 09:00 ~ 11:00、15:00~17:00 的兩個時段</li></ul><h3 id="舉例："><a href="#舉例：" class="headerlink" title="舉例："></a>舉例：</h3><ul><li>小明：有 14 小時實習時間，時段為週一~週日的下午 3~5 點</li><li>小花：有 10 小時實習時間：時段為週一~五的早上 9~11 點</li></ul><h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><ul><li><strong>前期教育訓練</strong>：將會提供教育訓練影片，不論在回覆口吻、書寫習慣、聚焦問題上，六角皆有一套 SOP ，以幫助助教快速了解其流程。</li><li><strong>模擬演練</strong>：每一位遠端助教在初期都會配置一位助教長，初期在回覆問題前，都必須獲得助教長審核過後，才可代表六角助教回覆。藉由此機制，幫助學員能夠在此工作上能逐漸掌握訣竅。</li><li><strong>獨當一面</strong>：我們會有不定期的審核機制，若審核成功，往後您就可獨立運作來回覆學員問題。</li><li><strong>知識傳承</strong>：當您對工作業務駕輕就熟後，就能升級為助教長，成為未來新人的教練，以進行教育傳承。</li><li><strong>協助就業</strong>：我們正在規劃官網提供學員履歷刊登服務，將會讓畢業的遠端助教優先進行人才曝光，協助企業媒合。</li></ul><h3 id="薪水福利"><a href="#薪水福利" class="headerlink" title="薪水福利"></a>薪水福利</h3><ul><li>150/hr</li><li>無勞健保，此工作內容為執行業務、非常態性工作，故視為勞務外包。</li></ul><h3 id="應徵辦法"><a href="#應徵辦法" class="headerlink" title="應徵辦法"></a>應徵辦法</h3><p>請填寫此 <a href="https://forms.gle/H2SbXMxsQjWpqEuYA" target="_blank" rel="noopener">表單</a> 進行應徵流程，5/17 中午 12 點停止收件。將會等此批助教都畢業後才會進行下一波徵召。</p><p>並將於 5/27 發錄取通知信給第一波助教名單。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> jobs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【大神來六角】五月直播主題：後端開發</title>
+      <link href="/2019/04/17/2019-04-17-god-and-hexschool/"/>
+      <url>/2019/04/17/2019-04-17-god-and-hexschool/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F04%2F%E5%A4%A7%E7%A5%9E-calendar-may-u.png?alt=media&amp;token=418007f4-cc8f-4612-abb7-088353da461d" alt></p><p>同學您好，六角學院固定會在前一個月，釋出下個月的直播節目表到 Google 日曆，歡迎訂閱我們的<a href="/calendar/">行事曆</a>，好方便追蹤您想聽的題目。</p><h2 id="本月主題：後端開發"><a href="#本月主題：後端開發" class="headerlink" title="本月主題：後端開發"></a>本月主題：後端開發</h2><p>後端語言五花八門，各語言都有它的優缺點，但要你真的去選擇一門來研究，是否常常無法決定？所以本月的主題，我們邀請到四位在各後端領域都有一定水準的工程師，來為各位進行分享。</p><p>考量到大家沒有後端基礎，六角在與各講師討論後，也決定在主題設計上，也有適合只會 HTML、CSS 網頁排版的初學者也能吸收的內容，以方便讓您能從中選擇適合自己的後端語言。</p><p>在演講內容比重中，都會請每位講師分享「<strong>什麼是後端，與前端是如何溝通？</strong>」，好讓初學者了解後端與前端的關係，進而依照自己所理解的脈絡來延伸學習，藉由每位講師大神的視角來詮釋，能更加瞭解前後端的溝通關係。</p><p>在這門主題中，您將會獲得的知識為：</p><ul><li><strong>什麼是後端</strong>，與前端是如何溝通？ (適合新手，將會在演講比例佔 30~50% 時間)</li><li>各後端語言的優缺點，四週講師主題分別為<ul><li>Node.js</li><li>PHP</li><li>.Net</li><li>Ruby</li></ul></li></ul><h2 id="講師介紹"><a href="#講師介紹" class="headerlink" title="講師介紹"></a>講師介紹</h2><h4 id="第一週-Node-js"><a href="#第一週-Node-js" class="headerlink" title="第一週 -  Node.js"></a>第一週 -  Node.js</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F04%2F13139376_1023708654381237_7935553683397397403_n.png?alt=media&token=3a7b944e-d808-47aa-9603-ded2ae48f885" width="160" height="160" alt></p><p>PJChender 是一位熱愛分享 JS 知識的開發者，目前也是 ALPHA Camp 的<a href="https://tw.alphacamp.co/core-module" target="_blank" rel="noopener">學期三 Node.js 講師</a>，許多 JS 開發者都曾從他的<a href="https://pjchender.blogspot.com/" target="_blank" rel="noopener">部落格</a>獲得 JS 知識，六角學院在兩年前也邀請他分享前端知識，在當時也是大受好評，藉由本月題目，很高興能夠再次邀請他來分享 Node.js 後端的主題！</p><ul><li>講座時間：2019/5/7 (二) 19:30~21:00 </li><li>講者姓名：PJChender (<a href="https://www.facebook.com/pjchender/" target="_blank" rel="noopener">粉絲團</a>)</li><li>講者介紹：PJChender 是一個關注網頁前端設計、技術，學習 know how 的社群分享平台，並且以開發者友善的概念為核心，提供開發者需要的訊息和內容。</li></ul><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第二週-PHP"><a href="#第二週-PHP" class="headerlink" title="第二週 - PHP"></a>第二週 - PHP</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F04%2FWeb-design-Instructor-Taker-Wu.jpg?alt=media&token=eae7efd7-cb42-4323-8a87-f4c2e5dfffbc" width="160" height="160" alt></p><p>Taker 是<a href="https://www.everyonecanwebsite.com/" target="_blank" rel="noopener">網頁基礎 15 天</a>的創辦人，從最基礎的 HTML、CSS 到後端都有實務的教學經驗，教過許多無經驗的新手到成為前後端工程師，也因為如此，Taker 深深了解新手在從前端切入後端，常常會面臨到的知識觀念問題。相信藉由他豐富的教學功力，能夠讓各位聽眾理解前後端溝通細節，以及 PHP 語言的魅力之處。</p><ul><li>講座時間： 2019/5/15 (三) 19:30~21:00 </li><li>講者姓名：Taker Wu</li><li>講者經歷：網頁基礎 15 天 創辦人</li><li>講者介紹：自行接案、擔任網頁開發公司 Senior 網頁工程師，期間開發了許多網站、手機 APP、網路服務等，後因設計師朋友想學網頁相關的技能，遂開發【網頁基礎 15 天】等相關課程，以簡單易懂、貼近實際應用的訓練著稱。</li></ul><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第三週-NET-Developer-的前後端技能介紹和概觀"><a href="#第三週-NET-Developer-的前後端技能介紹和概觀" class="headerlink" title="第三週 - .NET Developer 的前後端技能介紹和概觀"></a>第三週 - .NET Developer 的前後端技能介紹和概觀</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F04%2Fimage.jpg?alt=media&token=c85c744b-646f-4881-8144-70b15ad85f37" width="160" height="160" alt></p><p>Kevin 目前在澳洲擔任軟體工程師，同時也是 <a href="https://hiskio.com/teachers/10338" target="_blank" rel="noopener">HiSKIO</a> 線上課程特約講師，是少數具備實務經驗，又同時有線上課程錄製經驗的專業講師之一。在課程規劃上也是以一門銜接一門的扎實打底，好幫助新手能協接學習，藉由他的豐富經驗，好讓各位能夠一窺 .NET 殿堂。</p><ul><li>講座時間：2019/5/21 (二) 19:30~21:00 </li><li>講者姓名：Kevin Lin </li><li>講者介紹：技術移民到澳洲的.NET Developer，對於.NET領域的相關技術與各式開發方式、多種前後端框架與工具、版控系統，皆有深入的研究。畢業於澳洲多個大學，其中2所全校第1名畢業，最高學歷為碩士。現任 HiSKIO 線上課程特約講師，以及 IT 工具人學院創辦人。以一門銜接一門的扎實打底學程，幫助許多想成為 .NET Developer 的朋友們，繞過彎路，快速學習。</li></ul><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第四週-Ruby"><a href="#第四週-Ruby" class="headerlink" title="第四週 - Ruby"></a>第四週 - Ruby</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F04%2Feddiekao.jpg?alt=media&token=48aa8b0e-5172-42dd-bba5-edbd8cee3a3a" width="160" height="160" alt></p><p>高見龍是五倍紅寶石的共同創辦人，在台灣推廣 Ruby 程式語言多年，學生已累積超過 1,000 人以上，目前經營 <a href="https://iamcoding.tw/" target="_blank" rel="noopener">I’m coding it! 微痛轉職工程師</a> 線上課程，具備極為豐富的線上與線下的教學經驗，由他來替各位會眾分享 Ruby 優雅之處，實在再好不過！</p><ul><li>講座時間： 2019/5/30 (四) 19:30~21:00 </li><li>講者姓名：高見龍</li><li>講者經歷：五倍紅寶石共同創辦人</li><li>講者介紹：雖非資訊本科系出身，但喜歡寫程式而且希望可以寫一輩子程式的電腦阿宅。喜歡辦活動，是不少台灣大型技術研討會(如 PHPConf、WebConf、RubyConf Taiwan 等)及社群活動(Rails Girls Taipei、Taipei.rb)的發起人或主辦人。喜愛與人分享，曾在許多國內、外技術研討會分享心得。四次創業經驗，雖然其中有兩次是失敗經驗但仍樂此不疲。目前為五倍紅寶石共同創辦人及負責人。</li></ul><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><div id="addBlogEvent"></div><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F%E5%A4%A7%E7%A5%9E%E4%BE%86%E5%85%AD%E8%A7%92-%E8%B3%BC%E8%B2%B7%E6%B5%81%E7%A8%8B.png?alt=media&amp;token=e94fb1bc-7a8a-4564-911a-14675442b7ee" alt></p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F%E5%A4%A7%E7%A5%9E%E4%BE%86%E5%85%AD%E8%A7%92-compare.png?alt=media&amp;token=68979e8e-87a4-4490-923b-e7cbfa9833bc" alt></p><div class="text-center my-5"><br>  <a href="https://shop.hexschool.com/order/create?coupon_code=GOD_COMING_MAY" class="btn btn-danger btn-lg btn-block mt-3 btn-radius mp-click" title="部落格購票" target="_blank" rel="noopener"><i class="fa fa-ticket" aria-hidden="true"></i><span> 立即購票去 </span><i class="fa fa-ticket" aria-hidden="true"></i></a><br></div><h3 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h3><h5 id="Q：如果來不及參加，可以退費嗎？"><a href="#Q：如果來不及參加，可以退費嗎？" class="headerlink" title="Q：如果來不及參加，可以退費嗎？"></a>Q：如果來不及參加，可以退費嗎？</h5><p>A：單場活動可在 <em>活動前三天申請</em> 享全額退費，但就無法獲得錄影。月票活動可在前月底申請，同樣可全額退費。</p><h5 id="Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？"><a href="#Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？" class="headerlink" title="Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？"></a>Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？</h5><p>A：可以任意選單場票，就可獲得單月所有直播課程影片，如四月總計四部。</p><h5 id="Q：真假，只要買單場票，就能獲得全部錄影？"><a href="#Q：真假，只要買單場票，就能獲得全部錄影？" class="headerlink" title="Q：真假，只要買單場票，就能獲得全部錄影？"></a>Q：真假，只要買單場票，就能獲得全部錄影？</h5><p>A：你沒看錯，是真的，我們會固定在第二場結束後與月底，提供錄影連結 mail 給您。</p><h5 id="Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？"><a href="#Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？" class="headerlink" title="Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？"></a>Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？</h5><p>A：可以，請前三天透過<a href="https://m.me/hexschool" target="_blank" rel="noopener">粉絲團</a>或 <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">Line@</a> 敲小幫手來進行更換手續</p><h5 id="Q：買了單場票，之後還想要改成月票可以嗎？"><a href="#Q：買了單場票，之後還想要改成月票可以嗎？" class="headerlink" title="Q：買了單場票，之後還想要改成月票可以嗎？"></a>Q：買了單場票，之後還想要改成月票可以嗎？</h5><p>A：可以，請敲<a href="https://m.me/hexschool" target="_blank" rel="noopener">粉絲團</a>或 <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">Line@</a> 敲小幫手來進行更換手續</p><div class="text-center my-5"><br>  <a href="https://shop.hexschool.com/order/create?coupon_code=GOD_COMING_MAY" class="btn btn-danger btn-lg btn-block mt-3 btn-radius mp-click" title="部落格購票" target="_blank" rel="noopener"><i class="fa fa-ticket" aria-hidden="true"></i><span> 立即購票去 </span><i class="fa fa-ticket" aria-hidden="true"></i></a><br></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【大神來六角】四月直播主題：計算機網路！</title>
+      <link href="/2019/03/07/2019-03-07-interview/"/>
+      <url>/2019/03/07/2019-03-07-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F%E5%A4%A7%E7%A5%9E%E4%BE%86%E5%85%AD%E8%A7%92-%E8%A1%8C%E4%BA%8B%E6%9B%862.png?alt=media&amp;token=26ba480f-3f7f-4db3-b4f8-a5e47d3c6b58" alt></p><p>同學您好，六角學院固定會在每月的第一週，釋出下個月的直播節目表到 Google 日曆，歡迎訂閱我們的<a href="/calendar/">行事曆</a>，好方便追蹤您想聽的題目。</p><h2 id="本月主題：計算機網路"><a href="#本月主題：計算機網路" class="headerlink" title="本月主題：計算機網路"></a>本月主題：計算機網路</h2><p>在前端工程師在處理後端 API 串接時，當發生各種異常狀況，會不曉得該如何抽絲剝繭查出問題所在，本月主題希望藉此來介紹，「發出網路請求時，網路底層過程中會發生哪些事？」，以下直播將會帶你/妳學會以下內容。</p><ul><li>懂得 <strong>瀏覽器解析網頁過程</strong>，會清楚了解一個 h1 是如何顯示在網頁上</li><li>理解何謂 <strong>IP</strong>，輸入網址時，<strong>TCP/IP</strong> 協定過程會發生哪些事情。</li><li><strong>知道前端與後端的差別</strong>，清楚理解兩者的溝通過程。</li><li><strong>會自己買網址、管理 DNS</strong> ，知道如何將網址指定到你的主機上。</li></ul><h2 id="講師介紹"><a href="#講師介紹" class="headerlink" title="講師介紹"></a>講師介紹</h2><h4 id="第一週-瀏覽器與網頁原理"><a href="#第一週-瀏覽器與網頁原理" class="headerlink" title="第一週 - 瀏覽器與網頁原理"></a>第一週 - 瀏覽器與網頁原理</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2Fme.jpg?alt=media&token=f9e4c0bf-f562-4cf1-9d91-aa23f99e1bc8" width="160" height="160" alt></p><p>要能夠完美詮釋此主題，勢必得對「網頁瀏覽器」有相當精湛的理解，由於六角的講師都時常參加 <a href="https://ithelp.ithome.com.tw/ironman" target="_blank" rel="noopener">IT 鐵人邦</a>的活動，也因而找到了<a href="https://www.facebook.com/CodingNeutrino/" target="_blank" rel="noopener">微中子</a> 所寫的<a href="https://ithelp.ithome.com.tw/users/20103745/ironman/1270" target="_blank" rel="noopener">來寫個瀏覽器吧</a>！從文章內容中可以充分看出他對此領域精湛之處，邀請他來分享此議題再適合不過。</p><ul><li>講座時間：2019/4/4 (四) 19:30</li><li>講者姓名：微中子 (<a href="https://www.facebook.com/CodingNeutrino/" target="_blank" rel="noopener">粉絲團</a>)</li><li>講者經歷：IT鐵人邦冠軍 - 來做個網路瀏覽器吧！</li><li>講者介紹：軟體工程師。最愛 JS 和 Rust。喜歡開源，參加多項開源專案，並熱衷貢獻。目前著重研究與開發網路瀏覽器。喜歡分享軟體開發經驗與教人寫程式。</li></ul><p>此堂直播適合上過「<a href="https://www.hexschool.com/courses/html_css.html">使用 HTML、CSS 開發一個網站</a>」的學生，以了解瀏覽器渲染網頁原理。</p><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第二週-從-Wireshark、Fiddler-深入了解網路請求"><a href="#第二週-從-Wireshark、Fiddler-深入了解網路請求" class="headerlink" title="第二週 - 從 Wireshark、Fiddler 深入了解網路請求"></a>第二週 - 從 Wireshark、Fiddler 深入了解網路請求</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2Fgonsakon.jpg?alt=media&token=581f922f-e38e-4115-97f6-8d6166145220" width="160" height="160" alt></p><p>當你發出一個網路請求到網際網路上時，他是如何精準傳送到你指定的地方去呢？以及中間過程會發生哪些事情？除了用 JavaScript 來發 AJAX 請求外，我們還能用哪些方式來發送？</p><p>本次講座將會透過 Wireshark、Fiddler 軟體，讓你充分了解「當我發出一個 get/post 請求時，中間過程會經過哪些傳輸協定」，未來在除錯請求問題時，能夠以更底層的開發思維來解決工程問題。</p><ul><li>講座時間：2019/4/9 (二) 19:30</li><li>講者姓名：廖洧杰 / 六角學院校長</li><li>講者經歷：六角學院校長 / ModernWeb 2018 講者</li><li>講者介紹：熱愛分享與交流的前端工程師，目前專注於兼容 Desktop / Mobile 網頁前端開發，期間已協助數百位平面設計師、網頁設計師導入標準網頁設計。</li></ul><p>此堂直播適合上過「<a href="https://www.hexschool.com/courses/javascript.html">JavaScript 入門 - 學徒的試煉 </a>」的學生，只要你有看到 AJAX 章節，就能充分聽懂本堂課程。</p><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第三週-一堂搞懂前端-VS-後端原理"><a href="#第三週-一堂搞懂前端-VS-後端原理" class="headerlink" title="第三週 - 一堂搞懂前端 VS 後端原理"></a>第三週 - 一堂搞懂前端 VS 後端原理</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F1937237_101050986576882_154786_n.jpg?alt=media&token=0289f438-4802-41e5-a4eb-ebf9152dcd20" width="160" height="160" alt></p><p>Tommy 是一名前後端都有所涉獵的資深軟體工程師，同時也有經營<a href="https://www.youtube.com/user/flyvisionlivetour" target="_blank" rel="noopener">偷米騎巴哥</a>的 YouTube 頻道，同時也有在飛肯與大專院校教導程式技術，是少見具備實務開發與教育經驗的開發者，由他來詮釋前端與後端的溝通過程，並解釋其差異性，實在再好不過。</p><ul><li>講座時間：2019/4/17 (三) 19:30</li><li>講者姓名：Tommy </li><li>講者經歷：台北前端社群、Git.tw社群發起人</li><li>講者介紹：熱愛 JavaScript 網頁技術的開發者</li></ul><p>此堂直播適合上過「<a href="https://www.hexschool.com/courses/html_css.html">使用 HTML、CSS 開發一個網站</a>」的學生，但如果你會「<a href="https://www.hexschool.com/courses/javascript.html">JavaScript 入門 - 學徒的試煉</a>」會更有收穫。</p><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第四週-網址管理與-DNS-託管全攻略"><a href="#第四週-網址管理與-DNS-託管全攻略" class="headerlink" title="第四週 - 網址管理與 DNS 託管全攻略"></a>第四週 - 網址管理與 DNS 託管全攻略</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2Fsection_avator.jpg?alt=media&token=447fd966-bd93-4410-8ac8-4d028d7d1d8a" width="160" height="160" alt></p><p>當學會前後端開發後，我們發現大家最常見的頭痛問題，就是如何購買網址，並透過 DNS 指定到購買的主機上，所以在這堂課上，將會由六角學院的卡斯伯來分享如何輕鬆購買網址，並從底層了解 網址與 DNS 的原理，讓你不論到各種網址 / 主機上的設定平台上，都能立即上手操作流程。</p><ul><li>講座時間：2019/4/23 (二) 19:30</li><li>講者姓名：卡斯伯 (<a href="https://www.facebook.com/WccCasper/" target="_blank" rel="noopener">粉絲團</a>)</li><li>講者經歷：六角學院共同創辦人 / ModernWeb 研討會講者</li><li>講者介紹：由設計師轉為前端工程師，專長是視覺設計與前端整合、前端技術教育訓練、前端自動化，常用的工具、技術有 Sketch、Sass、Angular.js、Vue.js、Node.js、Gulp 等主流前端技術。</li></ul><p>此堂直播適合上過「<a href="https://www.hexschool.com/courses/html_css.html">使用 HTML、CSS 開發一個網站</a>」的學生。</p><p><a href="#addBlogEvent" class="btn btn-danger my-2 btn-radius mp-click" title="我要報名"><span> 我要報名 </span></a></p><h4 id="第五週-計算機網路總結"><a href="#第五週-計算機網路總結" class="headerlink" title="第五週 - 計算機網路總結"></a>第五週 - 計算機網路總結</h4><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2Fgonsakon.jpg?alt=media&token=581f922f-e38e-4115-97f6-8d6166145220" width="160" height="160" alt><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2Fsection_avator.jpg?alt=media&token=447fd966-bd93-4410-8ac8-4d028d7d1d8a" width="160" height="160" alt></p><p>在這堂講座上，我們將會把前面四堂的細節做個大統整，將您的觀念全部融會貫通，您將會徹底了解「當一個網路請求發送到主機上」後，從底層原理理解中間過程會發生什麼事情。</p><p>當發現網路請求問題時，你 / 妳透過上面所教授的知識，抽絲剝繭地找出問題所在，遇到問題再也不惶恐，並能夠與後端工程師建立共通語言，提升溝通效率。</p><ul><li>講座時間：2019/4/30 (二) 19:30</li><li>講者姓名：卡斯伯 (<a href="https://www.facebook.com/WccCasper/" target="_blank" rel="noopener">粉絲團</a>)、廖洧杰</li></ul><p>此堂直播適合上過「<a href="https://www.hexschool.com/courses/html_css.html">使用 HTML、CSS 開發一個網站</a>」，並上過前面講座 1 ~ 2 堂的學生。</p><div id="addBlogEvent"></div><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F%E5%A4%A7%E7%A5%9E%E4%BE%86%E5%85%AD%E8%A7%92-%E8%B3%BC%E8%B2%B7%E6%B5%81%E7%A8%8B.png?alt=media&amp;token=e94fb1bc-7a8a-4564-911a-14675442b7ee" alt></p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F03%2F%E5%A4%A7%E7%A5%9E%E4%BE%86%E5%85%AD%E8%A7%92-compare.png?alt=media&amp;token=68979e8e-87a4-4490-923b-e7cbfa9833bc" alt></p><div class="text-center my-5"><br>  <a href="https://shop.hexschool.com/order/create?coupon_code=GOD_COMING_APRIL" class="btn btn-danger btn-lg btn-block my-3 btn-radius mp-click disabled" title="部落格購票" target="_blank" rel="noopener"><i class="fa fa-ticket" aria-hidden="true"></i><span> 活動已到期 </span><i class="fa fa-ticket" aria-hidden="true"></i></a><br></div><h3 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h3><h5 id="Q：如果來不及參加，可以退費嗎？"><a href="#Q：如果來不及參加，可以退費嗎？" class="headerlink" title="Q：如果來不及參加，可以退費嗎？"></a>Q：如果來不及參加，可以退費嗎？</h5><p>A：單場活動可在 <em>活動前三天申請</em> 享全額退費，但就無法獲得錄影。月票活動需在 3/28 前申請，同樣可全額退費。</p><h5 id="Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？"><a href="#Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？" class="headerlink" title="Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？"></a>Q：我常需要加班，都不能參加，但又想要錄影的影片的話該怎辦？</h5><p>A：可以任意選單場票，就可獲得單月所有直播課程影片</p><h5 id="Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？"><a href="#Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？" class="headerlink" title="Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？"></a>Q：我選了其中一場的單場票，但又想臨時換場次可以嗎？</h5><p>A：可以，請前三天透過<a href="https://m.me/hexschool" target="_blank" rel="noopener">粉絲團</a>或 <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">Line@</a> 敲小幫手來進行更換手續</p><h5 id="Q：買了單場票，之後還想要改成月票可以嗎？"><a href="#Q：買了單場票，之後還想要改成月票可以嗎？" class="headerlink" title="Q：買了單場票，之後還想要改成月票可以嗎？"></a>Q：買了單場票，之後還想要改成月票可以嗎？</h5><p>A：可以，請敲<a href="https://m.me/hexschool" target="_blank" rel="noopener">粉絲團</a>或 <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">Line@</a> 敲小幫手來進行更換手續</p><div class="text-center my-5"><br>  <a href="https://shop.hexschool.com/order/create?coupon_code=GOD_COMING_APRIL" class="btn btn-danger btn-lg btn-block my-3 btn-radius mp-click disabled" title="部落格購票" target="_blank" rel="noopener"><i class="fa fa-ticket" aria-hidden="true"></i><span> 活動已到期 </span><i class="fa fa-ticket" aria-hidden="true"></i></a><br></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>不斷地檢視自己，才能看清實力，無謂的擔心都只是局限了未來的可能性！ -- 育榛</title>
+      <link href="/2019/01/08/2019-01-08-interview/"/>
+      <url>/2019/01/08/2019-01-08-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F01%2Fblog-cover-%E8%82%B2%E6%A6%9B.png?alt=media&amp;token=c50d62a0-20ee-4739-ad01-4321cb98de7f" alt></p><blockquote><p>「不可能成功！」、「這只有邏輯好的人才適合做！」、「比起他人，我的實力真的差太多了！」這些否定自己的字眼，總在學習的路上不斷地提醒育榛，讓她對程式語言既期待又怕受傷害，總是駐足不前，但在第一份工作離職後，決心學好前端技術，在加入六角學院後，才發現不過就是自己侷限了自己！</p></blockquote><h3 id="不服輸的個性，讓我走到了這裡"><a href="#不服輸的個性，讓我走到了這裡" class="headerlink" title="不服輸的個性，讓我走到了這裡"></a>不服輸的個性，讓我走到了這裡</h3><p>數位媒體設計出身的育榛，對網頁技術相當有興趣，大學時期積極加入網頁技術的旁聽課程，讓自己有基本的認識。 第一份工作從事 UI/UX ，工作上不時要與前端工程師溝通，但因為領域不同產生代溝，雙方常會有所堅持而僵持不下，這讓育榛感到相當挫折，決定學習前端技術，用行動來證明設計師也懂程式！</p><p>育榛強調：「當初學寫程式，純粹只是為了跟內部工程師溝通，不希望被對方認為無知而打槍自己的設計作品！」</p><p>UI/UX 的設計，與在學校學的設計差很大，以前在學校純粹是以美感、吸睛為出發，而 UI/UX 強調的要分析使用者的實用性，視覺動線上的安排，如何帶出更高的轉換率等，同時也要考慮到工程師的編寫架構，可以說是兩個截然不同的領域。</p><h3 id="知道自己的實力在哪很重要！但不是要否定自己，而是謹惕自己要努力補齊不足"><a href="#知道自己的實力在哪很重要！但不是要否定自己，而是謹惕自己要努力補齊不足" class="headerlink" title="知道自己的實力在哪很重要！但不是要否定自己，而是謹惕自己要努力補齊不足"></a>知道自己的實力在哪很重要！但不是要否定自己，而是謹惕自己要努力補齊不足</h3><p>育榛：「很多時候，我們對於未知的事情會感到恐懼，恐懼到連跨出去的勇氣也沒有！」大四時，將履歷投擲幾間公司爭取實習機會，但回應都令人失望，因為當時能力欠佳，只會 HTML/CSS 還談不上有程式邏輯。育榛直言，知道自己無法得到這份職缺，我還是會積極地請教面試官，自己是哪方面不足？建議如何加強？</p><p>這些面試的失敗經驗不是為了否定自己，而是“試水溫”，檢視自己現階段的能力符不符合現在的市場需求，每次面試都要有所獲得，知道自己哪裡不足，才能夠繼續往對的方向努力。</p><h3 id="“發問”也是需要學習的"><a href="#“發問”也是需要學習的" class="headerlink" title="“發問”也是需要學習的"></a>“發問”也是需要學習的</h3><p>一開始會怕被別人當作笨蛋而不敢問問題，但發現其實“發問”也是需要學習的！跟寫程式一樣，你必須不斷地練習，才能找到有效的提問方式，幫助自己快速的解決問題。</p><h3 id="給自己持續喜歡前端技術的理由，快樂學習要讓自己更好"><a href="#給自己持續喜歡前端技術的理由，快樂學習要讓自己更好" class="headerlink" title="給自己持續喜歡前端技術的理由，快樂學習要讓自己更好"></a>給自己持續喜歡前端技術的理由，快樂學習要讓自己更好</h3><p>因為第一份工作深刻體認到設計人員的困境，希望自己可以跳脫困境，於是下定決心投入前端學習，當時在外租屋僅靠著自己的存款過活，全心學習前端。雖然家裡面有反對的聲音，但育榛還是希望可以按自己的步調學習，不要給自己太大的壓力，取而代之的以放鬆的心態聽課，每天安排2-3 小時專注練習；她認為高壓學習下，可能會欲速則不達，有時輕鬆去做反而會有意想不到的效果，三個月過後，她拿到了前端工程師的門票！</p><p>問到為什麼是選擇六角學院，育榛笑笑回：「當時網路上搜尋，滿多人都推薦六角學院，除了就業協助外，課程的金額很能夠負擔，所以就給彼此一個機會試試囉！(笑)」</p><p>育榛分享：「每次練習，只要自己完成了一個功能，我都會覺得開心！不斷給自己肯定，哪怕再小的事情都是進步的證據！(笑)」</p><p>從大學到現在一直都有這樣的夢想，但始終都只是在門口徘徊，既然想了這麼久，不如試一試吧！才發現沒有想像中的那麼難。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>努力累積能夠代表自己的作品，作品可以說明一切實力！ -- 貫宇</title>
+      <link href="/2019/01/06/2019-01-06-interview/"/>
+      <url>/2019/01/06/2019-01-06-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F01%2Fblog-cover-%E8%B2%AB%E5%AE%87.png?alt=media&amp;token=1663153e-9bd5-40cc-a839-5a97b9cef264" alt></p><blockquote><p>淡江大學資訊傳播學系出身的貫宇，憑藉著對 coding 的想像，一頭栽進了前端技術領域。貫宇：「當你學得越多，越會知道自己知識有多淺薄。」途中遭受挫折的他    在第一份工作中，又重拾了對網頁技術的熱情，這次他決定再給自己一次機會，而且要做就要完整，沒有退路！</p></blockquote><h3 id="第一份工作，從美編、影片剪輯到網頁編輯，樣樣包辦"><a href="#第一份工作，從美編、影片剪輯到網頁編輯，樣樣包辦" class="headerlink" title="第一份工作，從美編、影片剪輯到網頁編輯，樣樣包辦"></a>第一份工作，從美編、影片剪輯到網頁編輯，樣樣包辦</h3><p>貫宇：「在開南商工的社區大學擔任行政人員，工作內容包含了美術設計、活動拍攝、影片剪輯，甚至到網頁編輯，樣樣都一手包辦，但最有興趣的還是網頁技術。」</p><p>當時貫宇將所學的前端技術帶入工作中，做出了<a href="http://icguanyu.acsite.org/fsr/" target="_blank" rel="noopener">食享冰箱</a>一頁式的官網，相當有成就感，並重拾了對網頁技術的熱情，在後來加入六角學院的每個課程作業，都抱著「要能代表自己實力」的決心來完成，讓自己的作品可以被肯定，本身設計底子的他，對頁面上每個元件的位置或大小都有自己的堅持，即便是再小的功能也絕不馬乎，也許就是因為這樣的堅持，讓他受到面試官的青睞。</p><h3 id="基礎若不穩，學習新技術時也只會一知半解"><a href="#基礎若不穩，學習新技術時也只會一知半解" class="headerlink" title="基礎若不穩，學習新技術時也只會一知半解"></a>基礎若不穩，學習新技術時也只會一知半解</h3><p>沒有遇到不知道！大學時有碰過 HTML/CSS 以為自己的技能夠用，但在到坊間補習班上課時，聽到老師的講課，才發現自己所學根本只知其然，而不知其所以然，與其一知半解不如讓自己重新學習 HTML/CSS 。</p><p>貫宇強調：「基礎札穩了！未來學習新技術時才會穩，越基本的東西越要穩住陣腳。」</p><p>貫宇分享自己的訓練課表：「我每天強迫自己一定要做一個 JS 功能，做完後還要將筆記上傳到部落格。」實作時遇到的問題，透過消化、統整變成文字，幫助自己再次複習，“先實作，再消化，後統整” 這是貫宇每天的例行事項，也是他訓練自己的方式。</p><h3 id="六角學院的規模優勢，學員間的互動也可以是學習上的助力"><a href="#六角學院的規模優勢，學員間的互動也可以是學習上的助力" class="headerlink" title="六角學院的規模優勢，學員間的互動也可以是學習上的助力"></a>六角學院的規模優勢，學員間的互動也可以是學習上的助力</h3><p>貫宇坦承自己其實滿少發問的，但他都會去看所有課程下面，學員的發問留言，原因是：「選擇六角學院是因為他的優勢在於學員有一定規模，很多時候直接看 Udemy 課程底下的留言，學習上的問題幾乎都能迎刃而解。因為我的問題，有時也是大家的問題，大家的問過了我就直接看囉！(笑)」</p><p>其實不只是在發問留言中尋找解答，也可以透過這樣的方式發現自己從來沒有想過的問題。</p><h3 id="面試過程中，抱著明確的目標，除了賺錢更要能夠成長"><a href="#面試過程中，抱著明確的目標，除了賺錢更要能夠成長" class="headerlink" title="面試過程中，抱著明確的目標，除了賺錢更要能夠成長"></a>面試過程中，抱著明確的目標，除了賺錢更要能夠成長</h3><p>貫宇分享，想學習 Vue ，但當面試官和他表明公司只做 wordpress 時，他心中已有底，這間公司可能無法滿足他的需求。<br>求職其實不只是公司面試我們，我們也在面試公司，最好在面試時雙方都有共識，這樣未來的日子才能一展長才。</p><p>以求職為目標的話，推薦六角學院的「<a href="https://www.udemy.com/learninggit/?couponCode=COUPON_2018" target="_blank" rel="noopener">掌握 Git &amp; Github 程式時光機</a>」課程，這堂課幾乎包辦職場中的重點技能，若都能掌握，基本上工作中也就夠用了。</p><p>如果還不曉得要選擇哪個框架，六角學院的「<a href="/vue/">Vue 出一個電商</a>」絕對是最佳選擇，因為課程扎扎實實的從基礎到實作一次到位，提供幾十種 API 可以練習，還有很多 Bonus 內容，坊間應該找不到 CP 值比他高的課程了(笑)。</p><h3 id="希望能夠將自己的經驗分享給學弟妹"><a href="#希望能夠將自己的經驗分享給學弟妹" class="headerlink" title="希望能夠將自己的經驗分享給學弟妹"></a>希望能夠將自己的經驗分享給學弟妹</h3><p>在分享完一路的學習歷程後，貫宇談到作品的重要性，除了課堂上的範例外，平時也要累積自己的作品量，用認真的去發想可以代表自己的作品，用作品展現自己的實力。</p><p>附上貫宇在完成六角學院「<a href="/vue/">Vue 出一個電商</a>」的課程後，自己的電商代表作 <a href="https://icguanyu.github.io/pokeStore/dist/#/" target="_blank" rel="noopener">PokeStore</a>。</p><p>貫宇害羞的說，自己很希望有機會可以再回到淡江大學實習媒體的網站組，將自己一路上的挫折與經驗分享給學弟妹們，不過…等自己再厲害一點吧！會持續努力學習的！(笑)</p><p>也來看看六角學院優秀的學員的<a href="https://lihi.biz/Pcwmu" target="_blank" rel="noopener">筆記</a>吧！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>老闆不會為你規劃人生。未來想成為什麼？是自己決定的！-- Kanboo</title>
+      <link href="/2019/01/03/2019-01-03-interview/"/>
+      <url>/2019/01/03/2019-01-03-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F01%2Fblog-cover-Kanboo.png?alt=media&amp;token=add3a589-38a5-49bb-9da6-420915dcce26" alt></p><blockquote><p>Kanboo 的前一份工作是在專案公司，協助竹科、金融企業內部系統開發，遇過許多不同的企業需求與企業文化，這個經歷對 Kanboo 的人生規劃有著很大的影響，Kanboo 感謝家人願意支持他轉職的決心，現在他是一名前端工程師。</p></blockquote><h4 id="為什麼考慮轉職做前端工程師"><a href="#為什麼考慮轉職做前端工程師" class="headerlink" title="為什麼考慮轉職做前端工程師"></a>為什麼考慮轉職做前端工程師</h4><p>Kanboo 表示在與這麼多企業體交流後，體會到 “人” 的影響大於 “專業” 時的無奈感，期許自己未來是個可以用實力說話的專業工作者，在多方嘗試之下，選擇前端來做轉職的目標，感謝老婆的支持，讓我專注的培養自我技能。</p><h4 id="前端是個很廣的技術"><a href="#前端是個很廣的技術" class="headerlink" title="前端是個很廣的技術"></a>前端是個很廣的技術</h4><p>以前都是接企業內部系統開發，介面設計其實不那麼重要，而且支援版本固定，只要功能可以 work、表單有送出就可以了；但現在 User 越來越重視 UI/UX 設計，且作業系統複雜，強調介面設計的直覺性，這就是考驗自己專業的時刻了，看得作品多不多、技術學得廣不廣。</p><hr><h3 id="時間的壓力下，要讓自己學習更有效率"><a href="#時間的壓力下，要讓自己學習更有效率" class="headerlink" title="時間的壓力下，要讓自己學習更有效率"></a>時間的壓力下，要讓自己學習更有效率</h3><h4 id="切勿心急，找到生理、心理都能舒適學習的方式"><a href="#切勿心急，找到生理、心理都能舒適學習的方式" class="headerlink" title="切勿心急，找到生理、心理都能舒適學習的方式"></a>切勿心急，找到生理、心理都能舒適學習的方式</h4><p>Kanboo 分享道：「因為有家庭且自己也年過 30，時間真的不多，我幫自己訂下了半年的期限，幫助自己短期衝刺。」</p><p>學習前端期間，還有家庭要養，不可能離職全心投入鑽研，只能利用下班剩餘時間，學習前端 coding，加入六角學院就是希望可以給自己一次學習的機會。</p><p>不斷思考如何在短短的幾個小時內，追趕上別人 6-7 年的技術，很多時後都是在小孩睡覺後，才開始練習 coding，常常練到一、兩點，隔天又去上班，長期下來身體開始發出警訊，學習效率反而不好，所以千萬不要因為學習廢寢忘食，要找到身體、心靈都能配合的方式學習，吸收會是最好的。</p><h4 id="幫自己找題目，增進熟練度"><a href="#幫自己找題目，增進熟練度" class="headerlink" title="幫自己找題目，增進熟練度"></a>幫自己找題目，增進熟練度</h4><p>CSS 應該是鑽研最久的項目 ，常常將 CSS 拼拼湊湊在頁面上看來是一樣 OK 的，知道它們一個個的作用，但使用在一起的綜合技時，未必能夠輕易操作。在工作前遇到的題目都比較單純，但工作中總會遇到意想不到的問題，建議可以找 30 DAILY UI 來增進自己的熟練度，讓自己臨危不亂。</p><h4 id="用部落格做筆記"><a href="#用部落格做筆記" class="headerlink" title="用部落格做筆記"></a>用部落格做筆記</h4><p>當學習的技術越來越多，開始養成了寫筆記(部落格)的習慣，只記自己容易忘的、覺得重要的，一方面是做紀錄避免重複複習，一方面消化資訊轉為文字，學習就會變得很有效率。</p><h4 id="之前搜尋多家線上課程，最後選擇大家推薦的「六角學院」"><a href="#之前搜尋多家線上課程，最後選擇大家推薦的「六角學院」" class="headerlink" title="之前搜尋多家線上課程，最後選擇大家推薦的「六角學院」"></a>之前搜尋多家線上課程，最後選擇大家推薦的「六角學院」</h4><p>Kanboo 分享：「六角學院吸引我的點是 “每週三的線上研討會”，老師們會準備課程以外的主題，算是隱藏版課程吧！CP 值真的很高。」除了課程以外的主題，也會邀請來賓來分享，不論是求職的經驗、業界的技術，除了現有的線上課程，還可以吸收到課程中學不到的知識。</p><p>「老闆不會為你規劃自己的人生！未來想成為什麼？是自己決定的！」洧杰老師的這句話打動了我，讓我深省自己一直以來的生活方式，投資任何東西都會有風險，投資自己是穩賺不賠的事情，往後也會幫自己陸續設定短期目標，一步步達成！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【Adobe XD-Plugins】超快一鍵匯入真實資料</title>
+      <link href="/2018/10/31/2018-10-31-adobe-plugins/"/>
+      <url>/2018/10/31/2018-10-31-adobe-plugins/</url>
+      
+        <content type="html"><![CDATA[<p>Adobe XD 最近更新加入了 Plugins 功能（插件），開發者們也摩拳擦掌的加入各種好用功能，讓設計師們可以輕鬆活用這些 Plugins。</p><p>而在繪製設計稿時，時常會需要一些假資料看起來才更完整。雖然 Adobe XD 裡面沒有內建這類的功能，但你可以在「Plugins」裡面找到解決這個問題的插件們；而這次要介紹的是「Google Sheets by Impekable」，它可以透過 Google Sheets 整理你所需要的文字或是圖片資料，並一鍵匯入，甚至還能一鍵更新修改過的資料內容。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540871263228_image.png?alt=media&amp;token=9690cbdc-1f24-4200-b01a-6dfe3da052f1" alt></p><h2 id="怎麼安裝插件？"><a href="#怎麼安裝插件？" class="headerlink" title="怎麼安裝插件？"></a>怎麼安裝插件？</h2><p>你可以透過兩種方式來安裝這個插件：從官網下載、或是從 Adobe XD 的 Plugins 資料庫裡搜尋。</p><h3 id="安裝作法一：官方網站"><a href="#安裝作法一：官方網站" class="headerlink" title="安裝作法一：官方網站"></a>安裝作法一：官方網站</h3><p>進到官網之後，你可以很輕鬆地就找到下載的按鈕，只要打開這個下載完的檔案就可以安裝成功了。</p><p>官網連結：<a href="https://googlesheetsforadobexd.impekable.com/" target="_blank" rel="noopener">https://googlesheetsforadobexd.impekable.com/</a></p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540871977933_%2B2018-10-30%2B11.59.27.png?alt=media&amp;token=d5532671-f4f5-470a-96b4-7057d11d6ef7" alt></p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540875808496_%2B2018-10-30%2B12.03.09.png?alt=media&amp;token=b4ef0007-e2f9-4e91-9aee-33ee568bf518" alt></p><h3 id="安裝作法二：Adobe-XD-的-Plugins-資料庫"><a href="#安裝作法二：Adobe-XD-的-Plugins-資料庫" class="headerlink" title="安裝作法二：Adobe XD 的 Plugins 資料庫"></a>安裝作法二：Adobe XD 的 Plugins 資料庫</h3><p>進入 Adobe XD 之後，在最上方的選單列表中選擇 Plugins&gt;Discover Plugins…，再在搜尋框裡面搜尋 Google Sheets 並按下 Install 即可安裝完成。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540894299927_%2B2018-10-30%2B6.11.25.png?alt=media&amp;token=8e94c704-144d-4b47-ade3-f4acd1bcc990" alt></p><h2 id="如何操作插件？"><a href="#如何操作插件？" class="headerlink" title="如何操作插件？"></a>如何操作插件？</h2><h3 id="第一步：整理資料"><a href="#第一步：整理資料" class="headerlink" title="第一步：整理資料"></a>第一步：整理資料</h3><p>首先，要先利用 Google Sheets 線上試算表來整理你需要在設計稿內使用到的所有資訊欄位，像是姓名、文字段落、圖片等等。</p><p>注意：整理圖片資料時，必須要使用連結，後續操作才能順利匯入。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540884073972_%2B2018-10-30%2B3.18.42.png?alt=media&amp;token=d1906f8d-df88-4559-980a-ea7da98e254d" alt></p><h3 id="第二步：繪製設計稿"><a href="#第二步：繪製設計稿" class="headerlink" title="第二步：繪製設計稿"></a>第二步：繪製設計稿</h3><p>接下來就是依據你的需求在 Adobe XD 裡繪製設計稿。</p><p>注意：需要匯入資料的物件圖層最好重新命名，不需要與資料欄位的名稱一模一樣，只要便於識別就好</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540894065741_%2B2018-10-30%2B6.07.37.png?alt=media&amp;token=7159f585-722f-4f80-af25-971ccc651166" alt></p><h3 id="第三步：匯入試算表"><a href="#第三步：匯入試算表" class="headerlink" title="第三步：匯入試算表"></a>第三步：匯入試算表</h3><p>匯入資料的方式有兩種：貼上線上試算表的連結、或是從電腦上傳 CSV 檔案。</p><h4 id="匯入方法一：貼上線上試算表的連結"><a href="#匯入方法一：貼上線上試算表的連結" class="headerlink" title="匯入方法一：貼上線上試算表的連結"></a>匯入方法一：貼上線上試算表的連結</h4><p>(1) 打開線上試算表，點選右上角的「共用」按鈕，並設定為公開連結後取得試算表連結網址。</p><ul><li>一定要是公開連結，不然插件會抓不到資料。</li></ul><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540888395815_%2B2018-10-30%2B4.33.05.png?alt=media&amp;token=248dd069-0286-4ea2-92e4-66e5ba56ccbf" alt></p><p>(2) 接著回到 Adobe XD 裡選擇想要匯入資料的區塊，可以是個別選擇的多個物件、一個或多個複數物件的群組、或是 Repeat Grid 產生的區塊。</p><p>(3) 按照 Plugins&gt;Google Sheets&gt;Paste Public Link… 的路徑啟動插件。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540888573649_%2B2018-10-30%2B4.35.562.png?alt=media&amp;token=f4eb636c-f52e-4f2b-ad5c-34d1ea0ec1f5" alt></p><p>(4) 在 Paste URL 的地方貼上欲匯入試算表的公開連結，並按下 Continue 繼續下一步。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540886578599_%2B2018-10-30%2B4.02.49.png?alt=media&amp;token=92deed0f-7e28-492e-96ab-b3557fb8bf69" alt></p><p>(5) 最後，設定好設計元素與其對應的資料欄位後，按下 Apply 就完成了。</p><ul><li>若設計稿的圖層名稱與試算表的資料欄位命名相同的話，插件會自動幫你配對好。</li><li>若勾選左下角的 Randomize Content，插件會幫你隨機生成資料順序（對應欄位不變）。 </li><li>若對於隨機生成的順序不太滿意，可以透過插件的 Refresh Content 功能重新生成。</li></ul><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540887375149_%2B2018-10-30%2B4.16.02.png?alt=media&amp;token=c30ea092-1fee-43a9-a1ae-bdae6be53c7c" alt></p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540888673434_%2B2018-10-30%2B4.37.40.png?alt=media&amp;token=92ef1746-ec31-4f14-9551-b0a6b0d891ab" alt></p><h4 id="匯入方法二：從電腦上傳-CSV-檔案"><a href="#匯入方法二：從電腦上傳-CSV-檔案" class="headerlink" title="匯入方法二：從電腦上傳 CSV 檔案"></a>匯入方法二：從電腦上傳 CSV 檔案</h4><p>使用流程與使用線上試算表的連結的方式並無二致，只是路徑的部分最後是選擇 Load .CSV。<br>唯一要注意的是，如果是選擇上傳 CSV 檔案的話，之後沒有辦法使用 Refresh Content 的功能。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540891994226_%2B2018-10-30%2B5.33.03.png?alt=media&amp;token=de0b230a-6281-459b-9da1-6e3456ff43e2" alt></p><h2 id="第四步：資料更新"><a href="#第四步：資料更新" class="headerlink" title="第四步：資料更新"></a>第四步：資料更新</h2><p>這個插件方便的地方在於，就算試算表的資料被刪減或是調整了，仍可以一鍵同步修改的內容。操作步驟如下：</p><ol><li>選取匯入修改前試算表的區塊。</li><li>按照 Plugins&gt;Google Sheets&gt;Refresh Content 的路徑啟動資料更新的功能。</li></ol><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fs_17701058D350D7168EDD35145F5FF56089A2213F39E04276A7D6E1F7629AD7F9_1540890768372_%2B2018-10-30%2B5.12.272.png?alt=media&amp;token=adba260b-d94f-40ab-bc63-30bf846989ee" alt></p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F10%2Fgoogle_drive_xd_img.png?alt=media&amp;token=fa4af223-1d6f-4809-a0b5-109fc90f1a5d" alt></p><h2 id="為什麼需要這個插件？"><a href="#為什麼需要這個插件？" class="headerlink" title="為什麼需要這個插件？"></a>為什麼需要這個插件？</h2><h3 id="一、真實資料的排版需求"><a href="#一、真實資料的排版需求" class="headerlink" title="一、真實資料的排版需求"></a>一、真實資料的排版需求</h3><p>Adobe XD 現在雖然多了一些可以產生假資料的插件，但若是剛好踫上了需要使用正確的真實資料來排版的專案，那使用 Google Sheets by Impekable 就能快速置換這些資訊。</p><h3 id="二、一鍵完成線上同步"><a href="#二、一鍵完成線上同步" class="headerlink" title="二、一鍵完成線上同步"></a>二、一鍵完成線上同步</h3><p>在多人合作的專案當中，資料的整理可能不只由一個人來完成。若每次的資訊修正都需要調整一次設計稿，只會徒增給設計師許多工作量。若能妥善利用這個插件，想必可以省去許多修改的時間。</p><h3 id="三、整理假資料的資料庫"><a href="#三、整理假資料的資料庫" class="headerlink" title="三、整理假資料的資料庫"></a>三、整理假資料的資料庫</h3><p>你或許在設計稿上只會用到假資料，儘管如此也能使用這個插件來整理自己常會使用的各種假資料；甚至還可以利用假資料切換多國語言、測試文字區塊字數等等。</p><p>插件只是一個幫助你在設計上更加便利的工具，要如何使用因人而異，或許還有更便利的使用方式等著你來嘗試；重要的是，只要能為你節省設計時間的都是好插件。就讓大家自己去玩玩看吧！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【挑戰活動】網頁切版 PK 戰</title>
+      <link href="/2018/09/13/2018-09-13-hexschool-challenge/"/>
+      <url>/2018/09/13/2018-09-13-hexschool-challenge/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F09%2Fpk-character_og-image.png?alt=media&amp;token=bf3fb8f8-f52c-4053-bfe0-39c7018dbee6" alt></p><p>網頁切版，是身為網頁設計師、前端工程師第一步會學到的基本功，但學到一身切版功夫，卻苦無找不到對手，豈不就太過孤獨？這次六角學院將派出五位精銳，向各位切磋切磋！ (拱手行禮</p><h2 id="隊員介紹"><a href="#隊員介紹" class="headerlink" title="隊員介紹"></a>隊員介紹</h2><h3 id="神秘實習生-？？"><a href="#神秘實習生-？？" class="headerlink" title="神秘實習生 - ？？"></a>神秘實習生 - ？？</h3><p>神秘實習生：「我要切 10版 ！」</p><ul><li>手刻派</li><li>工作經驗 ？ 年</li><li>六角腦粉</li></ul><h3 id="初級前端工程師-葉子"><a href="#初級前端工程師-葉子" class="headerlink" title="初級前端工程師 - 葉子"></a>初級前端工程師 - 葉子</h3><p>葉子：「選我！選我！ (意義不明」</p><ul><li>手刻派</li><li>工作經驗 1 個月</li><li>High 咖</li></ul><h3 id="設計師-俊儀"><a href="#設計師-俊儀" class="headerlink" title="設計師 - 俊儀"></a>設計師 - 俊儀</h3><p>俊儀：「前端？略懂略懂~」</p><ul><li>手刻、框架雙修</li><li>前端經驗 4 個月</li><li>六角設計扛霸子</li></ul><h3 id="前端設計師-王志誠"><a href="#前端設計師-王志誠" class="headerlink" title="前端設計師 - 王志誠"></a>前端設計師 - 王志誠</h3><p>王志誠：「我要打 10 個！」</p><ul><li>SCSS 框架派</li><li>前端經驗 6 年</li><li>前端設計雙修魔劍士 </li></ul><h3 id="前端工程師-廖洧杰"><a href="#前端工程師-廖洧杰" class="headerlink" title="前端工程師 - 廖洧杰"></a>前端工程師 - 廖洧杰</h3><p>廖洧杰：「從身體深處感到熱血沸騰！（灌勇綠」</p><ul><li>SASS 手刻派</li><li>前端經驗 8 年</li><li>一名興趣使然的前端工程師</li></ul><h2 id="報名與參賽方式"><a href="#報名與參賽方式" class="headerlink" title="報名與參賽方式"></a>報名與參賽方式</h2><ul><li><strong>報名時間</strong>：9/13（四）~  10/7，正式開賽時間為 9/24 12:00</li><li><strong>報名方式</strong>：填寫此<a href="https://goo.gl/forms/a4T9VpGsiapC5cov1" target="_blank" rel="noopener">報名表單</a>，加入 <a href="https://www.facebook.com/groups/173311386703334/" target="_blank" rel="noopener">The F2E FB 社團</a>。</li><li><strong>開賽規則</strong>：9/24 12:00 當天將提供多頁式版型設計稿，10/8 中午 12 點前將作品上傳至 Github Pages、codepen，並在 FB 指定處貼文投稿。</li><li><strong>投票作業</strong>：投票時間為 10/08 ~ 10/14，由大家 FB 表情投票來評斷優劣，請挑戰者將你的挑戰連結發表在指定留言處，如下圖為 9/24 12:00 示意貼文</li><li><strong>勝負結果</strong>：10/15 (一) 早上依序統計最終勝負。</li></ul><p>示意圖如下：</p><p><img src="https://camo.githubusercontent.com/e57ae3c4c3c467b40868ded7e4696818274065a6/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6865787363686f6f6c2d6170692e61707073706f742e636f6d2f6f2f626c6f672532463230313825324630392532464642253230696e74726f647563652e706e673f616c743d6d6564696126746f6b656e3d63363735613564642d373364352d343437332d383166362d666138626335636465666339" class="border-md-gray-lighter" alt></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【公開】如何在線上幫助學員找到前端工作</title>
+      <link href="/2018/08/27/2018-08-27-interview/"/>
+      <url>/2018/08/27/2018-08-27-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2Fofferget_fb.png?alt=media&amp;token=d69db149-1486-4785-bcd4-0f4078d6a20f" alt></p><p>各位好，我是六角學院的校長，洧杰，創校兩年來，我們在線上已協助超過 100 位學員錄取網頁設計師、前端工程師職缺。</p><p>為什麼老師們在線上就能協助學生就業？這裡也分享我們的方法。</p><h2 id="瞭解學員背景，訂定適當的投入目標"><a href="#瞭解學員背景，訂定適當的投入目標" class="headerlink" title="瞭解學員背景，訂定適當的投入目標"></a>瞭解學員背景，訂定適當的投入目標</h2><p>我們在協助學員就業前，都會親自在線上與他們聊背景與學習狀況，最後再一起訂立每個階段的投入目標。當每個個小目標都逐一攻略升級後，自然就有足夠的裝備挑戰大魔王，也就是尋找第一份前端工作，最後再協助寫履歷、模擬面試。</p><p>在這裡分享近期老師們與學員在線上協助就業的歷程，也鼓勵在線上的你/妳也能找到自己的求職方向。</p><h2 id="努力投入-3-個月，獲得-40K-薪水"><a href="#努力投入-3-個月，獲得-40K-薪水" class="headerlink" title="努力投入 3 個月，獲得 40K 薪水"></a>努力投入 3 個月，獲得 40K 薪水</h2><p>這位學員在一開始加入六角後，就相當積極在投入前端上，每天一早起來，就能在發問區看到他問好幾個問題。有很多線上課程都會限制問題只侷限在課程範圍內，但我們並未限制，讓學員問各種職涯、學習方向，好讓他們在學習路上不會走歪，能順利地朝夢想前進。<br>　<br>從下面截圖你也看到他拿到 40K 薪水絕非偶然，公司都會希望員工保有對程式的高度熱情，也因為該主管喜歡他的人格特質，所以願意錄取他。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2Fchen.png?alt=media&token=97fcf113-3d29-4c01-82c1-a6bb47f006ce" class="border-md-gray-lighter" alt></p><h2 id="歷史系轉外商前端"><a href="#歷史系轉外商前端" class="headerlink" title="歷史系轉外商前端"></a>歷史系轉外商前端</h2><p>這位學生是台北人，原本住在台中，由於對前端網頁有興趣，開始投入前端。在網頁排版投入還 ok，但開始在 JS 邏輯上開始碰壁，而他也清楚自己需要大量的練習才有辦法突破，所以也跟著六角學院舉辦的 The F2E 練功活動實做各種作品。<br>　<br>投入半年後，最後也如願在台北找到前端工作。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2Fone.png?alt=media&token=84bfccae-f390-41b1-81ec-5c92f8f4379c" class="border-md-gray-lighter" alt></p><h2 id="大學時期努力投入，畢業後無縫轉職"><a href="#大學時期努力投入，畢業後無縫轉職" class="headerlink" title="大學時期努力投入，畢業後無縫轉職"></a>大學時期努力投入，畢業後無縫轉職</h2><p>這位學員在他還沒開始找工作時，就對他印象深刻，原因是每週三的線上問答會都不錯過，且非常好學，在學校上是視覺傳達科系。</p><p>所以當他畢業後準備求職時，我看他手邊的作品也已經相當足夠，也如願在台中找到網頁設計師工作。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2Ftai.png?alt=media&token=5b5bd13a-4088-456e-a4f9-0d743126cec9" class="border-md-gray-lighter" alt></p><h2 id="第二份前端工作獲得更好的收入與環境"><a href="#第二份前端工作獲得更好的收入與環境" class="headerlink" title="第二份前端工作獲得更好的收入與環境"></a>第二份前端工作獲得更好的收入與環境</h2><p>這位學員一開始也是在六角學員學習，在 2017 年也如願找到第一份，但由於工作內容到後期相當乏味，且練不到像是 SPA 框架、介接 API 等功能，<br>當他與我表明辭職意願後，我也與他共同檢視履歷與手邊上的資源，最終他也拿到更好的職缺。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2Fshiao.png?alt=media&token=7b8e4356-7ac2-425c-9622-370f26eed328" class="border-md-gray-lighter" alt></p><h2 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h2><p>線上課程的好處，就是我們能夠隨時線上給予協助，你也可以從上頭的截圖看出，求職絕非一蹴可幾，但只要你有夢想，有目標，六角的老師們都可以在線上與你一同規劃職涯。當寫程式找不到問題時，也能在線上給予方向。當傷心寂寞覺得冷時，也都會在線上傾聽你的處境，讓你有足夠的自信挑戰難關。</p><p>在工作上遇到困難，不懂職場環境時，六角目前也有凝聚力高的線上社群，已經就業的學長姐也能一同給予你建議與陪伴。我們會做到如此，就是希望大家都能成為「好」的工程師，未來學員們也能擁有足夠能量回饋台灣技術圈，讓大氛圍越來越好。</p><p>協助求職成功這一段是終身免費服務，只要你有註冊任何一門主要付費課程，並完成最終作業，我們就願意協助你成為網頁設計師，前端工程師，同時也附上<a href="https://www.hexschool.com/courses/">課程列表</a>。</p><p>如果你不曉得如何選課程，也可以點此 <a href="https://m.me/hexschool" target="_blank" rel="noopener">FB 訊息</a>線上與我們諮詢，希望也有機會讓你/妳成為六角學生，以上經驗分享共勉之。</p><p>2018/8/27 洧杰筆</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2Fhexschool_student.png?alt=media&amp;token=a63ff28f-90b8-44be-8ea4-2f88114bba7a" alt></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何參加線上問答會</title>
+      <link href="/2018/08/07/2018-08-07-how-to-join-zoom/"/>
+      <url>/2018/08/07/2018-08-07-how-to-join-zoom/</url>
+      
+        <content type="html"><![CDATA[<p>六角學院線上問答會是額外的服務，凡購買主要課程者都可以免費參加。線上問答會期間，講師會透過直播的方式與大家介紹特定主題，除此之外，學員也可以即時的詢問老師相關問題，至今已經超過 120 場線上問答會囉。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2F26AACD4E-304A-4B8E-A717-703E05074B29.png?alt=media&amp;token=76600ada-bbc0-4dab-b7ef-6b0c1bf7117e" alt><br>線上問答會的直播現況</p><p>內容主要是介紹課程的延伸，包含 HTML, CSS, JavaScript 等前端內容，除此之外也會介紹求職、工作、管理等新法。而我們也會不定期的邀請一些業界知名的講師介紹他們所擅長的內容。我們邀請過 <strong>黃祺浩、Kuro、吳哲宇、高見龍、Amos、Muki、陳小水</strong> 等講師，讓同學不僅聽六角老師介紹，還可以聽到業界各方大神傳授獨門絕技。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2F9E985C20-2A27-490A-8CE9-CCCB4DD7D154.png?alt=media&amp;token=7e6dfe25-78a3-4e3b-830b-c35a9d0a9225" alt><br>最近一次的合作講師主題：「使用 Canvas 來製作小遊戲吧」</p><h2 id="到底如何參加線上問答會"><a href="#到底如何參加線上問答會" class="headerlink" title="到底如何參加線上問答會"></a><strong>到底如何參加線上問答會</strong></h2><p>別急～，接下來我們就要來介紹相關資訊：</p><ul><li>時間：每週三的 19:30 ~ 21:00</li><li>通知：會透過 Udemy 告示以 Mail 的方式通知</li><li>直播方法：我們會透過 Zoom 進行直播，在課堂前則會透過 Udemy 告示提供該週的連結及登入方式。</li></ul><h4 id="時間"><a href="#時間" class="headerlink" title="時間"></a>時間</h4><p>活動的時間都是固定在每週三的 19:30 ~ 21:00，兩年來沒有中斷過，颱風天照常舉辦喔。</p><h4 id="通知"><a href="#通知" class="headerlink" title="通知"></a>通知</h4><p>我們會透過 Udemy 告示以 Mail 的方式通知，約在週一或週二時寄出，信件的標題及內容類似如下：</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2F%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-08-07%20%E4%B8%8A%E5%8D%8811.52.28.png?alt=media&amp;token=83eff3ee-48a4-4c29-976b-4ffafde441de" alt></p><h4 id="如果沒有收到通知該去哪裡查詢呢？"><a href="#如果沒有收到通知該去哪裡查詢呢？" class="headerlink" title="如果沒有收到通知該去哪裡查詢呢？"></a>如果沒有收到通知該去哪裡查詢呢？</h4><p>相關告示也會在 Udemy 平台上，可以進入課程內後尋找「告示」連結，點擊進入後也可以看到相同內容喔。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F08%2FA2F0D6A0-AD43-43C8-8C6B-47A4DFFF8136.png?alt=media&amp;token=24be9568-79d6-403e-bd5c-cfe7bd9453b7" alt></p><h4 id="怎麼進入直播頻道"><a href="#怎麼進入直播頻道" class="headerlink" title="怎麼進入直播頻道"></a>怎麼進入直播頻道</h4><p>我們直播是透過 <a href="https://zoomnow.net/" target="_blank" rel="noopener">Zoom</a> 這套工具，在活動前可先行下載及註冊該服務，接下來再循著課程通知內的連結，就能夠進入線上問答會囉。</p><h4 id="會有錄影-重播嗎？"><a href="#會有錄影-重播嗎？" class="headerlink" title="會有錄影/重播嗎？"></a>會有錄影/重播嗎？</h4><p>線上問答時，我們都會錄影，然後將合適的內容上傳至 Youtube 頻道，但有時候會因為一些狀況而不上傳錄影檔案，原因可能會有：</p><ul><li>主題涉及專案隱私或隱密內容不便公開</li><li>錄影品質不如預期</li><li>參加的合作講者不公開影片</li></ul><p>我們了解有時候工作忙不方便參加線上問答會，因此可以訂閱<a href="https://www.youtube.com/channel/UC-b2nGm0xLzic38Byti0VjA" target="_blank" rel="noopener">六角學院 Youtube 頻道</a>，影片上傳後就會優先收到通知囉。</p><h4 id="如何知道購買的課程是否具有線上問答會的資格"><a href="#如何知道購買的課程是否具有線上問答會的資格" class="headerlink" title="如何知道購買的課程是否具有線上問答會的資格"></a>如何知道購買的課程是否具有線上問答會的資格</h4><p>凡購買原價超過 1500 元的線上課程，均可以參加線上問答會。已報名者都可以在課程內的告示區查看，只要符合資格就可以看到當週的公告連結囉。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>行政轉戰前端工程師，「即戰力」是她的學習訴求 -- Clara</title>
+      <link href="/2018/06/19/2018-06-19-interview/"/>
+      <url>/2018/06/19/2018-06-19-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F06%2F%E7%9A%93%E7%90%B3.png?alt=media&amp;token=b269c00b-2694-4c33-8e3e-d383b231c32e" alt></p><p>Clara，雖是資管出身，面對業界要的 “即戰力”，體認到學校所學的理論是不夠的！出社會幾年，都是擔任行政職務，之後有了薪資方面的考量，開始立志要當「前端工程師」，她需要培養即戰力。</p><h2 id="學校所學較為理論，有業界師資的六角學院，相對能培養”即戰力”。"><a href="#學校所學較為理論，有業界師資的六角學院，相對能培養”即戰力”。" class="headerlink" title="學校所學較為理論，有業界師資的六角學院，相對能培養”即戰力”。"></a>學校所學較為理論，有業界師資的六角學院，相對能培養”即戰力”。</h2><p>在六角學院成立前，洧杰老師有推薦實體課程，也有到大學裡的教育課程學習。比較不同的是，六角學院結合理論與實戰，可以在學習過程同時吸收業界經驗。</p><p>每次課程結束後，都會有相關成品呈現，讓我對前端技術更加有概念，建立更穩固的基礎。</p><h2 id="「惰性」一直是我最大的敵人，但我只是缺乏適合的學習方式"><a href="#「惰性」一直是我最大的敵人，但我只是缺乏適合的學習方式" class="headerlink" title="「惰性」一直是我最大的敵人，但我只是缺乏適合的學習方式"></a>「惰性」一直是我最大的敵人，但我只是缺乏適合的學習方式</h2><p>高中、大學都是資訊相關科目，本身對網頁設計相當有興趣，但即便是這樣，還是會有惰性，我的學習態度比較不積極，沒有每天 coding ，老師交代的作業也臨時抱佛腳，少了持續的練習，基礎很不扎實，遇到了很多困難，也因此想放棄。</p><p>曾跟老師抱怨，都被當頭棒喝，老師認為我應該要找到適合自己學習的方式，而不是一昧抱怨這有多困難。最後聽取老師的建議：「如果在家太舒適會懶散，那就出門 coding 吧！」，我開始每天出門到咖啡廳 coding ，讓自己規律的學習，就當上班一樣！(笑)</p><h2 id="學員與老師的關係很貼近，從「技能培養」到「心理建設」"><a href="#學員與老師的關係很貼近，從「技能培養」到「心理建設」" class="headerlink" title="學員與老師的關係很貼近，從「技能培養」到「心理建設」"></a>學員與老師的關係很貼近，從「技能培養」到「心理建設」</h2><p>不只是遇到技術上的問題，學習上的心理狀態，也是很重要的一環。老師也會針對每個學員的背景和狀況，給予適當的建議，協助學員們用最務實的方式建立自信，在學習中，有了成就感，就能事半功倍。</p><p>就職方面，老師們也是業界人士，因此會精闢的分析大公司與小公司的前端職務差異，提供給學員們求職方向，讓學員找到相對適合自己的職場。</p><h2 id="在六角學院學習前端，我從不是一個人"><a href="#在六角學院學習前端，我從不是一個人" class="headerlink" title="在六角學院學習前端，我從不是一個人"></a>在六角學院學習前端，我從不是一個人</h2><p>六角學院裡面，許多不同背景、程度各異的學員，大家總是無私分享自身經驗，很願意協助彼此成長，在學習前端的路上，我不會是孤獨的。感謝這些陪伴，讓我跨越了「惰性」的障礙，促使我向前邁進。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>總是從錯誤中學習，置之死地而後生 - 阿陰</title>
+      <link href="/2018/06/18/2018-06-18-interview/"/>
+      <url>/2018/06/18/2018-06-18-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F06%2Fryin.png?alt=media&amp;token=6fb5f324-c96d-439f-968d-6c6676463152" alt></p><h2 id="無關科系，沒有程式底子沒關係！只要有學習熱情"><a href="#無關科系，沒有程式底子沒關係！只要有學習熱情" class="headerlink" title="無關科系，沒有程式底子沒關係！只要有學習熱情"></a>無關科系，沒有程式底子沒關係！只要有學習熱情</h2><p>部分學校所教授的技術已跟外面業界的趨勢相差甚遠，甚至畢業專題也不是使用系上教的技術。很羨慕有些學校擁有業師資源，學生們可以跟業界接軌，所學的技術跟經驗都能順應主流！當然「師父領進門，修行在個人」，<br>即便擁有一些程式編寫經驗，從進入前端到肯定自己的能力，我花了一年的時間。</p><p>還在練功時期，可能會不知道自己該做什麼樣的作品，洧杰老師會建議試試看 opendata 串接，<br>然後我們就開始規劃自己的資料庫、會員系統，幫自己的網站增加更多的功能。</p><p>之前有考慮過資策會等實體課程，但比起線上課程，價格偏高，以及結業後的就業追蹤並沒有那麼的完善，所以暫且不考慮。</p><p>在 Udemy 試聽了六角學院免費的試聽影片， 發現連我都聽得懂耶！而且價格很親民，就決定是它了！</p><h2 id="找公司很重要，先不計較收入，要在工作中收穫"><a href="#找公司很重要，先不計較收入，要在工作中收穫" class="headerlink" title="找公司很重要，先不計較收入，要在工作中收穫"></a>找公司很重要，先不計較收入，要在工作中收穫</h2><p>目前比較偏向中部求職，投了將近 50 間公司，面試 15 間，得到 1 間 offer，雖然耗費了不少時間，但這些過程中當然也會得到很多反饋，透過面試更了解業界對於沒有工作經驗的前端求職者，是抱以什麼樣的標準與期待。</p><p>第一份工作，年薪通常座落在 30-50 萬台幣之間，對我來說，第一份工作不會是待最久的，這是一個過程，要看的是你在這個工作裡能夠成長的幅度有多大。</p><p>覺得自己很幸運，碰到一位「一言不合就傾囊相授」的主管！(笑)他會利用下班的時間，輔導團隊，有需要的同仁就會留下來學習。</p><h2 id="找一個空間，讓有熱情的人聚在一起，擦出絢麗的火花"><a href="#找一個空間，讓有熱情的人聚在一起，擦出絢麗的火花" class="headerlink" title="找一個空間，讓有熱情的人聚在一起，擦出絢麗的火花"></a>找一個空間，讓有熱情的人聚在一起，擦出絢麗的火花</h2><p>覺得 coding 是興趣，技術程度取決於投入的心力，不會因為有相關背景就一定是工程師，或是非相關科系就完全碰不得，現在公司的前輩中有化工背景、財金背景等等，反而很少遇到資工背景的。</p><p>待業時期，在前端社群裡看到有人在揪團開讀書會，我跟六角學院的同學一起相約到參加，當時地點是在台中的 Monospace ，這個共同工作空間除了舉辦多場程式技術的活動外，還聚集很多厲害的技術工作者，也會有業界工程師主動發起專案，讓大家一起 brainstorming，當遇到前端問題時，大家都很願意分享和交流，專案都還持續在製作，需求一直在增加中。</p><h2 id="加入六角學院，對求職真的幫助很大"><a href="#加入六角學院，對求職真的幫助很大" class="headerlink" title="加入六角學院，對求職真的幫助很大"></a>加入六角學院，對求職真的幫助很大</h2><p>印象很深刻，曾拖到最後截止日，被發現作業沒有完成，老師嚴厲的說：「這不是一個成熟大人該有的表現！」，當下覺得相當羞愧。未來出社會後該要做好時間控管，即便真的無法如期完成，也要提早讓主管知道，這才是負責任的態度。老師除了教導專業技術外，在做人處事的小細節也都會提醒，不管是學習的心態、求職的焦慮等。感謝有六角大廳，在工作中遇的問題都可以到大廳發問，老師和同學們都很樂於分享解決問題的方法。<br>老師說過，每次寫 code 都是跟三個人在執行：昨天的自己、明天的自己、今天的自己，現在寫的 code 要讓明天的自己看得懂，要比昨天的自己更進步，就要從今天的自己開始努力！ </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>問自己未來想要什麼？我選擇與時俱進的工作 -- Joseph</title>
+      <link href="/2018/06/17/2018-06-17-interview/"/>
+      <url>/2018/06/17/2018-06-17-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F06%2F%E5%98%89%E8%B1%90.png?alt=media&amp;token=0330137d-6221-423f-bd24-ac4116a93854" alt></p><p>Joseph 多媒體學系畢業，出社會 5-6 年，從事過設計助理、數位廣告代理商業務、倉管，在開始思考未來方向之際看到了六角學院，開啟了 coding 人生。半年內，一家大型電商公司主動聯繫，現在擔任前端工程師一職。</p><h2 id="半年前開始思考未來的發展方向"><a href="#半年前開始思考未來的發展方向" class="headerlink" title="半年前開始思考未來的發展方向"></a>半年前開始思考未來的發展方向</h2><p>出社會也五六年了，做過很多工作，尤其倉管，體力相當吃重，現在的我還年輕可以承受，但再五六年之後呢？我開始思考未來的方向，我想提升自我技能、增加自我價值。</p><p>當時我壓根兒不知道六角學院是什麼？看到身邊有朋友點讚，覺得很好奇！<br>於是點進官網晃晃，知道是個教人做網頁的平台，就這樣我加入了第一個課程： HTML/CSS、Javascript。</p><h2 id="從來就不只有一種方式，除了課程內容，我更喜歡舉一反三"><a href="#從來就不只有一種方式，除了課程內容，我更喜歡舉一反三" class="headerlink" title="從來就不只有一種方式，除了課程內容，我更喜歡舉一反三"></a>從來就不只有一種方式，除了課程內容，我更喜歡舉一反三</h2><p>大學時期只用過 Dreamweaver 算是 coding 界的白紙(笑)。</p><p>在六角學院學習前端不是理論課，每堂課程結束都會有成品呈現，可以增進我們對前端的想像，看得到的東西總是比較踏實，當然，實作才能知道自己真的懂多少，看著自己一步步寫出來的作品，也會很有成就感。</p><p>我喜歡運用課堂上的知識，舉一反三使用別的方式替代，如果遇到問題，可能自己真的還沒有搞懂，都可以與老師討論交流。</p><p>雖然是多媒體學系出身，但沒有想過回去做遊戲耶！因為學生時期的記憶就是在爆肝(笑)。<br>老實說製作遊戲沒有相當的硬體設備很難完成，不過前端工程師就不同了，提著筆電到哪裡都可以 coding，是個時間與空間相對有彈性的工作。</p><h2 id="相較其他前端教學課程，六角學院的優勢在-“求職”"><a href="#相較其他前端教學課程，六角學院的優勢在-“求職”" class="headerlink" title="相較其他前端教學課程，六角學院的優勢在 “求職”"></a>相較其他前端教學課程，六角學院的優勢在 “求職”</h2><p>即便現在得到自己理想的工作，還是不敢鬆懈。近期，與六角學院的台北學員組成一個 Workshop 彼此交流新的技術與學習心得。</p><p>從加入六角學院到就業，共花了半年的時間。因幫自己訂立了目標“短期內找到前端工程師職務”，我全心在學習前端技術。對於求職方面，履歷、面試以及目標職務的相關技能準備，老師也都會給予建議，可謂是全方位的方展。</p><h2 id="給那些開始學習前端，或是正在前端路上的學員們建議"><a href="#給那些開始學習前端，或是正在前端路上的學員們建議" class="headerlink" title="給那些開始學習前端，或是正在前端路上的學員們建議"></a>給那些開始學習前端，或是正在前端路上的學員們建議</h2><p>不要害怕發問，如果有問題就儘管問，那會讓你快速成長，上網搜尋答案、翻書、到社群發問都可以，但重點是「問對問題」。</p><p>“如何” 發問其實是一門學問，六角老師們擅長引導學員獨立思考，培養尋找解答，附上老師們的教學文：<a href="https://idoc.hexschool.com/tobef2e/ru-he-you-xiao-lv-di-google-xun-zhao-wen-ti-bing-xue-xi-xin-ji-shu.html" target="_blank" rel="noopener">如何有效率地 Google 尋找問題並學習新技術</a>給你魚不如教你釣魚的方法。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>只要想著半年後的樣子，這樣的喜悅就能擊敗學習的孤獨感 - Greene</title>
+      <link href="/2018/06/16/2018-06-16-interview/"/>
+      <url>/2018/06/16/2018-06-16-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F06%2FGreene.png?alt=media&amp;token=9ac54c5b-9785-4568-9a16-f03bf294d5de" alt></p><p>我了解自主學習是很孤獨的，從挑選適合自己的入門課程開始，到如何找尋第一份前端職，當身邊沒有相關資源、當線上文件等級與你太遙遠、當不確定何時才能精通、經濟壓力的焦躁不安，「毅力」會是成功的關鍵！！</p><h2 id="雖然以資工背景出身，我和大家的起跑點是一樣的！"><a href="#雖然以資工背景出身，我和大家的起跑點是一樣的！" class="headerlink" title="雖然以資工背景出身，我和大家的起跑點是一樣的！"></a>雖然以資工背景出身，我和大家的起跑點是一樣的！</h2><p>當時對電腦只有基礎的了解，所以選讀資訊工程系，但喜歡玩電腦跟喜歡電腦，這是兩回事！在學期間覺得 coding 相當枯燥乏味，沒有好好把握課程內容和教授們有些代溝，我將重心放在社團、打工。</p><p>大三時，家裏發生些變化，我瞬間成為家中經濟支柱，一次次各式各樣的打工，領著微薄的薪資，我開始意識到必須好好的規劃未來的路。我跟朋友創業，為了自架網站，我重拾大學荒廢的學科，加入線上課程，雖然以資工背景出身，我依然從零開始！畢業後，我的資訊知識頂多只有知道編譯器的存在，可以說是零基礎。即便我認為在這領域有些天份，還是花了比預期長的一段時間從基礎學起。</p><h2 id="學習前端最重要的兩件事：閱讀、思考"><a href="#學習前端最重要的兩件事：閱讀、思考" class="headerlink" title="學習前端最重要的兩件事：閱讀、思考"></a>學習前端最重要的兩件事：閱讀、思考</h2><p>網路上有很多技術文件都是免費的，但有些不夠入門，除了你要有一定的基礎能力，還需要閱讀、思考能力，才能吸收並消化成自己的東西，基礎很重要！</p><p>多參考別人的網頁成品，這樣會更有憧憬，開始嚮往自己也能像大家一樣做出很酷炫的作品。可以到<a href="https://www.awwwards.com/" target="_blank" rel="noopener">awwwards</a>上，參考大家的視覺作品，了解前端趨勢、培養設計 sense。</p><h4 id="如何挑選適合自己的前端課程？"><a href="#如何挑選適合自己的前端課程？" class="headerlink" title="如何挑選適合自己的前端課程？"></a>如何挑選適合自己的前端課程？</h4><p>網路上學員都來自四面八方，出身背景都不一樣，程度也參差不齊，若要用同一套課程將大家在短時間內都變成工程師，有一定的難度。六角學院對於學員的「基礎」相當要求，有些人可能有慧根學得快，有些人可能需要較多的時間打通任督二脈，可以肯定的是基礎打穩，後續的學習會非常迅速！</p><p>對我來說，線上課程較優於實體課程，可以反覆回放自己不清楚的部分，像書一樣隨時翻閱，這是線上課程的優勢！</p><p>我會去搜尋評價來挑選線上課程，看過很多大家分享的心得，知道六角學院在網路上已經有一定程度的口碑，教學風格很像 workshop ，老師會定期舉辦研討會分享新主題，隨時可以在群組裡發問，不只老師、學員們也都熱絡給予回應，這樣彼此交流討論的學習氣氛，讓自主學習不會感到孤獨無助，會更有信心！</p><h4 id="從學習到就業，只用了六個月，關鍵是？"><a href="#從學習到就業，只用了六個月，關鍵是？" class="headerlink" title="從學習到就業，只用了六個月，關鍵是？"></a>從學習到就業，只用了六個月，關鍵是？</h4><p>“一天很漫長，六個月卻很短暫” 我的部落格這樣寫著，覺得關鍵是「毅力」。</p><p>待業的焦躁感與不安，我也有經歷過，特別是當我成為家中經濟支柱時，感覺會更為強烈，但只能告訴自己要定心，除了全力以赴，其他擔憂都是多餘的，因為已經沒有退路了！</p><p>原本以為我可以用一週的時間，完整架起一個網站！(笑)。如前言所說，網路上有很多免費的文件可以參考，但都不夠入門，與自己的程度有明顯的落差，這時就需要一個幫助自己入門的教材，基礎扎穩後再看高端的技術文件會較得心印手！</p><h2 id="新手前端工程師求職，如何挑選公司類型？"><a href="#新手前端工程師求職，如何挑選公司類型？" class="headerlink" title="新手前端工程師求職，如何挑選公司類型？"></a>新手前端工程師求職，如何挑選公司類型？</h2><p>在面試的時候，有個面試官給了我一些建議，公司有分專案型、產品型。<br>產品型公司，運用特定技術，維護或優化既有產品，需要較精深、較有經驗的專業人員；專案型公司接觸案子種類多，運用的技術廣但不需太深，相對適合新手前端工程師。</p><h2 id="給六角學弟妹的勉勵"><a href="#給六角學弟妹的勉勵" class="headerlink" title="給六角學弟妹的勉勵"></a>給六角學弟妹的勉勵</h2><p>自學的過程中是很孤獨的，特別是身邊沒有接觸過相關技術的人，會覺得只有一人獨自奮鬥，學會在其中找樂趣，幫助自己度過，很快就會苦盡甘來了。</p><p>Greene 作品集：<a href="https://wizardgreen.github.io/A-page-about-Greene/#home" target="_blank" rel="noopener">page about Greene</a></p><p>Greene 部落格：<a href="https://wizardgreen.github.io/Blog/2018/04/02/2018-%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%A9%A6%E5%BF%83%E5%BE%97/" target="_blank" rel="noopener">前端自學&amp;面試心得</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>專精一職，涉略所有，才能有無限可能 - Simon</title>
+      <link href="/2018/06/15/2018-06-15-interview/"/>
+      <url>/2018/06/15/2018-06-15-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F06%2Fsimon.png?alt=media&amp;token=5721dbaa-202b-45c8-acaa-c02ac9a634b7" alt></p><p>Simon 非資工相關科系畢業，在畢業前因為大學教授的一句話，開始接觸前端技術，加入了六角學院學習前端技術，但因南部相關職缺少之又少且待遇並不是很友善，決定北上另尋機會，且已順利找到第二份前端工程師工作。</p><h2 id="前端虐我千百遍，我待前端如初戀"><a href="#前端虐我千百遍，我待前端如初戀" class="headerlink" title="前端虐我千百遍，我待前端如初戀"></a>前端虐我千百遍，我待前端如初戀</h2><p>我一直都很愛視覺化的事物，支撐我到現在的是「視覺」這一塊，至於為什麼不選擇當設計師而是前端工程師？如果你喜歡設計，而程式又可以成完設計的其中一項工具，不用拘泥在設計軟體中，用程式做畫面很厲害耶！(笑)</p><p>學期前端的過程中，我遇到滿多困難的，常常會再問題上花很多時間，有點痛苦！<br>我一直搜尋，會把網路上查到的文件說明，通通紀錄在筆記本裡，透過不斷地思考、不斷地找尋規則，隔了一、兩週後，就突然解開，發現自己根本都是卡在一些小問題上。</p><p>能夠在工作中學習自然是很幸運的事，但當前端工程師做著比較例行性的工作內容，其實是相當乏味的，必須花時間讓自己吸收新知，不然自身的精力很快就會被消磨殆盡。<br>工作期間，老師們推坑參加 <a href="https://ithelp.ithome.com.tw/users/20104221/ironman/1403" target="_blank" rel="noopener">IT 鐵人賽</a>，當時有點把自己逼著，上班寫程式到下班後還是在寫程式，雖然一整天下來都在看著程式碼，大腦有些吃不消，但都是為了讓自己能夠學習新的東西，過程很充實也同時加深了對前端技術的理解。</p><h2 id="對於學習，實體課程與線上課程的差異？"><a href="#對於學習，實體課程與線上課程的差異？" class="headerlink" title="對於學習，實體課程與線上課程的差異？"></a>對於學習，實體課程與線上課程的差異？</h2><p>出社會求職前，先完成六角學院的三門課：HTML/CSS、jQuery、RWD 後，為了求職、政府補助，申請了台中資策會課程。</p><p>實體課程各學員們的程度不一，上課期間也無法暫停，老師教過了就過了，必須利用下課時間另外詢問，通常都是1~2小時後的事情了;相較線上課程，5分鐘的短片可以用20分鐘理解完整，中途如果注意力不集中，也可以回放重新觀看，相對客製化一些，但會需要有較強的自律能力。</p><p>有個思考誤區是，實體課程的人學習能力不如線上自學者，其實實體課程學習與線上學習是可以併行的！六角學院的老師們除了在線上傳授專業知識，也會因人而異的給予建議，在求職方面老師們給了我很多幫助，真的讓我受寵若驚，只是請老師幫忙看履歷，居然意外獲得了職涯發展的專業建議。</p><h2 id="前端工作需要注意什麼？"><a href="#前端工作需要注意什麼？" class="headerlink" title="前端工作需要注意什麼？"></a>前端工作需要注意什麼？</h2><h3 id="公司面向來看"><a href="#公司面向來看" class="headerlink" title="公司面向來看"></a>公司面向來看</h3><p>在前公司擔任前端工程師半年，在期間負責了公司直播服務串流等，本來覺得是短期活動，但公司肯定我的能力，貌似有意要長久經營並擴大這類型服務，這跟我進公司的初衷有些違背，長期下來認為這樣的情況不利於前端技術的學習，所以另外為自己規劃了。</p><h3 id="組織面向來看"><a href="#組織面向來看" class="headerlink" title="組織面向來看"></a>組織面向來看</h3><p>部門內部若有 codeing review 或自動化測試等相關流程，對技能成長是好的，可以透過這樣的流程檢視自己的程式品質。<br>比較可惜的是，我沒有經歷這樣的流程，部門事務較繁重，當時沒辦法理解自己是否能撰寫出好的程式碼。</p><h3 id="個人面向來看"><a href="#個人面向來看" class="headerlink" title="個人面向來看"></a>個人面向來看</h3><p>主管就算忙碌，自己也可以積極做好向上管理，每週向主管回報自己的狀況，讓主管知道組員的狀況並提供建議，進了職場，主動積極很重要，不會有人手把手的義務教導，成長必須靠自己爭取。</p><h2 id="Monospace-與-六角學院合作舉辦網頁學習的計畫"><a href="#Monospace-與-六角學院合作舉辦網頁學習的計畫" class="headerlink" title="Monospace 與 六角學院合作舉辦網頁學習的計畫"></a>Monospace 與 六角學院合作舉辦網頁學習的計畫</h2><p>自前公司離職後，待業期在台中 <a href="https://monospace.tw/" target="_blank" rel="noopener">Monospace</a> 參加網頁學習計畫，以六角學院的教程補助，在場會有 mentor 協助學員們解決當中遇到的問題。</p><p>當然我已不是坐在台下發問的門外漢了，既然我有從零到一的學習經驗、工作經歷，在這個計畫內能理解大家在學習前端中可能會遇到的問題，我也會主動向學員分享自己的學習經驗、求職分享，學習最有成效的方式，就是用自己的文字將知識完整傳達給另外一個人知道。</p><p>前端新手比較常碰到的問題，可能會是在JavaScript， HTML/CSS 的課程中都還可以駕馭，但正式進入 JavaScript 後是程式思維，新手比較無法理解，這時會很需要有經驗的前輩引導，若在這一塊的基礎打穩了，那麼後面的技術也就差不多通了。</p><p>題外話，我最初在學習的時候，會邊看 JavaScript 邊比對 <a href="https://sites.google.com/site/jingprogram/scratch" target="_blank" rel="noopener">Scratch</a> 來幫自己模組化建立觀念。</p><h2 id="給學習前端的大家一些建議吧！"><a href="#給學習前端的大家一些建議吧！" class="headerlink" title="給學習前端的大家一些建議吧！"></a>給學習前端的大家一些建議吧！</h2><p>一開始不用過於要求自己樣樣都要會，找一個自己有興趣的技術努力專研，其他的領域可以先點到為止，將這些不同領域的經驗和思考方式，帶到自己的領域並結合自身專業，開闊眼界才能讓自己有無限的可能。</p><p>有些待業的人在學習過程中，周遭的人不認同他們的選擇，可能會影響學習上的注意力，建議可以好好思考，若下定決心非達成不可，那麼可以試著脫離那樣的環境，在咖啡廳、工作空間、圖書館等地方學習，幫自己創造適合學習的環境，才能事倍功倍。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The F2E - 前端修練精神時光屋</title>
+      <link href="/2018/05/09/2018-05-09-the_f2e/"/>
+      <url>/2018/05/09/2018-05-09-the_f2e/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F05%2FTheF2E_banner.png?alt=media&amp;token=4e663e89-554e-4bed-83ac-000fddabd8ab" alt></p><p>你想變強嗎？<br>你想獲得力量嗎？<br>你想透過前端改變你的生活，但找不到地方修練嗎？</p><p>如果你的答案是「Yes」那麼你來對地方了！</p><h2 id="修練內容"><a href="#修練內容" class="headerlink" title="修練內容"></a>修練內容</h2><ol><li>一週挑戰一個修練主題，總計九週，可挑選「前端工程師」、「前端設計師」的挑戰方向</li><li>每道修練主題的最低通過門檻是「至少要完成 CSS 網頁排版」</li><li>在期限內將成果上傳到雲端空間 (CODEPEN、Github、JSBIN) 後，再登記在 Google 表單上  </li></ol><p><img src="https://firebasestorage.googleapis.com/v0/b/project-402e8.appspot.com/o/TheF2E_topic.png?alt=media&amp;token=d08e9634-7ced-4351-8d13-2d00592cd97b" alt></p><h2 id="在-The-F2E-會獲得什麼資源？"><a href="#在-The-F2E-會獲得什麼資源？" class="headerlink" title="在 The F2E 會獲得什麼資源？"></a>在 The F2E 會獲得什麼資源？</h2><ul><li>資源授權：本活動的所有授權都是 CC0 格式，方便挑戰者重製成自己的 side project 與作品，授權範圍含：<ul><li>user story (使用者故事)</li><li>mockup (設計稿) </li></ul></li><li>協助就業：若挑戰週數到達六週以上，並通過業界前端審核品質標準，六角學院將會提供求職資源，協助挑戰者媒合就業</li><li>團結力量大：可觀看其他挑戰者的程式碼，進以觸類旁通，瞭解程式邏輯寫法。並能加入FB 交流社團，六角學院們的老師也會加入。</li></ul><h2 id="報名與參賽方式"><a href="#報名與參賽方式" class="headerlink" title="報名與參賽方式"></a>報名與參賽方式</h2><p>請依照下列三步驟進行報名</p><ul><li><strong>報名時間</strong>：5/13(日)~7/29(日)，正式開賽時間為 6/4 (一)</li><li><strong>報名方式</strong>：填寫此<a href="https://goo.gl/forms/x2N1iluIvRfu9AHr2" target="_blank" rel="noopener">報名表單</a>，加入 <a href="https://www.facebook.com/groups/173311386703334/" target="_blank" rel="noopener">The F2E FB 社團</a>。</li><li><strong>開賽規則</strong>：每週一中午 12 點公布新題目，隔週週一中午 12 點前將作品上傳到 (CODEPEN、JSBIN、Github Pages)。</li><li><strong>發文登記</strong>：開賽後的每週登錄作品請上傳至此<a href="https://goo.gl/forms/ufHCDuBmobghw4Ny1" target="_blank" rel="noopener">表單</a>，當週才算挑戰成功。</li></ul><p><img src="https://firebasestorage.googleapis.com/v0/b/project-402e8.appspot.com/o/TheF2E_rule.png?alt=media&amp;token=b344e794-6783-49cf-8777-ccccfb67113b" alt></p><h2 id="技能樹選擇"><a href="#技能樹選擇" class="headerlink" title="技能樹選擇"></a>技能樹選擇</h2><p>請依照自己想投入的部分，額外選擇下面兩條修練方向。</p><h3 id="a-前端設計師"><a href="#a-前端設計師" class="headerlink" title="a.前端設計師"></a>a.前端設計師</h3><p><strong>設計 UI 介面</strong>：每道修練主題我們都會提供 user story (使用者故事)，你可以依此使用 Sketch、Illustrator 來設計 mockup，並同時開發網頁介面，以加強自己對 Web UI 的掌握度。</p><h3 id="b-前端工程師"><a href="#b-前端工程師" class="headerlink" title="b.前端工程師"></a>b.前端工程師</h3><p><strong>JS開發 &amp; 介接 API</strong>：在開發中大型介面時，一個網頁上可能會有許多第三方介接的資料，例如後端的 RESTful API、Google Map、BaaS 等等，您可以思考我們所提供的修練主題，試著導入服務進去。</p><h2 id="修練方向"><a href="#修練方向" class="headerlink" title="修練方向"></a>修練方向</h2><p>你可以依照我們提供的修練主題，主動練習自己想投入的新技術。為了確保每週都能挑戰功能，會建議70%用自己會的技術，30%使用剛學會的新技術，以避免挑戰曲線不會過高。</p><p>以 CSS、JavaScript 為例，你可投入：</p><h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><ul><li>會使用 float 排版時，可以嘗試使用 flexbox、grid 排版</li><li>思考響應式排版的實做方式，並在 iPad、mobile 有極好的使用者體驗</li><li>transition、animation、transform 動畫效果，提升網頁動線</li><li>能使用 CSS 實做出來的效果，就不要使用 JavaScript</li><li>預處理器 (SCSS、LESS) 與 PostCSS</li><li>CSS 框架 (Bootstrap、pure)</li><li>設計模式 (SMACSS、OOCSS、BEM、MVCSS)</li></ul><h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><ul><li><strong>JS 基礎</strong>：使用一個你不曾用過的 JS 技巧，例如<ul><li>array map 、filter、reduce</li><li>閉包、遞迴、物件導向</li><li>JSON 資料、字串處理</li><li>正規表達式 (Regular Expression)</li></ul></li><li><strong>模組管理</strong>：使用任務管理工具 (grunt、gulp)、模組打包工具 (webpack)</li><li><strong>ECMAScript</strong>：ES 6、7 、8，並使用 Babel 兼容網頁瀏覽器。</li><li><strong>HTML5 API</strong>：Localstorage、Geolocation、File API</li><li><strong>介接第三方服務 API</strong>： social login、weater、open data、自建 API</li><li><strong>導入 SPA 框架</strong>： Vue、React、Angular</li><li><strong>工具框架</strong>：lodash、Underscore</li><li><strong>應用程式服務</strong>：瀏覽器插件 (chrome extension)、桌面應用程式 (electron)、APP (ionic、react native)</li><li><strong>2、3D 動畫開發</strong>：使用 SVG、canvas、WebGL 設計動畫效果，例如 D3.js、three.js</li><li><strong>Node.js</strong>：NPM 、後端框架 (koa、express)、API 設計、測試(Mocha、Nightwatch)</li><li><strong>程式檢查</strong>：ESLint、JSHint</li></ul><h2 id="獎勵機制"><a href="#獎勵機制" class="headerlink" title="獎勵機制"></a>獎勵機制</h2><ul><li>完成三道關卡：授予銅級數位勳章，並記錄在戰績榜上</li><li>完成六道關卡：授予銀級數位勳章，並記錄在戰績榜上，六角學院將主動提供前端就業資源。</li><li>完成九道關卡：授予金級數位勳章，並記錄在戰績榜上，六角學院將主動提供前端就業資源，實體完賽獎狀。</li></ul><h2 id="前端直播客分享"><a href="#前端直播客分享" class="headerlink" title="前端直播客分享"></a>前端直播客分享</h2><p>本次活動同時邀請到許多有在經營前端直播的資深開發者，藉此促進交流，大幅升級自己的腦袋！</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F05%2F%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-05-13%20%E4%B8%8B%E5%8D%889.32.11.png?alt=media&amp;token=a3786e70-fa62-4f63-a536-f2937f560579" alt></p><h2 id="常見問答"><a href="#常見問答" class="headerlink" title="常見問答"></a>常見問答</h2><h3 id="Q：如果某一週不小心挑戰失敗，是否能再繼續挑戰後面關卡？"><a href="#Q：如果某一週不小心挑戰失敗，是否能再繼續挑戰後面關卡？" class="headerlink" title="Q：如果某一週不小心挑戰失敗，是否能再繼續挑戰後面關卡？"></a>Q：如果某一週不小心挑戰失敗，是否能再繼續挑戰後面關卡？</h3><p>可以，儘管那週挑戰失敗，之後您仍可以挑選喜歡的關卡進行挑戰，並在該關卡期限內繳交作品。</p><h3 id="Q：假使選擇「前端設計師」，是代表每週都要自己設計-UI-外，還必須開發網頁前端？"><a href="#Q：假使選擇「前端設計師」，是代表每週都要自己設計-UI-外，還必須開發網頁前端？" class="headerlink" title="Q：假使選擇「前端設計師」，是代表每週都要自己設計 UI 外，還必須開發網頁前端？"></a>Q：假使選擇「前端設計師」，是代表每週都要自己設計 UI 外，還必須開發網頁前端？</h3><p>不用，每道修練主題的最低通過門檻是「至少要完成 CSS 網頁排版」，您可以挑選喜歡的主題，依照 user story 來設計 UI 即可。</p><h3 id="Q：為什麼報名時間到-7-29，而-6-4-正式開賽？"><a href="#Q：為什麼報名時間到-7-29，而-6-4-正式開賽？" class="headerlink" title="Q：為什麼報名時間到 7/29，而 6/4 正式開賽？"></a>Q：為什麼報名時間到 7/29，而 6/4 正式開賽？</h3><p>6/4 正式開始第一週的挑戰題目，就算沒跟到第一週，參加之後的比賽，而 7/29 正是最後一週的挑戰賽。</p><p>活動最新消息將會公佈在 <a href="https://github.com/hexschool/TheF2E/blob/master/README.md" target="_blank" rel="noopener">六角學院 Github</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> skilltree </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2018 前端開發者學習地圖！</title>
+      <link href="/2018/04/16/2018-04-16-skill_tree/"/>
+      <url>/2018/04/16/2018-04-16-skill_tree/</url>
+      
+        <content type="html"><![CDATA[<p>六角學院輔導許多同學從無經驗轉職到前端，大多同學在接觸我們時總是會問到「我是學設計的，請問該如何學習前端」、「我會基本 HTML, CSS，該如何繼續精進相關技能」、「如果我毫無經驗，該學到什麼程度才能就業呢？」、「我身在這個產業，卻沒有方向，請問我該往哪邊發展呢？」。</p><p>這邊老師再次提供 <strong>2018版 前端開發者學習地圖</strong> 供同學參考～。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F04%2F%E6%8A%80%E8%83%BD%E6%A8%B9_web-1.png?alt=media&amp;token=f2e4391d-ff1a-4d67-82b2-33e8851cff64" alt="前端開發者學習地圖 - 上"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F04%2F%E6%8A%80%E8%83%BD%E6%A8%B9_web-2.png?alt=media&amp;token=38cff38a-a190-4729-be04-2db9c57750dc" alt="前端開發者學習地圖 - 下"></p><p>這張圖很漂亮吧，歡迎下載 <a href="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F04%2F%E6%8A%80%E8%83%BD%E6%A8%B9_web.png?alt=media&token=319c06b9-5292-4c14-ae40-f1fc356594d2" traget="_blank" target="_blank" rel="noopener">完整版</a>。</p><h2 id="必備技能"><a href="#必備技能" class="headerlink" title="必備技能"></a>必備技能</h2><p>雖然說是必備技能，但如果你還沒有任何經驗，只有先保有<strong>研究的心</strong>即可，剩下的部分可以再進入職場前再慢慢補足即可喔。</p><h2 id="入門前端"><a href="#入門前端" class="headerlink" title="入門前端"></a>入門前端</h2><p>如果你是剛入門前端的開發者，會期許你至少熟悉 CSS 與 JavaScript 的分支。沒有程式的背景下，從 CSS 入門會是個好主意，這裡的學習曲線不會那麼的陡峭，且網頁的頁面基礎正式從此開始。</p><p>此時 CSS 最需要了解的部分為響應式網頁，有餘力的情況下至少接觸一個 CSS 預處理器及一個 CSS 框架，透過框架能夠使 CSS 開發觀念更為穩固(請先確保有 CSS 基礎再來學習 CSS 框架，這樣才能具有更好的架構觀念)。</p><p>具有 CSS Selector 觀念後後，就可以開始慢慢接觸 JavaScript，如果沒有任何經驗者，我們會推薦先試試看 jQuery，體驗 JavaScript 與 HTML、CSS 有什麼樣的不同，但如果是具有經驗的開發者，可直接嘗試接觸 JavaScript 喔 :D。</p><h2 id="前端設計師"><a href="#前端設計師" class="headerlink" title="前端設計師"></a>前端設計師</h2><p>設計前端大多為設計背景出身，除了以上入門技能以外，這類開發者還要專精繪圖工具及設計規範。</p><p>好的繪圖工具能夠讓設計師事半功倍，並且能夠強化與其他工程師合作的摩擦，因此推薦使用 Sketch 作為設計開發的主要工具。另外設計規範也是很重要的，設計規範猶如平面設計的 VI，是一間企業的核心精神，而學習設計規範將能夠提高網頁設計的穩定性，藉此提高網頁設計的質感。</p><h2 id="前端開發者"><a href="#前端開發者" class="headerlink" title="前端開發者"></a>前端開發者</h2><p>JavaScript 學會基礎語法後，可選擇 JS Framework 來進修，框架對於工作效率有很大幫助，這邊列出目前主流的框架，除了這些以外，您也能依據工作需求去選擇合適框架。</p><p>JavaScript 是一個相當自由且強大的語言，他可以與許多工具搭配，所以不斷的接觸新事物是非常重要的，在目前有許多任務管理、套件管理、打包工具都能夠讓 JavaScript 更上層樓。工作效率遇到貧頸嗎？在學習新的技術前，不妨先試試一些工具吧。</p><h2 id="全端領域"><a href="#全端領域" class="headerlink" title="全端領域"></a>全端領域</h2><p>為了提供更好的服務，以及探尋未知的領域，開發者會慢慢的嘗試各種不同的冒險，第三方 API、測試、專精技巧甚至是後端領域，都有許多內容值得深入喔。</p><p>如果你想從前端領域找份好工作，可以參考我們這份 (<a href="https://quip.com/D59vAxcgG8Qc" target="_blank" rel="noopener">https://quip.com/D59vAxcgG8Qc</a>) 邁向前端工程師之路的文件逐一學習。如果你還有其他學習或工作上的問題，也歡迎透過以下連結加入我們喔～</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> skilltree </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>線上講座 - 簡報力就是你的說服力</title>
+      <link href="/2018/04/11/2018-04-11-keynote-king/"/>
+      <url>/2018/04/11/2018-04-11-keynote-king/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F01%2Fkeynote_cover.png?alt=media&amp;token=bd37bf3b-dc9f-4ec5-8f01-31e01cfc743f" alt></p><p>工作、面試、報告中絕對免不了簡報，好的簡報不僅賞心悅目、提高內容的說服力，並且還能時時提醒自己接下來要介紹的內容，絕對是會議中的一等一神器。</p><p>我們課程中已經介紹許許多多關於開發相關主題，但除了程式開發外，我們也需要具備市場上許多通用技能，如：寫作、美感、行銷、會話等，這些都會無形的增加開發者在市場上的價值。這次我們特別邀請數千人追蹤、簡報模板超過萬人次下載的簡報高高手「黃祺浩」來和我們分享 “<strong>決勝簡報力</strong>“！成就學員在市場上的千萬競爭力！</p><h4 id="黃祺浩個人簡介"><a href="#黃祺浩個人簡介" class="headerlink" title="黃祺浩個人簡介"></a>黃祺浩個人簡介</h4><p>黃祺浩，熱衷簡報設計，喜歡閱讀勝於旅遊。原是人力銀行業務主管，在轉職過程中，因簡報作品而獲得出書與簡報設計工作的機會。設計過高達兩千六百多次分享的簡報及<strong>破萬人次下載的簡報模版</strong>，也曾參與製作 <strong>Mercedes-Benz</strong> 與 <strong>Dell</strong> 發表會的簡報，並著有《<strong>Keynote 關鍵報告</strong>》一書。</p><h4 id="主題內容"><a href="#主題內容" class="headerlink" title="主題內容"></a>主題內容</h4><ul><li>美感與靈感</li><li>簡報設計規則與圖文配置</li><li>簡報中的心法分享</li></ul><p>課程大綱可能會略有調整，講師會特別調配出適合六角學員的課程內容喔。</p><h4 id="課程時間"><a href="#課程時間" class="headerlink" title="課程時間"></a>課程時間</h4><p>課程會安排在線上問答 (4/25 週三晚上 7:30)：</p><h4 id="報名辦法"><a href="#報名辦法" class="headerlink" title="報名辦法"></a>報名辦法</h4><p>凡 <strong>有註冊六角學院主要課程學員</strong>，在 Udemy 信箱每週都能收到課程通知(記得收信喔)，課程內容將無須額外付費，<strong>主要課程列表</strong> 如下：</p><ul><li>使用 HTML、CSS 開發一個網站</li><li>jQuery 網頁互動效果</li><li>JavaScript - 學徒的試煉</li><li>RWD 響應式網頁設計</li><li>一頁式金流商務網頁</li><li>Bootstrap 4</li><li>Node.js 前後端開發實戰<br><strong><a href="/courses/">&gt;&gt; 進入課程列表 &lt;&lt;</a></strong></li></ul><h4 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h4><ul><li><strong>課程內容不一定會錄影，請同學盡量踴躍參加</strong></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>線上講座 - Node.js 的各種運用</title>
+      <link href="/2018/01/16/2018-01-16-jan-node/"/>
+      <url>/2018/01/16/2018-01-16-jan-node/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F01%2Fjan_cover.png?alt=media&amp;token=d3bc0edf-1044-434f-962a-92f9a0c71a88" alt></p><p>Node.js 課程中老師介紹了許多基礎的概念，但其實 Node.js 可以運用的層面非常的廣，光只靠老師的一堂課無法涵蓋所有的內容，因此我們從各地尋找優秀的講者，讓同學接觸更多不同的 Node.js 應用概念。</p><h4 id="課程時間"><a href="#課程時間" class="headerlink" title="課程時間"></a>課程時間</h4><p>課程會安排在線上問答 (週三晚上 7:30)的時間，詳細課表如下：</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F01%2Fnode_jan_course.jpg?alt=media&amp;token=5dd2c40f-6af0-4706-b01b-53c0751b173a" alt></p><p><strong>Howard</strong> 所介紹的是在 2018 ITHome 鐵人賽所撰寫的文章 「<a href="https://ithelp.ithome.com.tw/users/20107159/ironman/1325" target="_blank" rel="noopener">爬蟲始終來自於墮性</a>」，屆時 Howard 會在現場展現爬蟲威力以及開發上的細節及心得，讓同學不僅能夠了解爬蟲，更能了解 Node.js 在不同網域下的實作應用。</p><p><strong>默司</strong>是<a href="https://www.facebook.com/readbook999/" target="_blank" rel="noopener">線上讀書會</a>的核心成員，線上讀書會每日皆會有一至兩場的線上活動，而在活動當日會介紹 Socket 的連線方式，讓瀏覽器與伺服器的溝通可以建立連線，Socket 可應用在聊天室、即時看盤、看盤、多人在線遊戲等服務上喔。</p><h4 id="報名辦法"><a href="#報名辦法" class="headerlink" title="報名辦法"></a>報名辦法</h4><p>凡 <strong>有註冊六角學院主要課程學員</strong>，在 Udemy 信箱每週都能收到課程通知(記得收信喔)，課程內容將無須額外付費，<strong>主要課程列表</strong> 如下：</p><ul><li>使用 HTML、CSS 開發一個網站</li><li>jQuery 網頁互動效果</li><li>JavaScript - 學徒的試煉</li><li>RWD 響應式網頁設計</li><li>一頁式金流商務網頁</li><li>Bootstrap 4</li><li><a href="/courses/nodejs.html">Node.js 前後端開發實戰</a></li></ul><p><strong><a href="/courses/">&gt;&gt; 進入課程列表 &lt;&lt;</a></strong></p><h4 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h4><ul><li>建議具備 Node.js, JavaScript 能力</li><li><strong>課程內容不一定會錄影，請同學盡量踴躍參加</strong></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>年紀的追趕下，擁有專業技能，才能踏實完成每一步 -- Chelsea</title>
+      <link href="/2018/01/04/2018-12-04-interview/"/>
+      <url>/2018/01/04/2018-12-04-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F01%2Finterview_chelsea.jpg?alt=media&amp;token=9b8374ca-1f94-47bc-9c14-d8ca7819afe0" alt></p><blockquote><p>訪問過程中，Chelsea 聽起來是個相當活潑外向的女孩兒，爸爸、哥哥都是從事與網頁設計相關的工作，因為這樣從小就對網頁設計不陌生。家人引領入前端領域，而她有著強烈學習動力，在完成六角學院的課程後，拿到工程師門票。</p></blockquote><h4 id="為了培養一技之長，我選擇前端"><a href="#為了培養一技之長，我選擇前端" class="headerlink" title="為了培養一技之長，我選擇前端"></a>為了培養一技之長，我選擇前端</h4><p>大眾傳播系畢業後，從事廣告公司平面相關，工作的性質比較偏與人溝通想法，沒有實際自己動手完成的經驗，覺得工作總是出一張嘴，感覺很不踏實，在 2016 年國外打工回國後，認為應該培養一技之長，決定踏入前端這個深不見底的大坑(笑)。</p><h4 id="何時對前端感興趣？"><a href="#何時對前端感興趣？" class="headerlink" title="何時對前端感興趣？"></a>何時對前端感興趣？</h4><p>國中，算是受到老爸的啟蒙，當時網路還是撥接，上網算是一種奢侈的行為，我爸因此就下了一個考題是叫我想辦法生出一個作品集的網站，做出來的話，就讓我上網上到爽。</p><p>我憑著一股不服輸的志氣，用當時響叮噹的 Dreamweaver 搭配和藹可親的可視化界面及現在看到應該會被痛毆的全表格排版把網站做了出來。</p><p>雖然是為了老爸的一句話，但這過程中，開始感受到完成網頁的爽感，太有成就感了！只可惜始終沒有試著了解原始碼部分，因此程度就一直卡在那裡。</p><h4 id="剛開始如何學習前端？"><a href="#剛開始如何學習前端？" class="headerlink" title="剛開始如何學習前端？"></a>剛開始如何學習前端？</h4><p>一開始學前端的技術主要是透過看書、去上實體課程為主，那時還不知道有 Udemy 的線上教學網站，是在上實體班時大家聊到平時會從哪些管道去學習時，才得知六角學院，而且妙的是連講師本人都說推薦可以去上上看XD(偷偷爆料是 Amos 老師)，所以就來報到當六角的學生了!!</p><p>六角老師們的課對我來講都滿精彩的!</p><p>因為講解的方式真的很淺顯易懂，上 JavaScript 的課程前，其實還有點排斥學這套語言，code怎麼看都像天書，而上了老師的課，藉由異常生活化的範例，程式語言變得平易近人，融會貫通。</p><p>因此真的滿推薦這套課程的，就像老師說的一樣，從最底層的基礎打地基，現在在看其他人寫好的函式庫時就比較能理解為什麼會是這種寫法。(不然真的會覺得到底在寫甚麼鬼東西)</p><h4 id="3分天賦，7分理解"><a href="#3分天賦，7分理解" class="headerlink" title="3分天賦，7分理解"></a>3分天賦，7分理解</h4><p>學程式語言時，最怕就是死背。</p><p>網路上可以查到很多功能的解法，複製貼上就可以有相同的功能，但為什麼這樣寫，我們真的理解嗎？<br>打基礎是最花時間的部分，不要心浮氣躁，扎穩基礎後再延伸，你會走得更穩更快。<br>再來想想你學前端的動力，可以是興趣、職業需求、賺錢等，沒有動力的學習，我想真的會很痛苦！</p><h4 id="老師會陪著你到天荒地老-誤"><a href="#老師會陪著你到天荒地老-誤" class="headerlink" title="老師會陪著你到天荒地老(誤)"></a>老師會陪著你到天荒地老(誤)</h4><p>我沒有要打廣告的意思，但就是一股勁的把教學看完，然後把老師做的作業叫出去，即使現在已經有工作了，還是有持續在被老師以出作業的方式關懷著。XDD</p><p>我覺得這也是六角老師很佛心的一塊，不是你完成課程，關係就結束了，這可以是一個持續陪伴你走下去的地方，你缺乏訓練的管道，那就叫老師督促你開作業給你寫，因為老師沒在手軟的！(笑)</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>學習前端半年，畢業即就業 -- 世軒</title>
+      <link href="/2018/01/03/2018-12-03-interview/"/>
+      <url>/2018/01/03/2018-12-03-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2018%2F01%2Finterview_%E4%B8%96%E8%BB%92.jpg?alt=media&amp;token=192b56f8-0917-4d1f-9b3f-454f2902cae2" alt></p><blockquote><p>回憶大學時期，我們使用 Dreamweaver 完成php的專題，真的很痛苦，覺得自己可能不會再接觸 coding 了！但在因緣際會下，被六角學院的課程給打動，發現越學越有心得，開始對 coding 有了信心！不再排斥程式語言的我，在面試兩家公司後，得到了 offer！</p></blockquote><h2 id="大學專題時，我根本不會-CSS"><a href="#大學專題時，我根本不會-CSS" class="headerlink" title="大學專題時，我根本不會 CSS"></a>大學專題時，我根本不會 CSS</h2><p>不論是專題製作過程中還是完成後，我始終沒有學會 CSS ，都是同組同學協助完成，之所以不想再繼續鑽研PHP，其實不是程式太難，而是學校教的太少了，當時對工程師一職也沒有概念，才會沒有繼續深入學習，也有可能是被嚇到了吧！(笑)</p><h2 id="透過臉書看到了「六角學院」，加入的動機"><a href="#透過臉書看到了「六角學院」，加入的動機" class="headerlink" title="透過臉書看到了「六角學院」，加入的動機"></a>透過臉書看到了「六角學院」，加入的動機</h2><p>目前在六角學院學習 HTML/CSS 、Javascript、RWD、Bootstrap，這些都是相當基礎又實用的技能。<br>平常上網會關注網站的設計，覺得怎麼可以做得這麼漂亮、有質感，我怎麼都無法做出這樣的設計呢？<br>因此開始搜尋，想要了解更多網頁設計方面的相關知識，輾轉發現了六角學院。</p><h2 id="我都是這樣分配學習前端的時間"><a href="#我都是這樣分配學習前端的時間" class="headerlink" title="我都是這樣分配學習前端的時間"></a>我都是這樣分配學習前端的時間</h2><p>大四開始學習前端，課餘時間都會看線上的技術類文章，一天約莫花三個小時以上的時間在練習，就這樣持續半年。<br>可以用費曼學習法(the Feynman technique)，試著將資訊內化成自己的知識，用平易近人的方式，講給第三人聽，甚至是五歲的小朋友，如果他們能夠聽懂，那就算是真正的學習成功了！</p><h2 id="很感謝，六角學院舉辦的「模擬面試」"><a href="#很感謝，六角學院舉辦的「模擬面試」" class="headerlink" title="很感謝，六角學院舉辦的「模擬面試」"></a>很感謝，六角學院舉辦的「模擬面試」</h2><p>當初加入六角學院是因為線上的文件或相關書籍，文謅謅的專有名詞滿天飛，實在是有看沒有懂！<br>而洧杰老師會用很平易近人的方式講解，更有效率的理解技術方面的術語跟功能。</p><p>另外，因為自身沒有什麼面試的經驗，透過模擬面試，可以知道自己有哪些需要注意，或在改善的！<br>在此建議大家，如果公司開出某項技能需求，即使你不會，也要翻翻文件了解這樣的技能大概是在做什麼的，多方涉獵下讓資方知道，你是有概念的！</p><h2 id="很享受現在的工作生活，連女友的躍躍欲試，開始學習前端了！"><a href="#很享受現在的工作生活，連女友的躍躍欲試，開始學習前端了！" class="headerlink" title="很享受現在的工作生活，連女友的躍躍欲試，開始學習前端了！"></a>很享受現在的工作生活，連女友的躍躍欲試，開始學習前端了！</h2><p>目前公司的前端、後端人員各一位，沒有前輩帶領的工作有好有壞，我可以獨當一面完成很多事，當然遇到問題無人可以解答時，我也會請教老師(笑)。現在的工作時間相當隨性，工作就工作，休息就休息，我很享受！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>兩個月保險業務轉職前端，分享如何“學習” -- 引擎</title>
+      <link href="/2017/12/20/2017-12-20-interview/"/>
+      <url>/2017/12/20/2017-12-20-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F12%2Finterview_engine.jpg?alt=media&amp;token=779012a2-9211-4093-9fa3-f63eee9d887a" alt></p><blockquote><p>引擎，一名保險業務員，只花兩個月成為前端工程師，進入業界。<br>喜愛旅行的他在環遊世界半年間，因緣際會認識了遠端工作者，開始嚮往這樣的工作型態，下定決心，在沒有程式基礎下，他加入六角學院，踏入前端的領域，持續向目標「遠距離工作」邁進。</p></blockquote><h2 id="遠距離工作，會是往後的主流趨勢，我該如何做？"><a href="#遠距離工作，會是往後的主流趨勢，我該如何做？" class="headerlink" title="遠距離工作，會是往後的主流趨勢，我該如何做？"></a>遠距離工作，會是往後的主流趨勢，我該如何做？</h2><p>知識性工作變多，伴隨著通訊軟體日漸發達，很多工作無需進辦公室，也能零距離零時差的完成，我在峇里島與清邁遇到許多遠端工作者，開始嚮往著這樣的工作型態，不禁開始想，什麼產業能夠讓我完成夢想呢？<br>然後我選擇了「前端網頁工程師」。</p><h2 id="沒有任何程式語言的基礎，我該從何開始呢？"><a href="#沒有任何程式語言的基礎，我該從何開始呢？" class="headerlink" title="沒有任何程式語言的基礎，我該從何開始呢？"></a>沒有任何程式語言的基礎，我該從何開始呢？</h2><p>自學與付費學習，取決於自己的學習習慣與時間。</p><p>出社會後，時間會相對寶貴，凡事都要講求效率，比起自學花時間摸索學習，老師幫你規劃課程引領入門，我認為花錢學習是很 ok 的事情，相對有效率，但錢要花在刀口上，了解自己所需要的比較重要。</p><p>初學者可以這麼做：</p><ul><li>為自己訂定最終目標</li><li>事先在網路上搜尋“前端”相關知識</li><li>列出自己需要/想要的學習方向</li><li>比較線上課程的特點</li></ul><p>當初有許多不同線上課程在比較，針對該線上課程的介紹發信詢問，六角學院有前端求職協助，這讓我相當好奇，立馬寫信詢問求職協助的相關細節，老師也很快地就回信了，而且還是滿多字的(笑)。若線上的教學平台課程都差不多，比較課程不如就比較老師吧！真心覺得六角學院的老師真的很認真～</p><h2 id="第一份工作與第二份工作之間，如何轉跳？需要如何準備？"><a href="#第一份工作與第二份工作之間，如何轉跳？需要如何準備？" class="headerlink" title="第一份工作與第二份工作之間，如何轉跳？需要如何準備？"></a>第一份工作與第二份工作之間，如何轉跳？需要如何準備？</h2><p>現在來說，一份工作要待到退休幾乎是不可能的，我問洧杰老師，如果想要成為「遠端工作者」我的第一份工作與第二份工作該如何規劃？</p><p>例如：Vue、Angular、React 是一位前端工程師從 junior 到 senior 需專精的三大框架等。我將老師的回答逐條列出，當作現階段的 to-do list 一步步往我想要的目標前進。</p><h2 id="兩個月的「前端」學習心得，要與學弟妹們分享！"><a href="#兩個月的「前端」學習心得，要與學弟妹們分享！" class="headerlink" title="兩個月的「前端」學習心得，要與學弟妹們分享！"></a>兩個月的「前端」學習心得，要與學弟妹們分享！</h2><p>不久前我在社群分享了一篇文章：<a href="https://medium.com/@linengine/%E5%A6%82%E4%BD%95%E6%88%90%E7%82%BA%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB-%E7%95%B6%E4%BD%A0%E4%B8%8D%E6%98%AF%E7%9B%B8%E9%97%9C%E7%A7%91%E7%B3%BB-%E4%B8%8D%E6%9C%83%E4%BB%BB%E4%BD%95%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80-2256270ace5c" target="_blank" rel="noopener">如何成為前端工程師，當你不是相關科系、不會任何程式語言。</a>，如果你跟我一樣對此有興趣或充滿好奇，歡迎閱讀一下。</p><h4 id="保持好奇心"><a href="#保持好奇心" class="headerlink" title="保持好奇心"></a>保持好奇心</h4><p>面對新的名詞、事物，不要抗拒，永遠保持好奇是在這個行業的一大優勢。</p><h4 id="專注在自己的成長，而非不足的部分"><a href="#專注在自己的成長，而非不足的部分" class="headerlink" title="專注在自己的成長，而非不足的部分"></a>專注在自己的成長，而非不足的部分</h4><p>這不是要大家安於現況、自滿，而是享受成長的過程，當下會有一定的滿足感，而滿足感將是促使你往前進的動力。</p><h4 id="學習如何學習"><a href="#學習如何學習" class="headerlink" title="學習如何學習"></a>學習如何學習</h4><p>越來越多人在討論，深度工作、深度學習，與其專注前端的學習步驟，提升自身 “學習” 新事物的能力，也是相當重要。建議大家可以養成習慣將每次所學的東西，試著用自己的話記下來，哪怕只有懂一點點，也是成長進步。</p><p>歡迎熱愛前端的你加入我們<a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>賣場服務生躍進前端工程師，「學習運用現有資源，解決當前問題！」 -- Joseph</title>
+      <link href="/2017/12/19/2017-12-19-interview/"/>
+      <url>/2017/12/19/2017-12-19-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F12%2Finterview_Joseph.jpg?alt=media&amp;token=514f85f4-5e49-4982-840b-eb9c601e7676" alt></p><blockquote><p>Joseph 政治系，未來將走上與本科系相關的工作，在所學領域發光發熱；然而出現了些問題，打亂他的人生規劃，過往工作經歷皆是各式賣場服務業。這讓他決定停下來思考，未來該如何規劃？</p></blockquote><p>Joseph：「我想當工程師，因為賺比較多(笑)」。他，現在在極限科技擔任前端工程師！`</p><h2 id="自學與老師引導，哪個好？"><a href="#自學與老師引導，哪個好？" class="headerlink" title="自學與老師引導，哪個好？"></a>自學與老師引導，哪個好？</h2><p>明確知道自己要什麼，才是好！</p><p>在自學 JavaScript、Python 兩種語言，但對我來說他們背後的邏輯原理太深，光是掌握程式裡面 if、else，這些在程式語言裡的基本概念，就花了一大段時間在理解，成效不是很好！</p><p>也到線上免費英文教學平台學習，但沒有什麼架構，有什麼就學什麼，觀念非常混亂，讓我很灰心！</p><p>第一次選擇某個線上付費課程，價格不親民，雖然是號稱短時間學會網頁基礎，但上完之後覺得此課程比較偏設計類，讓我了解如何設計網頁，但我認為程式技能還是無所進展。從那時開始知道，自己究竟要什麼！我會選擇前端，是因為完成功能的當下，即可看見功能的呈現，對累積信心很有效(笑)。</p><h2 id="前端開發，學海無涯；學會了，然後呢？"><a href="#前端開發，學海無涯；學會了，然後呢？" class="headerlink" title="前端開發，學海無涯；學會了，然後呢？"></a>前端開發，學海無涯；學會了，然後呢？</h2><p>在六角學院第一個學習的課程就是：<a href="/courses/javascript.html">JavaScript</a>，老師一步步領著我們學習，當錯誤發生時，會以引導代替解答，讓學員自己多思考多嘗試，讓程式語言內化進學員的思考邏輯，才能組合出屬於自己的寫法。</p><p>後續讀老師提供的<a href="/2017/06/12/2017-06-12-skill_tree/">前端開發者技能樹</a>，知道自己下一步該再往 gulp、Bootstrap 邁進，透過這樣的課程設計，不會讓你無所適從，我覺得六角學院對我的幫助更大。</p><h2 id="每日8小時在工作，其餘時間都留給前端"><a href="#每日8小時在工作，其餘時間都留給前端" class="headerlink" title="每日8小時在工作，其餘時間都留給前端"></a>每日8小時在工作，其餘時間都留給前端</h2><p>學習前端的人這麼多，如果有人是全職的學習者，那麼我一定得比他更努力，才能夠趕上他們，我得將工作以外的時間都拿來練習。<br>從開始接觸程式到就業共花了一年，其實比預計的再晚了幾個月，我開始尋求老師的幫助，老師也針對我的作品給予建議，協助我達到求職的條件，另外老師每週三的讀書討論會，技術議題的延伸給了我新的學習方向。</p><h2 id="部門前輩願意等我成長，也願意給舞台"><a href="#部門前輩願意等我成長，也願意給舞台" class="headerlink" title="部門前輩願意等我成長，也願意給舞台"></a>部門前輩願意等我成長，也願意給舞台</h2><p>面試時，主管竟然沒有問到技術問題，著實令我驚訝！可能當他們一看到我的作品，就知道我是新人，比起技術領域的問題，他們更傾向了解我的人格特質，覺得自己很幸運！</p><p>主管直言：「你的程度較落後，但只要你肯學，日後對你、對公司都是正面的。」</p><h2 id="擔心跟不上團隊的壓力下，老師給了鎮心劑"><a href="#擔心跟不上團隊的壓力下，老師給了鎮心劑" class="headerlink" title="擔心跟不上團隊的壓力下，老師給了鎮心劑"></a>擔心跟不上團隊的壓力下，老師給了鎮心劑</h2><p>在表示自己就業意念後，老師都會定時給予關心。其實程度跟不上團隊的壓力一直都有，會擔心自己是否會再度失業。</p><p>老師也給我建立了不少信心，他告訴我：「第一，你所能做的，就是按照自己的進度學習；第二，沒有人一開始什麼都會，大家都需要時間學習，你無需自卑，信心是靠經驗累積的，這些都只是過程。」</p><h2 id="Joseph：「要有運用手邊現有資源，來解決當前問題的能力」"><a href="#Joseph：「要有運用手邊現有資源，來解決當前問題的能力」" class="headerlink" title="Joseph：「要有運用手邊現有資源，來解決當前問題的能力」"></a>Joseph：「要有運用手邊現有資源，來解決當前問題的能力」</h2><p>相信很多人都是非本科系或是程式語言的白紙，建議大家不要害怕新的東西，且要有自己學習與判斷的能力。<br>獨立思考，運用手邊現有資源，不依靠外人提示就能自己解決問題，若做到了，相信未來會進步地相當迅速！</p><p>歡迎熱愛前端的你加入我們<a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【獎品贈送】參加 ITHome 鐵人賽即贈送 &quot;實體商品&quot;</title>
+      <link href="/2017/11/30/2017-11-30-hexschool-and-ironman/"/>
+      <url>/2017/11/30/2017-11-30-hexschool-and-ironman/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/casper-de5d5.appspot.com/o/images%2Fblog%2Fironman.png?alt=media&amp;token=84ea9c98-3c70-48b8-90b8-c97273dac570" alt></p><blockquote><p>為了鼓勵同學參與技術活動，藉此增強自己的技術能力，六角學院老師們一致決定，凡參與者且完賽者，即贈送六角專屬贈品 (價值: NT$500 以上)。</p></blockquote><h2 id="參加辦法"><a href="#參加辦法" class="headerlink" title="參加辦法"></a>參加辦法</h2><ol><li>六角學院任一課程付費學員</li><li>到 <a href="https://ithelp.ithome.com.tw/ironman" target="_blank" rel="noopener">ITHome 鐵人賽官網</a> 報名活動，報名不限主題、不限單人或團體。</li><li>發信至 <a href="mailto:service@hexschool.com" target="_blank" rel="noopener">service@hexschool.com</a> 提供個人 “參賽連結” 及 Udemy 暱稱</li><li>30 篇貼文中至少提及一次 “六角學院”</li><li>三十天不中斷完賽後，再寄送一次信件附上完賽證明，小幫手就會與您確認贈品寄送囉。</li></ol><p>參賽連結：報名後，會在鐵人賽列表內找到自己的主題，點進去以後就會看到如下畫面，此時只要提供對應<a href="https://ithelp.ithome.com.tw/users/20083608/ironman/1354" target="_blank" rel="noopener">連結</a>即可。<br><img src="https://firebasestorage.googleapis.com/v0/b/casper-de5d5.appspot.com/o/images%2Fblog%2F%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-11-30%20%E4%B8%8B%E5%8D%881.46.23.png?alt=media&amp;token=16d99dc8-bd28-47ce-a87d-aed9547404a4" alt></p><h2 id="獎品"><a href="#獎品" class="headerlink" title="獎品"></a>獎品</h2><p><img src="https://firebasestorage.googleapis.com/v0/b/casper-de5d5.appspot.com/o/images%2Fblog%2Freward.png?alt=media&token=b749f5e3-b7a6-4637-a6dc-3be886b777af" width="50%"></p><p>獎品目前正在開發中，尚不能直接公告獎品內容，保證價值為 (價值: NT$500 以上)。</p><h2 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h2><ul><li>每個人限制參加一次</li><li>完成三十天連續發文才能領獎品喔</li><li>獎品如驗收不如預期，則會改贈送 500 元實體書籍</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【直播預告】 Bootstrap 4 超狂額外講座，讓你收穫滿滿一整月</title>
+      <link href="/2017/09/27/2017-09-27-sep-bs/"/>
+      <url>/2017/09/27/2017-09-27-sep-bs/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2Fbs4_onlinetalk.png?alt=media&amp;token=80945c5f-d838-4e28-aef9-071e0f9926b4" alt></p><blockquote><p>想了解更多 Bootstrap 4 的秘密嗎？</p></blockquote><p>老師從 Bootstrap 4 Alpha 測試就開始使用此框架，這版不僅讓過去第三版的觀念容易轉移過來，並且擁有更多的彈性，尤其在 Flex 的加持下，讓許多排版上的限制得以突破。</p><p>除此之外，從 Less 轉過來 Sass 之後究竟有什麼樣的優點，線上問答也會一併解密，讓我們一起與全球 8,100,000 網站一同使用 Bootstrap 吧。</p><ul><li>Flex 與 Bootstrap Grid</li><li>Bootstrap 元件及靈活運用手法</li><li>專案切版要領</li><li>管理大型專案 Sass 的設計模式</li></ul><h4 id="課程時間"><a href="#課程時間" class="headerlink" title="課程時間"></a>課程時間</h4><p>每週的線上問答 (週三晚上 7:30)，每週一個主題讓你聽得不要不要～。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2Fbs4_course.jpg?alt=media&amp;token=fb8ad958-6979-44b1-ab6a-fd1c5fc8123d" alt></p><h4 id="報名辦法"><a href="#報名辦法" class="headerlink" title="報名辦法"></a>報名辦法</h4><p>凡 <strong>有註冊六角學院主要課程學員</strong>，在 Udemy 信箱每週都能收到課程通知(記得收信喔)，課程內容將無須額外付費，<strong>主要課程列表</strong> 如下：</p><ul><li>使用 HTML、CSS 開發一個網站</li><li>jQuery 網頁互動效果</li><li>JavaScript - 學徒的試煉</li><li>RWD 響應式網頁設計</li><li>一頁式金流商務網頁</li></ul><p><strong><a href="/bootstrap/">&gt;&gt; Bootsrap 課程介紹 &lt;&lt;</a></strong></p><h4 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h4><ul><li>建議具備基本 HTML, CSS 能力即可</li><li><strong>課程內容不一定會錄影，請同學盡量踴躍參加</strong></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何藉由面試了解自己的價值，海外遊子--雲龍</title>
+      <link href="/2017/09/23/2017-09-23-yunlong-interview/"/>
+      <url>/2017/09/23/2017-09-23-yunlong-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2Fyunlung.jpg?alt=media&amp;token=00be778a-524e-4dad-88cf-46cf3dadff06" alt></p><blockquote><p>從馬來西亞跨海求學的雲龍，到台灣就讀平面設計，今年應屆畢業！希望能留在台灣，並且有一份好工作，因緣際會看到了六角學院的教學分享影片，投入前端技術的學習，在有限的時間內，結合設計與前端的雙開技能，成功得到了前端工程師的門票</p></blockquote><h2 id="加入前端工作，不是本科系的專利！"><a href="#加入前端工作，不是本科系的專利！" class="headerlink" title="加入前端工作，不是本科系的專利！"></a>加入前端工作，不是本科系的專利！</h2><p>公司的前端前輩們，都是非相關科系出身，學習前端的能力與速度相當的快速有天份，沒有壓力是騙人的！相較之下，難免懷疑自己是不是真的適合這樣的工作？ </p><p>身旁的朋友總和我說，人的學習速度本來就會有落差，況且我才剛學習真的不應該操之過急，目前想先將手上負責的專案好好完成，除了自學的能力外，實作也是加強技能的一項重要環節。</p><h2 id="面試時，釐清公司性質與應徵職務的工作內容是很重要的！"><a href="#面試時，釐清公司性質與應徵職務的工作內容是很重要的！" class="headerlink" title="面試時，釐清公司性質與應徵職務的工作內容是很重要的！"></a>面試時，釐清公司性質與應徵職務的工作內容是很重要的！</h2><p>六角學院協助求職學員舉辦模擬面試，老師們依在業界的經驗，告訴學員如何在面試中充分展現自己，以及給予建議。</p><p>老師同時強調面試時要弄清楚公司性質、主要業務，不僅可以判斷是否適合自己，也可以避免日後雙方在工作職務上認知不同的爭議。<br>不過也不要讓面試官覺得你發問像在質詢的口氣，所以面試時如何問問題，如何觀察對方的反應，也是個需學習的技巧。</p><h2 id="當時面試官問了我一句：「你值得這個薪資嗎？」"><a href="#當時面試官問了我一句：「你值得這個薪資嗎？」" class="headerlink" title="當時面試官問了我一句：「你值得這個薪資嗎？」"></a>當時面試官問了我一句：「你值得這個薪資嗎？」</h2><p>不得不說我當下愣住了，但堅定地回覆對方，我認為以我的前端技能加上設計底，我的能力肯定值得！且公司重視 UI，也設有 UI 部門，我是設計出生，我認為能夠與 UI 溝通順暢，讓專案事半功倍。最後我得到比原先還要高的薪資待遇。</p><p>強烈建議大家，面試前先大概了解公司重視什麼？理念是什麼？最好可以先上公司網站，看公司的原始碼掌握公司主要使用的程式語言、設計概念等等，這樣在面試中才能讓面試官清楚你將是公司不可或缺的主力人才。</p><p>後續才知道，面試官那樣問我，是認為我的能力可以能到更好的薪資，而非質疑我開出過高的薪資。其實這道問題就是面試官在試探，他想知道你對你自己有沒有自信，你了解自己多少，若之後也有人問到這樣的問題請不要退縮，勇於展現自己最好的一面。</p><h2 id="藉由面試了解自己的價值"><a href="#藉由面試了解自己的價值" class="headerlink" title="藉由面試了解自己的價值"></a>藉由面試了解自己的價值</h2><p>談薪資最重要的是，要讓對方知道你有多了解自己的能力！我所提出的薪資待遇，代表我的能力絕對有這樣的價值。我所知道設計出身一般開給公司25K，有時會被公司砍到 23K。而我的話則是第一家公司面試，先開出薪資，offer get! 那麼第二家公司面試就再開更高，依此類推……。我想知道，目前業界對於這樣的能力，究竟能夠給予多少的薪資，每次的面試都在檢視自己的價值。</p><h2 id="若有想做的事，就去嘗試吧！"><a href="#若有想做的事，就去嘗試吧！" class="headerlink" title="若有想做的事，就去嘗試吧！"></a>若有想做的事，就去嘗試吧！</h2><p>秉持這樣的想法，我勇敢冒險嘗試了，不敢說我的前端技能有多厲害，畢竟我也學習不到一年的時間，但我可以肯定這樣的嘗試，比起大學設計系的同學們，我得到的薪資待遇算是最好的，未來也會在努力不斷加強自己。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>完成夢想，不一定要冒險？ Grace</title>
+      <link href="/2017/09/23/2017-09-23-wan-ling-interview/"/>
+      <url>/2017/09/23/2017-09-23-wan-ling-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2Fwanling_1200.jpg?alt=media&amp;token=b0253aff-ec76-419b-b8bf-db95548cb7df" alt></p><blockquote><p>資工系畢業的 Grace，個性保守的她認為工作應與所學相關，但即便學習了四年，當興趣變成職業，總有些遲疑！<br>訪談過程中，她透露對於設計領域有憧憬，但不敢貿然投入設計領域！接觸前端設計後，結合程式語言與設計，在所學與所愛之間取得平衡。</p></blockquote><h2 id="一樣是寫程式，但前端就是不一樣"><a href="#一樣是寫程式，但前端就是不一樣" class="headerlink" title="一樣是寫程式，但前端就是不一樣"></a>一樣是寫程式，但前端就是不一樣</h2><p>我不是個愛冒險的人，老實說有些保守。</p><p>在學校，我們常接觸 C++ 程式語言，都是拿來解數學題，對我來說有些枯燥乏味，曾經想過投入設計，覺得室內設計挺有趣的，但要我從頭開始學起，老實說真的相當猶豫，且目前業界對設計科系的起薪普遍不是很友善，以未來發展來看，還是會選擇回來寫程式(攤手)。</p><p>那天在 Facebook 上看到六角學院，我開始學習 HTML/CSS ，我看到可以用程式語言來設計作品，心想：若是要結合興趣及專長，應該非前端技術莫屬了。</p><h2 id="「自學」能力很重要，但若有引導學習的貴人在身旁，可以少走冤枉路"><a href="#「自學」能力很重要，但若有引導學習的貴人在身旁，可以少走冤枉路" class="headerlink" title="「自學」能力很重要，但若有引導學習的貴人在身旁，可以少走冤枉路"></a>「自學」能力很重要，但若有引導學習的貴人在身旁，可以少走冤枉路</h2><p>礙於面子，我其實害怕問問題，會浪費許多時間再糾結，有時候其實只要開口問，旁人很快就可以點出你的盲點，也可以少走很多冤枉路。培養問問題的能力，是很重要的！</p><p>Google 上搜尋答案也是需要學習的，之前遇到問題會上 W3School 查詢，但這網站就像字典一樣，學習到的東西較為片段，無法整合且不易讓人融會貫通。</p><p>不像六角學院的課程，課後洧杰老師和志誠老師也都能隨時回答問題，總是一步步引導，讓我看到一個網頁，從有到無是如何建構起來的，HTML/CSS 兩者如何搭配才夠寫出一個完整的網站樣式。</p><h2 id="不要怕學習，但也不要操之過急"><a href="#不要怕學習，但也不要操之過急" class="headerlink" title="不要怕學習，但也不要操之過急"></a>不要怕學習，但也不要操之過急</h2><p>畢業後開始學習前端，告訴自己這些時間心無旁騖只做好一件事：學好前端！</p><p>之前那種版本大改的混亂時期已經過了，現在前端技術改版都像是疊加新功能，你不太需要經歷改版的陣痛期時，通常公司為了讓產品能夠運作順暢，專案使用的技術語言也都趨向穩定，不會一下子就汰換掉所有，只要專心地將手上的技術磨練純熟，我相信就很夠用了！</p><p>不要害怕學習，一直學下去，但有時有不要操之過急，什麼都想要學，慢下來打好基礎其實比什麼都還要重要！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript 陣列處理方法 [filter(), find(), forEach(), map(), every(), some(), reduce()]</title>
+      <link href="/2017/09/01/2017-09-01-javascript-for/"/>
+      <url>/2017/09/01/2017-09-01-javascript-for/</url>
+      
+        <content type="html"><![CDATA[<p>陣列處理技巧是 JavaScript 中非常重要的一塊，現在框架大亂鬥的時代，框架基本上對於 DOM 的處理都有屬於自己一套良好的方法。只要能夠對於陣列資料操作熟悉，配合框架就能夠將開發效率更上層樓。</p><p>本篇介紹到的方法有：</p><ul><li><a href="#Array-prototype-filter">filter()</a></li><li><a href="#Array-prototype-find">find()</a></li><li><a href="#Array-prototype-forEach">forEach()</a></li><li><a href="#Array-prototype-map">map()</a></li><li><a href="#Array-prototype-every">every()</a></li><li><a href="#Array-prototype-some">some()</a></li><li><a href="#Array-prototype-reduce">reduce()</a></li></ul><a id="more"></a><p>直接點上方連結就能跳到指定區域</p><h2 id="初始資料"><a href="#初始資料" class="headerlink" title="初始資料"></a>初始資料</h2><p>本篇都是使用同一份陣列資料，當然你也可以把相關的函式直接貼在 jsbin 或 codepen 上就能看到結果，因為篇幅已經很長了，所以就不在另外補上範例檔。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 相同的陣列</span></span><br><span class="line"><span class="keyword">var</span> people = [</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'Casper'</span>,</span><br><span class="line">    like: <span class="string">'鍋燒意麵'</span>,</span><br><span class="line">    age: <span class="number">18</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'Wang'</span>,</span><br><span class="line">    like: <span class="string">'炒麵'</span>,</span><br><span class="line">    age: <span class="number">24</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'Bobo'</span>,</span><br><span class="line">    like: <span class="string">'蘿蔔泥'</span>,</span><br><span class="line">    age: <span class="number">1</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'滷蛋'</span>,</span><br><span class="line">    like: <span class="string">'蘿蔔泥'</span>,</span><br><span class="line">    age: <span class="number">3</span></span><br><span class="line">  &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure><h2 id="Array-prototype-filter"><a href="#Array-prototype-filter" class="headerlink" title="Array.prototype.filter()"></a>Array.prototype.filter()</h2><p>filter() 會回傳一個陣列，其條件是 return 後方為 true 的物件，很適合用在搜尋符合條件的資料。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> filterEmpty = people.filter(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(filterEmpty);    <span class="comment">// 沒有條件，會是一個空陣列</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> filterAgeThan5 = people.filter(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.age &gt; <span class="number">5</span>;       <span class="comment">// 取得大於五歲的</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(filterAgeThan5); <span class="comment">// Casper, Wang 這兩個物件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> filterDouble = people.filter(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> index % <span class="number">2</span> === <span class="number">1</span>;    <span class="comment">// 取得陣列中雙數的物件</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(filterDouble);   <span class="comment">// Wang, 滷蛋 這兩個物件</span></span><br></pre></td></tr></table></figure><h2 id="Array-prototype-find"><a href="#Array-prototype-find" class="headerlink" title="Array.prototype.find()"></a>Array.prototype.find()</h2><p>find() 與 filter() 很像，但 find() <strong>只會回傳一次值</strong>，且是第一次為 true 的值。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> findEmpty = people.find(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(findEmpty);          <span class="comment">// 沒有條件，會是 undefined</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> findAgeThan5 = people.find(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.age &gt; <span class="number">5</span>;           <span class="comment">// 取得大於五歲的</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(findAgeThan5);       <span class="comment">// 雖然答案有兩個，但只會回傳 Casper 這一個物件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> findLike = people.find(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.like === <span class="string">'蘿蔔泥'</span>;  <span class="comment">// 取得陣列 like === '蘿蔔泥'</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(findLike);           <span class="comment">// 雖然答案有兩個，但只會回傳第一個 Bobo 物件</span></span><br></pre></td></tr></table></figure><h2 id="Array-prototype-forEach"><a href="#Array-prototype-forEach" class="headerlink" title="Array.prototype.forEach()"></a>Array.prototype.forEach()</h2><p>forEach 是這幾個陣列函式最單純的一個，不會額外回傳值，只單純執行每個陣列內的物件或值。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> forEachIt = people.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(item, index, array); <span class="comment">// 物件, 索引, 全部陣列</span></span><br><span class="line">  <span class="keyword">return</span> item;                     <span class="comment">// forEach 沒在 return 的，所以這邊寫了也沒用</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(forEachIt);            <span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line">people.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  item.age = item.age + <span class="number">1</span>;         <span class="comment">// forEach 就如同 for，不過寫法更容易</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(people);               <span class="comment">// 全部 age + 1</span></span><br></pre></td></tr></table></figure><h2 id="Array-prototype-map"><a href="#Array-prototype-map" class="headerlink" title="Array.prototype.map()"></a>Array.prototype.map()</h2><p>使用 map() 時他需要回傳一個值，他會透過函式內所回傳的值組合成一個陣列。</p><ul><li>如果不回傳則是 <code>undefined</code></li><li>回傳數量等於原始陣列的長度</li></ul><p>這很適合將原始的變數運算後重新組合一個新的陣列。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mapEmpty = people.map(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(mapEmpty);    <span class="comment">// [undefined, undefined, undefined, undefined]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> mapAgeThan5 = people.map(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.age &gt; <span class="number">5</span>;    <span class="comment">// 比較大於五歲的</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(mapAgeThan5); <span class="comment">// [true, true, false, false]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> mapAgeThan5_2 = people.map(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// 錯誤示範</span></span><br><span class="line">  <span class="keyword">if</span> (item.age &gt; <span class="number">5</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> item;              <span class="comment">// 回傳大於五歲的</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;               <span class="comment">// 別以為空的或是 false 就不會回傳</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(mapAgeThan5_2);   <span class="comment">// [&#123;name: 'Casper'...&#125;, &#123;name: 'Wang'...&#125;, false, false]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> mapEat = people.map(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (item.like !== <span class="string">'蘿蔔泥'</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;item.like&#125;</span> 好吃`</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;item.like&#125;</span> 不好吃`</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(mapEat);          <span class="comment">// ["鍋燒意麵 好吃", "炒麵 好吃", "蘿蔔泥 不好吃", "蘿蔔泥 不好吃"]</span></span><br></pre></td></tr></table></figure><h2 id="Array-prototype-every"><a href="#Array-prototype-every" class="headerlink" title="Array.prototype.every()"></a>Array.prototype.every()</h2><p>every() 可以檢查所有的陣列是否符合條件，這僅會回傳一個值 <code>true</code> or <code>false</code>，可以用來檢查陣列中的內容是否符合特定條件。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> array = [</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'Casper'</span>,</span><br><span class="line">    like: <span class="string">'鍋燒意麵'</span>,</span><br><span class="line">    age: <span class="number">18</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'Wang'</span>,</span><br><span class="line">    like: <span class="string">'炒麵'</span>,</span><br><span class="line">    age: <span class="number">24</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'Bobo'</span>,</span><br><span class="line">    like: <span class="string">'蘿蔔泥'</span>,</span><br><span class="line">    age: <span class="number">1</span></span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: <span class="string">'滷蛋'</span>,</span><br><span class="line">    like: <span class="string">'蘿蔔泥'</span>,</span><br><span class="line">    age: <span class="number">3</span></span><br><span class="line">  &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ans = array.every(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(item, index, array); <span class="comment">// 物件, 索引, 全部陣列</span></span><br><span class="line">  <span class="keyword">return</span> item.age &gt; <span class="number">10</span> <span class="comment">// 當全部 age 大於 10 才能回傳 true</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(ans); <span class="comment">// false: 只要有部分不符合，則為 false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ans2 = array.every(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.age &lt; <span class="number">25</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(ans2); <span class="comment">// true: 全部 age 都小於 25</span></span><br></pre></td></tr></table></figure><h2 id="Array-prototype-some"><a href="#Array-prototype-some" class="headerlink" title="Array.prototype.some()"></a>Array.prototype.some()</h2><p>some() 與 every() 非常接近，都是回傳 true or false，差異僅在 every() 需完全符合，some() 僅需要部分符合。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ans = people.some(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.age &gt; <span class="number">10</span> <span class="comment">// 當全部 age 大於 10 才能回傳 true</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(ans);  <span class="comment">// true: 只要有部分符合，則為 true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ans2 = people.some(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.age &lt; <span class="number">25</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(ans2); <span class="comment">// true: 只要有部分符合，則為 true  </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ans2 = people.some(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item.age &gt; <span class="number">25</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(ans2); <span class="comment">// false: 全部都不符合則為 false</span></span><br></pre></td></tr></table></figure><h2 id="Array-prototype-reduce"><a href="#Array-prototype-reduce" class="headerlink" title="Array.prototype.reduce()"></a>Array.prototype.reduce()</h2><p>reduce() 和其他幾個差異就很大了，他可以與前一個回傳的值再次作運算，參數包含以下：</p><ul><li>accumulator: 前一個參數，如果是第一個陣列的話，值是以另外傳入或初始化的值</li><li>currentValue: 當前變數</li><li>currentIndex: 當前索引</li><li>array: 全部陣列</li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> reduceEmpty = people.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">accumulator, currentValue, currentIndex, array</span>)</span>&#123;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(reduceEmpty);                 <span class="comment">// 沒有條件，會是 undefined</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> reducePlus = people.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">accumulator, currentValue, currentIndex, array</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// 分別為前一個回傳值, 目前值, 當前索引值</span></span><br><span class="line">  <span class="built_in">console</span>.log(accumulator, currentValue, currentIndex);</span><br><span class="line">  <span class="keyword">return</span> accumulator + currentValue.age;  <span class="comment">// 與前一個值相加</span></span><br><span class="line">&#125;, <span class="number">0</span>);                                    <span class="comment">// 傳入初始化值為 0</span></span><br><span class="line"><span class="built_in">console</span>.log(reducePlus);                  <span class="comment">// 總和為 46</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> reducePlus = people.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">accumulator, currentValue, currentIndex, array</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'reduce'</span>, accumulator, currentValue, currentIndex)</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Math</span>.max( accumulator, currentValue.age ); <span class="comment">// 與前一個值比較哪個大</span></span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line"><span class="built_in">console</span>.log(reducePlus);                  <span class="comment">// 最大值為 24</span></span><br></pre></td></tr></table></figure><p>reduce() 的使用方法更為豐富，想認識更詳細可參考 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank" rel="noopener">MDN</a>。</p><h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>預設的陣列行為內的 this 是指向 window <em>(本篇中除了 reduce() 是傳入初始資料)</em>，如果要改，可以在 function 後傳入。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// arr.forEach(function callback(currentValue, index, array) &#123;</span></span><br><span class="line"><span class="comment">// your iterator</span></span><br><span class="line"><span class="comment">// &#125;[, thisArg]);</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ans3 = people.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, array</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>) <span class="comment">// 這邊的 this 就會使用後方傳入的</span></span><br><span class="line">  <span class="keyword">return</span> item.age &lt; <span class="number">25</span></span><br><span class="line">&#125;, people);         <span class="comment">// 傳入的物件，替代 this，如果無則是 window</span></span><br></pre></td></tr></table></figure><p>看完這段，同學對於 <a href="/courses/javascript.html">JavaScript 作業</a> 有沒有新的想法呢？試著改改看吧，上傳到 Udemy 給老師看看喔～</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bootstrap 4 繁體中文手冊</title>
+      <link href="/2017/08/13/2017-08-13-bootstrap4-zh-tw/"/>
+      <url>/2017/08/13/2017-08-13-bootstrap4-zh-tw/</url>
+      
+        <content type="html"><![CDATA[<p>Bootstrap 是目前最主流的 CSS 框架，由於他包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易，也越來越多開發者協同一起開發 (Github 上有超過 10 萬個 Star)。如今第四版 Beta (Bootstrap 4 Beta) 也在 2017/8/10 釋出，我們先來看看他有什麼樣的改變吧！</p><h2 id="Bootstrap-4-的特色"><a href="#Bootstrap-4-的特色" class="headerlink" title="Bootstrap 4 的特色"></a>Bootstrap 4 的特色</h2><p>Bootstrap 4 Beta 經過了 Alpha 六個版本的歷練，重新翻修了大量元件以及加入許多新的元素，如果你沒有用過 Alpha 的任何版本，提供了以下摘要讓您快速了解第四版有什麼新新聞：</p><ul><li>從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從 Less 改用 Sass 囉！</li><li>Flexbox 以及強化的網格系統: 網格系統不在使用 <code>float</code>，進而改用 flexbox，讓行動裝置及桌面裝置有更彈性的排版方法。</li><li>卡片元件: 許多元件本質相似度較高，如 wells、thumbnails、panels 等等，這些元件被捨棄掉，取而代之的則是卡片元件，不僅可以完成上述元件的功能，且運作的更為美好。</li><li>彈性更高的變數: 以往的樣式都是固定的名稱、色彩，透過 Sass $map 變數可以更有彈性的調整、新增、減少不同的品牌色彩、陰影等視覺效果。</li><li>IE8、IE9 掰掰: 放棄舊有的瀏覽器支持，讓元件的使用及開發上更為容易，如果還是考慮支援 IE8/IE9、 Safari 8-、 iOS 8- 可以繼續使用 Bootstrap 3。</li><li>重新設計說明文件: 新的文件重新設計了，並且加入一些插件讓搜尋上更為容易！</li><li>更多的改變: 重新設計更多更多的樣式，像是自由套色的導覽列、HTML5 的驗證樣式、嶄新的輪播以及許多的元件</li></ul><h2 id="繁體中文手冊"><a href="#繁體中文手冊" class="headerlink" title="繁體中文手冊"></a>繁體中文手冊</h2><p>加入了這麼多新功能，如果從頭開始了解原文版本也需要花上不少時間，於是六角學院從兩個月前開始著手翻譯，在正式釋出 Beta 版後的兩個工作日釋出<a href="https://bootstrap.hexschool.com/" target="_blank" rel="noopener">繁體中文手冊</a>，讓對於 Bootstrap 有需求的同學可以加速上手～</p><a href="https://bootstrap.hexschool.com/" target="_blank">  <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2"></a><p>如果你期待六角學院的 Bootstrap 相關課程，也可以透過以下連結或加入我們的<a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">LINE</a>，等待課程釋出的同時也會通知您喔！</p><div class="text-xs-center">  <a target="_blank" class="btn btn-danger btn-shadow-danger btn-radius btn-lg btn-thin tracking-link" title="訂閱 Bootstrap 課程訊息" href="https://m.me/hexschool?ref=w393804">  <span class="fa fa-comment"></span>  訂閱 Bootstrap 課程訊息</a></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>從 CSS 到 Sass 教學，沒對齊就不對勁</title>
+      <link href="/2017/08/07/2017-08-07-aug-css/"/>
+      <url>/2017/08/07/2017-08-07-aug-css/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2FLiveCoding.jpg?alt=media&amp;token=5f263d49-6ada-4cb0-a61a-7c81921d1bb2" alt></p><blockquote><p>會常常覺得 CSS 莫名其妙嗎？</p></blockquote><p><img src="https://media.giphy.com/media/13XW2MJE0XCoM0/giphy.gif" alt></p><p>在實戰過程中我們常常會使用一些黑魔法來解決版面的問題，但程式碼是寫給其他人看的 (包含未來的自己)，在經常使用黑魔法的情況下總有一天可能會造成失控！</p><p>本次主題將來提升大家對於 CSS 的靈敏度，並且教同學許多小技巧，讓版面的開發更為靈巧及容易管理，課程包含：</p><ul><li>CSS 網格系統的觀念</li><li>CSS 與 Sass</li><li>後台切版的注意事項</li><li>CSS Flex</li></ul><h4 id="課程時間"><a href="#課程時間" class="headerlink" title="課程時間"></a>課程時間</h4><p>每週的線上問答 (週三晚上 7:30)，每週一個主題讓你聽得不要不要～。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Faug_course.jpg?alt=media&amp;token=971fce27-5267-4d1c-a7cd-b519a230d0bd" alt></p><h4 id="報名辦法"><a href="#報名辦法" class="headerlink" title="報名辦法"></a>報名辦法</h4><p>凡 <strong>有註冊六角學院主要課程學員</strong>，在 Udemy 信箱每週都能收到課程通知(記得收信喔)，課程內容將無須額外付費，<strong>主要課程列表</strong> 如下：</p><ul><li>使用 HTML、CSS 開發一個網站</li><li>jQuery 網頁互動效果</li><li>JavaScript - 學徒的試煉</li><li>RWD 響應式網頁設計</li><li>一頁式金流商務網頁</li></ul><p><strong><a href="/courses/">&gt;&gt; 進入課程列表 &lt;&lt;</a></strong></p><h4 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h4><ul><li>建議具備基本 HTML, CSS 能力即可</li><li><strong>課程內容不一定會錄影，請同學盡量踴躍參加</strong></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免費 20 小時網頁設計教學線上試聽</title>
+      <link href="/2017/07/22/2017-07-22-free-demo/"/>
+      <url>/2017/07/22/2017-07-22-free-demo/</url>
+      
+        <content type="html"><![CDATA[<p>各位好，我們是六角學院，我相信各位來到這裡，應該多少有碰到以下問題：</p><ul><li>網路學習資源過於零散，無法連貫學習</li><li>自學程式時常中途卡關或懷疑寫的程式碼是不是對的</li><li>想學程式增加工作技能，但不曉得如何規劃學習方向</li></ul><p>以上問題，我們都為六角學院的學生解決了，以程式學習流程為例，我們甚至規劃了一張 <a href="/2017/06/12/2017-06-12-skill_tree/" target="blank">前端開發者技能樹</a> 來向學生講解，讓學生有學習脈絡可循。</p><p><a href="/2017/06/12/2017-06-12-skill_tree/" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2FskillTree_og.jpg?alt=media&token=8db8c330-1b39-4f9a-bcb8-f0e5e5fc2f41" alt></a></p><p>依照以上脈絡，我們也提供歷年累積出來的免費學習資源，提供各位來到這裡的朋友一個學習脈絡。</p><h2 id="從-HTML、CSS-來瞭解如何設計一個網頁"><a href="#從-HTML、CSS-來瞭解如何設計一個網頁" class="headerlink" title="從 HTML、CSS 來瞭解如何設計一個網頁"></a>從 HTML、CSS 來瞭解如何設計一個網頁</h2><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fhtml.png?alt=media&amp;token=bde74adb-28b7-4f22-b2da-35a0b8bed189" alt></p><p>學程式不外乎想「做出一個完整的網站」出來，所以初學者相當適合先從 HTML、CSS 開始入手，它們正式設計網頁不可或缺的語言。</p><p>這裡提供「<a href="https://www.udemy.com/html-css-learning/?couponCode=CouponHtmlEmail" target="blank">使用 HTML、CSS 開發一個網站</a>」影音課程，我們將前面兩個章節免費提供瀏覽，讓你體驗一下「自己動手做網頁」的感覺，若是你想更進階學習版面設置的話，可以看這篇 <a href="https://www.udemy.com/html-css-learning/?couponCode=CouponHtmlEmail" target="blank">學習 CSS 版面配置</a>，那若是書籍推薦的話，相當建議這本 <a href="https://www.tenlong.com.tw/products/9789862765012" target="blank">HTML &amp; CSS : 網站設計建置優化之道</a> 搭配。</p><p>當你的作品有所小成，想要將他放到網路上讓人觀看時該怎麼辦呢？又要買網址、虛擬主機又麻煩，有什麼資源可以上傳？我們剛好有錄製如何 <a href="https://www.youtube.com/watch?v=bU0f1IvUcZA" target="blank">透過 Github Pages 上傳網頁的影片</a>，照步驟上傳網頁後就能透過它產生網址，讓大家都能看到你的作品嘍！</p><h2 id="揮動-jQuery-讓網頁具有動畫效果"><a href="#揮動-jQuery-讓網頁具有動畫效果" class="headerlink" title="揮動 jQuery 讓網頁具有動畫效果"></a>揮動 jQuery 讓網頁具有動畫效果</h2><p><a href="https://www.youtube.com/watch?v=GVWOIP-HX70" target="blank"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F07%2Fjquery_blog_iamges.png?alt=media&token=f850669e-785e-4941-9305-1257913c258f" alt></a></p><p>在操作別人網頁時，細心的你應該會發現當你滑鼠點擊、拖動元素時，網頁也會回饋給你一些動畫效果。而絕大部分的網頁動畫都是用 jQuery 所做出來的，它友善的語法讓你就算沒有程式基礎也能像魔術師般操作動畫效果，是不是聽起來很吸引人呢！？</p><p>我們每週三晚上都會提供線上問答會，方便學生來提問自學上的問題，而剛好在有次問答會上，講師心血來潮規劃出一個 jQuery 濃縮精華 <a href="https://www.youtube.com/watch?v=GVWOIP-HX70" target="blank">兩小時課程版本</a>，現在放在 youtube 上也超過 5000 人次瀏覽嘍！</p><p>有時候看到別人動畫效果很棒，也想知道他用什麼效果時，也可以瀏覽這部「<a href="https://www.youtube.com/watch?v=UDfkfG4AuHE" target="blank">輕鬆尋找網站裡使用的動畫效果</a>」，讓你能夠具備基礎判斷能力挖掘對方使用的動畫套件唷~</p><h2 id="使用-RWD-打造手機版網頁"><a href="#使用-RWD-打造手機版網頁" class="headerlink" title="使用 RWD 打造手機版網頁"></a>使用 RWD 打造手機版網頁</h2><p><img src="/images/products/rwd_cover.jpg" alt></p><p>現在智慧型載具越來越方便，所以在設計網頁時，也必須考量到小型裝置介面，那麼寫手機版網頁很難嗎？其實他的原理還是來自於 HTML、CSS 哦，我們在 <a href="https://www.youtube.com/watch?v=WDVdmlb9zaYlb9zaY" target="blank">Youtube</a> 上也有一個 半小時的手機版網頁設計教學，同時也附上 <a href="https://github.com/gonsakon/Responsive-boilerplate" target="blank">範例程式碼</a> 給各位自學。</p><h2 id="接下來就可以開始學-JavaScript-了"><a href="#接下來就可以開始學-JavaScript-了" class="headerlink" title="接下來就可以開始學 JavaScript 了"></a>接下來就可以開始學 JavaScript 了</h2><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fjavascript.png?alt=media&amp;token=ae9cccb4-4c32-441d-bbdb-c76740308851" alt></p><p>什麼是 JavaScript 呢？其實偷偷和你說， jQuery 就是用 JavaScript 所設計出來的，如果前面你都學得差不多想要更進階瞭解程式邏輯，那麼現在的趨勢 JavaScript 其實相當適合，除了網頁設計外，也有許多開發者用它來：</p><ul><li>寫動態網頁 (<a href="https://nodejs.org/en/" target="blank">Node.js</a>)</li><li>寫 APP (<a href></a><a href="https://facebook.github.io/react-native/" target="blank">React Native</a>)</li><li>寫 3D 介面 (<a href="https://threejs.org/" target="blank">three.js</a>、WebGL)</li><li>寫桌面應用程式 (<a href="https://electron.atom.io/" target="blank">Electron</a>)</li><li>IoT 物聯網 (<a href="https://webduino.io/" target="blank">軟硬體結合</a>)</li></ul><p>從上得知，只要你學會了 JavaScript 後，任何應用你都可以用 JavaScript 來實作出你的創意出來，不是很棒嗎！？<br>而在有次聚會中，六角校長洧杰為了推動 JavaScript 技術，也很佛心地舉辦了線上線下超過 400 人的 JS 基礎教學，總計六小時的課程讓你能夠一窺 JS 殿堂 ~</p><ul><li>JavaScript 基礎教學 (<a href="https://www.youtube.com/watch?v=oAxuOepz-5M" target="blank">上半場</a>)</li><li>JavaScript 基礎教學 (<a href="https://www.youtube.com/watch?v=EwcafggD42k" target="blank">下半場</a>)</li><li><a href="https://quip.com/25FSApN9lYFA" target="blank">範例程式碼</a></li><li>AJAX / JSON 教學 (<a href="https://www.youtube.com/watch?v=DxdTWIYqIzU" target="blank">時長：1hr30min</a>)</li></ul><p>學完上面以後呢？若是你要與 PHP、ASP.NET 工程師合作的話，勢必要多學一些 JS 框架，以目前較為流行的則是 React、Angular、Vue.js，六角學院為了考量學生需求，特地辦了 Vue.js 免費線上教學，而這些也都有放到 youtube 上哦 :D</p><ul><li><a href="https://www.youtube.com/watch?v=8O3teHziU_E&index=1&list=PLYrA-SsMvTPNPhv8KeSNtPTY8q85-SSJA" target="blank">Vue.js 免費線上教學</a></li><li><a href="https://quip.com/N3iKAEDJEVmD" target="blank">範例程式碼與教學文件</a></li></ul><p>若是你走到這一步就真的太厲害了，有考慮成為前端工程師嗎？</p><p>六角學院目前已協助各行各業的學生轉職投入程式設計師，以前端工程師來說，我們也提供了一份「 <a href="https://quip.com/D59vAxcgG8Qc" target="blank">邁向前端工程師之路</a>」，六角學院洧杰校長也透過這份文件成功幫助超過百位學生轉職成功，也提供給各位參考，再來如果你有以下需求：</p><ul><li>想要接外包：教你 <a href="https://www.youtube.com/watch?v=W7-WhA0ESrk&t=3s" target="blank">擬定合約</a>、 <a href="https://www.youtube.com/watch?v=drLqqWhkUqg" target="blank">網頁切版估價</a></li><li>想要找工作：教你 <a href="https://www.youtube.com/watch?v=oI_xdKYrKpk&feature=youtu.be" target="blank">如何寫履歷</a>、<a href="https://www.youtube.com/watch?v=5dei3RLaG2Q&feature=youtu.be" target="blank">模擬面試</a></li><li>想要找資源：教你 <a href="https://www.youtube.com/watch?v=DBjRl7IXNiQ&feature=youtu.be" target="blank">如何用 Google 快速搜尋資料</a></li></ul><p>喜歡我們的課程試聽也歡迎分享你的朋友，若你/妳看完後對我們的課程與服務有興趣，也歡迎你/妳加入 <a href="/" target="blank">六角學院</a> 的大家庭哦 ^_^</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>勇於承認自己不會，才能獲得更多- Dora</title>
+      <link href="/2017/07/04/2017-07-04-interview/"/>
+      <url>/2017/07/04/2017-07-04-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F07%2Fdora.jpg?alt=media&amp;token=15880209-a839-45b6-a7cd-c5fcad555f9a" alt></p><blockquote><p>高職到大學，一路專研設計系的 Dora ，在設計領域相當游刃有餘，本應滿足家人期待，專職自己擅長的工作。一次的挫折中，她決定跳脫舒適圈，勇於面對挑戰。</p></blockquote><p>聲音充滿活力的 Dora ，話語裡滿是樂天正向的能量，現在是一名前端 工程師。非本科系出生的她，用一年的時間學習前端，用一個月的時間取得工程師頭銜。</p><p>高職畢業後，不是進大學，取而代之的是邁入社會磨練。對於設計相當有天分的 Dora ，直到一次，公司需要設計活動網頁時，發現自己無法完成這項工作，因而感到非常挫折。了解到自己的不足，她決定重返校園，在「多媒體設計」系裡接觸到網頁設計，開始產生了興趣。<br><strong>覺得 Coding 是一件很酷的事！</strong></p><p>認為在設計領域待得太安逸了，Dora 想挑戰自己，她透漏當初決定要轉職時，家中大多不是很認同與支持。朋友們也都覺得不可思議，認為女孩子家，怎麼開始碰起電腦了？畢業後，對程式的熱情不減反增，總是每有會意，便欣然忘食，常常一回過神來，已經是半夜兩三點。</p><h2 id="沒有扎好基礎，進到業界也很難有即戰力"><a href="#沒有扎好基礎，進到業界也很難有即戰力" class="headerlink" title="沒有扎好基礎，進到業界也很難有即戰力"></a>沒有扎好基礎，進到業界也很難有即戰力</h2><p>加入六角學院前，報名過他間補習班，學習程式語言， Dora 認為大型補習班因為課堂數限制，老師們趕課壓力下教得很快，細節也無法深入。</p><p>另外，有些教學平台則是以”範例”講解，但常常因為這樣被侷限在這樣的範例裡面，無法延伸。而六角學院的教法著重在觀念，用引導的方式讓你知道下一步該如何進行；<strong>Code Review</strong> 也是另一個教學重點，將自己的作業寄給老師，老師會詳細地寫下評語，對於改善自己寫法有相當大的幫助。</p><p><strong>勇於承認自己不會，才能獲得更多，不要害怕踏出第一步，只要肯問就會得到答案。</strong></p><p>Dora 坦言曾經也有朋友勸退她，認為她是一時興起，本身理解力也不是很好讓她很受傷，但並沒有因此退縮，除了買書自學 UI/UX 增進自己的實力，她也從來不害怕問問題，直到得到滿意的答案。目前在某大牌電商擔任前端工程師，平日除了優化前台，製作活動頁面，Dora 也努力鑽研新技術，表示後續也想往後端發展，會再好好規劃下一步。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>別害怕半路出家，你擁有更多優勢- Shawn</title>
+      <link href="/2017/06/26/2017-06-26-interview/"/>
+      <url>/2017/06/26/2017-06-26-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2FShawn.png?alt=media&amp;token=3e7e2f6b-96a1-4c12-9e12-d069233eebd4" alt></p><blockquote><p>79年次的 Shawn 大學專攻”多媒體設計”，課堂中接觸到 Flash 的 ActionScript 從此愛上了寫程式的成就感。開始學習前端，雖是半路出家，但他從不覺得處於劣勢，一個月內面試了10多間公司，皇天不負苦心人，目前於燦坤擔任前端工程師，負責公司的 Web 與 APP 介面。</p></blockquote><h4 id="別急！將理想的職缺排在最後，你將不會錯過"><a href="#別急！將理想的職缺排在最後，你將不會錯過" class="headerlink" title="別急！將理想的職缺排在最後，你將不會錯過"></a>別急！將理想的職缺排在最後，你將不會錯過</h4><p>Shawn 建議，求職時多看多比較當作熱身，若一開始還沒有適應求職狀態，可以先將最想去的公司放在後面，吸取前幾次的面試經驗，才不會因為緊張表現失常而錯失良機。</p><h4 id="別害怕半路出家，其實你比別人多了更多優勢"><a href="#別害怕半路出家，其實你比別人多了更多優勢" class="headerlink" title="別害怕半路出家，其實你比別人多了更多優勢"></a>別害怕半路出家，其實你比別人多了更多優勢</h4><blockquote><p>在面試官疑惑的詢問下 ：「為何你可以開出這樣條件的薪資呢？」</p></blockquote><p>Shawn 充滿自信的回答，因為非本科系出生，除了網頁開發技術外，我還多了設計軟體或是影片剪輯的專業技能。</p><p>其實 <strong>半路出家不全然是劣勢，你擁有的專業更多</strong>。</p><h4 id="如何-get-Ready？老師們給予就業的準備方向"><a href="#如何-get-Ready？老師們給予就業的準備方向" class="headerlink" title="如何 get Ready？老師們給予就業的準備方向"></a>如何 get Ready？老師們給予就業的準備方向</h4><p>過去在公司有後端開發的經驗，負責公司的形象官網、站內購物車，主要使用 PHP ，後續網站慢慢也需要大量的前端技術，Shawn 開始希望朝前端補強，他表示起初前端底子還不夠深厚，做起來相當吃力，大量使用網路上免費的 Template 套版改寫，沒有辦法靠自己從無到有的寫出功能完整的網站。加入了六角學院後，邊學邊做幫助自己快速成長。</p><h4 id="網路上雖不乏許多前端的教學資源，但在對於自學，-Shawn-強調對於初學者來說，自訂學習方向其實是一開始最困難的。"><a href="#網路上雖不乏許多前端的教學資源，但在對於自學，-Shawn-強調對於初學者來說，自訂學習方向其實是一開始最困難的。" class="headerlink" title="網路上雖不乏許多前端的教學資源，但在對於自學， Shawn 強調對於初學者來說，自訂學習方向其實是一開始最困難的。"></a>網路上雖不乏許多前端的教學資源，但在對於自學， Shawn 強調對於初學者來說，自訂學習方向其實是一開始最困難的。</h4><p>建議找一個適合自己的教學平台，跟著課程一步步走，完成每個課程的 “<strong>最終作業</strong>“，是最基本的，你能檢視這堂課你吸收了多少。將作業及作品上傳到 GitHub ，得到老師的肯定，對前端領域開始有了自信。在老師們熱心輔導下，<strong>從作品集方向到模擬面試，讓學員們能夠以最佳狀態完成夢想</strong>。</p><h4 id="六角學院是學員強力的後盾！"><a href="#六角學院是學員強力的後盾！" class="headerlink" title="六角學院是學員強力的後盾！"></a>六角學院是學員強力的後盾！</h4><p>加入六角學院之前，每每遇到問題 Shawn 都透過 Google 搜尋，參考網路上各路大神們的範例，試做一遍從中學習與了解。</p><p>加入六角學院之後，除了 Google 的好習慣之外，若真的無法找到答案，還可以隨時請教洧杰老師與志誠老師。老師們也不是每次有問必答，而是以”引導”的方式，給學員們關鍵字與搜尋方向，培養自主學習的能力。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端框架起步走，精彩 Vue.js 滿滿一個月</title>
+      <link href="/2017/06/25/2017-06-25-july-vue/"/>
+      <url>/2017/06/25/2017-06-25-july-vue/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2FKuro2.jpg?alt=media&amp;token=bafe0b41-d24d-40ba-b91d-1c18eec6c726" alt></p><blockquote><p>在學完基礎 JavaScript 後是否想了解其他框架有何特色呢？</p></blockquote><p>許多同學問到：</p><ul><li>該如何選擇框架？</li><li>Vue.js 這框架有什麼特色？</li><li>面試時都會要求會框架該怎麼辦？</li></ul><p>這些需求老師聽到囉，我們本月將會進入滿滿的 Vue.js 課程，只要有 JavaScript 入門就能開始進入這堂課。課程中也會從基礎開始，所以沒接觸過的也能來聽喔。</p><h4 id="課程時間"><a href="#課程時間" class="headerlink" title="課程時間"></a>課程時間</h4><p>每週的線上問答 (週三晚上 7:30)，每週一個主題讓你聽得不要不要～。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2Fcourse2.jpg?alt=media&amp;token=61524af6-25e8-42f7-9c76-7ecf13d03fe9" alt></p><h4 id="報名辦法"><a href="#報名辦法" class="headerlink" title="報名辦法"></a>報名辦法</h4><p>凡 <strong>有註冊六角學院主要課程學員</strong>，在 Udemy 信箱每週都能收到課程通知(記得收信喔)，課程內容將無須額外付費，<strong>主要課程列表</strong> 如下：</p><ul><li>使用 HTML、CSS 開發一個網站</li><li>jQuery 網頁互動效果</li><li>JavaScript - 學徒的試煉</li><li>RWD 響應式網頁設計</li><li>一頁式金流商務網頁</li></ul><p><strong><a href="/courses/">&gt;&gt; 進入課程列表 &lt;&lt;</a></strong></p><h4 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h4><ul><li>建議具備基本 HTML, CSS, JavaScript 能力</li><li>課程內容不一定會錄影，請同學盡量踴躍參加</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力銀行徵才條件，沒有100%符合也能前往磨練 -- 晟恩</title>
+      <link href="/2017/06/18/2017-06-18-interview/"/>
+      <url>/2017/06/18/2017-06-18-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2F2017-6-21.jpg?alt=media&amp;token=d0bfcf88-de84-4c07-a244-25c571f8cfe3" alt></p><blockquote><p>晟恩是本科系出生，學習很多程式語言基礎，但對未來的運用沒有太多頭緒，退伍後在就業壓力與焦慮下，晟恩重新學習，希望能夠尋得不錯的前端技術的職缺。</p></blockquote><h4 id="當初沒有想太多，以考試分數選擇學校及科系，直到修完前端課程，與洧杰老師談論過後，開始對這個產業有了想像。"><a href="#當初沒有想太多，以考試分數選擇學校及科系，直到修完前端課程，與洧杰老師談論過後，開始對這個產業有了想像。" class="headerlink" title="當初沒有想太多，以考試分數選擇學校及科系，直到修完前端課程，與洧杰老師談論過後，開始對這個產業有了想像。"></a>當初沒有想太多，以考試分數選擇學校及科系，直到修完前端課程，與洧杰老師談論過後，開始對這個產業有了想像。</h4><p>印象很深刻，在大四第一次選修前端時，因不了解 HTML 內各個 tag 所代表的意義，自創許多令老師不解的 tag，老師驚訝地說：「你搞屁啊!!!」(笑)導正了錯誤觀念後，開始認真覺得前端相當有趣。</p><p>學校的課程一般都是一周一堂課，其實很容易生疏，建議還是要找時間多練習實做，才會是學好前端技術的關鍵。</p><p>退伍待業時，重新學習前端知識，一開始基礎會理解的比較快，後續遇到卡關，建議可以多看些教學影片，並跟著 Coding 會更容易些。另外，也要留意技術名詞的原文與翻譯，可以幫助學習與發問時更精確。</p><hr><h4 id="前端技術最吸引人的就是快速更新，總是有新技術來改良舊有的問題，是個很活躍的產業。"><a href="#前端技術最吸引人的就是快速更新，總是有新技術來改良舊有的問題，是個很活躍的產業。" class="headerlink" title="前端技術最吸引人的就是快速更新，總是有新技術來改良舊有的問題，是個很活躍的產業。"></a>前端技術最吸引人的就是快速更新，總是有新技術來改良舊有的問題，是個很活躍的產業。</h4><p>當發現很多前端技術都不會，開始否定自己，覺得不太適合做前端 ，後續與老師談談時，<strong>老師充滿暖意地說：「不錯啊，你不覺得慢慢補起來才有成就感。」</strong> ，給了很多的信心和正確的心態，覺得不該這樣妄自菲薄，而是想辦法補起來，有了成就感，就會持續下去。</p><p>即便是在職，晟恩依然保持好習慣，利用空閒時間看看網路上分享的教學影片，吸收技能上的新知識。</p><h4 id="六角學院的課程外，老師們也會給予就業方面的建議，「線上模擬面試」幫助很大"><a href="#六角學院的課程外，老師們也會給予就業方面的建議，「線上模擬面試」幫助很大" class="headerlink" title="六角學院的課程外，老師們也會給予就業方面的建議，「線上模擬面試」幫助很大"></a>六角學院的課程外，老師們也會給予就業方面的建議，「線上模擬面試」幫助很大</h4><p>老師的教學很特別，有時候會用錯誤示範來引導學員，如何發現錯誤以及避免錯誤。晟恩強調”發問”也是很重要的學習重點，建議將你想解決的問題，以及提出你目前的解決辦法，讓對方判斷是否可行。<strong>盡量提出「是非題」與「選擇題」，而非開放性的「問答題」</strong>。</p><p>晟恩建議，在找職缺時，看到各公司開出的徵才條件，不要害怕自己沒有100%符合，都去試試看，相信有自學能力以及學習規劃的員工，公司都很樂見。若失敗也可以當作經驗，補強自己的不足。</p><hr><h2 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h2><p>前端技術最吸引我的地方是”快速更新”，雖然要做出一個網頁，用舊有技術就能完成，但為了更方便的開發和有更好的網頁效能，前端總是有新技術來改良之前的問題。<strong>前端帶來的成就感除了做出滿意的作品外，學習到新的東西也很有成就感</strong>，或是身為懶惰的人，能跟上一點點的潮流，也是挺有成就感的(笑)</p><p>在職的公司環境與薪資都很滿意，工作型態都較隨性，沒有打卡制度，只要負責專案能夠在排程內完成，公司都會讓工程師們自主安排，有相當充分的時間可以增進專業技能。目前較專精網頁”功能”的 Coding，希望之後能夠學習設計技能，做出來的網站不只好用，更要好看！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2017 前端開發者技能樹！</title>
+      <link href="/2017/06/12/2017-06-12-skill_tree/"/>
+      <url>/2017/06/12/2017-06-12-skill_tree/</url>
+      
+        <content type="html"><![CDATA[<p>很多同學會問老師前端該學到哪裡？如果我是設計師，想走前端要學哪些技能？這邊老師提供 <strong>前端開發者技能樹</strong> 供同學參考參考。</p><p>(下方有額外說明)</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2FskillTree.jpg?alt=media&amp;token=cc341ee6-d920-4f17-b3ad-9abc383ba669" alt="前端開發者技能樹"></p><h2 id="入門前端"><a href="#入門前端" class="headerlink" title="入門前端"></a>入門前端</h2><p>如果你是剛入門前端的開發者，會期許你至少熟悉 CSS 與 JavaScript 的分支。再沒有程式的背景下，從 CSS 入門會是個好主意，這裡的學習曲線不會那麼的陡峭，且網頁的頁面基礎正式從此開始。</p><p>此時 CSS 最需要了解的部分為響應式網頁，在有餘力的情況下至少接觸一個 CSS 預處理器。JavaScript 學會基礎語法後，可選擇 JS Framework 來進修，框架對於工作效率有很大幫助，這邊列出目前主流的框架，除了這些以外，您也能依據工作需求去選擇合適框架。</p><h2 id="設計前端"><a href="#設計前端" class="headerlink" title="設計前端"></a>設計前端</h2><p>設計前端大多為設計背景出身，除了以上入門技能以外，我們這類開發者還要專精繪圖工具及設計規範。</p><p>好的繪圖工具能夠讓設計師事半功倍，並且能夠強化與其他工程師合作的摩擦，因此推薦使用 Sketch 作為設計開發的主要工具。另外設計規範也是很重要的，設計規範猶如平面設計的 VI，是一間企業的核心精神，而學習設計規範將能夠提高網頁設計的穩定性，藉此提高網頁設計的質感。</p><h2 id="進階前端"><a href="#進階前端" class="headerlink" title="進階前端"></a>進階前端</h2><p>入門以後也可以繼續往前端領域深入邁進，此時需要了解更多的框架、任務管理工具、套件管理來優化整個工作流程，並且持續深入學習 CSS 與 JavaScript 的新技術，讓自己在這個領域不落人後。</p><p>CSS 很建議選擇一套框架去深入研究，去了解這樣的大型架構是如何規劃的，以便自己在面對大型專案時可以更有效的建構出有良好架構的 CSS。</p><p>JavaScript 是一個相當自由且強大的語言，他可以與許多工具搭配，所以不斷的接觸新事物是非常重要的，在目前有許多任務管理、套件管理、打包工具都能夠讓 JavaScript 更上層樓，在學習新的框架前，不妨先試試一些工具吧。</p><h2 id="專精與全端"><a href="#專精與全端" class="headerlink" title="專精與全端"></a>專精與全端</h2><p>前端每 18 個月會困難一倍，專精的領域還有許多是上圖無法描述的，宛如黑洞一般深不可測(!?)，也正是如此所以前端充滿了趣味，無論你想繼續學習視覺性的 CSS、分析圖表、第三方的功能串接，甚至想要持續往後端邁進都有許多內容值得深入喔！</p><p>如果你想從前端領域找份好工作，可以參考我們這份 (<a href="https://quip.com/D59vAxcgG8Qc" target="_blank" rel="noopener">https://quip.com/D59vAxcgG8Qc</a>) 邁向前端工程師之路的文件逐一學習。如果你還有其他學習或工作上的問題，也歡迎透過以下連結加入我們喔～</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> skilltree </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>轉職是危機？是轉機！Eden：「我不害怕從頭開始。」</title>
+      <link href="/2017/03/15/2017-03-15-interview/"/>
+      <url>/2017/03/15/2017-03-15-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F03%2FEden.jpg?alt=media&amp;token=29d2ca95-c6ad-4be2-902c-87f31e04a2be" alt></p><blockquote><p>面對陌生的領域，你能放下所擁有的，從零開始嗎？<br>身為家中經濟支柱，你能毅然決然的離職，全心投入自己所追尋的嗎？</p></blockquote><p>為人夫、為人父的 Eden 在今年年前做了一個重要的決定 “轉職” ，因不再年輕，也沒有前端的相關經驗，周遭親友不看好他，希望 Eden 能打消念頭，從事自己擅長的業務工作。</p><p>Eden：<strong>當在一個領域有所成就時，要你放下從頭來過，內心其實是很掙扎的，何況又有家庭，壓力真的是很大。但你知道這條路是有前途的，成功後你的生活將會很不一樣</strong>。</p><hr><p>擁有 10 年業務經驗，最初學習前端只是興趣，加入六角學院後，發現越學越上手，在 2016 11月下定決心離職，待在家中寫了整整 2 個月的 code ，給自己定個目標“農曆年前”要找到前端相關工作，將壓力轉化成助力。<strong>正式求職不到兩周，在年前獲得前端工程師的入場券</strong>，至今 Eden 已到職一個多月了。</p><p>學習期間，加入過 Codecademy 課程，但覺得平台的教學比較方塊式，前後課程無法連結，課程學完後常常會不知道下一步該怎麼做；<br>也洽詢過 O匠、聯O 等大型補習班，則是學的價格偏高，且師資不穩定只好作罷。</p><hr><p>六角學院的課程設計都是以初學者為出發點，課程內容淺而易懂，課程與課程的銜接相當流暢，不會有學習上的斷層，對於建立扎實的基礎非常有幫助。<br>老師們也會因學生們的程度發派作業，適時引導學生自行尋找解決問題的方法；<br>教授業界實用的作業技巧，讓學習能與業界銜接，讓你在各領域都能應用自如，由此可看出六角學院在課程設計上的用心</p><p>六角學院不只課程定價親民，老師們也都很熱心，學習上遇到問題，隨時發問都能詳細回覆。身為新手其實對前端資訊的資源有限，老師們創立的 Line 群組讓求職中或已在職的學生們可以相互討論交流，教學相長。</p><p>Eden：<strong>沒有系統的學習，自學相當困難。初學者手上的資源很少，若能有像六角學院這樣的學習平台，隨時發問都能找到老師，引導我找到答案，不會彷徨無助，老師們提供一個令人安心的學習環境</strong>。</p><hr><p>應徵前端工程師時，產業選擇也很重要，雖然說產出的東西都大同小異，但延伸的前端技術很不一樣。<br>我的應徵方向會偏新創公司，當被通知面試時，我會先瀏覽公司性質，並研究公司網頁的原始碼，面試時也可以提出討論。<br>現職公司希望前端工程師同時具有改善 UX 的能力，因此在學習前端時也需要培養使用者體驗的分析技能，優化公司的產品。</p><p>Eden：<strong>不像年輕人那麼有本錢，轉職凡事皆需有規劃，在經濟壓力下與時間賽跑，既然決定了就要全力以赴，中途放棄對我及家人都是重傷。</strong></p><p>我希望藉由我的案例，能夠給有家庭、小孩的人信心，用我的經驗告訴他們，家庭與工作，不會阻擋你做任何想做的事，還是有時間能夠運用。重要的是，一切詳細規劃、不要盲目學習。</p><hr><p>後計：<br>對於現任職位的工作很滿意，工作內容相當有趣，時間也都可以自由安排，不過也是有需要解決的問題，就是前端與後端得配合與溝通，相信前端多少都會遇到這樣的問題，抓到彼此的作業模式就能很快達到共識(笑)</p><p>歡迎熱愛前端的你加入我們<a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>服務業轉戰前端，Jim：「“做中學”是熟悉程式語言最快的捷徑！」</title>
+      <link href="/2017/01/20/2017-01-17-interview/"/>
+      <url>/2017/01/20/2017-01-17-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2FS__7209474.jpg?alt=media&amp;token=8bc56bc5-9027-4587-83ef-86be6d34f921" alt></p><p><a href="https://www.facebook.com/hexschool/posts/667849266697723?match=54K65LqGIOS9oOWAkQ%3D%3D" target="_blank" rel="noopener">【六角學院：為了你們，他寫了一個 atom 版本！】</a></p><p>退伍後就在以前工讀的餐廳擔任正職員工，直到一年前 Jim 有了轉職念頭，但又不知道該朝甚麼方向，台北親戚建議他可以嘗試前端，「一開始就是看 w3schools、Codecademy 等，就開始邊看邊做，不懂的就 Google。」 Jim 表示過濾搜尋到的文章也許花了一些時間，但學習陌生技術實在難免，將過程中遭受的挫折轉化為經驗才重要，熟能生巧嘛！</p><h2 id="前端是視覺化的東西，成就感看的見"><a href="#前端是視覺化的東西，成就感看的見" class="headerlink" title="前端是視覺化的東西，成就感看的見"></a>前端是視覺化的東西，成就感看的見</h2><p>最一開始上網找各種網頁版型，規定自己每周至少要切一的版，每次切完就會檢視自己是否有多餘的 code ，將它更簡潔化。<br>每次編寫或修改的變化都可以立即看到，覺得很有成就感，從此就開始產生興趣，投入越來越多時間練習。</p><h2 id="網路上的文章常常有看沒有懂"><a href="#網路上的文章常常有看沒有懂" class="headerlink" title="網路上的文章常常有看沒有懂"></a>網路上的文章常常有看沒有懂</h2><p>新手一開始學習時，即便看得懂線上文章教學，卻不知該如何活用工具。<br>「我知道如何宣告變數、迴圈、Function，但如果要做一個”實用功能”，未必寫得出。」Jim 道出自學前端時所遇到的瓶頸。遇見洧杰老師和志誠老師後，透過線上與老師互動問答，真的進步很多也很快！<br>Jim 直說老師們真的是相當熱心，有問題隨時發問都會得到解答，老師們甚至會引導你，延伸你的學習方向與深度。</p><p>「第一個作品其實很粗糙，但我還是希望可以有相關工作的面試經驗，所以就拿著作品去應徵了！」Jim 認為累積相關的面試經驗是必要的，可以體認到自己前端技術上的不足，加強這方面的學習。</p><p>學習期間洧杰老師會出許多考題與作業，在這樣的引導下用 Atom 製作了一份履歷，應徵了”貝殼放大”，Jim 認為能讓對方通知面試就是對自己的一種肯定，那次的面試經驗真的是大開眼界！</p><h2 id="學寫程式沒有標準答案"><a href="#學寫程式沒有標準答案" class="headerlink" title="學寫程式沒有標準答案"></a>學寫程式沒有標準答案</h2><p>可能是台灣教育的關係，我們很習慣地在是非題與選擇題中作答，認為凡事都有標準答案；<br>但前端技術恰巧相反，你可以用很多種方式達成同一個目的，只有效率與合適度的問題。<br>反覆練習，「做中學」是熟悉程式語言最快的捷徑。</p><h2 id="公司希望找到有自己想法的人"><a href="#公司希望找到有自己想法的人" class="headerlink" title="公司希望找到有自己想法的人"></a>公司希望找到有自己想法的人</h2><p>在”愛進化科技”擔任前端工程師的 Jim 回憶起當初面試的緊張情形，公司除了對專業技術的要求外，也希望員工都能有自己的想法與規劃。</p><p>老師們也會在事前舉辦的線上模擬面試，讓沒有前端面試經驗的學員們能更有自信為前端職涯做足準備。<br>「對自己的期許是往全端發展。」 Jim 謙虛地強調這只是個期許，但不一定會成功；我卻認為對於一張前端白紙來說，只要願意嘗試一筆一畫，凡事都是可能發生的。</p><p>歡迎熱愛前端的你加入我們 <a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>不輕易說放棄的小朱：「潮流到哪，我的技術就到哪！」</title>
+      <link href="/2016/12/28/2016-12-28-interview/"/>
+      <url>/2016/12/28/2016-12-28-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2Fblog_1229.jpg?alt=media&amp;token=2ffb738d-c946-4ab6-87b3-e96556abc255" alt></p><p>前端工程師小朱，看到洧杰老師在簡報上寫著：「有前端求職的相關問題，歡迎詢問。」，二話不說加入六角學院。從那天起，早上七點上班，下班後晚上九點至十二點學習前端課程，長達一年不間斷。從網站企劃轉職前端技術人員，面試五間公司，成功錄取三間。</p><h2 id="剛退伍時，完全沒有方向，對自己的未來充滿焦慮"><a href="#剛退伍時，完全沒有方向，對自己的未來充滿焦慮" class="headerlink" title="剛退伍時，完全沒有方向，對自己的未來充滿焦慮"></a>剛退伍時，完全沒有方向，對自己的未來充滿焦慮</h2><p>回憶起一年前，在高雄前端社群裡，看到了洧杰老師發佈的簡報最後寫著：「有前端求職的相關問題，歡迎詢問。」，小朱加入<strong>六角學院</strong>這個大家庭，他相當喜歡”每周線上問答”的活動內容，讓學員能夠隨時隨地發問並且透過討論得到解答，對於新手或是進階學習者，這些管道就像個貼身諮詢師一般，提供優質的學習資源。</p><p>第一次接觸網站架設，是因為想幫忙家中經營的小公司架設網站，非本科系出身的小朱越做越覺得有趣，且因工作需要以及遇到志同道合的同事，勇於請教他人，自學”前端”變得更加有動力，對未來規劃也開始有了新方向。</p><p>小朱說：「我的貴人很多也來自線上，他們很樂於分享自身經驗，提供建議與方向。」</p><h2 id="潮流到哪，我的技術就到哪"><a href="#潮流到哪，我的技術就到哪" class="headerlink" title="潮流到哪，我的技術就到哪"></a>潮流到哪，我的技術就到哪</h2><p>「我比較保守，目標定太遠怕會迷失方向，所以我總是逼自己學習。」</p><p>面試時常被問到：「前端程度與未來規劃為何？」時，小朱表示，我無法精準地說我的能力到哪，但可以確定的是潮流到哪，我的技術就到哪！</p><p>在擔任前一份工作 ─ 網站企劃的兩年時間，總是不斷摸索與吸收新知，深怕自己的停滯不前。「網路行銷日新月異，前端技術更是如此！你要不停地學習，否則就會不進則退。」，小朱語重心長道，這樣的危機意識為他帶來不少學習上的優勢。<br>如今，一人部門已發展成將近十人的中型部門。不難想像，在這種壓力下，要兼顧事業並培養第二專長，是需要多大的毅力與決心。</p><p>學習前端期間，認同洧杰老師的教學方針，不一味給予解答取而代之的是引導自主思考，善用 Google 學習精準搜尋並判斷文章的正確性，也是在六角學院的一大收穫，小朱說：「 “搜尋” 大家都會，但找對關鍵字精準搜尋，是需要學習的。」</p><p>小朱感謝洧杰老師事前舉辦的「線上模擬面試」，提供求職前需學會的技術清單，希望他按部就班做好求職的準備。<br>現在，得到五間公司面試邀請，每間都經歷了層層關卡，其中有三間順利錄取。</p><h2 id="沒有努力過，不要輕易放棄"><a href="#沒有努力過，不要輕易放棄" class="headerlink" title="沒有努力過，不要輕易放棄"></a>沒有努力過，不要輕易放棄</h2><p>網路行銷的經歷為小朱的前端之路加分不少，有著這樣優勢的他更是趁勝追擊，不斷為自己設立新的目標精進技能。</p><p>當問到身邊的人若是想學習前端，你會如何建議他呢？</p><p>小朱不假思索地答道：「首先，將電腦中的遊戲解除安裝，多出來的時間就拿來學習吧！(笑)」</p><p>他說早已向身邊不少朋友推薦<strong>六角學院</strong>，洧杰老師和志誠老師是很好的學習顧問，從入門學習到求職技能，導引學員思考、找尋解答，一步步邁向各自的目標，因人而異提供適合的建議。</p><p>歡迎熱愛前端的你加入我們 <a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>超值 WEB 精進課程 - 眾星前端講師群集</title>
+      <link href="/2016/10/03/2016-10-03-oct-online-talks/"/>
+      <url>/2016/10/03/2016-10-03-oct-online-talks/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2016%2F10%2FArtboard.png?alt=media&amp;token=a2b7aa05-9b24-445b-976b-c7ce743bfae4" alt></p><p>六角學院校長在這個精進技能的 10 月份中，號召多位前端明星講師提升大家的技能，讓學生們可以輕鬆銜接 11 月份的新課程！</p><h3 id="前端課程連發四彈"><a href="#前端課程連發四彈" class="headerlink" title="前端課程連發四彈"></a>前端課程連發四彈</h3><h4 id="第一彈：SASS-運用自如"><a href="#第一彈：SASS-運用自如" class="headerlink" title="第一彈：SASS 運用自如"></a>第一彈：SASS 運用自如</h4><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2016%2F10%2F1006_Sass.png?alt=media&token=dd5923b9-38f0-42cd-917d-939f7cb14ca2" width="450" style="margin-left:0"><p>想要了解如何有效率地撰寫 CSS 嗎？由六角學院校長教你目前業界上最熱門的 CSS 預處理器 SASS ！</p><p>時間：10/06(四) 晚上 7:30~9:30<br>講師：廖洧杰</p><h4 id="第二彈：Sublime-Text-神乎奇技"><a href="#第二彈：Sublime-Text-神乎奇技" class="headerlink" title="第二彈：Sublime Text 神乎奇技"></a>第二彈：Sublime Text 神乎奇技</h4><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2016%2F10%2F1013_sublimeText.png?alt=media&token=efadfa83-4465-437f-8490-3361648a479d" width="450" style="margin-left:0"><p>上完六角學院的 Sublime Text 課程還意猶未盡，想了解更多 Sublime 進階用法嗎？讓前端戰神 Amos 報你災！</p><p>時間：10/13(四) 晚上 7:30~9:30 Amos (Sublime)<br>講師：<a href="https://www.facebook.com/banPrint?fref=ts" target="_blank" rel="noopener">Amos</a></p><h4 id="第三彈：jQuery-登峰造極"><a href="#第三彈：jQuery-登峰造極" class="headerlink" title="第三彈：jQuery 登峰造極"></a>第三彈：jQuery 登峰造極</h4><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2016%2F10%2F1020_jQuery.png?alt=media&token=555a7807-b35f-4693-aaf6-b2d25710f006" width="450" style="margin-left:0"><p>已經會用 jQuery 那就更適合學習 JavaScript 基礎，讓 Muki 前端講師教你兩者如何結合設計更豐富、彈性的網頁互動效果</p><p>時間：10/20(四) 晚上 7:30~9:30<br>講師：<a href="https://www.facebook.com/mukispace/?fref=ts" target="_blank" rel="noopener">Muki</a></p><h4 id="第四彈：前端工具-傾囊相授"><a href="#第四彈：前端工具-傾囊相授" class="headerlink" title="第四彈：前端工具 傾囊相授"></a>第四彈：前端工具 傾囊相授</h4><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2016%2F10%2F1027_PJCHENder.png?alt=media&token=c8f46ae9-2322-4183-b2b4-ed32162d6dad" width="450" style="margin-left:0"><p>是璀璨的前端新星，本次議程為提供各種前端工具協助各位開發效率。</p><p>時間：10/27(四) 晚上 7:30~8:30<br>講師：<a href="https://www.facebook.com/pjchender/?fref=ts" target="_blank" rel="noopener">PJCHENder</a></p><h2 id="上課方法"><a href="#上課方法" class="headerlink" title="上課方法"></a>上課方法</h2><ol><li>一次付費聽全部：所有課程 <strong>總共 250元</strong>，優質課程聽一個就回本，聽四個變大神!!</li><li>名額限制：180 名，售完不再增加名額</li><li>開課倒數：10/05 註冊，確保聽到全部前端課程</li></ol><a href="https://web.pay2go.com/EPG/_hexschool_order/oANVVJ" class="btn btn-danger btn-radius btn-block btn-to-action mp-click tracking-link disabled" title="眾星前端講師群集 搶位去" target="_blank" rel="noopener">  <span>線上搶位去</span></a><br><p>我們將會用 mail 傳送線上 ZOOM 會議網址，所以請各位務必將 mail 填寫正確唷！</p><hr><p>P.S.：六角學院也有line+嘍，歡迎加入隨時獲得六角學院第一手資訊！</p><p>直接加入 LINE 好友：<a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" rel="noopener">https://line.me/R/ti/p/%40guv7422g</a></p><p>LINE ID：@guv7422g</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> event </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>有志竟成 陳景安：「面對的態度最重要，起步永遠不嫌晚。」</title>
+      <link href="/2016/09/30/2016-09-28-interview/"/>
+      <url>/2016/09/30/2016-09-28-interview/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F06%2F20160930blogimage.jpg?alt=media&amp;token=ef9b09fb-b345-4a05-bee6-b72897077f2b" alt></p><p>沒有前端背景的景安，對前端的熱愛始於大學四年級的選修課，經歷5-6年的自學撞牆期，這份熱忱絲毫沒有減退。2016年，偶然發現了「六角學院」，在年資與年紀都有一定的條件下，毅然決然地辭掉網路行銷企劃的工作，她知道自己起步晚因此更加全心全意投入學習。現在，她在資訊公司擔任前端工程師，她愛這份工作！</p><h4 id="Q：-為何對前端產生了興趣？"><a href="#Q：-為何對前端產生了興趣？" class="headerlink" title="Q：    為何對前端產生了興趣？"></a>Q：    為何對前端產生了興趣？</h4><p>景安：在大學四年級的選修課 – 「網頁製作」，是使用 Adobe Dreamweaver 簡單排版，當時覺得很有趣！</p><p>一直到出社會後無名小站興起，大家開始流行製作自己專屬的 CSS 部落格主題，第一次看到密密麻麻的程式碼，發現原來是這些東西在控制著網頁的樣式，而非只是 Adobe Dreamweaver 點選的方式製作，這才開始有想進一步學習程式碼，不過因為是非本科系的，在自學的時候總是在撞牆期徘徊，並且無法有系統的學習也相當困擾，這樣的情況持續了5-6年，但也都沒有想過要放棄，一直在尋找學習方法與管道。(無奈)</p><h4 id="Q：-學習前端技術有很多原因，像景安就是為了「轉職」，在過程中老師有給你甚麼樣的建議嗎？"><a href="#Q：-學習前端技術有很多原因，像景安就是為了「轉職」，在過程中老師有給你甚麼樣的建議嗎？" class="headerlink" title="Q：    學習前端技術有很多原因，像景安就是為了「轉職」，在過程中老師有給你甚麼樣的建議嗎？"></a>Q：    學習前端技術有很多原因，像景安就是為了「轉職」，在過程中老師有給你甚麼樣的建議嗎？</h4><p>景安：早期104人力銀行並沒有前端工程師這樣的職位，只要是寫 coding 的都屬工程師並沒有前、後端之分，所以我也不知道該怎麼去學這領域的東西。</p><p>沒有基礎、概念，甚至無從得知未來若要從事相關工作，到底需要具備甚麼條件，在這樣的情況下，只能一邊摸索一邊從事其他工作。</p><p>我把前端想得很難，難到我一直在懷疑自己是否夠格應徵，不過洧杰老師分析了這份徵才內容，評估我現階段的程度，他認為沒有問題，相信我可以勝任！(笑)</p><p>給了我許多建議與方向，讓我補足我欠缺的技能。</p><h4 id="Q：關於前端，妳都是如何摸索自學的呢？"><a href="#Q：關於前端，妳都是如何摸索自學的呢？" class="headerlink" title="Q：關於前端，妳都是如何摸索自學的呢？"></a>Q：關於前端，妳都是如何摸索自學的呢？</h4><p>景安：通常會先筆記技術的名稱 → 搜尋資料 → 了解基本觀念、使用方式 → 搜尋範例 → 開始實作。</p><p>當時都是利用下班後的時間自學，也有想過要去巨X、X成上課，但礙於價格與周遭朋友的上課經驗，心裡還是有些怕怕的！</p><p>也有參加大學推出的社區課程，學習 HTML 、 CSS 基礎，收費落在10,000元以下，還在能接受的範圍內，就這樣一邊做著行政工作一邊學習，想要把自己的基礎觀念架起來。</p><h4 id="Q：為什麼之後選擇六角學院呢？"><a href="#Q：為什麼之後選擇六角學院呢？" class="headerlink" title="Q：為什麼之後選擇六角學院呢？"></a>Q：為什麼之後選擇<em>六角學院</em>呢？</h4><p>景安：其實覺得自己年紀也不小了，即便與行政工作無關，還是一直持續學習前端技術，但對於轉職也只是念了好久一直沒有行動，因為覺得自己的程度還不夠，</p><p>參加六角學院 HTML、CSS 課程的一個月後，我發現這課程值得好好學習，真的覺得可以從這裡開始奠定轉職基礎，因此下定決心！</p><p>因為不是本科系出生，身邊無具相關知識的朋友，遇到問題也沒有老師可以發問，<em>六角學院</em> 提供了可以隨時隨地發問的平台，覺得很佛心。</p><h4 id="Q：與其他你參加過的社區課程相比，六角學院-有甚麼差異之處呢？"><a href="#Q：與其他你參加過的社區課程相比，六角學院-有甚麼差異之處呢？" class="headerlink" title="Q：與其他你參加過的社區課程相比，六角學院 有甚麼差異之處呢？"></a>Q：與其他你參加過的社區課程相比，<em>六角學院</em> 有甚麼差異之處呢？</h4><p>景安：即便參加了專業課程，心裡還是覺得沒有系統，一般實體課程都屬一次性，這堂課忘了就忘了，無法回播；</p><p>有些課程的老師因授課時間的限制，無法一一釐清問題，許多細節也只是帶過，導覽式的簡單介紹工具的名稱與使用方式，很難與實際應用做結合；</p><p>然而線上課程的優勢在於”能不斷重複地複習”，邊學邊做若遇到問題能夠反覆驗證，正是我喜歡的學習模式，老師的講解方式也很適合我，洧杰老師傳授的是循序漸進的觀念，而非制式化的學術性理論，他耐心地說到你懂，也能隨時個別回答同學們問題，因此我覺得六角學院挺適合我的(笑)。</p><h4 id="Q：目前公司前端工程師的工作內容？"><a href="#Q：目前公司前端工程師的工作內容？" class="headerlink" title="Q：目前公司前端工程師的工作內容？"></a>Q：目前公司前端工程師的工作內容？</h4><p>景安：公司偏向接案，會隨著案子的需求學習不同的新技術，目前手上的案子都還滿上手的(笑)。</p><h4 id="Q：若在工作上遇到了問題，你會怎麼做？"><a href="#Q：若在工作上遇到了問題，你會怎麼做？" class="headerlink" title="Q：若在工作上遇到了問題，你會怎麼做？"></a>Q：若在工作上遇到了問題，你會怎麼做？</h4><p>景安：我比較偏向自己找尋問題的答案，雖然說有前輩帶著會比較好，但對於日新月異的網路技術產業而言，自主性的開發與學習新技術，是個不可或缺的技能。</p><h4 id="Q：當初應徵這個職位，所需具備的條件為何？"><a href="#Q：當初應徵這個職位，所需具備的條件為何？" class="headerlink" title="Q：當初應徵這個職位，所需具備的條件為何？"></a>Q：當初應徵這個職位，所需具備的條件為何？</h4><p>景安：前端工程師由於是銜接美術與後端的橋樑，我認為需要具備溝通技巧、有耐心、能把話說精準的人格特質。</p><h4 id="Q：在面試的時候，有甚麼令你印象最深刻的嗎？"><a href="#Q：在面試的時候，有甚麼令你印象最深刻的嗎？" class="headerlink" title="Q：在面試的時候，有甚麼令你印象最深刻的嗎？"></a>Q：在面試的時候，有甚麼令你印象最深刻的嗎？</h4><p>景安：在面試前，洧杰老師有替我模擬面試，令人驚訝的是老師模擬的面試方向與題目都相當的準確，</p><p>印象最深刻的就是「對未來的進修規劃」、「有無想要增進自己的那些技能？」，這類型的題目很能展現自己的想法與個人特質。</p><h4 id="Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？"><a href="#Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？" class="headerlink" title="Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？"></a>Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？</h4><p>景安：遇到不熟悉的事物時，面對的態度是最重要的！勇敢嘗試，起步永遠不嫌晚。</p><p>歡迎熱愛前端的你加入我們<a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端素人 葉振賢：「不要妄自菲薄，面對失敗是人生中重要的一環」</title>
+      <link href="/2016/08/30/2016-08-25-interview/"/>
+      <url>/2016/08/30/2016-08-25-interview/</url>
+      
+        <content type="html"><![CDATA[<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2016%2F08%2F%E6%8C%AF%E8%B3%A2.jpg?alt=media&token=e1777dc5-f879-4dab-be82-1c71e57f788c" width="300" height="300"><p>完全沒有前端背景的葉振賢，目前在中X集團 - 網頁平台組，負責開發前端介面、修改程式參數，在大學時期修了一門網頁製作課程，發掘了自己的興趣！</p><p>在進入社會一段時間後，他又重新想起當時所愛，毅然決然地辭掉了當時的業務工作，利用待業的時間，全心全意地學習前端技術，自己是一張前端白紙需比其他人都還要努力，才能脫穎而出。本篇讓我們一同了解，程式素人到職人會面臨的困境與解決辦法！</p><h4 id="Q：為何對前端產生了興趣？"><a href="#Q：為何對前端產生了興趣？" class="headerlink" title="Q：為何對前端產生了興趣？"></a>Q：為何對前端產生了興趣？</h4><p>振賢：    大學時期修的那門課，我幾乎獨自一人完成了兩人的功課，當中愛上了那種將程式碼輸入就能馬上知道結果的快感。寫程式就像破關一樣，卡關時會很焦躁，但不會放棄嘗試，待破關時那種成就感真是沒話說，感覺極好！</p><h4 id="Q：在沒有前端背景情況下，都如何訓練自己？"><a href="#Q：在沒有前端背景情況下，都如何訓練自己？" class="headerlink" title="Q：在沒有前端背景情況下，都如何訓練自己？"></a>Q：在沒有前端背景情況下，都如何訓練自己？</h4><p>振賢：    遇到問題我喜歡上網爬文，尋找自己看得懂的文章參考。<br>        若是網路上有推薦新手閱讀的書籍，我也會二話不說全都買回來，但其實看書真的很煩很悶(笑)，若是有個師父(像是洧杰老師)帶領會少走很多冤枉路。</p><p>我習慣學後馬上實作，今天老師教了甚麼我就馬上動手做，從中把自己不熟的地方記錄下，再回頭看一次課程。</p><p>在完成整套課程後，我做出一個含有 HTML、CSS、jQuery 的網頁，洧杰老師親自看過，明確地指出我需要改善的地方，真的很謝謝他，我覺得他很神！當我問問題的頻率很高，每每私訊他時他總是可以在短時間內回答我問題，我在想……他那麼多學生真的每一個都顧得了嗎？</p><h4 id="Q：沒有問題的，老師喜歡回答問題幫助思考嘛！-笑-坊間電腦補習班這麼多，你為何選擇-六角學院-的線上教學？"><a href="#Q：沒有問題的，老師喜歡回答問題幫助思考嘛！-笑-坊間電腦補習班這麼多，你為何選擇-六角學院-的線上教學？" class="headerlink" title="Q：沒有問題的，老師喜歡回答問題幫助思考嘛！(笑) 坊間電腦補習班這麼多，你為何選擇 六角學院 的線上教學？"></a>Q：沒有問題的，老師喜歡回答問題幫助思考嘛！(笑) 坊間電腦補習班這麼多，你為何選擇 <strong>六角學院</strong> 的線上教學？</h4><p>振賢：    說真的，當時判別的方式很簡單，第一當然是課程售價，第二就是師資的穩定度，大型補習班的價格通常要價不斐，師資也沒有辦法馬上得知，有時候這節課來了 A 老師，下節課是 B 老師來上課；相較下來六角學院的價格親民，再者是我有先到 YouTube 看過老師的影音課程，我覺得老師的課程很好吸收，完全不會讓我打瞌睡。(笑)</p><h4 id="Q：從開始學習前端到面試錄取花了多長的時間呢？-老師如何協助你？"><a href="#Q：從開始學習前端到面試錄取花了多長的時間呢？-老師如何協助你？" class="headerlink" title="Q：從開始學習前端到面試錄取花了多長的時間呢？ 老師如何協助你？"></a>Q：從開始學習前端到面試錄取花了多長的時間呢？ 老師如何協助你？</h4><p>振賢：    從學習前端到錄取通知共花了5週的時間，期間跟老師討教不下數次，甚至老師還舉辦多人線上模擬面試，讓我超緊張的，不過可能也因為這樣，到了中X集團面試時反而就沒有那麼慌了。</p><h4 id="Q：這樣對你來說面試迎刃有餘哩！那麼這當中有遇到印象比較深刻的部分嗎？"><a href="#Q：這樣對你來說面試迎刃有餘哩！那麼這當中有遇到印象比較深刻的部分嗎？" class="headerlink" title="Q：這樣對你來說面試迎刃有餘哩！那麼這當中有遇到印象比較深刻的部分嗎？"></a>Q：這樣對你來說面試迎刃有餘哩！那麼這當中有遇到印象比較深刻的部分嗎？</h4><p>振賢：    人資問了我為何要放棄好好的業務工作，沒辦法！我很喜歡寫程式。</p><p>應徵推薦人我填寫廖洧杰老師，公司人資也確實有致電過老師，很謝謝老師幫我說了不少好話(笑)。</p><p>公司的教育訓練很完整，幾乎每兩天需繳交一次作業。目前的作業就是了解 Javascript 的優良部分，之後需要做簡報與主管報告，從中知道我消化知識的程度。</p><h4 id="Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？"><a href="#Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？" class="headerlink" title="Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？"></a>Q：六角學院希望能夠塑造更多像你這樣優秀的學員，最後可以給學弟妹一些建言嗎？</h4><p>振賢：    求職路上若一直不順利，要勇敢面對失敗，但請不要妄自菲薄，學習的資歷並不是重點，有時候是一個運氣，所以請把握每次能夠展現自己的機會！</p><p>還有，動手做很重要，當你在寫程式很煩很悶的時候，建議可以起來走一走，真的差很多！(認真)，或是善用資源(例如洧杰老師)</p><p>歡迎熱愛前端的你加入我們<a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 專訪 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>實際展示 EM 與 REM 的差異</title>
+      <link href="/2016/01/02/2016-08-08-em-vs-rem/"/>
+      <url>/2016/01/02/2016-08-08-em-vs-rem/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2016%2F08%2Frem-vs-em.jpg?alt=media&amp;token=fe7fc081-f8e5-44cf-b57f-9fb91db57535" alt></p><h2 id="PX"><a href="#PX" class="headerlink" title="PX"></a>PX</h2><p>一般來說，我們會使用 <code>px</code> 來作為網頁設計的單位，除了它精確度較高以外，對於許多網頁設計師來說也是相當容易入門的單位。</p><div class="demo d0808"><div class="f12px">font-size:12px</div><div class="f13px">font-size:13px</div><div class="f14px">font-size:14px</div><div class="f15px">font-size:15px</div></div><p><code>px</code> 的特性是屬於 <strong>絕對數值</strong>，他不受外圍的單位影響，只要固定是 <code>12px</code>，就會以 12 像素呈現。以下方的範例來說，他並不會受到外圍文字大小所影響，內部的文字大小還是依據 CSS 設定所呈現。</p><div class="demo d0808"><div class="fLarge">font-size: large<div class="f12px">font-size:12px</div><div class="f13px">font-size:13px</div><div class="f14px">font-size:14px</div><div class="f15px">font-size:15px</div></div></div><h2 id="EM"><a href="#EM" class="headerlink" title="EM"></a>EM</h2><p>另一個常見的文字單位是 <code>em</code>， em 是相對的的數值單位，它會受到外圍的文字大小所影響，而 <code>1em</code> 即是 1 的文字大小， <code>1.5em</code> 也就是 1.5 倍的文字大小。</p><p>以下方的範例可以發現，如果外圍是以 <code>15px</code>，內層的文字第一層 <code>1em</code> 等同於 <code>15px</code>，隨後的依比例放大。</p><div class="demo d0808"><div class="f15px">font-size: 15px  <div class="fem">font-size: 1em</div>  <div class="f2em">font-size: 1.2em</div>  <div class="f4em">font-size: 1.4em</div></div></div><p>接下來改成使用 em 來做實驗，外層的文字大小直接從 1.4em 開始，可以看到內層的 <code>1em</code> 文字大小等同於外層 <code>1.4em</code>，隨後的逐漸放大。如果在加入一層在內部，文字就會以 1.4 * 1.4 的倍數再放大，這是 <code>em</code> 的相對比例單位的特性，是優點也是缺點，如果無法掌握就容易失控。</p><div class="demo d0808">  <div class="f4em">font-size: 1.4em    <div class="fem">font-size: 1em</div>    <div class="f2em">font-size: 1.2em</div>    <div class="f4em">font-size: 1.4em</div>    <div class="f4em">font-size: 1.4em      <div class="fem">font-size: 1em</div>      <div class="f4em">font-size: 1.4em</div>    </div>  </div></div><h2 id="REM"><a href="#REM" class="headerlink" title="REM"></a>REM</h2><p><code>rem</code> 也是相對的文字尺寸，和 <code>em</code> 使用方法接近，不同的是他僅相對於 <code>root</code> 層級的文字大小(網頁中的 <code>html</code>)。</p><p>以這個範例來說，此網站的文字大小是 <code>16px</code>，<code>rem</code>的尺寸就是以 <code>16px</code> 為基準，故下方的 <code>1rem</code> 會與 <code>16px</code> 相同尺寸。所以無論外層是否有其他文字大小，皆不會影響 <code>rem</code> 的尺寸，唯一會影響 <code>rem</code> 比例的只有 <strong>html</strong> 的文字大小(可以打開 <em>開發者工具</em> 試試看喔)。</p><div class="demo d0808">  <div class="f4em">font-size: 1.4em  <div class="frem">font-size: 1rem</div>    <div class="f16px">font-size: 16px</div>  <div class="f2rem">font-size: 1.2rem</div>  <div class="f4rem">font-size: 1.4rem</div>    <div class="f4em text-warning">font-size: 1.4em</div>  </div></div><p>使用 <code>rem</code> 時，可以先了解瀏覽器的限制， <code>rem</code> 是不支援 IE8 以前的瀏覽器的喔。</p><table class="table"> <tbody>  <tr>   <th>Feature</th>   <th>Chrome</th>   <th>Firefox (Gecko)</th>   <th>Internet Explorer</th>   <th>Opera</th>   <th>Safari</th>  </tr>  <tr>   <td><code>rem</code></td>   <td>4 (532.3)</td>   <td><a href="/en-US/Firefox/Releases/3.6" title="Released on 2010-01-21.">3.6</a> (1.9.2)</td>   <td>9.0</td>   <td>11.6</td>   <td>4.1</td>  </tr> </tbody></table><p><em>來源：<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/CSS/length</a></em></p><h2 id="實作上該如何選擇"><a href="#實作上該如何選擇" class="headerlink" title="實作上該如何選擇"></a>實作上該如何選擇</h2><p>而就實作上，<strong>rem</strong> 與 <strong>em</strong> 該如何抉擇呢？</p><h3 id="選擇-em"><a href="#選擇-em" class="headerlink" title="選擇 em"></a>選擇 em</h3><p><code>em</code> 的文字大小基準取決於父層的文字大小，所以建議使用在限制區域的內容、元件等等，就文字大小切換的效果來說，<code>em</code> 可以輕易的從父層改變進而影響內容文字的大小。</p><p>以下方的範例來說，可以直接點選文字大小切換內文，而不需要使用太多的 CSS 樣式。</p><iframe height="265" scrolling="no" src="//codepen.io/Wcc723/embed/JKZNod/?height=265&theme-id=0&default-tab=result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/Wcc723/pen/JKZNod/" target="_blank" rel="noopener">文字大小切換</a> by Wcc723 (<a href="https://codepen.io/Wcc723" target="_blank" rel="noopener">@Wcc723</a>) on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</iframe><h3 id="選擇-rem"><a href="#選擇-rem" class="headerlink" title="選擇 rem"></a>選擇 rem</h3><p><code>rem</code> 的文字基準取決於最外層的 html 文字大小，很適合用在整體的尺寸大小切換，以 RWD 響應式網頁來說，可以依據不同的尺寸，統一切換整體網頁的文字大小。</p><p>以 Bootstrap 4 來說，許多元件都是以 <code>rem</code> 作為單位，所以只要改寫 HTML 的 font-size，就能一口氣修改全部元件的尺寸，下方的範例大家可以到直接到 codepen 上拉拉看，會發現不同的瀏覽器大小，元件尺寸也會跟著更動喔。</p><p>CodePen 連結：<a href="https://codepen.io/Wcc723/pen/JKZkxE" target="_blank" rel="noopener">https://codepen.io/Wcc723/pen/JKZkxE</a></p><iframe height="265" scrolling="no" src="//codepen.io/Wcc723/embed/JKZkxE/?height=265&theme-id=0&default-tab=html,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/Wcc723/pen/JKZkxE/" target="_blank" rel="noopener">rem vs bootstrap</a> by Wcc723 (<a href="https://codepen.io/Wcc723" target="_blank" rel="noopener">@Wcc723</a>) on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</iframe><p>相信看到這，大家對於 <strong>em</strong> 與 <strong>rem</strong> 有更多的了解，如果還有不明白的地方，歡迎到我們<a href="https://www.facebook.com/hexschool/" target="_blank" rel="noopener">六角學院粉絲團</a>留言喔～</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+            <tag> css3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
