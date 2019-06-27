@@ -273,6 +273,110 @@ $(document).ready(function() {
   });
 });
 
+(function() {
+  var filterArea, filterProfile, getProfile, hopeArea, optionArea, profileCard, profileUserData, resumeApp, resumeAreaID, scrollTopID, updateProfile;
+  resumeApp = document.getElementById('resumeApp');
+  resumeAreaID = document.getElementById('resumeArea');
+  scrollTopID = document.getElementById('scroll-top');
+  profileUserData = '';
+  getProfile = function() {
+    var profileUrl;
+    profileUrl = 'https://raw.githubusercontent.com/hexschool/Resume/develop/profile.json';
+    return $.getJSON(profileUrl, function(respons) {
+      return respons;
+    }).done(function(profileData) {
+      profileUserData = profileData;
+      updateProfile(profileUserData);
+      optionArea(profileUserData);
+    }).fail(function(error) {
+      console.log(error);
+    });
+  };
+  optionArea = function(data) {
+    var newArea;
+    newArea = filterArea(data);
+    return newArea.forEach(function(item) {
+      var options;
+      options = document.createElement('option');
+      options.textContent = item;
+      if (resumeAreaID) {
+        return resumeAreaID.appendChild(options);
+      }
+    });
+  };
+  filterArea = function(data) {
+    var cache, newArea, profile;
+    profile = data;
+    cache = [];
+    newArea = [];
+    profile.forEach(function(item) {
+      return cache = cache.concat(item.location);
+    });
+    newArea = cache.filter(function(item, index) {
+      return cache.indexOf(item) === index;
+    });
+    return newArea;
+  };
+  updateProfile = function(profileData) {
+    var newArea, profile, str;
+    profile = profileData;
+    str = '';
+    newArea = filterArea(profile);
+    newArea.forEach(function(area) {
+      str += hopeArea(area);
+      return profile.forEach(function(item) {
+        var a;
+        a = item.location.some(function(val) {
+          return val === area;
+        });
+        if (a) {
+          return str += profileCard(item);
+        }
+      });
+    });
+    if (resumeApp) {
+      return resumeApp.innerHTML = str;
+    }
+  };
+  filterProfile = function(profile, area) {
+    var str;
+    str = '';
+    str += hopeArea(area);
+    profile.forEach(function(profileItem) {
+      return profileItem.location.forEach(function(item) {
+        if (item === area) {
+          return str += profileCard(profileItem);
+        }
+      });
+    });
+    if (resumeApp) {
+      return resumeApp.innerHTML = str;
+    }
+  };
+  hopeArea = function(area) {
+    return "<div class='col-md-12'> <h3> <i class='fas fa-map-marker-alt text-dark'></i> 他們希望在 <span class='text-dark bg-half-line'>" + area + "</span> 工作 </h3> <hr/> </div>";
+  };
+  profileCard = function(item) {
+    return "<div class='col-md-6 my-2'> <div class='card h-100'> <div class='card-body'> <div class='row flex-row-reverse flex-column justify-content-between h-100'> <div class='col-lg-5'> <div class='d-flex flex-column align-items-center'> <div class='profile-user-img' style='background-image: url(" + item.imgUrl + ")'></div> <div class='profile-type text-nowrap smail text-dark'> " + (item.type.map(function(itemType) {
+      return "<span>" + itemType + "</span>";
+    }).join(' / ')) + " </div> " + (item.experience !== 0 ? "<div class='text-dark'>工作經歷 " + item.experience + " 年</div>" : '') + " </div> </div> <div class='col-lg-7 d-flex flex-column align-self-stretch'> <h5 class='card-title font-weight-bold'>" + item.name + "</h5> <div class='profile-location small text-dark'> <i class='fas fa-map-marker-alt'></i> " + (item.location.map(function(itemLocation) {
+      return "<span>" + itemLocation + "</span>";
+    }).join(' / ')) + " </div> <div class='text-left font-weight-bold'>" + item.job + "</div> <p class='card-text profile-description text-dark'>" + item.description + "</p> <div class='profile-tags text-dark mt-auto'> " + (item.tags.map(function(itemTages) {
+      return "<span class='d-inline-block'>" + itemTages + "</span>";
+    }).join(' / ')) + " </div> <div class='profile-connect'> <a href='" + item.profileUrl + "' class='btn btn-primary btn-block mt-2 rounded-0'>網羅人才</a> </div> </div> </div> </div> </div> </div>";
+  };
+  getProfile();
+  if (resumeAreaID) {
+    return resumeAreaID.addEventListener('change', function(e) {
+      if (e.target.value === '全部') {
+        return updateProfile(profileUserData);
+      } else {
+        return filterProfile(profileUserData, e.target.value);
+      }
+    });
+  }
+})();
+
 $(document).ready(function() {
   var swiper;
   swiper = new Swiper('.swiper-student-work', {
