@@ -363,7 +363,7 @@ $(document).ready(function() {
       return "<span>" + itemLocation + "</span>";
     }).join(' / ')) + " </div> <div class='text-left font-weight-bold'>" + item.job + "</div> <p class='card-text profile-description text-dark'>" + item.description + "</p> <div class='profile-tags text-dark mt-auto'> " + (item.tags.map(function(itemTages) {
       return "<span class='d-inline-block'>" + itemTages + "</span>";
-    }).join(' / ')) + " </div> <div class='profile-connect'> <a href='" + item.profileUrl + "' class='btn btn-primary btn-block mt-2 rounded-0'>網羅人才</a> </div> </div> </div> </div> </div> </div>";
+    }).join(' / ')) + " </div> <div class='profile-connect'> <a href='" + item.profileUrl + "' target='_blank' class='btn btn-primary btn-block mt-2 rounded-0'>網羅人才</a> </div> </div> </div> </div> </div> </div>";
   };
   getProfile();
   if (resumeAreaID) {
