@@ -324,12 +324,21 @@ $(document).ready(function() {
     newArea = filterArea(profile);
     newArea.forEach(function(area) {
       str += hopeArea(area);
+      profile.forEach(function(item) {
+        var a;
+        a = item.location.some(function(val) {
+          return val === area;
+        });
+        if (a && item.profileUrl) {
+          return str += profileCard(item);
+        }
+      });
       return profile.forEach(function(item) {
         var a;
         a = item.location.some(function(val) {
           return val === area;
         });
-        if (a) {
+        if (a && !item.profileUrl) {
           return str += profileCard(item);
         }
       });
@@ -344,7 +353,14 @@ $(document).ready(function() {
     str += hopeArea(area);
     profile.forEach(function(profileItem) {
       return profileItem.location.forEach(function(item) {
-        if (item === area) {
+        if (item === area && profileItem.profileUrl) {
+          return str += profileCard(profileItem);
+        }
+      });
+    });
+    profile.forEach(function(profileItem) {
+      return profileItem.location.forEach(function(item) {
+        if (item === area && !profileItem.profileUrl) {
           return str += profileCard(profileItem);
         }
       });
