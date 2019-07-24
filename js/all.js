@@ -274,20 +274,25 @@ $(document).ready(function() {
 });
 
 (function() {
-  var filterArea, filterProfile, getProfile, hopeArea, optionArea, profileCard, profileUserData, resumeApp, resumeAreaID, scrollTopID, updateProfile;
+  var filterArea, filterProfile, getProfile, getWorkPeple, hasWorkCount, hopeArea, optionArea, profileCard, profileUserData, resumeApp, resumeAreaID, scrollTopID, updateProfile, workID;
   resumeApp = document.getElementById('resumeApp');
   resumeAreaID = document.getElementById('resumeArea');
   scrollTopID = document.getElementById('scroll-top');
+  workID = document.getElementById('hasWork');
+  hasWorkCount = 300;
   profileUserData = '';
   getProfile = function() {
-    var profileUrl;
+    var profileUrl, workUrl;
     profileUrl = 'https://raw.githubusercontent.com/hexschool/Resume/master/profile.json';
-    return $.getJSON(profileUrl, function(respons) {
-      return respons;
-    }).done(function(profileData) {
-      profileUserData = profileData;
-      updateProfile(profileUserData);
-      optionArea(profileUserData);
+    workUrl = 'https://raw.githubusercontent.com/hexschool/Resume/master/findJob.json';
+    $.getJSON(profileUrl).done(function(result) {
+      profileUserData = result;
+    }).then(function(result) {
+      return $.getJSON(workUrl).done(function(work) {
+        updateProfile(profileUserData);
+        optionArea(profileUserData);
+        getWorkPeple(work);
+      });
     }).fail(function(error) {
       console.log(error);
     });
@@ -367,6 +372,11 @@ $(document).ready(function() {
     });
     if (resumeApp) {
       return resumeApp.innerHTML = str;
+    }
+  };
+  getWorkPeple = function(data) {
+    if (workID) {
+      return workID.innerHTML = ("有 " + (hasWorkCount + data.length) + " 位學員透過六角成功就業囉") + '<i class="fas fa-laugh-wink mx-2"></i>';
     }
   };
   hopeArea = function(area) {
