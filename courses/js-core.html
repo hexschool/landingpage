@@ -14,16 +14,16 @@
   
   <meta http-equiv="Cache-control" content="public">
   <meta http-equiv="max-age" content="604800">
-  <title>Bootstrap | 六角學院</title>
+  <title>JavaScript 核心篇 - 邁向達人之路 | 六角學院</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-  <meta property="og:title" content="Bootstrap | 六角學院">
-  <meta property="og:description" content="學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。">
+  <meta property="og:title" content="JavaScript 核心篇 - 邁向達人之路 | 六角學院">
+  <meta property="og:description" content="JavaScript 核心運作觀念課程，帶你深入了解各項運作機制，輕鬆破除其中的奇怪問題！">
   
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fog-images%2Fbootstrap_0925.png?alt=media&token=a57fabec-191d-43e2-a5f5-ea03f22af639">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fudemy-cover-core-js.png?alt=media&token=012201d0-5f26-4558-bc14-d33b82e911b7">
   
   <meta property="fb:app_id" content="760173380749493">
   <meta property="og:site_name" content="六角學院">
@@ -36,7 +36,7 @@
     <link rel="icon" href="/favicon.ico">
   
 
-  <meta content="學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。" name="description">
+  <meta content="JavaScript 核心運作觀念課程，帶你深入了解各項運作機制，輕鬆破除其中的奇怪問題！" name="description">
   <meta content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript" name="keywords">
   <meta content="六角學院" name="author">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/v4.css?1565157233524">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1565157233646">
   <!-- Global styles END -->
 
   
@@ -60,7 +60,7 @@
   <!-- End Google Tag Manager -->
 </head>
 </html>
-<body class="over-flow-x ">
+<body class="over-flow-x core-js">
   <div id="app">
     
 <nav class="navbar navbar-light navbar-expand text-primary navbar-toggleable fixed-top shadow" style="background-color: rgba(255, 255, 255, .85)">
@@ -114,212 +114,192 @@
   </div>
 </nav>
 
-
-
-
-<div style="height: 447px; background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fbanner_bg.png?alt=media&token=09752077-2dc8-4b23-a47f-f6756d199bb4); background-position: center center" class="pt-5 relative bg-lighter">
+<div class="pt-6 relative" style="min-height: 500px; background-color: #f3df5a">
+  <div style="top: 0; bottom: 0;height: 100%; background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fbanner.svg?alt=media&token=9a6e0d86-b7e6-4b26-a9e3-a23b460fba5d); background-position: top left">
   <!-- Made by Designova - https://www.toptal.com/designers/subtlepatterns/subtle-dots/-->
-  <div class="container mt-4">
-    <div style="min-height: 447px;" class="row">
-      <div class="col-md-5 justify-content-end d-none d-md-flex">
-        <div><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fbanner_girl.png?alt=media&token=a2ce4457-a8bc-4445-a8a8-7c7de4990ab6" alt width="280" class="img-fluid bounceInLeft wow"></div>
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-        <div><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fbanner_text.svg?alt=media&token=734742e9-ed4a-426a-ae47-3b66bb87611b" alt="學會 Bootstrap 4，開發超強不解釋!!" width="300" style="margin-top: -60px;" class="img-fluid bounceInDown wow"></div>
+    <div class="container mt-4">
+      <div style="min-height: 450px;" class="row justify-content-start">
+        <div class="col-md-4 justify-content-md-between justify-content-center d-md-flex flex-column align-items-end">
+          <div class="mt-5">
+            <h2 style="line-height: 1;" class="mb-0 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Ficon.png?alt=media&token=d1ce234b-9a18-4669-80ec-2345948e3bdb" alt width="50">JavaScript 核心篇</h2>
+            <h4 class="text-md-right text-center">邁向達人之路</h4>
+          </div>
+          <div class="d-none d-md-block"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fanimal2.png?alt=media&token=d6b3cdda-df34-464f-8de3-d89613232617" alt width="343" class="img-fluid zoomInLeft wow position-change" style="margin-left: -5%; margin-bottom: -30px;"></div>
+        </div>
+        <div class="col-md-7 d-flex align-items-center justify-content-start">
+            <div class="position-relative">
+              <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fbanner-book.png?alt=media&token=fe44c1a8-9209-4b6c-9049-4dd80bc06aaf" alt="Vue 出一個電商網站" width="100%" class="img-fluid wow">
+            </div>
+            <div class="embed-responsive embed-responsive-16by9 absolute" style="width: 85%; left: 50%; transform:translateX(-50%);"><iframe width="560" height="315" src="https://www.youtube.com/embed/ulCkJjSX2aA" frameborder="0" allowfullscreen></iframe></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+<section class="container my-5 py-5">
+  <h2 class="mb-3 text-center font-section-title">
+    JS 開發的過程中 <br>
+    你是否常常掌握不到精髓呢？
+  </h2>
+  <div class="row mt-6">
+    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2FGroup%20163.svg?alt=media&token=c88f2479-ca9f-4901-84d8-896bb6eb924c" alt class="img-fluid w-100">
+      <div class="bg-dark text-white p-3 text-center">
+        <p class="mb-0">程式動起來好像沒問題，卻不知它如何運作</p>
+      </div>
+    </div>
+    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2FGroup%20164.svg?alt=media&token=0af56745-806d-4fe5-9358-cb197ef0336c" alt class="img-fluid w-100">
+      <div class="bg-dark text-white p-3 text-center">
+        <p class="mb-0">面試的題目似乎都看過，卻不知該如何回答</p>
+      </div>
+    </div>
+    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2FGroup%20165.svg?alt=media&token=aa54b47a-875a-47f2-ae68-19b267d95bf3" alt class="img-fluid w-100">
+      <div class="bg-dark text-white p-3 text-center">
+        <p class="mb-0">各路教學如葵花寶典，卻不知觀念是否正確</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="container my-5">
-  <h2 class="mb-3 text-center text-divider text-w-lighter text-secondary">
-    孤軍奮戰的您<br>常常遇到這些狀況嗎？
-  </h2>
-  <div class="row">
-    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_ng_01.png?alt=media&token=326d4683-a601-4bd8-9b53-821506eaf3e4" alt class="img-fluid">
-      <div class="bg-dark text-white p-3 text-center">
-        <p class="mb-0">缺乏參與大型專案經驗與能力<br>想累積更多實力嗎？</p>
-      </div>
-    </div>
-    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_ng_02.png?alt=media&token=03a657d9-b135-4b13-a5c4-7539f41269c0" alt class="img-fluid">
-      <div class="bg-dark text-white p-3 text-center">
-        <p class="mb-0">被大量的專案需求輾壓<br>無法在時限完成需求？</p>
-      </div>
-    </div>
-    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_ng_03.png?alt=media&token=8a12ed8c-f1b9-4b80-a351-a68e77c5cfdc" alt class="img-fluid">
-      <div class="bg-dark text-white p-3 text-center">
-        <p class="mb-0">
-            
-          網站架構與時俱進，<br>開發常常卡在過去嗎？
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-lighter my-3">
-  <div class="container py-5">
-    <h2 class="mb-3 text-center text-divider text-w-lighter text-secondary">外人不懂的苦！<br>Bootstrap 增加工作效率<br>打造堅強實力。</h2>
-    <div class="row justify-content-center">
-      
-      <div class="col-md-7">
-        <div class="card">
-          <div class="card-body">
-            <p>Bootstrap 是目前公認最流行的前端開發框架，內建多項模組化的版型、表單、按鈕等元件組合，能幫您省下大量的 UI 設計時間！</p>
-            <p>而透過 Bootstrap 設計出來的前端 UI，具有極高的兼容性，能完美呈現在以下裝置：</p>
+<section class="container-fluid my-5 bg-light py-5" id="perspectiveWall">
+  <div class="container py-3">
+      <h2 class="text-center font-section-title">JS 常見的面試題目，讓你一次搞定</h2>
+      <div class="row justify-content-center mt-6">
+        <div class="col-md-6 relative d-flex justify-content-center bg-secondary">
+          <div class="text-center position-absolute h-100" style="z-index: 1; top: 0; bottom: 0;">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Ftest.svg?alt=media&token=b8b1d95b-dfbf-4fe6-b7ec-b291373a7bea" class="fadeIn img-fluid h-100" alt>
           </div>
-        </div>
-        <div class="row mt-3 mb-2">
-          <div class="col-3 d-flex align-items-end">
-            <div class="text-center wow fadeIn"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_device_mobile.png?alt=media&token=135052b1-fc10-4488-b284-c3eacd819b0e" alt class="img-fluid">
-              <p class="mt-1 text-secondary">手機</p>
+          <div class="centered text-center absolute px-3" style="z-index: 1;">
+            <div style="perspective: 30px; overflow: hidden;">
+              <img id="moveImgS" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Ftext-s80.png?alt=media&token=3457ba84-ea47-49b1-9cdd-85f72cf297bd" alt class="img-fluid moveImg">
             </div>
           </div>
-          <div class="col-4 d-flex align-items-end">
-            <div class="text-center wow fadeIn"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_device_tablet.png?alt=media&token=0dee83f5-a8e8-4f16-b7fb-118d9a810c10" alt class="img-fluid">
-              <p class="mt-1 text-secondary">平板</p>
+          <div class="centered text-center absolute px-3" style="z-index: 1;">
+            <div style="perspective: 30px; overflow: hidden;">
+              <img id="moveImg" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Ftext.png?alt=media&token=10d443e6-1622-4239-bd42-5b70a85c6380" alt class="img-fluid moveImg">
             </div>
           </div>
-          <div class="col-5 d-flex align-items-end">
-            <div class="text-center wow fadeIn"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_device_desktop.png?alt=media&token=1710dff8-5fec-453b-b287-2012009bccdb" alt class="img-fluid">
-              <p class="mt-1 text-secondary">桌面電腦</p>
-            </div>
+          <div>
+            <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fprespective-animal.png?alt=media&token=1340782c-1687-4262-95cb-4a622542a879" alt class="img-fluid fadeIn wow">
           </div>
         </div>
-        <p class="text-center text-primary"><strong>學一套輕鬆解決跨裝置的問題！</strong></p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="container my-5">
-  <h2 class="text-center text-divider text-w-lighter text-secondary">
-      
-    超過百萬開發者使用！<br>Bootstrap 是您必會的網頁設計框架！
-  </h2>
-  <p class="mb-3 text-center"><small>根據 Wappalyzer 統計，目前至少有 7,400,000 個網站使用 Bootstrap</small></p>
-  <div class="row justify-content-center mt-3">
-    <div class="col-md-4 d-flex align-items-center">
-      <div>
-        <p>在 Bootstrap 團隊不斷優化，以及眾多開發者的使用見證下，Bootstrap 以調校適用於各類型網頁服務下，無論是活動頁面、購物網站、控制台、行動版網頁一律適用。</p>
-        <p>讓您能用簡單的開發方式，提供大方、直覺好操作的 UI 體驗給所有人。</p>
-      </div>
-    </div>
-    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_globbal.png?alt=media&token=7ace55f7-5429-4d56-bfd6-12f6ebfd837d" alt class="img-fluid bounceInRight wow"></div>
-  </div>
-</section>
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-3 text-center mb text-divider text-w-lighter text-secondary">Bootstrap  4 優勢進化<br>網頁設計千變萬化！ </h2>
-    
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <div class="px-3 my-3 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_flexbox.svg?alt=media&token=33f4495c-f36e-4a90-85eb-c92b7650ec30" alt class="img-fluid"></div>
-        <h2 class="h5 text-center">融入自由度強大的 Flexbox<br>豐富樣式簡單完成</h2>
-        <p>Flexbox 取代了傳統 table、float 單調排版，讓你不再為何達不到而哭泣，靈活完成各種版面排列、欄位設定，豐富變化就在彈指之間。</p>
-      </div>
-      <div class="col-md-4">
-        <div class="px-3 my-3 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_components_to_card.svg?alt=media&token=77ef3ba7-41cb-4fcb-8c0a-aa652379fd1c" alt class="img-fluid"></div>
-        <h2 class="h5 text-center">元件化繁為簡<br>卡片樣式以一檔百</h2>
-        <p>新的卡片元件取代過去幾個不常使用的元件，如將 Panel、Well、Thumbnails 統一整合成 Card，功能不僅沒有變少，並且有更多變化。</p>
-      </div>
-      <div class="col-md-4">
-        <div class="px-3 my-3 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsass.svg?alt=media&token=93e4e786-c9ff-4fc1-8c13-b38737993e92" alt class="img-fluid"></div>
-        <h2 class="h5 text-center">導入 Node SASS <br>更貼近於主流的開發模式</h2>
-        <p>Bootstrap 從 Less 轉變到 Sass，不僅擁抱更龐大的社群能量，且新的 Sass 環境編譯速度大幅提升，讓你輕鬆製作屬於品牌專屬設計。</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-lighter mt-3">
-  <div class="container py-5">
-    <h2 class="mb-3 text-center mb text-divider text-w-lighter text-secondary">讓六角學院，帶您搶先攻略<br>Bootstrap  4 </h2>
-    <div class="row justify-content-center">
-      <div class="col-md-5 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fbootstrap-stack.png?alt=media&token=32196b1b-dfb5-4646-b733-cdc017d2b6eb" alt class="img-fluid"></div>
-      <div class="col-md-5 d-flex align-items-center">
-        <div>
-          <p>六角學院，是一所結合各項國際教學資源的線上學院，迄今已獲得57個國家、超過 10,000 名學員的教學好評。</p>
-          <p>我們致力於提供各項程式、網頁、設計等現代工程師、網頁設計師必備的專業課程。</p>
-          <p>面對全球最受矚目的網頁設計工具「Bootstrap 4」的重大升級，我們已先一步完成「 Bootstrap 4 中文手冊」，去除語言隔閡輕鬆學習 Bootstrap 4。</p>
+        <div class="col-md-6 d-flex align-items-center mt-3 mt-md-0">
+          <div>
+            <p>本課程著重在 JavaScript 的核心運作觀念，從直譯器的運作深入探討至 JavaScript 的各種運作模式，包含 詞法作用域、提升、非同步、運算子、轉型、物件參考、原型練、建構式等觀念。</p>
+            <p>課程中除了提供動態簡報說明外，還會提供大量程式碼介紹，並另有許多精彩測驗題，不單能輕鬆地理解相關知識，還能確保學習觀念正確。</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="text-center mt-2 fadeInUp wow"><a href="https://bootstrap.hexschool.com/" target="_blank"> <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_translate_btn.svg?alt=media&token=dd37b67f-0fbd-4892-a348-2cde9a050caf" alt class="img-fluid"></a></div>
   </div>
 </section>
+
 <section class="mt-3">
   <div class="container py-5">
-    <h2 class="mb-3 text-center text-divider text-w-lighter text-secondary">全新 Bootstrap 課程<br>線上紮實課程安排，給您專業依靠</h2>
-    <div class="row justify-content-center my-4 mt-5">
-      <div class="col-md-5">
-        <div class="p-5 fadeInLeft wow"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_timer.png?alt=media&token=eae55174-b756-4971-aaf4-74595ecab437" alt class="img-fluid"></div>
-      </div>
-      <div class="col-md-5 d-flex align-items-center">
-        <div>
-          <h4>
-              
-            300 分鐘精實課程從概念到實作<br>Bootstrap 各項功能精準掌握！
-          </h4>
-          <p>我們提供完整的操作概念、框架教學以及元件應用，讓您不只知道該怎麼做，還能明白為什麼要這樣做，讓您成為得心應手的 Bootstrap 專家！</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center flex-row-reverse my-4">
-      <div class="col-md-5">
-        <div class="p-5 fadeInRight wow"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_rwd.png?alt=media&token=811f87ca-9988-44ef-a53d-7fad90c4a7e7" alt class="img-fluid"></div>
-      </div>
-      <div class="col-md-5 d-flex align-items-center">
-        <div>
-          <h4>
-              
-            跨平台網頁切版，提供您手機、平板、PC 常見切版教學
-          </h4>
-          <p>Bootstrap 能輕鬆完成相容於手機、平板、PC 等的響應式網站，因此我們會提供您這三種常見的切版運用，並帶您實際操作，讓您往後面對各種多螢設計需求，也能自信面對不慌亂！</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center my-4">
-      <div class="col-md-5">
-        <div class="p-5 fadeInLeft wow"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_many_demo.png?alt=media&token=4ba80106-ac7f-4925-8490-dd32f6c2dbcd" alt class="img-fluid"></div>
-      </div>
-      <div class="col-md-5 d-flex align-items-center">
-        <div>
-          <h4>
-              
-            3 大專案版型手把手帶著做<br>讓您能充分練習、聰明架構！
-          </h4>
-          <p>我們會與您分享多種業界常用的範例版型，並讓您親手實作設計，而您在練習中所遇到的問題，我們都能即時給您修正建議，讓您越做越熟悉。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="py-3 relative">
-  <div style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_more_creative.jpg?alt=media&token=1730a8d7-ada2-4121-9933-599aa70bfcf5); background-position: center center; background-repeat: no-repeat" class="skew-bg bg-primary"></div>
-  <div class="container text-white">
-    <div class="row justify-content-center">
+    <h2 class="mb-3 text-center font-section-title">三道流程，讓你紮穩馬步！</h2>
+    <div class="row justify-content-center flex-row-reverse my-3 mt-5">
       <div class="col-md-4">
-        <h2 class="mb-3">
-            
-          加入六角學院<br>與 10,000 人一同學習
-        </h2>
-        <p>全新 Bootstrap ４系列課程</p>
-        <p class="h4"><strong class="text-warning">搶先學習中</strong></p>
-        <p>帶您掌握全新 Bootstrap 4，讓您提升完成速度，締造產值新高度！</p>
+        <div class="p-5 fadeInRight wow text-md-left text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2FGroup%20166.svg?alt=media&token=62269efc-6d99-457b-aaad-cd3288cdf45a" alt class="img-fluid" style="border: 4px solid #f1e8b0;"></div>
       </div>
-      <div class="col-md-4 d-none d-md-block"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_girl_like.png?alt=media&token=73ee9c67-ea1f-4210-8091-ec428bc0d41d" alt width="200" style="margin-top: -30px" class="img-fluid"></div>
+      <div class="col-md-4 d-flex align-items-center">
+        <div>
+          <h4>動畫說明核心觀念</h4>
+          <p>雖然網路上可以輕易搜尋到許多文章，但文字內容並不是學習的最佳助手。透過簡易的動畫及工具，讓你在最短的時間內掌握觀念。</p>
+        </div>
+      </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-md-4"><a href="#recommend" class="my-3 btn btn-danger btn-block btn-lg">
-          <i class="fa fa-diamond"></i>
-        別說了，我要註冊
-        <i class="fa fa-diamond"></i>
-      </a></div>
+    <div class="row justify-content-center my-3">
+      <div class="col-md-4">
+        <div class="p-5 fadeInLeft wow text-md-right text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2FchangeColor.svg?alt=media&token=90ed1648-c18a-4cd4-ad23-928d221f1cd8" alt class="img-fluid" style="border: 4px solid #f1e8b0;"></div>
+      </div>
+      <div class="col-md-4 d-flex align-items-center">
+        <div>
+          <h4>程式碼實作並驗證觀念</h4>
+          <p>掌握觀念後更重要的是練習，透過課程中從簡到深的各種變化題，讓你有效率地掌握觀念，還能輕鬆面對各種變化球。</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center flex-row-reverse my-3">
+      <div class="col-md-4">
+        <div class="p-5 fadeInRight wow text-md-left text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fcheckmark.svg?alt=media&token=d4da2a06-0419-44b7-ad34-1e74b56f60c9" alt class="img-fluid" style="border: 4px solid #f1e8b0;"></div>
+      </div>
+      <div class="col-md-4 d-flex align-items-center">
+        <div>
+          <h4>精彩測驗確保學習成效</h4>
+          <p>許多 JavaScript 問題都難以透過一次性的練習而清楚了解，透過每個章節附上的習題，不單確保你的學習成效，更增加你的練習機會。</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section class="my-5 container">
-  <h2 class="mb-3 text-secondary text-w-lighter">專精 Bootstrap 的優秀師資<br>能從設計與程式角度，給予多元協助！</h2>
-  <div class="row">
+
+<section class="container-fluid my-5 bg-light py-5">
+  <div class="container">
+    <h2 class="text-center font-section-title">更重要的是，<br> 新內容居然不額外收費！</h2>
+    <p class="text-center text-w-lighter ">課程即將加入 ES6 實戰相關章節 <br><i class="far fa-hand-point-right"></i> 新增內容保證超過 5 小時</p>
+    <div class="row justify-content-center mt-3 position-relative">
+      <div class="col-md-3 order-1 col-6">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fcontent-book.svg?alt=media&token=7bd17e89-f061-424c-b518-cdfc0df41764" alt class="img-fluid sticky-md-top top-md-navbar p-md-5 p-3">
+      </div>
+      <div class="col-md-6 order-md-2 order-3">
+        <table class="table table-striped my-4">
+          <thead>
+            <tr>
+              <th colspan="2">章節標題</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="7" class="table-warning">核心章節</th>
+              <td class="table-warning">課程簡介</td>
+            </tr>
+            <tr>
+              <td class="table-warning">執行環境與執行堆疊</td>
+            </tr>
+            <tr>
+              <td class="table-warning">運算子、型別、文法</td>
+            </tr>
+            <tr>
+              <td class="table-warning">物件</td>
+            </tr>
+            <tr>
+              <td class="table-warning">函式以及 This 的運作</td>
+            </tr>
+            <tr>
+              <td class="table-warning">原型、繼承及建構式</td>
+            </tr>
+            <tr>
+              <td class="table-warning">物件進階 (九月起陸續上線)</td>
+            </tr>
+            <tr>
+              <th rowspan="7" class="table-success">ES6</th>
+              <td class="table-success">ES6 延伸章節：變數宣告 (九月起陸續上線)</td>
+            </tr>
+            <tr>
+              <td class="table-success">ES6 延伸章節：函式 (陸續新增)</td>
+            </tr>
+            <tr>
+              <td class="table-success">ES6 延伸章節：字串樣板 (陸續新增)</td>
+            </tr>
+            <tr>
+              <td class="table-success">ES6 延伸章節：更多 ES6... (陸續新增)</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        <p>每月保證上線超過一個章節 (視章節長度而定)，影音課程長度保證會超過 10 小時，並且<strong>課程價格會隨章節增加逐漸提升</strong>，但<strong>已購買者不額外收費</strong>。</p>
+      </div>
+      <div class="col-md-3 col-6 sticky-md-top order-md-3 order-2">
+          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fcontent-calender.svg?alt=media&token=72a78594-724b-4194-b45a-29546d4cbdd1" alt class="img-fluid sticky-md-top top-md-navbar p-md-5 px-2 py-4">
+      </div>
+  </div>
+</div></section>
+
+
+
+<section class="my-6 container">
+  <h2 class="text-bold text-center font-section-title">課程講師</h2>
+  <h5 class="text-w-lighter  text-center text-dark">超過 5000 人註冊的王牌講師</h5>
+  <div class="row mt-3">
     <div class="col-md-3">
       <div class="mx-5 my-3"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_avator.jpg?alt=media&token=d0ba3833-abcc-404b-9554-ac99b274cd0f" alt class="img-fluid rounded-circle"></div>
       <h4>前端工程師 王志誠老師</h4>
@@ -329,67 +309,195 @@
       <h5>相關經歷：</h5>
       <div class="row bg-lighter py-3">
         <div class="col-md-4 d-flex flex-wrap align-items-center">
-          <div class="mx-3 w-100"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_modernweb.png?alt=media&token=624c3bab-b6bb-4cdc-980a-f06a4864330b" alt height="200" class="img-fluid"></div>
-          <p class="text-center align-self-end text-center w-100">Morden web <br>研討會講者</p>
-        </div>
-        <div class="col-md-4 d-flex flex-wrap align-items-center">
           <div class="mx-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_ksf2e.png?alt=media&token=61a621bb-34ac-4cbb-abf0-3a9b3baaae4c" alt height="200" class="img-fluid"></div>
           <p class="text-center align-self-end text-center w-100">高雄前端社群<br>核心成員</p>
         </div>
         <div class="col-md-4 d-flex flex-wrap align-items-center">
+          <div class="mx-3 w-100"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_modernweb.png?alt=media&token=624c3bab-b6bb-4cdc-980a-f06a4864330b" alt height="200" class="img-fluid"></div>
+          <p class="text-center align-self-end text-center w-100">Morden Web <br>研討會講者</p>
+        </div>
+        
+        <div class="col-md-4 d-flex flex-wrap align-items-center">
           <div class="mx-5"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_ithome.png?alt=media&token=ad09cae0-312a-4318-9701-f660fd5e9ff9" alt height="200" class="img-fluid"></div>
-          <p class="text-center align-self-end text-center w-100">IT 鐵人邦<br>優選</p>
+          <p class="text-center align-self-end text-center w-100">連續五屆 IT 鐵人邦<br>優選</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="py-5 container my-5">
-  <h2 class="mb-3 text-center text-divider text-secondary text-w-lighter">
-      
-    加值服務不加價！<br>隨時替您的專業充電更新！
-  </h2>
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <div class="m-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_online_meeting.png?alt=media&token=f1cedef2-91a4-423c-9b8f-a4d0fab45e68" alt class="img-fluid"></div>
-      <h4 class="text-center">週週線上問答<br>定時增強你的觀念</h4>
-      <p>我們每周三晚上定期會舉行線上問答課程，除了解決問題外，老師還會分享許多業界經驗喔！</p>
+
+<section class="bg-light py-4 my-3">
+  <div class="container py-md-7 py-3 text-dark ">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <span class="p-2 bg-secondary rounded"><i class="far fa-star"></i> 額外加購 <i class="far fa-star"></i></span>
+        <h6 class="mt-3">六角首創直播課程 / 直播時間：10/5(六) 10:00 ~ 17:00</h6>
+        <h2 class="font-section-title">JavaScript<br> 考題全面破解</h2>
+        <ul class="pl-0 m-0 py-1" style="list-style: none;">
+          <li>＊ 百大考題驗證觀念</li>
+          <li>＊ 奇怪題目一一破解</li>
+          <li>＊ 現場實作不枯燥</li>
+          <li>＊ 流程拆解，腦袋不打結</li>
+        </ul>
+      </div>
+      <div class="col-md-5 pt-5 pt-md-0">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2F%E7%9B%B4%E6%92%AD%E5%8D%87%E7%B4%9A-03.svg?alt=media&token=f56bedd6-aa40-4bf6-808e-6fb9a120867e" alt style="margin-left: -15px; margin-right: -15px;">
+      </div>
     </div>
-    <div class="col-md-4">
-      <div class="m-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_jobs.png?alt=media&token=b74219c4-2e3c-482e-9d6d-25216b1425ef" alt class="img-fluid"></div>
-      <h4 class="text-center">免費職涯諮詢<br>提供您各項轉職資源</h4>
-      <p>我們有免費的職涯、轉職服務，迄今已幫上超過百位學員媒合到適合的工作。</p>
+    <div class="d-flex justify-content-center">
+      <div>
+        
+        
+        <!-- <a href="#recommend" class="btn btn-block btn-dark rounded-0 ani-loop animated disabled"><i class="far fa-hand-point-down pr-2"></i> 銷售結束！<i class="far fa-hand-point-down pl-2"></i></a> -->
+      </div>
     </div>
-    <div class="col-md-4">
-      <div class="m-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_udemy_qa.png?alt=media&token=78f31d56-f91b-4850-ad7b-5d2f1b917e02" alt class="img-fluid"></div>
-      <h4 class="text-center">了解您的心中結<br>打造線上程式諮詢服務</h4>
-      <p>不管你在練習、作業甚至是工作上，都可以隨時在 Udemy 平台上發問，我們的問題回覆率是 100% 唷！</p>
-    </div>
-  </div>
-</section>
-<section class="container my-5">
-  <h2 class="mb-3 text-center text-divider text-secondary text-w-lighter">
-      
-    多項保證<br>保障你的學習效益！
-  </h2>
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">所有課程永久觀看，不再收費！</p>
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">額外再補充 5 個以上章節，480 分鐘以上的總時數。</p>
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">
-          
-        課程增加後會依內容調漲價格，但已註冊者<span class="text-danger">不需額外付費</span>
-      </p>
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">30 天內不滿意課程，爽快退費！</p>
+    <div class="row flex-column  align-items-center justify-content-center mt-5">
+      <div class="col-lg-6 col-md-5">
+        <h2 class="text-center font-section-title">和實體教室的差異</h2>
+        <table class="table text-center text-dark">
+          <thead>
+            <tr class="bg-light">
+              <th scope="col"></th>
+              <th>實體教室</th>
+              <th class="text-success">直播課程</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">課程單價</th>
+              <td class="text-secondary">約 4000 元</td>
+              <td class="text-success font-weight-bold" style="vertical-align: middle">
+                直播票 2000 元 <br> 加購僅 1000 元</td>
+            </tr>
+            <tr>
+              <th scope="row">成本</th>
+              <td class="text-secondary">交通成本</td>
+              <td class="text-success font-weight-bold" style="vertical-align: middle">成本低 <i class="far fa-laugh-wink" style="font-size: 30px; vertical-align: middle;"></i></td>
+            </tr>
+            <tr class="bg-light">
+              <th scope="row">複習</th>
+              <td class="text-secondary">無法複習</td>
+              <td class="text-success font-weight-bold">可複習 <i class="far fa-laugh-wink" style="font-size: 30px; vertical-align: middle;"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">便利</th>
+              <td class="text-secondary">需到教室</td>
+              <td class="text-success font-weight-bold">隨處都可上課 <i class="far fa-laugh-wink" style="font-size: 30px; vertical-align: middle;"></i></td>
+            </tr>
+            <tr class="bg-light">
+              <th scope="row">隱私</th>
+              <td class="text-secondary">人多容易緊張</td>
+              <td class="text-success font-weight-bold">在家隱私高 <i class="far fa-laugh-wink" style="font-size: 30px; vertical-align: middle;"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mt-3 text-center">
+          <p>活動中會預先準備考題，相信你在網路上也有看到許多有趣的試題，在此也歡迎提交給講師做解答！</p>
+          <a href="https://forms.gle/w5szzVXy1qoX9tFQ7" class="btn btn-dark btn-lg" target="_blank" rel="noopener">
+            提交你的考題
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-5 mt-3 col-11">
+        <p class="m-0">Q：當天若沒辦法上課，有錄影可以看嗎？</p>
+        <div class="d-flex">
+          <p>A：</p>
+          <p>沒問題，直播過程將會錄影，方便後續回顧，並僅限直播學員觀看。</p>
+        </div>
+        <p class="mt-3 mb-0">Q：與影音課程會有什麼不同？</p>
+        <div class="d-flex">
+          <p>A：</p>
+          <p>直播課程的好處是能在線上互動，有問題隨時發問，讓你即時打通任督二脈。</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="py-5 bg-lighter my-5">
+<section class="py-5 container my-5">
+    <h2 class="mb-3 text-center font-section-title">一套課程，更豐富的進階服務！</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="m-4 px-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue%2Fsection_online_meeting%402x.png?alt=media&token=0a82223e-990f-4166-a959-aa18ef756bab" alt class="img-fluid"></div>
+        <h4 class="text-center">免費線上研討會</h4>
+        <p>除了核心的課程內容外，我們每週另有舉辦線上研討會，除了詢問老師課程中的問題外，老師還會在課程中分享許多業界經驗，讓每週一個半小時收穫滿滿。</p>
+      </div>
+      <div class="col-md-4">
+        <div class="m-4 px-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue%2Fsection_udemy_qa%402x.png?alt=media&token=5b29ac96-da78-40cc-97f8-9d113fe859fd" alt class="img-fluid"></div>
+        <h4 class="text-center">100% 回覆率的問答</h4>
+        <p>課程中的章節如果遇到問題都可以直接發問，所有的問題老師與助教都會一一檢視回答，而且也可以搜尋其他同學所發問的內容，從他人的問題中共同學習喔。</p>
+      </div>
+      <div class="col-md-4">
+        <div class="m-4 px-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue%2Fsection_jobs%402x.png?alt=media&token=ab1d923d-6101-4f7a-8023-ec0efde3ee2e" alt class="img-fluid py-3"></div>
+        <h4 class="text-center">學員社團</h4>
+        <p>學習不再是單打獨鬥，六角學院自 2018 年成立學員社團以來，已超過 3000 名學員一同加入學習，透過彼此的經驗分享及勉勵，讓同學們在學習這條路上不孤單。</p>
+      </div>
+    </div>
+  </section>
+
+<div class="bg-light py-md-7 py-5 text-dark">
+  <h2 class="mb-5 text-center font-section-title">課程 Q&A</h2>
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-4 col-md-5 col-11 pr-5">
+        <p>Q：我適合這門課嗎？</p>
+        <div class="d-flex">
+          <p>A：</p>
+          <p>對於 JS 運作想更深入學習者都可參加，另可參考 <a href="https://forms.gle/cXTPwSp3ehX9J2Kc7" target="_blank">本測驗</a>。</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-5 col-11 mt-md-0 mt-3">
+        <p>Q：六角課程跟坊間線上課程有什麼差異呢？</p>
+        <div class="d-flex">
+          <p>A：</p>
+          <p>我們是目前台灣「線上轉職工程師」人數最多的教育單位，講師本身也是業界開發者，有豐富的實體教學經驗，才有辦法設計出讓人好吸收的實戰課程。</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="text-center">Q：我有註冊「JavaScript 入門 - 學徒的試煉」，是否還需要註冊這門課？</p>
+        <p>非常適合，本課程就是協接「JavaScript 入門 - 學徒的試煉」的 JS 中階課程。</p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2F62181707-c98d9700-b386-11e9-9bb2-fb53da10d516.png?alt=media&token=d22b44f6-ce8c-4c19-a799-d58ae01cfd8d" alt class="img-fluid mb-3">
+        <div class="text-center">
+          <a class="btn btn-dark" href="https://forms.gle/cXTPwSp3ehX9J2Kc7" target="_blank">
+            <i class="fas fa-trophy"></i>
+            挑戰測驗
+            <i class="fas fa-trophy"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<section class="container-fluid bg-light py-5">
+  <h2 class="mb-3 text-center font-section-title">六角學院課程 - PTT 上一致好評</h2>
+  <div class="container">
+    <div class="row no-gutters justify-content-center">
+      <div class="col-md-10">
+        <div class="centered text-center absolute w-100" style="z-index: 1;">
+          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2F%E5%85%AD%E8%A7%92%E7%B6%B2%E8%B7%AF%E5%9B%9E%E9%A5%8B%E7%84%A1id%E7%89%88-01.svg?alt=media&token=b03a0c47-67f0-4d31-a182-63be7e4c5380" alt class="img-fluid">
+        </div>
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2F%E5%85%AD%E8%A7%92%E7%B6%B2%E8%B7%AF%E5%9B%9E%E9%A5%8B%E5%BA%95%E5%9C%96-01.png?alt=media&token=33dc3b0b-b9b3-4212-9205-113d454942e2" alt class="img-fluid">
+        <small class="text-center position-relative" style="z-index: 10000;"><i class="far fa-hand-point-right"></i> 點我看好評：
+          <a href="https://www.ptt.cc/bbs/Web_Design/M.1546520473.A.A42.html" target="_blank">PTT 好文 1</a>
+          、<a href="https://disp.cc/b/654-aB2G" target="_blank">PTT 好文 2</a>
+          、<a href="https://moptt.tw/p/Soft_Job.M.1546655647.A.807" target="_blank">PTT 好文 3</a>
+          、<a href="https://www.dcard.tw/f/job/p/231673924-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E5%89%8D%E7%AB%AF%E8%AA%B2%E7%A8%8B%E6%8E%A8%E5%97%8E" target="_blank">Dcard 好文</a>
+         
+      </small></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-6 bg-lighter">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -425,7 +533,7 @@
             <div class="carousel-item">
               <blockquote style="min-height: 12rem;">
                 <p>洧杰扎實的前端開發經驗，以及簡單直覺的教學方式，對於欲踏入前端的朋友們來說是一大福音，課程中對於許多的觀念跟特性採用了動畫解說，讓你非常容易就能了解到每個網頁製作的原理與特性。</p>
-                <p>課程規劃了整套清楚且完整的網頁前端開發流程，更是業界少見的規劃方式，本課程絕對是你不可多得的優質教學，Amos誠心在這推薦給大家。</p>
+                <p>課程規劃了整套清楚且完整的網頁前端開發流程，更是業界少見的規劃方式，本課程絕對是你不可多得的優質教學，Amos 誠心在這推薦給大家。</p>
               </blockquote>
               <div class="d-flex align-items-strech">
                 <img src="/images/avators/amos.jpg" class="rounded-circle" width="75" height="75" alt>
@@ -440,8 +548,8 @@
             </div>
             <div class="carousel-item">
               <blockquote style="min-height: 12rem;">
-                <p>六角學院洧杰課程幫助我從平面設計師零基礎到能夠撰寫html、css客製化自己的作品網站，也助設計師能夠將原始設計稿掌握細節，將設計的每一分細膩呈現出來。</p>
-                <p>上過他的課會深刻體會他的教學方式淺顯易懂，更重要是克服了對手寫code感到困難、害怕的心理壓力。</p>
+                <p>六角學院洧杰課程幫助我從平面設計師零基礎到能夠撰寫 HTML、CSS 客製化自己的作品網站，也助設計師能夠將原始設計稿掌握細節，將設計的每一分細膩呈現出來。</p>
+                <p>上過他的課會深刻體會他的教學方式淺顯易懂，更重要是克服了對手寫 Code 感到困難、害怕的心理壓力。</p>
               </blockquote>
               <div class="d-flex align-items-strech">
                 <img src="/images/avators/joan.jpg" class="rounded-circle" width="75" height="75" alt>
@@ -489,7 +597,7 @@
 
 <section class="container my-5" id="recommend">
   <h2 class="mb-3 text-center text-divider text-secondary text-w-lighter">
-    Bootstrap  
+    JavaScript 核心篇 - 邁向達人之路  
   </h2>
   <div class="row justify-content-center">
     
@@ -503,57 +611,57 @@
     
       
         
-      
-    
-      
-        
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        
         <div class="col-md-4 col-11 pt-md-0 pt-3 mt-md-5 mt-2" itemscope itemtype="https://schema.org/Product">
           <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
-            <h2 class="font-section-sub-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area m-0" style="z-index: 6" itemprop="name">Bootstrap 4 - 開發超強不解釋</h2>
+            <h2 class="font-section-sub-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area m-0" style="z-index: 6" itemprop="name">JavaScript 核心 - 邁向達人之路</h2>
             <div class>
               <div class="position-relative combined-works " style="height: 180px">
                 <!-- <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div> -->
-                <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a) no-repeat; background-position: center center; background-size: cover;
+                <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fudemy-cover-core-js.png?alt=media&token=012201d0-5f26-4558-bc14-d33b82e911b7) no-repeat; background-position: center center; background-size: cover;
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
-              <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.bootstrap">
-                <strong class="text-primary" v-text="course.bootstrap.detail.num_subscribers"> 300 </strong> 人
+              <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.jscore">
+                <strong class="text-primary" v-text="course.jscore.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
             </div>
             <div class="px-lg-4 px-3 pt-5 text-dark" itemprop="description">
-              <p>學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。</p>
+              <ul><li>深入了解 JS 核心運作</li><li>輕鬆破解各路奇怪問題</li><li>大量測驗，驗證運作觀念</li></ul>
             </div>
             <div class="mt-auto">
               <div class="pb-4 px-4 text-right text-dark">
-                <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：2600</del></p>
-                <p class="mb-0 font-weight-bold d-none d-lg-block">−5 % off：NT$ 130</p>
-                <p class="mb-0 font-weight-bold font-column-4-button" itemprop="price">NT$ 2470</p>
+                <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：4000</del></p>
+                <p class="mb-0 font-weight-bold d-none d-lg-block">−53 % off：NT$ 2110</p>
+                <p class="mb-0 font-weight-bold font-column-4-button" itemprop="price">NT$ 1890</p>
                 <meta itemprop="priceCurrency" content="TWD">
-                <a href="https://shop.hexschool.com/order/create?order=bootstrap&coupon_code=COUPON_2018_HEXSCHOOL" class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 Bootstrap 4 - 開發超強不解釋 支付流程" data-promotions="現在上課去" data-price="2470" data-title="Bootstrap 4 - 開發超強不解釋" data-paylink="https://shop.hexschool.com/order/create?order=bootstrap&coupon_code=COUPON_2018_HEXSCHOOL" itemprop="url">
+                <a href="https://shop.hexschool.com/order/create?order=js-core&coupon_code=JAVASCRIPT-CORE-2019-EARLY" class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 JavaScript 核心 - 邁向達人之路 支付流程" data-promotions="現在上課去" data-price="1890" data-title="JavaScript 核心 - 邁向達人之路" data-paylink="https://shop.hexschool.com/order/create?order=js-core&coupon_code=JAVASCRIPT-CORE-2019-EARLY" itemprop="url">
                   現在上課去
                   <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
                 </a>
               </div>
             </div>
             <div class="bg-light d-flex justify-content-center py-3">
-              <a href="https://www.udemy.com/getbootstrap-4/?couponCode=COUPON_2018" class="btn btn-outline-dark btn-block mx-5" target="blank" title="線上試聽">
+              <a href="https://www.udemy.com/javascript-adv/?couponCode=JS-CORE-ONSALE-AUG" class="btn btn-outline-dark btn-block mx-5" target="blank" title="線上試聽">
                 Udemy 線上試聽
               </a>
             </div>
           </div>
         </div>
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
         
       
     
@@ -570,36 +678,39 @@
       
     
   <div class="col-md-6">
-    <div class="card">
-  <div class="card-body text-secondary">
-    <p><strong class="text-success">課程升級、升級在升級!!</strong>課程推出後會不斷的更新，且新增的內容不會額外收費，擺脫線上課程受後不理的刻板印象。</p>
-    <div class="row my-2">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fcourse_add_1.png?alt=media&token=f8ac28ea-3416-4ad4-810d-43b815a00cec" alt>
+    <div class="row justify-content-center">
+  <div class="col-11 pt-md-0 pt-3 mt-md-5 mt-2 h-100">
+    <div class="combinedSolution bg-white d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
+      <h2 class="font-section-sub-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area m-0" style="z-index: 6">JS 影音課程 + 直播</h2>
+      <div class>
+        <div class="position-relative combined-works " style="height: 180px">
+          <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2F%E8%AA%B2%E7%A8%8B%E5%8A%A0%E7%9B%B4%E6%92%AD.png?alt=media&token=37cfa3ce-0a73-4b09-b07f-9166c759a34d) no-repeat; background-position: center center; background-size: cover;
+            width: 100%; z-index: 1; position: absolute; left: 0;"></div>
+        </div>
       </div>
-      <div class="col-8">
-        <p class="h5">額外補充三大版型 (已如期上線)</p>
-        <p>課程中會在新增<strong class="text-success">形象首頁、後台版型、購物車頁面</strong>，增加元件使用情境，確保理解最大運用範圍。</p>
+      <div class="px-lg-4 px-3 pt-5 text-dark">
+        搭配線上驗證觀念，各路心法一次打到通。
+        <small class="text-secondary mb-0 d-block mt-1"> 此組合包含：</small>
+        <ul class="pl-3 mb-0">
+          <li>JS 6.5 小時影音課程</li>
+          <li>JS 6 小時<strong class="text-dark">直播課程</strong></li>
+        </ul>
+      </div>
+      <div class="mt-auto">
+        <div class="pb-4 px-4 text-right text-dark">
+          <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價 NT$ 6000</del></p>
+          <p class="mb-0 font-weight-bold d-none d-lg-block text-danger"><strong>8/18 早鳥優惠</strong></p>
+          <p class="mb-0 font-weight-bold font-column-4-button text-danger"> NT$ 2890</p>
+          <a href="https://shop.hexschool.com/order/create?coupon_code=JAVASCRIPT-CORE-2019-EARLY&order=js-core&phyProduct[]=-LlLcPIaNKlEwvqptLrL&phyProductSpec[]=-LlLcfQ3A_DGouAkHCb1" class="join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2">
+            購買影音課程 + 直播
+            <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="row my-2">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fcourse_add_2.png?alt=media&token=65560b31-ff7a-4a8a-8f98-3e422cb88468" alt>
-      </div>
-      <div class="col-8">
-        <p class="h5">自定義屬於自己的 Bootstrap <br>(已如期上線)</p>
-        <p>Bootstrap 4 更建議自定義元件，課程會結合<strong class="text-success"> Gulp Sass 自動化</strong>，讓同學輕鬆了解如何客製化元件。</p>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fcourse_add_3.png?alt=media&token=91a3d91b-dc1a-4e54-be8f-c1f08de14e53" alt>
-      </div>
-      <div class="col-8">
-        <p class="h5">課程不斷更新 (已更新至 v4 正式版!!未來還會持續更新)</p>
-        <p>六角學院是 Bootstrap 繁體中文版的翻譯者，且獲得 <strong class="text-success">官方認證</strong>，所以課程、翻譯文件皆會隨著版本不斷更新，幫同學隨時更新新內容。</p>
-      </div>
-    </div>
+    <p class="mt-2 text-center">早鳥時間至 8/18，影音課程價格 1890 元 <br>
+      新課優惠至 9/15，影音課程價格 1990 元
+    </p>
     
   </div>
 </div>
@@ -969,8 +1080,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/bs4_vendor.js?1565157233528"></script>
-<script src="/js/bs4_all.js?1565157233528"></script>
+<script src="/js/bs4_vendor.js?1565157233648"></script>
+<script src="/js/bs4_all.js?1565157233648"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
@@ -1025,17 +1136,39 @@ fbq('track', "PageView");
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "productID":"jscore",
+  "name":"JavaScript 核心 - 邁向達人之路",
+  "description": "<ul><li>深入了解 JS 核心運作</li><li>輕鬆破解各路奇怪問題</li><li>大量測驗，驗證運作觀念</li></ul>",
+  "url":"https://www.hexschool.com/courses/courses/js-core.html",
+  "image":  "https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fcore-js%2Fudemy-cover-core-js.png?alt=media&token=012201d0-5f26-4558-bc14-d33b82e911b7",
+  "brand":"hexschool",
+  "offers":[
+    {
+      "@type":"Offer",
+      "price":4000,
+      "priceCurrency":"TWD",
+      "itemCondition":"https://schema.org/NewCondition",
+      "availability":"https://schema.org/InStock"
+      }
+  ]
+}
+</script>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
