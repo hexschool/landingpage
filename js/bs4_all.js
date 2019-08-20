@@ -70,7 +70,6 @@ $(document).ready(function() {
       var style, styleS;
       style = "translateX(" + (-37 * Number(x) * Number(y)) + "px) rotate(" + Number(x) * Number(y) + "deg)";
       styleS = "translateX(" + (37 * Number(x) * Number(y)) + "px) rotate(" + -Number(x) * Number(y) + "deg)";
-      console.log(styleS);
       moveImg.style.transform = style;
       moveImg.style.webkitTransform = style;
       moveImg.style.mozTransform = style;
