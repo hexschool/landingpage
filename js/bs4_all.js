@@ -88,7 +88,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  var arr, intervalId, mediaQuery, sassSwiper;
+  var arr, intervalId, mediaQuery, sassSwiper, swiper;
   $('#orderModal').on('show.bs.modal', function(event) {
     var button, data;
     button = $(event.relatedTarget);
@@ -100,6 +100,12 @@ $(document).ready(function() {
       paylink: button.data('paylink')
     };
     return orderModalApp.text = data;
+  });
+  swiper = new Swiper('.carousel-comic', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
   });
   arr = ['6F', '5F', '4F', '3F', '2F', '1F', 'B1'];
   sassSwiper = new Swiper('.sass-floor', {
