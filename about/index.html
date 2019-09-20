@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1568601211601">
+  <link rel="stylesheet" href="/stylesheets/all.css?1568951387327">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -204,7 +204,7 @@
             
               
                 <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/group/"><span class="nav-link-span">企業/團購</span></a>
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/case/"><span class="nav-link-span">發案服務</span></a>
                 </li>
               
             
@@ -215,8 +215,24 @@
               
             
               
-                <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/qa/"><span class="nav-link-span">問與答</span></a>
+                <div class="dropdown d-none d-md-block ">
+                  <li class="dropdown-qa nav-item ">
+                    <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative d-flex align-items-center" href="/qa/">
+                      <span class="nav-link-span">問與答</span>
+                      <i class="dropdown-menu-icon material-icons bg-primary text-white rounded-circle mx-1" style="font-size: 18px">arrow_drop_down</i></a>
+                    
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-qa text-right" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="/qa/">常見問答</a>
+                      <a class="dropdown-item" href="/group/">企業/團購</a>
+                      <a class="dropdown-item" href="/qa/how-to.html">如何成為前端工程師</a>
+                    </div>
+                  </li>
+                </div>
+                <li class="nav-item d-block d-md-none ">
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold" href="/qa/">問與答</a>
+                </li>
+                <li class="nav-item d-block d-md-none ">
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold" href="/group/">企業/團購</a>
                 </li>
               
             
@@ -928,7 +944,8 @@
 </div>
 <!-- Header END -->
 
-  <div class="container">
+  <div class="">
+    <div class="container">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -1148,6 +1165,7 @@
   </div>
 </div>
 
+  </div>
   
 <div class="modal fade" id="orderModal" tabindex="-1">
   <div class="modal-dialog" role="document">
@@ -1330,8 +1348,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/vendor.js?1568601211617"></script>
-<script src="/js/all.js?1568601211617"></script>
+<script src="/js/vendor.js?1568951387341"></script>
+<script src="/js/all.js?1568951387341"></script>
 <script src="/js/wow.min.js"></script>
 
 
@@ -1384,9 +1402,6 @@ window.fbAsyncInit = function() {
 
 <!-- BEGIN INTEGRATIONS -->
 
-
-
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?

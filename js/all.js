@@ -273,6 +273,41 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  var getQAMousePotion, ishoverQA;
+  ishoverQA = false;
+  $('.dropdown-qa').mouseover(function() {
+    console.log('kwldkq;wdkq;w');
+    $('.dropdown-menu-qa').addClass('show');
+    return ishoverQA = true;
+  });
+  $('.dropdown-qa').click(function() {
+    $('.dropdown-menu-qa').addClass('show');
+    return ishoverQA = true;
+  });
+  $('.dropdown-menu-qa').mouseover(function() {
+    $('.dropdown-menu-qa').addClass('show');
+    return ishoverQA = true;
+  });
+  getQAMousePotion = function() {
+    if (ishoverQA === false) {
+      return $('.dropdown-menu-qa').removeClass('show');
+    }
+  };
+  $('.dropdown-qa').mouseout(function() {
+    ishoverQA = false;
+    return setTimeout(function() {
+      return getQAMousePotion();
+    }, 500);
+  });
+  $('.dropdown-menu-qa').mouseout(function() {
+    ishoverQA = false;
+    return setTimeout(function() {
+      return getQAMousePotion();
+    }, 500);
+  });
+});
+
 (function() {
   var filterArea, filterProfile, getProfile, getWorkPeple, hasWorkCount, hopeArea, optionArea, profileCard, profileUserData, resumeApp, resumeAreaID, scrollTopID, updateProfile, workID;
   resumeApp = document.getElementById('resumeApp');
@@ -607,6 +642,30 @@ $(document).ready(function() {
       }
     });
   }
+  ViewContentScrollTracking = false;
+  if ($('.course-tracking-ViewContent').length) {
+    $win = $(window).scroll(function(e) {
+      var contentTop, winTop, windowHieght;
+      windowHieght = $(window).height() / 2;
+      winTop = $($win).scrollTop() + windowHieght;
+      contentTop = $('.course-tracking-ViewContent').offset().top;
+      if (winTop > contentTop && !ViewContentScrollTracking) {
+        ViewContentScrollTracking = true;
+        return fbq('track', 'ViewContent', {
+          content_name: $('.course-tracking-ViewContent').data('name'),
+          value: $('.course-tracking-ViewContent').data('price'),
+          currency: 'TWD'
+        });
+      }
+    });
+  }
+  $('.addToWishlist').on('click', function(e) {
+    var eventName;
+    eventName = $(this).data('wishlist');
+    return fbq('track', 'AddToWishlist', {
+      event_name: eventName
+    });
+  });
 });
 
 $(document).ready(function() {

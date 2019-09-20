@@ -439,6 +439,30 @@ $(document).ready(function() {
       }
     });
   }
+  ViewContentScrollTracking = false;
+  if ($('.course-tracking-ViewContent').length) {
+    $win = $(window).scroll(function(e) {
+      var contentTop, winTop, windowHieght;
+      windowHieght = $(window).height() / 2;
+      winTop = $($win).scrollTop() + windowHieght;
+      contentTop = $('.course-tracking-ViewContent').offset().top;
+      if (winTop > contentTop && !ViewContentScrollTracking) {
+        ViewContentScrollTracking = true;
+        return fbq('track', 'ViewContent', {
+          content_name: $('.course-tracking-ViewContent').data('name'),
+          value: $('.course-tracking-ViewContent').data('price'),
+          currency: 'TWD'
+        });
+      }
+    });
+  }
+  $('.addToWishlist').on('click', function(e) {
+    var eventName;
+    eventName = $(this).data('wishlist');
+    return fbq('track', 'AddToWishlist', {
+      event_name: eventName
+    });
+  });
 });
 
 $(document).ready(function() {
