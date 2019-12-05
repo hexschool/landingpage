@@ -102,10 +102,16 @@ $(document).ready(function() {
     return orderModalApp.text = data;
   });
   swiper = new Swiper('.carousel-comic', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev'
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    effect: 'fade'
   });
   arr = ['6F', '5F', '4F', '3F', '2F', '1F', 'B1'];
   sassSwiper = new Swiper('.sass-floor', {
@@ -189,24 +195,13 @@ $(document).ready(function() {
     var navTarget, navtargetPos, scrollPos, windowHeight;
     scrollPos = $(window).scrollTop();
     windowHeight = $(window).height();
-    navTarget = $('#thanks-2019-interview');
-    navtargetPos = $(navTarget).offset().top;
-    if (navtargetPos + 6 <= scrollPos) {
-      $('.nav-service').removeClass('d-none');
-    } else {
-      $('.nav-service').addClass('d-none');
-    }
-    $('.thanks-2019-service').each(function() {
-      var target, targetHeight, targetPos;
-      target = $(this).attr('href');
-      targetPos = $(target).offset().top;
-      targetHeight = $(target).outerHeight();
-      if (targetPos - 60 <= scrollPos && targetPos + targetHeight - 60 > scrollPos) {
-        $(this).addClass('active');
-      } else {
-        $(this).removeClass('active');
+    navTarget = $('#thanks-2019-salary');
+    if (navTarget.length > 0) {
+      navtargetPos = $(navTarget).offset().top;
+      if (navtargetPos - 200 <= scrollPos) {
+        return $('.progress-bar').addClass('animate');
       }
-    });
+    }
   });
 });
 
@@ -512,6 +507,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  var checkCourse, checkGodtohex, countPrice;
   $('#choeseCourse').on('click', function() {
     var coupon, leadCourse, param, selectedCourses, totalUrl, url;
     coupon = $(this).data('coupon');
@@ -534,19 +530,72 @@ $(document).ready(function() {
       return location.href = decodeURIComponent(totalUrl + '#addProducts');
     }
   });
-  return $('#customCourses .selecedCourse').on('change', function() {
-    var originTotal, total;
+  countPrice = function() {
+    var conditionText, originTotal, total, value;
     total = 0;
     originTotal = 0;
+    value = '';
+    conditionText = '';
     $('#customCourses .selecedCourse:checked').each(function(i, item) {
       var originPrice, price;
+      value = item.value;
       price = parseInt($(this).data('price'));
       originPrice = parseInt($(this).data('originprice'));
       total = total + price;
-      originTotal = originTotal + originPrice;
-      return console.log(price, total);
+      return originTotal = originTotal + originPrice;
     });
     $('#selecedTotal').text(total);
-    return $('#selecedOriginTotal').text(originTotal - total);
+    $('#selecedOriginTotal').text(originTotal - total);
+    if (value === 'god2020year' || total > 5999) {
+      $('#condition_false').hide();
+      return $('#condition_true').show();
+    } else {
+      if (value !== 'god2020year') {
+        $('#condition_false').hide();
+        $('#condition_true').show();
+      }
+      if (total < 6000) {
+        conditionText = 6000 - total;
+      }
+      $('#condition').html(conditionText);
+      $('#condition_false').show();
+      return $('#condition_true').hide();
+    }
+  };
+  countPrice();
+  $('#customCourses .selecedCourse').on('change', function() {
+    return countPrice();
+  });
+  checkCourse = false;
+  checkGodtohex = false;
+  $('#select-all-course').on('click', function(e) {
+    e.preventDefault();
+    if (!checkCourse) {
+      $('#main-course-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkCourse;
+      });
+      checkCourse = !checkCourse;
+    } else {
+      $('#main-course-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkCourse;
+      });
+      checkCourse = !checkCourse;
+    }
+    return countPrice();
+  });
+  return $('#select-all-godtohex').on('click', function(e) {
+    e.preventDefault();
+    if (!checkGodtohex) {
+      $('#godtohex-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkGodtohex;
+      });
+      checkGodtohex = !checkGodtohex;
+    } else {
+      $('#godtohex-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkGodtohex;
+      });
+      checkGodtohex = !checkGodtohex;
+    }
+    return countPrice();
   });
 });
