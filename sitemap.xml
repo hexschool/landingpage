@@ -4,42 +4,42 @@
   <url>
     <loc>https://www.hexschool.com/courses/thanks-2019.html</loc>
     
-    <lastmod>2019-12-05T06:52:38.021Z</lastmod>
+    <lastmod>2019-12-06T01:34:17.459Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.hexschool.com/vue/index.html</loc>
     
-    <lastmod>2019-12-05T06:50:46.545Z</lastmod>
+    <lastmod>2019-12-06T01:32:42.569Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.hexschool.com/qa/how-to.html</loc>
     
-    <lastmod>2019-12-05T06:50:46.544Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.hexschool.com/bootstrap/index.html</loc>
-    
-    <lastmod>2019-12-05T06:50:46.543Z</lastmod>
+    <lastmod>2019-12-06T01:32:42.568Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.hexschool.com/courses/js-core.html</loc>
     
-    <lastmod>2019-12-05T06:50:46.543Z</lastmod>
+    <lastmod>2019-12-06T01:32:42.567Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.hexschool.com/bootstrap/index.html</loc>
+    
+    <lastmod>2019-12-06T01:32:42.566Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.hexschool.com/2019/11/14/2019-11-14-w3Hexschool-2020-challenge/</loc>
     
-    <lastmod>2019-12-05T06:50:46.542Z</lastmod>
+    <lastmod>2019-12-06T01:32:42.565Z</lastmod>
     
   </url>
   
@@ -198,14 +198,14 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2019/05/13/2019-05-13-internship/</loc>
+    <loc>https://www.hexschool.com/2019/05/13/2019-05-13-remote-jobs/</loc>
     
     <lastmod>2019-09-17T02:59:55.694Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2019/05/13/2019-05-13-remote-jobs/</loc>
+    <loc>https://www.hexschool.com/2019/05/13/2019-05-13-internship/</loc>
     
     <lastmod>2019-09-17T02:59:55.694Z</lastmod>
     
@@ -233,14 +233,14 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2018/06/18/2018-06-18-interview/</loc>
+    <loc>https://www.hexschool.com/2018/06/19/2018-06-19-interview/</loc>
     
     <lastmod>2019-09-17T02:59:55.691Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2018/06/19/2018-06-19-interview/</loc>
+    <loc>https://www.hexschool.com/2018/06/18/2018-06-18-interview/</loc>
     
     <lastmod>2019-09-17T02:59:55.691Z</lastmod>
     
@@ -275,14 +275,14 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/courses/responsive.html</loc>
+    <loc>https://www.hexschool.com/courses/nodejs.html</loc>
     
     <lastmod>2019-06-21T08:16:36.033Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/courses/nodejs.html</loc>
+    <loc>https://www.hexschool.com/courses/responsive.html</loc>
     
     <lastmod>2019-06-21T08:16:36.033Z</lastmod>
     
@@ -303,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2019/01/06/2019-01-06-interview/</loc>
+    <loc>https://www.hexschool.com/2019/01/03/2019-01-03-interview/</loc>
     
     <lastmod>2019-06-21T08:16:36.027Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2019/01/03/2019-01-03-interview/</loc>
+    <loc>https://www.hexschool.com/2019/01/06/2019-01-06-interview/</loc>
     
     <lastmod>2019-06-21T08:16:36.027Z</lastmod>
     
@@ -359,13 +359,6 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/authors/casper.html</loc>
-    
-    <lastmod>2018-11-14T02:49:03.475Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.hexschool.com/categories/index.html</loc>
     
     <lastmod>2018-11-14T02:49:03.475Z</lastmod>
@@ -373,14 +366,21 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/about/index.html</loc>
+    <loc>https://www.hexschool.com/authors/casper.html</loc>
+    
+    <lastmod>2018-11-14T02:49:03.475Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.hexschool.com/about/statement.html</loc>
     
     <lastmod>2018-11-14T02:49:03.474Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/about/statement.html</loc>
+    <loc>https://www.hexschool.com/about/index.html</loc>
     
     <lastmod>2018-11-14T02:49:03.474Z</lastmod>
     
@@ -394,7 +394,7 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2018/09/13/2018-09-13-hexschool-challenge/</loc>
+    <loc>https://www.hexschool.com/2018/10/31/2018-10-31-adobe-plugins/</loc>
     
     <lastmod>2018-11-14T02:49:03.472Z</lastmod>
     
@@ -408,7 +408,7 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2018/10/31/2018-10-31-adobe-plugins/</loc>
+    <loc>https://www.hexschool.com/2018/09/13/2018-09-13-hexschool-challenge/</loc>
     
     <lastmod>2018-11-14T02:49:03.472Z</lastmod>
     
@@ -422,6 +422,13 @@
   </url>
   
   <url>
+    <loc>https://www.hexschool.com/2018/04/16/2018-04-16-skill_tree/</loc>
+    
+    <lastmod>2018-11-14T02:49:03.469Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.hexschool.com/2018/01/16/2018-01-16-jan-node/</loc>
     
     <lastmod>2018-11-14T02:49:03.469Z</lastmod>
@@ -430,13 +437,6 @@
   
   <url>
     <loc>https://www.hexschool.com/2018/04/11/2018-04-11-keynote-king/</loc>
-    
-    <lastmod>2018-11-14T02:49:03.469Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.hexschool.com/2018/04/16/2018-04-16-skill_tree/</loc>
     
     <lastmod>2018-11-14T02:49:03.469Z</lastmod>
     
@@ -457,13 +457,6 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2017/09/27/2017-09-27-sep-bs/</loc>
-    
-    <lastmod>2018-11-14T02:49:03.466Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.hexschool.com/2017/09/23/2017-09-23-wan-ling-interview/</loc>
     
     <lastmod>2018-11-14T02:49:03.466Z</lastmod>
@@ -471,7 +464,7 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2017/09/23/2017-09-23-yunlong-interview/</loc>
+    <loc>https://www.hexschool.com/2017/09/27/2017-09-27-sep-bs/</loc>
     
     <lastmod>2018-11-14T02:49:03.466Z</lastmod>
     
@@ -485,6 +478,13 @@
   </url>
   
   <url>
+    <loc>https://www.hexschool.com/2017/09/23/2017-09-23-yunlong-interview/</loc>
+    
+    <lastmod>2018-11-14T02:49:03.466Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.hexschool.com/2017/07/22/2017-07-22-free-demo/</loc>
     
     <lastmod>2018-11-14T02:49:03.465Z</lastmod>
@@ -492,7 +492,7 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2017/08/13/2017-08-13-bootstrap4-zh-tw/</loc>
+    <loc>https://www.hexschool.com/2017/09/01/2017-09-01-javascript-for/</loc>
     
     <lastmod>2018-11-14T02:49:03.465Z</lastmod>
     
@@ -506,7 +506,7 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2017/09/01/2017-09-01-javascript-for/</loc>
+    <loc>https://www.hexschool.com/2017/08/13/2017-08-13-bootstrap4-zh-tw/</loc>
     
     <lastmod>2018-11-14T02:49:03.465Z</lastmod>
     
@@ -527,6 +527,13 @@
   </url>
   
   <url>
+    <loc>https://www.hexschool.com/2017/06/25/2017-06-25-july-vue/</loc>
+    
+    <lastmod>2018-11-14T02:49:03.463Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.hexschool.com/2017/06/12/2017-06-12-skill_tree/</loc>
     
     <lastmod>2018-11-14T02:49:03.463Z</lastmod>
@@ -541,20 +548,6 @@
   </url>
   
   <url>
-    <loc>https://www.hexschool.com/2017/06/25/2017-06-25-july-vue/</loc>
-    
-    <lastmod>2018-11-14T02:49:03.463Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.hexschool.com/2016/12/28/2016-12-28-interview/</loc>
-    
-    <lastmod>2018-11-14T02:49:03.462Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.hexschool.com/2017/01/20/2017-01-17-interview/</loc>
     
     <lastmod>2018-11-14T02:49:03.462Z</lastmod>
@@ -563,6 +556,13 @@
   
   <url>
     <loc>https://www.hexschool.com/2017/03/15/2017-03-15-interview/</loc>
+    
+    <lastmod>2018-11-14T02:49:03.462Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.hexschool.com/2016/12/28/2016-12-28-interview/</loc>
     
     <lastmod>2018-11-14T02:49:03.462Z</lastmod>
     
@@ -583,6 +583,13 @@
   </url>
   
   <url>
+    <loc>https://www.hexschool.com/2016/08/30/2016-08-25-interview/</loc>
+    
+    <lastmod>2018-11-14T02:49:03.461Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.hexschool.com/404.html</loc>
     
     <lastmod>2018-11-14T02:49:03.461Z</lastmod>
@@ -591,13 +598,6 @@
   
   <url>
     <loc>https://www.hexschool.com/2016/01/02/2016-08-08-em-vs-rem/</loc>
-    
-    <lastmod>2018-11-14T02:49:03.461Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.hexschool.com/2016/08/30/2016-08-25-interview/</loc>
     
     <lastmod>2018-11-14T02:49:03.461Z</lastmod>
     
