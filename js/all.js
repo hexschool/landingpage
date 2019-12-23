@@ -110,30 +110,32 @@ $(function() {
 vueApp = function() {
   var appCourse, appGetFreeCoupon, courseEvaluation;
   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
-    appCourse.course = data;
     courseEvaluation.course = data;
     appCourse.courseData = [];
-    $.each(data, function(key, courses) {
+    return $.each(data, function(key, courses) {
       if (courses.review.count) {
         return $.each(courses.review.results, function(i, review) {
           return appCourse.courseData.push(review);
         });
       }
     });
-    return setTimeout(function() {
-      var swiper;
-      return swiper = new Swiper('.slide-reviews', {
-        pagination: '.swiper-pagination',
-        paginationType: 'progress',
-        direction: 'vertical',
-        spaceBetween: 15,
-        slidesPerView: 'auto',
-        autoplay: 2000,
-        slideClass: 'swiper-slide',
-        autoplayDisableOnInteraction: false
-      });
-    }, 1500);
   });
+  $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
+    return appCourse.course = data;
+  });
+  setTimeout(function() {
+    var swiper;
+    return swiper = new Swiper('.slide-reviews', {
+      pagination: '.swiper-pagination',
+      paginationType: 'progress',
+      direction: 'vertical',
+      spaceBetween: 15,
+      slidesPerView: 'auto',
+      autoplay: 2000,
+      slideClass: 'swiper-slide',
+      autoplayDisableOnInteraction: false
+    });
+  }, 1500);
   appCourse = new Vue({
     el: '#course',
     data: {
@@ -277,7 +279,6 @@ $(document).ready(function() {
   var getQAMousePotion, ishoverQA;
   ishoverQA = false;
   $('.dropdown-qa').mouseover(function() {
-    console.log('kwldkq;wdkq;w');
     $('.dropdown-menu-qa').addClass('show');
     return ishoverQA = true;
   });

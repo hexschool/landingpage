@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1577068212099">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1577087678933">
   <!-- Global styles END -->
 
   
@@ -533,8 +533,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
           </div>
           <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.vue">
-            <strong class="text-primary" v-text="course.vue.detail.num_subscribers"> 300
-            </strong> 人
+            <strong class="text-primary" v-if="course.vue.teachableData.enrolled" v-text="course.vue.detail.num_subscribers + course.vue.teachableData.enrolled"> 300 </strong>
+            <strong class="text-primary" v-else v-text="course.vue.detail.num_subscribers"> 300 </strong> 人
             <small class="text-white">參與本課程</small>
           </span>
           <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1008,8 +1008,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/bs4_vendor.js?1577068212103"></script>
-<script src="/js/bs4_all.js?1577068212103"></script>
+<script src="/js/bs4_vendor.js?1577087678934"></script>
+<script src="/js/bs4_all.js?1577087678935"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">

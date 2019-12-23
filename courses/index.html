@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1577068211790">
+  <link rel="stylesheet" href="/stylesheets/all.css?1577087678689">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1081,7 +1081,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.ui">
-                <strong class="text-primary" v-text="course.ui.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.num_subscribers + course.ui.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.ui.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1154,7 +1155,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.jscore">
-                <strong class="text-primary" v-text="course.jscore.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.jscore.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1223,7 +1225,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.vue">
-                <strong class="text-primary" v-text="course.vue.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.vue.teachableData.enrolled" v-text="course.vue.detail.num_subscribers + course.vue.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.vue.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1321,7 +1324,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.sass">
-                <strong class="text-primary" v-text="course.sass.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.sass.teachableData.enrolled" v-text="course.sass.detail.num_subscribers + course.sass.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.sass.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1392,7 +1396,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.xd">
-                <strong class="text-primary" v-text="course.xd.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.num_subscribers + course.xd.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.xd.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1467,7 +1472,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.javascript">
-                <strong class="text-primary" v-text="course.javascript.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.javascript.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1538,7 +1544,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.html">
-                <strong class="text-primary" v-text="course.html.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.html.teachableData.enrolled" v-text="course.html.detail.num_subscribers + course.html.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.html.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1609,7 +1616,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.responsive">
-                <strong class="text-primary" v-text="course.responsive.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.responsive.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1680,7 +1688,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.bootstrap">
-                <strong class="text-primary" v-text="course.bootstrap.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1751,7 +1760,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.nodejs">
-                <strong class="text-primary" v-text="course.nodejs.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.nodejs.teachableData.enrolled" v-text="course.nodejs.detail.num_subscribers + course.nodejs.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.nodejs.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1822,7 +1832,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.gh">
-                <strong class="text-primary" v-text="course.gh.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.gh.teachableData.enrolled" v-text="course.gh.detail.num_subscribers + course.gh.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.gh.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1893,7 +1904,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.learngit">
-                <strong class="text-primary" v-text="course.learngit.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.learngit.teachableData.enrolled" v-text="course.learngit.detail.num_subscribers + course.learngit.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.learngit.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -1964,7 +1976,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.gulp">
-                <strong class="text-primary" v-text="course.gulp.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.gulp.teachableData.enrolled" v-text="course.gulp.detail.num_subscribers + course.gulp.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.gulp.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -2035,7 +2048,8 @@
                   width: 100%; z-index: 1; position: absolute; left: 0;"></div>
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white" style="transform: translateY(-50%); position: absolute; z-index: 2;" v-if="course.jqueryAni">
-                <strong class="text-primary" v-text="course.jqueryAni.detail.num_subscribers"> 300 </strong> 人
+                <strong class="text-primary" v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled"> 300 </strong>
+                <strong class="text-primary" v-else v-text="course.jqueryAni.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
               <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
@@ -2652,8 +2666,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/vendor.js?1577068211803"></script>
-<script src="/js/all.js?1577068211803"></script>
+<script src="/js/vendor.js?1577087678703"></script>
+<script src="/js/all.js?1577087678703"></script>
 <script src="/js/wow.min.js"></script>
 
 

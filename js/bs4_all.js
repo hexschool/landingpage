@@ -294,10 +294,15 @@ VueApp = new Vue({
     fetchData: function() {
       var vm;
       vm = this;
-      return $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
+      $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
         vm.courseData = data;
-        vm.course = data;
         return vm.$emit('slideReviewsData', vm.courseData);
+      }, function(response) {
+        return console.log('error', response);
+      });
+      return $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
+        vm.course = data;
+        return console.log(data);
       }, function(response) {
         return console.log('error', response);
       });
