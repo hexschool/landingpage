@@ -121,7 +121,8 @@ vueApp = function() {
     });
   });
   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
-    return appCourse.course = data;
+    appCourse.course = data;
+    return courseEvaluation.course = data;
   });
   setTimeout(function() {
     var swiper;

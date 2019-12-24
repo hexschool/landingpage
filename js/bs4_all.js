@@ -88,7 +88,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  var arr, intervalId, mediaQuery, sassSwiper, swiper;
+  var arr, intervalId, mediaQuery, sassSwiper, swiper, swiperUI;
   $('#orderModal').on('show.bs.modal', function(event) {
     var button, data;
     button = $(event.relatedTarget);
@@ -112,6 +112,28 @@ $(document).ready(function() {
       prevEl: '.swiper-button-prev'
     },
     effect: 'fade'
+  });
+  swiperUI = new Swiper('.carousel-ui', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    allowSlideNext: false,
+    allowSlidePrev: false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        allowSlideNext: true,
+        allowSlidePrev: true
+      }
+    }
   });
   arr = ['6F', '5F', '4F', '3F', '2F', '1F', 'B1'];
   sassSwiper = new Swiper('.sass-floor', {
