@@ -301,8 +301,7 @@ VueApp = new Vue({
         return console.log('error', response);
       });
       return $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
-        vm.course = data;
-        return console.log(data);
+        return vm.course = data;
       }, function(response) {
         return console.log('error', response);
       });
