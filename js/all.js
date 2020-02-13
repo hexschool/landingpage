@@ -223,6 +223,14 @@ $(document).ready(function() {
     };
     return orderModalApp.text = data;
   });
+  $('#web-course-pre').on('click', function(event) {
+    event.preventDefault();
+    return $('#webCourse').carousel('prev');
+  });
+  $('#web-course-next').on('click', function(event) {
+    event.preventDefault();
+    return $('#webCourse').carousel('next');
+  });
 });
 
 orderModalApp = new Vue({
