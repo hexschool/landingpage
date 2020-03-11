@@ -227,6 +227,25 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  var swiper;
+  swiper = new Swiper('.swiper-training', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+  $('#trainingHW').on('click', function(event) {
+    var checkValue;
+    checkValue = $(this)[0].checked;
+    if (checkValue) {
+      return $('#trainingBuyBtn').removeClass('disabled');
+    } else {
+      return $('#trainingBuyBtn').addClass('disabled');
+    }
+  });
+});
+
 Vue.component('slide-reviews', {
   template: "<div>\n  <div style=\"height: 250px; overflow: hidden;\" class=\"swiper-container slide-reviews\">\n    <div style=\"font-size: 1.5em;\" class=\"centered text-xs-center\"><span class=\"loading loading-primary\"></span></div>\n    <div class=\"swiper-pagination\"></div>\n    <div class=\"swiper-wrapper\">\n      <div v-for=\"(item, index) in courseData\" style=\"width: 98%;\" class=\"swiper-slide b-3\">\n        <div class=\"text-xs-left\">\n          <blockquote class=\"m-0\">\n            <div><strong>{{ item.user.display_name }}</strong><span class=\"text-warning ml-2\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></span></div>\n            <div>{{ item.content }}</div>\n          </blockquote>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
   data: function() {
