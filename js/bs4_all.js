@@ -533,6 +533,9 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var timer;
+  if ($('[data-toggle="tooltip"]').length) {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
   if ($('#footer-clock').length) {
     timer = $('#footer-clock').val();
     $('.clock').countdown(timer, function(event) {
