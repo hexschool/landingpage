@@ -107,6 +107,106 @@ $(function() {
   }
 });
 
+$(document).ready(function() {
+  var adtimer, checkCourse, checkGodtohex, countPrice;
+  if ($('#courses_ad').length) {
+    adtimer = $('#courses-ad-clock').val();
+    $('.ad-clock').countdown(adtimer, function(event) {
+      return $(this).html(event.strftime('<div class="clock-style h4 px-3">%D 天 %H 時 %M 分 %S 秒</div>'));
+    });
+  }
+  $('#choeseCourse').on('click', function() {
+    var coupon, leadCourse, param, selectedCourses, totalUrl, url;
+    coupon = $(this).data('coupon');
+    url = $(this).data('url');
+    selectedCourses = [];
+    leadCourse = '';
+    $('#customCourses .selecedCourse:checked').each(function(i, item) {
+      console.log(i, item, $(this).val());
+      return selectedCourses.push($(this).val());
+    });
+    leadCourse = selectedCourses[0];
+    selectedCourses.splice(0, 1);
+    param = $.param({
+      order: leadCourse,
+      coupon_code: coupon,
+      selectedCourses: selectedCourses
+    });
+    totalUrl = url + '?' + param;
+    if (leadCourse) {
+      return location.href = decodeURIComponent(totalUrl + '#addProducts');
+    }
+  });
+  countPrice = function() {
+    var conditionText, originTotal, total, value;
+    total = 0;
+    originTotal = 0;
+    value = '';
+    conditionText = '';
+    $('#customCourses .selecedCourse:checked').each(function(i, item) {
+      var originPrice, price;
+      value = item.value;
+      price = parseInt($(this).data('price'));
+      originPrice = parseInt($(this).data('originprice'));
+      total = total + price;
+      return originTotal = originTotal + originPrice;
+    });
+    $('#selecedTotal').text(total);
+    $('#selecedOriginTotal').text(originTotal - total);
+    if (value === 'god2020year' || total > 5999) {
+      $('#condition_false').hide();
+      return $('#condition_true').show();
+    } else {
+      if (value !== 'god2020year') {
+        $('#condition_false').hide();
+        $('#condition_true').show();
+      }
+      if (total < 6000) {
+        conditionText = 6000 - total;
+      }
+      $('#condition').html(conditionText);
+      $('#condition_false').show();
+      return $('#condition_true').hide();
+    }
+  };
+  countPrice();
+  $('#customCourses .selecedCourse').on('change', function() {
+    return countPrice();
+  });
+  checkCourse = false;
+  checkGodtohex = false;
+  $('#select-all-course').on('click', function(e) {
+    e.preventDefault();
+    if (!checkCourse) {
+      $('#main-course-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkCourse;
+      });
+      checkCourse = !checkCourse;
+    } else {
+      $('#main-course-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkCourse;
+      });
+      checkCourse = !checkCourse;
+    }
+    return countPrice();
+  });
+  $('#select-all-godtohex').on('click', function(e) {
+    e.preventDefault();
+    if (!checkGodtohex) {
+      $('#godtohex-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkGodtohex;
+      });
+      checkGodtohex = !checkGodtohex;
+    } else {
+      $('#godtohex-2019 .selecedCourse').each(function(i, item) {
+        item.checked = !checkGodtohex;
+      });
+      checkGodtohex = !checkGodtohex;
+    }
+    return countPrice();
+  });
+});
+
 vueApp = function() {
   var appCourse, appGetFreeCoupon, courseEvaluation;
   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
