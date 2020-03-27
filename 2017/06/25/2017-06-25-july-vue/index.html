@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1585014281567">
+  <link rel="stylesheet" href="/stylesheets/all.css?1585280184298">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -168,11 +168,11 @@
           </button>
         </div>
         <div class="reduce-padding d-block d-md-none px-4 pb-4">
-          <a href="tel:07-5313506">
+          <a href="tel:07-5313506" class="dropdown-phone">
             <button type="button" class="btn btn-block btn-primary rounded-0 my-3 p-3 d-flex align-items-center justify-content-center">
               <i class="material-icons text-dark px-1" style="font-size: 17px;">phone</i>07-5313506</button>
           </a>
-          <a href="https://line.me/R/ti/p/%40guv7422g">
+          <a href="https://line.me/R/ti/p/%40guv7422g" class="dropdown-line">
             <button type="button" class="btn btn-block btn-outline-primary rounded-0 p-3 d-flex align-items-center justify-content-center">
               <img class="px-1" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line-small.svg?alt=media&token=59bce9fb-3afb-4898-a1e1-b18031800a96" width="24" height="21">hexschool</button>
           </a>
@@ -203,14 +203,23 @@
               
             
               
-                <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/case/"><span class="nav-link-span">發案服務</span></a>
+                <div class="dropdown d-none d-md-block ">
+                  <li class="dropdown-case nav-item ">
+                    <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative d-flex align-items-center" href="/case/">
+                      <span class="nav-link-span">人才服務</span>
+                      <i class="dropdown-menu-icon material-icons bg-light text-white rounded-circle mx-1" style="font-size: 18px">arrow_drop_down</i></a>
+                    
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-case dropdown-menu-custom-style text-right" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="/case/">廠商發案服務</a>
+                      <a class="dropdown-item" href="/resume/">人才牆</a>
+                    </div>
+                  </li>
+                </div>
+                <li class="nav-item d-block d-md-none ">
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold" href="/case/">發案服務</a>
                 </li>
-              
-            
-              
-                <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/resume/"><span class="nav-link-span">人才牆</span></a>
+                <li class="nav-item d-block d-md-none ">
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold" href="/resume/">人才牆</a>
                 </li>
               
             
@@ -221,7 +230,7 @@
                       <span class="nav-link-span">問與答</span>
                       <i class="dropdown-menu-icon material-icons bg-light text-white rounded-circle mx-1" style="font-size: 18px">arrow_drop_down</i></a>
                     
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-qa text-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-qa dropdown-menu-custom-style text-right" aria-labelledby="dropdownMenuLink">
                       <a class="dropdown-item" href="/qa/">常見問答</a>
                       <a class="dropdown-item" href="/group/">企業/團購</a>
                       <a class="dropdown-item" href="/qa/how-to.html">如何成為前端工程師</a>
@@ -1261,11 +1270,11 @@
     <ul class="nav sidebar-categories margin-bottom-40">
       
       	<li>
-      	  <a href="/categories/CSS/">CSS (1)</a>
+      	  <a href="/categories/專訪/">專訪 (1)</a>
       	</li>
       
       	<li>
-      	  <a href="/categories/專訪/">專訪 (1)</a>
+      	  <a href="/categories/CSS/">CSS (1)</a>
       	</li>
       
     </ul>
@@ -1605,11 +1614,11 @@
   </div>
 
   <!-- FAB -->
-  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column">
-    <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" class="fab-icon fab fab-line d-md-flex align-items-center justify-content-center mp-click d-md-block d-none" title="LINE 客服">
+  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column" id="footerContact">
+    <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" class="fab-icon fab fab-line d-md-flex align-items-center justify-content-center mp-click d-none" title="LINE 客服">
       <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd" alt>
     </a>
-    <a href="https://m.me/hexschool" target="_blank" class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-md-block d-none" title="Facebook 客服">
+    <a href="https://m.me/hexschool" target="_blank" class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-none" title="Facebook 客服">
       <i class="fab fa-facebook-messenger text-primary rounded-0" style="font-size: 40px;"></i>
     </a>
   </div>
@@ -1665,8 +1674,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/vendor.js?1585014281576"></script>
-<script src="/js/all.js?1585014281576"></script>
+<script src="/js/vendor.js?1585280184307"></script>
+<script src="/js/all.js?1585280184307"></script>
 <script src="/js/wow.min.js"></script>
 
 

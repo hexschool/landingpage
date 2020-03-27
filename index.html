@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1585014282313">
+  <link rel="stylesheet" href="/stylesheets/all.css?1585280185004">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -168,11 +168,11 @@
           </button>
         </div>
         <div class="reduce-padding d-block d-md-none px-4 pb-4">
-          <a href="tel:07-5313506">
+          <a href="tel:07-5313506" class="dropdown-phone">
             <button type="button" class="btn btn-block btn-primary rounded-0 my-3 p-3 d-flex align-items-center justify-content-center">
               <i class="material-icons text-dark px-1" style="font-size: 17px;">phone</i>07-5313506</button>
           </a>
-          <a href="https://line.me/R/ti/p/%40guv7422g">
+          <a href="https://line.me/R/ti/p/%40guv7422g" class="dropdown-line">
             <button type="button" class="btn btn-block btn-outline-primary rounded-0 p-3 d-flex align-items-center justify-content-center">
               <img class="px-1" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line-small.svg?alt=media&token=59bce9fb-3afb-4898-a1e1-b18031800a96" width="24" height="21">hexschool</button>
           </a>
@@ -203,14 +203,23 @@
               
             
               
-                <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/case/"><span class="nav-link-span">發案服務</span></a>
+                <div class="dropdown d-none d-md-block ">
+                  <li class="dropdown-case nav-item ">
+                    <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative d-flex align-items-center" href="/case/">
+                      <span class="nav-link-span">人才服務</span>
+                      <i class="dropdown-menu-icon material-icons bg-light text-white rounded-circle mx-1" style="font-size: 18px">arrow_drop_down</i></a>
+                    
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-case dropdown-menu-custom-style text-right" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="/case/">廠商發案服務</a>
+                      <a class="dropdown-item" href="/resume/">人才牆</a>
+                    </div>
+                  </li>
+                </div>
+                <li class="nav-item d-block d-md-none ">
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold" href="/case/">發案服務</a>
                 </li>
-              
-            
-              
-                <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/resume/"><span class="nav-link-span">人才牆</span></a>
+                <li class="nav-item d-block d-md-none ">
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold" href="/resume/">人才牆</a>
                 </li>
               
             
@@ -221,7 +230,7 @@
                       <span class="nav-link-span">問與答</span>
                       <i class="dropdown-menu-icon material-icons bg-light text-white rounded-circle mx-1" style="font-size: 18px">arrow_drop_down</i></a>
                     
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-qa text-right" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-qa dropdown-menu-custom-style text-right" aria-labelledby="dropdownMenuLink">
                       <a class="dropdown-item" href="/qa/">常見問答</a>
                       <a class="dropdown-item" href="/group/">企業/團購</a>
                       <a class="dropdown-item" href="/qa/how-to.html">如何成為前端工程師</a>
@@ -1442,6 +1451,19 @@
           <i class="material-icons">star</i>
       <div class="d-flex flex-column flex-md-row justify-content-center align-items-start">
           <span class="pr-5" style="font-family: Helvetica Neue; height: 64px; font-size: 64px;">“</span>
+          <p class="pt-md-4 text-left comment-text-overflow">讓我更深入了解JS、還有我自己不足的地方。</p>
+          <span class="pl-5 d-md-block d-none" style="font-family: Helvetica Neue; font-size: 64px;">”</span>
+      </div>
+      <p class="m-0 p-0 d-flex justify-content-md-center justify-content-end">— 定羽 —</p>
+      </div>
+      <div class="carousel-item">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-start">
+          <span class="pr-5" style="font-family: Helvetica Neue; height: 64px; font-size: 64px;">“</span>
           <p class="pt-md-4 text-left comment-text-overflow">很多觀念在之前自已摸索時，常常因為看起來很像而誤解了用法，看完後對執行的原理又有更加深的理解和印象！</p>
           <span class="pl-5 d-md-block d-none" style="font-family: Helvetica Neue; font-size: 64px;">”</span>
       </div>
@@ -1498,19 +1520,6 @@
           <span class="pl-5 d-md-block d-none" style="font-family: Helvetica Neue; font-size: 64px;">”</span>
       </div>
       <p class="m-0 p-0 d-flex justify-content-md-center justify-content-end">— 建良 —</p>
-      </div>
-      <div class="carousel-item">
-          <i class="material-icons">star</i>
-          <i class="material-icons">star</i>
-          <i class="material-icons">star</i>
-          <i class="material-icons">star</i>
-          <i class="material-icons">star</i>
-      <div class="d-flex flex-column flex-md-row justify-content-center align-items-start">
-          <span class="pr-5" style="font-family: Helvetica Neue; height: 64px; font-size: 64px;">“</span>
-          <p class="pt-md-4 text-left comment-text-overflow">覺得很棒，剛好在我要換工作前更了解 vue原生方法的運作</p>
-          <span class="pl-5 d-md-block d-none" style="font-family: Helvetica Neue; font-size: 64px;">”</span>
-      </div>
-      <p class="m-0 p-0 d-flex justify-content-md-center justify-content-end">— Arvin —</p>
       </div>
       <div class="carousel-item">
           <i class="material-icons">star</i>
@@ -2187,6 +2196,8 @@
           </ul>
         </div>
         <div class="mt-auto">
+          <p class="mb-0 text-center"> <span style="cursor: inherit !important;">已有
+            <strong class="text-dark">1310</strong> 人擁有此組合</span></p>
           <div class="pt-4">
             <div class="position-relative combined-works " style="height: 150px">
               <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
@@ -2199,7 +2210,7 @@
             <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：8400</del></p>
             <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2520</p>
             <p class="mb-0 font-weight-bold font-column-4-button">NT$ 5880</p>
-            <a href="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程" data-promotions="基礎入門 NT$5,880" data-price="5880" data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=COUPON_2020_HEXSCHOOL_SPRING">
+            <a href="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程" data-promotions="基礎入門 NT$5,880" data-price="5880" data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" data-type="product_group" data-id="z_bs4_html_jquery_rwd">
               付款上課去
               <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
             </a>
@@ -2236,6 +2247,8 @@
           </ul>
         </div>
         <div class="mt-auto">
+          <p class="mb-0 text-center"> <span style="cursor: inherit !important;">已有
+            <strong class="text-dark">986</strong> 人擁有此組合</span></p>
           <div class="pt-4">
             <div class="position-relative combined-works " style="height: 150px">
               <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
@@ -2248,7 +2261,7 @@
             <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：10000</del></p>
             <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 3000</p>
             <p class="mb-0 font-weight-bold font-column-4-button">NT$ 7000</p>
-            <a href="https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程" data-promotions="進階組合 NT$6,790" data-price="7000" data-title="JS 學徒, JS 核心, Vue 組合包" data-paylink="https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING">
+            <a href="https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程" data-promotions="進階組合 NT$6,790" data-price="7000" data-title="JS 學徒, JS 核心, Vue 組合包" data-paylink="https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" data-type="product_group" data-id="z_js_vue">
               付款上課去
               <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
             </a>
@@ -2309,6 +2322,8 @@
           </ul>
         </div>
         <div class="mt-auto">
+          <p class="mb-0 text-center"> <span style="cursor: inherit !important;">已有
+            <strong class="text-dark">821</strong> 人擁有此組合</span></p>
           <div class="pt-4">
             <div class="position-relative combined-works " style="height: 150px">
               <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
@@ -2321,7 +2336,7 @@
             <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：18400</del></p>
             <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 5520</p>
             <p class="mb-0 font-weight-bold font-column-4-button">NT$ 12880</p>
-            <a href="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 前端全組合 (不含加購品) 支付流程" data-promotions="超值組合 NT$12,070" data-price="12880" data-title="前端全組合 (不含加購品)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING">
+            <a href="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 前端全組合 (不含加購品) 支付流程" data-promotions="超值組合 NT$12,070" data-price="12880" data-title="前端全組合 (不含加購品)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=COUPON_2020_HEXSCHOOL_SPRING" data-type="product_group" data-id="z_bs4_rwd_html_jQuery_js_vue">
               付款上課去
               <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
             </a>
@@ -2458,13 +2473,13 @@
     </div>
     <div class="row d-flex justify-content-center pt-4">
       <div class="col-md-4 col-11">
-        <a href="tel:07-5313506">
+        <a href="tel:07-5313506" class="landing-phone">
           <button type="tel" class="btn btn-block rounded-0 d-flex align-items-center justify-content-center py-4 font-section-sub-title " style="box-shadow: 0px 4px 8px rgba(0,0,0,0.16)"><i class="material-icons text-primary px-1">phone</i>
             07-5313506</button>
         </a>
       </div>
       <div class="col-md-4 col-11 mt-md-0 mt-3">
-        <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank">
+        <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" class="landing-line">
           <button class="btn btn-block rounded-0 d-flex align-items-center justify-content-center py-4 font-section-sub-title " style="box-shadow: 0px 4px 8px rgba(0,0,0,0.16)"><img class="px-1" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line-small.svg?alt=media&token=59bce9fb-3afb-4898-a1e1-b18031800a96" width="36" height="33">hexschool</button>
         </a>
       </div>
@@ -2952,11 +2967,11 @@
   </div>
 
   <!-- FAB -->
-  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column">
-    <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" class="fab-icon fab fab-line d-md-flex align-items-center justify-content-center mp-click d-md-block d-none" title="LINE 客服">
+  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column" id="footerContact">
+    <a href="https://line.me/R/ti/p/%40guv7422g" target="_blank" class="fab-icon fab fab-line d-md-flex align-items-center justify-content-center mp-click d-none" title="LINE 客服">
       <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd" alt>
     </a>
-    <a href="https://m.me/hexschool" target="_blank" class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-md-block d-none" title="Facebook 客服">
+    <a href="https://m.me/hexschool" target="_blank" class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-none" title="Facebook 客服">
       <i class="fab fa-facebook-messenger text-primary rounded-0" style="font-size: 40px;"></i>
     </a>
   </div>
@@ -3012,8 +3027,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/vendor.js?1585014282323"></script>
-<script src="/js/all.js?1585014282323"></script>
+<script src="/js/vendor.js?1585280185014"></script>
+<script src="/js/all.js?1585280185014"></script>
 <script src="/js/wow.min.js"></script>
 
 

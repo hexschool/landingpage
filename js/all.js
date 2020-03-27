@@ -56,6 +56,87 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  var abtestingContact, abtestingContactDay, abtestingContactRandom, cookieAbtestingContact, randTesting, setCookie, testingContact, testingContactExpiresTime, testingContactTrack, testingEffect;
+  abtestingContact = 'mobileContact';
+  abtestingContactRandom = ['1', '2'];
+  abtestingContactDay = 3;
+  testingContactExpiresTime = abtestingContactDay;
+  testingContact = $('#footerContact a');
+  cookieAbtestingContact = $.cookie(abtestingContact);
+  setCookie = function(name, value) {
+    return $.cookie(name, value, {
+      expires: testingContactExpiresTime,
+      path: '/'
+    });
+  };
+  testingEffect = function(test) {
+    switch (test) {
+      case '1':
+        return $.each($(testingContact), function() {
+          $(this).removeClass('d-none');
+          return $(this).addClass('d-flex');
+        });
+    }
+  };
+  testingContactTrack = (function(_this) {
+    return function(randTesting) {
+      if ($(window).width() < 768) {
+        $('.fab-line').one('click', function(e) {
+          return mixpanel.track('mobileContactClick', {
+            'TestRandom': randTesting,
+            'TestContact': 'fab-line'
+          });
+        });
+        $('.fab-facebook').one('click', function(e) {
+          return mixpanel.track('mobileContactClick', {
+            'TestRandom': randTesting,
+            'TestContact': 'fab-facebook'
+          });
+        });
+        $('.dropdown-phone').one('click', function(e) {
+          return mixpanel.track('mobileContactClick', {
+            'TestRandom': randTesting,
+            'TestContact': 'dropdown-phone'
+          });
+        });
+        $('.dropdown-line').one('click', function(e) {
+          return mixpanel.track('mobileContactClick', {
+            'TestRandom': randTesting,
+            'TestContact': 'dropdown-line'
+          });
+        });
+        $('.landing-phone').one('click', function(e) {
+          return mixpanel.track('mobileContactClick', {
+            'TestRandom': randTesting,
+            'TestContact': 'landing-phone'
+          });
+        });
+        return $('.landing-line').one('click', function(e) {
+          return mixpanel.track('mobileContactClick', {
+            'TestRandom': randTesting,
+            'TestContact': 'landing-line'
+          });
+        });
+      }
+    };
+  })(this);
+  if (!cookieAbtestingContact) {
+    randTesting = abtestingContactRandom[Math.floor(Math.random() * abtestingContactRandom.length)];
+    setCookie(abtestingContact, randTesting);
+    mixpanel.track('ABtesting', {
+      'TestEvet': abtestingContact,
+      'TestRandom': randTesting,
+      'TestExpiresTime': abtestingContactDay
+    });
+    testingEffect(randTesting);
+    return testingContactTrack(randTesting);
+  } else if (cookieAbtestingContact) {
+    testingEffect(cookieAbtestingContact);
+    return testingContactTrack(cookieAbtestingContact);
+  }
+});
+
+$(document).ready(function() {
   var couponExpires, couponExpiresTime, expiresTime, hourExpiresTime, now, setCookie, todayAtMidn;
   now = new Date();
   todayAtMidn = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
@@ -421,6 +502,40 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  var getQAMousePotion, ishoverQA;
+  ishoverQA = false;
+  $('.dropdown-case').mouseover(function() {
+    $('.dropdown-menu-case').addClass('show');
+    return ishoverQA = true;
+  });
+  $('.dropdown-case').click(function() {
+    $('.dropdown-menu-case').addClass('show');
+    return ishoverQA = true;
+  });
+  $('.dropdown-menu-case').mouseover(function() {
+    $('.dropdown-menu-case').addClass('show');
+    return ishoverQA = true;
+  });
+  getQAMousePotion = function() {
+    if (ishoverQA === false) {
+      return $('.dropdown-menu-case').removeClass('show');
+    }
+  };
+  $('.dropdown-case').mouseout(function() {
+    ishoverQA = false;
+    return setTimeout(function() {
+      return getQAMousePotion();
+    }, 500);
+  });
+  $('.dropdown-menu-case').mouseout(function() {
+    ishoverQA = false;
+    return setTimeout(function() {
+      return getQAMousePotion();
+    }, 500);
+  });
+});
+
 (function() {
   var filterArea, filterProfile, getProfile, getWorkPeple, hasWorkCount, hopeArea, optionArea, profileCard, profileUserData, resumeApp, resumeAreaID, scrollTopID, updateProfile, workID;
   resumeApp = document.getElementById('resumeApp');
@@ -696,7 +811,7 @@ $(document).ready(function() {
     };
   };
   $('.tracking-link').on('click', function(e) {
-    var dimensionValue, link, title;
+    var dimensionValue, fbqValue, link, productID, productName, productType, title;
     link = $(this).attr('href');
     title = $(this).attr('title') || '';
     dimensionValue = {
@@ -704,7 +819,22 @@ $(document).ready(function() {
       'link': link,
       'title': title
     };
-    fbq('track', 'AddToCart', dimensionValue);
+    productID = $(this).data('id') || '';
+    productName = $(this).data('title');
+    productType = $(this).data('type') || '';
+    fbqValue = {
+      content_type: productType,
+      content_name: productName,
+      contents: [
+        {
+          id: productID,
+          name: productName,
+          link: link
+        }
+      ],
+      content_ids: productID
+    };
+    fbq('track', 'AddToCart', fbqValue);
     mixpanel.track('AddToCart', dimensionValue);
     return gtag('event', 'add_to_cart');
   });
