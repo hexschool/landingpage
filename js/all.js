@@ -56,6 +56,44 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $('.course-area-link').on("click", function(event) {
+    var url;
+    if (event.target.nodeName !== 'A' && event.target.nodeName !== 'I') {
+      url = $(this).data('url');
+      return window.open(url);
+    }
+  });
+  $('#select-mobile-combined').on('change', function(e) {
+    var target;
+    target = '#' + e.target.value;
+    $('#conbined-courses div.tab-pane').each(function(e) {
+      return $(this).removeClass('show active');
+    });
+    return $(target).tab('show');
+  });
+  if ($('#pills-conbined-tab').hasClass('active')) {
+    $('#courses_ad').css('display', 'none');
+  }
+  $('.courses-nav-category').on('click', function(e) {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 0);
+    if (e.target.id === 'pills-conbined-tab') {
+      return $('#courses_ad').css('display', 'none');
+    } else {
+      return $('#courses_ad').css('display', 'block');
+    }
+  });
+  $('.courses-nav-category').on('scroll', function(e) {
+    if (($(this).width() + $(this).scrollLeft()) > $('.courses-nav-category')[0].scrollWidth - 5) {
+      return $('.scroll-hint').css('display', 'none');
+    } else {
+      return $('.scroll-hint').css('display', 'inline-block');
+    }
+  });
+});
+
+$(document).ready(function() {
   var abtestingContact, abtestingContactDay, abtestingContactRandom, cookieAbtestingContact, randTesting, setCookie, testingContact, testingContactExpiresTime, testingContactTrack, testingEffect;
   abtestingContact = 'mobileContact';
   abtestingContactRandom = ['1', '2'];
@@ -191,9 +229,21 @@ $(function() {
 $(document).ready(function() {
   var adtimer, checkCourse, checkGodtohex, countPrice;
   if ($('#courses_ad').length) {
+    $(window).scroll(function(e) {
+      if ($(window).scrollTop() > 40) {
+        $('.ad-big').css('display', 'none');
+        return $('.ad-sm').css('display', 'block');
+      } else {
+        $('.ad-big').css('display', 'block');
+        return $('.ad-sm').css('display', 'none');
+      }
+    });
     adtimer = $('#courses-ad-clock').val();
-    $('.ad-clock').countdown(adtimer, function(event) {
-      return $(this).html(event.strftime('<div class="clock-style h4 px-3">%D 天 %H 時 %M 分 %S 秒</div>'));
+    $('.ad-clock-xl').countdown(adtimer, function(event) {
+      return $(this).html(event.strftime('<div class="text-md-white font-ad-title font-weight-md-bold"><span class="text-primary">%D</span> 天 <span class="text-primary">%H</span>  時 <span class="text-primary">%M</span>  分 <span class="text-primary">%S</span>  秒</div>'));
+    });
+    $('.ad-clock-sm').countdown(adtimer, function(event) {
+      return $(this).html(event.strftime('<div class="text-md-white text-dark font-clock-size font-weight-md-bold"><span class="text-md-primary text-dark">%D</span> 天 <span class="text-md-primary text-dark">%H</span>  時 <span class="text-md-primary text-dark">%M</span>  分 <span class="text-md-primary text-dark">%S</span>  秒</div>'));
     });
   }
   $('#choeseCourse').on('click', function() {
