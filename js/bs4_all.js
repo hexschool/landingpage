@@ -292,6 +292,28 @@ $(document).ready(function() {
       prevEl: '.swiper-button-prev'
     }
   });
+  swiper = new Swiper('.swiper-js-training-1st-student-works', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
+    }
+  });
   $('#trainingHW').on('click', function(event) {
     var checkValue;
     checkValue = $(this)[0].checked;
