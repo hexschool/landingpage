@@ -72,16 +72,16 @@ $(document).ready(function() {
     return $(target).tab('show');
   });
   if ($('#pills-conbined-tab').hasClass('active')) {
-    $('#courses_ad').css('display', 'none');
+    $('#courses_special').css('display', 'none');
   }
   $('.courses-nav-category').on('click', function(e) {
     $('html, body').animate({
       scrollTop: 0
     }, 0);
     if (e.target.id === 'pills-conbined-tab') {
-      return $('#courses_ad').css('display', 'none');
+      return $('#courses_special').css('display', 'none');
     } else {
-      return $('#courses_ad').css('display', 'block');
+      return $('#courses_special').css('display', 'block');
     }
   });
   $('.courses-nav-category').on('scroll', function(e) {
@@ -228,7 +228,7 @@ $(function() {
 
 $(document).ready(function() {
   var adtimer, checkCourse, checkGodtohex, countPrice;
-  if ($('#courses_ad').length) {
+  if ($('#courses_special').length) {
     $(window).scroll(function(e) {
       if ($(window).scrollTop() > 40) {
         $('.ad-big').css('display', 'none');
