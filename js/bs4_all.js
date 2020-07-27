@@ -88,6 +88,82 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  var counter, isTimeToUpdate, mouse, moveImg, moveImg2, moveImgS, onMouseEnterHandler, onMouseLeaveHandler, onMouseMoveHandler, perspectiveWall, update, updateRate, updateTransformStyle;
+  perspectiveWall = document.getElementById('perspectiveWallgit');
+  moveImg = document.getElementById('moveImggit');
+  moveImg2 = document.getElementById('moveImggit2');
+  moveImgS = document.getElementById('moveImgSgit');
+  if (perspectiveWall) {
+    mouse = {
+      _x: 0,
+      _y: 0,
+      x: 0,
+      y: 0,
+      updatePosition: function(event) {
+        var e;
+        e = event || window.event;
+        this.x = e.clientX - this._x;
+        return this.y = (e.clientY - this._y) * -1;
+      },
+      setOrigin: function(e) {
+        this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+        return this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+      },
+      show: function() {
+        return "(" + this.x + ", " + this.y + ")";
+      }
+    };
+    mouse.setOrigin(perspectiveWall);
+    counter = 0;
+    updateRate = 10;
+    isTimeToUpdate = function() {
+      return counter++ % updateRate === 0;
+    };
+    onMouseEnterHandler = function(event) {
+      return update(event);
+    };
+    onMouseLeaveHandler = function() {
+      moveImg.style.transform = "";
+      moveImg2.style.transform = "";
+      return moveImgS.style.transform = "translateY(25px)";
+    };
+    onMouseMoveHandler = function(event) {
+      if (isTimeToUpdate()) {
+        return update(event);
+      }
+    };
+    update = function(event) {
+      mouse.updatePosition(event);
+      return updateTransformStyle((mouse.y / moveImg.offsetHeight / 2).toFixed(2), (mouse.x / moveImg.offsetWidth / 2).toFixed(2));
+    };
+    updateTransformStyle = function(x, y) {
+      var style, style2, styleS;
+      style = "translateX(" + (-100 * Number(x) * Number(y)) + "px)";
+      styleS = "translateX(" + (500 * Number(x) * Number(y)) + "px) translateY(25px)";
+      style2 = "translateX(" + (300 * Number(x) * Number(y)) + "px) rotate(" + (30 * Number(x) * Number(y)) + "deg) translateY(35px)";
+      moveImg.style.transform = style;
+      moveImg.style.webkitTransform = style;
+      moveImg.style.mozTransform = style;
+      moveImg.style.msTransform = style;
+      moveImg.style.oTransform = style;
+      moveImg2.style.transform = style2;
+      moveImg2.style.webkitTransform = style2;
+      moveImg2.style.mozTransform = style2;
+      moveImg2.style.msTransform = style2;
+      moveImg2.style.oTransform = style2;
+      moveImgS.style.transform = styleS;
+      moveImgS.style.webkitTransform = styleS;
+      moveImgS.style.mozTransform = styleS;
+      moveImgS.style.msTransform = styleS;
+      return moveImgS.style.oTransform = styleS;
+    };
+    perspectiveWall.onmouseenter = onMouseEnterHandler;
+    perspectiveWall.onmouseleave = onMouseLeaveHandler;
+    return perspectiveWall.onmousemove = onMouseMoveHandler;
+  }
+});
+
+$(document).ready(function() {
   var arr, intervalId, mediaQuery, sassSwiper, swiper, swiperUI;
   $('#orderModal').on('show.bs.modal', function(event) {
     var button, data;
