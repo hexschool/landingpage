@@ -140,7 +140,7 @@ $(document).ready(function() {
       var style, style2, styleS;
       style = "translateX(" + (-100 * Number(x) * Number(y)) + "px)";
       styleS = "translateX(" + (500 * Number(x) * Number(y)) + "px) translateY(25px)";
-      style2 = "translateX(" + (300 * Number(x) * Number(y)) + "px) rotate(" + (30 * Number(x) * Number(y)) + "deg) translateY(35px)";
+      style2 = "translateX(" + (300 * Number(x) * Number(y)) + "px) rotate(" + (30 * Number(x) * Number(y)) + "deg) translateY( " + 50 * Number(y) + "px)";
       moveImg.style.transform = style;
       moveImg.style.webkitTransform = style;
       moveImg.style.mozTransform = style;
