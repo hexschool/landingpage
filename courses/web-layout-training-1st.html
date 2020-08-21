@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1597902473164">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1597988039010">
   <!-- Global styles END -->
 
   
@@ -114,17 +114,21 @@
 </nav>
 
 
-<div class="padding-top-navbar position-relative" style=" min-height: 400px;">
+<div class="padding-top-navbar position-relative" style=" min-height: 315px;">
   <div style="min-height: 300px; position: absolute; overflow: hidden;background-color: #d8ffa9;" class="w-100 d-flex justify-content-center d-md-none">
     <div class="w-100" style="min-height: 300px;  background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Ftraining%2Fweb-live-course-800x600.png?alt=media&token=009a470d-06b4-4af0-a0bd-34f0fa298491);  background-position: center center; background-repeat: no-repeat;background-size: cover;"></div>
   </div>
   <div style="background-color: #d8ffa9;">
     <div class="container d-md-block d-none">
       <div class="row justify-content-center header-video">
-        <div class="col-md-10 d-flex align-items-center justify-content-start">
+        <div class="col-md-12 d-flex align-items-center justify-content-start">
+          
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe src="https://www.youtube.com/embed/-9bIMAGWDBw?controls=0&start=8&autoplay=1&loop=1&playlist=-9bIMAGWDBw&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <!-- <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <video id="main-video" loop="loop" controls="controls" width="100%" muted="muted" style="outline: none; pointer-events: none;">
-            <source src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Ftraining%2Fbanner-training.mp4?alt=media&token=fe6f0fd5-da5d-4171-8d5b-bcfe57ea371c">
-          </video>
+            <source src="https://youtu.be/-9bIMAGWDBw" />
+          </video> -->
         </div>
       </div>
     </div>
@@ -763,11 +767,11 @@
 </section>
 
 <script>
-  window.onload = function () {
-    var element = document.getElementById('main-video');
-    element.muted = "muted";
-    element.play();
-  } 
+  // window.onload = function () {
+  //   var element = document.getElementById('main-video');
+  //   element.muted = "muted";
+  //   element.play();
+  // } 
 </script>
 
 
@@ -949,8 +953,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/bs4_vendor.js?1597902473165"></script>
-<script src="/js/bs4_all.js?1597902473165"></script>
+<script src="/js/bs4_vendor.js?1597988039017"></script>
+<script src="/js/bs4_all.js?1597988039017"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
