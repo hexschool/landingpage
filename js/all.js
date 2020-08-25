@@ -465,6 +465,22 @@ $(document).ready(function() {
     event.preventDefault();
     return $('#webCourse').carousel('next');
   });
+  $('#web-layout-experience-pre').on('click', function(event) {
+    event.preventDefault();
+    return $('#web-layout-experience').carousel('prev');
+  });
+  $('#web-layout-experience-next').on('click', function(event) {
+    event.preventDefault();
+    return $('#web-layout-experience').carousel('next');
+  });
+  $('#web-layout-experience-2-pre').on('click', function(event) {
+    event.preventDefault();
+    return $('#web-layout-experience-2').carousel('prev');
+  });
+  $('#web-layout-experience-2-next').on('click', function(event) {
+    event.preventDefault();
+    return $('#web-layout-experience-2').carousel('next');
+  });
 });
 
 orderModalApp = new Vue({
