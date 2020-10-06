@@ -175,6 +175,86 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  var couponData, originPriceCoupon, priceCoupon, rightCoupon, today;
+  couponData = {
+    "origin_price": {
+      "date": [
+        {
+          "start_at": "2020-01-01",
+          "ended_at": "2020-12-31"
+        }
+      ],
+      "coupon_code": "COUPON_2018_HEXSCHOOL",
+      "course": []
+    },
+    "price": [
+      {
+        "name": "網頁切版優惠週",
+        "date": [
+          {
+            "start_at": "2020-10-01",
+            "ended_at": "2020-10-15"
+          }
+        ],
+        "coupon_code": "COUPON-2020-WEBLAYOUT",
+        "course": ["html", "jquery", "rwd"]
+      }, {
+        "name": "JS 優惠週",
+        "date": [
+          {
+            "start_at": "2020-10-21",
+            "ended_at": "2020-10-30"
+          }
+        ],
+        "coupon_code": "COUPON-2020-JS",
+        "course": ["js", "jscore"]
+      }, {
+        "name": "UI 優惠週",
+        "date": [
+          {
+            "start_at": "2020-10-15",
+            "ended_at": "2020-10-20"
+          }
+        ],
+        "coupon_code": "COUPON-2020-JS",
+        "course": ["ui", "xd"]
+      }
+    ]
+  };
+  priceCoupon = couponData.price;
+  originPriceCoupon = couponData.origin_price;
+  today = moment().format('YYYY-MM-DD');
+  rightCoupon = {};
+  $.each(priceCoupon, function(i, data) {
+    var dateData;
+    dateData = data.date;
+    return $.each(dateData, function(i, day) {
+      if (moment(today).isAfter(day.start_at) && moment(today).isBefore(day.ended_at)) {
+        return rightCoupon = data;
+      }
+    });
+  });
+  if (Object.keys(rightCoupon).length === 0) {
+    rightCoupon = originPriceCoupon;
+  }
+  return {
+    checkCouponType: function(id) {
+      var priceType;
+      priceType = 'origin_price';
+      $.each(rightCoupon.course, function(i, data) {
+        if (data === id) {
+          return priceType = 'price';
+        }
+      });
+      return {
+        price: priceType,
+        coupon_code: rightCoupon.coupon_code
+      };
+    }
+  };
+});
+
+$(document).ready(function() {
   var couponExpires, couponExpiresTime, expiresTime, hourExpiresTime, now, setCookie, todayAtMidn;
   now = new Date();
   todayAtMidn = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
@@ -370,9 +450,91 @@ vueApp = function() {
   }, 1500);
   appCourse = new Vue({
     el: '#course',
-    data: {
-      course: {},
-      courseData: []
+    data: function() {
+      return {
+        course: {},
+        courseData: [],
+        rightCoupon: {},
+        couponData: {
+          "origin_price": {
+            "date": [
+              {
+                "start_at": "2020-01-01",
+                "ended_at": "2020-12-31"
+              }
+            ],
+            "coupon_code": "COUPON_2018_HEXSCHOOL",
+            "course": []
+          },
+          "price": [
+            {
+              "name": "網頁切版優惠週",
+              "date": [
+                {
+                  "start_at": "2020-10-01",
+                  "ended_at": "2020-10-15"
+                }
+              ],
+              "coupon_code": "COUPON-2020-WEBLAYOUT",
+              "course": ["html", "jquery", "rwd"]
+            }, {
+              "name": "JS 優惠週",
+              "date": [
+                {
+                  "start_at": "2020-10-21",
+                  "ended_at": "2020-10-30"
+                }
+              ],
+              "coupon_code": "COUPON-2020-JS",
+              "course": ["js", "jscore"]
+            }, {
+              "name": "UI 優惠週",
+              "date": [
+                {
+                  "start_at": "2020-10-15",
+                  "ended_at": "2020-10-20"
+                }
+              ],
+              "coupon_code": "COUPON-2020-JS",
+              "course": ["ui", "xd"]
+            }
+          ]
+        }
+      };
+    },
+    methods: {
+      getCouponData: function() {
+        var originPriceCoupon, priceCoupon, today, vm;
+        vm = this;
+        priceCoupon = vm.couponData.price;
+        originPriceCoupon = vm.couponData.origin_price;
+        today = moment().format('YYYY-MM-DD');
+        $.each(priceCoupon, function(i, data) {
+          var dateData;
+          dateData = data.date;
+          return $.each(dateData, function(i, day) {
+            if (moment(today).isAfter(day.start_at) && moment(today).isBefore(day.ended_at)) {
+              vm.rightCoupon = data;
+            }
+          });
+        });
+        if (Object.keys(rightCoupon).length === 0) {
+          vm.rightCoupon = originPriceCoupon;
+        }
+      },
+      checkCouponType: function(id) {
+        var priceType;
+        priceType = 'origin_price';
+        $.each(rightCoupon.course, function(i, data) {
+          if (data === id) {
+            priceType = 'price';
+          }
+        });
+        return id;
+      }
+    },
+    mounted: function() {
+      this.getCouponData();
     }
   });
   courseEvaluation = new Vue({
