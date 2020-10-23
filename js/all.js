@@ -602,6 +602,21 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  return $(window).scroll(function() {
+    var scrollDistance;
+    scrollDistance = $(window).scrollTop();
+    return $('h2').each(function(i) {
+      if (i > 0) {
+        if ($(this).position().top + 151 <= scrollDistance) {
+          $('a[href*="#"]:not([href="#"]).active').removeClass('active');
+          return $('.qa a').eq(i - 1).addClass('active');
+        }
+      }
+    });
+  });
+});
+
 (function() {
   var filterArea, filterProfile, getProfile, getWorkPeple, hasWorkCount, hopeArea, optionArea, profileCard, profileUserData, resumeApp, resumeAreaID, scrollTopID, updateProfile, workID;
   resumeApp = document.getElementById('resumeApp');
