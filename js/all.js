@@ -339,7 +339,7 @@ $(document).ready(function() {
 });
 
 vueApp = function() {
-  var appCourse, appGetFreeCoupon, courseEvaluation;
+  var appCourse, appGetFreeCoupon, courseEvaluation, getUseCoupon;
   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
     courseEvaluation.course = data;
     appCourse.courseData = [];
@@ -372,8 +372,39 @@ vueApp = function() {
     el: '#course',
     data: {
       course: {},
-      courseData: []
+      courseData: [],
+      rightCoupon: {},
+      couponData: {}
+    },
+    methods: {
+      checkCouponType: function(id) {
+        return this.rightCoupon.course.includes(id);
+      }
     }
+  });
+  getUseCoupon = (function(_this) {
+    return function() {
+      var originPriceCoupon, priceCoupon, today;
+      priceCoupon = appCourse.couponData.price;
+      originPriceCoupon = appCourse.couponData.origin_price;
+      today = moment().format('YYYY-MM-DD');
+      $.each(priceCoupon, function(i, data) {
+        var dateData;
+        dateData = data.date;
+        return $.each(dateData, function(i, day) {
+          if (moment(today).isAfter(day.start_at) && moment(today).isBefore(day.ended_at)) {
+            appCourse.rightCoupon = data;
+          }
+        });
+      });
+      if (Object.keys(appCourse.rightCoupon).length === 0) {
+        return appCourse.rightCoupon = originPriceCoupon;
+      }
+    };
+  })(this);
+  $.getJSON('../coupon-data.json', function(data) {
+    appCourse.couponData = data;
+    return getUseCoupon();
   });
   courseEvaluation = new Vue({
     el: '#evaluation',
@@ -453,7 +484,8 @@ $(document).ready(function() {
       promotionsTerms: button.data('promotions'),
       price: button.data('price'),
       title: button.data('title'),
-      paylink: button.data('paylink')
+      paylink: button.data('paylink'),
+      coupon: button.data('coupon')
     };
     return orderModalApp.text = data;
   });

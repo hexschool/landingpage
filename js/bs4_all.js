@@ -173,7 +173,8 @@ $(document).ready(function() {
       promotionsTerms: button.data('promotions'),
       price: button.data('price'),
       title: button.data('title'),
-      paylink: button.data('paylink')
+      paylink: button.data('paylink'),
+      coupon: button.data('coupon')
     };
     return orderModalApp.text = data;
   });
@@ -397,6 +398,11 @@ VueApp = new Vue({
   el: '#app',
   data: function() {
     return {
+      rightCoupon: {
+        course: {},
+        coupon_code: ''
+      },
+      couponData: {},
       courseData: {
         'bootstrap': {
           detail: {
@@ -408,6 +414,25 @@ VueApp = new Vue({
     };
   },
   methods: {
+    getUseCoupon: function() {
+      var originPriceCoupon, priceCoupon, today, vm;
+      vm = this;
+      priceCoupon = vm.couponData.price;
+      originPriceCoupon = vm.couponData.origin_price;
+      today = moment().format('YYYY-MM-DD');
+      $.each(priceCoupon, function(i, data) {
+        var dateData;
+        dateData = data.date;
+        return $.each(dateData, function(i, day) {
+          if (moment(today).isAfter(day.start_at) && moment(today).isBefore(day.ended_at)) {
+            vm.rightCoupon = data;
+          }
+        });
+      });
+      if (Object.keys(vm.rightCoupon).length === 0) {
+        return vm.rightCoupon = originPriceCoupon;
+      }
+    },
     fetchData: function() {
       var vm;
       vm = this;
@@ -417,10 +442,14 @@ VueApp = new Vue({
       }, function(response) {
         return console.log('error', response);
       });
-      return $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
+      $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
         return vm.course = data;
       }, function(response) {
         return console.log('error', response);
+      });
+      return $.getJSON('../coupon-data.json', function(data) {
+        vm.couponData = data;
+        return vm.getUseCoupon();
       });
     }
   },

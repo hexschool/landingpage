@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/hexschool.css?1603418697736">
+  <link rel="stylesheet" href="/stylesheets/hexschool.css?1604294254142">
   <!-- Global styles END -->
 
   
@@ -468,7 +468,7 @@
   
 
 
-<section class="container my-5 course-tracking-ViewContent" id="recommend" data-name="Adobe XD：網頁設計真容易" data-price="1280">
+<section class="container my-5 course-tracking-ViewContent" id="recommend" data-name="Adobe XD：網頁設計真容易" data-price="1408">
   
   
   
@@ -519,7 +519,7 @@
     
     
     
-    <div class="col-md-4 col-11 pt-md-0 pt-3">
+    <div class="col-md-4 col-11 pt-md-0 pt-3" id="course-price">
       <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
         <h2 class="font-section-sub-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area m-0" style="z-index: 6" itemprop="name">Adobe XD：網頁設計真容易</h2>
         <div class>
@@ -545,13 +545,16 @@
               <!-- <del>原價：1600</del></p> -->
             
               <!-- 
-                <p class="mb-0 font-weight-bold d-none d-lg-block">−20 % off：NT$ 320</p>
+                <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off：NT$ 192</p>
                -->
-              </p><p class="mb-0 font-weight-bold font-column-4-button">NT$ 1600</p>
+              <span v-if="rightCoupon.course.xd" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
+                12 off
+              </span>
+              </p><p v-if="rightCoupon.course.xd" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 1,408</p>              <p v-else class="mb-0 font-weight-bold font-column-4-button">NT$ 1600</p>
             
-            <meta itemprop="price" content="1280">
+            <meta itemprop="price" content="1408">
             <meta itemprop="priceCurrency" content="TWD">
-            <a href="https://shop.hexschool.com/order/create?order=xd&coupon_code=COUPON_FOR_2020_ORIGIN" class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 Adobe XD：網頁設計真容易 支付流程" data-promotions="現在上課去" data-price="1280" data-title="Adobe XD：網頁設計真容易" data-paylink="https://shop.hexschool.com/order/create?order=xd&coupon_code=COUPON_FOR_2020_ORIGIN" data-type="product" data-id="xd" itemprop="url">
+            <a href="https://shop.hexschool.com/order/create?order=xd" class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 Adobe XD：網頁設計真容易 支付流程" data-promotions="現在上課去" data-price="1408" data-title="Adobe XD：網頁設計真容易" :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'" data-paylink="https://shop.hexschool.com/order/create?order=xd" data-type="product" data-id="xd" itemprop="url">
               現在上課去
               <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
             </a>
@@ -691,7 +694,7 @@
               <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：8400</del></p>
               <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2520</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 5880</p>
-              <a href="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=COUPON_FOR_2020_ORIGIN" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程" data-promotions="基礎入門 NT$5,880" data-price="5880" data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=COUPON_FOR_2020_ORIGIN" data-type="product_group" data-id="z_bs4_html_jquery_rwd">
+              <a href="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程" data-promotions="基礎入門 NT$5,880" data-price="5880" data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd" data-type="product_group" data-id="z_bs4_html_jquery_rwd">
                 付款上課去
                 <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
               </a>
@@ -744,7 +747,7 @@
               <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：9500</del></p>
               <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2850</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 6650</p>
-              <a href="https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=COUPON_FOR_2020_ORIGIN" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程" data-promotions="進階組合 NT$6,790" data-price="6650" data-title="JS 學徒, JS 核心, Vue 組合包" data-paylink="https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=COUPON_FOR_2020_ORIGIN" data-type="product_group" data-id="z_js_vue">
+              <a href="https://shop.hexschool.com/order/create?order=js_js-core_vue" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程" data-promotions="進階組合 NT$6,790" data-price="6650" data-title="JS 學徒, JS 核心, Vue 組合包" data-paylink="https://shop.hexschool.com/order/create?order=js_js-core_vue" data-type="product_group" data-id="z_js_vue">
                 付款上課去
                 <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
               </a>
@@ -821,7 +824,7 @@
               <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：17900</del></p>
               <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 5370</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 12530</p>
-              <a href="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=COUPON_FOR_2020_ORIGIN" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 前端全組合 (不含加購品) 支付流程" data-promotions="超值組合 NT$12,070" data-price="12530" data-title="前端全組合 (不含加購品)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=COUPON_FOR_2020_ORIGIN" data-type="product_group" data-id="z_bs4_rwd_html_jQuery_js_vue">
+              <a href="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center" data-toggle="modal" data-target="#orderModal" title="開啟 前端全組合 (不含加購品) 支付流程" data-promotions="超值組合 NT$12,070" data-price="12530" data-title="前端全組合 (不含加購品)" data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue" data-type="product_group" data-id="z_bs4_rwd_html_jQuery_js_vue">
                 付款上課去
                 <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
               </a>
@@ -898,7 +901,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a v-bind:href="text.paylink" target="_blank" class="btn btn-block btn-danger btn-shadow-danger btn-radius btn-lg btn-thin tracking-link" title="連接到智付寶付款">立即註冊</a>
+        <a v-bind:href="text.paylink + '&coupon_code=' + text.coupon" target="_blank" class="btn btn-block btn-danger btn-shadow-danger btn-radius btn-lg btn-thin tracking-link" title="連接到智付寶付款">立即註冊</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -995,8 +998,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script src="/js/bs4_vendor.js?1603418697738"></script>
-<script src="/js/bs4_all.js?1603418697738"></script>
+<script src="/js/bs4_vendor.js?1604294254143"></script>
+<script src="/js/bs4_all.js?1604294254143"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
