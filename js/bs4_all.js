@@ -343,6 +343,15 @@ $(document).ready(function() {
       return $('#trainingBuyBtn').addClass('disabled');
     }
   });
+  $('.training-checked').on('click', function(event) {
+    var checkValue;
+    checkValue = $(this)[0].checked;
+    if (checkValue) {
+      return $(this).parent().next().removeClass('disabled');
+    } else {
+      return $(this).parent().next().addClass('disabled');
+    }
+  });
 });
 
 Vue.component('slide-reviews', {
@@ -681,7 +690,7 @@ $(document).ready(function() {
   if ($('#footer-clock').length) {
     timer = $('#footer-clock').val();
     $('.clock').countdown(timer, function(event) {
-      return $(this).html(event.strftime('%D天 %H時 %M分 %S秒'));
+      return $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
     });
   }
   if ($('[data-countdown-course]').length) {
@@ -690,7 +699,7 @@ $(document).ready(function() {
       course = $(item).data('countdown-course');
       timer = $(item).val();
       return $('[data-course-countdown=' + course + ']').countdown(timer, function(event) {
-        return $(this).html(event.strftime('%D天 %H時 %M分 %S秒'));
+        return $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
       });
     });
   }
