@@ -284,17 +284,11 @@ $(document).ready(function() {
     });
     $('#selecedTotal').text(total);
     $('#selecedOriginTotal').text(originTotal - total);
-    if (value === 'god2020year' || total > 5999) {
+    if (total > 5799) {
       $('#condition_false').hide();
       return $('#condition_true').show();
     } else {
-      if (value !== 'god2020year') {
-        $('#condition_false').hide();
-        $('#condition_true').show();
-      }
-      if (total < 6000) {
-        conditionText = 6000 - total;
-      }
+      conditionText = 5800 - total;
       $('#condition').html(conditionText);
       $('#condition_false').show();
       return $('#condition_true').hide();
