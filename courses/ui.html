@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1610596388530">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1611216266045">
   <!-- Global styles END -->
 
   
@@ -590,19 +590,19 @@
                       <div class="pl-4 text-right text-dark mt-auto">
                         <p class="mb-2 font-weight-bold font-small-for-course-list"><del>原價 NT$ 4400</del></p>
                         <p class="mb-0 font-weight-bold d-none d-lg-block"><strong>組合優惠</strong></p>
-                        <h4 class="mb-0 font-weight-bold">NT$ 3080</h4>
+                        <h4 class="mb-0 font-weight-bold">NT$ 3520</h4>
                       </div>
                     </div>
                   </div>
                   
-                    <a href="https://shop.hexschool.com/order/create?order=z_xd_ui&coupon_code=COUPON_2020_THANKS" class="mp-click tracking-link btn btn-block btn-outline-primary mt-2 mb-4"
+                    <a :href="'https://shop.hexschool.com/order/create?order=z_xd_ui&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link btn btn-block btn-outline-primary mt-2 mb-4"
                       data-toggle="modal" data-target="#orderModal"
                       title="開啟 UI 設計入門 + XD 軟體操作支付流程"
                       data-promotions="付款上課去"
                       data-price="3,520"
                       data-title="UI 設計入門 + XD 軟體操作"
                       data-paylink="https://shop.hexschool.com/order/create?order=z_xd_ui"
-                      data-coupon="COUPON_2020_THANKS"
+                      :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
                       data-type="product"
                       data-id="z_xd_ui"
                       itemprop="url">
@@ -633,25 +633,27 @@
                     <div class="col-md-5 d-flex justify-content-end">
                       <div class="pl-4 text-right text-dark mt-auto">
                         
-                          
-                            
-                              <p class="mb-0 font-weight-bold d-none d-lg-block"><strong>- 30 % off</strong></p>
-                            
-                            <h4 class="mb-0 font-weight-bold">NT$ 1960</h4>
-                          
+                          <!-- 
+                            <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off</p>
+                           -->
+                          <span v-if="rightCoupon.course.ui" class="bg-danger text-white mr-2 pr-2 pl-3 price-special d-lg-inline-block d-none" style="font-size: 14px;">
+                            12 % off
+                          </span>
+                          <h4 v-if="rightCoupon.course.ui" class="mb-0 font-weight-bold text-danger">NT$ 2,464</h4>
+                          <h4 v-else class="mb-0 font-weight-bold">NT$ 2800</h4>
                         
                       </div>
                     </div>
                   </div>
                   
-                    <a href="https://shop.hexschool.com/order/create?order=ui&coupon_code=COUPON_2020_THANKS" class="mp-click tracking-link btn btn-block btn-outline-primary mt-2 mb-4"
+                    <a :href="'https://shop.hexschool.com/order/create?order=ui&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link btn btn-block btn-outline-primary mt-2 mb-4"
                       data-toggle="modal" data-target="#orderModal"
                       title="開啟 UI 設計入門：畫出有程式邏輯的設計稿 支付流程"
                       data-promotions="現在上課去"
                       data-price="2464"
                       data-title="UI 設計入門：畫出有程式邏輯的設計稿"
                       data-paylink="https://shop.hexschool.com/order/create?order=ui"
-                      data-coupon="COUPON_2020_THANKS"
+                      :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
                       data-type="product"
                       data-id="ui"
                       itemprop="url">
@@ -669,76 +671,6 @@
 </section>
   
 
-
-  <div class="special_block mb-5">
-    <section class="container mt-5 mb-3 special-activity">
-  <h2 class="mb-1 text-center text-primary text-line">
-    <i class="fa fa-gift mx-2" aria-hidden="true"></i> 六角感謝祭 <i class="fa fa-gift mx-2" aria-hidden="true"></i>
-  </h2>
-  <h4 class="text-center mb-3">滿額抽大獎</h4>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fthanks-2020%2F%E7%8D%8E%E5%93%81%E8%A3%9C%E5%9C%96_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?alt=media&token=8d36c90e-4b01-4f38-a2c2-d088e30ac619" class="img-fluid mb-1" alt="豐富的獎品圖">
-      <a class="text-secondary" href="/courses/js-training.html#event2020Thanks"> <i class="far fa-hand-point-right"></i> 完整獎項由此去</a>
-      <p class="mb-3 mt-2 text-left text-dark font-weight-bold">活動期間 (2020/12/15 - 2021/01/17) 內，透過六角官網金流，購買以下任一條件獲得第一張抽獎券：</p>
-      <ol>
-        <li>註冊 <strong><a class="text-secondary" href="/courses/js-training.html">JavaScript 工程師養成直播班</a></strong></li>
-        <li>影音課程單次消費滿 <strong>NT$ 5,800</strong><br>
-          <small>( <i class="far fa-hand-point-right"></i> 不限品項，只看<strong>單筆訂單</strong>，拆單將無法統合計算)</small>
-        </li>
-      </ol>
-      <hr>
-      <p><strong>「第二張 JS 專屬抽獎券」</strong><span class="badge badge-danger"> BONUS </span> </p>
-      <ol>
-        <li>符合第一張抽獎券條件</li>
-        <li>註冊「Vue 3 作品實戰直播班」</li>
-      </ol>
-      <p><strong>「揪好友享兩張抽獎券」</strong><span class="badge badge-danger"> BONUS </span> </p>
-      <p class="mb-0">步驟一：找位好友當推薦人</p>
-      <p class="mb-0">步驟二：雙方購買項目都符合抽獎條件</p>
-      <p>步驟三：註冊時填寫推薦人 Email，被推薦人即可獲得額外抽獎券</p>
-      <a href="#" class="text-secondary" data-toggle="modal" data-target="#lotteryDiscription">揪好友活動注意事項</a>
-        <div class="modal fade text-dark" id="lotteryDiscription" tabindex="-1" role="dialog"
-          aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">揪好友享抽獎活動注意事項</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <ol>
-                  <li>活動期間：2020/12/15 - 2021/01/17</li>
-                  <li>抽獎資格：
-                    <p class="mb-0">(1) 推薦人：限已購買活動期間特定組合或單次消費滿六千。</p>
-                    <p class="mb-0">(2) 被推薦人：限購買活動期間特定組合或單次消費滿六千。</p>
-                    <p class="mb-0">(3) 推薦人與被推薦人不得為同一人。</p>
-                    <!-- <p class="mb-0">(4) 相互推薦者，僅有一人有效。</p> -->
-                  </li>
-                  <li>推薦成功定義：<br> 被推薦人於活動期間內成功購買特定組合或單次消費滿六千。</li>
-                  <li>推薦抽獎機會：<br> 推薦一人成功購買，可享有揪好友享兩張抽獎券，最高可享兩張抽獎券。</li>
-                  <li>取消抽獎機會資格：
-                    <p class="mb-0">(1) 活動期間內有退費紀錄則喪失抽獎資格。</p>
-                    <p class="mb-0">(2) 推薦人退費，被推薦人喪失一次抽獎券。</p>
-                  </li>
-                  <li>本學院保留隨時修改、變更或取消本活動之權利。</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="text-center">
-        <button class="btn btn-primary text-white">查詢抽獎資格</button>
-      </div> -->
-      <p>備註：抽獎券至多三張</p>
-      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Flottery-condition.svg?alt=media&token=422ce7f1-69b7-4d30-8dbc-e18b9043a127" class="img-fluid d-md-block d-none" alt="抽獎條件">
-      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Flottery-condition-mobile.svg?alt=media&token=9618f628-6730-47dc-96b0-8d904d8e2724" class="img-fluid d-md-none d-block" alt="抽獎條件">
-    </div>
-  </div>
-</section>
-  </div>
 
 
 <div class="container">
@@ -797,22 +729,20 @@
               <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：8400</del></p>
               <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2520</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 5880</p>
-              <!-- 感謝祭用-->
-              <p class="text-danger"> <i class="far fa-laugh-wink"></i> 此課程符合一張抽獎券資格 </p>
               
-                <a href="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=COUPON_2020_THANKS" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal"
-                    title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程"
-                    data-promotions="基礎入門 NT$5,880"
-                    data-price="5880"
-                    data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)"
-                    data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd"
-                    data-coupon="COUPON_2020_THANKS"
-                    data-type="product_group"
-                    data-id="z_bs4_html_jquery_rwd">
-                  付款上課去
-                  <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                </a>
+                <a :href="'https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-toggle="modal" data-target="#orderModal"
+                  title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程"
+                  data-promotions="基礎入門 NT$5,880"
+                  data-price="5880"
+                  data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)"
+                  data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
+                  data-type="product_group"
+                  data-id="z_bs4_html_jquery_rwd">
+                付款上課去
+                <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+              </a>
               
             </div>
           </div>
@@ -863,22 +793,20 @@
               <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：9500</del></p>
               <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2850</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 6650</p>
-              <!-- 感謝祭用-->
-              <p class="text-danger"> <i class="far fa-laugh-wink"></i> 此課程符合一張抽獎券資格 </p>
               
-                <a href="https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=COUPON_2020_THANKS" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal"
-                    title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程"
-                    data-promotions="進階組合 NT$6,790"
-                    data-price="6650"
-                    data-title="JS 學徒, JS 核心, Vue 組合包"
-                    data-paylink="https://shop.hexschool.com/order/create?order=js_js-core_vue"
-                    data-coupon="COUPON_2020_THANKS"
-                    data-type="product_group"
-                    data-id="z_js_vue">
-                  付款上課去
-                  <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                </a>
+                <a :href="'https://shop.hexschool.com/order/create?order=js_js-core_vue&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-toggle="modal" data-target="#orderModal"
+                  title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程"
+                  data-promotions="進階組合 NT$6,790"
+                  data-price="6650"
+                  data-title="JS 學徒, JS 核心, Vue 組合包"
+                  data-paylink="https://shop.hexschool.com/order/create?order=js_js-core_vue"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
+                  data-type="product_group"
+                  data-id="z_js_vue">
+                付款上課去
+                <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+              </a>
               
             </div>
           </div>
@@ -953,22 +881,20 @@
               <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：17900</del></p>
               <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 5370</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 12530</p>
-              <!-- 感謝祭用-->
-              <p class="text-danger"> <i class="far fa-laugh-wink"></i> 此課程符合一張抽獎券資格 </p>
               
-                <a href="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=COUPON_2020_THANKS" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal"
-                    title="開啟 前端全組合 (不含加購品) 支付流程"
-                    data-promotions="超值組合 NT$12,070"
-                    data-price="12530"
-                    data-title="前端全組合 (不含加購品)"
-                    data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue"
-                    data-coupon="COUPON_2020_THANKS"
-                    data-type="product_group"
-                    data-id="z_bs4_rwd_html_jQuery_js_vue">
-                  付款上課去
-                  <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                </a>
+                <a :href="'https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-toggle="modal" data-target="#orderModal"
+                  title="開啟 前端全組合 (不含加購品) 支付流程"
+                  data-promotions="超值組合 NT$12,070"
+                  data-price="12530"
+                  data-title="前端全組合 (不含加購品)"
+                  data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
+                  data-type="product_group"
+                  data-id="z_bs4_rwd_html_jQuery_js_vue">
+                付款上課去
+                <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+              </a>
               
             </div>
           </div>
@@ -994,34 +920,6 @@
   <a href="https://line.me/R/ti/p/%40guv7422g" class="m-y-1 mp-click"><img height="36" border="0" alt="加入好友"
       src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
 </div>
-
-
-<nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
-      <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">JS 嘉年華</span>
-        
-        <div class="d-flex justify-content-start text-white text-nowrap">
-          
-            <span class="clock m-r-1 font-weight-bold"></span>
-          
-        </div>
-      </div>
-      <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
-        
-          <a href="/courses/js-training.html"
-            class="btn btn-dark btn-sm rounded-0">
-            連結
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        
-      </div>
-    </div>
-  </div>
-</nav>
-
-  <input type="hidden" id="footer-clock" value="2021/01/18">
 
 
   </div>
@@ -1087,8 +985,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1180,8 +1078,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1610596388531"></script>
-<script src="/js/bs4_all.js?1610596388531"></script>
+<script src="/js/bs4_vendor.js?1611216266048"></script>
+<script src="/js/bs4_all.js?1611216266048"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">

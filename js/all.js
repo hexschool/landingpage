@@ -63,6 +63,13 @@ $(document).ready(function() {
       return window.open(url);
     }
   });
+  $('.course-area-link').on("auxclick", function(event) {
+    var url;
+    if (event.target.nodeName !== 'A' && event.target.nodeName !== 'I') {
+      url = $(this).data('url');
+      return window.open(url);
+    }
+  });
   $('#select-mobile-combined').on('change', function(e) {
     var target;
     target = '#' + e.target.value;
@@ -333,7 +340,7 @@ $(document).ready(function() {
 });
 
 vueApp = function() {
-  var appCourse, appGetFreeCoupon, courseEvaluation, getUseCoupon;
+  var appCourse, appGetFreeCoupon, checkTrainingStatus, courseEvaluation, getUseCoupon;
   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
     courseEvaluation.course = data;
     appCourse.courseData = [];
@@ -368,7 +375,18 @@ vueApp = function() {
       course: {},
       courseData: [],
       rightCoupon: {},
-      couponData: {}
+      couponData: {},
+      trainingDate: {},
+      trainingStatus: {
+        js: {},
+        vue: {},
+        web_layout: {}
+      },
+      trainingWait: {
+        js: {},
+        vue: {},
+        web_layout: {}
+      }
     },
     methods: {
       checkCouponType: function(id) {
@@ -396,9 +414,36 @@ vueApp = function() {
       }
     };
   })(this);
+  checkTrainingStatus = (function(_this) {
+    return function() {
+      var today;
+      today = moment().format('YYYY-MM-DD');
+      return $.each(appCourse.trainingDate, function(i, data) {
+        var dateData;
+        dateData = data.date;
+        $.each(dateData, function(i, day) {
+          if (moment(today).isAfter(day.canbuy_start_at) && moment(today).isBefore(day.canbuy_ended_at)) {
+            appCourse.trainingStatus[data.id] = data;
+            appCourse.trainingStatus[data.id]['day'] = day;
+            appCourse.trainingStatus[data.id]['status'] = true;
+          }
+        });
+        return $.each(dateData, function(i, day) {
+          if (moment(today).isBefore(day.canbuy_start_at)) {
+            appCourse.trainingWait[data.id] = data;
+            return appCourse.trainingWait[data.id]['notOpen_day'] = day;
+          }
+        });
+      });
+    };
+  })(this);
   $.getJSON('../coupon-data.json', function(data) {
     appCourse.couponData = data;
     return getUseCoupon();
+  });
+  $.getJSON('../training-date.json', function(data) {
+    appCourse.trainingDate = data;
+    return checkTrainingStatus();
   });
   courseEvaluation = new Vue({
     el: '#evaluation',
