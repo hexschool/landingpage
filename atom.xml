@@ -8,14 +8,14 @@
     <atom:link href="/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description>六角學院是由高雄前端社群創辦人以及相關核心團員所創立，目的是透過線上教育的方式，開設符合使用者需求的課程。</description>
-    <pubDate>Fri, 15 Jan 2021 08:09:12 GMT</pubDate>
+    <pubDate>Fri, 29 Jan 2021 02:27:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>Lottie：讓 AE 動畫完美呈現於數位產品上</title>
       <link>https://www.hexschool.com/2021/01/18/2021-01-18-lottie-ae-plugin/</link>
       <guid>https://www.hexschool.com/2021/01/18/2021-01-18-lottie-ae-plugin/</guid>
-      <pubDate>Sun, 17 Jan 2021 16:00:00 GMT</pubDate>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -34,7 +34,7 @@
       <title>Spline：輕鬆建出能在網頁互動的 3D 模型</title>
       <link>https://www.hexschool.com/2020/12/21/2020-12-21-spline-tool-intro/</link>
       <guid>https://www.hexschool.com/2020/12/21/2020-12-21-spline-tool-intro/</guid>
-      <pubDate>Sun, 20 Dec 2020 16:00:00 GMT</pubDate>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -53,7 +53,7 @@
       <title>【徵才】Node.js 後端工程師</title>
       <link>https://www.hexschool.com/2020/12/02/2020-12-02-we-need-backend/</link>
       <guid>https://www.hexschool.com/2020/12/02/2020-12-02-we-need-backend/</guid>
-      <pubDate>Tue, 01 Dec 2020 16:00:00 GMT</pubDate>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -63,7 +63,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2020%2F12%2Fhiring-backend.png?alt=media&amp;token=44b1a76f-4c6a-4d43-b7f8-bfe9e40cc67c" alt></p><h2 id="職缺名稱："><a href="#職缺名稱：" class="headerlink" title="職缺名稱："></a>職缺名稱：</h2><p>Node.js 後端工程師</p><h2 id="公司簡介"><a href="#公司簡介" class="headerlink" title="公司簡介"></a>公司簡介</h2><p>六角學院為線上課程教育單位，我們的使命為讓世界各地的學員，能透過線上學習，擁有更好的職涯發展機會。</p><h2 id="產品介紹"><a href="#產品介紹" class="headerlink" title="產品介紹"></a>產品介紹</h2><p>我們的產品可歸為以下三類，年平均成長超過 30% 以上：</p><ol><li>影音課程：目前我們的影音課程皆放在 Teachable、Udemy、Hahow 上，並藉由 API 整合到自家的輔助學員平台，統一回覆學員問答</li><li>直播課程系統：每梯上課學員平均為 300 人，搭配系統設計，優化教育流程</li><li>輔助學習平台：裡頭有任務系統、面試心得牆、支援各課程的教材系統，讓學員獲得階段性的資源。</li></ol><p>而 2 跟 3 點則是主要開發團隊在著手的項目，也是為什麼我們要聘請 Node.js 開發者的原因，我們期待您的加入，讓我們的學員能夠享受到更好的教學平台服務品質。</p><h2 id="條件要求"><a href="#條件要求" class="headerlink" title="條件要求"></a>條件要求</h2><h4 id="必備條件"><a href="#必備條件" class="headerlink" title="必備條件"></a>必備條件</h4><ol><li>熟悉 Node.js 及建立 RESTful API 開發經驗</li><li>需至少瞭解其中一項資料庫 (MySQL / PostgreSQL / MongoDB) 安裝、設計、效能調整</li><li>瞭解 Git / GitHub，懂得分支操作、衝突解決及 Pull Requests</li></ol><h4 id="加分條件"><a href="#加分條件" class="headerlink" title="加分條件"></a>加分條件</h4><ul><li>熟悉任一雲服務經驗 (AWS、GCP、Heroku、Linode)。</li></ul><h2 id="主要工作內容"><a href="#主要工作內容" class="headerlink" title="主要工作內容"></a>主要工作內容</h2><ol><li>資料庫架構規劃</li><li>網站 API 開發</li><li>第三方服務串接與開發</li></ol><h2 id="薪資-月薪-："><a href="#薪資-月薪-：" class="headerlink" title="薪資(月薪)："></a>薪資(月薪)：</h2><p>45,000~60,000，保障 13 個月，能力好可議。</p><h2 id="公司分紅與獎金"><a href="#公司分紅與獎金" class="headerlink" title="公司分紅與獎金"></a>公司分紅與獎金</h2><p>依照公司獲利與表現進行分配，至少 1.5 個月。</p><h2 id="福利與工作制度"><a href="#福利與工作制度" class="headerlink" title="福利與工作制度"></a>福利與工作制度</h2><ul><li>每天工作 8 小時，早上 9:00 - 9:30 可彈性上班</li><li>2021 將嘗試遠端工作，每雙週週三下午進行遠端工作。</li><li>提供 Mac、電腦 24+ 吋螢幕提昇工作效率</li><li>每年一次的員工旅遊</li><li>不定期聚餐</li><li>外訓課程申請、並鼓勵與補助參與技術研討會</li></ul><h2 id="工作環境與團隊介紹"><a href="#工作環境與團隊介紹" class="headerlink" title="工作環境與團隊介紹"></a>工作環境與團隊介紹</h2><ul><li>開發團隊由 3 位前端、2 位 UI，目前暫由 co-founder 協助 Node.js 後端開發</li><li>開發流程為 co-founder 釋出 wireframe 線稿圖，進行前期需求收斂，並尊重開發的時程評估，並定期交付成果。</li><li>我們目前既有平台為 80% PHP、20% Node.js，預期 2021 年陸續重構成 Node.js 架構</li><li>團隊成員皆熱愛分享與學習，超過一半成員參與過技術研討會與擔任志工</li><li>2021 年將陸續導入測試、CI/CD，以提升平台穩定性</li></ul><h2 id="目前團隊用的技能樹與工具"><a href="#目前團隊用的技能樹與工具" class="headerlink" title="目前團隊用的技能樹與工具"></a>目前團隊用的技能樹與工具</h2><ul><li>前端：Vue3、Vite、BS4&amp;5、SCSS、SPA</li><li>後端：Node.js(Express)、PHP(Laravel)</li><li>版控：GitHub Flow、發 PR 進行 Code Review</li><li>雲服務：AWS EC2、S3、RDS、GCP Firebase</li><li>技術工具：Postman、Slack</li><li>Issue 指派：Notion</li></ul><h2 id="工作地點"><a href="#工作地點" class="headerlink" title="工作地點"></a>工作地點</h2><ul><li>高雄市鹽埕區</li></ul><h2 id="聯絡與面試方式"><a href="#聯絡與面試方式" class="headerlink" title="聯絡與面試方式"></a>聯絡與面試方式</h2><ul><li>請寄信至 <a href="mailto:&#x73;&#x65;&#114;&#x76;&#x69;&#99;&#101;&#64;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#111;&#x6f;&#108;&#x2e;&#99;&#111;&#109;" target="_blank" rel="noopener">&#x73;&#x65;&#114;&#x76;&#x69;&#99;&#101;&#64;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#111;&#x6f;&#108;&#x2e;&#99;&#111;&#109;</a></li><li>信件標題請設定為：【應徵 Node.js 後端工程師】OOO (OOO 為您的姓名)</li><li>履歷附件還請用 PDF 提供</li><li>收到履歷後，若您是潛在合適人選，我們會透過 Email 與您約時間進行現場面試</li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2020%2F12%2Fhiring-backend.png?alt=media&amp;token=44b1a76f-4c6a-4d43-b7f8-bfe9e40cc67c" alt></p><h2 id="職缺名稱："><a href="#職缺名稱：" class="headerlink" title="職缺名稱："></a>職缺名稱：</h2><p>Node.js 後端工程師</p><h2 id="公司簡介"><a href="#公司簡介" class="headerlink" title="公司簡介"></a>公司簡介</h2><p>六角學院為線上課程教育單位，我們的使命為讓世界各地的學員，能透過線上學習，擁有更好的職涯發展機會。</p><h2 id="產品介紹"><a href="#產品介紹" class="headerlink" title="產品介紹"></a>產品介紹</h2><p>我們的產品可歸為以下三類，年平均成長超過 30% 以上：</p><ol><li>影音課程：目前我們的影音課程皆放在 Teachable、Udemy、Hahow 上，並藉由 API 整合到自家的輔助學員平台，統一回覆學員問答</li><li>直播課程系統：每梯上課學員平均為 300 人，搭配系統設計，優化教育流程</li><li>輔助學習平台：裡頭有任務系統、面試心得牆、支援各課程的教材系統，讓學員獲得階段性的資源。</li></ol><p>而 2 跟 3 點則是主要開發團隊在著手的項目，也是為什麼我們要聘請 Node.js 開發者的原因，我們期待您的加入，讓我們的學員能夠享受到更好的教學平台服務品質。</p><h2 id="條件要求"><a href="#條件要求" class="headerlink" title="條件要求"></a>條件要求</h2><h4 id="必備條件"><a href="#必備條件" class="headerlink" title="必備條件"></a>必備條件</h4><ol><li>熟悉 Node.js 及建立 RESTful API 開發經驗</li><li>需至少瞭解其中一項資料庫 (MySQL / PostgreSQL / MongoDB) 安裝、設計、效能調整</li><li>瞭解 Git / GitHub，懂得分支操作、衝突解決及 Pull Requests</li></ol><h4 id="加分條件"><a href="#加分條件" class="headerlink" title="加分條件"></a>加分條件</h4><ul><li>熟悉任一雲服務經驗 (AWS、GCP、Heroku、Linode)。</li></ul><h2 id="主要工作內容"><a href="#主要工作內容" class="headerlink" title="主要工作內容"></a>主要工作內容</h2><ol><li>資料庫架構規劃</li><li>網站 API 開發</li><li>第三方服務串接與開發</li></ol><h2 id="薪資-月薪-："><a href="#薪資-月薪-：" class="headerlink" title="薪資(月薪)："></a>薪資(月薪)：</h2><p>45,000~60,000，保障 13 個月，能力好可議。</p><h2 id="公司分紅與獎金"><a href="#公司分紅與獎金" class="headerlink" title="公司分紅與獎金"></a>公司分紅與獎金</h2><p>依照公司獲利與表現進行分配，至少 1.5 個月。</p><h2 id="福利與工作制度"><a href="#福利與工作制度" class="headerlink" title="福利與工作制度"></a>福利與工作制度</h2><ul><li>每天工作 8 小時，早上 9:00 - 9:30 可彈性上班</li><li>2021 將嘗試遠端工作，每雙週週三下午進行遠端工作。</li><li>提供 Mac、電腦 24+ 吋螢幕提昇工作效率</li><li>每年一次的員工旅遊</li><li>不定期聚餐</li><li>外訓課程申請、並鼓勵與補助參與技術研討會</li></ul><h2 id="工作環境與團隊介紹"><a href="#工作環境與團隊介紹" class="headerlink" title="工作環境與團隊介紹"></a>工作環境與團隊介紹</h2><ul><li>開發團隊由 3 位前端、2 位 UI，目前暫由 co-founder 協助 Node.js 後端開發</li><li>開發流程為 co-founder 釋出 wireframe 線稿圖，進行前期需求收斂，並尊重開發的時程評估，並定期交付成果。</li><li>我們目前既有平台為 80% PHP、20% Node.js，預期 2021 年陸續重構成 Node.js 架構</li><li>團隊成員皆熱愛分享與學習，超過一半成員參與過技術研討會與擔任志工</li><li>2021 年將陸續導入測試、CI/CD，以提升平台穩定性</li></ul><h2 id="目前團隊用的技能樹與工具"><a href="#目前團隊用的技能樹與工具" class="headerlink" title="目前團隊用的技能樹與工具"></a>目前團隊用的技能樹與工具</h2><ul><li>前端：Vue3、Vite、BS4&amp;5、SCSS、SPA</li><li>後端：Node.js(Express)、PHP(Laravel)</li><li>版控：GitHub Flow、發 PR 進行 Code Review</li><li>雲服務：AWS EC2、S3、RDS、GCP Firebase</li><li>技術工具：Postman、Slack</li><li>Issue 指派：Notion</li></ul><h2 id="工作地點"><a href="#工作地點" class="headerlink" title="工作地點"></a>工作地點</h2><ul><li>高雄市鹽埕區</li></ul><h2 id="聯絡與面試方式"><a href="#聯絡與面試方式" class="headerlink" title="聯絡與面試方式"></a>聯絡與面試方式</h2><ul><li>請寄信至 <a href="mailto:&#x73;&#x65;&#114;&#118;&#x69;&#x63;&#x65;&#64;&#104;&#101;&#x78;&#115;&#99;&#x68;&#x6f;&#x6f;&#108;&#46;&#99;&#x6f;&#x6d;" target="_blank" rel="noopener">&#x73;&#x65;&#114;&#118;&#x69;&#x63;&#x65;&#64;&#104;&#101;&#x78;&#115;&#99;&#x68;&#x6f;&#x6f;&#108;&#46;&#99;&#x6f;&#x6d;</a></li><li>信件標題請設定為：【應徵 Node.js 後端工程師】OOO (OOO 為您的姓名)</li><li>履歷附件還請用 PDF 提供</li><li>收到履歷後，若您是潛在合適人選，我們會透過 Email 與您約時間進行現場面試</li></ul>]]></content:encoded>
       
       <comments>https://www.hexschool.com/2020/12/02/2020-12-02-we-need-backend/#disqus_thread</comments>
     </item>
@@ -72,7 +72,7 @@
       <title>【徵才】社群行銷實習生</title>
       <link>https://www.hexschool.com/2020/11/03/2020-11-03-social-marketing-internship/</link>
       <guid>https://www.hexschool.com/2020/11/03/2020-11-03-social-marketing-internship/</guid>
-      <pubDate>Mon, 02 Nov 2020 16:00:00 GMT</pubDate>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -91,7 +91,7 @@
       <title>【振學活動】 - 繳作業抽商品卡</title>
       <link>https://www.hexschool.com/2020/09/22/2020-09-22-learning-activity/</link>
       <guid>https://www.hexschool.com/2020/09/22/2020-09-22-learning-activity/</guid>
-      <pubDate>Mon, 21 Sep 2020 16:00:00 GMT</pubDate>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -110,7 +110,7 @@
       <title>【學員專屬徵才 - 第五波遠端助教】無工作經驗者優先錄取</title>
       <link>https://www.hexschool.com/2020/05/28/2020-05-28-remote-jobs-fifth/</link>
       <guid>https://www.hexschool.com/2020/05/28/2020-05-28-remote-jobs-fifth/</guid>
-      <pubDate>Wed, 27 May 2020 16:00:00 GMT</pubDate>
+      <pubDate>Thu, 28 May 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -129,7 +129,7 @@
       <title>2020 JavaScript 組合包介紹</title>
       <link>https://www.hexschool.com/2020/04/15/2020-04-15-js-course-intro/</link>
       <guid>https://www.hexschool.com/2020/04/15/2020-04-15-js-course-intro/</guid>
-      <pubDate>Tue, 14 Apr 2020 16:00:00 GMT</pubDate>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -148,7 +148,7 @@
       <title>【徵才】社群行銷實習生(已徵得)</title>
       <link>https://www.hexschool.com/2020/04/13/2020-04-13-social-marketing-internship/</link>
       <guid>https://www.hexschool.com/2020/04/13/2020-04-13-social-marketing-internship/</guid>
-      <pubDate>Sun, 12 Apr 2020 16:00:00 GMT</pubDate>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -167,7 +167,7 @@
       <title>21 天英打鍛鍊武道大會</title>
       <link>https://www.hexschool.com/2020/03/24/2020-03-24-21days-keybr-game/</link>
       <guid>https://www.hexschool.com/2020/03/24/2020-03-24-21days-keybr-game/</guid>
-      <pubDate>Mon, 23 Mar 2020 16:00:00 GMT</pubDate>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -186,7 +186,7 @@
       <title>【徵才】前端學期助教</title>
       <link>https://www.hexschool.com/2020/03/18/2020-03-18-frontend-assistant/</link>
       <guid>https://www.hexschool.com/2020/03/18/2020-03-18-frontend-assistant/</guid>
-      <pubDate>Tue, 17 Mar 2020 16:00:00 GMT</pubDate>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -205,7 +205,7 @@
       <title>2020 網頁設計組合包介紹</title>
       <link>https://www.hexschool.com/2020/02/12/2020-02-12-web-design-course-intro/</link>
       <guid>https://www.hexschool.com/2020/02/12/2020-02-12-web-design-course-intro/</guid>
-      <pubDate>Tue, 11 Feb 2020 16:00:00 GMT</pubDate>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -224,7 +224,7 @@
       <title>【學員專屬徵才 - 第四波遠端助教】無工作經驗者優先錄取</title>
       <link>https://www.hexschool.com/2020/02/03/2020-02-03-remote-jobs-fourth/</link>
       <guid>https://www.hexschool.com/2020/02/03/2020-02-03-remote-jobs-fourth/</guid>
-      <pubDate>Sun, 02 Feb 2020 16:00:00 GMT</pubDate>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -243,7 +243,7 @@
       <title>2019 年前端工程師薪資調查</title>
       <link>https://www.hexschool.com/2020/01/03/2020-01-03-2019-frontend-salary/</link>
       <guid>https://www.hexschool.com/2020/01/03/2020-01-03-2019-frontend-salary/</guid>
-      <pubDate>Thu, 02 Jan 2020 16:00:00 GMT</pubDate>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -262,7 +262,7 @@
       <title>w3HexSchool 鼠年全馬鐵人挑戰</title>
       <link>https://www.hexschool.com/2019/11/14/2019-11-14-w3Hexschool-2020-challenge/</link>
       <guid>https://www.hexschool.com/2019/11/14/2019-11-14-w3Hexschool-2020-challenge/</guid>
-      <pubDate>Wed, 13 Nov 2019 16:00:00 GMT</pubDate>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -281,7 +281,7 @@
       <title>【學員專屬徵才 - 第三波遠端助教】無工作經驗者優先錄取</title>
       <link>https://www.hexschool.com/2019/11/05/2019-11-05-remote-jobs-third/</link>
       <guid>https://www.hexschool.com/2019/11/05/2019-11-05-remote-jobs-third/</guid>
-      <pubDate>Mon, 04 Nov 2019 16:00:00 GMT</pubDate>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -300,7 +300,7 @@
       <title>【大神來六角】十月直播主題：遠端接案</title>
       <link>https://www.hexschool.com/2019/09/24/2019-09-24-god-and-hexschool/</link>
       <guid>https://www.hexschool.com/2019/09/24/2019-09-24-god-and-hexschool/</guid>
-      <pubDate>Mon, 23 Sep 2019 16:00:00 GMT</pubDate>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -319,7 +319,7 @@
       <title>堅定信念，用時間來推砌出你的理想未來吧！ - 東彥</title>
       <link>https://www.hexschool.com/2019/09/09/2019-09-09-interview/</link>
       <guid>https://www.hexschool.com/2019/09/09/2019-09-09-interview/</guid>
-      <pubDate>Sun, 08 Sep 2019 16:00:00 GMT</pubDate>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -338,7 +338,7 @@
       <title>找一份上手的工作，或你可以把工作變得上手！ - Leo</title>
       <link>https://www.hexschool.com/2019/08/28/2019-08-28-interview/</link>
       <guid>https://www.hexschool.com/2019/08/28/2019-08-28-interview/</guid>
-      <pubDate>Tue, 27 Aug 2019 16:00:00 GMT</pubDate>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -357,7 +357,7 @@
       <title>【大神來六角】九月直播主題：程式編輯器</title>
       <link>https://www.hexschool.com/2019/08/22/2019-08-22-god-and-hexschoo/</link>
       <guid>https://www.hexschool.com/2019/08/22/2019-08-22-god-and-hexschoo/</guid>
-      <pubDate>Wed, 21 Aug 2019 16:00:00 GMT</pubDate>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 GMT</pubDate>
       <description>
       
         
@@ -376,7 +376,7 @@
       <title>2019 IT 鐵人邦有獎徵文活動</title>
       <link>https://www.hexschool.com/2019/08/20/2019-08-20-ithelp-2020ironman/</link>
       <guid>https://www.hexschool.com/2019/08/20/2019-08-20-ithelp-2020ironman/</guid>
-      <pubDate>Mon, 19 Aug 2019 16:00:00 GMT</pubDate>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 GMT</pubDate>
       <description>
       
         
