@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1612321286796">
+  <link rel="stylesheet" href="/stylesheets/all.css?1612713642821">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1093,19 +1093,6 @@
           <div class="row flex-column align-items-end">
             <div class="col-8">
               
-              <a href="/courses/js-training.html" class="dropdown-clock-banner">
-                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fjs-og-new.png?alt=media&token=f91d1f81-39ce-416b-bdf4-fa359a7c8bf9" alt="">
-                <div class="d-flex justify-content-between">
-                  <p class="py-2 px-3 bg-danger text-white font-weight-bold" style="transform: translateY(-50%); font-size: 20px;">JS 直播班晚鳥票</p>
-                  <p class="text-white font-weight-light">
-                    
-                      <span class="clock m-r-1"></span>
-                    
-                    
-                  </p>
-                </div>
-              </a>
-              
             </div>
           </div>
           <div class="row justify-content-between text-white">
@@ -1127,8 +1114,6 @@
     <!-- END NAVIGATION -->
 </div>
 <!-- Header END -->
-
-  <input type="hidden" id="footer-clock" value="2021/02/08">
 
 
 <div class="login-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -3948,11 +3933,15 @@
                               <a href="/courses/web-layout-training-1st.html" target="_blank" class="btn btn-primary">開放報名中！</a>
                             </div>
                             <div class="mb-2" v-else>
-                              <p class="mb-1" v-if="trainingWait.web_layout.notOpen_day.courses_start_at"><small>下一次開課
-                              日期：{{ trainingWait.web_layout.notOpen_day.courses_title }}</small></p>
+                              <p class="mb-1" v-if="trainingWait.web_layout.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.web_layout.notOpen_day.courses_title }}</small></p>
                               <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
-                              <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-                              <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                              <div v-if="trainingWait.web_layout.notOpen_day.start_subscribe">
+                                <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
+                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                              </div>
+                              <div v-else>
+                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -3980,11 +3969,15 @@
                               <a href="/courses/js-training.html" target="_blank" class="btn btn-primary">開放報名中！</a>
                             </div>
                             <div class="mb-2" v-else>
-                              <p class="mb-1" v-if="trainingWait.js.notOpen_day.courses_start_at"><small>下一次開課
-                              日期：{{ trainingWait.js.notOpen_day.courses_title }}</small></p>
+                              <p class="mb-1" v-if="trainingWait.js.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.js.notOpen_day.courses_title }}</small></p>
                               <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
-                              <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-                              <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                              <div v-if="trainingWait.js.notOpen_day.start_subscribe">
+                                <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
+                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                              </div>
+                              <div v-else>
+                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -4012,11 +4005,15 @@
                               <a href="/courses/vue-training.html" target="_blank" class="btn btn-primary">開放報名中！</a>
                             </div>
                             <div class="mb-2" v-else>
-                              <p class="mb-1" v-if="trainingWait.vue.notOpen_day.courses_start_at"><small>下一次開課
-                              日期：{{ trainingWait.vue.notOpen_day.courses_title }}</small></p>
+                              <p class="mb-1" v-if="trainingWait.vue.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.vue.notOpen_day.courses_title }}</small></p>
                               <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
-                              <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-                              <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                              <div v-if="trainingWait.vue.notOpen_day.start_subscribe">
+                                <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
+                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                              </div>
+                              <div v-else>
+                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -6393,8 +6390,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -6534,8 +6531,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1612321286802"></script>
-<script src="/js/all.js?1612321286802"></script>
+<script src="/js/vendor.js?1612713642827"></script>
+<script src="/js/all.js?1612713642827"></script>
 <script src="/js/wow.min.js"></script>
 
 
