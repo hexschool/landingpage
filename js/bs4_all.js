@@ -714,7 +714,6 @@ $(document).ready(function() {
     selectedCourses = [];
     leadCourse = '';
     $('#customCourses .selecedCourse:checked').each(function(i, item) {
-      console.log(i, item, $(this).val());
       return selectedCourses.push($(this).val());
     });
     leadCourse = selectedCourses[0];

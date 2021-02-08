@@ -20,6 +20,73 @@ helper = {
 };
 
 $(document).ready(function() {
+  var abtesting, abtestingDay, abtestingRandom, cookieAbtesting, randTesting, sawEvent, setCookie, testingEffect, testingExpiresTime, testingNow, testing_h, testing_v;
+  abtesting = 'h_test_training_template';
+  abtestingRandom = ['h', 'v'];
+  abtestingDay = 3;
+  testingExpiresTime = abtestingDay;
+  testing_h = $('#trainingHorizontal');
+  testing_v = $('#trainingStraight');
+  cookieAbtesting = $.cookie(abtesting);
+  setCookie = function(name, value) {
+    return $.cookie(name, value, {
+      expires: testingExpiresTime,
+      path: '/'
+    });
+  };
+  sawEvent = function(test) {
+    var $win, ViewContentScrollTracking, desktopView;
+    ViewContentScrollTracking = false;
+    desktopView = $(window).width() > 768;
+    if ($('.ABTestingTemplate').length) {
+      return $win = $(window).scroll(function(e) {
+        var contentTop, winTop, windowHieght;
+        windowHieght = $(window).height() / 2;
+        winTop = $($win).scrollTop() + windowHieght;
+        contentTop = $('.ABTestingTemplate').offset().top;
+        if (winTop > contentTop && !ViewContentScrollTracking && desktopView) {
+          ViewContentScrollTracking = true;
+          return mixpanel.track('ABtesting', {
+            'TestEvet': abtesting,
+            'TestRandom': test,
+            'TestExpiresTime': abtestingDay
+          });
+        }
+      });
+    }
+  };
+  testingEffect = function(test) {
+    var testingGoal;
+    testingGoal = $('.ABTestingTemplate');
+    if (testingGoal.length > 0) {
+      if (test === 'h') {
+        $('#trainingHorizontal').addClass('d-md-block d-none');
+        $('#trainingStraight').addClass('d-md-none d-block');
+      } else {
+        $('#trainingStraight').addClass('d-block');
+      }
+      sawEvent(test);
+      return $('.mix-tracking').on('click', function(e) {
+        return mixpanel.track('Click ABTesting', {
+          'TestEvet': 'Click ' + $(this).data('course'),
+          'TestRandom': test,
+          'TestClickType': $(this).data('type'),
+          'TestClickTarget': $(this).data('course')
+        });
+      });
+    }
+  };
+  if (!cookieAbtesting) {
+    randTesting = abtestingRandom[Math.floor(Math.random() * abtestingRandom.length)];
+    setCookie(abtesting, randTesting);
+    return testingEffect(randTesting);
+  } else {
+    testingNow = $.cookie("h_test_training_template");
+    return testingEffect(testingNow);
+  }
+});
+
+$(document).ready(function() {
   var abtesting, abtestingDay, abtestingRandom, cookieAbtesting, randTesting, setCookie, testing, testingEffect, testingExpiresTime;
   abtesting = 'testClass';
   abtestingRandom = ['1', '2'];
@@ -44,14 +111,11 @@ $(document).ready(function() {
   if (!cookieAbtesting) {
     randTesting = abtestingRandom[Math.floor(Math.random() * abtestingRandom.length)];
     setCookie(abtesting, randTesting);
-    mixpanel.track('ABtesting', {
+    return mixpanel.track('ABtesting', {
       'TestEvet': abtesting,
       'TestRandom': randTesting,
       'TestExpiresTime': abtestingDay
     });
-    return testingEffect(randTesting);
-  } else if (cookieAbtesting) {
-    return testingEffect(cookieAbtesting);
   }
 });
 
@@ -167,17 +231,11 @@ $(document).ready(function() {
   })(this);
   if (!cookieAbtestingContact) {
     randTesting = abtestingContactRandom[Math.floor(Math.random() * abtestingContactRandom.length)];
-    setCookie(abtestingContact, randTesting);
-    mixpanel.track('ABtesting', {
+    return mixpanel.track('ABtesting', {
       'TestEvet': abtestingContact,
       'TestRandom': randTesting,
       'TestExpiresTime': abtestingContactDay
     });
-    testingEffect(randTesting);
-    return testingContactTrack(randTesting);
-  } else if (cookieAbtestingContact) {
-    testingEffect(cookieAbtestingContact);
-    return testingContactTrack(cookieAbtestingContact);
   }
 });
 
