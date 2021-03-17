@@ -355,11 +355,75 @@ $(document).ready(function() {
 });
 
 Vue.component('slide-reviews', {
-  template: "<div>\n  <div style=\"height: 250px; overflow: hidden;\" class=\"swiper-container slide-reviews\">\n    <div style=\"font-size: 1.5em;\" class=\"centered text-xs-center\"><span class=\"loading loading-primary\"></span></div>\n    <div class=\"swiper-pagination\"></div>\n    <div class=\"swiper-wrapper\">\n      <div v-for=\"(item, index) in courseData\" style=\"width: 98%;\" class=\"swiper-slide b-3\">\n        <div class=\"text-xs-left\">\n          <blockquote class=\"m-0\">\n            <div><strong>{{ item.user.display_name }}</strong><span class=\"text-warning ml-2\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></span></div>\n            <div>{{ item.content }}</div>\n          </blockquote>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+  template: "<div>\n  <div style=\"height: 250px; overflow: hidden;\" class=\"swiper-container slide-reviews\">\n    <div style=\"font-size: 1.5em;\" class=\"centered text-xs-center\"><span class=\"loading loading-primary\"></span></div>\n    <div class=\"swiper-pagination\"></div>\n    <div class=\"swiper-wrapper\">\n      <div v-for=\"(item, index) in vue3Data\" style=\"width: 98%;\" class=\"swiper-slide b-3\" v-if=\"vue3\">\n        <div class=\"text-xs-left\">\n          <blockquote class=\"m-0\">\n            <div><strong>{{ item.user.display_name }}</strong><span class=\"text-warning ml-2\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></span></div>\n            <div>{{ item.content }}</div>\n          </blockquote>\n        </div>\n      </div>\n      <div v-for=\"(item, index) in courseData\" style=\"width: 98%;\" class=\"swiper-slide b-3\">\n        <div class=\"text-xs-left\">\n          <blockquote class=\"m-0\">\n            <div><strong>{{ item.user.display_name }}</strong><span class=\"text-warning ml-2\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></span></div>\n            <div>{{ item.content }}</div>\n          </blockquote>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+  props: ['vue3'],
   data: function() {
     return {
       data: {},
-      courseData: {}
+      courseData: {},
+      vue3Data: [
+        {
+          user: {
+            display_name: '陳清誠'
+          },
+          content: '老師上課簡單易懂，課程架構清楚且邏輯清晰，相當推薦！（建議語速可以調至1.25/1.5）'
+        }, {
+          user: {
+            display_name: '張志銘'
+          },
+          content: '老師和助教講解非常詳細'
+        }, {
+          user: {
+            display_name: 'Daisord Isord'
+          },
+          content: '整個學習中漸進的熟悉 Vue 的使用，且作業題目安排適切，更加深對 Vue 的使用'
+        }, {
+          user: {
+            display_name: '奕濡 藍'
+          },
+          content: '完整的解說 Vue 強大之處以及應用，非常推薦'
+        }, {
+          user: {
+            display_name: 'yihao chang'
+          },
+          content: '課程講解的很詳盡，課程問題也很盡心盡力為學員回覆，很有耐心~受益良多'
+        }, {
+          user: {
+            display_name: 'Lynn Huang'
+          },
+          content: '教材準備很充足，老師講解清晰，不會拖泥帶水。'
+        }, {
+          user: {
+            display_name: '蔡名彥'
+          },
+          content: '內容多樣，從淺至深，老師非常用心，很適合想學 Vue 的人來上'
+        }, {
+          user: {
+            display_name: 'Su 蘇'
+          },
+          content: '老師的講解都非常到位，很迅速就能掌握基本的重點，而且課程中能大量串接 api 設計屬於自己的作品，不過 JavaScript 還是要熟悉一些會比較好上手，學完之後真的受益良多。'
+        }, {
+          user: {
+            display_name: 'Jia-Wei Liang'
+          },
+          content: '非常充實，即使目前是邊做邊學的狀態，也能及時補上很多書本及網路教學沒補充到的知識'
+        }, {
+          user: {
+            display_name: '宇軒 蔡'
+          },
+          content: '本課程不太適合初心者，但如果你是具備一些 JavaScript 觀念的人，這門課程很適合你，這門課程具備了相當程度的實作課程，相當划算！'
+        }, {
+          user: {
+            display_name: '黃英鳴 Huang'
+          },
+          content: '老師手把手的由淺入深講講解每個重要的觀念， 在學習完每個章節後都可以透過範例跟著練習， 有出一些作業幫助學習者檢視是不是真的知道如何把學到的觀念運用在實作上， 除了能了解與後端在串接資料上的細節與驗證權限外， 還提供客製化的 API 讓每個人都能做出專屬於自己的作品， 可以看出一定花了非常多的心思與時間在準備這堂課程！'
+        }, {
+          user: {
+            display_name: 'Anna Huang'
+          },
+          content: '第一次上志誠老師的課，想不到課堂解說“超級清楚”，非常有條理！之前曾經零零碎碎地學了一些Vue的課程，但這堂課是最清楚也最完整的！這堂課跟之前的”JavaScript入門“一樣精彩，六角學院的教學真的很厲害，總是能將複雜的概念解說地讓人容易理解。很開心買到這堂課，推薦給還在猶豫的同學！'
+        }
+      ]
     };
   },
   methods: {
@@ -386,9 +450,11 @@ Vue.component('slide-reviews', {
           mousewheelControl: true,
           spaceBetween: 15,
           slidesPerView: 'auto',
-          autoplay: 2000,
           slideClass: 'swiper-slide',
-          autoplayDisableOnInteraction: false
+          autoplayDisableOnInteraction: false,
+          autoplay: {
+            delay: 2000
+          }
         });
       }, 1500);
     }
