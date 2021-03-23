@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1616381722099">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1616469239313">
   <!-- Global styles END -->
 
   
@@ -962,6 +962,10 @@
           <p class="mb-0">A：「Vue 3 作品實戰直播班」、「JavaScript 工程師養成直播班」以及「影音課程」退款期為付款後 14 天內，退費前請先<strong>詳閱退費規定</strong>。若不符合需求仍欲退款，可寄信至 service@hexschool.com，將會有小幫手協助進行退款。</p>
           <a href="/qa/#直播班退費規定"><i class="far fa-hand-point-right"></i> 點我看詳細退費規定</a>
         </div>
+        <div class="my-3">
+          <p class="mb-1 font-weight-bold">Q：過去有買「JavaScript 工程師養成直播班」或是「Vue 3 實戰影音課程」是否有優惠呢？</p>
+          <a href="https://hex.school/2BlkJ" class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener">點我看老學員優惠</a>
+        </div>
       </div>
     </div>
   </div>
@@ -1003,14 +1007,14 @@
               </ul>
             </div>
             <div class="form-check d-md-inline-block">
-              <input class="form-check-input training-checked" type="checkbox" id="vue-training-checked" disabled>
+              <input class="form-check-input training-checked" type="checkbox" id="vue-training-checked">
               <label class="form-check-label" for="vue-training-checked">
                 當然，我就是來練功變強的！
               </label>
             </div>
-            <a href="#" title="Vue 作品實戰班" id="trainingBuyBtn" data-toggle="modal" data-target="#orderModal" data-price="7899" data-title="Vue 作品實戰班" data-paylink itemprop="url" target="_blank" rel="noopener" class="join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 mp-click tracking-link d-flex justify-content-center align-items-center disabled" disabled>
-              立即註冊 (已額滿)
-              <!-- <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i> -->
+            <a href="https://shop.hexschool.com/order/create?coupon_code=2021_VUE3_VUE_TRAINING_MAR_1&phyProduct%5B%5D=-M7klmVj7JKm8uhH_PDp&phyProductSpec%5B%5D=-MOUJRMHkm9dYk9JdJIw" title="Vue 作品實戰班" id="trainingBuyBtn" data-toggle="modal" data-target="#orderModal" data-price="7899" data-title="Vue 作品實戰班" data-paylink="https://shop.hexschool.com/order/create?coupon_code=2021_VUE3_VUE_TRAINING_MAR_1&phyProduct%5B%5D=-M7klmVj7JKm8uhH_PDp&phyProductSpec%5B%5D=-MOUJRMHkm9dYk9JdJIw" itemprop="url" target="_blank" rel="noopener" class="join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 mp-click tracking-link d-flex justify-content-center align-items-center disabled" disabled>
+              立即註冊
+              <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i>
               </a>
           </div>
         </div>
@@ -1026,33 +1030,34 @@
 </div>
 
 
-<nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+ <!-- 開啟通用 footer 倒數-->
+    <!-- 如果個別頁面有需要倒數 -->
+     <!-- 判斷哪些頁面用 page-footer-clock -->
+      
+         <!-- page id 和 theme.page_footer_clock_target 的設定相同 -->
+          <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">Vue 3 實戰影音課程</span>
+        <span class="mr-md-5 font-weight-bold text-left">Vue 作品實戰班</span>
+        
+          <span class="m-r-1 text-left" data-toggle="tooltip" data-placement="top" title="每日更新">最後加開 / 剩餘不到 50 名</span>
         
         <div class="d-flex justify-content-start text-white text-nowrap">
-          
-            <span class="clock m-r-1 font-weight-bold"></span>
           
         </div>
       </div>
       <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
-        
-          <a href="/courses/vue3.html"
-            class="btn btn-dark btn-sm rounded-0">
-            連結
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
         
       </div>
     </div>
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2021/04/12">
-
+        
+      
+    
+  
 
   </div>
   
@@ -1210,8 +1215,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1616381722101"></script>
-<script src="/js/bs4_all.js?1616381722101"></script>
+<script src="/js/bs4_vendor.js?1616469239314"></script>
+<script src="/js/bs4_all.js?1616469239314"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
