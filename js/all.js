@@ -738,8 +738,8 @@ $(document).ready(function() {
     return $('h2').each(function(i) {
       if (i > 0) {
         if ($(this).position().top + 151 <= scrollDistance) {
-          $('a[href*="#"]:not([href="#"]).active').removeClass('active');
-          return $('.qa a').eq(i - 1).addClass('active');
+          $('.qa-menu a[href*="#"]:not([href="#"]).active').removeClass('active');
+          return $('.qa-menu a').eq(i - 1).addClass('active');
         }
       }
     });
