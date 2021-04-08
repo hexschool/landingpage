@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1617783003013">
+  <link rel="stylesheet" href="/stylesheets/all.css?1617857590862">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -262,12 +262,16 @@
           
             
           
+            
+          
         
           
             
           
             
             <a href="/courses/js-training.html" class="drop-click link-white d-block py-1 font-weight-light">JavaScript 工程師養成直播班</a>
+            
+          
             
           
             
@@ -280,6 +284,20 @@
           
             
             <a href="/courses/vue-training.html" class="drop-click link-white d-block py-1 font-weight-light">Vue 作品實戰班</a>
+            
+          
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/courses/ui-training.html" class="drop-click link-white d-block py-1 font-weight-light">UI 設計觀念必修直播班</a>
             
           
         
@@ -2316,279 +2334,201 @@
     </h2>
     <p class="mb-4 text-secondary text-center">適合一週能拿出 10～15 小時練習作業、想在短期內大幅度成長的學員</p>
   </div>
-  <div id="trainingHorizontal" class="mb-6 container-lg d-none">
+  <div id="trainingHorizontal" class="mb-6 container-lg">
     <div class="" id="training-horizontal">
   
-    <div class="w-100 d-flex my-3 landing-training-shadow rounded overflow">
-      <div class="d-flex flex-column training-banner">
-        <div class="h-100 bg-cover bg-center" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Ftraining%2Fweb-live-course-1200x628.png?alt=media&token=0a810377-b6bc-42df-a06c-51e0f47cc299)"></div>
-        <div class="bg-light d-flex justify-content-between px-3 py-2">
-          <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合無經驗程式新手</span></i>
-        </div>
-      </div>
-      <div class="d-flex w-100 bg-white">
-        <div class="bg-white">
-          <div class="p-3 h-100">
-            <h4 class="mb-2">網頁切版直播班</h4>
-            <p class="text-muted font-weight-bold mb-1 d-lg-block d-none">地獄級修煉想被虐就來</p>
-            <p class="text-muted mb-2 training-description-font">以「 業界常見版型主題 」為導向，八週帶你做出面試專用作品，成為切版小能手。</p>
-            <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 8 堂直播課程</li><li><i class="fas fa-check"></i> 8 個業界熱門主題設計稿，頁面數量超過 20 頁</li><li><i class="fas fa-check"></i> 學員專屬 UI 設計稿授權</li><li><i class="fas fa-check"></i> 10 小時以上的影音教學資源</li></ul></div>
-          </div>
-        </div>
-        <div class="text-nowrap ml-auto bg-light h-100 p-3" style="min-width: 235px">
-          <div class="border-bottom">
-            <div class="d-flex flex-column justify-content-between align-items-center pb-3 h-50">
-              <p class="font-weight-bold mb-1" v-if="trainingStatus.web_layout.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.web_layout.day.courses_start_at }}</p>
-              <div v-else>
-                <p class="mb-1 font-weight-bold mb-2" v-if="trainingWait.web_layout.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.web_layout.notOpen_day.courses_title }}</p>
-                <p class="mb-1font-weight-bold mb-2" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
-              </div>
-              <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
-              <a href="/courses/web-layout-training-1st.html#recommend" target="_blank" v-if="trainingStatus.web_layout.status" class="btn btn-block btn-dark landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="網頁切版直播班">開放報名中</a>
-              <div class="w-100" v-else>
-                <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.web_layout.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking" data-type="subscribe" data-course="網頁切版直播班">可報名時通知我</a>
-                <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled" disabled>未開放訂閱</a>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-column justify-content-center pt-3 align-items-center h-50">
-            <div class="mt-auto" v-if="trainingStatus.web_layout.status">
-              <p class="mt-auto mb-1 font-small-for-course-list text-muted text-center"><small><del>原價 NT$ 1600</del></small></p>
-              <p class="mb-1 font-weight-bold font-column-4-button">NT$ 1408</p>
-            </div>
-            <div class="" v-else>
-              <p v-if="trainingWait.web_layout.notOpen_day.start_subscribe" class="font-column-4-button mb-2">課程預約中</p>
-              <p v-else class="font-column-4-button mb-2 text-muted">課程準備中</p>
-            </div>
-            <a href="/courses/web-layout-training-1st.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="網頁切版直播班">課程內容</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   
-    <div class="w-100 d-flex my-3 landing-training-shadow rounded overflow">
-      <div class="d-flex flex-column training-banner">
-        <div class="h-100 bg-cover bg-center" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fjs-og-new.png?alt=media&token=f91d1f81-39ce-416b-bdf4-fa359a7c8bf9)"></div>
-        <div class="bg-light d-flex justify-content-between px-3 py-2">
-          <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合無經驗程式新手</span></i>
-        </div>
-      </div>
-      <div class="d-flex w-100 bg-white">
-        <div class="bg-white">
-          <div class="p-3 h-100">
-            <h4 class="mb-2">JavaScript 工程師養成直播班</h4>
-            <p class="text-muted font-weight-bold mb-1 d-lg-block d-none">邁向前端的必要修煉</p>
-            <p class="text-muted mb-2 training-description-font">用八週時間帶你扎穩 JavaScript，接軌業界實務常用語法！</p>
-            <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 9 堂直播課程</li><li><i class="fas fa-check"></i> 10 支專屬 RESTful API</li><li><i class="fas fa-check"></i> 50 小時以上的影音教學資源</li><li><i class="fas fa-check"></i> 100 道 JS 題目</li><li><i class="fas fa-check"></i> 學員專屬 UI 設計稿授權</li></ul></div>
-          </div>
-        </div>
-        <div class="text-nowrap ml-auto bg-light h-100 p-3" style="min-width: 235px">
-          <div class="border-bottom">
-            <div class="d-flex flex-column justify-content-between align-items-center pb-3 h-50">
-              <p class="font-weight-bold mb-1" v-if="trainingStatus.js.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.js.day.courses_start_at }}</p>
-              <div v-else>
-                <p class="mb-1 font-weight-bold mb-2" v-if="trainingWait.js.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.js.notOpen_day.courses_title }}</p>
-                <p class="mb-1font-weight-bold mb-2" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
-              </div>
-              <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
-              <a href="/courses/js-training.html#recommend" target="_blank" v-if="trainingStatus.js.status" class="btn btn-block btn-dark landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="JavaScript 工程師養成直播班">開放報名中</a>
-              <div class="w-100" v-else>
-                <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.js.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking" data-type="subscribe" data-course="JavaScript 工程師養成直播班">可報名時通知我</a>
-                <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled" disabled>未開放訂閱</a>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-column justify-content-center pt-3 align-items-center h-50">
-            <div class="mt-auto" v-if="trainingStatus.js.status">
-              <p class="mt-auto mb-1 font-small-for-course-list text-muted text-center"><small><del>原價 NT$ 14,400</del></small></p>
-              <p class="mb-1 font-weight-bold font-column-4-button">NT$ 7,800</p>
-            </div>
-            <div class="" v-else>
-              <p v-if="trainingWait.js.notOpen_day.start_subscribe" class="font-column-4-button mb-2">課程預約中</p>
-              <p v-else class="font-column-4-button mb-2 text-muted">課程準備中</p>
-            </div>
-            <a href="/courses/js-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="JavaScript 工程師養成直播班">課程內容</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   
-    <div class="w-100 d-flex my-3 landing-training-shadow rounded overflow">
-      <div class="d-flex flex-column training-banner">
-        <div class="h-100 bg-cover bg-center" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fvue-training-og.png?alt=media&token=9d762cc3-2edd-42d9-8cad-380207c8cf96)"></div>
-        <div class="bg-light d-flex justify-content-between px-3 py-2">
-          <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">需有 CSS、JS 底子</span></i>
+    
+  
+    
+      <div class="w-100 d-flex my-3 landing-training-shadow rounded overflow">
+        <div class="d-flex flex-column training-banner">
+          <div class="h-100 bg-cover bg-center" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fui-training%2F10-fb-og.png?alt=media&token=0a5b83b5-aff7-48ea-902f-464fd0d988da)"></div>
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合 UI 設計新手</span></i>
+          </div>
+        </div>
+        <div class="d-flex w-100 bg-white">
+          <div class="bg-white">
+            <div class="p-3 h-100">
+              <h4 class="mb-2">UI 設計觀念必修直播班</h4>
+              <p class="text-muted font-weight-bold mb-1 d-lg-block d-none"></p>
+              <p class="text-muted mb-2 training-description-font"></p>
+              <div class="text-muted"><ul class="landing-training-detail list-unstyled mb-0"><li><i class="fas fa-check text-primary-light"></i> 4 堂直播課程</li><li><i class="fas fa-check text-primary-light"></i> 專屬課前影音教學資源</li><li><i class="fas fa-check text-primary-light"></i> 專屬範例與模板資源</li><li><i class="fas fa-check text-primary-light"></i> 專屬 RWD 響應式設計作品</li><li><i class="fas fa-check text-primary-light"></i> 一年時間免費課程錄影回顧 </li><li><i class="fas fa-check text-primary-light"></i> 開課期間作品檢視無次數限制</li></ul></div>
+            </div>
+          </div>
+          <div class="text-nowrap ml-auto bg-light h-100 p-3" style="min-width: 235px">
+            <div class="border-bottom">
+              <div class="d-flex flex-column justify-content-between align-items-center pb-3 h-50">
+                <p class="font-weight-bold mb-1" v-if="trainingStatus.ui.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.ui.day.courses_start_at }}</p>
+                <div v-else>
+                  <p class="mb-1 font-weight-bold mb-2" v-if="trainingWait.ui.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.ui.notOpen_day.courses_title }}</p>
+                  <p class="mb-1font-weight-bold mb-2" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+                </div>
+                <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
+                <a href="/courses/ui-training.html#recommend" target="_blank" v-if="trainingStatus.ui.status" class="btn btn-block btn-dark landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="UI 設計觀念必修直播班">開放報名中</a>
+                <div class="w-100" v-else>
+                  <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.ui.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking" data-type="subscribe" data-course="UI 設計觀念必修直播班">可報名時通知我</a>
+                  <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled" disabled>未開放訂閱</a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center pt-3 align-items-center h-50">
+              <div class="mt-auto" v-if="trainingStatus.ui.status">
+                <p class="mt-auto mb-1 font-small-for-course-list text-muted text-center"><small><del>原價 NT$ 9820</del></small></p>
+                <p class="mb-1 font-weight-bold font-column-4-button">NT$ 4500</p>
+              </div>
+              <div class="" v-else>
+                <p v-if="trainingWait.ui.notOpen_day.start_subscribe" class="font-column-4-button mb-2">課程預約中</p>
+                <p v-else class="font-column-4-button mb-2 text-muted">課程準備中</p>
+              </div>
+              <a href="/courses/ui-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="UI 設計觀念必修直播班">課程內容</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="d-flex w-100 bg-white">
-        <div class="bg-white">
-          <div class="p-3 h-100">
-            <h4 class="mb-2">Vue 作品實戰班</h4>
-            <p class="text-muted font-weight-bold mb-1 d-lg-block d-none">帶您做出前端面試作品</p>
-            <p class="text-muted mb-2 training-description-font">以「 求職面試作品 」為導向，八週帶你做出面試專用作品，成為 JS 實戰小能手。</p>
-            <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 8 堂直播課程</li><li><i class="fas fa-check"></i> 30 小時以上的影音教學資源</li><li><li><i class="fas fa-check"></i> 30 支專屬 RESTful API</li><i class="fas fa-check"></i> 完成專屬獨立的面試作品</li></ul></div>
-          </div>
-        </div>
-        <div class="text-nowrap ml-auto bg-light h-100 p-3" style="min-width: 235px">
-          <div class="border-bottom">
-            <div class="d-flex flex-column justify-content-between align-items-center pb-3 h-50">
-              <p class="font-weight-bold mb-1" v-if="trainingStatus.vue.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.vue.day.courses_start_at }}</p>
-              <div v-else>
-                <p class="mb-1 font-weight-bold mb-2" v-if="trainingWait.vue.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.vue.notOpen_day.courses_title }}</p>
-                <p class="mb-1font-weight-bold mb-2" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
-              </div>
-              <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
-              <a href="/courses/vue-training.html#recommend" target="_blank" v-if="trainingStatus.vue.status" class="btn btn-block btn-dark landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="Vue 作品實戰班">開放報名中</a>
-              <div class="w-100" v-else>
-                <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.vue.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking" data-type="subscribe" data-course="Vue 作品實戰班">可報名時通知我</a>
-                <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled" disabled>未開放訂閱</a>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-column justify-content-center pt-3 align-items-center h-50">
-            <div class="mt-auto" v-if="trainingStatus.vue.status">
-              <p class="mt-auto mb-1 font-small-for-course-list text-muted text-center"><small><del>原價 NT$ 15,000</del></small></p>
-              <p class="mb-1 font-weight-bold font-column-4-button">NT$ 7,899</p>
-            </div>
-            <div class="" v-else>
-              <p v-if="trainingWait.vue.notOpen_day.start_subscribe" class="font-column-4-button mb-2">課程預約中</p>
-              <p v-else class="font-column-4-button mb-2 text-muted">課程準備中</p>
-            </div>
-            <a href="/courses/vue-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="Vue 作品實戰班">課程內容</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   
 </div>
 
   </div>
   <div class="container">
-    <div id="trainingStraight" class="mb-6 d-none">
+    <div id="trainingStraight" class="mb-6">
       <div class="row justify-content-center" id="course">
   
-    <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
-      <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white">
-        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Ftraining%2Fweb-live-course-1200x628.png?alt=media&token=0a810377-b6bc-42df-a06c-51e0f47cc299" alt="網頁切版直播班首圖" class="img-fluid w-100">
-        <div class="bg-light d-flex justify-content-between px-3 py-2">
-          <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合無經驗程式新手</span></i>
-        </div>
-        <div class="p-3 bg-white">
-          <h4 class="mb-3">網頁切版直播班</h4>
-          <p class="text-muted font-weight-bold mb-2">地獄級修煉想被虐就來</p>
-          <p class="text-muted mb-3">以「 業界常見版型主題 」為導向，八週帶你做出面試專用作品，成為切版小能手。</p>
-          <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 8 堂直播課程</li><li><i class="fas fa-check"></i> 8 個業界熱門主題設計稿，頁面數量超過 20 頁</li><li><i class="fas fa-check"></i> 學員專屬 UI 設計稿授權</li><li><i class="fas fa-check"></i> 10 小時以上的影音教學資源</li></ul></div>
-        </div>
-        <div class="mt-auto mx-3 border-top border-bottom">
-          <div class="d-flex justify-content-between align-items-center py-3 mx-1">
-            <p class="font-weight-bold mb-0" v-if="trainingStatus.web_layout.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.web_layout.day.courses_start_at }}</p>
-            <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
-            <div v-else>
-              <p class="font-weight-bold mb-0" v-if="trainingWait.web_layout.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.web_layout.notOpen_day.courses_title }}</p>
-              <p class="font-weight-bold mb-0" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+    
+      <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
+        <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white">
+          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Ftraining%2Fweb-live-course-1200x628.png?alt=media&token=0a810377-b6bc-42df-a06c-51e0f47cc299" alt="網頁切版直播班首圖" class="img-fluid w-100">
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合無經驗程式新手</span></i>
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="mb-3">網頁切版直播班</h4>
+            <p class="text-muted font-weight-bold mb-2">地獄級修煉想被虐就來</p>
+            <p class="text-muted mb-3">以「 業界常見版型主題 」為導向，八週帶你做出面試專用作品，成為切版小能手。</p>
+            <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 8 堂直播課程</li><li><i class="fas fa-check"></i> 8 個業界熱門主題設計稿，頁面數量超過 20 頁</li><li><i class="fas fa-check"></i> 學員專屬 UI 設計稿授權</li><li><i class="fas fa-check"></i> 10 小時以上的影音教學資源</li></ul></div>
+          </div>
+          <div class="mt-auto mx-3 border-top border-bottom">
+            <div class="d-flex justify-content-between align-items-center py-3 mx-1">
+              <p class="font-weight-bold mb-0" v-if="trainingStatus.web_layout.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.web_layout.day.courses_start_at }}</p>
+              <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
+              <div v-else>
+                <p class="font-weight-bold mb-0" v-if="trainingWait.web_layout.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.web_layout.notOpen_day.courses_title }}</p>
+                <p class="font-weight-bold mb-0" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="d-flex justify-content-between px-3 py-3 align-items-center">
-          <p v-if="trainingStatus.web_layout.status" class="mb-0 font-small-for-course-list text-muted"><small><del>原價：1600</del></small></p>
-          <p v-if="trainingStatus.web_layout.status" class="mb-0 font-weight-bold font-column-4-button">NT$ 1408</p>
-          <p v-else class="mb-0 mx-auto font-weight-bold font-column-4-button">
-            <span v-if="trainingWait.web_layout.notOpen_day.start_subscribe">課程預約中</span>
-            <span v-else class="text-muted">課程準備中</span>
-          </p>
-        </div>
-        <div class="d-flex flex-lg-column flex-xl-row align-items-baseline px-3 pb-3">
-          <a href="/courses/web-layout-training-1st.html#recommend" v-if="trainingStatus.web_layout.status" target="_blank" class="btn btn-block btn-dark mr-2 landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="網頁切版直播班">開放報名中</a>
-          <div v-else class="w-100 mr-2 mb-xl-0 mb-lg-2 mb-0">
-            <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.web_layout.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking text-nowrap" data-type="subscribe" data-course="網頁切版直播班">可報名通知我</a>
-            <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled">未開放訂閱</a>
+          <div class="d-flex justify-content-between px-3 py-3 align-items-center">
+            <p v-if="trainingStatus.web_layout.status" class="mb-0 font-small-for-course-list text-muted"><small><del>原價：1600</del></small></p>
+            <p v-if="trainingStatus.web_layout.status" class="mb-0 font-weight-bold font-column-4-button">NT$ 1408</p>
+            <p v-else class="mb-0 mx-auto font-weight-bold font-column-4-button">
+              <span v-if="trainingWait.web_layout.notOpen_day.start_subscribe">課程預約中</span>
+              <span v-else class="text-muted">課程準備中</span>
+            </p>
           </div>
-          <a href="/courses/web-layout-training-1st.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="網頁切版直播班">課程內容</a>
+          <div class="d-flex flex-lg-column flex-xl-row align-items-baseline px-3 pb-3">
+            <a href="/courses/web-layout-training-1st.html#recommend" v-if="trainingStatus.web_layout.status" target="_blank" class="btn btn-block btn-dark mr-2 landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="網頁切版直播班">開放報名中</a>
+            <div v-else class="w-100 mr-2 mb-xl-0 mb-lg-2 mb-0">
+              <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.web_layout.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking text-nowrap" data-type="subscribe" data-course="網頁切版直播班">可報名通知我</a>
+              <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled">未開放訂閱</a>
+            </div>
+            <a href="/courses/web-layout-training-1st.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="網頁切版直播班">課程內容</a>
+          </div>
         </div>
       </div>
-    </div>
+    
   
-    <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
-      <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white">
-        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fjs-og-new.png?alt=media&token=f91d1f81-39ce-416b-bdf4-fa359a7c8bf9" alt="JavaScript 工程師養成直播班首圖" class="img-fluid w-100">
-        <div class="bg-light d-flex justify-content-between px-3 py-2">
-          <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合無經驗程式新手</span></i>
-        </div>
-        <div class="p-3 bg-white">
-          <h4 class="mb-3">JavaScript 工程師養成直播班</h4>
-          <p class="text-muted font-weight-bold mb-2">邁向前端的必要修煉</p>
-          <p class="text-muted mb-3">用八週時間帶你扎穩 JavaScript，接軌業界實務常用語法！</p>
-          <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 9 堂直播課程</li><li><i class="fas fa-check"></i> 10 支專屬 RESTful API</li><li><i class="fas fa-check"></i> 50 小時以上的影音教學資源</li><li><i class="fas fa-check"></i> 100 道 JS 題目</li><li><i class="fas fa-check"></i> 學員專屬 UI 設計稿授權</li></ul></div>
-        </div>
-        <div class="mt-auto mx-3 border-top border-bottom">
-          <div class="d-flex justify-content-between align-items-center py-3 mx-1">
-            <p class="font-weight-bold mb-0" v-if="trainingStatus.js.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.js.day.courses_start_at }}</p>
-            <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
-            <div v-else>
-              <p class="font-weight-bold mb-0" v-if="trainingWait.js.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.js.notOpen_day.courses_title }}</p>
-              <p class="font-weight-bold mb-0" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+    
+      <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
+        <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white">
+          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fjs-og-new.png?alt=media&token=f91d1f81-39ce-416b-bdf4-fa359a7c8bf9" alt="JavaScript 工程師養成直播班首圖" class="img-fluid w-100">
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合無經驗程式新手</span></i>
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="mb-3">JavaScript 工程師養成直播班</h4>
+            <p class="text-muted font-weight-bold mb-2">邁向前端的必要修煉</p>
+            <p class="text-muted mb-3">用八週時間帶你扎穩 JavaScript，接軌業界實務常用語法！</p>
+            <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 9 堂直播課程</li><li><i class="fas fa-check"></i> 10 支專屬 RESTful API</li><li><i class="fas fa-check"></i> 50 小時以上的影音教學資源</li><li><i class="fas fa-check"></i> 100 道 JS 題目</li><li><i class="fas fa-check"></i> 學員專屬 UI 設計稿授權</li></ul></div>
+          </div>
+          <div class="mt-auto mx-3 border-top border-bottom">
+            <div class="d-flex justify-content-between align-items-center py-3 mx-1">
+              <p class="font-weight-bold mb-0" v-if="trainingStatus.js.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.js.day.courses_start_at }}</p>
+              <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
+              <div v-else>
+                <p class="font-weight-bold mb-0" v-if="trainingWait.js.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.js.notOpen_day.courses_title }}</p>
+                <p class="font-weight-bold mb-0" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="d-flex justify-content-between px-3 py-3 align-items-center">
-          <p v-if="trainingStatus.js.status" class="mb-0 font-small-for-course-list text-muted"><small><del>原價：14,400</del></small></p>
-          <p v-if="trainingStatus.js.status" class="mb-0 font-weight-bold font-column-4-button">NT$ 7,800</p>
-          <p v-else class="mb-0 mx-auto font-weight-bold font-column-4-button">
-            <span v-if="trainingWait.js.notOpen_day.start_subscribe">課程預約中</span>
-            <span v-else class="text-muted">課程準備中</span>
-          </p>
-        </div>
-        <div class="d-flex flex-lg-column flex-xl-row align-items-baseline px-3 pb-3">
-          <a href="/courses/js-training.html#recommend" v-if="trainingStatus.js.status" target="_blank" class="btn btn-block btn-dark mr-2 landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="JavaScript 工程師養成直播班">開放報名中</a>
-          <div v-else class="w-100 mr-2 mb-xl-0 mb-lg-2 mb-0">
-            <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.js.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking text-nowrap" data-type="subscribe" data-course="JavaScript 工程師養成直播班">可報名通知我</a>
-            <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled">未開放訂閱</a>
+          <div class="d-flex justify-content-between px-3 py-3 align-items-center">
+            <p v-if="trainingStatus.js.status" class="mb-0 font-small-for-course-list text-muted"><small><del>原價：14,400</del></small></p>
+            <p v-if="trainingStatus.js.status" class="mb-0 font-weight-bold font-column-4-button">NT$ 7,800</p>
+            <p v-else class="mb-0 mx-auto font-weight-bold font-column-4-button">
+              <span v-if="trainingWait.js.notOpen_day.start_subscribe">課程預約中</span>
+              <span v-else class="text-muted">課程準備中</span>
+            </p>
           </div>
-          <a href="/courses/js-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="JavaScript 工程師養成直播班">課程內容</a>
+          <div class="d-flex flex-lg-column flex-xl-row align-items-baseline px-3 pb-3">
+            <a href="/courses/js-training.html#recommend" v-if="trainingStatus.js.status" target="_blank" class="btn btn-block btn-dark mr-2 landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="JavaScript 工程師養成直播班">開放報名中</a>
+            <div v-else class="w-100 mr-2 mb-xl-0 mb-lg-2 mb-0">
+              <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.js.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking text-nowrap" data-type="subscribe" data-course="JavaScript 工程師養成直播班">可報名通知我</a>
+              <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled">未開放訂閱</a>
+            </div>
+            <a href="/courses/js-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="JavaScript 工程師養成直播班">課程內容</a>
+          </div>
         </div>
       </div>
-    </div>
+    
   
-    <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
-      <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white">
-        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fvue-training-og.png?alt=media&token=9d762cc3-2edd-42d9-8cad-380207c8cf96" alt="Vue 作品實戰班首圖" class="img-fluid w-100">
-        <div class="bg-light d-flex justify-content-between px-3 py-2">
-          <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">需有 CSS、JS 底子</span></i>
-        </div>
-        <div class="p-3 bg-white">
-          <h4 class="mb-3">Vue 作品實戰班</h4>
-          <p class="text-muted font-weight-bold mb-2">帶您做出前端面試作品</p>
-          <p class="text-muted mb-3">以「 求職面試作品 」為導向，八週帶你做出面試專用作品，成為 JS 實戰小能手。</p>
-          <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 8 堂直播課程</li><li><i class="fas fa-check"></i> 30 小時以上的影音教學資源</li><li><li><i class="fas fa-check"></i> 30 支專屬 RESTful API</li><i class="fas fa-check"></i> 完成專屬獨立的面試作品</li></ul></div>
-        </div>
-        <div class="mt-auto mx-3 border-top border-bottom">
-          <div class="d-flex justify-content-between align-items-center py-3 mx-1">
-            <p class="font-weight-bold mb-0" v-if="trainingStatus.vue.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.vue.day.courses_start_at }}</p>
-            <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
-            <div v-else>
-              <p class="font-weight-bold mb-0" v-if="trainingWait.vue.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.vue.notOpen_day.courses_title }}</p>
-              <p class="font-weight-bold mb-0" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+    
+      <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
+        <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white">
+          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fvue-training-og.png?alt=media&token=9d762cc3-2edd-42d9-8cad-380207c8cf96" alt="Vue 作品實戰班首圖" class="img-fluid w-100">
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">需有 CSS、JS 底子</span></i>
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="mb-3">Vue 作品實戰班</h4>
+            <p class="text-muted font-weight-bold mb-2">帶您做出前端面試作品</p>
+            <p class="text-muted mb-3">以「 求職面試作品 」為導向，八週帶你做出面試專用作品，成為 JS 實戰小能手。</p>
+            <div class="text-muted"><ul class="landing-training-detail list-unstyled text-muted mb-0"><li><i class="fas fa-check"></i> 8 堂直播課程</li><li><i class="fas fa-check"></i> 30 小時以上的影音教學資源</li><li><li><i class="fas fa-check"></i> 30 支專屬 RESTful API</li><i class="fas fa-check"></i> 完成專屬獨立的面試作品</li></ul></div>
+          </div>
+          <div class="mt-auto mx-3 border-top border-bottom">
+            <div class="d-flex justify-content-between align-items-center py-3 mx-1">
+              <p class="font-weight-bold mb-0" v-if="trainingStatus.vue.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.vue.day.courses_start_at }}</p>
+              <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
+              <div v-else>
+                <p class="font-weight-bold mb-0" v-if="trainingWait.vue.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.vue.notOpen_day.courses_title }}</p>
+                <p class="font-weight-bold mb-0" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="d-flex justify-content-between px-3 py-3 align-items-center">
-          <p v-if="trainingStatus.vue.status" class="mb-0 font-small-for-course-list text-muted"><small><del>原價：15,000</del></small></p>
-          <p v-if="trainingStatus.vue.status" class="mb-0 font-weight-bold font-column-4-button">NT$ 7,899</p>
-          <p v-else class="mb-0 mx-auto font-weight-bold font-column-4-button">
-            <span v-if="trainingWait.vue.notOpen_day.start_subscribe">課程預約中</span>
-            <span v-else class="text-muted">課程準備中</span>
-          </p>
-        </div>
-        <div class="d-flex flex-lg-column flex-xl-row align-items-baseline px-3 pb-3">
-          <a href="/courses/vue-training.html#recommend" v-if="trainingStatus.vue.status" target="_blank" class="btn btn-block btn-dark mr-2 landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="Vue 作品實戰班">開放報名中</a>
-          <div v-else class="w-100 mr-2 mb-xl-0 mb-lg-2 mb-0">
-            <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.vue.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking text-nowrap" data-type="subscribe" data-course="Vue 作品實戰班">可報名通知我</a>
-            <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled">未開放訂閱</a>
+          <div class="d-flex justify-content-between px-3 py-3 align-items-center">
+            <p v-if="trainingStatus.vue.status" class="mb-0 font-small-for-course-list text-muted"><small><del>原價：15,000</del></small></p>
+            <p v-if="trainingStatus.vue.status" class="mb-0 font-weight-bold font-column-4-button">NT$ 7,899</p>
+            <p v-else class="mb-0 mx-auto font-weight-bold font-column-4-button">
+              <span v-if="trainingWait.vue.notOpen_day.start_subscribe">課程預約中</span>
+              <span v-else class="text-muted">課程準備中</span>
+            </p>
           </div>
-          <a href="/courses/vue-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="Vue 作品實戰班">課程內容</a>
+          <div class="d-flex flex-lg-column flex-xl-row align-items-baseline px-3 pb-3">
+            <a href="/courses/vue-training.html#recommend" v-if="trainingStatus.vue.status" target="_blank" class="btn btn-block btn-dark mr-2 landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="Vue 作品實戰班">開放報名中</a>
+            <div v-else class="w-100 mr-2 mb-xl-0 mb-lg-2 mb-0">
+              <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.vue.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking text-nowrap" data-type="subscribe" data-course="Vue 作品實戰班">可報名通知我</a>
+              <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled">未開放訂閱</a>
+            </div>
+            <a href="/courses/vue-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="Vue 作品實戰班">課程內容</a>
+          </div>
         </div>
       </div>
-    </div>
+    
+  
+    
   
 </div>
 
@@ -3631,8 +3571,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1617783003018"></script>
-<script src="/js/all.js?1617783003018"></script>
+<script src="/js/vendor.js?1617857590867"></script>
+<script src="/js/all.js?1617857590867"></script>
 <script src="/js/wow.min.js"></script>
 
 

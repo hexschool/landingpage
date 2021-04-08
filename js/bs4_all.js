@@ -334,6 +334,66 @@ $(document).ready(function() {
       }
     }
   });
+  swiper = new Swiper('.ui-training-works', {
+    effect: 'coverflow',
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 100,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true
+    },
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.ui-training-works-next',
+      prevEl: '.ui-training-works-prev'
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
+    }
+  });
+  swiper = new Swiper('.ui-training-comment', {
+    freeMode: true,
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      476: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      968: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    }
+  });
   $('#trainingHW').on('click', function(event) {
     var checkValue;
     checkValue = $(this)[0].checked;

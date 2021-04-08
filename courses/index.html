@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1617783001553">
+  <link rel="stylesheet" href="/stylesheets/all.css?1617857589525">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -262,12 +262,16 @@
           
             
           
+            
+          
         
           
             
           
             
             <a href="/courses/js-training.html" class="drop-click link-white d-block py-1 font-weight-light">JavaScript 工程師養成直播班</a>
+            
+          
             
           
             
@@ -280,6 +284,20 @@
           
             
             <a href="/courses/vue-training.html" class="drop-click link-white d-block py-1 font-weight-light">Vue 作品實戰班</a>
+            
+          
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+            <a href="/courses/ui-training.html" class="drop-click link-white d-block py-1 font-weight-light">UI 設計觀念必修直播班</a>
             
           
         
@@ -1308,10 +1326,10 @@
             <p class="mb-0"><p>學會如何使用 Vue.js 開發前端網站，並熟悉相關工具的運用，最終完成電子商務類型的網站。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.vue3">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.vue3 && (course.vue3.detail.hasOwnProperty('num_subscribers') || course.vue3.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled"> 300 </span>
+            <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.hasOwnProperty('num_subscribers')? course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled : course.vue3.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.vue3.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -1394,10 +1412,10 @@
             <p class="mb-0"><ul><li>從無到有學會網頁設計</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html && (course.html.detail.hasOwnProperty('num_subscribers') || course.html.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.num_subscribers + course.html.teachableData.enrolled"> 300 </span>
+            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.hasOwnProperty('num_subscribers')? course.html.detail.num_subscribers + course.html.teachableData.enrolled : course.html.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.html.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -1491,10 +1509,10 @@
             <p class="mb-0"><ul><li>輕鬆了解互動式網頁技巧</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jqueryAni">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jqueryAni && (course.jqueryAni.detail.hasOwnProperty('num_subscribers') || course.jqueryAni.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled"> 300 </span>
+            <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.hasOwnProperty('num_subscribers')? course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled : course.jqueryAni.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.jqueryAni.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -1588,10 +1606,10 @@
             <p class="mb-0"><ul><li>輕易掌握手機版網頁設計</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.responsive">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.responsive && (course.responsive.detail.hasOwnProperty('num_subscribers') || course.responsive.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled"> 300 </span>
+            <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.hasOwnProperty('num_subscribers')? course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled : course.responsive.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.responsive.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -1685,10 +1703,10 @@
             <p class="mb-0"><p>Sass 實戰指南教您打造出易擴充、易維護的高品質 CSS 架構，了解業界管理規範，成為 1% 的 CSS 頂尖好手！</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.sass">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.sass && (course.sass.detail.hasOwnProperty('num_subscribers') || course.sass.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.sass.teachableData.enrolled" v-text="course.sass.detail.num_subscribers + course.sass.teachableData.enrolled"> 300 </span>
+            <span v-if="course.sass.teachableData.enrolled" v-text="course.sass.detail.hasOwnProperty('num_subscribers')? course.sass.detail.num_subscribers + course.sass.teachableData.enrolled : course.sass.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.sass.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -1782,10 +1800,10 @@
             <p class="mb-0"><p>學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled"> 300 </span>
+            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -1881,10 +1899,10 @@
             <p class="mb-0"><p>將一步步帶領學員從操作到實作，進而體會 Adobe XD 這套軟體的強大之處，也會搭配隨堂練習來溫習各個章節學到的知識。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.xd">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.xd && (course.xd.detail.hasOwnProperty('num_subscribers') || course.xd.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.num_subscribers + course.xd.teachableData.enrolled"> 300 </span>
+            <span v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.hasOwnProperty('num_subscribers')? course.xd.detail.num_subscribers + course.xd.teachableData.enrolled : course.xd.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.xd.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -1980,10 +1998,10 @@
             <p class="mb-0"><p>從底層觀念到實務操作，教你畫出有程式邏輯的電商 UI 設計稿。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.ui">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.ui && (course.ui.detail.hasOwnProperty('num_subscribers') || course.ui.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.num_subscribers + course.ui.teachableData.enrolled"> 300 </span>
+            <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.hasOwnProperty('num_subscribers')? course.ui.detail.num_subscribers + course.ui.teachableData.enrolled : course.ui.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.ui.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -2077,10 +2095,10 @@
             <p class="mb-0"><ul><li>深入了解 JS 核心運作</li><li>輕鬆破解各路奇怪問題</li><li>大量測驗，驗證運作觀念</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jscore">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jscore && (course.jscore.detail.hasOwnProperty('num_subscribers') || course.jscore.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled"> 300 </span>
+            <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.hasOwnProperty('num_subscribers')? course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled : course.jscore.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.jscore.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -2174,10 +2192,10 @@
             <p class="mb-0"><ul><li>將會具備紮實並全面性的 JS 觀念</li><li>大量的線上測驗將每章節的融會貫通</li><li>期末考作業，講師為您評估學習狀況</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.javascript">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.javascript && (course.javascript.detail.hasOwnProperty('num_subscribers') || course.javascript.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled"> 300 </span>
+            <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.hasOwnProperty('num_subscribers')? course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled : course.javascript.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.javascript.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -2271,10 +2289,10 @@
             <p class="mb-0"><p>Node.js 從原理教學到業界實務應用，幫你融會貫通，展現優秀即戰力！。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.nodejs">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.nodejs && (course.nodejs.detail.hasOwnProperty('num_subscribers') || course.nodejs.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.nodejs.teachableData.enrolled" v-text="course.nodejs.detail.num_subscribers + course.nodejs.teachableData.enrolled"> 300 </span>
+            <span v-if="course.nodejs.teachableData.enrolled" v-text="course.nodejs.detail.hasOwnProperty('num_subscribers')? course.nodejs.detail.num_subscribers + course.nodejs.teachableData.enrolled : course.nodejs.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.nodejs.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -2368,10 +2386,10 @@
             <p class="mb-0"><p>教您用 JavaScript 追蹤使用者行為，同時將數據傳送至 Google Analytics、Facebook 平台，藉由數據分析讓您與行銷部門聯手共創佳績！</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gh">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gh && (course.gh.detail.hasOwnProperty('num_subscribers') || course.gh.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.gh.teachableData.enrolled" v-text="course.gh.detail.num_subscribers + course.gh.teachableData.enrolled"> 300 </span>
+            <span v-if="course.gh.teachableData.enrolled" v-text="course.gh.detail.hasOwnProperty('num_subscribers')? course.gh.detail.num_subscribers + course.gh.teachableData.enrolled : course.gh.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.gh.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -2460,10 +2478,10 @@
             <p class="mb-0"><ul><li>基礎 Git 心法</li><li>各平台的 Command Line 教學</li><li>團隊合作的 Git 使用方法</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.learngit">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.learngit && (course.learngit.detail.hasOwnProperty('num_subscribers') || course.learngit.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.learngit.teachableData.enrolled" v-text="course.learngit.detail.num_subscribers + course.learngit.teachableData.enrolled"> 300 </span>
+            <span v-if="course.learngit.teachableData.enrolled" v-text="course.learngit.detail.hasOwnProperty('num_subscribers')? course.learngit.detail.num_subscribers + course.learngit.teachableData.enrolled : course.learngit.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.learngit.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -2552,10 +2570,10 @@
             <p class="mb-0"><p>最佳化你的流程，將你寶貴的時間專注在重要的開發上，課程將會教你怎樣製作自己的自動化工具。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gulp">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gulp && (course.gulp.detail.hasOwnProperty('num_subscribers') || course.gulp.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.gulp.teachableData.enrolled" v-text="course.gulp.detail.num_subscribers + course.gulp.teachableData.enrolled"> 300 </span>
+            <span v-if="course.gulp.teachableData.enrolled" v-text="course.gulp.detail.hasOwnProperty('num_subscribers')? course.gulp.detail.num_subscribers + course.gulp.teachableData.enrolled : course.gulp.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.gulp.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -2644,10 +2662,10 @@
             <p class="mb-0"><p>身為工程師，編寫程式碼最重要的工具就是使用的電腦及開啟的文字編輯器，而 Visual Studio Code 是這幾年的首選文字編輯器。 VSCode 開發功能大解密教你掌握前端工程師必備技能。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.vscode">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.vscode && (course.vscode.detail.hasOwnProperty('num_subscribers') || course.vscode.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.vscode.teachableData.enrolled" v-text="course.vscode.detail.num_subscribers + course.vscode.teachableData.enrolled"> 300 </span>
+            <span v-if="course.vscode.teachableData.enrolled" v-text="course.vscode.detail.hasOwnProperty('num_subscribers')? course.vscode.detail.num_subscribers + course.vscode.teachableData.enrolled : course.vscode.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.vscode.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4175,6 +4193,8 @@
                   
                     
                   
+                    
+                  
                 
                   
                     
@@ -4209,6 +4229,8 @@
                   
                     
                   
+                    
+                  
                 
                   
                     
@@ -4231,6 +4253,44 @@
                               <p class="mb-1" v-if="trainingWait.vue.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.vue.notOpen_day.courses_title }}</small></p>
                               <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
                               <div v-if="trainingWait.vue.notOpen_day.start_subscribe">
+                                <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
+                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                              </div>
+                              <div v-else>
+                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    
+                  
+                    
+                  
+                
+                  
+                    
+                  
+                    
+                  
+                    
+                  
+                    
+                      <li class="col-lg-4 col-md-6 mt-lg-0 mt-3 nav-item">
+                        <div class="course-area-link h-100 bg-white card border-0 rounded-0" data-url="/courses/ui-training.html">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fui-training%2F10-fb-og.png?alt=media&token=0a5b83b5-aff7-48ea-902f-464fd0d988da" alt="" class="img-fluid card-img-top">
+                          <div class="card-body border-0 rounded-0">
+                            <h5 class="text-dark mt-2 mb-1">UI 設計觀念必修直播班</h5>
+                            <span class="badge badge-warning rounded-0">適合 UI 設計新手</span>
+                            <p class="mt-2 text-dark"></p>
+                            <div class="mb-2" v-if="trainingStatus.ui.status">
+                              <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.ui.day.courses_start_at }}</small></p>
+                              <a href="/courses/ui-training.html" target="_blank" class="btn btn-primary">開放報名中！</a>
+                            </div>
+                            <div class="mb-2" v-else>
+                              <p class="mb-1" v-if="trainingWait.ui.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.ui.notOpen_day.courses_title }}</small></p>
+                              <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
+                              <div v-if="trainingWait.ui.notOpen_day.start_subscribe">
                                 <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
                                 <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
                               </div>
@@ -4280,10 +4340,10 @@
             <p class="mb-0"><p>從底層觀念到實務操作，教你畫出有程式邏輯的電商 UI 設計稿。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.ui">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.ui && (course.ui.detail.hasOwnProperty('num_subscribers') || course.ui.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.num_subscribers + course.ui.teachableData.enrolled"> 300 </span>
+            <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.hasOwnProperty('num_subscribers')? course.ui.detail.num_subscribers + course.ui.teachableData.enrolled : course.ui.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.ui.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4377,10 +4437,10 @@
             <p class="mb-0"><ul><li>從無到有學會網頁設計</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html && (course.html.detail.hasOwnProperty('num_subscribers') || course.html.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.num_subscribers + course.html.teachableData.enrolled"> 300 </span>
+            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.hasOwnProperty('num_subscribers')? course.html.detail.num_subscribers + course.html.teachableData.enrolled : course.html.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.html.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4474,10 +4534,10 @@
             <p class="mb-0"><ul><li>輕鬆了解互動式網頁技巧</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jqueryAni">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jqueryAni && (course.jqueryAni.detail.hasOwnProperty('num_subscribers') || course.jqueryAni.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled"> 300 </span>
+            <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.hasOwnProperty('num_subscribers')? course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled : course.jqueryAni.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.jqueryAni.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4571,10 +4631,10 @@
             <p class="mb-0"><ul><li>輕易掌握手機版網頁設計</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.responsive">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.responsive && (course.responsive.detail.hasOwnProperty('num_subscribers') || course.responsive.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled"> 300 </span>
+            <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.hasOwnProperty('num_subscribers')? course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled : course.responsive.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.responsive.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4668,10 +4728,10 @@
             <p class="mb-0"><p>Sass 實戰指南教您打造出易擴充、易維護的高品質 CSS 架構，了解業界管理規範，成為 1% 的 CSS 頂尖好手！</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.sass">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.sass && (course.sass.detail.hasOwnProperty('num_subscribers') || course.sass.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.sass.teachableData.enrolled" v-text="course.sass.detail.num_subscribers + course.sass.teachableData.enrolled"> 300 </span>
+            <span v-if="course.sass.teachableData.enrolled" v-text="course.sass.detail.hasOwnProperty('num_subscribers')? course.sass.detail.num_subscribers + course.sass.teachableData.enrolled : course.sass.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.sass.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4765,10 +4825,10 @@
             <p class="mb-0"><p>學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled"> 300 </span>
+            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4875,10 +4935,10 @@
             <p class="mb-0"><ul><li>從無到有學會網頁設計</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html && (course.html.detail.hasOwnProperty('num_subscribers') || course.html.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.num_subscribers + course.html.teachableData.enrolled"> 300 </span>
+            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.hasOwnProperty('num_subscribers')? course.html.detail.num_subscribers + course.html.teachableData.enrolled : course.html.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.html.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -4972,10 +5032,10 @@
             <p class="mb-0"><ul><li>輕鬆了解互動式網頁技巧</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jqueryAni">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jqueryAni && (course.jqueryAni.detail.hasOwnProperty('num_subscribers') || course.jqueryAni.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled"> 300 </span>
+            <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.hasOwnProperty('num_subscribers')? course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled : course.jqueryAni.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.jqueryAni.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5069,10 +5129,10 @@
             <p class="mb-0"><ul><li>輕易掌握手機版網頁設計</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.responsive">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.responsive && (course.responsive.detail.hasOwnProperty('num_subscribers') || course.responsive.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled"> 300 </span>
+            <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.hasOwnProperty('num_subscribers')? course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled : course.responsive.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.responsive.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5166,10 +5226,10 @@
             <p class="mb-0"><p>Sass 實戰指南教您打造出易擴充、易維護的高品質 CSS 架構，了解業界管理規範，成為 1% 的 CSS 頂尖好手！</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.sass">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.sass && (course.sass.detail.hasOwnProperty('num_subscribers') || course.sass.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.sass.teachableData.enrolled" v-text="course.sass.detail.num_subscribers + course.sass.teachableData.enrolled"> 300 </span>
+            <span v-if="course.sass.teachableData.enrolled" v-text="course.sass.detail.hasOwnProperty('num_subscribers')? course.sass.detail.num_subscribers + course.sass.teachableData.enrolled : course.sass.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.sass.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5263,10 +5323,10 @@
             <p class="mb-0"><p>學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled"> 300 </span>
+            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5360,10 +5420,10 @@
             <p class="mb-0"><ul><li>將會具備紮實並全面性的 JS 觀念</li><li>大量的線上測驗將每章節的融會貫通</li><li>期末考作業，講師為您評估學習狀況</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.javascript">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.javascript && (course.javascript.detail.hasOwnProperty('num_subscribers') || course.javascript.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled"> 300 </span>
+            <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.hasOwnProperty('num_subscribers')? course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled : course.javascript.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.javascript.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5457,10 +5517,10 @@
             <p class="mb-0"><ul><li>深入了解 JS 核心運作</li><li>輕鬆破解各路奇怪問題</li><li>大量測驗，驗證運作觀念</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jscore">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.jscore && (course.jscore.detail.hasOwnProperty('num_subscribers') || course.jscore.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled"> 300 </span>
+            <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.hasOwnProperty('num_subscribers')? course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled : course.jscore.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.jscore.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5556,10 +5616,10 @@
             <p class="mb-0"><p>學會如何使用 Vue.js 開發前端網站，並熟悉相關工具的運用，最終完成電子商務類型的網站。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.vue3">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.vue3 && (course.vue3.detail.hasOwnProperty('num_subscribers') || course.vue3.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled"> 300 </span>
+            <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.hasOwnProperty('num_subscribers')? course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled : course.vue3.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.vue3.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5642,10 +5702,10 @@
             <p class="mb-0"><p>最佳化你的流程，將你寶貴的時間專注在重要的開發上，課程將會教你怎樣製作自己的自動化工具。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gulp">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gulp && (course.gulp.detail.hasOwnProperty('num_subscribers') || course.gulp.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.gulp.teachableData.enrolled" v-text="course.gulp.detail.num_subscribers + course.gulp.teachableData.enrolled"> 300 </span>
+            <span v-if="course.gulp.teachableData.enrolled" v-text="course.gulp.detail.hasOwnProperty('num_subscribers')? course.gulp.detail.num_subscribers + course.gulp.teachableData.enrolled : course.gulp.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.gulp.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5734,10 +5794,10 @@
             <p class="mb-0"><ul><li>基礎 Git 心法</li><li>各平台的 Command Line 教學</li><li>團隊合作的 Git 使用方法</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.learngit">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.learngit && (course.learngit.detail.hasOwnProperty('num_subscribers') || course.learngit.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.learngit.teachableData.enrolled" v-text="course.learngit.detail.num_subscribers + course.learngit.teachableData.enrolled"> 300 </span>
+            <span v-if="course.learngit.teachableData.enrolled" v-text="course.learngit.detail.hasOwnProperty('num_subscribers')? course.learngit.detail.num_subscribers + course.learngit.teachableData.enrolled : course.learngit.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.learngit.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5839,10 +5899,10 @@
             <p class="mb-0"><ul><li>從無到有學會網頁設計</li><li>每週三線上傳授業界實務心法</li><li>專業工程師為你檢視網頁程式碼</li></ul></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.html && (course.html.detail.hasOwnProperty('num_subscribers') || course.html.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.num_subscribers + course.html.teachableData.enrolled"> 300 </span>
+            <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.hasOwnProperty('num_subscribers')? course.html.detail.num_subscribers + course.html.teachableData.enrolled : course.html.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.html.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -5938,10 +5998,10 @@
             <p class="mb-0"><p>將一步步帶領學員從操作到實作，進而體會 Adobe XD 這套軟體的強大之處，也會搭配隨堂練習來溫習各個章節學到的知識。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.xd">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.xd && (course.xd.detail.hasOwnProperty('num_subscribers') || course.xd.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.num_subscribers + course.xd.teachableData.enrolled"> 300 </span>
+            <span v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.hasOwnProperty('num_subscribers')? course.xd.detail.num_subscribers + course.xd.teachableData.enrolled : course.xd.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.xd.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -6037,10 +6097,10 @@
             <p class="mb-0"><p>從底層觀念到實務操作，教你畫出有程式邏輯的電商 UI 設計稿。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.ui">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.ui && (course.ui.detail.hasOwnProperty('num_subscribers') || course.ui.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.num_subscribers + course.ui.teachableData.enrolled"> 300 </span>
+            <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.hasOwnProperty('num_subscribers')? course.ui.detail.num_subscribers + course.ui.teachableData.enrolled : course.ui.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.ui.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -6147,10 +6207,10 @@
             <p class="mb-0"><p>Node.js 從原理教學到業界實務應用，幫你融會貫通，展現優秀即戰力！。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.nodejs">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.nodejs && (course.nodejs.detail.hasOwnProperty('num_subscribers') || course.nodejs.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.nodejs.teachableData.enrolled" v-text="course.nodejs.detail.num_subscribers + course.nodejs.teachableData.enrolled"> 300 </span>
+            <span v-if="course.nodejs.teachableData.enrolled" v-text="course.nodejs.detail.hasOwnProperty('num_subscribers')? course.nodejs.detail.num_subscribers + course.nodejs.teachableData.enrolled : course.nodejs.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.nodejs.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -6244,10 +6304,10 @@
             <p class="mb-0"><p>教您用 JavaScript 追蹤使用者行為，同時將數據傳送至 Google Analytics、Facebook 平台，藉由數據分析讓您與行銷部門聯手共創佳績！</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gh">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.gh && (course.gh.detail.hasOwnProperty('num_subscribers') || course.gh.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.gh.teachableData.enrolled" v-text="course.gh.detail.num_subscribers + course.gh.teachableData.enrolled"> 300 </span>
+            <span v-if="course.gh.teachableData.enrolled" v-text="course.gh.detail.hasOwnProperty('num_subscribers')? course.gh.detail.num_subscribers + course.gh.teachableData.enrolled : course.gh.teachableData.enrolled"> 300 </span>
             <span v-else v-text="course.gh.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
@@ -6940,8 +7000,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1617783001561"></script>
-<script src="/js/all.js?1617783001561"></script>
+<script src="/js/vendor.js?1617857589530"></script>
+<script src="/js/all.js?1617857589530"></script>
 <script src="/js/wow.min.js"></script>
 
 
