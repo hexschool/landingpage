@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1617979347864">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1617983962413">
   <!-- Global styles END -->
 
   
@@ -1007,14 +1007,15 @@
               </ul>
             </div>
             <div class="form-check d-md-inline-block">
-              <input class="form-check-input training-checked" type="checkbox" id="vue-training-checked">
+              <input class="form-check-input training-checked disabled" type="checkbox" id="vue-training-checked" disabled>
               <label class="form-check-label" for="vue-training-checked">
                 當然，我就是來練功變強的！
               </label>
             </div>
-            <a href="https://shop.hexschool.com/order/create?coupon_code=2021_VUE3_VUE_TRAINING_MAR_1&phyProduct%5B%5D=-M7klmVj7JKm8uhH_PDp&phyProductSpec%5B%5D=-MOUJRMHkm9dYk9JdJIw" title="Vue 作品實戰班" id="trainingBuyBtn" data-toggle="modal" data-target="#orderModal" data-price="7899" data-title="Vue 作品實戰班" data-paylink="https://shop.hexschool.com/order/create?coupon_code=2021_VUE3_VUE_TRAINING_MAR_1&phyProduct%5B%5D=-M7klmVj7JKm8uhH_PDp&phyProductSpec%5B%5D=-MOUJRMHkm9dYk9JdJIw" itemprop="url" target="_blank" rel="noopener" class="join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 mp-click tracking-link d-flex justify-content-center align-items-center disabled" disabled>
-              立即註冊
-              <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+            <a href="#" title="Vue 作品實戰班" id="trainingBuyBtn" data-toggle="modal" data-target="#orderModal" data-price="7899" data-title="Vue 作品實戰班" data-paylink="#" itemprop="url" target="_blank" rel="noopener" class="join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 mp-click tracking-link d-flex justify-content-center align-items-center disabled" disabled>
+              <!-- 立即註冊
+              <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i> -->
+              立即註冊(已額滿)
               </a>
           </div>
         </div>
@@ -1035,12 +1036,12 @@
     <!-- 如果個別頁面有需要倒數 -->
      <!-- 判斷哪些頁面用 page-footer-clock -->
       
-         <!-- page id 和 theme.page_footer_clock_target 的設定相同 -->
+        
           <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
   <div class="container">
-    <div class="d-flex align-items-center justify-content-md-center justify-content-center w-100">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-center">Vue 作品實戰班 註冊倒數</span>
+        <span class="mr-md-5 font-weight-bold text-left">Vue 3 實戰影音課程</span>
         
         <div class="d-flex justify-content-start text-white text-nowrap">
           
@@ -1050,14 +1051,24 @@
       </div>
       <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
         
+          <a href="/courses/vue3.html"
+            class="btn btn-dark btn-sm rounded-0">
+            連結
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
       </div>
     </div>
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2021/04/10">
+  <input type="hidden" id="footer-clock" value="2021/04/12">
 
-          
+        
+      
+    
+  
+
   </div>
   
 <div class="modal fade" id="orderModal" tabindex="-1">
@@ -1214,8 +1225,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1617979347865"></script>
-<script src="/js/bs4_all.js?1617979347865"></script>
+<script src="/js/bs4_vendor.js?1617983962414"></script>
+<script src="/js/bs4_all.js?1617983962414"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
