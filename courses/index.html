@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1617937618705">
+  <link rel="stylesheet" href="/stylesheets/all.css?1617946750783">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -2847,10 +2847,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">HTML、CSS 開發網站</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.html && (course.html.detail.hasOwnProperty('num_subscribers') || course.html.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.num_subscribers + course.html.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.hasOwnProperty('num_subscribers')? course.html.detail.num_subscribers + course.html.teachableData.enrolled : course.html.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.html.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -2911,10 +2911,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">jQuery 打造互動性網頁效果</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.jqueryAni && (course.jqueryAni.detail.hasOwnProperty('num_subscribers') || course.jqueryAni.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.hasOwnProperty('num_subscribers')? course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled : course.jqueryAni.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.jqueryAni.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -2975,10 +2975,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">一變應萬變的響應式網頁設計</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.responsive && (course.responsive.detail.hasOwnProperty('num_subscribers') || course.responsive.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.hasOwnProperty('num_subscribers')? course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled : course.responsive.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.responsive.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3041,10 +3041,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">Bootstrap 4 - 開發超強不解釋</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3178,10 +3178,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">Vue 3 實戰影音課程</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.vue3 && (course.vue3.detail.hasOwnProperty('num_subscribers') || course.vue3.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.hasOwnProperty('num_subscribers')? course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled : course.vue3.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.vue3.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3256,10 +3256,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">JavaScript 入門 - 學徒的試煉</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.javascript && (course.javascript.detail.hasOwnProperty('num_subscribers') || course.javascript.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.hasOwnProperty('num_subscribers')? course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled : course.javascript.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.javascript.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3316,10 +3316,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">JavaScript 核心篇</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.jscore && (course.jscore.detail.hasOwnProperty('num_subscribers') || course.jscore.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.hasOwnProperty('num_subscribers')? course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled : course.jscore.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.jscore.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3447,10 +3447,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">HTML、CSS 開發網站</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.html && (course.html.detail.hasOwnProperty('num_subscribers') || course.html.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.num_subscribers + course.html.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.html.teachableData.enrolled" v-text="course.html.detail.hasOwnProperty('num_subscribers')? course.html.detail.num_subscribers + course.html.teachableData.enrolled : course.html.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.html.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3511,10 +3511,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">jQuery 打造互動性網頁效果</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.jqueryAni && (course.jqueryAni.detail.hasOwnProperty('num_subscribers') || course.jqueryAni.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.jqueryAni.teachableData.enrolled" v-text="course.jqueryAni.detail.hasOwnProperty('num_subscribers')? course.jqueryAni.detail.num_subscribers + course.jqueryAni.teachableData.enrolled : course.jqueryAni.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.jqueryAni.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3587,10 +3587,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">JavaScript 入門 - 學徒的試煉</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.javascript && (course.javascript.detail.hasOwnProperty('num_subscribers') || course.javascript.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.javascript.teachableData.enrolled" v-text="course.javascript.detail.hasOwnProperty('num_subscribers')? course.javascript.detail.num_subscribers + course.javascript.teachableData.enrolled : course.javascript.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.javascript.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3647,10 +3647,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">JavaScript 核心篇</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.jscore && (course.jscore.detail.hasOwnProperty('num_subscribers') || course.jscore.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.jscore.teachableData.enrolled" v-text="course.jscore.detail.hasOwnProperty('num_subscribers')? course.jscore.detail.num_subscribers + course.jscore.teachableData.enrolled : course.jscore.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.jscore.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3699,10 +3699,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">一變應萬變的響應式網頁設計</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.responsive && (course.responsive.detail.hasOwnProperty('num_subscribers') || course.responsive.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.responsive.teachableData.enrolled" v-text="course.responsive.detail.hasOwnProperty('num_subscribers')? course.responsive.detail.num_subscribers + course.responsive.teachableData.enrolled : course.responsive.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.responsive.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3765,10 +3765,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">Bootstrap 4 - 開發超強不解釋</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3817,10 +3817,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">Vue 3 實戰影音課程</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.vue3 && (course.vue3.detail.hasOwnProperty('num_subscribers') || course.vue3.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.hasOwnProperty('num_subscribers')? course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled : course.vue3.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.vue3.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -3974,10 +3974,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">UI 設計入門：畫出有程式邏輯的設計稿</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.ui && (course.ui.detail.hasOwnProperty('num_subscribers') || course.ui.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.num_subscribers + course.ui.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.ui.teachableData.enrolled" v-text="course.ui.detail.hasOwnProperty('num_subscribers')? course.ui.detail.num_subscribers + course.ui.teachableData.enrolled : course.ui.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.ui.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -4034,10 +4034,10 @@
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
                                 <p class="font-weight-bold mb-md-2 mb-0">Adobe XD：網頁設計真容易</p>
                                 <div class="d-flex flex-md-column flex-row mt-auto justify-content-between align-items-md-start align-items-end">
-                                  <p class="text-muted mb-1">
+                                  <p class="text-muted mb-1" v-if="course.xd && (course.xd.detail.hasOwnProperty('num_subscribers') || course.xd.teachableData.hasOwnProperty('enrolled'))">
                                     <i class="fas fa-user text-dark mr-1"></i>
                                     <span style="font-size: 14px;">
-                                    <span v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.num_subscribers + course.xd.teachableData.enrolled"> 300 </span>
+                                    <span v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.hasOwnProperty('num_subscribers')? course.xd.detail.num_subscribers + course.xd.teachableData.enrolled : course.xd.teachableData.enrolled"> 300 </span>
                                     <span v-else v-text="course.xd.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
                                   </p>
                                   <div class="d-flex justify-content-between d-none combined-course-content">
@@ -7000,8 +7000,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1617937618711"></script>
-<script src="/js/all.js?1617937618711"></script>
+<script src="/js/vendor.js?1617946750790"></script>
+<script src="/js/all.js?1617946750790"></script>
 <script src="/js/wow.min.js"></script>
 
 
