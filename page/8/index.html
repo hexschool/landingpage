@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1617862067844">
+  <link rel="stylesheet" href="/stylesheets/all.css?1617936764823">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -255,6 +255,8 @@
         
           
             
+          
+            
             <a href="/courses/web-layout-training-1st.html" class="drop-click link-white d-block py-1 font-weight-light">網頁切版直播班</a>
             
           
@@ -262,9 +264,9 @@
           
             
           
-            
-          
         
+          
+            
           
             
           
@@ -274,9 +276,9 @@
           
             
           
-            
-          
         
+          
+            
           
             
           
@@ -286,18 +288,16 @@
             <a href="/courses/vue-training.html" class="drop-click link-white d-block py-1 font-weight-light">Vue 作品實戰班</a>
             
           
-            
-          
         
           
             
-          
-            
-          
-            
-          
-            
             <a href="/courses/ui-training.html" class="drop-click link-white d-block py-1 font-weight-light">UI 設計觀念必修直播班</a>
+            
+          
+            
+          
+            
+          
             
           
         
@@ -2334,14 +2334,8 @@
     </h2>
     <p class="mb-4 text-secondary text-center">適合一週能拿出 10～15 小時練習作業、想在短期內大幅度成長的學員</p>
   </div>
-  <div id="trainingHorizontal" class="mb-6 container-lg">
+  <div id="trainingHorizontal" class="mb-6 container-lg d-md-block d-none">
     <div class="" id="training-horizontal">
-  
-    
-  
-    
-  
-    
   
     
       <div class="w-100 d-flex my-3 landing-training-shadow rounded overflow">
@@ -2392,12 +2386,61 @@
       </div>
     
   
+    
+  
+    
+  
+    
+  
 </div>
 
   </div>
   <div class="container">
     <div id="trainingStraight" class="mb-6">
       <div class="row justify-content-center" id="course">
+  
+    
+      <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5 d-md-none d-block">
+        <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white">
+          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fui-training%2F10-fb-og.png?alt=media&token=0a5b83b5-aff7-48ea-902f-464fd0d988da" alt="UI 設計觀念必修直播班首圖" class="img-fluid w-100">
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <i class="fas fa-medal"> <span class="text-secondary" style="font-size: 14px;">適合 UI 設計新手</span></i>
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="mb-3">UI 設計觀念必修直播班</h4>
+            <p class="text-muted font-weight-bold mb-2"></p>
+            <p class="text-muted mb-3"></p>
+            <div class="text-muted"><ul class="landing-training-detail list-unstyled mb-0"><li><i class="fas fa-check text-primary-light"></i> 4 堂直播課程</li><li><i class="fas fa-check text-primary-light"></i> 專屬課前影音教學資源</li><li><i class="fas fa-check text-primary-light"></i> 專屬範例與模板資源</li><li><i class="fas fa-check text-primary-light"></i> 專屬 RWD 響應式設計作品</li><li><i class="fas fa-check text-primary-light"></i> 一年時間免費課程錄影回顧 </li><li><i class="fas fa-check text-primary-light"></i> 開課期間作品檢視無次數限制</li></ul></div>
+          </div>
+          <div class="mt-auto mx-3 border-top border-bottom">
+            <div class="d-flex justify-content-between align-items-center py-3 mx-1">
+              <p class="font-weight-bold mb-0" v-if="trainingStatus.ui.status"><i class="far fa-calendar-alt"></i>  開課日期: {{ trainingStatus.ui.day.courses_start_at }}</p>
+              <!-- <span style="font-size: 12px;" class="text-muted">已有 300 人預約</span> -->
+              <div v-else>
+                <p class="font-weight-bold mb-0" v-if="trainingWait.ui.notOpen_day.courses_start_at"><i class="far fa-calendar-alt"></i> 下一梯次: {{ trainingWait.ui.notOpen_day.courses_title }}</p>
+                <p class="font-weight-bold mb-0" v-else><i class="far fa-calendar-alt"></i> 下一梯次: 尚未訂定</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between px-3 py-3 align-items-center">
+            <p v-if="trainingStatus.ui.status" class="mb-0 font-small-for-course-list text-muted"><small><del>原價：9820</del></small></p>
+            <p v-if="trainingStatus.ui.status" class="mb-0 font-weight-bold font-column-4-button">NT$ 4500</p>
+            <p v-else class="mb-0 mx-auto font-weight-bold font-column-4-button">
+              <span v-if="trainingWait.ui.notOpen_day.start_subscribe">課程預約中</span>
+              <span v-else class="text-muted">課程準備中</span>
+            </p>
+          </div>
+          <div class="d-flex flex-lg-column flex-xl-row align-items-baseline px-3 pb-3">
+            <a href="/courses/ui-training.html#recommend" v-if="trainingStatus.ui.status" target="_blank" class="btn btn-block btn-dark mr-2 landing-training-btn-padding mp-click mix-tracking" data-type="signup" data-course="UI 設計觀念必修直播班">開放報名中</a>
+            <div v-else class="w-100 mr-2 mb-xl-0 mb-lg-2 mb-0">
+              <a href="https://rpg.hexschool.com/line/webhook" v-if="trainingWait.ui.notOpen_day.start_subscribe" target="_blank" class="btn btn-block btn-outline-dark landing-training-btn-padding mp-click mix-tracking text-nowrap" data-type="subscribe" data-course="UI 設計觀念必修直播班">可報名通知我</a>
+              <a href="#" v-else class="btn btn-block btn-outline-secondary landing-training-btn-padding mp-click disabled">未開放訂閱</a>
+            </div>
+            <a href="/courses/ui-training.html" target="_blank" class="btn btn-block btn-primary landing-training-btn-padding mp-click mix-tracking" data-type="content" data-course="UI 設計觀念必修直播班">課程內容</a>
+          </div>
+        </div>
+      </div>
+    
   
     
       <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
@@ -2526,8 +2569,6 @@
           </div>
         </div>
       </div>
-    
-  
     
   
 </div>
@@ -3571,8 +3612,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1617862067849"></script>
-<script src="/js/all.js?1617862067849"></script>
+<script src="/js/vendor.js?1617936764830"></script>
+<script src="/js/all.js?1617936764830"></script>
 <script src="/js/wow.min.js"></script>
 
 
