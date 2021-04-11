@@ -44,7 +44,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1617983962333">
+  <link rel="stylesheet" href="/stylesheets/all.css?1618156796038">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -231,7 +231,7 @@
         </ul>
         <!-- <a class="reduce-padding py-4 pl-4 font-weight-bold d-md-block d-none" href="#" data-toggle="modal" data-target="#exampleModal"><i class="material-icons text-dark" style="vertical-align: middle;">search</i></a> -->
         <!-- <div class="bg-danger text-dark position-absoulte py-3 px-5 d-flex justify-content-between d-md-none" style="top: 100%">
-          <p class="font-weight-bold m-0">Vue 3 實戰影音課程</p>
+          <p class="font-weight-bold m-0">UI 設計直播班</p>
           <span class="clock m-r-1"></span>
         </div> -->
       </div>
@@ -1111,14 +1111,14 @@
           <div class="row flex-column align-items-end">
             <div class="col-8">
               
-              <a href="/courses/vue3.html" class="dropdown-clock-banner">
-                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue3%2Fvue3-og.png?alt=media&token=8ead3c7d-c33f-4805-8efd-bb99e93d4f62" alt="">
+              <a href="/courses/ui-training.html" class="dropdown-clock-banner">
+                <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fui-training%2F10-fb-og.png?alt=media&token=0a5b83b5-aff7-48ea-902f-464fd0d988da" alt="">
                 <div class="d-flex justify-content-between">
-                  <p class="py-2 px-3 bg-danger text-white font-weight-bold" style="transform: translateY(-50%); font-size: 20px;">Vue 3 實戰影音課程</p>
+                  <p class="py-2 px-3 bg-danger text-white font-weight-bold" style="transform: translateY(-50%); font-size: 20px;">UI 設計直播班</p>
                   <p class="text-white font-weight-light">
                     
-                      <span class="clock m-r-1"></span>
                     
+                      <span class="m-r-1">限額註冊！名額倒數 97 位</span>
                     
                   </p>
                 </div>
@@ -1145,8 +1145,6 @@
     <!-- END NAVIGATION -->
 </div>
 <!-- Header END -->
-
-  <input type="hidden" id="footer-clock" value="2021/04/12">
 
 
 <div class="login-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -2132,10 +2130,7 @@
                       <span class="text-danger">現在上課去 </span>
                     </h2>
                     
-                      <div class="text-primary">
-                          <strong>Vue 3 實戰影音課程</strong>
-                          <strong class="clock"></strong>
-                      </div>
+                      <div class="text-gray-light">不滿意 30 日內 <strong class="text-divrimary">全額退費</strong></div>
                     
                   </div>
                   <div class="d-flex flex-column">
@@ -2217,31 +2212,33 @@
                   <div class="d-flex flex-fill flex-column justify-content-center align-items-center text-center py-4">
                     <!-- <h5>原價 <del>2800</del></h5> -->
                     
-                    <h2>
-                      <span class="text-danger">現在上課去
-                        
-                          NT$ 2464
-                        
-                      </span>
-                    </h2>
+                      <h2 v-if="rightCoupon.course.javascript">
+                        <span class="text-danger d-flex align-items-center">
+                          現在上課去 NT$ 2,464                          <span class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1 ml-2" style="font-size: 14px;">
+                            12 % off
+                          </span>
+                        </span>
+                      </h2>
+                      <h2 v-else>
+                        <span class="text-danger">
+                          現在上課去 NT$ 2800
+                        </span>
+                      </h2>
                     
                     
-                      <div class="text-primary">
-                        <strong>Vue 3 實戰影音課程</strong>
-                        <strong class="clock"></strong>
-                      </div>
+                      <div class="text-gray-light">不滿意 30 日內 <strong class="text-divrimary">全額退費</strong></div>
                     
                   </div>
                   <div class="d-flex flex-column">
                     
-                      <a href="https://shop.hexschool.com/order/create?order=javascript&coupon_code=2021_VUE3_MAR_NEW_COURSE" data-toggle="modal" data-target="#orderModal"
+                      <a :href="'https://shop.hexschool.com/order/create?order=javascript&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" data-toggle="modal" data-target="#orderModal"
                         class="bg-danger btn btn-danger btn-to-action mp-click tracking-link couponCode-link py-4 my-0 text-right"
                         style="border-radius: 0" title="開啟 JavaScript 入門 - 學徒的試煉 支付流程"
                         data-promotions="現在上課去"
                         data-price="2464"
                         data-title="JavaScript 入門 - 學徒的試煉"
                         data-paylink="https://shop.hexschool.com/order/create?order=javascript"
-                        data-coupon="2021_VUE3_MAR_NEW_COURSE"
+                        :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
                         data-type="product"
                         data-id="javascript"
                         itemprop="url">
@@ -2341,19 +2338,19 @@
               <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2520</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 5880</p>
               
-                <a href="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=2021_VUE3_MAR_NEW_COURSE" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal"
-                    title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程"
-                    data-promotions="基礎入門 NT$5,880"
-                    data-price="5880"
-                    data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)"
-                    data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd"
-                    data-coupon="2021_VUE3_MAR_NEW_COURSE"
-                    data-type="product_group"
-                    data-id="z_bs4_html_jquery_rwd">
-                  付款上課去
-                  <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                </a>
+                <a :href="'https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-toggle="modal" data-target="#orderModal"
+                  title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程"
+                  data-promotions="基礎入門 NT$5,880"
+                  data-price="5880"
+                  data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)"
+                  data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
+                  data-type="product_group"
+                  data-id="z_bs4_html_jquery_rwd">
+                付款上課去
+                <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+              </a>
               
             </div>
           </div>
@@ -2405,19 +2402,19 @@
               <p class="mb-0 font-weight-bold d-none d-lg-block">−36 % off：NT$ 3690</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 6610</p>
               
-                <a href="https://shop.hexschool.com/order/create?order=z_js_js-core_vue3&coupon_code=2021_VUE3_MAR_NEW_COURSE&coupon_code=2021_VUE3_MAR_NEW_COURSE" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal"
-                    title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程"
-                    data-promotions="進階組合 NT$6,790"
-                    data-price="6610"
-                    data-title="JS 學徒, JS 核心, Vue 組合包"
-                    data-paylink="https://shop.hexschool.com/order/create?order=z_js_js-core_vue3&coupon_code=2021_VUE3_MAR_NEW_COURSE"
-                    data-coupon="2021_VUE3_MAR_NEW_COURSE"
-                    data-type="product_group"
-                    data-id="z_js_vue">
-                  付款上課去
-                  <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                </a>
+                <a :href="'https://shop.hexschool.com/order/create?order=z_js_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-toggle="modal" data-target="#orderModal"
+                  title="開啟 JS 學徒, JS 核心, Vue 組合包 支付流程"
+                  data-promotions="進階組合 NT$6,790"
+                  data-price="6610"
+                  data-title="JS 學徒, JS 核心, Vue 組合包"
+                  data-paylink="https://shop.hexschool.com/order/create?order=z_js_js-core_vue3"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
+                  data-type="product_group"
+                  data-id="z_js_vue">
+                付款上課去
+                <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+              </a>
               
             </div>
           </div>
@@ -2493,19 +2490,19 @@
               <p class="mb-0 font-weight-bold d-none d-lg-block">−34 % off：NT$ 6210</p>
               <p class="mb-0 font-weight-bold font-column-4-button">NT$ 12490</p>
               
-                <a href="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue3&coupon_code=2021_VUE3_MAR_NEW_COURSE&coupon_code=2021_VUE3_MAR_NEW_COURSE" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal"
-                    title="開啟 前端全組合 (不含加購品) 支付流程"
-                    data-promotions="超值組合 NT$12,070"
-                    data-price="12490"
-                    data-title="前端全組合 (不含加購品)"
-                    data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue3&coupon_code=2021_VUE3_MAR_NEW_COURSE"
-                    data-coupon="2021_VUE3_MAR_NEW_COURSE"
-                    data-type="product_group"
-                    data-id="z_bs4_rwd_html_jQuery_js_vue">
-                  付款上課去
-                  <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                </a>
+                <a :href="'https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-toggle="modal" data-target="#orderModal"
+                  title="開啟 前端全組合 (不含加購品) 支付流程"
+                  data-promotions="超值組合 NT$12,070"
+                  data-price="12490"
+                  data-title="前端全組合 (不含加購品)"
+                  data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_rwd_html_jQuery_js_js-core_vue3"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
+                  data-type="product_group"
+                  data-id="z_bs4_rwd_html_jQuery_js_vue">
+                付款上課去
+                <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+              </a>
               
             </div>
           </div>
@@ -2525,17 +2522,17 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">Vue 3 實戰影音課程</span>
+        <span class="mr-md-5 font-weight-bold text-left">UI 設計直播班</span>
+        
+          <span class="m-r-1 text-left" data-toggle="tooltip" data-placement="top" title="每日更新">限額註冊！名額倒數 97 位</span>
         
         <div class="d-flex justify-content-start text-white text-nowrap">
-          
-            <span class="clock m-r-1 font-weight-bold"></span>
           
         </div>
       </div>
       <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
         
-          <a href="/courses/vue3.html"
+          <a href="/courses/ui-training.html"
             class="btn btn-dark btn-sm rounded-0">
             連結
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -2545,8 +2542,6 @@
     </div>
   </div>
 </nav>
-
-  <input type="hidden" id="footer-clock" value="2021/04/12">
 
 
 
@@ -2755,8 +2750,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1617983962338"></script>
-<script src="/js/all.js?1617983962338"></script>
+<script src="/js/vendor.js?1618156796050"></script>
+<script src="/js/all.js?1618156796050"></script>
 <script src="/js/wow.min.js"></script>
 
 
