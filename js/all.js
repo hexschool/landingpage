@@ -20,6 +20,79 @@ helper = {
 };
 
 $(document).ready(function() {
+  var abtesting, abtestingDay, abtestingRandom, cookieAbtesting, randTesting, sawEvent, setCookie, testingEffect, testingExpiresTime, testingNow, testing_h, testing_v;
+  abtesting = 'h_test_landing_tab';
+  abtestingRandom = ['t', 'n'];
+  abtestingDay = 3;
+  testingExpiresTime = abtestingDay;
+  testing_h = $('#landingHasTab');
+  testing_v = $('#landingNoTab');
+  cookieAbtesting = $.cookie(abtesting);
+  setCookie = function(name, value) {
+    return $.cookie(name, value, {
+      expires: testingExpiresTime,
+      path: '/'
+    });
+  };
+  sawEvent = function(test) {
+    var $win, ViewContentScrollTracking;
+    ViewContentScrollTracking = false;
+    if ($('.ABTestingTemplate').length) {
+      return $win = $(window).scroll(function(e) {
+        var contentTop, winTop, windowHieght;
+        windowHieght = $(window).height() / 2;
+        winTop = $($win).scrollTop() + windowHieght;
+        contentTop = $('.ABTestingTemplate').offset().top;
+        if (winTop > contentTop && !ViewContentScrollTracking) {
+          ViewContentScrollTracking = true;
+          return mixpanel.track('ABtesting', {
+            'TestEvet': abtesting,
+            'TestRandom': test,
+            'TestExpiresTime': abtestingDay
+          });
+        }
+      });
+    }
+  };
+  testingEffect = function(test) {
+    var testingGoal;
+    testingGoal = $('.ABTestingTemplate');
+    if (testingGoal.length > 0) {
+      if (test === 't') {
+        $('#landingHasTab').addClass('d-block');
+        $('#landingNoTab').addClass('d-none');
+        $('.mix-tracking-click').on('click', function(e) {
+          return mixpanel.track('Click ABTesting', {
+            'TestEvet': 'ClickTrainingTab',
+            'TestRandom': test
+          });
+        });
+      } else {
+        $('#landingHasTab').addClass('d-none');
+        $('#landingNoTab').addClass('d-block');
+      }
+      sawEvent(test);
+      return $('.mix-tracking').on('click', function(e) {
+        return mixpanel.track('Click ABTesting', {
+          'TestEvet': 'Click ' + $(this).data('course'),
+          'TestRandom': test,
+          'TestClickType': $(this).data('type'),
+          'TestClickTarget': $(this).data('course')
+        });
+      });
+    }
+  };
+  if (!cookieAbtesting) {
+    randTesting = abtestingRandom[Math.floor(Math.random() * abtestingRandom.length)];
+    setCookie(abtesting, randTesting);
+    return testingEffect(randTesting);
+  } else {
+    testingNow = $.cookie("h_test_landing_tab");
+    return testingEffect(testingNow);
+  }
+});
+
+$(document).ready(function() {
   var abtesting, abtestingDay, abtestingRandom, cookieAbtesting, randTesting, setCookie, testing, testingEffect, testingExpiresTime;
   abtesting = 'testClass';
   abtestingRandom = ['1', '2'];
@@ -98,7 +171,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  var abtestingContact, abtestingContactDay, abtestingContactRandom, cookieAbtestingContact, randTesting, setCookie, testingContact, testingContactExpiresTime, testingContactTrack, testingEffect;
+  var abtestingContact, abtestingContactDay, abtestingContactRandom, cookieAbtestingContact, setCookie, testingContact, testingContactExpiresTime, testingContactTrack, testingEffect;
   abtestingContact = 'mobileContact';
   abtestingContactRandom = ['1', '2'];
   abtestingContactDay = 3;
@@ -120,7 +193,7 @@ $(document).ready(function() {
         });
     }
   };
-  testingContactTrack = (function(_this) {
+  return testingContactTrack = (function(_this) {
     return function(randTesting) {
       if ($(window).width() < 768) {
         $('.fab-line').one('click', function(e) {
@@ -162,14 +235,6 @@ $(document).ready(function() {
       }
     };
   })(this);
-  if (!cookieAbtestingContact) {
-    randTesting = abtestingContactRandom[Math.floor(Math.random() * abtestingContactRandom.length)];
-    return mixpanel.track('ABtesting', {
-      'TestEvet': abtestingContact,
-      'TestRandom': randTesting,
-      'TestExpiresTime': abtestingContactDay
-    });
-  }
 });
 
 $(document).ready(function() {
