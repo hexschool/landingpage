@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1619370377457">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1620097074309">
   <!-- Global styles END -->
 
   
@@ -915,6 +915,7 @@
             <p class="mb-1 mt-4"><small>下一次開課日期：2021-07-02</small></p>
             <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
             <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-primary-secondary mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+            <p class="mb-0 text-danger font-weight-bold mt-2"><span class="d-md-inline-block d-none">倒數</span> <span id="demo"></span> 開放報名</p>
           </div>
           <!-- <div class="pb-4 px-4 text-right text-dark">
             <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價 NT$ 13,200</del></p>
@@ -951,6 +952,39 @@
   //   element.muted = "muted";
   //   element.play();
   // } 
+  // Set the date we're counting down to
+  var countDownDate = new Date("MAY 6, 2021 20:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    var daysDisplay = days > 10? days : `0${days}`;
+    var hoursDisplay = hours > 10? hours : `0${hours}`;
+    var minutesDisplay = minutes > 10? minutes : `0${minutes}`;
+    var secondsDisplay = seconds > 10? seconds : `0${seconds}`;
+
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = daysDisplay + " 天 " + hoursDisplay + " 時 "
+    + minutesDisplay + " 分 " + secondsDisplay + " 秒 ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "準備開放中！";
+    }
+  }, 1000);
 </script>
 
 
@@ -961,6 +995,36 @@
 </div>
 
 
+ <!-- 開啟通用 footer 倒數-->
+   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
+    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
+        <span class="mr-md-5 font-weight-bold text-left">網頁切版班 即將開放報名</span>
+        
+        <div class="d-flex justify-content-start text-white text-nowrap">
+          
+            <span class="clock m-r-1 font-weight-bold"></span>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
+        
+          <a href="/courses/web-layout-training-1st.html"
+            class="btn btn-dark btn-sm rounded-0">
+            連結
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <input type="hidden" id="footer-clock" value="2021/05/06 20:00">
+
+  
 
   </div>
   
@@ -1025,8 +1089,8 @@
 </div>
 
 
-  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
-    
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1118,8 +1182,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1619370377458"></script>
-<script src="/js/bs4_all.js?1619370377458"></script>
+<script src="/js/bs4_vendor.js?1620097074310"></script>
+<script src="/js/bs4_all.js?1620097074310"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
