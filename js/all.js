@@ -943,7 +943,7 @@ tracker = {
 };
 
 $(document).ready(function() {
-  var $win, ViewContentScrollTracking, adsource, dimensionValue, generate_callback, getUTM, mixpanelPageView, pageTitle, setCookie;
+  var $win, ViewContentScrollTracking, adsource, dimensionValue, generateData, generateKey, generate_callback, getCookieByName, getUTM, landingViewContentScroll, mixpanelPageView, pageTitle, parseCookie, postConversionAPI, setCookie;
   setCookie = function(name, value) {
     return $.cookie(name, value, {
       expires: 1 / 24,
@@ -1020,34 +1020,6 @@ $(document).ready(function() {
       window.location = a.attr('href');
     };
   };
-  $('.tracking-link').on('click', function(e) {
-    var dimensionValue, fbqValue, link, productID, productName, productType, title;
-    link = $(this).attr('href');
-    title = $(this).attr('title') || '';
-    dimensionValue = {
-      'message': 'addToCart',
-      'link': link,
-      'title': title
-    };
-    productID = $(this).data('id') || '';
-    productName = $(this).data('title');
-    productType = $(this).data('type') || '';
-    fbqValue = {
-      content_type: productType,
-      content_name: productName,
-      contents: [
-        {
-          id: productID,
-          name: productName,
-          link: link
-        }
-      ],
-      content_ids: productID
-    };
-    fbq('track', 'AddToCart', fbqValue);
-    mixpanel.track('AddToCart', dimensionValue);
-    return gtag('event', 'add_to_cart');
-  });
   if ($('#orderSuccess').length) {
     dimensionValue = {
       'message': '支付 ' + helper.getParameterByName('msg') || '',
@@ -1077,47 +1049,209 @@ $(document).ready(function() {
     mixpanel.track('orderFail', dimensionValue);
     $('#orderMsg').text(dimensionValue.message);
   }
-  ViewContentScrollTracking = false;
-  if ($('.tracking-ViewContent').length) {
+  generateKey = function() {
+    var characters, charactersLength, j, key, x;
+    key = '';
+    characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    charactersLength = characters.length;
+    for (x = j = 1; j <= 10; x = ++j) {
+      key += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return key;
+  };
+  parseCookie = function() {
+    var cookie, cookieAry, cookieObj, i, l;
+    cookieObj = {};
+    cookieAry = document.cookie.split(';');
+    cookie = void 0;
+    i = 0;
+    l = cookieAry.length;
+    while (i < l) {
+      cookie = cookieAry[i].trim();
+      cookie = cookie.split('=');
+      cookieObj[cookie[0]] = cookie[1];
+      ++i;
+    }
+    return cookieObj;
+  };
+  getCookieByName = function(name) {
+    var value;
+    value = parseCookie()[name];
+    if (value) {
+      value = decodeURIComponent(value);
+    }
+    return value;
+  };
+  postConversionAPI = function(data) {
+    $.ajax('https://shop.hexschool.com/api/tracker', {
+      type: 'POST',
+      dataType: 'json',
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify(data)
+    });
+  };
+  generateData = function(eventTime, eventId, productID) {
+    var obj;
+    obj = {
+      type: 'facebook',
+      data: {
+        event_name: 'ViewContent',
+        event_time: eventTime,
+        event_id: eventId,
+        action_source: 'website',
+        event_source_url: location.href,
+        user_data: {
+          fbc: getCookieByName('_fbc'),
+          fbp: getCookieByName('_fbp'),
+          client_user_agent: navigator.userAgent,
+          client_ip_address: window.hexUseIP
+        },
+        custom_data: {
+          content_ids: productID
+        }
+      }
+    };
+    return obj;
+  };
+  landingViewContentScroll = false;
+  if ($('.landing-track-start').length) {
     $win = $(window).scroll(function(e) {
-      var contentTop, winTop, windowHieght;
+      var contentTop, eventTime, event_id, landingViewContentData, winTop, windowHieght;
       windowHieght = $(window).height() / 2;
       winTop = $($win).scrollTop() + windowHieght;
-      contentTop = $('.tracking-ViewContent').offset().top;
-      if (winTop > contentTop && !ViewContentScrollTracking) {
-        ViewContentScrollTracking = true;
-        mixpanel.track('ViewContent', {
-          'adsource': adsource || '',
-          'pageTitle': pageTitle
+      contentTop = $('.landing-track-start').offset().top;
+      if (winTop > contentTop && !landingViewContentScroll) {
+        landingViewContentScroll = true;
+        event_id = generateKey(10);
+        eventTime = Math.floor(new Date() / 1000);
+        fbq('track', 'ViewContent', {}, {
+          event_id: event_id
         });
-        fbq('track', 'ViewContent');
-        return gtag('event', 'view_item');
+        gtag('event', 'view_item');
+        landingViewContentData = generateData(eventTime, event_id, 'landingCourse');
+        postConversionAPI(landingViewContentData);
+        return mixpanel.track('ViewContent', {
+          'target': 'landingCourse'
+        });
       }
     });
   }
   ViewContentScrollTracking = false;
   if ($('.course-tracking-ViewContent').length) {
     $win = $(window).scroll(function(e) {
-      var contentTop, winTop, windowHieght;
+      var contentTop, eventTime, event_id, viewContentData, winTop, windowHieght;
       windowHieght = $(window).height() / 2;
       winTop = $($win).scrollTop() + windowHieght;
       contentTop = $('.course-tracking-ViewContent').offset().top;
       if (winTop > contentTop && !ViewContentScrollTracking) {
         ViewContentScrollTracking = true;
-        return fbq('track', 'ViewContent', {
+        event_id = generateKey(10);
+        eventTime = Math.floor(new Date() / 1000);
+        viewContentData = {
+          type: 'facebook',
+          data: {
+            event_name: 'ViewContent',
+            event_time: eventTime,
+            event_id: event_id,
+            action_source: 'website',
+            event_source_url: location.href,
+            user_data: {
+              fbc: getCookieByName('_fbc'),
+              fbp: getCookieByName('_fbp'),
+              client_user_agent: navigator.userAgent,
+              client_ip_address: window.hexUseIP
+            },
+            custom_data: {
+              currency: 'TWD',
+              value: $('.course-tracking-ViewContent').data('price'),
+              contents: [
+                {
+                  id: $('.course-tracking-ViewContent').data('id'),
+                  quantity: 1,
+                  item_price: $('.course-tracking-ViewContent').data('price')
+                }
+              ],
+              content_type: 'product'
+            }
+          }
+        };
+        fbq('track', 'ViewContent', {
           content_name: $('.course-tracking-ViewContent').data('name'),
           value: $('.course-tracking-ViewContent').data('price'),
           currency: 'TWD'
+        }, {
+          eventID: event_id
         });
+        postConversionAPI(viewContentData);
       }
     });
   }
+  $('.tracking-link').on('click', function(e) {
+    var addToCartData, eventTime, event_id, fbqValue, link, productID, productName, productPrice, productType, title;
+    link = $(this).attr('href');
+    title = $(this).attr('title') || '';
+    dimensionValue = {
+      'message': 'addToCart',
+      'link': link,
+      'title': title
+    };
+    event_id = generateKey(10);
+    eventTime = Math.floor(new Date() / 1000);
+    productID = $(this).data('id') || '';
+    productName = $(this).data('title');
+    productType = $(this).data('type') || '';
+    productPrice = $(this).data('price') || '';
+    fbqValue = {
+      content_type: productType,
+      contents: [
+        {
+          id: productID,
+          quantity: 1,
+          item_price: productPrice
+        }
+      ],
+      content_ids: productID
+    };
+    addToCartData = {
+      type: 'facebook',
+      data: {
+        event_name: 'AddToCart',
+        event_time: eventTime,
+        event_id: event_id,
+        action_source: 'website',
+        event_source_url: location.href,
+        user_data: {
+          fbc: getCookieByName('_fbc'),
+          fbp: getCookieByName('_fbp'),
+          client_user_agent: navigator.userAgent,
+          client_ip_address: window.hexUseIP
+        },
+        custom_data: {
+          currency: 'TWD',
+          value: productPrice,
+          content_ids: productID,
+          content_type: productType,
+          contents: [
+            {
+              id: productID,
+              quantity: 1,
+              item_price: productPrice
+            }
+          ]
+        }
+      }
+    };
+    mixpanel.track('AddToCart', dimensionValue);
+    gtag('event', 'add_to_cart');
+    fbq('track', 'AddToCart', fbqValue, {
+      event_id: event_id
+    });
+    postConversionAPI(addToCartData);
+  });
   $('.addToWishlist').on('click', function(e) {
     var eventName;
     eventName = $(this).data('wishlist');
-    return fbq('track', 'AddToWishlist', {
-      event_name: eventName
-    });
+    return fbq('track', 'AddToWishlist');
   });
 });
 
