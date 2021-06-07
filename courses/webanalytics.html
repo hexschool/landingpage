@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/hexschool.css?1622444442400">
+  <link rel="stylesheet" href="/stylesheets/hexschool.css?1623055729743">
   <!-- Global styles END -->
 
   
@@ -641,211 +641,80 @@ document.querySelector('body').onload = init
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-      
-      
-  
-      
-  
-      
-  
-      
-  
-    
-      
-      
-  
-    
-      
-      
-  
-    
-      
-      
-  
-    
-      
-      
-  
-    
-      
-      
-  
-      
-  
-      
-  
-    
-    <section class="container my-5 course-tracking-ViewContent" id="recommend" data-name="網頁流量行為追蹤術" data-id="gh"
-      data-price="3200">
-      
-      
-      
-  
-      
-  
-      
-  
-      
-      <h2 class="mb-3 text-center text-divider text-secondary text-w-lighter">
-        網頁流量行為追蹤術
-      </h2>
-      <div class="row justify-content-center">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="col-md-4 col-11 pt-md-0 pt-3" id="course-price">
-          <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
-            <h2
-              class="font-section-sub-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area m-0"
-              style="z-index: 6" itemprop="name">網頁流量行為追蹤術</h2>
-            <div class="">
-              <div class="position-relative combined-works " style="height: 180px">
-                <!-- <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div> -->
-                <meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fgh-cover-general%400.5x.png?alt=media&token=4c89bdb1-2c4d-4b30-8bac-b12f5cb83cb1"></meta>
-                <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fgh-cover-general%400.5x.png?alt=media&token=4c89bdb1-2c4d-4b30-8bac-b12f5cb83cb1) no-repeat; background-position: center center; background-size: cover;
-                      width: 100%; z-index: 1; position: absolute; left: 0;"></div>
-              </div>
-              <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white"
-                style="transform: translateY(-50%); position: absolute; z-index: 2;"
-                v-if="course.gh && (course.gh.detail.hasOwnProperty('num_subscribers') || course.gh.teachableData.hasOwnProperty('enrolled'))">
-                <strong class="text-primary" v-if="course.gh.teachableData.enrolled" v-text="course.gh.detail.hasOwnProperty('num_subscribers')? course.gh.detail.num_subscribers + course.gh.teachableData.enrolled : course.gh.teachableData.enrolled"> 300 </strong>
-                <strong class="text-primary" v-else v-text="course.gh.detail.num_subscribers"> 300 </strong> 人
-                <small class="text-white">參與本課程</small>
-              </span>
-              <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
+<div class="container" id="recommend">
+  <h2 class="mb-3 text-center text-divider text-secondary text-w-lighter">
+    網頁流量行為追蹤術
+  </h2>
+  <div class="row justify-content-center">
+    <div id="course-price" class="col-md-4 col-11 pt-md-0 pt-3">
+      <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px;">
+        <h2 itemprop="name" class="font-section-sub-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area m-0" style="z-index: 6;">網頁流量行為追蹤術</h2>
+        <div>
+          <div class="position-relative combined-works " style="height: 180px;">
+            <div style="height: 100%; background: url(&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fgh-cover-general%400.5x.png?alt=media&amp;token=4c89bdb1-2c4d-4b30-8bac-b12f5cb83cb1&quot;) center center / cover no-repeat; width: 100%; z-index: 1; position: absolute; left: 0px;">
             </div>
-            <div class="px-lg-4 px-3 pt-5 text-dark" itemprop="description">
-              <p>教您用 JavaScript 追蹤使用者行為，同時將數據傳送至 Google Analytics、Facebook 平台，藉由數據分析讓您與行銷部門聯手共創佳績！</p>
+          </div>
+          <!---->
+        </div>
+        <div itemprop="description" class="px-lg-4 px-3 pt-5 text-dark">
+          <p>教您用 JavaScript 追蹤使用者行為，同時將數據傳送至 Google Analytics、Facebook 平台，藉由數據分析讓您與行銷部門聯手共創佳績！</p>
+        </div>
+        <div class="mt-auto">
+          <div class="pb-4 px-4 text-right text-dark">
+            <p class="mb-0 font-weight-bold font-small-for-course-list">
+              <!---->
+            </p>
+            <a href="#" data-toggle="modal" data-target="#orderModal" title="開啟 網頁流量行為追蹤術 支付流程" data-promotions="現在上課去" data-price="3200" data-title="網頁流量行為追蹤術" data-coupon="COUPON_FOR_2020_JS_WEEK" data-paylink="https://shop.hexschool.com/order/create?order=gh" data-type="product" data-id="gh" itemprop="url" class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center disabled">
+              課程更新中</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-11">
+  
+      <div class>
+        <div class="text-secondary">
+          <p>課程還會補充更多內容！</p>
+          <div class="row my-3">
+            <div class="col-4">
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2FGH%2Fgh-e1-secret%402x.png?alt=media&token=1659d9bb-6c5b-468b-9d6b-a44daea8f0c4" alt>
             </div>
-            <div class="mt-auto">
-              <div class="pb-4 px-4 text-right text-dark">
-                <p class="mb-0 font-weight-bold font-small-for-course-list">
-                  <!-- <del>原價：3000</del></p> -->
-                
-                  <!--  -->
-                  <span v-if="rightCoupon.course.gh" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
-                    -6 % off
-                  </span>
-                  <p v-if="rightCoupon.course.gh" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 3,200</p>                  <p v-else class="mb-0 font-weight-bold font-column-4-button">NT$ 3000</p>
-                
-                <meta itemprop="price" content="3200">
-                <meta itemprop="priceCurrency" content="TWD">
-                
-                  <a :href="'https://shop.hexschool.com/order/create?order=gh&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')"
-                    class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal" title="開啟 網頁流量行為追蹤術 支付流程"
-                    data-promotions="現在上課去"
-                    data-price="3200" data-title="網頁流量行為追蹤術"
-                    :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
-                    data-paylink="https://shop.hexschool.com/order/create?order=gh" data-type="product"
-                    data-id="gh" itemprop="url">
-                    現在上課去
-                    <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                  </a>
-                
-              </div>
+            <div class="col-8">
+              <p class="h5">額外直播：神秘電商嘉賓！</p>
+              <p>不只教你技術更分享心法給你！我們將邀請專業電商經營者分享消費者心理學，線上告訴你怎麼分析、怎麼賣才會賺！</p>
             </div>
-            <div class="bg-light d-flex justify-content-center py-3">
-              <a href="https://courses.hexschool.com/p/230599" class="btn btn-outline-dark btn-block mx-5"
-                target="_blank" title="線上試聽">
-                線上試聽
-              </a>
+          </div>
+          <div class="row my-4">
+            <div class="col-4">
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2FGH%2Fgh-e2-sharing%402x.png?alt=media&token=7d269d6e-200c-491a-a43d-69711cdbf11f" alt>
+            </div>
+            <div class="col-8">
+              <p class="h5">講師當月週週分享實務心法技巧</p>
+              <p>除了原有的課程外，講師每週都會分享額外的主題，教你如何活用課程中的技巧套用在實際的專案中。</p>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-4">
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2FGH%2Fgh-e3-GTM%402x.png?alt=media&token=b403c1d7-c78f-416a-b7cc-3c496fefb3f6" alt>
+            </div>
+            <div class="col-8">
+              <p class="h5">章節新增：Google 代碼管理工具 (Google Tag Manager)</p>
+              <p>除了課程中會有的 Mixpanel、Facebook Pixel、Google Analytics 外，我們還會介紹 Google 新的代碼管理工具(GTM)，讓你不再被多個追蹤碼搞的手忙腳亂。</p>
             </div>
           </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="col-md-6">
-          <div class="">
-  <div class="text-secondary">
-    <p>課程還會補充更多內容！</p>
-    <div class="row my-3">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2FGH%2Fgh-e1-secret%402x.png?alt=media&token=1659d9bb-6c5b-468b-9d6b-a44daea8f0c4" alt="">
-      </div>
-      <div class="col-8">
-        <p class="h5">額外直播：神秘電商嘉賓！</p>
-        <p>不只教你技術更分享心法給你！我們將邀請專業電商經營者分享消費者心理學，線上告訴你怎麼分析、怎麼賣才會賺！</p>
-      </div>
-    </div>
-    <div class="row my-4">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2FGH%2Fgh-e2-sharing%402x.png?alt=media&token=7d269d6e-200c-491a-a43d-69711cdbf11f" alt="">
-      </div>
-      <div class="col-8">
-        <p class="h5">講師當月週週分享實務心法技巧</p>
-        <p>除了原有的課程外，講師每週都會分享額外的主題，教你如何活用課程中的技巧套用在實際的專案中。</p>
-      </div>
-    </div>
-    <div class="row my-4">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2FGH%2Fgh-e3-GTM%402x.png?alt=media&token=b403c1d7-c78f-416a-b7cc-3c496fefb3f6" alt="">
-      </div>
-      <div class="col-8">
-        <p class="h5">章節新增：Google 代碼管理工具 (Google Tag Manager)</p>
-        <p>除了課程中會有的 Mixpanel、Facebook Pixel、Google Analytics 外，我們還會介紹 Google 新的代碼管理工具(GTM)，讓你不再被多個追蹤碼搞的手忙腳亂。</p>
       </div>
     </div>
   </div>
 </div>
-        </div>
-      </div>
-    </section>
-    
+
+
+
+
+
+
+
+
   
 
 
@@ -1258,8 +1127,8 @@ document.querySelector('body').onload = init
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1622444442402"></script>
-<script src="/js/bs4_all.js?1622444442402"></script>
+<script src="/js/bs4_vendor.js?1623055729745"></script>
+<script src="/js/bs4_all.js?1623055729745"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
@@ -1391,10 +1260,6 @@ postConversionAPI(h_all_data);
   
     
   
-    
-  
-    
-      
     
   
     
