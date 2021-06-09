@@ -15,8 +15,9 @@
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-
+  
+  <meta name="calendar-id" content="undefined"><meta name="calendar-key" content="undefined">
+  
   <meta property="og:title" content="行事曆 | 六角學院">
   <meta property="og:description" content="六角學院網頁設計課程，上線不到四個月學員數突破 1500 人，現在更提供免費多樣課程，快速增加軟實力。">
   
@@ -44,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1623122496707">
+  <link rel="stylesheet" href="/stylesheets/all.css?1623222268520">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -188,7 +189,13 @@
           
               
                 <li class="nav-item active">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative"  href="/calendar/"><span class="nav-link-span">六角行事曆</span></a>
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/calendar/"><span class="nav-link-span">六角行事曆</span>
+                  
+                    <div id="calendarNotification" class="d-inline-flex">
+                      <span v-if="notificationLength > 0" v-text="notificationLength" class="bg-danger position-relative rounded-circle text-white" style="top: -8px;width: 16px;font-size: 12px;height: 16px;display: inline-flex;align-items: center;justify-content: center;"></span>
+                    </div>
+                  
+                  </a>
                 </li>
               
             
@@ -205,7 +212,9 @@
             
               
                 <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative"  href="/archives/"><span class="nav-link-span">部落格</span></a>
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/archives/"><span class="nav-link-span">部落格</span>
+                  
+                  </a>
                 </li>
               
             
@@ -1121,7 +1130,32 @@
       
       <div class="col-md-10 offset-md-1 article-entry">
         <h1 class="text-center m-b-3">行事曆</h1>
-        
+        <div id="calendarRecent">
+  <div v-if="calendarArr.length > 0">
+    <h4>近期活動</h4>
+    <div class="row">
+      <div class="col-xl-5 col-md-6 mb-3" v-for="item in calendarArr" :key="item.id">
+        <div class="card rounded border-0 shadow-sm h-100">
+          <div class="d-flex align-items-center justify-content-center p-3 bg-light" style="min-height: 78px;">
+            <p class="font-weight-bold mb-1 text-dark" v-text="item.summary"></p>
+          </div>
+          <div class="card-body p-0 d-flex flex-column">
+            <div class="px-3 pt-3">
+              <p class="mb-1 small"><i class="far fa-calendar-alt"></i> <span v-text="item.start.date || new Date(item.start.dateTime).toLocaleString('zu-ZA', { hour12: false })"></span></p>
+              <p class="mb-2 small" v-if="item.location"><i class="fas fa-link"></i> <a class="text-muted" target="_blank" :href="item.location">活動網址</a></p>
+            </div>
+            <div class="mt-auto mb-3">
+              <p class="small mb-0 mx-3 border-top pt-2"><i class="far fa-grin-stars" style="font-size: 0.875rem"></i> 活動說明</p>
+              <div class="px-3 calender-scroll" style="min-height: 100px; max-height: 100px; overflow-y: auto">
+                <small v-html="item.description"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <p>使用時，可手動切換月份，確認所需要了解的月份行事曆喔～</p>
 
 <iframe src="https://calendar.google.com/calendar/embed?src=hexschool.com_i1ser2sqh38tmovshrae4umugo%40group.calendar.google.com&ctz=Asia%2FTaipei" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
@@ -1137,6 +1171,29 @@
     <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd" alt>
   </a>
 </div>
+
+<style>
+
+.calender-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.calender-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.calender-scroll::-webkit-scrollbar-thumb {
+  background: rgb(194, 194, 194); 
+}
+
+/* Handle on hover */
+.calender-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(180, 180, 180); 
+}
+
+</style>
       </div>
       
     </div>
@@ -1349,8 +1406,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1623122496713"></script>
-<script src="/js/all.js?1623122496713"></script>
+<script src="/js/vendor.js?1623222268526"></script>
+<script src="/js/all.js?1623222268526"></script>
 <script src="/js/wow.min.js"></script>
 
 

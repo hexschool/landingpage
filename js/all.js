@@ -325,7 +325,7 @@ $(document).ready(function() {
 });
 
 vueApp = function() {
-  var appCourse, appGetFreeCoupon, checkTrainingStatus, courseEvaluation, getUseCoupon;
+  var CalendarNotification, CalendarRecent, appCourse, appGetFreeCoupon, calendarAjax, checkTrainingStatus, courseEvaluation, getCalendarData, getUseCoupon, h_calendar, h_calendar_time, h_timeMax, h_timeMin, passCalendarData;
   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
     courseEvaluation.course = data;
     appCourse.courseData = [];
@@ -430,8 +430,72 @@ vueApp = function() {
   });
   $.getJSON('../training-date.json', function(data) {
     appCourse.trainingDate = data;
-    return checkTrainingStatus();
+    checkTrainingStatus();
   });
+  CalendarNotification = new Vue({
+    el: '#calendarNotification',
+    data: {
+      notificationLength: 0
+    }
+  });
+  CalendarRecent = new Vue({
+    el: '#calendarRecent',
+    data: {
+      calendarArr: []
+    }
+  });
+  passCalendarData = (function(_this) {
+    return function(data) {
+      CalendarNotification.notificationLength = data.length;
+      CalendarRecent.calendarArr = data;
+    };
+  })(this);
+  h_calendar = {
+    cal_id: document.querySelector('meta[name="calendar-id"]').content,
+    api_key: document.querySelector('meta[name="calendar-key"]').content,
+    today: new Date()
+  };
+  h_calendar_time = {
+    fullYear: h_calendar.today.getFullYear(),
+    month: h_calendar.today.getMonth(),
+    date: h_calendar.today.getDate(),
+    hours: h_calendar.today.getHours()
+  };
+  h_timeMin = new Date(h_calendar_time.fullYear, h_calendar_time.month, h_calendar_time.date, h_calendar_time.hours - 10).toISOString();
+  h_timeMax = new Date(h_calendar_time.fullYear, h_calendar_time.month, h_calendar_time.date + 2, h_calendar_time.hours).toISOString();
+  calendarAjax = (function(_this) {
+    return function() {
+      $.getJSON('https://content.googleapis.com/calendar/v3/calendars/' + h_calendar.cal_id + '/events?key=' + h_calendar.api_key + '&timeMax=' + h_timeMax + '&timeMin=' + h_timeMin, function(data) {
+        var storageData;
+        storageData = {
+          items: data.items.reverse(),
+          timeStamp: new Date().getTime()
+        };
+        window.localStorage.setItem('U2FsdGVkX1', JSON.stringify(storageData));
+        return passCalendarData(data.items.reverse());
+      });
+    };
+  })(this);
+  getCalendarData = (function(_this) {
+    return function() {
+      var c_time, content, data, now;
+      now = new Date().getTime();
+      content = window.localStorage.getItem('U2FsdGVkX1');
+      if (content) {
+        c_time = JSON.parse(content).timeStamp;
+        data = JSON.parse(content).items;
+        console.log(now - c_time);
+        if (now - c_time >= 1800000) {
+          return calendarAjax();
+        } else {
+          return passCalendarData(data);
+        }
+      } else {
+        return calendarAjax();
+      }
+    };
+  })(this);
+  getCalendarData();
   courseEvaluation = new Vue({
     el: '#evaluation',
     data: {
