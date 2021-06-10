@@ -622,6 +622,7 @@ $(document).ready(function() {
   $('.close').on("click", function(event) {
     $('.mobile-logo').addClass('d-block');
     $('.search').addClass('d-block');
+    $('.navbar-collapse').siblings().css('display', 'block');
     return $('.navbar-toggler').css('display', 'block');
   });
   ishover = false;
