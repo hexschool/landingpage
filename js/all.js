@@ -275,16 +275,7 @@ $(document).ready(function() {
       return originTotal = originTotal + originPrice;
     });
     $('#selecedTotal').text(total);
-    $('#selecedOriginTotal').text(originTotal - total);
-    if (total > 5799) {
-      $('#condition_false').hide();
-      return $('#condition_true').show();
-    } else {
-      conditionText = 5800 - total;
-      $('#condition').html(conditionText);
-      $('#condition_false').show();
-      return $('#condition_true').hide();
-    }
+    return $('#selecedOriginTotal').text(originTotal - total);
   };
   countPrice();
   $('#customCourses .selecedCourse').on('change', function() {
