@@ -366,7 +366,7 @@ $(document).ready(function() {
   swiper = new Swiper('.ui-training-comment', {
     freeMode: true,
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 4.2,
     spaceBetween: 20,
     pagination: {
       el: '.swiper-pagination'

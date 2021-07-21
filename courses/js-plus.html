@@ -14,16 +14,16 @@
   
   <meta http-equiv="Cache-control" content="public">
   <meta http-equiv="max-age" content="604800">
-  <title>Adobe XD 網頁設計好容易 | 六角學院</title>
+  <title>JavaScript 必修篇 - 前端修練全攻略 | 六角學院</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-  <meta property="og:title" content="Adobe XD 網頁設計好容易 | 六角學院">
-  <meta property="og:description" content="帶您掌握主流 UI 工具，輕鬆學習 Adobe XD 網頁設計好容易！">
+  <meta property="og:title" content="JavaScript 必修篇 - 前端修練全攻略 | 六角學院">
+  <meta property="og:description" content="六角學院 JavaScript 全攻略，帶您從概念到實作一次學到會！">
   
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2FXD-landing-udemy.png?alt=media&token=c2599d3a-8269-4b53-8a77-f0018753258e">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F11-cover%402x.png?alt=media&token=cb59f121-ba83-4c7c-834a-ea8d22f5ebfc">
   
   <meta property="fb:app_id" content="760173380749493">
   <meta property="og:site_name" content="六角學院">
@@ -36,7 +36,7 @@
     <link rel="icon" href="/favicon.ico">
   
 
-  <meta content="帶您掌握主流 UI 工具，輕鬆學習 Adobe XD 網頁設計好容易！" name="description">
+  <meta content="六角學院 JavaScript 全攻略，帶您從概念到實作一次學到會！" name="description">
   <meta content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript" name="keywords">
   <meta content="六角學院" name="author">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/hexschool.css?1626868214883">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1626868214880">
   <!-- Global styles END -->
 
   
@@ -60,7 +60,7 @@
   <!-- End Google Tag Manager -->
 </head>
 
-<body class="over-flow-x xd">
+<body class="over-flow-x js-plus">
   <div id="app">
     <nav class="navbar navbar-light navbar-expand text-primary navbar-toggleable fixed-top shadow"
   style="background-color: rgba(255, 255, 255, .85)">
@@ -105,7 +105,7 @@
     </a>
     <div class="collapse navbar-collapse justify-content-end">
       <a href="#recommend"
-        class="btn btn-danger text-white btn-xd">
+        class="btn btn-danger text-white ">
         
         別說了，我要上課
         
@@ -115,546 +115,756 @@
   </div>
 </nav>
 
-
-<div class="relative bg-lighter xd-header" style="height: 450px; background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fbanner-bg.png?alt=media&token=2c2eaee5-d685-4757-be4d-502ca4b1ab02); background-position: center center">
-  <div>
-    <div style="min-height: 450px; position: relative; " class="flex justify-content-center">
-      <p class="banner-title h2 w-100 text-center bounceInRight wow">Adobe XD 網頁設計好容易</p>
-      <div class="banner-front-person w-100 bounceInLeft wow d-none d-md-block " style="min-height: 450px;  background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fbanner-front.svg?alt=media&token=fb2621de-2950-43c0-8a19-1353eec4de09);  background-position: bottom center; background-repeat: no-repeat; "></div>
-      <div class="banner-front-logo w-100 bounceInLeft wow d-md-none d-block" style="min-height: 225px;   background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2FAdobe%20XD-logo.svg?alt=media&token=a280db1f-5365-433c-aa47-9fea3bdddb12); background-position: bottom center; background-repeat: no-repeat; background-size: unset; position:absolute; top: 15%;"></div>
-    </div>
+<div class="pt-sm-7 pt-6 relative bg-primary banner-height">
+  <div class="banner-height" style="top: 0; bottom: 0;height: 100%; background-image: url('https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F01-banner.svg?alt=media&token=7d9020fe-6317-46a3-818c-7c61677e71e5'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
   </div>
 </div>
 
-
-<section class="container my-5">
-  <h2 class="mb-3 text-center text-divider text-xd-dark">
-    深不可測的前端領域中<br>
-    你有這些問題嗎？
-  </h2>
-  <div class="row">
-    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fstory-1%402x.png?alt=media&token=99b0e149-7ec3-490e-ac54-9f83013649bb" alt class="img-fluid">
-      <div class="bg-xd-dark text-white p-3 text-center">
-        <p class="mb-0 font-weight-bold">做出的好設計<br>但工程師卻無法執行</p>
+<!-- VS -->
+<section class="container my-md-7 my-5">
+  <!-- <h3 class="mb-3 text-center font-section-title">
+    JS 開發的過程中 <br>
+    你是否常常掌握不到精髓呢？
+  </h3> -->
+  <h3 class="text-center">您想踏上程式浪潮<span class="d-md-inline-block d-none">，</span><br class="d-block d-md-none">卻出現選擇障礙？</h3>
+  <div class="row mt-md-6 mt-3">
+    <div class="col-md-4">
+      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F02-question-1.svg?alt=media&token=06ae204d-69f4-4ceb-b1cf-2d27ec871312" alt class="img-fluid w-100">
+      <div class="p-3 text-center bg-black text-white">
+        <p class="mb-0">頭很想洗下去，卻有職業選擇障礙？</p>
       </div>
     </div>
-    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fstory-2%402x.png?alt=media&token=0b333cbc-35b6-4af5-9262-f86a6aa617b4" alt class="img-fluid">
-      <div class="bg-xd-dark text-white p-3 text-center">
-        <p class="mb-0 font-weight-bold">規格不知如何標示<br>每天被唸得滿頭包</p>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F02-question-2.svg?alt=media&token=505d2c7e-743b-496c-a295-cdb08b1d708f" alt class="img-fluid w-100">
+      <div class="p-3 text-center bg-black text-white">
+        <p class="mb-0">好不容易做出抉擇，學習路上卻充滿障礙？</p>
       </div>
     </div>
-    <div class="col-md-4"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fstory-3%402x.png?alt=media&token=254c9f0d-42f8-469e-81c4-dc107e661a2a" alt class="img-fluid">
-      <div class="bg-xd-dark text-white p-3 text-center">
-        <p class="mb-0 font-weight-bold">
-          改個小地方卻花去大半天<br>效率老是被質疑
-        </p>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F02-question-3.svg?alt=media&token=bbcf8980-7b0d-4b4a-9944-11b804132585" alt class="img-fluid w-100">
+      <div class="p-3 text-center bg-black text-white">
+        <p class="mb-0">擔心選錯語言，技術被淘汰得重新再學？</p>
       </div>
     </div>
   </div>
 </section>
-<section class="container my-5">
-  <h2 class="text-center text-divider text-xd-dark">
-    別讓「錯誤的工具」<br>壞了你的好設計！
-  </h2>
-  <div class="row justify-content-center mt-3">
-    <div class="col-md-4 d-flex align-items-center">
-      <div class="text-xd-dark">
-        <p>網頁設計是屬於一個專門的領域，好工具不僅正確地呈現美感，更讓協作上順利許多。</p>
-        <p>現在，Adobe 延續過去 Illustrator、Photoshop 的底子推出專屬於 UI 開發的工具，除了有效整合彼此之間的相容性，現在更能夠 <a class="text-xd" href="https://www.adobe.com/tw/products/xd.html" traget="_blank" target="_blank" rel="noopener">免費使用</a>！</p>
+
+<!-- 想要學好程式 -->
+<section class="container py-3 pb-8">
+  <div class="position-relative text-center">
+    <div class="row justify-content-center position-absolute w-100" style="z-index: 2;transform: translateY(-50%);">
+      <div class="col-md-6 col-10">
+        <div class="border p-3 bg-white rounded">
+          <h4 class="font-section-sub-title mb-0">想要學好程式<span class="d-md-inline-block d-none">，</span><br class="d-block d-md-none">卻對這些天書語言很傻眼嗎？</h4>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 relative">
-      <!-- <div class="centered text-center absolute w-100" style="z-index: 1">
+    <div class="row mt-6">
+      <div class="col">
+        <div style="min-height: 400px;background-image: url('https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F03-frustration.svg?alt=media&token=c0dacc04-2972-49cc-92b5-69f75330af61'); background-repeat:no-repeat; background-size: cover; background-position: center center;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary text-white py-7">
+  <div class="container">
+    <div class="row flex-row-reverse justify-content-between align-items-center">
+      <div class="col-md-6">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F04-solution.svg?alt=media&token=ca716c71-3fe4-4b18-a2bc-998141ed589b" alt class="img-fluid ml-5">
+      </div>
+      <div class="col-md-6">
+        <h3 class="mb-5">幫您擺脫選擇障礙，<br>用 JavaScript 輕鬆征服程式開發！</h3>
+        <p class="opacity-60 mr-md-6 mr-0">JavaScript 是目前公認最流行的程式語言之一，在 2021 統計數據顯示，也首居 GitHub、Stack Overflow 的熱度冠軍！<br> <br>目前在台灣也超過 5,000 份職缺，是目前業界搶手的當紅炸子雞，透過豐富的網路資源，讓您站在巨人的肩膀上，學習不卡關，成為業界需要的搶手貨！</p>
+        <a href="#recommend" class="btn btn-primary-light mt-3">別說了，我要註冊 <i class="far fa-gem align-middle ml-1"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-md-8 my-5">
+  <h3 class="text-center mt-md-7 mt-5">JavaScript 優勢進化<span class="d-md-inline-block d-none">，</span><br class="d-block d-md-none">職業選擇千變萬化</h3>
+  <div class="row mt-md-6 mt-3">
+    <div class="col-md-4">
+      <div class="h-100 border-black rounded">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F05-career-1.svg?alt=media&token=989ea427-4fbf-4113-82bc-24a1ec9f2d51" alt class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            一魚兩吃，<br>前後端無縫接軌
+          </h5>
+          <p class="mb-0 opacity-60">未來想成為後端工程師，以 JavaScript 來進行開發的 Node.js，能用最熟悉的語言進行後端開發，快速串聯前後端邏輯！</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <div class="h-100 border-black rounded"> 
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F05-career-2.svg?alt=media&token=c26ee4e4-c517-4961-8a51-8603c6fc39d0" alt class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            一舉數得，<br>APP、桌面應用程式手到擒來
+          </h5>
+          <p class="mb-0 opacity-60">不只寫前後端，更讓你跨越網頁載體，成為軟體界的 T 型人才！</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <div class="h-100 border-black rounded"> 
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F05-career-3.svg?alt=media&token=d9927c31-8f79-49ce-b160-69b3ad9ab922" alt class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            一軟一硬，<br> 整合 IoT 物聯網好方便！
+          </h5>
+          <p class="mb-0 opacity-60">目前許多硬體設備，也支援 JavaScript 來寫 Code，讓您不局限在軟體世界，遨遊軟硬整合開發！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary text-white py-7">
+  <div class="container">
+    <div class="row flex-row-reverse justify-content-between align-items-center">
+      <div class="col-md-6">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F06-hexschool.svg?alt=media&token=d30b90b7-9ec2-4698-9e35-ff824657b729" alt class="img-fluid w-100">
+      </div>
+      <div class="col-md-6 mt-md-0 mt-4">
+        <span class="badge badge-primary-light rounded-pill px-3 py-2 mb-4" style="font-size: 14px;">＃ 新手向課程</span>
+        <h3 class="mb-5 opacity-87">六角學院 JavaScript 全攻略，帶您從概念到實作一次學到會！</h3>
+        <p class="opacity-60">六角學院，是結合多項國際教學資源的線上學院，迄今已經獲得 57 個國家、近 20,000 名學員的教學好評！</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-md-8 my-5">
+  <h3 class="text-center mt-md-7 mt-5">在這門 JS 課程裡<span class="d-md-inline-block d-none">，</span><br class="d-block d-md-none">您將擁有......</h3>
+  <div class="row mt-md-6 mt-3">
+    <div class="col-md-4">
+      <div class="h-100 border-black rounded">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F07-content-1.svg?alt=media&token=296646a4-8c20-4e77-bc66-7b2b6918ffa8" alt class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            挑戰業界 CP 值， <br>超過 25 小時影音課程
+          </h5>
+          <p class="mb-0 opacity-60">六角學院，是業界公認教學仔細、步調穩重、基礎扎實的影音課程選擇，每部影片都在 5～10 分鐘，方便您依照自己學習節奏觀看。</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <div class="h-100 border-black rounded"> 
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F07-content-2.svg?alt=media&token=aec32106-2113-4b34-8df5-b22e5ec3dac2" alt class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            著重程式邏輯培養， <br> 看到題目腦袋不打結
+          </h5>
+          <p class="mb-0 opacity-60">學程式最害怕的是，上課聽得懂，但要自己做卻腦袋一片空白，這門課將會一步步帶領您培養程式邏輯，讓您擁有他人稱羨「程式腦」！</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <div class="h-100 border-black rounded"> 
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F07-content-3.svg?alt=media&token=941ad138-9689-4ca7-8797-cd08e30409bb" alt class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            整合第三方服務，<br>做出自己的專屬作品！
+          </h5>
+          <p class="mb-0 opacity-60">為了做出好作品，整合第三方服務是不可不會的必備技能，這堂課將會透過 AJAX 與 API 去實做出自己的 idea，讓您在履歷上多出一個亮眼作品！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 課綱 -->
+<section class="container mb-md-7 mb-5">
+  <h3 class="text-center mt-5">2021 版全新 JS 課程大綱</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <table class="table my-4">
+        <tbody>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 1</th>
+            <td class>變數與資料型別</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 2</th>
+            <td class>let、const、var 介紹</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 3</th>
+            <td class>網頁與 Code 環境建立流程教學</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 4</th>
+            <td class>數字型別與賦值運算子</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 5</th>
+            <td class>字串型別</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 6</th>
+            <td class>變數：布林、undefined、null</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 7</th>
+            <td class>比較與邏輯運算子</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 8</th>
+            <td class>流程判斷 - if、else if、else</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 9</th>
+            <td class>if 流程圖規劃流程</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 10</th>
+            <td class>if 中階運用</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 11</th>
+            <td class>陣列教學</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 12</th>
+            <td class> 物件教學</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 13</th>
+            <td class>陣列與物件整合運用</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 14</th>
+            <td class>函式 function</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 15</th>
+            <td class>DOM - 選取網頁元素</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 16</th>
+            <td class>Event 事件 - 讓您的網頁具有互動效果</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 17</th>
+            <td class>陣列 forEach 資料處理方法</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 18</th>
+            <td class>forEach 題型練習</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 19</th>
+            <td class>第七週需理解的知識點影片</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 20</th>
+            <td class>AJAX - 網路請求</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 21</th>
+            <td class>AJAX - axios 套件教學</td>
+            <td class>
+              <!-- <span class="badge badge-light">38 min</span> -->
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 22</th>
+            <td class> JS - 箭頭函式</td>
+            <td class>
+              <span class="badge table-badge-primary-light px-md-3 px-2 py-md-2 py-1 rounded-pill">8/15 更新</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 23</th>
+            <td class>JS - 陣列中進階 (filter, map)運用</td>
+            <td class>
+              <span class="badge table-badge-primary-light px-md-3 px-2 py-md-2 py-1 rounded-pill">8/15 更新</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 24</th>
+            <td class>JS 彩蛋課程 - NPM 管理</td>
+            <td class>
+              <span class="badge table-badge-primary-light px-md-3 px-2 py-md-2 py-1 rounded-pill">9/11 更新</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 25</th>
+            <td class>JS 彩蛋課程 - webpack 壓縮打包工具管理</td>
+            <td class>
+              <span class="badge table-badge-primary-light px-md-3 px-2 py-md-2 py-1 rounded-pill">9/11 更新</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="text-js-plus-light table-chapter">章節 26</th>
+            <td class>JS 最終作業 - OPEN API 蔬菜比價網</td>
+            <td class>
+              <span class="badge table-badge-primary-light px-md-3 px-2 py-md-2 py-1 rounded-pill">9/18 更新</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <a href="https://courses.hexschool.com/courses/enrolled/1463822" class="btn btn-block btn-outline-primary py-2" target="_blank" rel="noopener">Teachable 試聽 <i class="fas fa-headphones"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="container mb-md-7 mb-5">
+  <h3 class="text-center mb-5">和其它線上課程的差異</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <table class="table table-borderless text-center text-dark">
+        <thead>
+          <tr class>
+            <th scope="col"></th>
+            <td>坊間課程
+            </td><td class>此 JS 課程
+          </td></tr>
+        </thead>
+        <tbody class="opacity-87 compare">
+          <tr class="table-bg-light">
+            <th scope="row">課程單價</th>
+            <td class>2000~4000</td>
+            <td class style="vertical-align: text-bottom">活動價 1800 <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fjs-plus-icon.svg?alt=media&token=1d1670b9-6415-4e20-9a54-dd2d599a40c8" alt width="24" height="24"></td>
+          </tr>
+          <tr>
+            <th scope="row">時數</th>
+            <td class>5~15 小時</td>
+            <td class style="vertical-align: middle">20 小時以上 <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fjs-plus-icon.svg?alt=media&token=1d1670b9-6415-4e20-9a54-dd2d599a40c8" alt width="24" height="24"></td>
+          </tr>
+          <tr class="table-bg-light">
+            <th scope="row">問題回覆</th>
+            <td class>已讀不回</td>
+            <td class style="vertical-align: middle">完善助教團隊 <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fjs-plus-icon.svg?alt=media&token=1d1670b9-6415-4e20-9a54-dd2d599a40c8" alt width="24" height="24"></td>
+          </tr>
+          <tr>
+            <th scope="row">小節作業與問答</th>
+            <td class>少</td>
+            <td class style="vertical-align: middle">超過 100 題 <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fjs-plus-icon.svg?alt=media&token=1d1670b9-6415-4e20-9a54-dd2d599a40c8" alt width="24" height="24"></td>
+          </tr>
+          <tr class="table-bg-light">
+            <th scope="row">最終作業</th>
+            <td class>無</td>
+            <td class style="vertical-align: middle">有，提供完整檢視 Code Review <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fjs-plus-icon.svg?alt=media&token=1d1670b9-6415-4e20-9a54-dd2d599a40c8" alt width="24" height="24"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- ui 課程的販售區塊是另外加在 _courses/ui-combinedCourse.ejs 中 -->
+
+
+
+
+  <section class="bg-primary py-md-7 py-5 text-white">
+  <div class="container">
+    <div class="row justify-content-center mb-7">
+      <div class="col-md-6 d-flex flex-md-row flex-column align-items-center">
+        <div class="teacher-intro-transform-style rounded-circle mx-auto my-3" style="width: 161px; height: 161px; background: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fsass%2Fimg-portrait-charlie.png?alt=media&token=c90dc4bf-c957-40b4-b679-b0137f4ec20e) no-repeat center center; background-size: cover;"></div>
+        <div class="text-md-left text-center">
+          <p class="opacity-60">講師</p>
+          <p class="h4"><strong>廖洧杰</strong></p>
+          <p class="opacity-60">Udemy 超過 5000 顆五星 JS 課程評價</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="text-center">過往學員一致好評</h3>
+  <div class="container-fluid">
+    <div class="swiper-container ui-training-comment mt-5">
+      <div class="swiper-wrapper position-relative">
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">「學習所有的東西都是需要穩紮穩打的基礎。」這麼簡單的道理，在我上過這門課後才有更深的體悟，看似簡單的課程，實際上默默且無痛的教會了我「寫程式真正的樣貌」。</p>
+              <p>—— Vivian Yeh</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">透過不斷吸收、練習與複習的循環，讓自己對 JS 更熟悉，而且我也非常喜歡六角的學習風氣，看著同學一個個每天瘋狂繳交作業，真的完全不敢懈怠 XD</p>
+              <p>—— Alicia Lo</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">講師教得很仔細，對入門者來說很有幫助，只要跟著學、一邊做，一定能學會！</p>
+              <p>—— John</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">太棒了，重新建立起過去的錯誤學習方式。</p>
+              <p>—— Dory</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">在學習的時候，總會希望有人可以在自己遇到困難的時候給予解答或是方向，六角學院就是一個這麼棒的地方，讓人學會了想再精進，不怕學習路上感到孤單。</p>
+              <p>—— Tori LIN</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">
+                教法淺顯易懂、有圖形說明、直接教業界實用的觀念、十分有用</p>
+              <p>—— Chi-Tung</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">老師講解的很詳細，問題回復得很快，也都有得到想要的答覆。</p>
+              <p>—— 凱澤</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">每次在看的時候，都會覺得他們講解的方式，很不一樣，可以很清楚重點在哪裡，針對問題點去解決問題，不只是把問題敘述過而已。</p>
+              <p>—— Tom Tom</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">
+                不只是在學習上獲益良多，連實務經驗上都有了小小入門，只能說，六角學院給予我很大的幫助。</p>
+              <p>—— Jemma liu</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white text-dark rounded pt-3 pb-5 px-5 h-100">
+            <div style="opacity: 0.87;">
+              <p class="text-primary-light m-0" style="font-size: 72px; line-height: 1;">“</p>
+              <p style="min-height: 120px;">
+                透過老師教的流程圖，理清路明，打破了很多自己以前對工程師的框架，也發現反覆練習的重要性。</p>
+              <p>—— 陳怡萱</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 課程升級、升級再升級 -->
+<section class="container my-md-8 my-5">
+  <h3 class="text-center">課程升級、升級再升級！！</h3>
+  <p class="text-center opacity-60">除了現有的教學課程外，還會再補充以下內容讓同學一次付費具有超值學習內容。</p>
+  <div class="row mt-md-6 mt-3">
+    <div class="col-md-4">
+      <div class="h-100 border-black rounded">
         <img
-          class="infinite-rotate"
-          src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue%2Fvue_circle.svg?alt=media&token=997a7b0d-d924-4c0b-9a44-3df0bbdd24a0" alt="">
-      </div> -->
-      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2FXD-landing-1200x628.png?alt=media&token=1ea0424c-f9f5-4363-8584-5d91ad0907db" alt class="img-fluid fadeIn wow"></div>
-  </div>
-</section>
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-3 text-center mb text-divider text-w-lighter text-xd-dark">專屬 UI 開發工具<br>團隊設計任你駕馭</h2>
-    
-    <div class="row justify-content-center text-xd-dark">
-      <div class="col-md-4">
-        <div class="px-3 my-3 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fsolution-1.svg?alt=media&token=d8287332-3db3-45ae-aee8-85ad17dc2906" alt class="img-fluid"></div>
-        <h2 class="h5 text-center">專業 UI 繪圖工具</h2>
-        <p>Adobe Illustrator、Photoshop 是屬於平面設計軟體，設計時無法符合 UI 設計規範，導致工程師執行上會有問題。而 Adobe XD 是專為 UI 設計所開發，更能確保優秀設計稿的可被執行性！</p>
-      </div>
-      <div class="col-md-4">
-        <div class="px-3 my-3 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fsolution-2.svg?alt=media&token=f54d36dd-0528-47f1-a57e-56e93fb687c9" alt class="img-fluid"></div>
-        <h2 class="h5 text-center">一鍵匯出設計規範</h2>
-        <p>由於設計稿需要標示大量的規範，如果使用單一圖片無法呈現色彩、字體、間距等各項細微的設定。現在，透過 Adobe XD 的服務僅需要一鍵就能匯出完整設計稿，更能夠在設計稿上與工程師相互討論喔！</p>
-      </div>
-      <div class="col-md-4">
-        <div class="px-3 my-3 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fsolution-3.svg?alt=media&token=d9e8bbbf-6717-48f7-b55e-e8a1b64141de" alt class="img-fluid"></div>
-        <h2 class="h5 text-center">跨平台運作</h2>
-        <p>Adobe XD 不僅是非常優秀的 UI 設計軟體，並且支援 Windows 10 及 MacOS 系統，而合作的工程師僅需要有網頁瀏覽器就可以觀看輸出的設計規範喔（注意：Windows 請確保在 10 以上，<a href="https://helpx.adobe.com/tw/xd/system-requirements.html" target="_blank">參考</a>）。</p>
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F09-bonus-1.svg?alt=media&token=9ad5c708-315b-49b3-8364-e2c331e635f0"
+        alt="" class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            獨門練功題目
+          </h5>
+          <p class="mb-0 opacity-60">常常看了後面，卻忘了前面教的東西？洧杰老師將釋出獨門練功題目，並運用刻意練習的技巧，讓您擺脫金魚腦，將程式邏輯內化成自己的技能！</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="bg-xd-light mt-3">
-  <div class="container py-5">
-    <h2 class="mb-3 text-center mb text-xd-dark">讓六角學院<br>帶您一同駕馭 Adobe XD</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-3 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2FAdobe%20XD-logo.svg?alt=media&token=a280db1f-5365-433c-aa47-9fea3bdddb12" alt class="img-fluid"></div>
-      <div class="col-md-5 d-flex align-items-center">
-        <div>
-          <p>六角學院，是一所結合各項國際教學資源的線上學院，迄今已獲得 57 個國家、超過 13,000 名學員的教學好評。</p>
-          <p>我們致力於提供各項程式、網頁、設計等現代工程師、網頁設計師必備的專業課程，現在更加強對於設計師課程內容，帶領大家迎向好薪情。</p>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <div class="h-100 border-black rounded"> 
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F09-bonus-2.svg?alt=media&token=13ee5e25-ecd9-425e-929a-6338322f4121"
+          alt="" class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            蔬菜比價網
+          </h5>
+          <p class="mb-0 opacity-60">課程作業再加碼！透過程式介面，篩選您要的蔬菜性價比，除了提供 UI 設計稿外，再提供完整 Code Review 程式碼檢視服務！(預期 8月上線)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-md-0 mt-3">
+      <div class="h-100 border-black rounded"> 
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F09-bonus-3.svg?alt=media&token=d2be72b5-e5f9-49bb-ad03-8d405e289809"
+          alt="" class="img-fluid w-100">
+        <div class="p-4">
+          <h5 class="mb-3">
+            OPEN DATA API 串接
+          </h5>
+          <p class="mb-0 opacity-60">一直找不到資料，做出合適作品嗎？洧杰老師將一步步帶您找尋合適的資料集，手把手帶您串接政府所提供的開放資料，做出具有辨識性的 JS 作品！</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="mt-3">
-  <div class="container py-5">
-    <h2 class="mb-3 text-center text-divider text-xd-dark">全新 Adobe XD 課程<br>讓你設計更有力</h2>
-    <div class="row justify-content-center my-3 mt-5">
-      <div class="col-md-4">
-        <div class="p-3 fadeInLeft wow"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Ffeatures-1.svg?alt=media&token=288771e9-0053-4284-b8cc-17b00c95e339" alt class="img-fluid"></div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div>
-          <h4>
-            簡報教學
-          </h4>
-          <p>課程中包含許多設計觀念，如：網格系統、色彩原理、字體介紹，這些概念性內容我們使用圖文結合部份動畫的方式說明，學員們不僅能夠快速吸收，更能有效記憶。</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center flex-row-reverse my-3">
-      <div class="col-md-4">
-        <div class="p-3 fadeInRight wow"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Ffeatures-2.svg?alt=media&token=aabe872a-eef8-4b26-96f5-2309e8800bb5" alt class="img-fluid"></div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div>
-          <h4>
-            設計觀念
-          </h4>
-          <p>除了工具的介紹外，課程中也會介紹許多實用的設計觀念，不管過去所學為設計、資訊或其它領域，經過本次課程後都能具備一定的設計概念，讓你能夠做出一定美感的網頁設計。</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center my-3">
-      <div class="col-md-4">
-        <div class="p-3 fadeInLeft wow"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Ffeatures-3.svg?alt=media&token=12301684-3f3d-422c-bf4a-62a1d6b5e7b6" alt class="img-fluid"></div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div>
-          <h4>
-            實作應用
-          </h4>
-          <p>六角學院的教學內容都是秉持實用為主，所以每個課程中都會包含觀念教學、實際練習，有任何問題也都可以透過問答區發問，在課程最後方，同學們將可以完成一個完整的網站設計。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="py-5 relative" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fbanner-bg.png?alt=media&token=2c2eaee5-d685-4757-be4d-502ca4b1ab02); background-size: contain; background-position: center center;">
-  <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-md-4 d-flex align-items-end">
-        <div>
-          <h2 class="mb-3">
-          加入六角學院<br>與 13,000 人一同學習
-          </h2>
-          <p class="h4"><strong class="text-dark">搶先學習中</strong></p>
-          <p>帶您掌握主流 UI 工具，輕鬆學習 Adobe XD 網頁設計好容易！</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-4"><a href="#recommend" class="my-3 btn btn-xd btn-block btn-lg">
-        <i class="fa fa-graduation-cap"></i>
-        別說了，我要註冊
-        <i class="fa fa-graduation-cap"></i>
-      </a></div>
-    </div>
-  </div>
-</section>
-<section class="py-4 bg-xd-light relative">
-  <div class="container">
-    <h3 class="text-center mb-5">天啊，我超想學的，可是...</h3>
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-        <h4>這門課程需要有平面設計經驗嗎？</h4>
-        <p>不需要，無基礎也可輕鬆上手。！</p>
-      </div>
-      <div class="col-md-4">
-        <h4>學完後，有能力設計網頁 UI 介面嗎？</h4>
-        <p>沒問題，會手把手教你設計網頁時，需掌握的各種實戰技巧。</p>
-      </div>
-      <div class="col-md-4">
-        <h4>除了線上課程外，還會有其他額外費用嗎 (圖庫、軟體)</h4>
-        <p>別擔心，Adobe XD 是免費軟體，教學內容也會提供各種免費資源，所以不會產生額外費用。</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="my-5 container">
-  <h2 class="mb-3 text-center">專精網頁設計雙講師<br>能從純設計與網頁角度，給予多元協助！</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-3">
-      <div class="mx-5 my-3"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fjuni-avator.jpg?alt=media&token=cce85f04-d213-46c9-a9f4-04d0835159a0" alt class="img-fluid rounded-circle"></div>
-      <h4>設計師 吳俊儀老師</h4>
-      <p>從平面設計跨足網頁前端的設計師，立志成為跨領域的通才。</p>
-    </div>
-    <div class="col-md-3">
-      <div class="mx-5 my-3"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fbootstrap%2Fsection_avator.jpg?alt=media&token=d0ba3833-abcc-404b-9554-ac99b274cd0f" alt class="img-fluid rounded-circle"></div>
-      <h4>前端工程師 王志誠老師</h4>
-      <p>由設計投入前端的軟體工程師，了解設計語言的前端佈道者。</p>
-    </div>
-  </div>
-</section>
-<section class="py-5 container my-5">
-  <h2 class="mb-3 text-center">
-      
-    加值服務不加價！<br>隨時替您的專業充電更新！
-  </h2>
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <div class="m-4 px-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue%2Fsection_online_meeting%402x.png?alt=media&token=0a82223e-990f-4166-a959-aa18ef756bab" alt class="img-fluid"></div>
-      <h4 class="text-center">週週線上問答<br>定時增強你的觀念</h4>
-      <p>我們每周三晚上定期會舉行線上問答課程，除了解決問題外，老師還會分享許多業界經驗喔！</p>
-    </div>
-    <div class="col-md-4">
-      <div class="m-4 px-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue%2Fsection_jobs%402x.png?alt=media&token=ab1d923d-6101-4f7a-8023-ec0efde3ee2e" alt class="img-fluid"></div>
-      <h4 class="text-center">免費職涯諮詢<br>提供您各項轉職資源</h4>
-      <p>我們有免費的職涯、轉職服務，迄今已幫上超過百位學員媒合到適合的工作。</p>
-    </div>
-    <div class="col-md-4">
-      <div class="m-4 px-4 text-center"><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue%2Fsection_udemy_qa%402x.png?alt=media&token=5b29ac96-da78-40cc-97f8-9d113fe859fd" alt class="img-fluid"></div>
-      <h4 class="text-center">了解您的心中結<br>打造線上程式諮詢服務</h4>
-      <p>不管你在練習、作業甚至是工作上，都可以隨時在 Udemy 平台上發問，我們的問題回覆率是 100% 唷！</p>
-    </div>
-  </div>
-</section>
-<section class="container my-5">
-  <h2 class="mb-3 text-center text-divider">
-      
-    多項保證<br>保障你的學習效益！
-  </h2>
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">所有課程永久觀看，不再收費！</p>
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">額外再補充 3 個以上章節，210 分鐘以上的總時數。</p>
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">
-          
-        課程增加後會依內容調漲價格，但已註冊者<span class="text-danger">不需額外付費</span>
-      </p>
-      <p class="mb-0">我們保證...</p>
-      <p class="h6">30 天內不滿意課程，爽快退費！</p>
-    </div>
-  </div>
-</section>
 
-<section class="py-5 bg-lighter my-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h4>口碑推薦</h4>
-        <div id="recommendSlider" class="carousel slide mb-3" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <blockquote style="min-height: 12rem;">
-                <p>看了六角學院的 RWD 課程，覺得他們真的很用心，講義製作、撰寫範例、重要觀念都講解的相當仔細，非常適合初學者入門。</p>
-                <p>由於課程內容相當豐富，也有許多實戰的經驗分享，我反而覺得這課程更適合已入門者進修學習，補充大家可能之前沒碰過的 RWD 設計技巧。這樣佛心的線上課程，只能推了，認同請分享！ (y)</p>
-              </blockquote>
-              <div class="d-flex align-items-strech">
-                <img src="/images/avators/will.jpg" class="rounded-circle" width="75" height="75" alt>
-                <div class="d-flex flex-column justify-content-center ml-3">
-                  <a href="https://www.facebook.com/will.fans" target="_blank">Will 保哥</a>
-                  <span>多奇數位創意 / 技術總監</span>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <blockquote style="min-height: 12rem;">
-                <p>洧杰是個底子紮實的前端工程師，自從聽過他的 SASS 課程後就令我非常驚訝，除了有許多業界實用的案例外，洧杰也不藏私的將所學傾囊相授，而現在開設的六角學院，更是將課程與教授緊密結合，透過這一套完整的流程，實在很適合推薦給初學與自修的各位。</p>
-                <p>同樣身為講師，我最佩服洧杰的一點，就是對教學的熱忱與耐心，六角學院對課程的堅持與品質是一流的，如果您希望有人一步一步的帶領你走入前端的世界，那麼你千萬不可錯過六角學院唷！</p>
-              </blockquote>
-              <div class="d-flex align-items-strech">
-                <img src="/images/avators/muki.jpg" class="rounded-circle" width="75" height="75" alt>
-                <div class="d-flex flex-column justify-content-center ml-3">
-                  <a href="https://www.facebook.com/mukispace/" target="_blank">MUKI</a>
-                  <span>拾木空間 前端工程師 / 講師</span>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <blockquote style="min-height: 12rem;">
-                <p>洧杰扎實的前端開發經驗，以及簡單直覺的教學方式，對於欲踏入前端的朋友們來說是一大福音，課程中對於許多的觀念跟特性採用了動畫解說，讓你非常容易就能了解到每個網頁製作的原理與特性。</p>
-                <p>課程規劃了整套清楚且完整的網頁前端開發流程，更是業界少見的規劃方式，本課程絕對是你不可多得的優質教學，Amos 誠心在這推薦給大家。</p>
-              </blockquote>
-              <div class="d-flex align-items-strech">
-                <img src="/images/avators/amos.jpg" class="rounded-circle" width="75" height="75" alt>
-                <div class="d-flex flex-column justify-content-center ml-3">
-                  <a href="https://www.facebook.com/banPrint" target="_blank">Amos (李建杭)</a>
-                  <span>飛肯設計學苑
-                    資策會
-                    五倍紅寶石
-                    / 講師</span>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <blockquote style="min-height: 12rem;">
-                <p>六角學院洧杰課程幫助我從平面設計師零基礎到能夠撰寫 HTML、CSS 客製化自己的作品網站，也助設計師能夠將原始設計稿掌握細節，將設計的每一分細膩呈現出來。</p>
-                <p>上過他的課會深刻體會他的教學方式淺顯易懂，更重要是克服了對手寫 Code 感到困難、害怕的心理壓力。</p>
-              </blockquote>
-              <div class="d-flex align-items-strech">
-                <img src="/images/avators/joan.jpg" class="rounded-circle" width="75" height="75" alt>
-                <div class="d-flex flex-column justify-content-center ml-3">
-                  <a href="https://www.facebook.com/joanvisualdesign" target="_blank">張瓊文</a>
-                  <span>書亞集成 設計師</span>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <blockquote style="min-height: 12rem;">
-                <p>洧杰講師前端教學經驗豐富，對於想踏入前端卻找不到方向的人總是很熱心的給予協助，在我剛開始學習時也是藉由洧杰的部落格及教學影片打下扎實的前端基礎，這個課程絕對能讓人收穫良多。</p>
-              </blockquote>
-              <div class="d-flex align-items-strech">
-                <img src="/images/avators/jay.png" class="rounded-circle" width="75" height="75" alt>
-                <div class="d-flex flex-column justify-content-center ml-3">
-                  <a href="https://github.com/chungchiehlun" target="_blank">鍾傑倫</a>
-                  <span>凱鈿 前端工程師</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#recommendSlider" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#recommendSlider" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h4>其他同學怎麼說</h4>
-        <slide-reviews class="mb-3"></slide-reviews>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-  
-    
-      
-      
-  
-    
-      
-      
-  
-      
-  
-      
-  
-      
-  
-    
-      
-      
-  
-    
-      
-      
-  
-    
-    <section class="container my-5 course-tracking-ViewContent" id="recommend" data-name="Adobe XD：網頁設計真容易" data-id="xd"
-      data-price="1408">
-      
-      
-      
-  
-    
-      
-      
-  
-    
-      
-      
-  
-      
-  
-      
-  
-      
-  
-      
-  
-      
-      <h2 class="mb-3 text-center text-divider text-secondary text-w-lighter">
-        Adobe XD 網頁設計好容易
-      </h2>
-      <div class="row justify-content-center">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="col-md-4 col-11 pt-md-0 pt-3" id="course-price">
-          <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
-            <h2
-              class="font-section-sub-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area m-0"
-              style="z-index: 6" itemprop="name">Adobe XD：網頁設計真容易</h2>
-            <div class="">
-              <div class="position-relative combined-works " style="height: 180px">
-                <!-- <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div> -->
-                <meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2FXD-landing-1200x628.png?alt=media&token=1ea0424c-f9f5-4363-8584-5d91ad0907db"></meta>
-                <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2FXD-landing-1200x628.png?alt=media&token=1ea0424c-f9f5-4363-8584-5d91ad0907db) no-repeat; background-position: center center; background-size: cover;
-                      width: 100%; z-index: 1; position: absolute; left: 0;"></div>
-              </div>
-              <span class="bg-dark rounded-0 px-4 py-2 font-weight-bold text-white"
-                style="transform: translateY(-50%); position: absolute; z-index: 2;"
-                v-if="course.xd && (course.xd.detail.hasOwnProperty('num_subscribers') || course.xd.teachableData.hasOwnProperty('enrolled'))">
-                <strong class="text-primary" v-if="course.xd.teachableData.enrolled" v-text="course.xd.detail.hasOwnProperty('num_subscribers')? course.xd.detail.num_subscribers + course.xd.teachableData.enrolled : course.xd.teachableData.enrolled"> 300 </strong>
-                <strong class="text-primary" v-else v-text="course.xd.detail.num_subscribers"> 300 </strong> 人
-                <small class="text-white">參與本課程</small>
-              </span>
-              <!-- <a href="#" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a> -->
-            </div>
-            <div class="px-lg-4 px-3 pt-5 text-dark" itemprop="description">
-              <p>將一步步帶領學員從操作到實作，進而體會 Adobe XD 這套軟體的強大之處，也會搭配隨堂練習來溫習各個章節學到的知識。</p>
-            </div>
-            <div class="mt-auto">
-              <div class="pb-4 px-4 text-right text-dark">
-                <p class="mb-0 font-weight-bold font-small-for-course-list">
-                  <!-- <del>原價：1600</del></p> -->
-                
-                  <!-- 
-                    <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off：NT$ 192</p>
-                   -->
-                  <span v-if="rightCoupon.course.xd" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
-                    12 % off
-                  </span>
-                  <p v-if="rightCoupon.course.xd" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 1,408</p>                  <p v-else class="mb-0 font-weight-bold font-column-4-button">NT$ 1600</p>
-                
-                <meta itemprop="price" content="1408">
-                <meta itemprop="priceCurrency" content="TWD">
-                
-                  <a :href="'https://shop.hexschool.com/order/create?order=xd&coupon_code=' + (rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE')"
-                    class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                    data-toggle="modal" data-target="#orderModal" title="開啟 Adobe XD：網頁設計真容易 支付流程"
-                    data-promotions="現在上課去"
-                    data-price="1408" data-title="Adobe XD：網頁設計真容易"
-                    :data-coupon="rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE'"
-                    data-paylink="https://shop.hexschool.com/order/create?order=xd" data-type="product"
-                    data-id="xd" itemprop="url">
-                    現在上課去
-                    <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                  </a>
-                
-              </div>
-            </div>
-            <div class="bg-light d-flex justify-content-center py-3">
-              <a href="https://courses.hexschool.com/p/adobe-xd" class="btn btn-outline-dark btn-block mx-5"
-                target="_blank" title="線上試聽">
-                線上試聽
-              </a>
-            </div>
+<!-- JS 大神直播免費上 -->
+<section class="container my-md-8 my-5">
+  <h3 class="text-center mt-md-7 mt-5">除此之外，再加碼四位 JS 大神直播免費上</h3>
+  <div class="row mt-md-6 mt-4">
+    <div class="col-md-6 mb-md-6 mb-4">
+      <div class="d-flex">
+        <div class="rounded-circle flex-shrink-0" style="width: 96px; height: 96px; background: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fp-0804.jpeg?alt=media&token=d0c2a9a3-1d4c-4ae2-b67e-12ad54069172) no-repeat center center; background-size: cover;"></div>
+        <div class="ml-3">
+          <p class="mb-1 mt-1 opacity-60">2021/08/04(三) 20:00~21:30</p>
+          <h4 class="mb-3">想要動態效果？來點 PixiJS 吧</h4>
+          <p>講者 —— <span class="d-inline-block ml-2 opacity-60">Eia</span></p>
+          <div class="d-flex">
+            <p class="flex-shrink-0">經歷 ——</p>
+            <ul class="list-unstyled ml-2 opacity-60">
+              <li>樂於分享的前端工程師</li>
+              <li>2016~2018年 Modern Web、MOPCON 講者<br/> ► 主題為 PixiJS、three.js</li>
+              <li>2017~2020年 iT 邦幫忙鐵人賽 <br> ► 主題：PixiJS、WebGL</li>
+            </ul>
           </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="col-md-6">
-          <div class="">
-  <div class="text-secondary">
-    <p>除了課程，我們還提供更多額外資源！</p>
-    <div class="row my-2">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fsection-add-1%402x.png?alt=media&token=1e4676d3-2018-4628-b427-633a55e65fa1" alt="">
-      </div>
-      <div class="col-8">
-        <p class="h5">中英文熱鍵對照表</p>
-        <p>無論你是設計老手、設計新手、工程轉設計、學個興趣，我們提供完整的熱鍵翻譯表，讓你不會對陌生的工具感到困惑，並且在最短的時間內輕鬆上手。</p>
       </div>
     </div>
-    <div class="row my-2">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fsection-add-2%402x.png?alt=media&token=c047a2ef-7b4b-4870-a484-60efd11cbcfe" alt="">
-      </div>
-      <div class="col-8">
-        <p class="h5">Bootstrap 樣式模板</p>
-        <p>許多專案來得又急又快，如果重新了解整個設計邏輯、繪製新元件、響應式規劃勢必會花去不少時間，我們提供 Bootstrap 的 XD 模板，讓你快速完成專案(<span class="text-primary">預計將在 12 月底上線</span>)。</p>
-      </div>
-    </div>
-    <div class="row my-2">
-      <div class="col-4">
-        <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fxd%2Fsection-add-3%402x.png?alt=media&token=8e26cc7d-e40b-41d1-bec8-50fc6b139865" alt="">
-      </div>
-      <div class="col-8">
-        <p class="h5">額外實戰課程</p>
-        <p>維持六角學院課程特色：除了教你技巧、更教你如何運用，接下來課程會補充從規劃到完工，設計出完整的網站登入頁！<br>(<span class="text-primary">預計在 2019 年 1 月底上線</span>)</p>
-      </div>
-    </div>
-    <p class="text-primary">本課程最低系統要求：Windows 10 / macOS X v10.12 以上</p>
-  </div>
-</div>
+    <div class="col-md-6 mb-md-6 mb-4">
+      <div class="d-flex">
+        <div class="rounded-circle flex-shrink-0" style="width: 96px; height: 96px; background: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fp-0809.jpeg?alt=media&token=796532e5-5409-4053-9cdf-01e9e08345a0) no-repeat center center; background-size: cover;"></div>
+        <div class="ml-3">
+          <p class="mb-1 mt-1 opacity-60">2021/08/09(一) 20:00~21:30</p>
+          <h4 class="mb-3">JavaScript 在 LINE developer 生態系 (LINE Bot ...)的開發應用導覽</h4>
+          <p>講者 —— <span class="d-inline-block ml-2 opacity-60">林建宏 Wolke Lin</span></p>
+          <div class="d-flex">
+            <p class="flex-shrink-0">經歷 ——</p>
+            <ul class="list-unstyled ml-2 opacity-60">
+              <li>GDE / LAE developer expert <br></li>
+              <li>資策會 / 東吳大學 講師</li>
+              <li>MOPCON / Devfest 講者</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-    
-  
+    </div>
+    <div class="col-md-6 mb-md-6 mb-4">
+      <div class="d-flex">
+        <div class="rounded-circle flex-shrink-0" style="width: 96px; height: 96px; background: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fp-0818.jpeg?alt=media&token=49a59e83-6fe1-4675-b829-d4052905b039) no-repeat center center; background-size: cover;"></div>
+        <div class="ml-3">
+          <p class="mb-1 mt-1 opacity-60">2021/8/18(三) 20:00~21:30</p>
+          <h4 class="mb-3">React Native 微入門</h4>
+          <p>講者 —— <span class="d-inline-block ml-2 opacity-60">陳奎研 Kent</span></p>
+          <div class="d-flex">
+            <p class="flex-shrink-0">經歷 ——</p>
+            <ul class="list-unstyled ml-2 opacity-60">
+              <li>創科資訊全端工程師</li>
+              <li>Monospace App 開發教練</li>
+              <li>React Native Taiwan 社團發起人</li>
+              <li>熟悉 Node 生態系，五年資深 React Native 開發者，Android/iOS/Web 前後端兩棲踩地雷大師。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-md-6 mb-4">
+      <div class="d-flex">
+        <div class="rounded-circle flex-shrink-0" style="width: 96px; height: 96px; background: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2Fp-0825.png?alt=media&token=cd22290b-297e-42f8-bb20-722318657d11) no-repeat center center; background-size: cover;"></div>
+        <div class="ml-3">
+          <p class="mb-1 mt-1 opacity-60">2021/8/25(三) 20:00~21:30</p>
+          <h4 class="mb-3">艾拉不 Error ー TodoList の挑戦</h4>
+          <p>講者 —— <span class="d-inline-block ml-2 opacity-60">音時エラー / Error 艾拉</span></p>
+          <div class="d-flex">
+            <p class="flex-shrink-0">經歷 ——</p>
+            <ul class="list-unstyled ml-2 opacity-60">
+              <li>由人工智慧研究中心所製造的 ST02T 家事型女僕機器人。</li>
+              <li>身上 bug 實在太多，於是成了倉管。</li>
+              <li>漸漸萌生自我意識的艾拉決定逃離倉庫，就此展張新的生活 ✨</li>
+              <li><a class="text-primary" href="https://twitter.com/ototoki_error" target="_blank">twitter</a> / <a class="text-primary" href="https://t.co/YUO1lF4zoC?amp=1" target="_blank">Youtube</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 常見 Q&A -->
+<section class="bg-primary text-white py-md-7 py-5">
+  <div class="container">
+    <h3 class="text-center">常見 Q&A</h3>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-10">
+        <div class="d-flex qa">
+          <span class="qa-title">Ｑ、</span>
+          <div>
+            <p class="opacity-87 qa-title">我完全沒寫過程式，這是堂新手入門課嗎？</p>
+            <p class="opacity-60">完全可以！這堂課是專為新手設計。六角學院專門教非本科的新手，一步步線上帶您學到會，我們會秉持著超乎常人的耐心與愛心，帶您逐步掌握 JS！</p>
+          </div>
+        </div>
+        <div class="d-flex qa">
+          <span class="qa-title">Ｑ、</span>
+          <div>
+            <p class="opacity-87 qa-title">這門課程學完，就能獲得獨立的作品嗎？</p>
+            <p class="opacity-60">可以的，只要按照課程的流程完成每個章節作業，最終就能完成屬於自己的獨立作品。</p>
+          </div>
+        </div>
+        <div class="d-flex qa">
+          <span class="qa-title">Ｑ、</span>
+          <div>
+            <p class="opacity-87 qa-title">這門課程 JavaScript 必修篇 - 前端修練全攻略，跟 2017 年開的「JS 試煉篇 - 學徒的試煉」有一樣嗎？</p>
+            <p class="opacity-60">這門課是威力加強升級版，主要迎合 2021 年 JS 的 ES6、7、8 技術趨勢量身打造課鋼，為了讓學員 JS 技能與業界接軌，我們則全新推出了 JS 新手向課程！</p>
+          </div>
+        </div>
+        <div class="d-flex qa">
+          <span class="qa-title">Ｑ、</span>
+          <div>
+            <p class="opacity-87 qa-title">如果課程有問題，該如何尋求協助呢？</p>
+            <p class="opacity-60">每個章節下方皆有發問區，任何問題都會有講師、助教來回覆，你也可能從其他同學找到你的問題答案喔~</p>
+          </div>
+        </div>
+        <div class="d-flex qa">
+          <span class="qa-title">Ｑ、</span>
+          <div>
+            <p class="opacity-87 qa-title">我已經註冊 JS 試煉篇 - 學徒的試煉，還需要這門課嗎？</p>
+            <p class="opacity-60">這堂課是以 ES6 為基礎的開發思維來設計課鋼，JS 學徒為 ES5 語法來設計，如果你對 ES6 瞭解度不高，則強烈建議您註冊。</p>
+          </div>
+        </div>
+        <div class="d-flex qa">
+          <span class="qa-title">Ｑ、</span>
+          <div>
+            <p class="opacity-87 qa-title">此課程未來會持續更新嗎？</p>
+            <p class="opacity-60">此課程將在 2021/9/30 前陸續上架課程完畢，並在未來三年，因應時代趨勢，每年新增 120 分鐘教材，總計增加 6 小時影音或直播課程，並於 2024/12/31 前完成全數更新。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-
+<section class="container my-md-8 my-5" id="recommend">
+  <h3 class="text-center mt-md-7 mt-5">高 CP 影音 + 加碼內容 + 講師直播只需要..</h3>
+  <div class="row my-md-6 my-4 align-items-center">
+    <div class="col-md-6">
+      <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F11-cover%402x.png?alt=media&token=cb59f121-ba83-4c7c-834a-ea8d22f5ebfc" alt="" class="img-fluid w-100">
+    </div>
+    <div class="col-md-6 mt-md-0 mt-3">
+      <h4>JavaScript 前端修練全攻略</h4>
+      <div class="description">
+        <!-- <ul class="list-unstyled">
+          <li><i class="fa fa-check text-primary mr-2"></i> <span class="opacity-60">將具備紮實並全面性的 JS ES6 觀念</span></li>
+          <li><i class="fa fa-check text-primary mr-2"></i> <span class="opacity-60">大量的 JS 題庫讓每章節融會貫通</span></li>
+          <li><i class="fa fa-check text-primary mr-2"></i> <span class="opacity-60">大型最終作業，驗證學習成效</span></li>
+        </ul> -->
+        <ul class="list-unstyled">
+          <li><i class="fa fa-check text-primary mr-2"></i><span class="opacity-60">2 份 UI 設計稿，並提供 Code Review</span></li>
+          <li><i class="fa fa-check text-primary mr-2"></i><span class="opacity-60">4 場 JS 直播講座</span></li>
+          <li><i class="fa fa-check text-primary mr-2"></i><span class="opacity-60">25 小時的影音時數</span></li>
+          <li><i class="fa fa-check text-primary mr-2"></i><span class="opacity-60">100 道的 JS 題目</span></li>
+          <li><i class="fa fa-check text-primary mr-2"></i><span class="opacity-60">150 堂的課程小節</span> </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="text-nowrap mr-4 text-right d-flex flex-lg-row flex-column">
+          <p class="mb-0 text-muted mr-lg-2"><del>NT$ 2,800</del></p>
+          <p class="mb-0 h5">NT$ 1,800</p>
+        </div>
+        <a href="https://shop.hexschool.com/order/create?order=js-plus"
+          title="JavaScript 前端修練全攻略"
+          id="trainingBuyBtn"
+          data-toggle="modal"
+          data-target="#orderModal"
+          title="開啟 JavaScript 前端修練全攻略 支付流程"
+          data-promotions="現在上課去"
+          data-price="2800" data-title="JavaScript 前端修練全攻略"
+          data-coupon="2021_JSPLUS_JULY_NEW_COURSE"
+          data-paylink="https://shop.hexschool.com/order/create?order=js-plus" data-type="product"
+          data-id="js-plus" itemprop="url"
+          class="btn btn-block py-2 w-50 btn-warning font-weight-bold mt-md-0 mt-2 mp-click tracking-link d-flex justify-content-center align-items-center">
+          我要上課！
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <div class="container">
@@ -901,7 +1111,8 @@
   
 </div>
 
-<div class="text-center my-4">
+
+<div class="text-center my-4 container">
   <p>P.S.：六角學院也有line+嘍，歡迎加入隨時獲得六角學院第一手資訊！</p>
   <a href="https://line.me/R/ti/p/%40guv7422g" class="m-y-1 mp-click"><img height="36" border="0" alt="加入好友"
       src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
@@ -1095,8 +1306,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1626868214884"></script>
-<script src="/js/bs4_all.js?1626868214884"></script>
+<script src="/js/bs4_vendor.js?1626868214881"></script>
+<script src="/js/bs4_all.js?1626868214881"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
@@ -1222,8 +1433,6 @@ postConversionAPI(h_all_data);
   
     
   
-    
-      
     
   
     
