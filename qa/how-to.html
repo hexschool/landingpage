@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1626937590124">
+  <link rel="stylesheet" href="/stylesheets/all.css?1626938616345">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1164,13 +1164,13 @@
 .tab-pane.active, .tab-pane.active ~ .tab-pane-common {
   display: block;
 }
-.btn {
+.btnTab {
   text-align: left;
   border: 0px;
   padding: 0px;
   outline: none;
 }
-.btn:active, .btn:hover, .btn:focus {
+.btnTab:active, .btnTab:hover, .btnTab:focus {
   outline: none;
   box-shadow: none;
 }
@@ -1187,21 +1187,21 @@
 
 <ul class="row nav item-story">
   <li class="col-sm-4 nav-item">
-    <a class="btn" data-toggle="tab" href="#ui">
+    <a class="btn btnTab" data-toggle="tab" href="#ui">
       <h3 class="text-center h6">UI 設計師</h3>
       <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fqa%2Fcharacter1-designer%402x.png?alt=media&token=dd03bf57-dd19-4726-8924-07f18d66a901" alt>
       <p>適合設計背景或有興趣者投入</p>
     </a>
   </li>
   <li class="col-sm-4 nav-item">
-    <a class="btn" data-toggle="tab" href="#webdesigner">
+    <a class="btn btnTab" data-toggle="tab" href="#webdesigner">
       <h3 class="text-center h6">網頁設計師</h3>
       <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fqa%2Fcharacter2-web-designer%402x.png?alt=media&token=be69b417-40a0-4ee3-8b2c-9a8cd36681f2" alt>
       <p>適合具有設計背景，或經過美感訓練者投入</p>
     </a>
   </li>
   <li class="col-sm-4 nav-item">
-    <a class="btn active" data-toggle="tab" href="#f2e">
+    <a class="btn btnTab active" data-toggle="tab" href="#f2e">
       <h3 class="text-center h6">前端工程師</h3>
       <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Fqa%2Fcharacter3-front-end%402x.png?alt=media&token=44469810-c18a-4f22-a753-69dac8d053eb" alt>
       <p>所有人皆可投入，學習時間長，但發展更好的職位</p>
@@ -1500,33 +1500,37 @@
     
   
     
-      <div class="col-lg-4 col-11 pt-md-0 pt-3 ">
-        <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
-          <h2 class="font-section-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area">我想學網頁設計 🔥</h2>
-          <div class="px-lg-2 px-3 pt-4 text-center">
-            <p class="font-title-for-course-list text-dark">新手設計包，帶你學會網頁排版，讓你上架網頁在伺服器上。</p>
-            <ul class="pl-3 text-left mx-3 font-small-for-course-list" style="border-left: 5px solid #00251A; list-style: none;">
+      <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
+        <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white pb-4">
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <p class="mb-0">課程組合包</p>
+            <p class="text-muted mb-0">已有 1,310 人擁有此組合</p>
+          </div>
+          <div class="p-3 bg-white">
+            <h4>我想學網頁設計 🔥</h4>
+            <p class="text-muted">新手設計包，帶你學會網頁排版，讓你上架網頁在伺服器上。</p>
+            <ul class="px-3 text-left mr-3 font-small-for-course-list" style="border-left: 5px solid #00251A; list-style: none;">
               
               <li>
-                <a class="link-dark" href="/courses/html_css.html" target="_blank">
+                <a class="text-muted" href="/courses/html_css.html" target="_blank">
                   使用 HTML、CSS 開發一個網站
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/jquery_ani.html" target="_blank">
+                <a class="text-muted" href="/courses/jquery_ani.html" target="_blank">
                   jQuery 網頁互動效果
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/responsive.html" target="_blank">
+                <a class="text-muted" href="/courses/responsive.html" target="_blank">
                   一變應萬變的響應式網頁設計
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/bootstrap/" target="_blank">
+                <a class="text-muted" href="/bootstrap/" target="_blank">
                   精通 Bootstrap 4 - 開發超強不解釋
                 </a>
               </li>
@@ -1534,29 +1538,27 @@
             </ul>
           </div>
           <div class="mt-auto">
-            <p class="mb-0 text-center"> <span style="cursor: inherit !important;">已有
-              <strong class="text-dark">1,310</strong> 人擁有此組合</span></p>
-            <div class="pt-4">
-              <div class="position-relative combined-works " style="height: 150px">
-                <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
-                <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fimg-bundle-web.jpg?alt=media&token=4fb47030-ef51-4179-a314-04d4e00c5562) no-repeat; background-position: top center; box-shadow: 3px -3px 8px rgba(0,0,0,0.16); background-size: cover;
-                  width: 80%; margin: 0 10%; z-index: 1; position: absolute;"></div>
-              </div>
-              <a href="https://wcc723.github.io/F2E-PK/" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a>
+            <div class="position-relative combined-works" style="height: 150px">
+              <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
+              <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fimg-bundle-web.jpg?alt=media&token=4fb47030-ef51-4179-a314-04d4e00c5562) no-repeat; background-position: top center; box-shadow: 3px -3px 8px rgba(0,0,0,0.16); background-size: cover;
+                width: 80%; margin: 0 10%; z-index: 1; position: absolute;"></div>
             </div>
-            <div class="pb-4 px-4 text-right text-dark">
-              <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：8400</del></p>
-              <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2520</p>
-              <p class="mb-0 font-weight-bold font-column-4-button">NT$ 5880</p>
+            <a href="https://wcc723.github.io/F2E-PK/" target="_blank" class="btn btn-large btn-dark rounded-0 px-3 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效 <i class="ml-1 fas fa-external-link-alt"></i></a>
+            <div class="d-flex justify-content-between px-3 mt-5 align-items-center">
+              <p class="mb-0 font-small-for-course-list text-muted"><small>原價：<del>8400</del> (-30% off)</small></p>
+              <p class="mb-0 font-weight-bold font-column-4-button">NT$ 5,880</p>
+            </div>
+            <div class="px-3 mt-2">
               
-                <a :href="'https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=' + (rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                <a :href="'https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mix-tracking mp-click tracking-link join-btn-hover btn btn-block btn-primary font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-course="網頁設計組合 (HTML + jQuery + RWD+ BS4)"
                   data-toggle="modal" data-target="#orderModal"
                   title="開啟 網頁設計組合 (HTML + jQuery + RWD+ BS4) 支付流程"
                   data-promotions="基礎入門 NT$5,880"
                   data-price="5880"
                   data-title="網頁設計組合 (HTML + jQuery + RWD+ BS4)"
                   data-paylink="https://shop.hexschool.com/order/create?order=z_bs4_html_jquery_rwd"
-                  :data-coupon="rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE'"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
                   data-type="product_group"
                   data-id="z_bs4_html_jquery_rwd">
                 付款上課去
@@ -1570,27 +1572,31 @@
     
   
     
-      <div class="col-lg-4 col-11 pt-md-0 pt-3 ">
-        <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
-          <h2 class="font-section-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area">我想學 JS 和框架 🔥</h2>
-          <div class="px-lg-2 px-3 pt-4 text-center">
-            <p class="font-title-for-course-list text-dark">基礎到進階一次學到會。</p>
-            <ul class="pl-3 text-left mx-3 font-small-for-course-list" style="border-left: 5px solid #00251A; list-style: none;">
+      <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
+        <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white pb-4">
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <p class="mb-0">課程組合包</p>
+            <p class="text-muted mb-0">已有 986 人擁有此組合</p>
+          </div>
+          <div class="p-3 bg-white">
+            <h4>我想學 JS 和框架 🔥</h4>
+            <p class="text-muted">基礎到進階一次學到會。</p>
+            <ul class="px-3 text-left mr-3 font-small-for-course-list" style="border-left: 5px solid #00251A; list-style: none;">
               
               <li>
-                <a class="link-dark" href="/courses/vue3.html" target="_blank">
+                <a class="text-muted" href="/courses/vue3.html" target="_blank">
                   Vue 3 實戰影音課程
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/js-plus.html" target="_blank">
+                <a class="text-muted" href="/courses/js-plus.html" target="_blank">
                   JavaScript 前端修練全攻略
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/js-core.html" target="_blank">
+                <a class="text-muted" href="/courses/js-core.html" target="_blank">
                   JavaScript - 核心篇
                 </a>
               </li>
@@ -1598,29 +1604,27 @@
             </ul>
           </div>
           <div class="mt-auto">
-            <p class="mb-0 text-center"> <span style="cursor: inherit !important;">已有
-              <strong class="text-dark">986</strong> 人擁有此組合</span></p>
-            <div class="pt-4">
-              <div class="position-relative combined-works " style="height: 150px">
-                <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
-                <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fimg-bundle-f2e.jpg?alt=media&token=547f59ba-0ab9-4b1a-8965-63376cb7af8c) no-repeat; background-position: top center; box-shadow: 3px -3px 8px rgba(0,0,0,0.16); background-size: cover;
-                  width: 80%; margin: 0 10%; z-index: 1; position: absolute;"></div>
-              </div>
-              <a href="https://works.hexschool.io/#/" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a>
+            <div class="position-relative combined-works" style="height: 150px">
+              <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
+              <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fimg-bundle-f2e.jpg?alt=media&token=547f59ba-0ab9-4b1a-8965-63376cb7af8c) no-repeat; background-position: top center; box-shadow: 3px -3px 8px rgba(0,0,0,0.16); background-size: cover;
+                width: 80%; margin: 0 10%; z-index: 1; position: absolute;"></div>
             </div>
-            <div class="pb-4 px-4 text-right text-dark">
-              <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：9900</del></p>
-              <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 2970</p>
-              <p class="mb-0 font-weight-bold font-column-4-button">NT$ 6930</p>
+            <a href="https://works.hexschool.io/#/" target="_blank" class="btn btn-large btn-dark rounded-0 px-3 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效 <i class="ml-1 fas fa-external-link-alt"></i></a>
+            <div class="d-flex justify-content-between px-3 mt-5 align-items-center">
+              <p class="mb-0 font-small-for-course-list text-muted"><small>原價：<del>9900</del> (-30% off)</small></p>
+              <p class="mb-0 font-weight-bold font-column-4-button">NT$ 6,930</p>
+            </div>
+            <div class="px-3 mt-2">
               
-                <a :href="'https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                <a :href="'https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mix-tracking mp-click tracking-link join-btn-hover btn btn-block btn-primary font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-course="JS 全攻略, JS 核心, Vue 組合包"
                   data-toggle="modal" data-target="#orderModal"
                   title="開啟 JS 全攻略, JS 核心, Vue 組合包 支付流程"
                   data-promotions="進階組合 NT$6,790"
                   data-price="6930"
                   data-title="JS 全攻略, JS 核心, Vue 組合包"
                   data-paylink="https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3"
-                  :data-coupon="rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE'"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
                   data-type="product_group"
                   data-id="z_js-plus_js-core_vue3">
                 付款上課去
@@ -1634,51 +1638,55 @@
     
   
     
-      <div class="col-lg-4 col-11 pt-md-0 pt-3 ">
-        <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
-          <h2 class="font-section-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area">前端全組合</h2>
-          <div class="px-lg-2 px-3 pt-4 text-center">
-            <p class="font-title-for-course-list text-dark">前端必備技能一次學好學滿。</p>
-            <ul class="pl-3 text-left mx-3 font-small-for-course-list" style="border-left: 5px solid #00251A; list-style: none;">
+      <div class="col-lg-4 col-11 pt-md-0 pt-3 mb-lg-0 mb-5">
+        <div class="landing-training-shadow rounded overflow d-flex flex-column h-100 bg-white pb-4">
+          <div class="bg-light d-flex justify-content-between px-3 py-2">
+            <p class="mb-0">課程組合包</p>
+            <p class="text-muted mb-0">已有 821 人擁有此組合</p>
+          </div>
+          <div class="p-3 bg-white">
+            <h4>前端全組合</h4>
+            <p class="text-muted">前端必備技能一次學好學滿。</p>
+            <ul class="px-3 text-left mr-3 font-small-for-course-list" style="border-left: 5px solid #00251A; list-style: none;">
               
               <li>
-                <a class="link-dark" href="/courses/html_css.html" target="_blank">
+                <a class="text-muted" href="/courses/html_css.html" target="_blank">
                   使用 HTML、CSS 開發一個網站
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/jquery_ani.html" target="_blank">
+                <a class="text-muted" href="/courses/jquery_ani.html" target="_blank">
                   jQuery 網頁互動效果
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/js-plus.html" target="_blank">
+                <a class="text-muted" href="/courses/js-plus.html" target="_blank">
                   JavaScript 前端修練全攻略
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/js-core.html" target="_blank">
+                <a class="text-muted" href="/courses/js-core.html" target="_blank">
                   JavaScript 核心篇
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/responsive.html" target="_blank">
+                <a class="text-muted" href="/courses/responsive.html" target="_blank">
                   一變應萬變的響應式網頁設計
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/bootstrap/" target="_blank">
+                <a class="text-muted" href="/bootstrap/" target="_blank">
                   精通 Bootstrap 4 - 開發超強不解釋
                 </a>
               </li>
               
               <li>
-                <a class="link-dark" href="/courses/vue3.html" target="_blank">
+                <a class="text-muted" href="/courses/vue3.html" target="_blank">
                   Vue 3 實戰影音課程
                 </a>
               </li>
@@ -1686,29 +1694,27 @@
             </ul>
           </div>
           <div class="mt-auto">
-            <p class="mb-0 text-center"> <span style="cursor: inherit !important;">已有
-              <strong class="text-dark">821</strong> 人擁有此組合</span></p>
-            <div class="pt-4">
-              <div class="position-relative combined-works " style="height: 150px">
-                <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
-                <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fimg-bundle-all.jpg?alt=media&token=e0efeb94-75a7-4cdb-bc99-97e982450d42) no-repeat; background-position: top center; box-shadow: 3px -3px 8px rgba(0,0,0,0.16); background-size: cover;
-                  width: 80%; margin: 0 10%; z-index: 1; position: absolute;"></div>
-              </div>
-              <a href="https://works.hexschool.io/#/" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a>
+            <div class="position-relative combined-works" style="height: 150px">
+              <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
+              <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fimg-bundle-all.jpg?alt=media&token=e0efeb94-75a7-4cdb-bc99-97e982450d42) no-repeat; background-position: top center; box-shadow: 3px -3px 8px rgba(0,0,0,0.16); background-size: cover;
+                width: 80%; margin: 0 10%; z-index: 1; position: absolute;"></div>
             </div>
-            <div class="pb-4 px-4 text-right text-dark">
-              <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：18300</del></p>
-              <p class="mb-0 font-weight-bold d-none d-lg-block">−30 % off：NT$ 5490</p>
-              <p class="mb-0 font-weight-bold font-column-4-button">NT$ 12810</p>
+            <a href="https://works.hexschool.io/#/" target="_blank" class="btn btn-large btn-dark rounded-0 px-3 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效 <i class="ml-1 fas fa-external-link-alt"></i></a>
+            <div class="d-flex justify-content-between px-3 mt-5 align-items-center">
+              <p class="mb-0 font-small-for-course-list text-muted"><small>原價：<del>18300</del> (-30% off)</small></p>
+              <p class="mb-0 font-weight-bold font-column-4-button">NT$ 12,810</p>
+            </div>
+            <div class="px-3 mt-2">
               
-                <a :href="'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs4_js-plus_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                <a :href="'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs4_js-plus_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mix-tracking mp-click tracking-link join-btn-hover btn btn-block btn-primary font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+                  data-course="前端全組合 (不含加購品)"
                   data-toggle="modal" data-target="#orderModal"
                   title="開啟 前端全組合 (不含加購品) 支付流程"
                   data-promotions="超值組合 NT$12,070"
                   data-price="12810"
                   data-title="前端全組合 (不含加購品)"
                   data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs4_js-plus_js-core_vue3"
-                  :data-coupon="rightCoupon.coupon_code || '2021_JSPLUS_JULY_NEW_COURSE'"
+                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
                   data-type="product_group"
                   data-id="z_html_jQuery_rwd_bs4_js-plus_js-core_vue3">
                 付款上課去
@@ -1724,6 +1730,62 @@
     
   
 </div>
+
+
+<!-- 舊版 -->
+<!-- <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
+  <h2 class="font-section-title py-3 bg-dark text-primary text-center rounded-top position-relative couse-title-area">你是 UI 新手？</h2>
+  <div class="px-lg-2 px-3 pt-4 text-center">
+    <p class="font-title-for-course-list text-dark">從軟體操作到實務理論，帶你一步一步做出屬於自己的電商 UI 作品！</p>
+    <ul class="pl-3 text-left mx-3 font-small-for-course-list" style="border-left: 5px solid #00251A; list-style: none;">
+      
+      <li>
+        <a class="link-dark" href="/courses/ui.html" target="_blank">
+          UI 設計入門
+        </a>
+      </li>
+      
+      <li>
+        <a class="link-dark" href="/courses/xd.html" target="_blank">
+          Adobe XD：網頁設計真容易
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="mt-auto">
+    <p class="mb-0 text-center"> <span style="cursor: inherit !important;">已有
+      <strong class="text-dark">364</strong> 人擁有此組合</span></p>
+    <div class="pt-4">
+      <div class="position-relative combined-works " style="height: 150px">
+        <div class="bg-light position-absolute" style="height: 130px; bottom: 0; width: 100%; z-index: 0;"></div>
+        <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fimg-bundle-f2e.jpg?alt=media&token=547f59ba-0ab9-4b1a-8965-63376cb7af8c) no-repeat; background-position: top center; box-shadow: 3px -3px 8px rgba(0,0,0,0.16); background-size: cover;
+          width: 80%; margin: 0 10%; z-index: 1; position: absolute;"></div>
+      </div>
+      <a href="https://www.behance.net/gallery/91470269/CUBEForniture-E-commerce-Website" target="_blank" class="btn btn-large btn-dark rounded-0 px-4 py-2 font-weight-bold" style="transform: translateY(-50%); position: absolute; z-index: 2;">作品成效</a>
+    </div>
+    <div class="pb-4 px-4 text-right text-dark">
+      <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價：4400</del></p>
+      <p class="mb-0 font-weight-bold d-none d-lg-block">−20 % off：NT$ 880</p>
+      <p class="mb-0 font-weight-bold font-column-4-button">NT$ 3520</p>
+      
+        <a :href="'https://shop.hexschool.com/order/create?order=z_xd_ui&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
+          data-toggle="modal" data-target="#orderModal"
+          title="開啟 UI 設計入門 + XD 軟體操作 支付流程"
+          data-promotions="進階組合 NT$3,520"
+          data-price="3520"
+          data-title="UI 設計入門 + XD 軟體操作"
+          data-paylink="https://shop.hexschool.com/order/create?order=z_xd_ui"
+          :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2020_ORIGIN'"
+          data-type="product_group"
+          data-id="z_xd_ui">
+        付款上課去
+        <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+      </a>
+      
+    </div>
+  </div>
+</div> -->
   
 </div>
 
@@ -1934,8 +1996,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1626937590136"></script>
-<script src="/js/all.js?1626937590136"></script>
+<script src="/js/vendor.js?1626938616350"></script>
+<script src="/js/all.js?1626938616350"></script>
 <script src="/js/wow.min.js"></script>
 
 
