@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1629449932768">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1629788181876">
   <!-- Global styles END -->
 
   
@@ -704,8 +704,10 @@
             </div>
             <div class="mt-auto">
               <div class="pb-4 px-4 text-right text-dark">
+                <span v-if="rightCoupon.course.jscore" class="mb-2 text-muted d-md-block d-none" style="font-size: 14px;">
+                  <del>原價：NT$ 3500 </del>
+                </span>
                 <p class="mb-0 font-weight-bold font-small-for-course-list">
-                  <!-- <del>原價：3500</del></p> -->
                 
                   <!-- 
                     <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off：NT$ 420</p>
@@ -752,7 +754,7 @@
         
         
         
-          <div class="col-md-6">
+          <div class="col-md-6 col-11 mt-md-0 mt-3">
             <div class="card mt-md-0 mt-4">
   <div class="card-body text-secondary">
     <p>本課程著重在 <strong class="text-success">JavaScript 的核心運作觀念</strong>，從直譯器的運作深入探討至 JavaScript 的各種運作模式，包含 詞法作用域、提升、非同步、運算子、轉型、物件參考、原型練、建構式等觀念。</p>
@@ -1204,8 +1206,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1629449932770"></script>
-<script src="/js/bs4_all.js?1629449932770"></script>
+<script src="/js/bs4_vendor.js?1629788181877"></script>
+<script src="/js/bs4_all.js?1629788181877"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">

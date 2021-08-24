@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1629449932810">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1629788181908">
   <!-- Global styles END -->
 
   
@@ -944,8 +944,10 @@
             </div>
             <div class="mt-auto">
               <div class="pb-4 px-4 text-right text-dark">
+                <span v-if="rightCoupon.course.vue3" class="mb-2 text-muted d-md-block d-none" style="font-size: 14px;">
+                  <del>原價：NT$ 3600 </del>
+                </span>
                 <p class="mb-0 font-weight-bold font-small-for-course-list">
-                  <!-- <del>原價：3600</del></p> -->
                 
                   <!-- 
                     <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off：NT$ 432</p>
@@ -1018,7 +1020,7 @@
         
         
         
-          <div class="col-md-6">
+          <div class="col-md-6 col-11 mt-md-0 mt-3">
             <div class="">
   <div class="text-secondary">
     <p>2018 年，我們推出了 Vue.js 課程，其中的助教服 務、電商 API、作品開發引導等服務大受好評！因 此再次推出「Vue 3 實戰影音課程」不但包含過去的優點，更加再次升級！</p>
@@ -1459,8 +1461,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1629449932811"></script>
-<script src="/js/bs4_all.js?1629449932811"></script>
+<script src="/js/bs4_vendor.js?1629788181908"></script>
+<script src="/js/bs4_all.js?1629788181908"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">

@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/v4.css?1629449932765">
+  <link rel="stylesheet" href="/stylesheets/v4.css?1629788181873">
   <!-- Global styles END -->
 
   
@@ -586,8 +586,10 @@
             </div>
             <div class="mt-auto">
               <div class="pb-4 px-4 text-right text-dark">
+                <span v-if="rightCoupon.course.bootstrap" class="mb-2 text-muted d-md-block d-none" style="font-size: 14px;">
+                  <del>原價：NT$ 2600 </del>
+                </span>
                 <p class="mb-0 font-weight-bold font-small-for-course-list">
-                  <!-- <del>原價：2600</del></p> -->
                 
                   <!-- 
                     <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off：NT$ 312</p>
@@ -646,7 +648,7 @@
         
         
         
-          <div class="col-md-6">
+          <div class="col-md-6 col-11 mt-md-0 mt-3">
             <div class="card">
   <div class="card-body text-secondary">
     <p><strong class="text-success">課程升級、升級在升級!!</strong>課程推出後會不斷的更新，且新增的內容不會額外收費，擺脫線上課程受後不理的刻板印象。</p>
@@ -1099,8 +1101,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1629449932766"></script>
-<script src="/js/bs4_all.js?1629449932766"></script>
+<script src="/js/bs4_vendor.js?1629788181874"></script>
+<script src="/js/bs4_all.js?1629788181874"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
