@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1635150553196">
+  <link rel="stylesheet" href="/stylesheets/all.css?1635323518245">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -377,6 +377,8 @@
               
             
               
+            
+              
               <a href="/courses/html_css.html" class="drop-click link-white d-block py-1 font-weight-light">HTML、CSS 開發網站</a>
               
             
@@ -400,9 +402,9 @@
             
               
             
-              
-            
           
+            
+              
             
               
             
@@ -432,9 +434,9 @@
             
               
             
-              
-            
           
+            
+              
             
               
             
@@ -464,9 +466,9 @@
             
               
             
-              
-            
           
+            
+              
             
               
             
@@ -496,12 +498,10 @@
             
               
             
-              
-            
           
             
               
-            
+              <a href="/courses/bootstrap5.html" class="drop-click link-white d-block py-1 font-weight-light">Bootstrap 5 網頁切版整合術</a>
               
             
               
@@ -513,7 +513,7 @@
               
             
               
-              <a href="/bootstrap/" class="drop-click link-white d-block py-1 font-weight-light">Bootstrap 4 - 開發超強不解釋</a>
+            
               
             
               
@@ -556,6 +556,8 @@
               
             
               
+            
+              
               <a href="/courses/html_css.html" class="drop-click link-white d-block py-1 font-weight-light">HTML、CSS 開發網站</a>
               
             
@@ -579,9 +581,9 @@
             
               
             
-              
-            
           
+            
+              
             
               
             
@@ -611,9 +613,9 @@
             
               
             
-              
-            
           
+            
+              
             
               
             
@@ -643,9 +645,9 @@
             
               
             
-              
-            
           
+            
+              
             
               
             
@@ -675,46 +677,44 @@
             
               
             
+          
+            
+              
+              <a href="/courses/bootstrap5.html" class="drop-click link-white d-block py-1 font-weight-light">Bootstrap 5 網頁切版整合術</a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
               
             
           
             
               
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-              <a href="/bootstrap/" class="drop-click link-white d-block py-1 font-weight-light">Bootstrap 4 - 開發超強不解釋</a>
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          
             
               
               <a href="/courses/js-plus.html" class="drop-click link-white d-block py-1 font-weight-light">JavaScript 前端修練全攻略</a>
-              
-            
               
             
               
@@ -778,9 +778,9 @@
               
             
               
-              <a href="/courses/vue3.html" class="drop-click link-white d-block py-1 font-weight-light">Vue 3 實戰影音課程</a>
-              
             
+              
+              <a href="/courses/vue3.html" class="drop-click link-white d-block py-1 font-weight-light">Vue 3 實戰影音課程</a>
               
             
               
@@ -893,9 +893,9 @@
               
             
               
-              <a href="/courses/html_css.html" class="drop-click link-white d-block py-1 font-weight-light">HTML、CSS 開發網站</a>
-              
             
+              
+              <a href="/courses/html_css.html" class="drop-click link-white d-block py-1 font-weight-light">HTML、CSS 開發網站</a>
               
             
               
@@ -1263,6 +1263,63 @@
         <div class="col-12">
           <h2 class="text-dark mb-4" style="font-size: 32px;">所有課程</h2>
           <ul class="list-unstyled">
+            
+              <li class="mb-3 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/bootstrap5.html">
+  <div class="courses-thumbnail" style="background-image: url(/images/bootstrap5/Bootstrap_5_cover.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <img src="/images/bootstrap5/Bootstrap_5_cover.png" alt="" style="visibility: hidden">
+    <div class="hover-img-bg">
+      前往課程介紹 <i class="fas fa-external-link-alt ml-2"></i>
+    </div>
+  </div>
+  <div class="w-100 px-3 py-md-3 py-2 position-relative">
+    <div class="row no-gutters h-100 justify-content-between w-100">
+      <div class="col-lg-6 col-7 d-flex flex-column justify-content-between ">
+        <div>
+          <h3 class="text-dark font-title-size course-title mb-0 mb-lg-2">
+            Bootstrap 5 網頁切版整合術
+            <!--  -->
+          </h3>
+          <div class="course-description d-md-block d-none pr-1">
+            <p class="mb-0"><p>學習使用 Bootstrap 5 快速開發網頁版型及了解其進階使用方法，並掌握自訂各種網站所需的設計樣式技巧。</p></p>
+          </div>
+        </div>
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bs5 && (course.bs5.detail.hasOwnProperty('num_subscribers') || course.bs5.teachableData.hasOwnProperty('enrolled'))">
+          <i class="fas fa-user"></i>
+          <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
+            <span v-if="course.bs5.teachableData.enrolled" v-text="course.bs5.detail.hasOwnProperty('num_subscribers')? course.bs5.detail.num_subscribers + course.bs5.teachableData.enrolled : course.bs5.teachableData.enrolled"> 300 </span>
+            <span v-else v-text="course.bs5.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
+          </span>
+        </p>
+      </div>
+      
+        <div class="col-5 d-md-block d-none">
+          <div class="d-flex flex-column justify-content-between align-items-end h-100">
+            <p class="text-muted mb-0" style="font-size: 14px;"><del>原價：NT$ 2600 </del></p>
+            <p class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0"> 新課優惠 / NT$ 1650</p>
+            <button class="btn btn-block btn-secondary rounded-0 font-weight-bold font-title-size mt-auto d-flex align-items-center justify-content-center disabled" disabled
+             >
+             即將開放註冊
+            </button>
+          </div>
+        </div>
+      
+    </div>
+    
+      
+        <a :href="'https://shop.hexschool.com/order/create?order=bs5&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2021_SEP_ORIGIN')" class="mp-click tracking-link btn btn-primary position-absolute rounded-0 d-block d-md-none" style="top: 0; right: 0; padding: 7px 8px"
+          data-toggle="modal" data-target="#orderModal" title="開啟 Bootstrap 5 網頁切版整合術 支付流程"
+          data-promotions="現在上課去"
+          data-price="2288" data-title="Bootstrap 5 網頁切版整合術"
+          data-paylink="https://shop.hexschool.com/order/create?order=bs5"
+          :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2021_SEP_ORIGIN'" data-type="product"
+          data-id="bs5" itemprop="url"
+          >
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+      
+    
+  </div>
+</li>
             
               <li class="mb-3 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/js-plus.html">
   <div class="courses-thumbnail" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-new%2F11-cover%402x.png?alt=media&token=cb59f121-ba83-4c7c-834a-ea8d22f5ebfc); background-repeat: no-repeat; background-size: cover; background-position: center center;">
@@ -1844,52 +1901,6 @@
             <i class="fas fa-shopping-cart"></i>
           </a>
       
-    
-  </div>
-</li>
-            
-              <li class="mb-3 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/bootstrap/">
-  <div class="courses-thumbnail" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a" alt="" style="visibility: hidden">
-    <div class="hover-img-bg">
-      前往課程介紹 <i class="fas fa-external-link-alt ml-2"></i>
-    </div>
-  </div>
-  <div class="w-100 px-3 py-md-3 py-2 position-relative">
-    <div class="row no-gutters h-100 justify-content-between w-100">
-      <div class="col-lg-6 col-7 d-flex flex-column justify-content-between ">
-        <div>
-          <h3 class="text-dark font-title-size course-title mb-0 mb-lg-2">
-            Bootstrap 4 - 開發超強不解釋
-            <!--  -->
-          </h3>
-          <div class="course-description d-md-block d-none pr-1">
-            <p class="mb-0"><p>學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。</p></p>
-          </div>
-        </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
-          <i class="fas fa-user"></i>
-          <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
-            <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
-          </span>
-        </p>
-      </div>
-      
-        <div class="col-5 d-md-block d-none">
-          <div class="d-flex flex-column justify-content-between align-items-end h-100">
-            <button class="btn btn-block btn-secondary rounded-0 font-weight-bold font-title-size mt-auto d-flex align-items-center justify-content-center disabled" disabled
-             >
-             暫停註冊
-            </button>
-          </div>
-        </div>
-      
-    </div>
-    
-      <button class="btn btn-secondary position-absolute rounded-0 d-block d-md-none disabled" disabled style="top: 0; right: 0; padding: 7px 8px">
-        <i class="far fa-times-circle"></i>
-      </button>
     
   </div>
 </li>
@@ -2715,6 +2726,8 @@
                           
                           
                           
+                          
+                          
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/html_css.html">
                               <div style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fhtml_new%400.5x.png?alt=media&token=e5a04e70-6cdb-4f64-81a2-3d4f1a6ef658); width: 96px;height: 96px; background-size: cover; background-position: center center;flex-shrink: 0;"></div>
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
@@ -2766,9 +2779,9 @@
                           
                           
                           
-                          
-                          
                         
+                          
+                          
                           
                           
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/js-plus.html">
@@ -2799,8 +2812,6 @@
                               </div>
                             </li>
                             
-                          
-                          
                           
                           
                           
@@ -2935,6 +2946,8 @@
                           
                           
                           
+                          
+                          
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/html_css.html">
                               <div style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fhtml_new%400.5x.png?alt=media&token=e5a04e70-6cdb-4f64-81a2-3d4f1a6ef658); width: 96px;height: 96px; background-size: cover; background-position: center center;flex-shrink: 0;"></div>
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
@@ -2986,9 +2999,9 @@
                           
                           
                           
-                          
-                          
                         
+                          
+                          
                           
                           
                           
@@ -3046,9 +3059,9 @@
                           
                           
                           
-                          
-                          
                         
+                          
+                          
                           
                           
                           
@@ -3089,8 +3102,6 @@
                               </div>
                             </li>
                             
-                          
-                          
                           
                           
                           
@@ -3219,6 +3230,8 @@
                           
                           
                           
+                          
+                          
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/vue3.html">
                               <div style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fvue3%2Fvue3-og.png?alt=media&token=8ead3c7d-c33f-4805-8efd-bb99e93d4f62); width: 96px;height: 96px; background-size: cover; background-position: center center;flex-shrink: 0;"></div>
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
@@ -3270,9 +3283,9 @@
                           
                           
                           
-                          
-                          
                         
+                          
+                          
                           
                           
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/js-plus.html">
@@ -3303,8 +3316,6 @@
                               </div>
                             </li>
                             
-                          
-                          
                           
                           
                           
@@ -3503,6 +3514,8 @@
                           
                           
                           
+                          
+                          
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/html_css.html">
                               <div style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fhtml_new%400.5x.png?alt=media&token=e5a04e70-6cdb-4f64-81a2-3d4f1a6ef658); width: 96px;height: 96px; background-size: cover; background-position: center center;flex-shrink: 0;"></div>
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
@@ -3554,9 +3567,9 @@
                           
                           
                           
-                          
-                          
                         
+                          
+                          
                           
                           
                           
@@ -3614,9 +3627,9 @@
                           
                           
                           
-                          
-                          
                         
+                          
+                          
                           
                           
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/js-plus.html">
@@ -3647,8 +3660,6 @@
                               </div>
                             </li>
                             
-                          
-                          
                           
                           
                           
@@ -3745,6 +3756,8 @@
                           
                           
                           
+                          
+                          
                             <li class="mb-2 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/responsive.html">
                               <div style="background-image: url(/images/products/rwd_cover.jpg); width: 96px;height: 96px; background-size: cover; background-position: center center;flex-shrink: 0;"></div>
                               <div class="py-2 px-md-2 px-3 w-100 d-flex flex-column" style="line-height:1.2;">
@@ -3792,9 +3805,9 @@
                           
                           
                           
-                          
-                          
                         
+                          
+                          
                           
                           
                           
@@ -3827,8 +3840,6 @@
                               </div>
                             </li>
                             
-                          
-                          
                           
                           
                           
@@ -4832,9 +4843,9 @@
   </div>
 </li>
               
-                <li class="mb-3 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/bootstrap/">
-  <div class="courses-thumbnail" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a" alt="" style="visibility: hidden">
+                <li class="mb-3 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/bootstrap5.html">
+  <div class="courses-thumbnail" style="background-image: url(/images/bootstrap5/Bootstrap_5_cover.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <img src="/images/bootstrap5/Bootstrap_5_cover.png" alt="" style="visibility: hidden">
     <div class="hover-img-bg">
       前往課程介紹 <i class="fas fa-external-link-alt ml-2"></i>
     </div>
@@ -4844,36 +4855,47 @@
       <div class="col-lg-6 col-7 d-flex flex-column justify-content-between ">
         <div>
           <h3 class="text-dark font-title-size course-title mb-0 mb-lg-2">
-            Bootstrap 4 - 開發超強不解釋
+            Bootstrap 5 網頁切版整合術
             <!--  -->
           </h3>
           <div class="course-description d-md-block d-none pr-1">
-            <p class="mb-0"><p>學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。</p></p>
+            <p class="mb-0"><p>學習使用 Bootstrap 5 快速開發網頁版型及了解其進階使用方法，並掌握自訂各種網站所需的設計樣式技巧。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bs5 && (course.bs5.detail.hasOwnProperty('num_subscribers') || course.bs5.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
-            <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
+            <span v-if="course.bs5.teachableData.enrolled" v-text="course.bs5.detail.hasOwnProperty('num_subscribers')? course.bs5.detail.num_subscribers + course.bs5.teachableData.enrolled : course.bs5.teachableData.enrolled"> 300 </span>
+            <span v-else v-text="course.bs5.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
       </div>
       
         <div class="col-5 d-md-block d-none">
           <div class="d-flex flex-column justify-content-between align-items-end h-100">
+            <p class="text-muted mb-0" style="font-size: 14px;"><del>原價：NT$ 2600 </del></p>
+            <p class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0"> 新課優惠 / NT$ 1650</p>
             <button class="btn btn-block btn-secondary rounded-0 font-weight-bold font-title-size mt-auto d-flex align-items-center justify-content-center disabled" disabled
              >
-             暫停註冊
+             即將開放註冊
             </button>
           </div>
         </div>
       
     </div>
     
-      <button class="btn btn-secondary position-absolute rounded-0 d-block d-md-none disabled" disabled style="top: 0; right: 0; padding: 7px 8px">
-        <i class="far fa-times-circle"></i>
-      </button>
+      
+        <a :href="'https://shop.hexschool.com/order/create?order=bs5&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2021_SEP_ORIGIN')" class="mp-click tracking-link btn btn-primary position-absolute rounded-0 d-block d-md-none" style="top: 0; right: 0; padding: 7px 8px"
+          data-toggle="modal" data-target="#orderModal" title="開啟 Bootstrap 5 網頁切版整合術 支付流程"
+          data-promotions="現在上課去"
+          data-price="2288" data-title="Bootstrap 5 網頁切版整合術"
+          data-paylink="https://shop.hexschool.com/order/create?order=bs5"
+          :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2021_SEP_ORIGIN'" data-type="product"
+          data-id="bs5" itemprop="url"
+          >
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+      
     
   </div>
 </li>
@@ -5283,9 +5305,9 @@
   </div>
 </li>
               
-                <li class="mb-3 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/bootstrap/">
-  <div class="courses-thumbnail" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a" alt="" style="visibility: hidden">
+                <li class="mb-3 bg-white d-flex text-dark course-area-link rounded overflow" data-url="/courses/bootstrap5.html">
+  <div class="courses-thumbnail" style="background-image: url(/images/bootstrap5/Bootstrap_5_cover.png); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <img src="/images/bootstrap5/Bootstrap_5_cover.png" alt="" style="visibility: hidden">
     <div class="hover-img-bg">
       前往課程介紹 <i class="fas fa-external-link-alt ml-2"></i>
     </div>
@@ -5295,36 +5317,47 @@
       <div class="col-lg-6 col-7 d-flex flex-column justify-content-between ">
         <div>
           <h3 class="text-dark font-title-size course-title mb-0 mb-lg-2">
-            Bootstrap 4 - 開發超強不解釋
+            Bootstrap 5 網頁切版整合術
             <!--  -->
           </h3>
           <div class="course-description d-md-block d-none pr-1">
-            <p class="mb-0"><p>學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力。</p></p>
+            <p class="mb-0"><p>學習使用 Bootstrap 5 快速開發網頁版型及了解其進階使用方法，並掌握自訂各種網站所需的設計樣式技巧。</p></p>
           </div>
         </div>
-        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bootstrap && (course.bootstrap.detail.hasOwnProperty('num_subscribers') || course.bootstrap.teachableData.hasOwnProperty('enrolled'))">
+        <p class="mb-0 mt-md-2 mt-1 text-dark" v-if="course.bs5 && (course.bs5.detail.hasOwnProperty('num_subscribers') || course.bs5.teachableData.hasOwnProperty('enrolled'))">
           <i class="fas fa-user"></i>
           <span class="ml-md-2 font-weight-md-bold font-content-size course-participate">
-            <span v-if="course.bootstrap.teachableData.enrolled" v-text="course.bootstrap.detail.hasOwnProperty('num_subscribers')? course.bootstrap.detail.num_subscribers + course.bootstrap.teachableData.enrolled : course.bootstrap.teachableData.enrolled"> 300 </span>
-            <span v-else v-text="course.bootstrap.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
+            <span v-if="course.bs5.teachableData.enrolled" v-text="course.bs5.detail.hasOwnProperty('num_subscribers')? course.bs5.detail.num_subscribers + course.bs5.teachableData.enrolled : course.bs5.teachableData.enrolled"> 300 </span>
+            <span v-else v-text="course.bs5.detail.num_subscribers"> 300 </span> 人參與<span class="d-md-inline-block d-none">本課程</span>
           </span>
         </p>
       </div>
       
         <div class="col-5 d-md-block d-none">
           <div class="d-flex flex-column justify-content-between align-items-end h-100">
+            <p class="text-muted mb-0" style="font-size: 14px;"><del>原價：NT$ 2600 </del></p>
+            <p class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0"> 新課優惠 / NT$ 1650</p>
             <button class="btn btn-block btn-secondary rounded-0 font-weight-bold font-title-size mt-auto d-flex align-items-center justify-content-center disabled" disabled
              >
-             暫停註冊
+             即將開放註冊
             </button>
           </div>
         </div>
       
     </div>
     
-      <button class="btn btn-secondary position-absolute rounded-0 d-block d-md-none disabled" disabled style="top: 0; right: 0; padding: 7px 8px">
-        <i class="far fa-times-circle"></i>
-      </button>
+      
+        <a :href="'https://shop.hexschool.com/order/create?order=bs5&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_2021_SEP_ORIGIN')" class="mp-click tracking-link btn btn-primary position-absolute rounded-0 d-block d-md-none" style="top: 0; right: 0; padding: 7px 8px"
+          data-toggle="modal" data-target="#orderModal" title="開啟 Bootstrap 5 網頁切版整合術 支付流程"
+          data-promotions="現在上課去"
+          data-price="2288" data-title="Bootstrap 5 網頁切版整合術"
+          data-paylink="https://shop.hexschool.com/order/create?order=bs5"
+          :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_2021_SEP_ORIGIN'" data-type="product"
+          data-id="bs5" itemprop="url"
+          >
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+      
     
   </div>
 </li>
@@ -6330,6 +6363,28 @@
 {
   "@context":"https://schema.org",
   "@type":"Product",
+  "productID":"bs5",
+  "name":"Bootstrap 5 網頁切版整合術",
+  "description": "學習使用 Bootstrap 5 快速開發網頁版型及了解其進階使用方法，並掌握自訂各種網站所需的設計樣式技巧。",
+  "url":"https://www.hexschool.com/courses/courses/bootstrap5.html",
+  "image":  "/images/bootstrap5/Bootstrap_5_cover.png",
+  "brand":"hexschool",
+  "offers":[
+    {
+      "@type":"Offer",
+      "price":2600,
+      "priceCurrency":"TWD",
+      "itemCondition":"https://schema.org/NewCondition",
+      "availability":"https://schema.org/InStock"
+      }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
   "productID":"jsplus",
   "name":"JavaScript 前端修練全攻略",
   "description": "課程將具備紮實且全面性的 JS ES6 觀念，大量的 JS 題庫讓每章節融會貫通，並以大型最終作業，驗證學習成效",
@@ -6450,28 +6505,6 @@
     {
       "@type":"Offer",
       "price":2800,
-      "priceCurrency":"TWD",
-      "itemCondition":"https://schema.org/NewCondition",
-      "availability":"https://schema.org/InStock"
-      }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Product",
-  "productID":"bootstrap",
-  "name":"Bootstrap 4 - 開發超強不解釋",
-  "description": "學會如何使用 Bootstrap 建立網頁及元件，並且創造出具職場競爭力的能力",
-  "url":"https://www.hexschool.com/courses/bootstrap/",
-  "image":  "https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fb4_600.png?alt=media&token=86a9aaf7-e403-4d91-a5d6-e9c1be301d1a",
-  "brand":"hexschool",
-  "offers":[
-    {
-      "@type":"Offer",
-      "price":2600,
       "priceCurrency":"TWD",
       "itemCondition":"https://schema.org/NewCondition",
       "availability":"https://schema.org/InStock"
@@ -6799,6 +6832,8 @@
   <!-- Coupon link cookie 儲存 -->
 
   
+
+  
     <a href="null?couponCode=COUPON_2020_ORIGIN"
       class="couponCode-link hidden-xs-up"
       data-link="null" data-coupon="jsplus" itemprop="url">
@@ -6810,8 +6845,6 @@
       class="couponCode-link hidden-xs-up"
       data-link="null" data-coupon="vue3" itemprop="url">
     </a>
-  
-
   
 
   
@@ -6856,8 +6889,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1635150553201"></script>
-<script src="/js/all.js?1635150553201"></script>
+<script src="/js/vendor.js?1635323518250"></script>
+<script src="/js/all.js?1635323518250"></script>
 <script src="/js/wow.min.js"></script>
 
 
