@@ -305,11 +305,23 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  var swiper;
+  var swiper, vue_review_swiper;
   swiper = new Swiper('.swiper-training', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+    }
+  });
+  vue_review_swiper = new Swiper('.swiper-vue-training-review', {
+    direction: 'vertical',
+    mousewheelControl: true,
+    slidesPerView: 4,
+    spaceBetween: 15,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
     }
   });
   swiper = new Swiper('.swiper-js-training-1st-student-works', {
