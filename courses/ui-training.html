@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1636082830970">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1636300759899">
   <!-- Global styles END -->
 
   
@@ -986,7 +986,7 @@
               <p class="mb-0 font-weight-bold">本次挑戰你需要每週投入至少 5 小時，你可以辦到嗎？</p>
               <div class="bg-light p-1 d-inline-flex mt-3 rounded">
                 <div class="form-check d-md-inline-block">
-                  <input class="form-check-input training-checked" type="checkbox" id="trainingHW">
+                  <input class="form-check-input training-checked disabled" disabled type="checkbox" id="trainingHW">
                   <label class="form-check-label" for="trainingHW">
                     當然，我就是來練功變強的！
                   </label>
@@ -1012,8 +1012,8 @@
               itemprop="url" target="_blank" rel="noopener"
               class="btn btn-lg btn-block btn-warning font-weight-bold mt-2 mp-click tracking-link d-flex justify-content-center align-items-center disabled"
               disabled>
-              立即註冊
-               <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i>
+              已額滿
+               <!-- <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i> -->
             </a>
           </div>
         </div>
@@ -1031,15 +1031,12 @@
 
 
  <!-- 開啟通用 footer 倒數-->
-    <!-- 如果個別頁面有需要倒數 -->
-     <!-- 判斷哪些頁面用 page-footer-clock -->
-      
-        
-          <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
+    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">UI 直播班 開放報名</span>
+        <span class="mr-md-5 font-weight-bold text-left">BS5 新課優惠</span>
         
         <div class="d-flex justify-content-start text-white text-nowrap">
           
@@ -1049,7 +1046,7 @@
       </div>
       <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
         
-          <a href="/courses/ui-training.html"
+          <a href="/courses/bootstrap5.html"
             class="btn btn-dark btn-sm rounded-0">
             連結
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -1060,11 +1057,8 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2021/11/8">
+  <input type="hidden" id="footer-clock" value="2021/11/22">
 
-        
-      
-    
   
 
   </div>
@@ -1129,7 +1123,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_2021_SEP_ORIGIN')" target="_blank" class="btn btn-block btn-danger btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+        <a v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_2020_ORIGIN')" target="_blank" class="btn btn-block btn-danger btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -1237,8 +1231,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1636082830972"></script>
-<script src="/js/bs4_all.js?1636082830972"></script>
+<script src="/js/bs4_vendor.js?1636300759900"></script>
+<script src="/js/bs4_all.js?1636300759900"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
