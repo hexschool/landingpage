@@ -1238,6 +1238,9 @@ $(document).ready(function() {
     eventName = $(this).data('wishlist');
     return fbq('track', 'AddToWishlist');
   });
+  $('.lead-click').on('click', function(e) {
+    return fbq('track', 'Lead');
+  });
 });
 
 $(document).ready(function() {
