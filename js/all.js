@@ -257,7 +257,7 @@ $(document).ready(function() {
     });
     totalUrl = url + '?' + param;
     if (leadCourse) {
-      return location.href = decodeURIComponent(totalUrl + '#addProducts');
+      return window.open(decodeURIComponent(totalUrl + '#addProducts'));
     }
   });
   countPrice = function() {
@@ -275,7 +275,16 @@ $(document).ready(function() {
       return originTotal = originTotal + originPrice;
     });
     $('#selecedTotal').text(total);
-    return $('#selecedOriginTotal').text(originTotal - total);
+    $('#selecedOriginTotal').text(originTotal - total);
+    if (total > 5799) {
+      $('#condition_false').hide();
+      return $('#condition_true').show();
+    } else {
+      conditionText = 5880 - total;
+      $('#condition').html(conditionText);
+      $('#condition_false').show();
+      return $('#condition_true').hide();
+    }
   };
   countPrice();
   $('#customCourses .selecedCourse').on('change', function() {

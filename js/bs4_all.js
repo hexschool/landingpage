@@ -88,6 +88,123 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  var changeActice, nowPage;
+  changeActice = function(target) {
+    $('.bookmark').removeClass('active');
+    return $(target).addClass('active');
+  };
+  nowPage = 1;
+  $('#firstLabel').on('click', function(event) {
+    changeActice('#firstLabel');
+    $('#third').css('visibility', 'visible');
+    if (nowPage === 2) {
+      $('#second').css('msTransform', 'rotateY(0deg)');
+      $('#second').css('webkitTransform', 'rotateY(0deg)');
+      $('#second').css('transform', 'rotateY(0deg)');
+    } else if (nowPage === 3) {
+      $('#second').css('msTransform', 'rotateY(0deg)');
+      $('#second').css('webkitTransform', 'rotateY(0deg)');
+      $('#second').css('transform', 'rotateY(0deg)');
+      $('#fourth').css('msTransform', 'rotateY(0deg)');
+      $('#fourth').css('webkitTransform', 'rotateY(0deg)');
+      $('#fourth').css('transform', 'rotateY(0deg)');
+    } else {
+      $('#second').css('msTransform', 'rotateY(0deg)');
+      $('#second').css('webkitTransform', 'rotateY(0deg)');
+      $('#second').css('transform', 'rotateY(0deg)');
+      $('#fourth').css('msTransform', 'rotateY(0deg)');
+      $('#fourth').css('webkitTransform', 'rotateY(0deg)');
+      $('#fourth').css('transform', 'rotateY(0deg)');
+      $('#six').css('msTransform', 'rotateY(0deg)');
+      $('#six').css('webkitTransform', 'rotateY(0deg)');
+      $('#six').css('transform', 'rotateY(0deg)');
+    }
+    return nowPage = 1;
+  });
+  $('#secondLabel').on('click', function(event) {
+    changeActice('#secondLabel');
+    if (nowPage === 1) {
+      $('#third').css('visibility', 'visible');
+      $('#second').css('msTransform', 'rotateY(-180deg)');
+      $('#second').css('webkitTransform', 'rotateY(-180deg)');
+      $('#second').css('transform', 'rotateY(-180deg)');
+    } else if (nowPage === 3) {
+      $('#third').css('visibility', 'hidden');
+      $('#fifth').css('visibility', 'visible');
+      $('#fourth').css('msTransform', 'rotateY(0deg)');
+      $('#fourth').css('webkitTransform', 'rotateY(0deg)');
+      $('#fourth').css('transform', 'rotateY(0deg)');
+    } else if (nowPage === 4) {
+      $('#third').css('visibility', 'hidden');
+      $('#fifth').css('visibility', 'visible');
+      $('#eight').css('visibility', 'hidden');
+      $('#fourth').css('msTransform', 'rotateY(0deg)');
+      $('#fourth').css('webkitTransform', 'rotateY(0deg)');
+      $('#fourth').css('transform', 'rotateY(0deg)');
+      $('#sixth').css('msTransform', 'rotateY(0deg)');
+      $('#sixth').css('webkitTransform', 'rotateY(0deg)');
+      $('#sixth').css('transform', 'rotateY(0deg)');
+    }
+    return nowPage = 2;
+  });
+  $('#thirdLabel').on('click', function(event) {
+    changeActice('#thirdLabel');
+    $('#third').css('visibility', 'hidden');
+    $('#fifth').css('visibility', 'visible');
+    if (nowPage === 2) {
+      $('#third').css('visibility', 'hidden');
+      $('#fifth').css('visibility', 'visible');
+      $('#fourth').css('msTransform', 'rotateY(-180deg)');
+      $('#fourth').css('webkitTransform', 'rotateY(-180deg)');
+      $('#fourth').css('transform', 'rotateY(-180deg)');
+      $('#sixth').css('msTransform', 'rotateY(0)');
+      $('#sixth').css('webkitTransform', 'rotateY(0)');
+      $('#sixth').css('transform', 'rotateY(0)');
+    } else if (nowPage === 4) {
+      $('#third').css('visibility', 'hidden');
+      $('#fifth').css('visibility', 'hidden');
+      $('#eight').css('visibility', 'visible');
+      $('#sixth').css('msTransform', 'rotateY(0)');
+      $('#sixth').css('webkitTransform', 'rotateY(0)');
+      $('#sixth').css('transform', 'rotateY(0)');
+    } else {
+      $('#second').css('msTransform', 'rotateY(-180deg)');
+      $('#second').css('webkitTransform', 'rotateY(-180deg)');
+      $('#second').css('transform', 'rotateY(-180deg)');
+      $('#fourth').css('msTransform', 'rotateY(-180deg)');
+      $('#fourth').css('webkitTransform', 'rotateY(-180deg)');
+      $('#fourth').css('transform', 'rotateY(-180deg)');
+      $('#sixth').css('msTransform', 'rotateY(0)');
+      $('#sixth').css('webkitTransform', 'rotateY(0)');
+      $('#sixth').css('transform', 'rotateY(0)');
+    }
+    return nowPage = 3;
+  });
+  return $('#fourthLabel').on('click', function(event) {
+    changeActice('#fourthLabel');
+    if (nowPage === 3) {
+      $('#third').css('visibility', 'hidden');
+      $('#fifth').css('visibility', 'hidden');
+      $('#eight').css('visibility', 'visible');
+      $('#sixth').css('msTransform', 'rotateY(-180deg)');
+      $('#sixth').css('webkitTransform', 'rotateY(-180deg)');
+      $('#sixth').css('transform', 'rotateY(-180deg)');
+    } else {
+      $('#second').css('msTransform', 'rotateY(-180deg)');
+      $('#second').css('webkitTransform', 'rotateY(-180deg)');
+      $('#second').css('transform', 'rotateY(-180deg)');
+      $('#fourth').css('msTransform', 'rotateY(-180deg)');
+      $('#fourth').css('webkitTransform', 'rotateY(-180deg)');
+      $('#fourth').css('transform', 'rotateY(-180deg)');
+      $('#sixth').css('msTransform', 'rotateY(-180deg)');
+      $('#sixth').css('webkitTransform', 'rotateY(-180deg)');
+      $('#sixth').css('transform', 'rotateY(-180deg)');
+    }
+    return nowPage = 4;
+  });
+});
+
+$(document).ready(function() {
   var counter, isTimeToUpdate, mouse, moveImg, moveImg2, moveImgS, onMouseEnterHandler, onMouseLeaveHandler, onMouseMoveHandler, perspectiveWall, update, updateRate, updateTransformStyle;
   perspectiveWall = document.getElementById('perspectiveWallgit');
   moveImg = document.getElementById('moveImggit');
