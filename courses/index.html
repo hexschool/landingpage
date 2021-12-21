@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1639994414643">
+  <link rel="stylesheet" href="/stylesheets/all.css?1640080285933">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -194,11 +194,12 @@
           
               
                 <li class="nav-item ">
-                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/calendar/"><span class="nav-link-span">六角行事曆</span>
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/calendar/"><span class="nav-link-span">行事曆</span>
                   
                     <div id="calendarNotification" class="d-inline-flex">
                       <span v-if="notificationLength > 0" v-text="notificationLength" class="bg-danger position-relative rounded-circle text-white" style="top: -8px;width: 16px;font-size: 12px;height: 16px;display: inline-flex;align-items: center;justify-content: center;"></span>
                     </div>
+                  
                   
                   </a>
                 </li>
@@ -217,7 +218,21 @@
             
               
                 <li class="nav-item ">
+                  <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/courses/escape.html"><span class="nav-link-span">程式解題</span>
+                  
+                  
+                    <div class="d-inline-flex">
+                      <span class="bg-danger position-absolute rounded-pill text-white px-1" style="    left: 70%;top: 16px;font-size: 12px;height: 16px;display: inline-flex;align-items: center;justify-content: center;">NEW</span>
+                    </div>
+                  
+                  </a>
+                </li>
+              
+            
+              
+                <li class="nav-item ">
                   <a class="reduce-padding nav-link link-white py-md-4 px-md-2 px-lg-4 font-weight-bold position-relative" href="/archives/"><span class="nav-link-span">部落格</span>
+                  
                   
                   </a>
                 </li>
@@ -253,7 +268,7 @@
         </ul>
         <!-- <a class="reduce-padding py-4 pl-4 font-weight-bold d-md-block d-none" href="#" data-toggle="modal" data-target="#exampleModal"><i class="material-icons text-dark" style="vertical-align: middle;">search</i></a> -->
         <!-- <div class="bg-danger text-dark position-absoulte py-3 px-5 d-flex justify-content-between d-md-none" style="top: 100%">
-          <p class="font-weight-bold m-0">年度感謝祭 全新課程優惠中</p>
+          <p class="font-weight-bold m-0">感謝祭課程全 7 折</p>
           <span class="clock m-r-1"></span>
         </div> -->
       </div>
@@ -479,9 +494,7 @@
       <a class="link-white" href="#"><div class="d-flex align-items-center justify-content-between" style="font-size: 20px;">
         <p class="category-items m-0">
           前端開發
-          
-            🔥
-          
+          🔥
         </p>
         <i class="category-items material-icons category-open"> add</i>
       </div></a>
@@ -814,6 +827,19 @@
   
     <li class="course-category category-border-top">
       <a class="link-white" href="#"><div class="d-flex align-items-center justify-content-between" style="font-size: 20px;">
+        <p class="category-items m-0">預購課程 ⚡</p>
+        <i class="category-items material-icons category-open">add</i>
+      </div></a>
+      <div class="course-dropdown">
+        <a href="/courses/escape.html" class="drop-click link-white d-block py-1 font-weight-light">密室逃脫程式解題</a>
+        <a href="/2021/12/02/2021-12-02-the-f2e-js-course/" class="drop-click link-white d-block py-1 font-weight-light">THE F2E JS 攻略包</a>
+      </div>
+    </li>
+  
+
+  
+    <li class="course-category category-border-top">
+      <a class="link-white" href="#"><div class="d-flex align-items-center justify-content-between" style="font-size: 20px;">
         <p class="category-items m-0">
           UI 設計
           
@@ -972,7 +998,7 @@
   
     <li class="course-category category-border-top">
       <a class="link-white" href="#"><div class="d-flex align-items-center justify-content-between" style="font-size: 20px;">
-        <p class="category-items m-0">前端直播班 🎙</p>
+        <p class="category-items m-0">前端直播班 🎙 </p>
         <i class="category-items material-icons category-open">add</i>
       </div></a>
       <div class="course-dropdown">
@@ -1049,6 +1075,24 @@
           <div class="row flex-column align-items-end">
             <div class="col-8">
               
+              
+                 <!-- 文案獨立 -->
+                <a href="/courses/escape.html" class="dropdown-clock-banner">
+                  <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fescape%2Fog.png?alt=media&token=c21fa06b-3510-44c3-9133-9e1cf3e5dd9a" alt="">
+                  <div class="d-flex justify-content-between">
+                    <p class="py-2 px-3 bg-danger text-white font-weight-bold" style="transform: translateY(-50%); font-size: 20px;">前端密室逃脫</p>
+                    <p class="text-white font-weight-light">
+                      
+                        <span class="clock m-r-1"></span>
+                      
+                      
+                        <span class="m-r-1">註冊再抽 Mac、Switch！</span>
+                      
+                    </p>
+                  </div>
+                </a>
+                
+              
             </div>
           </div>
           <div class="row justify-content-between text-white">
@@ -1070,8 +1114,6 @@
     <!-- END NAVIGATION -->
 </div>
 <!-- Header END -->
-
-  <input type="hidden" id="footer-clock" value="2022/1/17">
 
 
 <div class="login-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -1120,7 +1162,7 @@
   <div class="container py-5 ad-big">
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <h3 class="text-white font-ad-title text-md-left text-center">年度感謝祭 課程全面七折</h3>
+        <h3 class="text-white font-ad-title text-md-left text-center">年度感謝祭 全課程七折</h3>
         <p class="text-white mt-3 text-md-left text-center">年度感謝祭｜課程全面七折，註冊滿額還能抽大獎！</p>
       </div>
       <div class="col-lg-5 col-md-6 d-flex flex-column flex-wrap align-items-end">
@@ -1137,7 +1179,7 @@
     <div class="container">
       <div class="d-flex align-items-center justify-content-md-center justify-content-between">
         <div class="d-flex flex-md-row flex-column text-dark justify-content-md-end mr-3">
-          <span class="mr-md-5 font-weight-bold">年度感謝祭 課程全面七折</span>
+          <span class="mr-md-5 font-weight-bold">年度感謝祭 全課程七折</span>
           
           <div class="d-flex justify-content-center text-dark"><span class="ad-clock-sm m-r-1 text-nowrap"></span></div>
         </div>
@@ -1492,6 +1534,16 @@
                 
                 
                 前端開發 
+              </a>
+            </li>
+          
+            <li>
+              <a class="d-block p-md-4 p-3 text-nowrap" id="pills-precourse-tab" data-toggle="pill" href="#precourse" role="tab" aria-controls="pills-home" aria-selected="true">
+                
+                
+                  ⚡
+                
+                預購課程 
               </a>
             </li>
           
@@ -2998,11 +3050,16 @@
           <div class="bg-dark py-3 px-3 mb-4">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
               <div class="text-center text-md-left w-100">
-                <h3 class="text-white font-ad-title text-md-left text-center mb-0">年度感謝祭 課程全面七折</h3>
+                <h3 class="text-white font-ad-title text-md-left text-center mb-0">年度感謝祭 全課程七折</h3>
                 <p class="text-white text-md-left text-center">年度感謝祭｜課程全面七折，註冊滿額還能抽大獎！</p>
-                <button type="button" class="btn btn-primary py-2 px-3 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size " data-toggle="modal" data-target="#customChooseMoal">
-                  自選組合
-                </button>
+                <div class="d-flex flex-md-row flex-column align-items-md-end">
+                  <button type="button" class="btn btn-primary py-2 px-3 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size " data-toggle="modal" data-target="#customChooseMoal">
+                    自選組合
+                  </button>
+                  <a href="/2021/12/16/2021-12-16-free-25/" target="_blank" class="btn btn-link ml-3 mt-md-0 mt-3" style="text-decoration: underline;">
+                    我要試聽
+                  </a>
+                </div>
               </div>
               <div class="w-100 text-center text-md-right text-nowrap mt-md-0 mt-3">
                 <span class="ad-clock-xl m-r-1 text-white" style="font-size: 28px"></span>
@@ -6385,6 +6442,40 @@
     
   
     
+      <div class="tab-pane fade category-title" id="precourse" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-dark" style="font-size: 32px;">預購課程</h2>
+              <ul class="row nav">
+                <li class="col-lg-4 col-md-6 mt-lg-4 mt-3 nav-item">
+                  <div class="course-area-link h-100 bg-white card border-0 rounded-0" data-url="/courses/escape.html">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fescape%2Fog.png?alt=media&token=c21fa06b-3510-44c3-9133-9e1cf3e5dd9a" alt="" class="img-fluid card-img-top">
+                    <div class="card-body border-0 rounded-0">
+                      <h5 class="text-dark mt-2 mb-1">你要留下，還是塊陶？</h5>
+                      <p class="mt-2 text-dark">用 25 道前端程式解題，200 分鐘影音教學，以及超過百位學長姊職場經驗分享，帶您了解求職時容易遇到的程式情境！</p>
+                      <a href="/2021/12/02/2021-12-02-the-f2e-js-course" target="_blank" class="btn btn-primary float-right mt-auto">立即註冊</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-lg-4 col-md-6 mt-lg-4 mt-3 nav-item">
+                  <div class="course-area-link h-100 bg-white card border-0 rounded-0" data-url="/2021/12/02/2021-12-02-the-f2e-js-course">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2021%2F12%2F02%2FJS__1.png?alt=media&token=0c013a63-0934-45a6-ba26-358f8362c99d" alt="" class="img-fluid card-img-top">
+                    <div class="card-body border-0 rounded-0">
+                      <h5 class="text-dark mt-2 mb-1">The F2E 前端 JS 攻略包</h5>
+                      <p class="mt-2 text-dark">帶您看著 UI 設計稿，做出第三屆 The F2E 的 JS 互動功能，以原生 JS ES6 語法，著重網頁介面搭配 JS 實作頁面效果！</p>
+                      <a href="/2021/12/02/2021-12-02-the-f2e-js-course" target="_blank" class="btn btn-primary float-right">立即註冊</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  
+    
       <div class="tab-pane fade category-title" id="uidesign" role="tabpanel" aria-labelledby="pills-contact-tab">
         <div class="container">
           <div class="row">
@@ -7621,8 +7712,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1639994414649"></script>
-<script src="/js/all.js?1639994414649"></script>
+<script src="/js/vendor.js?1640080285939"></script>
+<script src="/js/all.js?1640080285939"></script>
 <script src="/js/wow.min.js"></script>
 
 
