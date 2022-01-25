@@ -55,6 +55,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  var addQueryParam;
   $('.course-area-link').on("click", function(event) {
     var url;
     if (event.target.nodeName !== 'A' && event.target.nodeName !== 'I') {
@@ -75,7 +76,10 @@ $(document).ready(function() {
     $('#conbined-courses div.tab-pane').each(function(e) {
       return $(this).removeClass('show active');
     });
-    return $(target).tab('show');
+    $(target).tab('show');
+    window.history.replaceState(null, null, window.location.pathname);
+    addQueryParam('category', 'conbined-courses');
+    return addQueryParam('combind', e.target.value);
   });
   if ($('#pills-conbined-tab').hasClass('active')) {
     $('#courses_special').css('display', 'none');
@@ -96,6 +100,32 @@ $(document).ready(function() {
     } else {
       return $('.scroll-hint').css('display', 'inline-block');
     }
+  });
+  addQueryParam = (function(_this) {
+    return function(key, value) {
+      var h_url;
+      h_url = new URL(window.location.href);
+      h_url.searchParams.set(key, value);
+      return window.history.pushState({}, '', h_url.toString());
+    };
+  })(this);
+  $('.courses-nav-category a').on('click', function(e) {
+    var target;
+    target = $(e.target).attr('href');
+    window.history.replaceState(null, null, window.location.pathname);
+    return addQueryParam('category', target.replace('#', ''));
+  });
+  $('a.combination_title').on('click', function(e) {
+    var target;
+    if (e.target.nodeName === 'A') {
+      target = $(e.target).attr('href');
+    }
+    if (e.target.nodeName === 'SPAN') {
+      target = $(e.target.parentNode).attr('href');
+    }
+    window.history.replaceState(null, null, window.location.pathname);
+    addQueryParam('category', 'conbined-courses');
+    return addQueryParam('combind', target.replace('#', ''));
   });
 });
 
