@@ -232,6 +232,108 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  var addQueryParam, categoryBar, changeTab, course_template_paramArr, course_template_url, div2FromTop, hasParamInArr, navItem, recommend, tabPaneItem, urlTarget;
+  if ($('.course-template').length > 0) {
+    course_template_url = location.href;
+    course_template_paramArr = ['intro', 'agenda', 'faq'];
+    if (course_template_url.indexOf('#') !== -1) {
+      urlTarget = course_template_url.split('#')[1];
+      hasParamInArr = course_template_paramArr.some(function(ele) {
+        return ele === urlTarget;
+      });
+      if (hasParamInArr) {
+        tabPaneItem = document.querySelectorAll('.tab-pane');
+        tabPaneItem.forEach(function(ele) {
+          return $(ele).removeClass('show').removeClass('active');
+        });
+        navItem = document.querySelectorAll('.category-bar a');
+        navItem.forEach(function(ele) {
+          return $(ele).removeClass('active');
+        });
+        $('#' + urlTarget).addClass('active').addClass('show');
+        $('.category-bar a[href="#' + urlTarget + '"]').addClass('active');
+      }
+    }
+    addQueryParam = (function(_this) {
+      return function(value) {
+        var h_url;
+        h_url = new URL(window.location.href);
+        return window.history.pushState({}, '', "#" + value);
+      };
+    })(this);
+    changeTab = function(event, change) {
+      var target;
+      target = event.href.split('#')[1];
+      addQueryParam(target);
+      tabPaneItem = document.querySelectorAll('.tab-pane');
+      tabPaneItem.forEach(function(ele) {
+        return $(ele).removeClass('show').removeClass('active');
+      });
+      navItem = document.querySelectorAll('.category-bar a');
+      navItem.forEach(function(ele) {
+        return $(ele).removeClass('active');
+      });
+      $('#' + target).addClass('active').addClass('show');
+      $('.category-bar a[href="#' + target + '"]').addClass('active');
+      if (window.innerWidth < 768) {
+        $('html, body').animate({
+          scrollTop: $('.tab-content').offset().top - 70
+        }, 1000);
+      }
+      if (change && window.innerWidth > 768) {
+        return $('html, body').animate({
+          scrollTop: 0
+        }, 1000);
+      }
+    };
+    $('.changeTab').click(function(event) {
+      if (event.target.nodeName === "IMG") {
+        changeTab(event.target.parentNode.parentNode, true);
+      } else {
+        changeTab(event.target, true);
+      }
+    });
+    $('.category-bar a').click(function(event) {
+      changeTab(event.target, false);
+    });
+    $('.scroll-to-top').click(function(event) {
+      event.preventDefault();
+      return $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+    });
+    if (window.innerWidth < 768) {
+      recommend = $('.course-template-recommend');
+      categoryBar = $('.category-bar');
+      $('.course-template-recommend').css('top', '58px');
+      $('.category-bar').css('top', '0px');
+      div2FromTop = $('.category-bar').offset().top;
+      return $(window).scroll(function() {
+        var div1FromTop;
+        div1FromTop = recommend.offset().top;
+        if (div1FromTop + 30 <= div2FromTop) {
+          if (div1FromTop + 70 <= div2FromTop) {
+            $('.course-template-recommend').css('top', '58px');
+            $('.category-bar').css('top', '0px');
+            if (div1FromTop + 65 <= div2FromTop) {
+              $('.course-template-recommend').css('z-index', '20');
+              return $('.header').show();
+            }
+          }
+        } else {
+          $('.category-bar').css('top', '54px');
+          $('.course-template-recommend').css('z-index', '1032');
+          $('.course-template-recommend').css('top', '0px');
+          if (div1FromTop + 10 > div2FromTop) {
+            return $('.header').hide();
+          }
+        }
+      });
+    }
+  }
+});
+
 $(function() {
   if ($('#course-header').length) {
     $(window).scroll(function() {
@@ -396,13 +498,15 @@ vueApp = function() {
         js: {},
         vue: {},
         web_layout: {},
-        ui: {}
+        ui: {},
+        node: {}
       },
       trainingWait: {
         js: {},
         vue: {},
         web_layout: {},
-        ui: {}
+        ui: {},
+        node: {}
       }
     },
     methods: {
