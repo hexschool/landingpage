@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1649985340663">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1650211215113">
   <!-- Global styles END -->
 
   
@@ -520,21 +520,21 @@
       <div class="mt-auto ml-auto pb-4 pr-4 w-md-down-100 pl-4">
         <div class="my-2">
           <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：4400</del></small></p>
-          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 3,080</p>
+          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 3,520</p>
         </div>
         
-          <a href="https://shop.hexschool.com/order/create?order=z_xd_ui&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
-              data-toggle="modal" data-target="#orderModal"
-              title="開啟 UI 設計入門 + XD 軟體操作 支付流程"
-              data-promotions="進階組合 NT$3,520"
-              data-price="3080"
-              data-title="UI 設計入門 + XD 軟體操作"
-              data-paylink="https://shop.hexschool.com/order/create?order=z_xd_ui"
-              data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-              data-type="product_group"
-              data-id="z_xd_ui">
-            付款上課去
-          </a>
+          <a :href="'https://shop.hexschool.com/order/create?order=z_xd_ui&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
+            data-toggle="modal" data-target="#orderModal"
+            title="開啟 UI 設計入門 + XD 軟體操作 支付流程"
+            data-promotions="進階組合 NT$3,520"
+            data-price="3520"
+            data-title="UI 設計入門 + XD 軟體操作"
+            data-paylink="https://shop.hexschool.com/order/create?order=z_xd_ui"
+            :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+            data-type="product_group"
+            data-id="z_xd_ui">
+          付款上課去
+        </a>
         
       </div>
     </div>
@@ -630,21 +630,21 @@
       <div class="mt-auto ml-auto pb-4 pr-4 w-md-down-100 pl-4">
         <div class="my-2">
           <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：4400</del></small></p>
-          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 3,080</p>
+          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 3,520</p>
         </div>
         
-          <a href="https://shop.hexschool.com/order/create?order=z_html_js-plus&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
-              data-toggle="modal" data-target="#orderModal"
-              title="開啟 高 CP 新手包 支付流程"
-              data-promotions="新手組合 NT$3, 520"
-              data-price="3080"
-              data-title="高 CP 新手包"
-              data-paylink="https://shop.hexschool.com/order/create?order=z_html_js-plus"
-              data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-              data-type="product_group"
-              data-id="z_js-plus_html">
-            付款上課去
-          </a>
+          <a :href="'https://shop.hexschool.com/order/create?order=z_html_js-plus&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
+            data-toggle="modal" data-target="#orderModal"
+            title="開啟 高 CP 新手包 支付流程"
+            data-promotions="新手組合 NT$3, 520"
+            data-price="3520"
+            data-title="高 CP 新手包"
+            data-paylink="https://shop.hexschool.com/order/create?order=z_html_js-plus"
+            :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+            data-type="product_group"
+            data-id="z_js-plus_html">
+          付款上課去
+        </a>
         
       </div>
     </div>
@@ -813,22 +813,22 @@
     <div class="col-md-3 d-flex">
       <div class="mt-auto ml-auto pb-4 pr-4 w-md-down-100 pl-4">
         <div class="my-2">
-          <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：8400</del></small></p>
-          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 5,880</p>
+          <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：8600</del></small></p>
+          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 6,450</p>
         </div>
         
-          <a href="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
-              data-toggle="modal" data-target="#orderModal"
-              title="開啟 網頁設計組合 (HTML + jQuery + RWD) 支付流程"
-              data-promotions="基礎入門 NT$5,880"
-              data-price="5880"
-              data-title="網頁設計組合 (HTML + jQuery + RWD)"
-              data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5"
-              data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-              data-type="product_group"
-              data-id="z_bs4_html_jquery_rwd">
-            付款上課去
-          </a>
+          <a :href="'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
+            data-toggle="modal" data-target="#orderModal"
+            title="開啟 網頁設計組合 (HTML + jQuery + RWD) 支付流程"
+            data-promotions="基礎入門 NT$5,880"
+            data-price="6450"
+            data-title="網頁設計組合 (HTML + jQuery + RWD)"
+            data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5"
+            :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+            data-type="product_group"
+            data-id="z_bs4_html_jquery_rwd">
+          付款上課去
+        </a>
         
       </div>
     </div>
@@ -964,22 +964,22 @@
     <div class="col-md-3 d-flex">
       <div class="mt-auto ml-auto pb-4 pr-4 w-md-down-100 pl-4">
         <div class="my-2">
-          <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：9900</del></small></p>
-          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 6,930</p>
+          <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：10000</del></small></p>
+          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 7,500</p>
         </div>
         
-          <a href="https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
-              data-toggle="modal" data-target="#orderModal"
-              title="開啟 JS 全攻略, JS 核心, Vue 組合包 支付流程"
-              data-promotions="進階組合 NT$6,790"
-              data-price="6930"
-              data-title="JS 全攻略, JS 核心, Vue 組合包"
-              data-paylink="https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3"
-              data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-              data-type="product_group"
-              data-id="z_js-plus_js-core_vue3">
-            付款上課去
-          </a>
+          <a :href="'https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
+            data-toggle="modal" data-target="#orderModal"
+            title="開啟 JS 全攻略, JS 核心, Vue 組合包 支付流程"
+            data-promotions="進階組合 NT$6,790"
+            data-price="7500"
+            data-title="JS 全攻略, JS 核心, Vue 組合包"
+            data-paylink="https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3"
+            :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+            data-type="product_group"
+            data-id="z_js-plus_js-core_vue3">
+          付款上課去
+        </a>
         
       </div>
     </div>
@@ -1244,22 +1244,22 @@
     <div class="col-md-3 d-flex">
       <div class="mt-auto ml-auto pb-4 pr-4 w-md-down-100 pl-4">
         <div class="my-2">
-          <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：18300</del></small></p>
-          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 12,810</p>
+          <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：18600</del></small></p>
+          <p class="mb-0 font-weight-bold font-column-4-button text-right price-font text-dark">NT$ 13,950</p>
         </div>
         
-          <a href="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_vue3&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
-              data-toggle="modal" data-target="#orderModal"
-              title="開啟 前端全組合 (不含加購品) 支付流程"
-              data-promotions="超值組合 NT$12,070"
-              data-price="12810"
-              data-title="前端全組合 (不含加購品)"
-              data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_vue3"
-              data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-              data-type="product_group"
-              data-id="z_html_jQuery_rwd_bs4_js-plus_js-core_vue3">
-            付款上課去
-          </a>
+          <a :href="'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_vue3&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link btn btn-dark btn-lg text-center w-md-down-100 mp-click tracking-link"
+            data-toggle="modal" data-target="#orderModal"
+            title="開啟 前端全組合 (不含加購品) 支付流程"
+            data-promotions="超值組合 NT$12,070"
+            data-price="13950"
+            data-title="前端全組合 (不含加購品)"
+            data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_vue3"
+            :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+            data-type="product_group"
+            data-id="z_html_jQuery_rwd_bs4_js-plus_js-core_vue3">
+          付款上課去
+        </a>
         
       </div>
     </div>
@@ -1273,811 +1273,6 @@
     </div>
   </div>
 </section>
-
-<!-- 影音課程方案推薦 -->
-<!-- <section class="bg-primary-light py-md-7 py-5">
-  <div class="container">
-    <h3 class="text-center">影音課程方案推薦</h3>
-    <p class="text-center text-muted"> 每部影音都在 5 - 15 分鐘內，適合短時間碎片化有效學習 </p>
-    <div class="row justify-content-center">
-      
-        
-          <div class="col-lg-8 col-md-10 col-11 my-2">
-            <div class="bg-white p-4 shadow-sm rounded">
-              <div class="d-flex flex-wrap align-items-center">
-                <h4 class="mr-2">高 CP 新手包</h4>
-                <p class="text-muted mb-0">新手設計包，帶你學會網頁排版與 JavaScript，讓你上架網頁在伺服器上。</p>
-              </div>
-              <div class="d-flex flex-wrap align-items-end justify-content-between">
-                <div class="mt-md-2 mt-4">
-                  <ul class="list-unstyled border-left-4 pl-2 mb-0">
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/html_css.html" class="text-muted" target="_blank">HTML、CSS 開發網站</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/js-plus.html" class="text-muted" target="_blank">JavaScript 前端修練全攻略</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                  </ul>
-                </div>
-                <div class="d-flex justify-content-md-start justify-content-between w-md-down-100 mt-lg-0 mt-4">
-                  <div class="mr-3">
-                    <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：4400</del></small></p>
-                    <p class="mb-0 font-weight-bold font-column-4-button text-right price-font">NT$ 3,080</p>
-                  </div>
-                  <a href="https://shop.hexschool.com/order/create?order=z_html_js-plus&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark d-flex align-items-center px-md-7 px-4 px-2 ml-auto"
-                      data-toggle="modal" data-target="#orderModal"
-                      title="開啟 高 CP 新手包 支付流程"
-                      data-promotions="新手組合 NT$3, 520"
-                      data-price="3080"
-                      data-title="高 CP 新手包"
-                      data-paylink="https://shop.hexschool.com/order/create?order=z_html_js-plus"
-                      data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-                      data-type="product_group"
-                      data-id="z_js-plus_html">
-                    付款上課去
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-      
-        
-          <div class="col-lg-8 col-md-10 col-11 my-2">
-            <div class="bg-white p-4 shadow-sm rounded">
-              <div class="d-flex flex-wrap align-items-center">
-                <h4 class="mr-2">我想學網頁設計 🔥</h4>
-                <p class="text-muted mb-0">新手設計包，帶你學會網頁排版，讓你上架網頁在伺服器上。</p>
-              </div>
-              <div class="d-flex flex-wrap align-items-end justify-content-between">
-                <div class="mt-md-2 mt-4">
-                  <ul class="list-unstyled border-left-4 pl-2 mb-0">
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/html_css.html" class="text-muted" target="_blank">HTML、CSS 開發網站</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/jquery_ani.html" class="text-muted" target="_blank">jQuery 打造互動性網頁效果</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/responsive.html" class="text-muted" target="_blank">一變應萬變的響應式網頁設計</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                        <li>
-                          <a href="/courses/bootstrap5.html" class="text-muted" target="_blank">Bootstrap 5 網頁切版整合術</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                  </ul>
-                </div>
-                <div class="d-flex justify-content-md-start justify-content-between w-md-down-100 mt-lg-0 mt-4">
-                  <div class="mr-3">
-                    <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：8400</del></small></p>
-                    <p class="mb-0 font-weight-bold font-column-4-button text-right price-font">NT$ 5,880</p>
-                  </div>
-                  <a href="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark d-flex align-items-center px-md-7 px-4 px-2 ml-auto"
-                      data-toggle="modal" data-target="#orderModal"
-                      title="開啟 網頁設計組合 (HTML + jQuery + RWD) 支付流程"
-                      data-promotions="基礎入門 NT$5,880"
-                      data-price="5880"
-                      data-title="網頁設計組合 (HTML + jQuery + RWD)"
-                      data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5"
-                      data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-                      data-type="product_group"
-                      data-id="z_bs4_html_jquery_rwd">
-                    付款上課去
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-      
-        
-          <div class="col-lg-8 col-md-10 col-11 my-2">
-            <div class="bg-white p-4 shadow-sm rounded">
-              <div class="d-flex flex-wrap align-items-center">
-                <h4 class="mr-2">我想學 JS 和框架 🔥</h4>
-                <p class="text-muted mb-0">基礎到進階一次學到會。</p>
-              </div>
-              <div class="d-flex flex-wrap align-items-end justify-content-between">
-                <div class="mt-md-2 mt-4">
-                  <ul class="list-unstyled border-left-4 pl-2 mb-0">
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/vue3.html" class="text-muted" target="_blank">Vue 3 實戰影音課程</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/js-plus.html" class="text-muted" target="_blank">JavaScript 前端修練全攻略</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/js-core.html" class="text-muted" target="_blank">JavaScript 核心篇</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                  </ul>
-                </div>
-                <div class="d-flex justify-content-md-start justify-content-between w-md-down-100 mt-lg-0 mt-4">
-                  <div class="mr-3">
-                    <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：9900</del></small></p>
-                    <p class="mb-0 font-weight-bold font-column-4-button text-right price-font">NT$ 6,930</p>
-                  </div>
-                  <a href="https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark d-flex align-items-center px-md-7 px-4 px-2 ml-auto"
-                      data-toggle="modal" data-target="#orderModal"
-                      title="開啟 JS 全攻略, JS 核心, Vue 組合包 支付流程"
-                      data-promotions="進階組合 NT$6,790"
-                      data-price="6930"
-                      data-title="JS 全攻略, JS 核心, Vue 組合包"
-                      data-paylink="https://shop.hexschool.com/order/create?order=z_js-plus_js-core_vue3"
-                      data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-                      data-type="product_group"
-                      data-id="z_js-plus_js-core_vue3">
-                    付款上課去
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-      
-        
-          <div class="col-lg-8 col-md-10 col-11 my-2">
-            <div class="bg-white p-4 shadow-sm rounded">
-              <div class="d-flex flex-wrap align-items-center">
-                <h4 class="mr-2">前端全組合</h4>
-                <p class="text-muted mb-0">前端必備技能一次學好學滿。</p>
-              </div>
-              <div class="d-flex flex-wrap align-items-end justify-content-between">
-                <div class="mt-md-2 mt-4">
-                  <ul class="list-unstyled border-left-4 pl-2 mb-0">
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/html_css.html" class="text-muted" target="_blank">HTML、CSS 開發網站</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/jquery_ani.html" class="text-muted" target="_blank">jQuery 打造互動性網頁效果</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/js-plus.html" class="text-muted" target="_blank">JavaScript 前端修練全攻略</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/js-core.html" class="text-muted" target="_blank">JavaScript 核心篇</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/responsive.html" class="text-muted" target="_blank">一變應萬變的響應式網頁設計</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                        <li>
-                          <a href="/courses/bootstrap5.html" class="text-muted" target="_blank">Bootstrap 5 網頁切版整合術</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/vue3.html" class="text-muted" target="_blank">Vue 3 實戰影音課程</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                  </ul>
-                </div>
-                <div class="d-flex justify-content-md-start justify-content-between w-md-down-100 mt-lg-0 mt-4">
-                  <div class="mr-3">
-                    <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：18300</del></small></p>
-                    <p class="mb-0 font-weight-bold font-column-4-button text-right price-font">NT$ 12,810</p>
-                  </div>
-                  <a href="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_vue3&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark d-flex align-items-center px-md-7 px-4 px-2 ml-auto"
-                      data-toggle="modal" data-target="#orderModal"
-                      title="開啟 前端全組合 (不含加購品) 支付流程"
-                      data-promotions="超值組合 NT$12,070"
-                      data-price="12810"
-                      data-title="前端全組合 (不含加購品)"
-                      data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_vue3"
-                      data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-                      data-type="product_group"
-                      data-id="z_html_jQuery_rwd_bs4_js-plus_js-core_vue3">
-                    付款上課去
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-      
-        
-      
-        
-          <div class="col-lg-8 col-md-10 col-11 my-2">
-            <div class="bg-white p-4 shadow-sm rounded">
-              <div class="d-flex flex-wrap align-items-center">
-                <h4 class="mr-2">CSS 框架組合包</h4>
-                <p class="text-muted mb-0">從 SCSS 基礎到 Bootstrap 框架，實戰必備招式一把抓。</p>
-              </div>
-              <div class="d-flex flex-wrap align-items-end justify-content-between">
-                <div class="mt-md-2 mt-4">
-                  <ul class="list-unstyled border-left-4 pl-2 mb-0">
-                    
-                      
-                      
-                        <li>
-                          <a href="/courses/bootstrap5.html" class="text-muted" target="_blank">Bootstrap 5 網頁切版整合術</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                        <li>
-                          <a href="/courses/sass.html" class="text-muted" target="_blank">Sass 實戰全攻略</a>
-                        </li>
-                        
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    
-                  </ul>
-                </div>
-                <div class="d-flex justify-content-md-start justify-content-between w-md-down-100 mt-lg-0 mt-4">
-                  <div class="mr-3">
-                    <p class="mb-0 font-weight-bold font-small-for-course-list text-right text-muted"><small><del>原價：6800</del></small></p>
-                    <p class="mb-0 font-weight-bold font-column-4-button text-right price-font">NT$ 4,760</p>
-                  </div>
-                  <a href="https://shop.hexschool.com/order/create?order=z_bs5_sass_sassLiv&coupon_code=2022_FINAL_SPECIAL_SALE_COUPON" class="mp-click tracking-link btn btn-dark d-flex align-items-center px-md-7 px-4 px-2 ml-auto"
-                      data-toggle="modal" data-target="#orderModal"
-                      title="開啟 CSS 框架組合包 (BS5 + Sass + 直播講座 Sass) 支付流程"
-                      data-promotions="進階組合 NT$5,100"
-                      data-price="4760"
-                      data-title="CSS 框架組合包 (BS5 + Sass + 直播講座 Sass)"
-                      data-paylink="https://shop.hexschool.com/order/create?order=z_bs5_sass_sassLiv"
-                      data-coupon="2022_FINAL_SPECIAL_SALE_COUPON"
-                      data-type="product_group"
-                      data-id="z_bs5_sass_sassLiv">
-                    付款上課去
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-      
-    </div>
-  </div>
-</section> -->
 
 <!-- Q&A -->
 <section class="bg-primary-light py-md-7 py-5">
@@ -2158,36 +1353,6 @@
 </div>
 
 
- <!-- 開啟通用 footer 倒數-->
-   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
-    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
-      <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">即將漲價｜最後七折</span>
-        
-        <div class="d-flex justify-content-start text-white text-nowrap">
-          
-            <span class="clock m-r-1 font-weight-bold"></span>
-          
-        </div>
-      </div>
-      <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
-        
-          <a href="/courses"
-            class="btn btn-dark btn-sm rounded-0">
-            連結
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        
-      </div>
-    </div>
-  </div>
-</nav>
-
-  <input type="hidden" id="footer-clock" value="2022/04/18">
-
-  
 
   </div>
   
@@ -2251,7 +1416,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_2020_ORIGIN')" target="_blank" class="btn btn-block btn-danger btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+        <a v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank" class="btn btn-block btn-danger btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -2266,8 +1431,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -2359,8 +1524,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1649985340672"></script>
-<script src="/js/bs4_all.js?1649985340672"></script>
+<script src="/js/bs4_vendor.js?1650211215114"></script>
+<script src="/js/bs4_all.js?1650211215114"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
