@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1651547117195">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1652234056440">
   <!-- Global styles END -->
 
   
@@ -636,7 +636,7 @@
   
     
     <section class="container my-5 course-tracking-ViewContent" id="recommend" data-name="JavaScript 核心篇" data-id="jscore"
-      data-price="3080">
+      data-price="2625">
       
       
       
@@ -719,21 +719,21 @@
                   <p class="mb-0 font-weight-bold font-small-for-course-list">
                   
                     <!-- 
-                      <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off：NT$ 420</p>
+                      <p class="mb-0 font-weight-bold d-none d-lg-block">−25 % off：NT$ 875</p>
                      -->
                     <span v-if="rightCoupon.course.jscore" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
-                      12 % off
+                      25 % off
                     </span>
-                    <p v-if="rightCoupon.course.jscore" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 3,080</p>                    <p v-else class="mb-0 font-weight-bold font-column-4-button">NT$ 3500</p>
+                    <p v-if="rightCoupon.course.jscore" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 2,625</p>                    <p v-else class="mb-0 font-weight-bold font-column-4-button">NT$ 3500</p>
                   
-                  <meta itemprop="price" content="3080">
+                  <meta itemprop="price" content="2625">
                   <meta itemprop="priceCurrency" content="TWD">
                   
                     <a :href="'https://shop.hexschool.com/order/create?order=js-core&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')"
                       class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
                       data-toggle="modal" data-target="#orderModal" title="開啟 JavaScript 核心篇 支付流程"
                       data-promotions="現在上課去"
-                      data-price="3080" data-title="JavaScript 核心篇"
+                      data-price="2625" data-title="JavaScript 核心篇"
                       :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
                       data-paylink="https://shop.hexschool.com/order/create?order=js-core" data-type="product"
                       data-id="js-core" itemprop="url">
@@ -1064,6 +1064,36 @@
 </div>
 
 
+ <!-- 開啟通用 footer 倒數-->
+   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
+    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
+        <span class="mr-md-5 font-weight-bold text-left">帶走必學技能｜JS 系列 75 折</span>
+        
+        <div class="d-flex justify-content-start text-white text-nowrap">
+          
+            <span class="clock m-r-1 font-weight-bold"></span>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
+        
+          <a href="/courses/?category=frontend"
+            class="btn btn-dark btn-sm rounded-0">
+            連結
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <input type="hidden" id="footer-clock" value="2022/05/16">
+
+  
 
   </div>
   
@@ -1142,8 +1172,8 @@
 </div>
 
 
-  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
-    
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1235,8 +1265,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1651547117196"></script>
-<script src="/js/bs4_all.js?1651547117196"></script>
+<script src="/js/bs4_vendor.js?1652234056442"></script>
+<script src="/js/bs4_all.js?1652234056442"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
