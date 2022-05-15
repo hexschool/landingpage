@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1652407008187">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1652630436547">
   <!-- Global styles END -->
 
   
@@ -848,9 +848,9 @@
         <div class="text-nowrap mr-4 text-right d-flex flex-lg-row flex-column">
           
             <span v-if="rightCoupon.course.jsplus" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
-              25 % off
+              12 % off
             </span>
-            <p v-if="rightCoupon.course.jsplus" class="mb-0 h4 text-danger">NT$ 2,175</p>            <p v-else class="mb-0 h4">NT$ 2900</p>
+            <p v-if="rightCoupon.course.jsplus" class="mb-0 h4 text-danger">NT$ 2,552</p>            <p v-else class="mb-0 h4">NT$ 2900</p>
           
         </div>
         
@@ -858,7 +858,7 @@
             class="btn btn-block py-2 w-50 btn-warning font-weight-bold mt-md-0 mt-2 mp-click tracking-link d-flex justify-content-center align-items-center"
             data-toggle="modal" data-target="#orderModal" title="開啟 JavaScript 前端修練全攻略 支付流程"
             data-promotions="現在上課去"
-            data-price="2175" data-title="JavaScript 前端修練全攻略"
+            data-price="2552" data-title="JavaScript 前端修練全攻略"
             :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
             data-paylink="https://shop.hexschool.com/order/create?order=js-plus" data-type="product"
             data-id="js-plus" itemprop="url">
@@ -1129,36 +1129,6 @@
 </div>
 
 
- <!-- 開啟通用 footer 倒數-->
-   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
-    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
-      <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">帶走必學技能｜JS 系列 75 折</span>
-        
-        <div class="d-flex justify-content-start text-white text-nowrap">
-          
-            <span class="clock m-r-1 font-weight-bold"></span>
-          
-        </div>
-      </div>
-      <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
-        
-          <a href="/courses/?category=frontend"
-            class="btn btn-dark btn-sm rounded-0">
-            連結
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        
-      </div>
-    </div>
-  </div>
-</nav>
-
-  <input type="hidden" id="footer-clock" value="2022/05/16">
-
-  
 
   </div>
   
@@ -1237,8 +1207,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1330,8 +1300,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1652407008189"></script>
-<script src="/js/bs4_all.js?1652407008189"></script>
+<script src="/js/bs4_vendor.js?1652630436549"></script>
+<script src="/js/bs4_all.js?1652630436549"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
