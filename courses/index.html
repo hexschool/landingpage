@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1658712539128">
+  <link rel="stylesheet" href="/stylesheets/all.css?1659063647597">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1322,6 +1322,9 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hex-bootstrap-5/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/hex-bootstrap-5/" class="audition-link">Udemy</a>、
+                
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/bootstrap-5" class="audition-link">Teachable</a>
               </p>
@@ -1518,6 +1521,9 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hexschool-vue-3/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/hexschool-vue-3/" class="audition-link">Udemy</a>、
+                
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/vue-20211" class="audition-link">Teachable</a>
               </p>
@@ -1616,7 +1622,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/html-css-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/html-css-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/html-css-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/html" class="audition-link">Teachable</a>
@@ -1716,7 +1723,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/jquery-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/jquery-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/jquery-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/jquery" class="audition-link">Teachable</a>
@@ -1816,7 +1824,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/responsive/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/responsive/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/responsive/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/1eebd3" class="audition-link">Teachable</a>
@@ -1916,7 +1925,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/sasssecret/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/sasssecret/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/sasssecret/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/sass-1-css" class="audition-link">Teachable</a>
@@ -2018,7 +2028,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/adobe-xd-hexschool/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/adobe-xd-hexschool/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/adobe-xd-hexschool/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/adobe-xd" class="audition-link">Teachable</a>
@@ -2120,7 +2131,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/course/ui-ux-beginner/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/course/ui-ux-beginner/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/course/ui-ux-beginner/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/ui/" class="audition-link">Teachable</a>
@@ -2220,7 +2232,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/javascript-adv/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/javascript-adv/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/javascript-adv/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/javascript" class="audition-link">Teachable</a>
@@ -2320,7 +2333,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/teachnodejs/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/teachnodejs/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/teachnodejs/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/courses/node-js" class="audition-link">Teachable</a>
@@ -2420,7 +2434,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/learninggit/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/learninggit/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/learninggit/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/git-github" class="audition-link">Teachable</a>
@@ -2520,7 +2535,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/gulp-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/gulp-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/gulp-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/gulp" class="audition-link">Teachable</a>
@@ -2620,7 +2636,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/course/vscode-hexschool/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/course/vscode-hexschool/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/course/vscode-hexschool/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/vscode" class="audition-link">Teachable</a>
@@ -2833,7 +2850,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/html-css-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/html-css-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/html-css-learning/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/html" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3056,7 +3074,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/html-css-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/html-css-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/html-css-learning/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/html" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3118,7 +3137,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/jquery-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/jquery-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/jquery-learning/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/jquery" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3180,7 +3200,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/responsive/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/responsive/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/responsive/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/1eebd3" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3229,6 +3250,9 @@
                                     <div class="d-flex justify-content-between d-none combined-course-content">
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
+                                        
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hex-bootstrap-5/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/hex-bootstrap-5/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/bootstrap-5" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3403,6 +3427,9 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hexschool-vue-3/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/hexschool-vue-3/" class="audition-link" style="font-size: 14px;">Udemy</a>、
+                                        
                                         <a target="_blank" href="https://courses.hexschool.com/p/vue-20211" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
                                       <div>
@@ -3533,7 +3560,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/javascript-adv/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/javascript-adv/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/javascript-adv/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/javascript" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3692,7 +3720,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/html-css-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/html-css-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/html-css-learning/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/html" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3754,7 +3783,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/jquery-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/jquery-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/jquery-learning/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/jquery" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3882,7 +3912,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/javascript-adv/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/javascript-adv/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/javascript-adv/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/javascript" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3934,7 +3965,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/responsive/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/responsive/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/responsive/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/1eebd3" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -3983,6 +4015,9 @@
                                     <div class="d-flex justify-content-between d-none combined-course-content">
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
+                                        
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hex-bootstrap-5/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/hex-bootstrap-5/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/bootstrap-5" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -4045,6 +4080,9 @@
                                     <div class="d-flex justify-content-between d-none combined-course-content">
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
+                                        
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hexschool-vue-3/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/hexschool-vue-3/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/vue-20211" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -4227,7 +4265,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/course/ui-ux-beginner/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/course/ui-ux-beginner/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/course/ui-ux-beginner/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/ui/" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -4285,7 +4324,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/adobe-xd-hexschool/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/adobe-xd-hexschool/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/adobe-xd-hexschool/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/adobe-xd" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -4438,6 +4478,9 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hex-bootstrap-5/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/hex-bootstrap-5/" class="audition-link" style="font-size: 14px;">Udemy</a>、
+                                        
                                         <a target="_blank" href="https://courses.hexschool.com/p/bootstrap-5" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
                                       <div>
@@ -4508,7 +4551,8 @@
                                       <p class="mb-0 d-md-block d-none">
                                         <i class="fas fa-headphones-alt mr-1"></i> 
                                         
-                                        <a target="_blank" href="https://www.udemy.com/sasssecret/?couponCode=COUPON_2020_ORIGIN" class="audition-link " style="font-size: 14px;">Udemy</a>、
+                                        <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/sasssecret/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link " style="font-size: 14px;">Udemy</a>
+                                        <a target="_blank" v-else href="https://www.udemy.com/sasssecret/" class="audition-link" style="font-size: 14px;">Udemy</a>、
                                         
                                         <a target="_blank" href="https://courses.hexschool.com/p/sass-1-css" class="audition-link " style="font-size: 14px;">Teachable</a>
                                       </p>
@@ -4716,7 +4760,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/course/ui-ux-beginner/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/course/ui-ux-beginner/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/course/ui-ux-beginner/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/ui/" class="audition-link">Teachable</a>
@@ -4816,7 +4861,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/html-css-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/html-css-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/html-css-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/html" class="audition-link">Teachable</a>
@@ -4916,7 +4962,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/jquery-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/jquery-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/jquery-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/jquery" class="audition-link">Teachable</a>
@@ -5016,7 +5063,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/responsive/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/responsive/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/responsive/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/1eebd3" class="audition-link">Teachable</a>
@@ -5116,7 +5164,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/sasssecret/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/sasssecret/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/sasssecret/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/sass-1-css" class="audition-link">Teachable</a>
@@ -5215,6 +5264,9 @@
               <p class="d-flex align-items-center mb-0 text-dark">
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
+                
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hex-bootstrap-5/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/hex-bootstrap-5/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/bootstrap-5" class="audition-link">Teachable</a>
@@ -5327,7 +5379,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/html-css-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/html-css-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/html-css-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/html" class="audition-link">Teachable</a>
@@ -5427,7 +5480,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/jquery-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/jquery-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/jquery-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/jquery" class="audition-link">Teachable</a>
@@ -5527,7 +5581,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/responsive/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/responsive/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/responsive/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/1eebd3" class="audition-link">Teachable</a>
@@ -5627,7 +5682,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/sasssecret/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/sasssecret/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/sasssecret/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/sass-1-css" class="audition-link">Teachable</a>
@@ -5726,6 +5782,9 @@
               <p class="d-flex align-items-center mb-0 text-dark">
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
+                
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hex-bootstrap-5/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/hex-bootstrap-5/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/bootstrap-5" class="audition-link">Teachable</a>
@@ -5923,7 +5982,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/javascript-adv/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/javascript-adv/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/javascript-adv/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/javascript" class="audition-link">Teachable</a>
@@ -6023,6 +6083,9 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/hexschool-vue-3/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/hexschool-vue-3/" class="audition-link">Udemy</a>、
+                
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/vue-20211" class="audition-link">Teachable</a>
               </p>
@@ -6121,7 +6184,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/gulp-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/gulp-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/gulp-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/gulp" class="audition-link">Teachable</a>
@@ -6221,7 +6285,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/learninggit/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/learninggit/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/learninggit/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/git-github" class="audition-link">Teachable</a>
@@ -6368,7 +6433,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/html-css-learning/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/html-css-learning/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/html-css-learning/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/html" class="audition-link">Teachable</a>
@@ -6470,7 +6536,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/adobe-xd-hexschool/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/adobe-xd-hexschool/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/adobe-xd-hexschool/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/adobe-xd" class="audition-link">Teachable</a>
@@ -6572,7 +6639,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/course/ui-ux-beginner/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/course/ui-ux-beginner/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/course/ui-ux-beginner/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/p/ui/" class="audition-link">Teachable</a>
@@ -6685,7 +6753,8 @@
                 <i class="fas fa-headphones-alt mr-2"></i> 
                 <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
                 
-                  <a target="_blank" href="https://www.udemy.com/teachnodejs/?couponCode=COUPON_2020_ORIGIN" class="audition-link">Udemy</a>、
+                  <a target="_blank" v-if="udemyRightCoupon" :href="'https://www.udemy.com/teachnodejs/?couponCode=' + udemyRightCoupon.coupon_code" class="audition-link">Udemy</a>
+                  <a target="_blank" v-else href="https://www.udemy.com/teachnodejs/" class="audition-link">Udemy</a>、
                 
                 
                 <a target="_blank" href="https://courses.hexschool.com/courses/node-js" class="audition-link">Teachable</a>
@@ -7520,9 +7589,9 @@
   
 
   
-    <a href="null?couponCode=COUPON_2020_ORIGIN"
+    <a href="https://www.udemy.com/hexschool-vue-3/?couponCode=COUPON_2020_ORIGIN"
       class="couponCode-link hidden-xs-up"
-      data-link="null" data-coupon="vue3" itemprop="url">
+      data-link="https://www.udemy.com/hexschool-vue-3/" data-coupon="vue3" itemprop="url">
     </a>
   
 
@@ -7568,8 +7637,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1658712539133"></script>
-<script src="/js/all.js?1658712539133"></script>
+<script src="/js/vendor.js?1659063647603"></script>
+<script src="/js/all.js?1659063647603"></script>
 <script src="/js/wow.min.js"></script>
 
 

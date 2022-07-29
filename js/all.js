@@ -457,7 +457,7 @@ $(document).ready(function() {
 });
 
 vueApp = function() {
-  var CalendarNotification, CalendarRecent, appCourse, appGetFreeCoupon, calendarAjax, checkTrainingStatus, courseEvaluation, getCalendarData, getUseCoupon, h_calendar, h_calendar_time, h_timeMax, h_timeMin, passCalendarData;
+  var CalendarNotification, CalendarRecent, appCourse, appGetFreeCoupon, calendarAjax, checkTrainingStatus, courseEvaluation, getCalendarData, getUseCoupon, getUseUdemyCoupon, h_calendar, h_calendar_time, h_timeMax, h_timeMin, passCalendarData;
   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
     courseEvaluation.course = data;
     appCourse.courseData = [];
@@ -493,6 +493,8 @@ vueApp = function() {
       courseData: [],
       rightCoupon: {},
       couponData: {},
+      udemyCouponData: {},
+      udemyRightCoupon: {},
       trainingDate: {},
       trainingStatus: {
         js: {},
@@ -535,6 +537,23 @@ vueApp = function() {
       }
     };
   })(this);
+  getUseUdemyCoupon = (function(_this) {
+    return function() {
+      var priceCoupon, today;
+      priceCoupon = appCourse.udemyCouponData.price;
+      today = moment().format('YYYY-MM-DD');
+      $.each(priceCoupon, function(i, data) {
+        var dateData;
+        dateData = data.date;
+        if (moment(today).isAfter(dateData.start_at) && moment(today).isBefore(dateData.ended_at)) {
+          appCourse.udemyRightCoupon = data;
+        }
+      });
+      if (Object.keys(appCourse.udemyRightCoupon).length === 0) {
+        return appCourse.udemyRightCoupon = '';
+      }
+    };
+  })(this);
   checkTrainingStatus = (function(_this) {
     return function() {
       var today;
@@ -561,6 +580,10 @@ vueApp = function() {
   $.getJSON('../coupon-data.json', function(data) {
     appCourse.couponData = data;
     return getUseCoupon();
+  });
+  $.getJSON('../udemy-coupon-data.json', function(data) {
+    appCourse.udemyCouponData = data;
+    return getUseUdemyCoupon();
   });
   $.getJSON('../training-date.json', function(data) {
     appCourse.trainingDate = data;

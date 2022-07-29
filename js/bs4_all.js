@@ -666,6 +666,8 @@ VueApp = new Vue({
         course: {},
         coupon_code: ''
       },
+      udemyRightCoupon: {},
+      udemyCouponData: {},
       couponData: {},
       courseData: {
         'bootstrap': {
@@ -697,6 +699,22 @@ VueApp = new Vue({
         return vm.rightCoupon = originPriceCoupon;
       }
     },
+    getUseCoupon: function() {
+      var priceCoupon, today, vm;
+      vm = this;
+      priceCoupon = vm.udemyCouponData.price;
+      today = moment().format('YYYY-MM-DD');
+      $.each(priceCoupon, function(i, data) {
+        var dateData;
+        dateData = data.date;
+        if (moment(today).isAfter(dateData.start_at) && moment(today).isBefore(dateData.ended_at)) {
+          vm.udemyRightCoupon = data;
+        }
+      });
+      if (Object.keys(vm.udemyRightCoupon).length === 0) {
+        return vm.udemyRightCoupon = '';
+      }
+    },
     fetchData: function() {
       var vm;
       vm = this;
@@ -711,9 +729,15 @@ VueApp = new Vue({
       }, function(response) {
         return console.log('error', response);
       });
-      return $.getJSON('../coupon-data.json', function(data) {
+      $.getJSON('../coupon-data.json', function(data) {
         vm.couponData = data;
         return vm.getUseCoupon();
+      }, function(response) {
+        return console.log('error', response);
+      });
+      return $.getJSON('../udemy-coupon-data.json', function(data) {
+        vm.udemyCouponData = data;
+        return vm.getUseUdemyCoupon();
       });
     }
   },
