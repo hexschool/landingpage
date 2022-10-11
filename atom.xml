@@ -8,8 +8,27 @@
     <atom:link href="/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description>六角學院是由高雄前端社群創辦人以及相關核心團員所創立，目的是透過線上教育的方式，開設符合使用者需求的課程。</description>
-    <pubDate>Mon, 03 Oct 2022 01:42:36 GMT</pubDate>
+    <pubDate>Tue, 11 Oct 2022 06:45:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>【企業開箱文】緯創資通前後端使用的技能？輔導員機制？</title>
+      <link>https://www.hexschool.com/2022/10/11/2022-10-11-wistron-interview/</link>
+      <guid>https://www.hexschool.com/2022/10/11/2022-10-11-wistron-interview/</guid>
+      <pubDate>Tue, 11 Oct 2022 00:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2Fwistron%2F96f2f2347d45c6e7.png?alt=m
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2Fwistron%2F96f2f2347d45c6e7.png?alt=media&amp;token=4575a317-57a2-4c45-974d-1c6d068ddd11" alt="首圖"></p><p>今天要開箱的是「緯創資通」高雄研發中心，電梯一打開就有偶像劇的既視感（誤）</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2Fwistron%2FLINE_ALBUM_220711_6.jpg?alt=media&amp;token=455b4a38-2b05-4baf-870d-97b7269c8c6f" alt="緯創門口"></p><p>Wistron 緯創資通 小檔案</p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2Fwistron%2FWlogo_BG_R.jpg?alt=media&token=d24a89bc-dcd7-4def-a03e-089fbf969d27" alt="KDAN logo" class="img-fluid mx-auto" style="width: 300px; height: 200px; object-fit: contain;"><p>Wistron 緯創資通成立於 2001 年，專注於資訊及通訊科技產品，提供客戶客製化的產品開發及服務，為 ICT 產業全球領導廠商。全球超過 8 萬名員工，分布於 12 個製造基地、10 個研發及技術支援中心及 14 個客戶服務中心，遍佈於歐美及亞太地區。</p><p>業務涵蓋科技產品設計研發、生產製造與客戶服務，到專注於發展 5G 通訊、AIoT 技術、專業顯示技術，結合工業物聯網（IIoT）與數位轉型等前瞻性發展，深耕智慧交通、智慧製造、智慧家庭、智慧醫療，打造未來智能生活。亦提供技術服務平台與創新整合解決方案，建立新的教育及企業服務、醫療等技術產業鏈。</p><iframe width="560" height="315" src="https://www.youtube.com/embed/fi_VfzhUcQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2Fwistron%2FLINE_ALBUM_220711_0.jpg?alt=media&token=6b0a28bf-0996-450a-94b1-094147188a01" alt="會議圖片" class="img-fluid mt-3"><small>與會者：緯創高雄研發中心軟體研發資深經理及人資團隊</small><h3 id="想成為軟體工程師，保持學習的熱情是必須的"><a href="#想成為軟體工程師，保持學習的熱情是必須的" class="headerlink" title="想成為軟體工程師，保持學習的熱情是必須的"></a>想成為軟體工程師，保持學習的熱情是必須的</h3><p>這次六角學院來到了緯創高雄研發中心，特別邀請數位科技團隊的資深經理向我們介紹緯創這幾年深耕數位轉型的努力，除了團隊逐漸成長之外，也培養了許多優秀的年輕軟體工程師，緯創資深經理分享：「想成為軟體工程師，保持學習的熱情是必須的，無論你是 App、前端、後端或是 DBA（資料庫管理員）專業，建議在專業領域要挖得夠深，從那裡的知識、態度再往旁邊擴展，不斷學習、成長，累積自己的硬實力、競爭力！」</p><p>緯創非常鼓勵新人保持學習的熱情、接受新的東西，在這個各項產品日新月異的世界，有可能現在會的技能，兩年後就不適用了。</p><p>在今年 6 月六角學院舉辦的 Node.js 直播班成果發表會也邀請到了緯創多位主管一同參與，在發表會中，緯創看到多位同學經過八週的累積，展現對程式邏輯的掌握、作品完整性，除了 Node.js 的邏輯應用，背後可以看到更多的是學習精神、態度。在課程當中大多數同學都是「兼職學習」，平常除了上班，也願意另外花時間來學習、累積實戰經驗，並透過小組任務，增強自我溝通能力。</p><h3 id="機會，自己創造！緯創非常鼓勵延伸擴展"><a href="#機會，自己創造！緯創非常鼓勵延伸擴展" class="headerlink" title="機會，自己創造！緯創非常鼓勵延伸擴展"></a>機會，自己創造！緯創非常鼓勵延伸擴展</h3><p>近年來，人才短缺造成新人進公司一人分飾多角，可能身為前端，但進公司後變成了 SA（系統分析師）、PM（專案經理）。</p><p>面對這個大環境的問題，以緯創來說，強調的是軟體工程師的成長，根據個人及單位的需求鼓勵同仁去做梯形的擴展，不會因為一開始應徵的是前端，進公司後就直接變成 PM，透過訓練讓同仁了解後端的架構、做架構的設計；擴展的過程，可能會面對到不同的挑戰和壓力，從執行者變成決策者，不同的角度看事情，會有不一樣的視野，累積自己的能力之後才可以勝任其它的角色。</p><h3 id="緯創對於軟體工程師的想法"><a href="#緯創對於軟體工程師的想法" class="headerlink" title="緯創對於軟體工程師的想法"></a>緯創對於軟體工程師的想法</h3><p>軟體工程師這條路不好走，有沒有對於新技術的熱情跟持續學習是很重要的。面試時，面試者都可藉由過往工作經驗或作品來展現這部分，例如：GitHub 活躍的程度、技術學習筆記。</p><h3 id="讓想回家的人可以回家，我們相信高雄也有好人才"><a href="#讓想回家的人可以回家，我們相信高雄也有好人才" class="headerlink" title="讓想回家的人可以回家，我們相信高雄也有好人才"></a>讓想回家的人可以回家，我們相信高雄也有好人才</h3><p>緯創很歡迎與年輕學子連結，這幾年高雄研發中心廣納實習生、工讀生，近期舉辦數位人才體驗營活動，參加的同學不限科系，強調跨領域、跨科系的學習，透過數位人才的活動，讓莘莘學子可以了解何謂數位轉型，同學實際執行緯創的軟體專案，再加入同學的創意與發想，每屆實習生交出的專案成果都非常令人驚豔，同學亦可了解到各種敏捷開發的各項角色，緯創樂於栽培人才，於體驗營過程中，緯創提供業師、Scrum Master 的指導且加上人資的工作關懷，緯創期待每位同學未來都可以加入緯創。</p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2Fwistron%2FLINE_ALBUM_220711_3.jpg?alt=media&token=81e6c522-d645-4ddf-b4f8-4c99da79ed98" alt="風景圖" class="img-fluid"><small>高雄的藍天白雲四季都如此閃耀，面對夢想不用捨去，高雄緯創，讓想留在高雄的你，有地方實現夢想</small><h3 id="輔導員機制，幫助新人減少不安期"><a href="#輔導員機制，幫助新人減少不安期" class="headerlink" title="輔導員機制，幫助新人減少不安期"></a>輔導員機制，幫助新人減少不安期</h3><p>在緯創，每個部門都會有一個「輔導員」機制，無論是新進夥伴或實習生都會由輔導員協助，在剛進公司時，如果你有什麼疑問、需求，就可以找輔導員。</p><p>以高雄研發中心為例，新人於試用期間將有資深人員協助新人適應環境，協助受訓，待訓練完成後，緯創會依照新人的特性分配到適合的專案裡，跟專案的夥伴一起工作。由訓練的過程中，可以觀察到有些新人是很喜歡和人互動交流，那可能就會讓他提早進入到專案，因為透過討論可以幫助團隊有更多的想法與創意。</p><h3 id="在高雄緯創，前後端使用的技能有哪些？進到緯創有共通一定要會的技能嗎？"><a href="#在高雄緯創，前後端使用的技能有哪些？進到緯創有共通一定要會的技能嗎？" class="headerlink" title="在高雄緯創，前後端使用的技能有哪些？進到緯創有共通一定要會的技能嗎？"></a>在高雄緯創，前後端使用的技能有哪些？進到緯創有共通一定要會的技能嗎？</h3><p>數位轉型團隊因負責項目較多，每個單位負責的開發項目都不太相同，但開發的語言框架會是統一的，像前端目前是使用 React，後端則是 Java 和 Node.js 都有，透過溝通串聯保有各單位間的互相的支援性與系統維護性，新夥伴一進來也不會因為單位不同，大家使用的框架不同而困擾。</p><p>緯創最在乎的還是新人是否有學習的能力、態度和能不能接受新的東西。</p><h3 id="想成為緯創夥伴，投遞履歷後，會有哪些流程呢"><a href="#想成為緯創夥伴，投遞履歷後，會有哪些流程呢" class="headerlink" title="想成為緯創夥伴，投遞履歷後，會有哪些流程呢"></a>想成為緯創夥伴，投遞履歷後，會有哪些流程呢</h3><p>針對於一般人力銀行平台投遞的履歷，會先由人資分類到各需求主管進行篩選，若通過，主管會透過電訪先認識求職者，確認人選意願及熟悉的技術之後，另約面試時間，目前都以線上一到兩小時的面談為主，會再次確認技術上的需求，其中也會有英文、人格測驗等試題，若各單位有額外的需求則會有不同的小測驗，以上都符合通過，就可以順利加入緯創大家庭。</p><p>有興趣的加入緯創的軟體人才，歡迎投出你的履歷：<a href="https://career.wistron.com/w/Wistron/job" target="_blank">緯創資通徵才區</a></p><p>或許很多人想到就業機會，就會想到中北部，難道南部就沒有好的機會、好的舞台嗎？<br>如果你對 ICT（資訊及通訊科技）產業有興趣、有熱情，那麼緯創資通在高雄期待你的加入！</p><p>緯創資通高雄研發中心聯絡地址：高雄市苓雅區苓南路 2 號</p>]]></content:encoded>
+      
+      <comments>https://www.hexschool.com/2022/10/11/2022-10-11-wistron-interview/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>轉職前端之路：當了助教讓我更成長！</title>
@@ -370,25 +389,6 @@
       <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2Fhex-hire-intern-fb.png?alt=media&amp;token=dffc89f2-dc10-4e2f-ba74-e4c45697f692" alt></p><p>六角學院 是一所線上程式開發學習單位，目前已累積超過 30,000 名學員，<b>讓更多人藉由線上學習在職涯規劃上有更多的選擇</b>是我們的使命，如果您贊同我們的理念，歡迎加入六角。<br>我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。<br>如果以下職缺沒有適合您的，歡迎您毛遂自薦自己的長才，為自己找份適合的職缺，我們歡迎肯主動掌握機會的你/妳。</p><h3 id="【視覺設計實習生】"><a href="#【視覺設計實習生】" class="headerlink" title="【視覺設計實習生】"></a>【視覺設計實習生】</h3><p><b>工作內容</b></p><ol><li>六角學院形象設計</li><li>配合課程設計網頁素材、課程素材、宣傳品</li><li>各式平面設計需求</li></ol><p><b>加分條件</b></p><ol><li>插畫技能</li><li>UI 設計</li><li>使用 Mac</li></ol><h3 id="【薪資與福利】"><a href="#【薪資與福利】" class="headerlink" title="【薪資與福利】"></a>【薪資與福利】</h3><ul><li>基本時薪 168 起</li><li>享勞健保</li><li>六角開的課程皆能免費參加</li></ul><h3 id="【工作地點-時間】"><a href="#【工作地點-時間】" class="headerlink" title="【工作地點/時間】"></a>【工作地點/時間】</h3><ul><li>地點：高雄鹽埕區</li><li>時間：一週最少兩天</li></ul><h3 id="【投遞履歷管道】"><a href="#【投遞履歷管道】" class="headerlink" title="【投遞履歷管道】"></a>【投遞履歷管道】</h3><ol><li>郵件地址：請 mail 到 <a href="mailto:service@hexschool.com" target="_blank" rel="noopener">service@hexschool.com</a></li><li>郵件標題：【應徵】XX 實習生_姓名 (XX 請自行代入要應徵的職缺)</li><li>履歷版本：請提供 PDF 或線上履歷</li><li>回覆問題：除履歷外，還請回覆以下兩個問題，好讓我們更加了解您<br><b>問題一：「您對於未來職涯的自己有什麼憧憬，這份工作能幫助您嗎？」</b><br><b>問題二：「承一，希望六角提供什麼資源，好讓您能盡快達成目標？」</b></li></ol>]]></content:encoded>
       
       <comments>https://www.hexschool.com/2022/05/16/2022-05-16-design-internship/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>海外同學也可以轉職前端工程師！保持一顆勇於接受挑戰的心！</title>
-      <link>https://www.hexschool.com/2022/05/03/2022-05-03-frontend-abroad/</link>
-      <guid>https://www.hexschool.com/2022/05/03/2022-05-03-frontend-abroad/</guid>
-      <pubDate>Tue, 03 May 2022 00:00:00 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F05%2FBlog-09.png?alt=media&amp;amp;token=67fc
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F05%2FBlog-09.png?alt=media&amp;token=67fc4a19-d984-4113-a2cd-bce990dcd048" alt></p><p class="border-left border-dark pl-3 mt-0">海外同學也可以找到前端工作嗎？ Alysa 香港人，非本科系，畢業後雖然有做跟設計相關工作，但因為自己熱愛挑戰，因此決定轉換跑道。Alysa 透過一年的學習，終於轉職成功！</p><h3 id="Alysa：非本科系，但是寫程式讓我很有成就感！"><a href="#Alysa：非本科系，但是寫程式讓我很有成就感！" class="headerlink" title="Alysa：非本科系，但是寫程式讓我很有成就感！"></a>Alysa：非本科系，但是寫程式讓我很有成就感！</h3><p>Alysa 跟大部分六角的同學有點不一樣，他是來自香港的同學。香港本地大學畢業，非本科系，設計專業，畢業之後一年就開始做一些設計相關的東西。她當時覺得只會做畫面就沒有什麼挑戰，所以就想要試試看轉前端，在找資料的時候找到了六角學院。買了課程後，她發現自己可以寫程式，可以將前端這些知識通通學起來，並且透過寫程式而有成就感。現在她是 Software Engineer，前後端的領域都有涉及！</p><h3 id="Alysa-的學習歷程"><a href="#Alysa-的學習歷程" class="headerlink" title="Alysa 的學習歷程"></a>Alysa 的學習歷程</h3><p>Alysa 一開始兼職設計，後來全職自學。從 HTML / CSS、Vue、JavaScript、切版直播班、JS 學徒一路學上來，一天 8 個小時，早上一起床就起來學習，中午、晚上吃飯，中間時間都是持續學習，晚上睡覺。隔天繼續一天的流程，就這樣持續一年多。</p><h3 id="Alysa-的求職歷程"><a href="#Alysa-的求職歷程" class="headerlink" title="Alysa 的求職歷程"></a>Alysa 的求職歷程</h3><p>Alysa 在上完 Vue 直播班後，有先做了一些案子，Vue 直播班幫了她很多，讓她可以快速了解，而且可以去接案，將這些接案經歷寫進履歷。2021 年 11 月她完成個人網站，將履歷準備好就去工作。</p><p>她主要是在香港找，香港比較常用 Linkedin，因此她主要是寄 email 在 Linkedin 找工作。 因為是香港人， 所以除了給六角的老師和同學看她的履歷以外，她也有點擔心在六角學的東西比較不符合香港現有的市場，因此還有有另外去找香港本地的工程師練習。</p><p>Alysa 還有去論壇求職，去之前要準備好個人作品、履歷，不要害怕被拒絕，勇敢上前，做好準備。</p><h3 id="在學習上，永遠挑戰「比標準更高一點」的東西"><a href="#在學習上，永遠挑戰「比標準更高一點」的東西" class="headerlink" title="在學習上，永遠挑戰「比標準更高一點」的東西"></a>在學習上，永遠挑戰「比標準更高一點」的東西</h3><p>Alysa 說自己有一個挑戰心，會刻意去挑戰比標準更高一點的東西。當時她覺得已經對 Vue 很熟了，不如試試用 Nuxt.js，因此出給自己一些的難題，也就是比標準再高一點點，在直播班上她的作品最後就是用 Nuxt.js 呈現，因為有了直播班繳交作品的期限，還有她特別學習了不一樣的東西，也意外的學會了一些後端的知識。</p><h3 id="老師推薦參加鐵人賽，讓她的寫程式思路更清晰！"><a href="#老師推薦參加鐵人賽，讓她的寫程式思路更清晰！" class="headerlink" title="老師推薦參加鐵人賽，讓她的寫程式思路更清晰！"></a>老師推薦參加鐵人賽，讓她的寫程式思路更清晰！</h3><p>Alysa 說 Slack 的回報群每天會問大家學了什麼，會不自覺的有心裡壓力，自己也會想要當天學會這些東西，因此她更能持之以恆的每天學習新東西。<br>即使 Alysa 現在已經找到工作，她還是會在六角頻道內分享學習心得，跟六角的同學一起交流成長。</p><p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F05%2FUntitled.png?alt=media&amp;token=6fc160b8-b532-4363-a209-ba82f8bbe565" alt></p><p>老師當時很鼓勵他們去參加鐵人賽，Alysa 聽了老師的建議，就去參加比賽。當時她是寫 JavaScript，覺得對自己真的是很有幫助。因為要寫文章就必須要把東西搞清楚了才有辦法有邏輯的寫出來，當她在撰寫時會發現自己有一些地方沒有想清楚，透過寫文章，更能加深她的思路。<br>Alysa 非常建議同學可以參加，面試的時候面試官會認為你對前端有熱情，多少可以在履歷上加分。</p><h3 id="六角帶你入門，而你需要靠自己努力學習！"><a href="#六角帶你入門，而你需要靠自己努力學習！" class="headerlink" title="六角帶你入門，而你需要靠自己努力學習！"></a>六角帶你入門，而你需要靠自己努力學習！</h3><p>Alysa 鼓勵學弟妹們可以試一下「把目標訂高一點」，目標要拿 A，你最差的時候只會拿 B，如果一開始就定 B，那你就會拿到 C。因此一開始就把目標訂高，你會為了能夠達到高要求而更努力！</p><p>最後 Alysa 想跟學弟妹們說：學習的時候 code 都是自己寫的，不會有看不懂的問題，但是去工作的時候，看別人的 code 會比看自己的 code 多很多，因此她也告訴我們心態上要調整，解決的方法可以看一下你組員怎麼寫、去看優秀的同學怎麼寫。六角帶你入門，但是進去工作會發現很多東西需要學習！</p>]]></content:encoded>
-      
-      <comments>https://www.hexschool.com/2022/05/03/2022-05-03-frontend-abroad/#disqus_thread</comments>
     </item>
     
   </channel>
