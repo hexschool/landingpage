@@ -8,8 +8,27 @@
     <atom:link href="/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description>六角學院是由高雄前端社群創辦人以及相關核心團員所創立，目的是透過線上教育的方式，開設符合使用者需求的課程。</description>
-    <pubDate>Thu, 13 Oct 2022 01:27:03 GMT</pubDate>
+    <pubDate>Tue, 25 Oct 2022 02:05:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>【前端工程師之路】近兩年年資的怡真，持續往中階工程師發展！</title>
+      <link>https://www.hexschool.com/2022/10/25/2022-10-25-dare-to-try/</link>
+      <guid>https://www.hexschool.com/2022/10/25/2022-10-25-dare-to-try/</guid>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2FBlog.png?alt=media&amp;amp;token=6cc3c77
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2FBlog.png?alt=media&amp;token=6cc3c77f-daf7-42cb-a201-40270e94e63c" alt="首圖"></p><p class="border-left border-dark pl-3 mt-0">怡真目前是工作兩年的工程師，但沒有因此而停滯，反而還來參加 Node.js 直播班，繼續進修，也順利拿到獎學金，怡真想和大家分享這一路走來的心路歷程，跟著我們一起看下去吧！</p><h3 id="姊姊的玩笑話，讓怡真開啟前端的世界"><a href="#姊姊的玩笑話，讓怡真開啟前端的世界" class="headerlink" title="姊姊的玩笑話，讓怡真開啟前端的世界"></a>姊姊的玩笑話，讓怡真開啟前端的世界</h3><p>楊怡真同學就讀餐飲管理系，在餐飲業工作一兩年之後決定轉職，並進入火箭隊培訓營第三梯次學習前端。怡真同學表示一開始她只是想要轉職，但是不知道要轉什麼，剛好姐姐也是前端工程師，帶著開玩笑的語氣問她要不要去學，她就真的去試試看了。她一開始買了六角學院的課程，學一學發現自己能夠掌控，而且非常有成就感。後續報名火箭隊入選，更決定繼續往這個方向走。</p><h3 id="怡真的學習歷程"><a href="#怡真的學習歷程" class="headerlink" title="怡真的學習歷程"></a>怡真的學習歷程</h3><p>怡真學習前端的順序是從 HTML、JavaScript、Vue 到 jQuery。怡真全職學習，每天早上九點到下午六點都在學，回家吃完飯後，晚上再繼續學習兩三小時。</p><p>相較於切版，怡真認為 JavaScript 對她來說更難，跟其他同學相比，她的 JavaScript 是比較落後的，她在邏輯上沒有那麼強。在這個部份上，她是靠工作上來補，邊做邊學，慢慢將 JavaScript 的邏輯補足。</p><h3 id="怡真的求職歷程"><a href="#怡真的求職歷程" class="headerlink" title="怡真的求職歷程"></a>怡真的求職歷程</h3><p>怡真在火箭隊成果發表的小組主題是電商，吸引到很多公司的興趣，她的第一份前端工作就是電商，主要是接政府案子。她認為當時她們小組的作品作品比較能讓企業們看到她的實力在哪，像是購物車、後臺、網頁功能，電商主題是能夠展示給人資主管看到她的程度。因此在找工作還算順利，找工作投了十間公司，面試七間，最後獲得一半公司的錄取通知。</p><h3 id="餐飲的背景，讓我對前端的熱情沒有消失"><a href="#餐飲的背景，讓我對前端的熱情沒有消失" class="headerlink" title="餐飲的背景，讓我對前端的熱情沒有消失"></a>餐飲的背景，讓我對前端的熱情沒有消失</h3><p>前面提到過怡真是餐飲科畢業，她認為餐飲背景對她非常有幫助。不論是在學習的時候，或是在職場上，餐飲的精神和熱情都讓她有繼續努力下去的動力。尤其是在職場上，工程師的工作環境下與其它職業相比，較為沉悶一點，但是怡真常常會活絡公司的氣氛，讓公司們上班工作氛圍是好的。</p><h3 id="謝謝六角創辦火箭隊，讓她面對挫折也不怕"><a href="#謝謝六角創辦火箭隊，讓她面對挫折也不怕" class="headerlink" title="謝謝六角創辦火箭隊，讓她面對挫折也不怕"></a>謝謝六角創辦火箭隊，讓她面對挫折也不怕</h3><p>怡真表示非常感謝六角創辦了火箭隊，火箭隊是線下實體課程，跟六角的網站課程不同。火箭隊讓一個完全沒有資訊背景、沒接觸過程式語言的人，有非常大的轉變。直播或線上課程可能還有工作，需要用零碎的時間去學這一塊，但火箭隊必須時間完全空出來全職學習，相比線上課程很彈性，實體課程很密集。她覺得在火箭隊的過程非常充實，這半年完全沒有薪水，要付出時間去學習，要有毅力才能堅持下去。尤其是當她有挫折時，教練的鼓勵、同儕的安慰都幫助她度過難關。</p><h3 id="勇於嘗試，才知道你能不能夠做到！"><a href="#勇於嘗試，才知道你能不能夠做到！" class="headerlink" title="勇於嘗試，才知道你能不能夠做到！"></a>勇於嘗試，才知道你能不能夠做到！</h3><p>怡真想告訴學弟妹們，做任何事情都要勇於嘗試。就像她當初只是因為姊姊帶著開玩笑的語氣要她去學前端，最後也是因為勇於嘗試，跳脫舒適圈，才能發現自己喜歡前端。</p><p>「<b>先勇於去學習，才能知道你能不能掌控！</b>」不管是從裡面得到成就感，還是學了之後才能知道自己能不能夠堅持，都必須是「試了才知道結果。」</p><p>如果最後真的可以堅持，那就代表你適合往工程師的方向繼續努力，這時候就可以去找更多的資源，朝工程師之路邁進。<b>前端課程只是一個輔助，最重要的還是自己的毅力</b>，能不能支撐你轉職成功。學弟妹們，不要害怕學不好，要試了才知道！說不定你就是下一個轉職成功的前端工程師！</p>]]></content:encoded>
+      
+      <comments>https://www.hexschool.com/2022/10/25/2022-10-25-dare-to-try/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>【企業開箱文】緯創資通前後端使用的技能？輔導員機制？</title>
@@ -370,25 +389,6 @@
       <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F05%2FRuta.png?alt=media&amp;token=ba6abb13-12da-4c78-8aa4-4ba14d77cfbb" alt></p><p class="border-left border-dark pl-3 mt-0">打開職缺網，看到的都是軟體相關的工作，感嘆自己沒有硬技能，無法有更多的選擇。法文系畢業的 Ruta 從來沒想過自己有天會成為前端工程師，回想起來，她很感謝自己擁有的幸運和付出過的努力！</p><h3 id="意外踏上學習前端的路"><a href="#意外踏上學習前端的路" class="headerlink" title="意外踏上學習前端的路"></a>意外踏上學習前端的路</h3><p>從小喜歡看漫畫，喜歡畫畫的 Ruta，法文系畢業後，曾任職過行銷企劃、醫院的研究助理，工作穩定也蠻上手的，但同時她也思考著自己的一技之長是什麼？未來的方向又是什麼？</p><p>平時 Ruta 會利用下班時間自學 AI 等繪圖軟體，本來想轉換領域到 UI 設計，在找資料的過程中看到了「前端工程師」，卻意外勾起她興趣。</p><h3 id="Ruta-的學習歷程"><a href="#Ruta-的學習歷程" class="headerlink" title="Ruta 的學習歷程"></a>Ruta 的學習歷程</h3><p>Ruta 一開始是購買其他補習班的線上教材，但課程主要是以文字呈現，所以在學到 JavaScript ，就覺得好難、無法了解，又看到同期的同學已經可以融會貫通，不免越來越懷疑自己是不是沒天份，後來也放棄了一段時間。</p><p>過了半年，心中對前端工程師還是有嚮往的她，滑著手機意外看到六角學院學長姐的求職心得，就這樣一篇一篇看完了全部的文章，學長姐的分享讓 Ruta 覺得應該可以再試試看！於是她購買了六角的 JS 組合包：<b><a href="https://www.hexschool.com/courses/js-plus.html" target="_blank">JavaScript 學徒的試煉</a>、<a href="https://www.hexschool.com/courses/js-core.html" target="_blank">JavaScript 核心篇</a>、<a href="https://www.hexschool.com/courses/vue3.html" target="_blank">Vue 出一個電商網站</a></b>，也陸續報名了<b><a href="https://www.hexschool.com/courses/web-layout-training-1st.html" target="_blank">網頁切版</a> 、 <a href="https://www.hexschool.com/courses/js-training.html" target="_blank">JavaScript</a>  、 <a href="https://www.hexschool.com/courses/vue-training.html" target="_blank">Vue</a>、 <a href="https://www.hexschool.com/courses/node-training.html" target="_blank">Node.js</a> 等直播班<small>（上述連結已更新為新版課程）</small></b>。</p><p>Ruta 說：「六角的直播班，除了老師會在線上一步步帶同學實作以外，也會幫同學們分組，在網頁切版直播班，我認識到了一起學習前端的好朋友，在直播課結束這麼多年，我們還有持續在聯絡，也會互相加油打氣！」</p><h3 id="Ruta-的學習時間安排"><a href="#Ruta-的學習時間安排" class="headerlink" title="Ruta 的學習時間安排"></a>Ruta 的學習時間安排</h3><p>回想起第一次參加「網頁切版直播班」，Ruta 覺得很興奮，因為可以一步一步完成自己的作品，上班只要一有空閒時間，就會拿來做作業，下班回家也會持續寫到十一點，就算做到很晚很累也覺得沒關係。</p><p>後來下定決心想要轉職到前端，Ruta 辭掉了安穩的工作，全職學習前端，並安排每週一到五早上九點到六點的學習時間，但不會硬性規定自己要做滿八個小時，主要會規劃三到四個學習點，確定學會就可以了。</p><h3 id="沒有該不該，只有想不想"><a href="#沒有該不該，只有想不想" class="headerlink" title="沒有該不該，只有想不想"></a>沒有該不該，只有想不想</h3><p>在全職學習前端的過程中，Ruta 很常懷疑自己，也想過要放棄，每當想要放棄的時候，她就會告訴自己「沒有該不該，只有想不想」。<br>例如：不要去想我今天該不該讀這個書，只要想我今天想不想轉職，想不想成功！</p><p>這個意念支持著她，而 Ruta 也希望可以鼓勵覺得學習到很挫折、很想放棄的同學。</p><h3 id="主委加碼-Q＆A"><a href="#主委加碼-Q＆A" class="headerlink" title="主委加碼 Ｑ＆Ａ"></a>主委加碼 Ｑ＆Ａ</h3><p>Q：辭去工作，全職學習，面對學習和經濟壓力，你有什麼小妙招可以鼓勵自己繼續前進？<br>A：那時候每天就是待在家裡，重複著學習、投履歷、面試，壓力真的蠻大的，有一次就覺得自己又快要掉進憂鬱的圈圈，我告訴自己：「不可以再這樣下去了！」於是我馬上打開訂房網，訂了三天的旅館，放下電腦，我就出門了。在等 offer 的過程中，我也有和洧杰老師通過電話，短短幾分鐘的通話，鼓勵著我，讓我更有目標、方向繼續努力。</p>]]></content:encoded>
       
       <comments>https://www.hexschool.com/2022/05/19/2022-05-19-marketing-specialist-to-frontend/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>【徵才】視覺設計 實習生</title>
-      <link>https://www.hexschool.com/2022/05/16/2022-05-16-design-internship/</link>
-      <guid>https://www.hexschool.com/2022/05/16/2022-05-16-design-internship/</guid>
-      <pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2Fhex-hire-intern-fb.png?alt=media&amp;amp
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2019%2F05%2Fhex-hire-intern-fb.png?alt=media&amp;token=dffc89f2-dc10-4e2f-ba74-e4c45697f692" alt></p><p>六角學院 是一所線上程式開發學習單位，目前已累積超過 30,000 名學員，<b>讓更多人藉由線上學習在職涯規劃上有更多的選擇</b>是我們的使命，如果您贊同我們的理念，歡迎加入六角。<br>我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。<br>如果以下職缺沒有適合您的，歡迎您毛遂自薦自己的長才，為自己找份適合的職缺，我們歡迎肯主動掌握機會的你/妳。</p><h3 id="【視覺設計實習生】"><a href="#【視覺設計實習生】" class="headerlink" title="【視覺設計實習生】"></a>【視覺設計實習生】</h3><p><b>工作內容</b></p><ol><li>六角學院形象設計</li><li>配合課程設計網頁素材、課程素材、宣傳品</li><li>各式平面設計需求</li></ol><p><b>加分條件</b></p><ol><li>插畫技能</li><li>UI 設計</li><li>使用 Mac</li></ol><h3 id="【薪資與福利】"><a href="#【薪資與福利】" class="headerlink" title="【薪資與福利】"></a>【薪資與福利】</h3><ul><li>基本時薪 168 起</li><li>享勞健保</li><li>六角開的課程皆能免費參加</li></ul><h3 id="【工作地點-時間】"><a href="#【工作地點-時間】" class="headerlink" title="【工作地點/時間】"></a>【工作地點/時間】</h3><ul><li>地點：高雄鹽埕區</li><li>時間：一週最少兩天</li></ul><h3 id="【投遞履歷管道】"><a href="#【投遞履歷管道】" class="headerlink" title="【投遞履歷管道】"></a>【投遞履歷管道】</h3><ol><li>郵件地址：請 mail 到 <a href="mailto:service@hexschool.com" target="_blank" rel="noopener">service@hexschool.com</a></li><li>郵件標題：【應徵】XX 實習生_姓名 (XX 請自行代入要應徵的職缺)</li><li>履歷版本：請提供 PDF 或線上履歷</li><li>回覆問題：除履歷外，還請回覆以下兩個問題，好讓我們更加了解您<br><b>問題一：「您對於未來職涯的自己有什麼憧憬，這份工作能幫助您嗎？」</b><br><b>問題二：「承一，希望六角提供什麼資源，好讓您能盡快達成目標？」</b></li></ol>]]></content:encoded>
-      
-      <comments>https://www.hexschool.com/2022/05/16/2022-05-16-design-internship/#disqus_thread</comments>
     </item>
     
   </channel>
