@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1671155126822">
+  <link rel="stylesheet" href="/stylesheets/all.css?1671155981254">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -260,7 +260,7 @@
         </ul>
         <!-- <a class="reduce-padding py-4 pl-4 font-weight-bold d-md-block d-none" href="#" data-toggle="modal" data-target="#exampleModal"><i class="material-icons text-dark" style="vertical-align: middle;">search</i></a> -->
         <!-- <div class="bg-danger text-dark position-absoulte py-3 px-5 d-flex justify-content-between d-md-none" style="top: 100%">
-          <p class="font-weight-bold m-0">Vue 直播班｜熱烈報名中</p>
+          <p class="font-weight-bold m-0">六角感謝祭｜React 新課</p>
           <span class="clock m-r-1"></span>
         </div> -->
       </div>
@@ -1185,6 +1185,8 @@
 </div>
 <!-- Header END -->
 
+  <input type="hidden" id="footer-clock" value="2022/12/21">
+
 
 <div class="login-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -1373,57 +1375,16 @@
         </p>
       </div>
       
-        <div class="col-5">
+        <div class="col-5 d-md-block d-none">
           <div class="d-flex flex-column justify-content-between align-items-end h-100">
-            <span v-if="rightCoupon.course.react" class="text-muted d-md-block d-none" style="font-size: 14px;">
-              
-                <del>原價：NT$ 3600 </del>
-              
-            </span>
-            <div class="d-flex flex-lg-row flex-column-reverse mt-md-0 mt-auto align-items-lg-center align-items-end">
-              <!-- <p class="mb-0 font-small-for-course-list mr-lg-4 mr-0 font-sm-size"><del>原價：3600</del></p> -->
-              
-                <!-- <p class="mb-0 font-weight-bold font-column-4-button font-title-size price-font text-nowrap text-danger py-1 px-2">
-                  
-                  NT$ 2,149                </p> -->
-                <span v-if="rightCoupon.course.react" class="bg-danger text-white mr-2 pr-2 pl-3 span-special d-lg-inline-block d-none" style="font-size: 14px;">
-                  41 % off
-                </span>
-                <p v-if="rightCoupon.course.react" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 2,149</p>                <p v-else class="mb-0 font-weight-bold font-column-4-button text-dark font-title-size price-font text-nowrap">NT$ 3,600</p>
-              
-            </div>
-            <div class="d-md-flex flex-column w-100 mt-lg-auto mt-0 d-none course-audition">
-              <p class="d-flex align-items-center mb-0 text-dark">
-                <i class="fas fa-headphones-alt mr-2"></i> 
-                <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
-                
-                
-                <a target="_blank" href="https://courses.hexschool.com/p/react-video-course" class="audition-link">Teachable</a>
-              </p>
-              
-                <a :href="'&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-title-size mt-2 d-flex align-items-center justify-content-center"
-                  data-toggle="modal" data-target="#orderModal"
-                  title="開啟 React 實戰影音課程 支付流程"
-                  data-promotions="現在上課去"
-                  data-price="2149"
-                  data-title="React 實戰影音課程"
-                  data-paylink=""
-                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
-                  data-type="product"
-                  data-id="react"
-                  itemprop="url">
-                付款上課去
-                <i class="jion-arrow-icon material-icons font-title-size font-weight-bold">arrow_forward</i>
-              </a>
-              
-            </div>
+            <p class="text-muted mb-0" style="font-size: 14px;"><del>原價：NT$ 3600 </del></p>
+            <p class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0"> 新課優惠 / NT$ 2149</p>
+            <button class="btn btn-block btn-secondary rounded-0 font-weight-bold font-title-size mt-auto d-flex align-items-center justify-content-center disabled" disabled
+             >
+             即將開放註冊
+            </button>
           </div>
         </div>
-        
-          <span v-if="rightCoupon.course.react" class="bg-danger text-white mr-2 pr-2 pl-3 span-special d-lg-none d-inline-block" style="font-size: 14px;">
-            41 % off
-          </span>
-        
       
     </div>
     
@@ -6373,57 +6334,16 @@
         </p>
       </div>
       
-        <div class="col-5">
+        <div class="col-5 d-md-block d-none">
           <div class="d-flex flex-column justify-content-between align-items-end h-100">
-            <span v-if="rightCoupon.course.react" class="text-muted d-md-block d-none" style="font-size: 14px;">
-              
-                <del>原價：NT$ 3600 </del>
-              
-            </span>
-            <div class="d-flex flex-lg-row flex-column-reverse mt-md-0 mt-auto align-items-lg-center align-items-end">
-              <!-- <p class="mb-0 font-small-for-course-list mr-lg-4 mr-0 font-sm-size"><del>原價：3600</del></p> -->
-              
-                <!-- <p class="mb-0 font-weight-bold font-column-4-button font-title-size price-font text-nowrap text-danger py-1 px-2">
-                  
-                  NT$ 2,149                </p> -->
-                <span v-if="rightCoupon.course.react" class="bg-danger text-white mr-2 pr-2 pl-3 span-special d-lg-inline-block d-none" style="font-size: 14px;">
-                  41 % off
-                </span>
-                <p v-if="rightCoupon.course.react" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 2,149</p>                <p v-else class="mb-0 font-weight-bold font-column-4-button text-dark font-title-size price-font text-nowrap">NT$ 3,600</p>
-              
-            </div>
-            <div class="d-md-flex flex-column w-100 mt-lg-auto mt-0 d-none course-audition">
-              <p class="d-flex align-items-center mb-0 text-dark">
-                <i class="fas fa-headphones-alt mr-2"></i> 
-                <span class="d-lg-inline-block d-none font-weight-bold">試聽課程：</span>
-                
-                
-                <a target="_blank" href="https://courses.hexschool.com/p/react-video-course" class="audition-link">Teachable</a>
-              </p>
-              
-                <a :href="'&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link join-btn-hover btn btn-block btn-primary rounded-0 font-weight-bold font-title-size mt-2 d-flex align-items-center justify-content-center"
-                  data-toggle="modal" data-target="#orderModal"
-                  title="開啟 React 實戰影音課程 支付流程"
-                  data-promotions="現在上課去"
-                  data-price="2149"
-                  data-title="React 實戰影音課程"
-                  data-paylink=""
-                  :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
-                  data-type="product"
-                  data-id="react"
-                  itemprop="url">
-                付款上課去
-                <i class="jion-arrow-icon material-icons font-title-size font-weight-bold">arrow_forward</i>
-              </a>
-              
-            </div>
+            <p class="text-muted mb-0" style="font-size: 14px;"><del>原價：NT$ 3600 </del></p>
+            <p class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0"> 新課優惠 / NT$ 2149</p>
+            <button class="btn btn-block btn-secondary rounded-0 font-weight-bold font-title-size mt-auto d-flex align-items-center justify-content-center disabled" disabled
+             >
+             即將開放註冊
+            </button>
           </div>
         </div>
-        
-          <span v-if="rightCoupon.course.react" class="bg-danger text-white mr-2 pr-2 pl-3 span-special d-lg-none d-inline-block" style="font-size: 14px;">
-            41 % off
-          </span>
-        
       
     </div>
     
@@ -7824,8 +7744,8 @@
 </div>
 
 
-  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
-    
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -7984,8 +7904,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1671155126827"></script>
-<script src="/js/all.js?1671155126827"></script>
+<script src="/js/vendor.js?1671155981261"></script>
+<script src="/js/all.js?1671155981261"></script>
 <script src="/js/wow.min.js"></script>
 
 
