@@ -406,8 +406,8 @@ $(document).ready(function() {
       total = total + price;
       return originTotal = originTotal + originPrice;
     });
-    $('#selecedTotal').text(total);
-    $('#selecedOriginTotal').text(originTotal - total);
+    $('#selecedTotal').text(total.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,'));
+    $('#selecedOriginTotal').text((originTotal - total).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,'));
     if (total > 5799) {
       $('#condition_false').hide();
       return $('#condition_true').show();
