@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1673574837563">
+  <link rel="stylesheet" href="/stylesheets/all.css?1673798398959">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1185,8 +1185,6 @@
 </div>
 <!-- Header END -->
 
-  <input type="hidden" id="footer-clock" value="2023/1/16">
-
 
 <div class="login-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -1303,7 +1301,7 @@
 
 
 <!-- 課程 Template -->
-<!-- type: training 直播班 / combinedSolution 組合包 -->
+<!-- type: training 直播班 / combinedSolution 組合包 / all_courses 影音課程 -->
 <div class="course-template container mt-md-7 mt-4 react" id="course">
   <div class="row flex-md-row-reverse">
     <div class="col-md-4 mb-md-0 mb-4">
@@ -1349,27 +1347,35 @@
             
           </div>
         </div>
-        <p class="mb-0 text-muted"><small><del>NT 3,600</del></small></p>
-        <p class="h5 course-price">NT 2,149</p>
+        
+          <!-- <p class="">NT 3,600</p> -->
+          
+            <span v-if="rightCoupon.course.react" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
+              12 % off
+            </span>
+            <p v-if="rightCoupon.course.react" class="h5 course-price mt-1">NT$ 3,168</p>            <p v-else class="mb-0 h4">NT$ 3600</p>
+          
+        
         
           
             <!-- 官網金流的話就開啟 orderModal -->
             
-              <a href="https://shop.hexschool.com/order/create?order=react&coupon_code=COUPON_2022_THANKS" class="btn btn-primary btn-block mp-click tracking-link"
-                  data-toggle="modal" data-target="#orderModal"
-                  title="開啟 React 實戰影音課程 支付流程"
-                  data-promotions="現在上課去"
-                  data-price="2149"
-                  data-title="React 實戰影音課程"
-                  data-paylink="https://shop.hexschool.com/order/create?order=react"
-                  data-coupon="COUPON_2022_THANKS"
-                  data-type="product"
-                  data-id="react"
-                  itemprop="url">
-                  
-                    現在上課去
-                  
-              </a>
+            <a :href="type === 'training'? 'https://shop.hexschool.com/order/create?order=react': 'https://shop.hexschool.com/order/create?order=react&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank"
+              data-toggle="modal" data-target="#orderModal"
+              title="開啟 React 實戰影音課程 支付流程"
+              data-promotions="現在上課去"
+              class="btn btn-primary btn-block mp-click tracking-link"
+              data-price="3168"
+              data-type="product"
+              data-id="react"
+              data-title="React 實戰影音課程"
+              :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+              data-paylink="https://shop.hexschool.com/order/create?order=react">
+              
+                現在上課去
+              
+              <!-- 立即購買 -->
+            </a>
             
           
         
@@ -1392,16 +1398,16 @@
     </ul>
     <div class="d-flex justify-content-between align-items-center mb-3">
       <p class="mb-0"><del>原價 10,000</del></p>
-      <p class="h5 mb-0">NT$6,949</p>
+      <p class="h5 mb-0">NT$7,500</p>
     </div>
-    <a href="https://shop.hexschool.com/order/create?order=z_js-js_core-react&coupon_code=COUPON_2022_THANKS" class="mp-click tracking-link btn btn-block btn-outline-secondary rounded-0 d-flex align-items-center justify-content-center"
+    <a :href="'https://shop.hexschool.com/order/create?order=z_js-js_core-react&coupon_code='+ (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link btn btn-block btn-outline-secondary rounded-0 d-flex align-items-center justify-content-center"
       data-toggle="modal" data-target="#orderModal"
       title="開啟 我想學 JS 和框架 🔥 支付流程"
       data-promotions="我想學 JS 和框架 🔥"
-      data-price="6949"
+      data-price="7500"
       data-title="我想學 JS 和框架 🔥"
       data-paylink="https://shop.hexschool.com/order/create?order=z_js-js_core-react"
-      data-coupon="COUPON_2022_THANKS"
+      :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
       data-type="product_group"
       data-id="z_js-js_core-react">
       付款上課去
@@ -1434,16 +1440,16 @@
     </ul>
     <div class="d-flex justify-content-between align-items-center mb-3">
       <p class="mb-0"><del>原價 18,600</del></p>
-      <p class="h5 mb-0">NT$13,399</p>
+      <p class="h5 mb-0">NT$13,950</p>
     </div>
-    <a href="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_react&coupon_code=COUPON_2022_THANKS" class="mp-click tracking-link btn btn-block btn-outline-secondary rounded-0 d-flex align-items-center justify-content-center"
+    <a :href="'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_react&coupon_code='+ (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" class="mp-click tracking-link btn btn-block btn-outline-secondary rounded-0 d-flex align-items-center justify-content-center"
       data-toggle="modal" data-target="#orderModal"
       title="開啟 前端全組合 支付流程"
       data-promotions="前端全組合"
-      data-price="13399"
+      data-price="13950"
       data-title="前端全組合"
       data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5_js-plus_js-core_react"
-      data-coupon="COUPON_2022_THANKS"
+      :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
       data-type="product_group"
       data-id="z_html_jQuery_rwd_bs5_js-plus_js-core_react">
       付款上課去
@@ -1709,35 +1715,7 @@
 </div>
 
 
- <!-- 開啟通用 footer 倒數-->
-   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
-    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
-      <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">感謝祭開跑｜課程 75 折</span>
-        
-        <div class="d-flex justify-content-start text-white text-nowrap">
-          
-            <span class="clock m-r-1 font-weight-bold"></span>
-          
-        </div>
-      </div>
-      <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
-        
-          <a href="/2022/12/16/2022-12-16-7th-anniversary-thanks/"
-            class="btn btn-dark btn-sm rounded-0">
-            連結
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        
-      </div>
-    </div>
-  </div>
-</nav>
-
-  <input type="hidden" id="footer-clock" value="2023/1/16">
-
+ <!-- 只需要個別頁面的倒數 -->
   
 
   </div>
@@ -1817,8 +1795,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1977,8 +1955,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1673574837568"></script>
-<script src="/js/all.js?1673574837568"></script>
+<script src="/js/vendor.js?1673798398967"></script>
+<script src="/js/all.js?1673798398967"></script>
 <script src="/js/wow.min.js"></script>
 
 

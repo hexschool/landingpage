@@ -699,7 +699,7 @@ VueApp = new Vue({
         return vm.rightCoupon = originPriceCoupon;
       }
     },
-    getUseCoupon: function() {
+    getUseUdemyCoupon: function() {
       var priceCoupon, today, vm;
       vm = this;
       priceCoupon = vm.udemyCouponData.price;
