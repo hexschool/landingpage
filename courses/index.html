@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1675243130671">
+  <link rel="stylesheet" href="/stylesheets/all.css?1675406588326">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1121,7 +1121,7 @@
             
           
             
-            <a href="/courses/node-training.html" class="drop-click link-white d-block py-1 font-weight-light">Node.js 直播班 </a>
+            <a href="/courses/node-training.html" class="drop-click link-white d-block py-1 font-weight-light">Node.js 軟體工程師企業專題班 </a>
             
           
         
@@ -7212,23 +7212,25 @@
                             <h5 class="text-dark mt-2 mb-1">網頁切版直播班</h5>
                             <span class="badge badge-warning rounded-0">適合無經驗程式新手</span>
                             <p class="mt-2 text-dark">以「 業界常見版型主題 」為導向，八週帶你做出面試專用作品，成為切版小能手。</p>
-                            <div class="mb-2" v-if="trainingStatus.web_layout.status">
-                              <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.web_layout.day.courses_start_at }}</small></p>
-                              
-                                <a href="/courses/web-layout-training-1st.html" target="_blank" class="btn btn-primary">開放報名中！</a>
-                              
-                            </div>
-                            <div class="mb-2" v-else>
-                              <p class="mb-1" v-if="trainingWait.web_layout.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.web_layout.notOpen_day.courses_title }}</small></p>
-                              <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
-                              <div v-if="trainingWait.web_layout.notOpen_day.start_subscribe">
-                                <a href="https://r.botbonnie.com/Tooj3" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                            
+                              <div class="mb-2" v-if="trainingStatus.web_layout.status">
+                                <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.web_layout.day.courses_start_at }}</small></p>
+                                
+                                  <a href="/courses/web-layout-training-1st.html" target="_blank" class="btn btn-primary">開放報名中！</a>
+                                
                               </div>
-                              <div v-else>
-                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                              <div class="mb-2" v-else>
+                                <p class="mb-1" v-if="trainingWait.web_layout.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.web_layout.notOpen_day.courses_title }}</small></p>
+                                <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
+                                <div v-if="trainingWait.web_layout.notOpen_day.start_subscribe">
+                                  <a href="https://r.botbonnie.com/Tooj3" class="btn btn-secondary" target="_blank">可報名時通知我</a>
+                                  <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                                </div>
+                                <div v-else>
+                                  <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                                </div>
                               </div>
-                            </div>
+                            
                           </div>
                         </div>
                       </li>
@@ -7260,23 +7262,25 @@
                             <h5 class="text-dark mt-2 mb-1">JavaScript 工程師養成直播班</h5>
                             <span class="badge badge-warning rounded-0">適合無經驗程式新手</span>
                             <p class="mt-2 text-dark">用九週時間帶你扎穩 JavaScript，接軌業界實務常用語法！</p>
-                            <div class="mb-2" v-if="trainingStatus.js.status">
-                              <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.js.day.courses_start_at }}</small></p>
-                              
-                                <a href="/courses/js-training.html" target="_blank" class="btn btn-primary">開放報名中！</a>
-                              
-                            </div>
-                            <div class="mb-2" v-else>
-                              <p class="mb-1" v-if="trainingWait.js.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.js.notOpen_day.courses_title }}</small></p>
-                              <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
-                              <div v-if="trainingWait.js.notOpen_day.start_subscribe">
-                                <a href="https://r.botbonnie.com/fQgQN" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                            
+                              <div class="mb-2" v-if="trainingStatus.js.status">
+                                <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.js.day.courses_start_at }}</small></p>
+                                
+                                  <a href="/courses/js-training.html" target="_blank" class="btn btn-primary">開放報名中！</a>
+                                
                               </div>
-                              <div v-else>
-                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                              <div class="mb-2" v-else>
+                                <p class="mb-1" v-if="trainingWait.js.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.js.notOpen_day.courses_title }}</small></p>
+                                <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
+                                <div v-if="trainingWait.js.notOpen_day.start_subscribe">
+                                  <a href="https://r.botbonnie.com/fQgQN" class="btn btn-secondary" target="_blank">可報名時通知我</a>
+                                  <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                                </div>
+                                <div v-else>
+                                  <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                                </div>
                               </div>
-                            </div>
+                            
                           </div>
                         </div>
                       </li>
@@ -7308,23 +7312,25 @@
                             <h5 class="text-dark mt-2 mb-1">Vue 作品實戰班</h5>
                             <span class="badge badge-warning rounded-0">需有 CSS、JS 底子</span>
                             <p class="mt-2 text-dark">以「 求職面試作品 」為導向，八週帶你做出面試專用作品，成為 JS 實戰小能手。</p>
-                            <div class="mb-2" v-if="trainingStatus.vue.status">
-                              <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.vue.day.courses_start_at }}</small></p>
-                              
-                                <a href="/courses/vue-training.html" target="_blank" class="btn btn-primary">搶下晚鳥名額</a>
-                              
-                            </div>
-                            <div class="mb-2" v-else>
-                              <p class="mb-1" v-if="trainingWait.vue.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.vue.notOpen_day.courses_title }}</small></p>
-                              <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
-                              <div v-if="trainingWait.vue.notOpen_day.start_subscribe">
-                                <a href="https://r.botbonnie.com/ynLJc" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                            
+                              <div class="mb-2" v-if="trainingStatus.vue.status">
+                                <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.vue.day.courses_start_at }}</small></p>
+                                
+                                  <a href="/courses/vue-training.html" target="_blank" class="btn btn-primary">搶下晚鳥名額</a>
+                                
                               </div>
-                              <div v-else>
-                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                              <div class="mb-2" v-else>
+                                <p class="mb-1" v-if="trainingWait.vue.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.vue.notOpen_day.courses_title }}</small></p>
+                                <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
+                                <div v-if="trainingWait.vue.notOpen_day.start_subscribe">
+                                  <a href="https://r.botbonnie.com/ynLJc" class="btn btn-secondary" target="_blank">可報名時通知我</a>
+                                  <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                                </div>
+                                <div v-else>
+                                  <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                                </div>
                               </div>
-                            </div>
+                            
                           </div>
                         </div>
                       </li>
@@ -7351,28 +7357,12 @@
                     
                       <li class="col-lg-4 col-md-6 mt-lg-4 mt-3 nav-item">
                         <div class="course-area-link h-100 bg-white card border-0 rounded-0" data-url="/courses/node-training.html">
-                          <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://file-uploads.teachablecdn.com/5ab17f5d84b948d3a105d0a4fe222da1/b1bfbc10c9c9473689d44c40b75e842a" alt="" class="img-fluid card-img-top">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2023%2F01%2F31%2FNode_OG-image.png?alt=media&token=7d6b95da-610e-4731-be76-c58c2b16e937" alt="" class="img-fluid card-img-top">
                           <div class="card-body border-0 rounded-0">
-                            <h5 class="text-dark mt-2 mb-1">Node.js 直播班</h5>
-                            <span class="badge badge-warning rounded-0">適合初級前端、工作 1~2 年中階前端</span>
-                            <p class="mt-2 text-dark">以「 業界常見後端應用 」為導向，從前端工程師視角講解建立學習橋樑！</p>
-                            <div class="mb-2" v-if="trainingStatus.node.status">
-                              <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.node.day.courses_start_at }}</small></p>
-                              
-                                <a href="/courses/node-training.html" target="_blank" class="btn btn-primary">開放報名中！</a>
-                              
-                            </div>
-                            <div class="mb-2" v-else>
-                              <p class="mb-1" v-if="trainingWait.node.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.node.notOpen_day.courses_title }}</small></p>
-                              <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
-                              <div v-if="trainingWait.node.notOpen_day.start_subscribe">
-                                <a href="https://rpg.hexschool.com/line/webhook" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-                                <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
-                              </div>
-                              <div v-else>
-                                <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
-                              </div>
-                            </div>
+                            <h5 class="text-dark mt-2 mb-1">Node.js 軟體工程師企業專題班</h5>
+                            <span class="badge badge-warning rounded-0">適合月薪區間在 3~5 萬的前、後端工程師</span>
+                            <p class="mt-2 text-dark">16 週企業專題培訓課，帶你做產品，協助 1~3 年工作經驗的前端工程師職涯加速。</p>
+                            
                           </div>
                         </div>
                       </li>
@@ -8056,8 +8046,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1675243130692"></script>
-<script src="/js/all.js?1675243130692"></script>
+<script src="/js/vendor.js?1675406588331"></script>
+<script src="/js/all.js?1675406588331"></script>
 <script src="/js/wow.min.js"></script>
 
 
