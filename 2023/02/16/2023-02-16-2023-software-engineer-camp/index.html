@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1676599617747">
+  <link rel="stylesheet" href="/stylesheets/all.css?1676707613850">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1490,14 +1490,16 @@
   const blogUrlQueryObj = queryStringToObject(window.location.href);
 
   // 欲跳轉按鈕
-  const forwardBtn = document.querySelector('[data-forward]');
+  const forwardBtn = document.querySelectorAll('[data-forward]');
 
   // 可用 Domain
   const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
 
   if (allowdm.test(blogUrlQueryObj['h_dm'])) {
     if (blogUrlQueryObj['h_pt']) {
-      forwardBtn.setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+      forwardBtn.forEach((item) => {
+        item.setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+      })
     }
   }
 </script>
@@ -2168,8 +2170,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1676599617752"></script>
-<script src="/js/all.js?1676599617752"></script>
+<script src="/js/vendor.js?1676707613855"></script>
+<script src="/js/all.js?1676707613855"></script>
 <script src="/js/wow.min.js"></script>
 
 
