@@ -180,7 +180,7 @@ $(document).ready(function() {
     }
     return nowPage = 3;
   });
-  return $('#fourthLabel').on('click', function(event) {
+  $('#fourthLabel').on('click', function(event) {
     changeActice('#fourthLabel');
     if (nowPage === 3) {
       $('#third').css('visibility', 'hidden');
@@ -201,6 +201,30 @@ $(document).ready(function() {
       $('#sixth').css('transform', 'rotateY(-180deg)');
     }
     return nowPage = 4;
+  });
+  $('.landing-combined.z_js-js_core-react').hide();
+  $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').hide();
+  $('.landing-combined-select.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').on('change', function(event) {
+    var target;
+    target = event.target.value;
+    if (target === 'z_html_jQuery_rwd_bs5_js-plus_js-core_react') {
+      $('.landing-combined.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').hide();
+      return $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').fadeIn();
+    } else if (target === 'z_html_jQuery_rwd_bs4_js-plus_js-core_vue3') {
+      $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').hide();
+      return $('.landing-combined.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').fadeIn();
+    }
+  });
+  $('.landing-combined-select.z_js-plus_js-core_vue3').on('change', function(event) {
+    var target;
+    target = event.target.value;
+    if (target === 'z_js-js_core-react') {
+      $('.landing-combined.z_js-plus_js-core_vue3').hide();
+      return $('.landing-combined.z_js-js_core-react').fadeIn();
+    } else if (target === 'z_js-plus_js-core_vue3') {
+      $('.landing-combined.z_js-js_core-react').hide();
+      return $('.landing-combined.z_js-plus_js-core_vue3').fadeIn();
+    }
   });
 });
 
@@ -737,7 +761,7 @@ VueApp = new Vue({
       });
       return $.getJSON('../udemy-coupon-data.json', function(data) {
         vm.udemyCouponData = data;
-        return vm.getUseUdemyCoupon();
+        vm.getUseUdemyCoupon();
       });
     }
   },

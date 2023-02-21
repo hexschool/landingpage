@@ -73,6 +73,7 @@ $(document).ready(function() {
   $('#select-mobile-combined').on('change', function(e) {
     var target;
     target = '#' + e.target.value;
+    $('select.combination_select').val(target.replace('#', ''));
     $('#conbined-courses div.tab-pane').each(function(e) {
       return $(this).removeClass('show active');
     });
@@ -123,9 +124,47 @@ $(document).ready(function() {
     if (e.target.nodeName === 'SPAN') {
       target = $(e.target.parentNode).attr('href');
     }
+    $('select.combination_select').val(target.replace('#', ''));
     window.history.replaceState(null, null, window.location.pathname);
     addQueryParam('category', 'conbined-courses');
     return addQueryParam('combind', target.replace('#', ''));
+  });
+  $('select.combination_select').on('change', function(e) {
+    var tabTarget, target;
+    target = e.target.value;
+    tabTarget = '#' + e.target.value;
+    $('select.combination_select').val(target);
+    $('#conbined-courses div.tab-pane').each(function(e) {
+      return $(this).removeClass('show active');
+    });
+    $(tabTarget).tab('show');
+    window.history.replaceState(null, null, window.location.pathname);
+    addQueryParam('category', 'conbined-courses');
+    return addQueryParam('combind', target.replace('#', ''));
+  });
+  $('.landing-combined.z_js-js_core-react').hide();
+  $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').hide();
+  $('.landing-combined-select.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').on('change', function(event) {
+    var target;
+    target = event.target.value;
+    if (target === 'z_html_jQuery_rwd_bs5_js-plus_js-core_react') {
+      $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').fadeIn();
+      return $('.landing-combined.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').hide();
+    } else if (target === 'z_html_jQuery_rwd_bs4_js-plus_js-core_vue3') {
+      $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').hide();
+      return $('.landing-combined.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').fadeIn();
+    }
+  });
+  $('.landing-combined-select.z_js-plus_js-core_vue3').on('change', function(event) {
+    var target;
+    target = event.target.value;
+    if (target === 'z_js-js_core-react') {
+      $('.landing-combined.z_js-plus_js-core_vue3').hide();
+      return $('.landing-combined.z_js-js_core-react').fadeIn();
+    } else if (target === 'z_js-plus_js-core_vue3') {
+      $('.landing-combined.z_js-js_core-react').hide();
+      return $('.landing-combined.z_js-plus_js-core_vue3').fadeIn();
+    }
   });
 });
 
