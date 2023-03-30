@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1680165589422">
+  <link rel="stylesheet" href="/stylesheets/all.css?1680191869641">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1350,39 +1350,32 @@
         
           <!-- <p class="">NT 3,600</p> -->
           
-            
-              <span class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
-                
-                  −25 % off
-                
-              </span>
-            
-            <p class="h5 course-price">
-              
-                NT$ 2700
-              
-            </p>
+            <span v-if="rightCoupon.course.react" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
+              12 % off
+            </span>
+            <p v-if="rightCoupon.course.react" class="h5 course-price mt-1">NT$ 3,168</p>            <p v-else class="mb-0 h4">NT$ 3600</p>
           
         
         
           
             <!-- 官網金流的話就開啟 orderModal -->
             
-              <a href="https://shop.hexschool.com/order/create?order=react&coupon_code=COUPON_2023_MAR_SPRING_SALE" class="btn btn-primary btn-block mp-click tracking-link"
-                  data-toggle="modal" data-target="#orderModal"
-                  title="開啟 React 實戰影音課程 支付流程"
-                  data-promotions="現在上課去"
-                  data-price="3168"
-                  data-title="React 實戰影音課程"
-                  data-paylink="https://shop.hexschool.com/order/create?order=react"
-                  data-coupon="COUPON_2023_MAR_SPRING_SALE"
-                  data-type="product"
-                  data-id="react"
-                  itemprop="url">
-                  
-                    現在上課去
-                  
-              </a>
+            <a :href="type === 'training'? 'https://shop.hexschool.com/order/create?order=react': 'https://shop.hexschool.com/order/create?order=react&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank"
+              data-toggle="modal" data-target="#orderModal"
+              title="開啟 React 實戰影音課程 支付流程"
+              data-promotions="現在上課去"
+              class="btn btn-primary btn-block mp-click tracking-link"
+              data-price="3168"
+              data-type="product"
+              data-id="react"
+              data-title="React 實戰影音課程"
+              :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+              data-paylink="https://shop.hexschool.com/order/create?order=react">
+              
+                現在上課去
+              
+              <!-- 立即購買 -->
+            </a>
             
           
         
@@ -1722,35 +1715,7 @@
 </div>
 
 
- <!-- 開啟通用 footer 倒數-->
-   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
-    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
-      <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">快閃優惠｜全課程75折</span>
-        
-        <div class="d-flex justify-content-start text-white text-nowrap">
-          
-            <span class="clock m-r-1 font-weight-bold"></span>
-          
-        </div>
-      </div>
-      <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
-        
-          <a href="/courses"
-            class="btn btn-dark btn-sm rounded-0">
-            前往優惠
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        
-      </div>
-    </div>
-  </div>
-</nav>
-
-  <input type="hidden" id="footer-clock" value="2023/3/31">
-
+ <!-- 只需要個別頁面的倒數 -->
   
 
   </div>
@@ -1830,8 +1795,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1990,8 +1955,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1680165589428"></script>
-<script src="/js/all.js?1680165589428"></script>
+<script src="/js/vendor.js?1680191869645"></script>
+<script src="/js/all.js?1680191869645"></script>
 <script src="/js/wow.min.js"></script>
 
 
