@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1681978325801">
+  <link rel="stylesheet" href="/stylesheets/all.css?1682265373737">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -260,7 +260,7 @@
         </ul>
         <!-- <a class="reduce-padding py-4 pl-4 font-weight-bold d-md-block d-none" href="#" data-toggle="modal" data-target="#exampleModal"><i class="material-icons text-dark" style="vertical-align: middle;">search</i></a> -->
         <!-- <div class="bg-danger text-dark position-absoulte py-3 px-5 d-flex justify-content-between d-md-none" style="top: 100%">
-          <p class="font-weight-bold m-0">軟體工程師體驗營 熱烈報名中</p>
+          <p class="font-weight-bold m-0">軟體工程師體驗營 倒數預約中</p>
           <span class="clock m-r-1"></span>
         </div> -->
       </div>
@@ -1447,7 +1447,7 @@
 <li>在系統課程介面上，就會教您如何開始上課！</li>
 </ul>
 
-<a href="https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_2&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf" target="_blank" class="btn btn-lg btn-primary ani-loop animated pulse lead-click" data-forward>立即報名</a>
+<a href="#" target="_blank" class="btn btn-lg btn-primary lead-click disabled" data-forward disabled>報名截止</a>
 
 <h3 id="完課獎勵證書"><a href="#完課獎勵證書" class="headerlink" title="完課獎勵證書"></a>完課獎勵證書</h3><ol>
 <li>若有在 6/11 前繳交<b>切版任務作業一 、二作業</b>，助教審核通過者，則可獲得完課獎勵證書。</li>
@@ -1464,15 +1464,16 @@
 <p>Q：文中有提到助教批改，那可以批改完再次提交嗎？<br>A：可以，在活動期間皆可提交。如果您願意投入學習，那我們就全力支援你到底，六角學院有個名言，就是「只要你不放棄你自己，六角學院就永遠線上支持你到底」。</p>
 <p>Q：我是有好幾年工作的前端開發者，50 小時內容教的資源會很淺嗎？<br>A：這次 5 堂直播課程，與 50 小時的影音內容，主要是作業導向，學習目的是「<b>能夠從無到有做出一個多頁式完整網站，並且整合前後端程式技能，獨立打造出自己的 AI 工具，同時部署到 GitHub Pages 或 Vercel 網頁伺服器</b>」。讓參與體驗營的同學，從這歷程中了解自己是否對軟體工程師抱有興趣。您可以觀看影音課程大綱與直播內容中，有無自己想學習內容。</p>
 
-<nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+<!-- <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-center w-100">
       <div class="d-flex flex-column flex-md-row text-white align-items-center pr-md-3 pr-0">
         <span class="d-block mr-md-3 mb-1 mb-md-0 font-weight-bold text-center">軟體工程師體驗營 熱烈報名中</span>
         <span class="clock d-block mr-md-3 mb-1 mb-md-0 font-weight-bold"></span>
         <div class="d-flex justify-content-md-start justify-content-end pl-md-3 pl-0">
-          <a href="#體驗營報名費用" class="btn btn-dark btn-sm rounded-0 lead-click">
-            點我搶名額
+          <a href="#"
+            class="btn btn-dark btn-sm rounded-0 lead-click" data-forward>
+            Line 訂閱報名通知
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
@@ -1480,80 +1481,8 @@
     </div>
   </div>
 </nav>
-<input type="hidden" id="footer-clock" value="2023/04/24">
+<input type="hidden" id="footer-clock" value="2023/04/20"> -->
 
-
-<script>
-  // 將網址 query 轉換為 object
-  const queryStringToObject = url => {
-    const urlQueryArr = [...new URLSearchParams(url.split('?')[1])]; // [['h_dm', '...'], ['h_pt', '...']]
-    return urlQueryArr.reduce((accu, [currentQueryName, currentQueryValue]) => {
-        accu[currentQueryName] = currentQueryValue;
-        return accu
-      },
-      {}
-    );
-  }
-  const blogUrlQueryObj = queryStringToObject(window.location.href); // { h_dm: ..., h_pt: ..., }
-
-  // 欲跳轉按鈕
-  const forwardBtn = document.querySelectorAll('[data-forward]');
-
-  // 可用 Domain
-  const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
-
-
-  // 新增折扣文字
-  const discountStr = document.createElement('p');
-  discountStr.textContent = '正在使用專屬連結報名，可享額外折扣 100 元';
-  discountStr.setAttribute('class', 'text-danger');
-  discountStr.classList.add('m-0');
-
-  if (blogUrlQueryObj['utm_campaign']) {
-    switch (blogUrlQueryObj['utm_campaign']) {
-      case '202304camp-hexschool':
-      case 'casperpost':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-ad':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_HESXCHOOL_AD&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-dsdaily':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_DAILY&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-muki':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_MUKI&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-betweengos':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_BETWEENGOS&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-tina':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_TINA&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-dcard':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_DCARD&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-podcast-whlai':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_WHLAI&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '202304camp-kol-uiux':
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_UIUX&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      default:
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_COUPON_ENGINEER_CAMP_2&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NSo865N9UW-fM4qiNbf`);
-    }
-    
-  };
-</script>
 
       
     </div>
@@ -2076,8 +2005,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -2236,8 +2165,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1681978325810"></script>
-<script src="/js/all.js?1681978325810"></script>
+<script src="/js/vendor.js?1682265373742"></script>
+<script src="/js/all.js?1682265373742"></script>
 <script src="/js/wow.min.js"></script>
 
 
