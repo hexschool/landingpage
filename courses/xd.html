@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/hexschool.css?1682392915239">
+  <link rel="stylesheet" href="/stylesheets/hexschool.css?1682581964881">
   <!-- Global styles END -->
 
   
@@ -564,43 +564,14 @@
             
               <div class="mt-auto">
                 <div class="pb-4 px-4 text-right text-dark">
-                  <span v-if="rightCoupon.course.xd" class="mb-2 text-muted d-md-block d-none" style="font-size: 14px;">
-                    <del>原價：NT$ 1600 </del>
-                  </span>
-                  <p class="mb-0 font-weight-bold font-small-for-course-list">
-                  
-                    <!-- 
-                      <p class="mb-0 font-weight-bold d-none d-lg-block">−12 % off：NT$ 192</p>
-                     -->
-                    <span v-if="rightCoupon.course.xd" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
-                      12 % off
-                    </span>
-                    <p v-if="rightCoupon.course.xd" class="mb-3 mb-md-0 font-weight-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 1,408</p>                    <p v-else class="mb-0 font-weight-bold font-column-4-button">NT$ 1600</p>
-                  
-                  <meta itemprop="price" content="1408">
-                  <meta itemprop="priceCurrency" content="TWD">
-                  
-                    <a :href="'https://shop.hexschool.com/order/create?order=xd&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')"
-                      class="mp-click tracking-link join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center"
-                      data-toggle="modal" data-target="#orderModal" title="開啟 Adobe XD：網頁設計真容易 支付流程"
-                      data-promotions="現在上課去"
-                      data-price="1408" data-title="Adobe XD：網頁設計真容易"
-                      :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
-                      data-paylink="https://shop.hexschool.com/order/create?order=xd" data-type="product"
-                      data-id="xd" itemprop="url">
-                      現在上課去
-                      <i class="jion-arrow-icon material-icons font-column-4-button font-weight-bold">arrow_forward</i>
-                    </a>
-                  
+                  <button
+                    class="btn btn-block btn-secondary rounded-0 font-weight-bold font-column-4-button mt-2 d-flex align-items-center justify-content-center disabled" disabled>
+                    課程已停售
+                  </button>
                 </div>
               </div>
             
-            <div class="bg-light d-flex justify-content-center py-3">
-              <a href="https://courses.hexschool.com/p/adobe-xd" class="btn btn-outline-dark btn-block mx-5"
-                target="_blank" title="線上試聽">
-                線上試聽
-              </a>
-            </div>
+            
           </div>
         </div>
         
@@ -1090,8 +1061,6 @@
   
     
   
-    
-  
 </div>
   <div class="row justify-content-center mt-6">
     <div class="col-md-4">
@@ -1296,8 +1265,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1682392915240"></script>
-<script src="/js/bs4_all.js?1682392915240"></script>
+<script src="/js/bs4_vendor.js?1682581964883"></script>
+<script src="/js/bs4_all.js?1682581964883"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
