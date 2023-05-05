@@ -8,8 +8,27 @@
     <atom:link href="/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description>六角學院是由高雄前端社群創辦人以及相關核心團員所創立，目的是透過線上教育的方式，開設符合使用者需求的課程。</description>
-    <pubDate>Fri, 28 Apr 2023 03:05:14 GMT</pubDate>
+    <pubDate>Fri, 05 May 2023 03:05:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>【網頁設計師轉前端】不要害怕遇到問題，學會自己解決</title>
+      <link>https://www.hexschool.com/2023/05/03/2023-05-03-learn-to-solve-problems-by-yourself/</link>
+      <guid>https://www.hexschool.com/2023/05/03/2023-05-03-learn-to-solve-problems-by-yourself/</guid>
+      <pubDate>Wed, 03 May 2023 00:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2023%2F04%2Fui-to-frontend.png?alt=media&amp;amp;tok
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2023%2F04%2Fui-to-frontend.png?alt=media&amp;token=ef3fcfcf-4117-4da3-91e5-8c33bc4af70d" alt="首圖"></p><p class="border-left border-dark pl-3 mt-0">大一曾就讀資管系，大二後轉系至多媒體設計系的苡安。在兜兜轉轉後，為了擺脫不適合自己的工作環境，重回程式語言的懷抱。在 Node.js 直播班完課後，成功和主管爭取到加薪，符合此次獎學金資格，現在邀請苡安分享他的心路歷程。</p><h3 id="不想聽不懂，克服技術瓶頸追求進步"><a href="#不想聽不懂，克服技術瓶頸追求進步" class="headerlink" title="不想聽不懂，克服技術瓶頸追求進步"></a>不想聽不懂，克服技術瓶頸追求進步</h3><p>多媒體設計系畢業的苡安，在畢業後做過行政、5~6 年的網頁設計師（兼職電商平台管理上架處理）經驗。<br>因公司的專案需要，需要與工程師溝通需求功能，但公司工程師卻說無法達到，當時因為自己的技術背景不夠，無法說服對方，只好作罷；這件事過後，苡安開始學習技術，一方面可以讓自己了解「如何透過技術實作出需求功能及開發的難易度」，另一方面「雙方能有共同溝通的技術語言」。<br>在第一個課程 JS 影音課程中，苡安發現自己有很好的程式邏輯，並且不再害怕面對新技術。後來經過洧杰老師履歷健檢後，成功轉職為前端工程師。</p><h3 id="學習歷程：養成學習習慣，使用-AI-工具尋找答案"><a href="#學習歷程：養成學習習慣，使用-AI-工具尋找答案" class="headerlink" title="學習歷程：養成學習習慣，使用 AI 工具尋找答案"></a>學習歷程：養成學習習慣，使用 AI 工具尋找答案</h3><p>從 JS 修煉 ＞ JS 核心等影音課程開始，陸續購買觀看建立基礎。<br>直到後來因為想了解後端運作跟資料庫規劃，也因為工作需要，希望可以提升跟後端溝通的能力，再加上想要了解後端工作內容，看看有沒有機會轉成後端或全端，進而報名 Node.js 直播班。<br>苡安每天會花 0.5~1 小時學習技術，除了影音課程，也會依照工作需要，尋找相關資料學習或技術筆記來補強學習，最近正在習慣從 ChatGPT 提問、尋找答案。</p><h3 id="六角學院就像是保姆，讓人感到信任"><a href="#六角學院就像是保姆，讓人感到信任" class="headerlink" title="六角學院就像是保姆，讓人感到信任"></a>六角學院就像是保姆，讓人感到信任</h3><p>苡安最喜歡的是六角學院的<b>作業批改</b>福利，因為新手最需要有人幫忙看程式碼，六角老師在批改作業時也會給予適當的指導，提醒細節，讓學員的基礎更加穩固。此外，苡安也很喜歡<b>履歷健檢</b>的福利，因為在經過老師們的指點，會有種被加持的感覺，可以讓苡安在面試時更有自信。<br>六角有點像“保姆”，不僅僅是在教學，在你遇到困難時會提點你，精神上也會一直給予鼓勵，給人很值得信賴的感覺。在學習過程中，可以隨時向六角學院尋求幫助，無論是在學業或是求職上，這讓苡安感到信任。</p><h3 id="在職精進自己，順利爭取加薪機會"><a href="#在職精進自己，順利爭取加薪機會" class="headerlink" title="在職精進自己，順利爭取加薪機會"></a>在職精進自己，順利爭取加薪機會</h3><p>在參加完 Node.js 直播班後，不僅在個人作品的製作上有所提升，更加學會了如何更有效地進行團隊溝通，同時剛好遇到一個重要的公司專案，苡安順利完成項目，並且得到了主管的認可和協助加薪。</p><h3 id="給學弟妹的話：不要害怕遇到問題，學會自己解決"><a href="#給學弟妹的話：不要害怕遇到問題，學會自己解決" class="headerlink" title="給學弟妹的話：不要害怕遇到問題，學會自己解決"></a>給學弟妹的話：不要害怕遇到問題，學會自己解決</h3><p>對前端工程師來說，<b>培養自己解決問題的能力極為重要</b>。因為前端技術每天都在更新，你一定會遇到問題。但不要害怕遇到問題，學著去找到答案，並將這些經驗累積下來，就會變成你的東西，同時提升自己的技術敏感度。<b>多逼自己一點，未來的你一定會感謝過去願意挑戰的自己。</b></p>]]></content:encoded>
+      
+      <comments>https://www.hexschool.com/2023/05/03/2023-05-03-learn-to-solve-problems-by-yourself/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>【35歲中年轉職】程式是你有多努力，成果不會離付出太遠</title>
@@ -370,25 +389,6 @@
       <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F23%2Funknown.png?alt=media&amp;token=f62ff257-0cc3-45db-9a98-247e0ba50e5e" alt="首圖"></p><p>六角學院首次與 ShopBack 合作加碼大優惠，除了<b>全館課程 75 折，更另外再加碼 6% 現金回饋</b>，要趁著開學季回饋給同學們（大期待～太幸福了😍</p><p>已安裝 ShopBack，直接<a href="https://www.hexschool.com/courses/?category=conbined-courses" target="_blank">前往六角學院精選課程</a></p><h3 id="✨-重點筆記"><a href="#✨-重點筆記" class="headerlink" title="✨ 重點筆記"></a>✨ 重點筆記</h3><ul class="list-unstyled">  <li class="mb-1" style="font-size: 18px;">✅ 2022 年僅此一檔，錯過不再</li>  <li class="mb-1" style="font-size: 18px;">✅ 優惠檔期：2022/8/29(一)~9/7(三)，共 10 天，透過 ShopBack 購買六角學院課程，即可享此次限定加碼優惠</li>  <li class="mb-1" style="font-size: 18px;">✅ 請注意不要開任何阻擋廣告的工具，如：AdBlock</li>  <li class="mb-1" style="font-size: 18px;">✅ 訂單結帳僅可使用信用卡付款</li>  <li class="mb-1" style="font-size: 18px;">✅ 推薦安裝 ShopBack 擴充工具確保符合資格</li></ul><p><b>怎麼安裝桌面版 ShopBack 擴充工具？</b><br>歡迎跟著Ｚ編依照以下三步驟輕鬆完成安裝，成為省錢小達人：</p><ol class="list-unstyled">  <li class="mb-4" style="font-size: 18px;">1. 點擊<a href="https://chrome.google.com/webstore/detail/shopback-button-cashback/djjjmdgomejlopjnccoejdhgjmiappap?hl=zh-TW" target="_blank">此連結</a>，將「ShopBack 現金回饋小幫手」加到 Chrome <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606948.jpg?alt=media&token=3f45c4e0-c4a9-4e2b-8e23-734168746747" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">2. 下載完成後，將 ShopBack 釘起來<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606947.jpg?alt=media&token=cec4b093-194c-4aa1-b841-0762bcbafeb1" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">3. 基本上就完成安裝 ShopBack 擴充工具囉！</li>  <li class="mb-4" style="font-size: 18px;">4. 最令人期待的時刻來臨了，一定要把握時間拿下優惠 😆 <br>搜尋「六角學院」<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606946.jpg?alt=media&token=859361b1-d3ca-4a36-af8d-8122185e5355" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">5. 請確認畫面是否有出現「現金回饋已啟動」<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606945.jpg?alt=media&token=1ed73742-e3c2-4b65-9cc5-de03d5662707" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">6. 太讚了！省錢小達人 94 你，接下來你可以自由選擇你所需的課程！<br>提醒同學，請務必記得使用<b>信用卡付款</b>唷<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606949.jpg?alt=media&token=7a928256-424e-40d9-a716-6a098a8c0e74" class="mt-3"></li></ol><h3 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h3><p><b>1. 怎樣才能獲得 ShopBack 現金回饋呢？</b><br><ul class="list-unstyled">  <li class="mb-1" style="font-size: 18px;">需透過 ShopBack 前往六角學院官網購物，且在 1 小時內於同一瀏覽器中完成結帳，才可享有 ShopBack 現金回饋資格，若符合 ShopBack 現金回饋資格，回饋金將於確定付款完成後由 ShopBack 發送。</li></ul></p><p><b>2. 為什麼我沒有獲得 ShopBack 現金回饋？</b><br><ul class="pl-4">  <li class="mb-1" style="font-size: 18px;">如果取消課程訂單、退刷退款、從 ShopBack 連結至六角官網未立刻下單且沒有在當次完成購買課程或結帳過程中曾經關閉瀏覽器，將有可能導致無法獲得現金回饋。</li>  <li class="mb-1" style="font-size: 18px;">您使用的瀏覽器有設定阻擋追蹤或安裝阻擋廣告程式，例如：取消 cookie 追蹤或 JavaScript 功能，或啟動 Adblock 等。</li>  <li class="mb-1" style="font-size: 18px;">現金回饋之最終審核與發放以登入 ShopBack 後顯示為準，若有回饋上不符之問題請直接與 ShopBack 客服聯繫；若遺失回饋金，請於消費後的 30 日內向 ShopBack 客服人員申請，本院僅為 ShopBack 合作商家，相關回饋金問題可至 <a href="https://support.shopback.com.tw/hc/zh-tw" target="_blank">ShopBack 官網常見問答</a>了解更多。</li></ul></p>]]></content:encoded>
       
       <comments>https://www.hexschool.com/2022/08/29/2022-08-29-hexschool-shopBack/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>【轉職前端工程師】我跟你一樣零基礎，不要怕，你也可以成功！</title>
-      <link>https://www.hexschool.com/2022/08/15/2022-08-15-learn-from-zero/</link>
-      <guid>https://www.hexschool.com/2022/08/15/2022-08-15-learn-from-zero/</guid>
-      <pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F11%2FUntitled.png?alt=media&amp;amp;toke
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F11%2FUntitled.png?alt=media&amp;token=24636e0b-6ee8-41a1-a9cd-100dba01c623" alt="首圖"></p><p class="border-left border-dark pl-3 mt-0">學員廷軒非本科系，家裡做服務業，畢業後做服務業七年。遇到疫情，想嘗試一些轉換，聽朋友介紹而進入前端領域。每天寫十二小時以上的程式，廷軒終於轉職成功。他想告訴我們，學會解決問題以及堅持下去，跟著六角的腳步一起往前吧！</p><h3 id="想要嘗試一些不一樣的東西，就此踏入寫程式的領域！"><a href="#想要嘗試一些不一樣的東西，就此踏入寫程式的領域！" class="headerlink" title="想要嘗試一些不一樣的東西，就此踏入寫程式的領域！"></a>想要嘗試一些不一樣的東西，就此踏入寫程式的領域！</h3><p>學員廷軒大學畢業於物理系，家裡做服務業，畢業後一直做服務業，總共做了七年。因為他覺得做服務業蠻辛苦的，加上他想要嘗試做一些轉換，如考公務員或其他工作，於是開始搜尋相關訊息。聽朋友介紹，覺得學程式好像不錯。剛好那時疫情，五月他先去參加資策會 Java 班的課程，在六七月時才接觸到六角。當時因為寫網頁需要的程式碼，有些課堂上沒有教，於是他上網找，剛好看到六角學院卡斯伯老師的 Vue 夏令營，每天跟著參加，做每日任務的練習。就此踏入了前端的領域！</p><h3 id="廷軒的學習與求職歷程：看著大家都努力，自己也想更努力學習"><a href="#廷軒的學習與求職歷程：看著大家都努力，自己也想更努力學習" class="headerlink" title="廷軒的學習與求職歷程：看著大家都努力，自己也想更努力學習"></a>廷軒的學習與求職歷程：看著大家都努力，自己也想更努力學習</h3><p>廷軒的學習路線是看六角 Youtube <a href="https://www.youtube.com/watch?v=B9EGGQr-r80&list=PLYrA-SsMvTPOX9oF6ld9RGwWlo7PceI_P&ab_channel=%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2" target="_blank">Bootstrap</a>、<a href="https://www.youtube.com/watch?v=gCd8Kg7avc0&list=PLYrA-SsMvTPNI1SYeWFYQZcEpAyR1iG5r&ab_channel=%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2" target="_blank">Vue 夏令營</a>、<a href="https://www.hexschool.com/courses/js-plus.html" target="_blank">JavaScript 必修篇</a>，在轉職成前端工程師之前，全職學習寫程式，每天寫十二個小時以上。他剛開始看課程的時候會出現惰性，常常看到一半都沒辦法看完，所以他改成參加直播班，跟著老師的進度走。大家一起學習的氛圍加上有每日任務可以做，可以減少自己的不自律，看著同學都很認真學習，自己也充滿幹勁，便更努力學習。</p><p>資策會結業後，有廠商來，他面試成功，就直接去了。有同學會想，他是從 Java 班出來的，應該比較會寫 Java，卻跑去前端領域？主要是因為當時在資策會上學習，知識量太多，課程又太趕，導致他無法吸收，在做專題時都是靠著六角做出來的。七月份在新手夏令營的期末作品用 Vue 做完作品時，多了非常多的成就感，他發現自己對前端比較有興趣，因此決定走前端這條路。</p><h3 id="六角從頭開始教，新手也可以完全上手！"><a href="#六角從頭開始教，新手也可以完全上手！" class="headerlink" title="六角從頭開始教，新手也可以完全上手！"></a>六角從頭開始教，新手也可以完全上手！</h3><p>廷軒表示因為六角都是從頭開始教，無經驗也可以從零開始，所以對於像他這種完全沒有接觸過的新手也可以上手。六角社群對他的幫助也非常大，在六角 Slack 軟體工程師特訓班上有很多同學會每天報告自己做了什麼、學了什麼，老師也會給建議。對於他來說會比較有方向，而且社群上還有閒聊大廳跟作業求助，覺得無聊或是有什麼問題，都可以跟大家分享或求助。</p><h3 id="給學弟妹們的話：解決問題和堅持下去"><a href="#給學弟妹們的話：解決問題和堅持下去" class="headerlink" title="給學弟妹們的話：解決問題和堅持下去"></a>給學弟妹們的話：解決問題和堅持下去</h3><p>廷軒有兩件事想要告訴學弟妹們，第一件事：<b>培養解決問題的能力</b>。工程師會遇到的問題有 80% 都是沒學過沒碰過，所以要有解決問題的能力。學這些課程不光是了解知識的部分而已，還必須去培養除了課程以外的一些軟實力，如溝通能力、團隊合作等等。<br>第二件事：<b>堅持下去</b>。公司資深的前端都剩下他，他都靠自己解決，也正是所謂大家說的一人前端。沒有人可以問，要自己想辦法，要什麼功能就自己處理，堅持下去才能夠學習到。如果學弟妹們有問題都可以丟上來問老師或是問學長姊，在六角學院，大家都會願意幫忙。不要害怕，就跟著六角一起努力吧！</p>]]></content:encoded>
-      
-      <comments>https://www.hexschool.com/2022/08/15/2022-08-15-learn-from-zero/#disqus_thread</comments>
     </item>
     
   </channel>
