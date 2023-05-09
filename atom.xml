@@ -8,8 +8,27 @@
     <atom:link href="/atom.xml" rel="self" type="application/rss+xml"/>
     
     <description>六角學院是由高雄前端社群創辦人以及相關核心團員所創立，目的是透過線上教育的方式，開設符合使用者需求的課程。</description>
-    <pubDate>Mon, 08 May 2023 07:05:48 GMT</pubDate>
+    <pubDate>Tue, 09 May 2023 01:47:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>【PM 轉前端】過去的每一步，都是為未來的成功做好準備</title>
+      <link>https://www.hexschool.com/2023/05/09/2023-05-09-past-for-future-success/</link>
+      <guid>https://www.hexschool.com/2023/05/09/2023-05-09-past-for-future-success/</guid>
+      <pubDate>Tue, 09 May 2023 00:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2023%2F04%2Fpm-to-frontend.png?alt=media&amp;amp;tok
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2023%2F04%2Fpm-to-frontend.png?alt=media&amp;token=5fe3d1df-6802-4f35-b423-1262ce87669f" alt="首圖"></p><p class="border-left border-dark pl-3 mt-0">碩士社會學系畢業後，先擔任兩年研究助理，期間開始規劃下一份工作。因在助理期間有進修 Python 課程且接觸過程式相關內容，加上熟識的前輩學長也從事前端工程師，經過學長推薦，才開始收集資料學習程式語言。</p><h3 id="從-PM-到前端工程師：以廣度方向擴展技能知識"><a href="#從-PM-到前端工程師：以廣度方向擴展技能知識" class="headerlink" title="從 PM 到前端工程師：以廣度方向擴展技能知識"></a>從 PM 到前端工程師：以廣度方向擴展技能知識</h3><p>研究助理約聘期滿後，成為一家軟體公司的 PM。在三年的任期中，從專案管理到產品規劃，並逐漸精進了相關知識與技能。由於曾學習程式相關內容，與工程師的溝通較為順利。直到公司因策略轉變，擴增前端工程師職位，於是申請內轉前端，目前已擔任該職位兩年左右。<br>在擔任 PM 期間，陸續有接觸六角影音課程（包括 Node.js 影音課程）， 剛好洧杰校長開始推薦直播班課程，介庭對“團隊合作”的部分感到興趣，加上想要瞭解更多後端知識，便報名參加了這個 Node.js 直播班。在職場上工程師通常會選擇走廣或深度於某領域發展，介庭是前者，因為作為PM，通常需要規劃專案內容，希望透過廣度方向學習多種技能知識，加深對相關知識的了解。</p><h3 id="學習歷程：把任務小塊切分，比較容易有成就感"><a href="#學習歷程：把任務小塊切分，比較容易有成就感" class="headerlink" title="學習歷程：把任務小塊切分，比較容易有成就感"></a>學習歷程：把任務小塊切分，比較容易有成就感</h3><p>擔任 PM 時會趁下班時間看完 <a href="https://www.hexschool.com/courses/js-plus.html" target="_blank">JavaScript 前端修煉全攻略</a>、<a href="https://www.hexschool.com/courses/js-core.html" target="_blank">JavaScript 核心篇</a>、<a href="https://www.hexschool.com/courses/vue3.html" target="_blank">Vue3 實戰影音</a> 等影音課程。後來轉職成為前端後，就會利用公司內部進修課程、讀書會等資源精進自己，了解其他工程師學習管道及方式。<br>介庭分享到，學習時會跟著課程實際操作，撰寫自己的範例 code，確認 code 的運作機制是否正確、畫面能依預期出現，小塊小塊的完成任務，會比較容易達到，也容易記在腦中，確保真正學會。</p><h3 id="完整學習架構，對新手幫助很大"><a href="#完整學習架構，對新手幫助很大" class="headerlink" title="完整學習架構，對新手幫助很大"></a>完整學習架構，對新手幫助很大</h3><p>會選擇在六角學習，主要是因為有完整的學習架構、各階段組合包，每個課程都會有助教批改作業，再加上會更新資訊課程的內容，這些對新手幫助很大。<br>另外老師們都很認真在經營六角，對於學生的提問都會耐心回覆，就像有一位值得信賴的前輩引領著學生一樣，並分享他們在相關領域的經驗。</p><h3 id="過去的每一步，都是為未來的成功做好準備"><a href="#過去的每一步，都是為未來的成功做好準備" class="headerlink" title="過去的每一步，都是為未來的成功做好準備"></a>過去的每一步，都是為未來的成功做好準備</h3><p>完成 Node.js 直播班課程後，剛好遇到公司產品策略轉換，爬蟲工程師之職務出現空缺。由於擔任 PM 時期，規劃過資料流程，以及擔任前端工程師時，撰寫過產品資源管理後台的經驗，再加上 Node.js 直播班課程中學習的後端知識，介庭已具備對應工作內容的技能，可以支援處理爬蟲工程師相關工作內容，維護產品穩定性與客戶使用品質，成功爭取到加薪。</p><h3 id="給學弟妹的話"><a href="#給學弟妹的話" class="headerlink" title="給學弟妹的話"></a>給學弟妹的話</h3><p>學習程式就像學習語言一樣，從最簡單的開始，逐字逐句地寫出程式碼，持續練習，不要一開始就挑戰太難的項目，以免失敗且感到挫折，尤其是前端這條路需要細心、耐心和持之以恆的練習。<br>在練習時，速度慢一些也不要緊。完成後，可以不看提示再寫一次，確認程式能運行，這樣你就真正掌握了它。<br>同時也要多建立作品集，學會如何清晰明確地解說每個作品，最好能夠為每個作品準備一分鐘、三分鐘、十分鐘不同版本的解說，強調克服了什麼技術難題或實現了哪些重要效果，這樣能讓面試官留下深刻印象。</p>]]></content:encoded>
+      
+      <comments>https://www.hexschool.com/2023/05/09/2023-05-09-past-for-future-success/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>【網頁設計師轉前端】不要害怕遇到問題，學會自己解決</title>
@@ -370,25 +389,6 @@
       <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F10%2F1024-02.png?alt=media&amp;token=5ce3b31e-b807-4277-8245-9f733dc15ffa" alt="首圖"></p><p>六角學院是一所線上程式開發學習單位，目前已累積超過 30,000 名學員，鼓勵學員透過線上學習，擁有更好的職涯發展機會。除了一般影音課程，六角學院定期每季培訓班都會釋出結業人才，且人才涵蓋北中南部，如果您有交流需求歡迎參考本篇文章：</p><h3 id="📌-近期的招募時間："><a href="#📌-近期的招募時間：" class="headerlink" title="📌 近期的招募時間："></a>📌 近期的招募時間：</h3><p><b>【開放填表中：3/15（三）截止】</b></p><ul><li><b>2023/3 Vue 作品實戰直播班：掌握 JavaScript 設計模式，設計美感與實力兼具網站</b></li></ul><p>【表單尚未開放：預計 9 月開放填表】</p><ul><li>2023/9 網頁切版直播班：強化 Bootstrap 5 與 Tailwind CSS 快速切版</li></ul><h3 id="申請企業交流流程"><a href="#申請企業交流流程" class="headerlink" title="申請企業交流流程"></a>申請企業交流流程</h3><p>請 HR 填寫表單，每季培訓班結業時，六角學院將提供專屬連結，邀請您參與成果發表會</p><ol><li><b>申請填表</b>：請填寫 Google 表單</li><li><b>活動參與</b>：若審核通過，每季培訓班發表會前三天，六角會發信通知相關資訊</li><li><b>廠商交流</b>：成果發表會後結束兩週內，會寄出人才交流資訊</li></ol><h4 id="⏰-時程舉例："><a href="#⏰-時程舉例：" class="headerlink" title="⏰ 時程舉例："></a>⏰ 時程舉例：</h4><p>3/15（三）前填寫表單，進入審核 &gt;&gt; 3/16（四）六角學院將發信提供專屬連結 &gt;&gt; 參加 3/19（日）Vue 作品實戰直播班發表會 &gt;&gt; 3/31（五）前寄出人才交流資訊</p><p><a href="https://hexschool.tw/XUlyX" target="_blank" class="btn btn-lg btn-primary">點我填寫 Google 表單</a></p><h3 id="常見-Q＆A"><a href="#常見-Q＆A" class="headerlink" title="常見 Q＆A"></a>常見 Q＆A</h3><p>Q：請問有資深工程師的名單嗎？<br>A：每梯次結業也會搜集歷年學長姐交流意願，所以每個結訓梯次也會提供有年資的工程師交流名單</p><p>Q：成果發表會後，我預期幾天後能拿到人才交流資訊？<br>A：預期 5 個工作天會提供，還請填寫申請表，人才消息不漏接</p><p>Q：拿到學員結業名單後，公司可以獲得學員履歷嗎？<br>A：可以，六角學院釋出履歷為學員同意授權，但還請注意：「本院提供的人才履歷，僅作為交流使用，不可外流，若有外流需承擔法律之責任」</p><p>Q：填表申請的過程中有問題可以到哪裡詢問？<br>A：您可以私訊六角學院 FB 紛絲團、或寄信至 <a href="mailto:service@hexschool.com" target="_blank" rel="noopener">service@hexschool.com</a>，會有專人為您解答</p>]]></content:encoded>
       
       <comments>https://www.hexschool.com/2022/09/02/2022-09-02-invite-enterprise-to-students-result-presentation/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>全館 75 折，額外加碼 6% 現金回饋！趁優惠學前端最划算！</title>
-      <link>https://www.hexschool.com/2022/08/29/2022-08-29-hexschool-shopBack/</link>
-      <guid>https://www.hexschool.com/2022/08/29/2022-08-29-hexschool-shopBack/</guid>
-      <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F23%2Funknown.png?alt=media&amp;amp;token
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p><img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F23%2Funknown.png?alt=media&amp;token=f62ff257-0cc3-45db-9a98-247e0ba50e5e" alt="首圖"></p><p>六角學院首次與 ShopBack 合作加碼大優惠，除了<b>全館課程 75 折，更另外再加碼 6% 現金回饋</b>，要趁著開學季回饋給同學們（大期待～太幸福了😍</p><p>已安裝 ShopBack，直接<a href="https://www.hexschool.com/courses/?category=conbined-courses" target="_blank">前往六角學院精選課程</a></p><h3 id="✨-重點筆記"><a href="#✨-重點筆記" class="headerlink" title="✨ 重點筆記"></a>✨ 重點筆記</h3><ul class="list-unstyled">  <li class="mb-1" style="font-size: 18px;">✅ 2022 年僅此一檔，錯過不再</li>  <li class="mb-1" style="font-size: 18px;">✅ 優惠檔期：2022/8/29(一)~9/7(三)，共 10 天，透過 ShopBack 購買六角學院課程，即可享此次限定加碼優惠</li>  <li class="mb-1" style="font-size: 18px;">✅ 請注意不要開任何阻擋廣告的工具，如：AdBlock</li>  <li class="mb-1" style="font-size: 18px;">✅ 訂單結帳僅可使用信用卡付款</li>  <li class="mb-1" style="font-size: 18px;">✅ 推薦安裝 ShopBack 擴充工具確保符合資格</li></ul><p><b>怎麼安裝桌面版 ShopBack 擴充工具？</b><br>歡迎跟著Ｚ編依照以下三步驟輕鬆完成安裝，成為省錢小達人：</p><ol class="list-unstyled">  <li class="mb-4" style="font-size: 18px;">1. 點擊<a href="https://chrome.google.com/webstore/detail/shopback-button-cashback/djjjmdgomejlopjnccoejdhgjmiappap?hl=zh-TW" target="_blank">此連結</a>，將「ShopBack 現金回饋小幫手」加到 Chrome <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606948.jpg?alt=media&token=3f45c4e0-c4a9-4e2b-8e23-734168746747" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">2. 下載完成後，將 ShopBack 釘起來<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606947.jpg?alt=media&token=cec4b093-194c-4aa1-b841-0762bcbafeb1" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">3. 基本上就完成安裝 ShopBack 擴充工具囉！</li>  <li class="mb-4" style="font-size: 18px;">4. 最令人期待的時刻來臨了，一定要把握時間拿下優惠 😆 <br>搜尋「六角學院」<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606946.jpg?alt=media&token=859361b1-d3ca-4a36-af8d-8122185e5355" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">5. 請確認畫面是否有出現「現金回饋已啟動」<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606945.jpg?alt=media&token=1ed73742-e3c2-4b65-9cc5-de03d5662707" class="mt-3"></li>  <li class="mb-4" style="font-size: 18px;">6. 太讚了！省錢小達人 94 你，接下來你可以自由選擇你所需的課程！<br>提醒同學，請務必記得使用<b>信用卡付款</b>唷<img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2022%2F08%2F18%2FS__13606949.jpg?alt=media&token=7a928256-424e-40d9-a716-6a098a8c0e74" class="mt-3"></li></ol><h3 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h3><p><b>1. 怎樣才能獲得 ShopBack 現金回饋呢？</b><br><ul class="list-unstyled">  <li class="mb-1" style="font-size: 18px;">需透過 ShopBack 前往六角學院官網購物，且在 1 小時內於同一瀏覽器中完成結帳，才可享有 ShopBack 現金回饋資格，若符合 ShopBack 現金回饋資格，回饋金將於確定付款完成後由 ShopBack 發送。</li></ul></p><p><b>2. 為什麼我沒有獲得 ShopBack 現金回饋？</b><br><ul class="pl-4">  <li class="mb-1" style="font-size: 18px;">如果取消課程訂單、退刷退款、從 ShopBack 連結至六角官網未立刻下單且沒有在當次完成購買課程或結帳過程中曾經關閉瀏覽器，將有可能導致無法獲得現金回饋。</li>  <li class="mb-1" style="font-size: 18px;">您使用的瀏覽器有設定阻擋追蹤或安裝阻擋廣告程式，例如：取消 cookie 追蹤或 JavaScript 功能，或啟動 Adblock 等。</li>  <li class="mb-1" style="font-size: 18px;">現金回饋之最終審核與發放以登入 ShopBack 後顯示為準，若有回饋上不符之問題請直接與 ShopBack 客服聯繫；若遺失回饋金，請於消費後的 30 日內向 ShopBack 客服人員申請，本院僅為 ShopBack 合作商家，相關回饋金問題可至 <a href="https://support.shopback.com.tw/hc/zh-tw" target="_blank">ShopBack 官網常見問答</a>了解更多。</li></ul></p>]]></content:encoded>
-      
-      <comments>https://www.hexschool.com/2022/08/29/2022-08-29-hexschool-shopBack/#disqus_thread</comments>
     </item>
     
   </channel>
