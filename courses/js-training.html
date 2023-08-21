@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1692610384658">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1692622503405">
   <!-- Global styles END -->
 
   
@@ -1120,13 +1120,161 @@
   </div>
 </section>
 
+<!-- 付款方式介紹 -->
+<section class="payment">
+  <div class="container">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link w-50 active" id="nav-zingala-tab" data-toggle="tab" data-target="#nav-zingala" type="button" role="tab" aria-controls="nav-zingala" aria-selected="true">零卡分期</button>
+        <button class="nav-link w-50" id="nav-newebpay-tab" data-toggle="tab" data-target="#nav-newebpay" type="button" role="tab" aria-controls="nav-newebpay" aria-selected="false">信用卡付款</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <!-- 銀角 -->
+      <div class="tab-pane fade show active" id="nav-zingala" role="tabpanel" aria-labelledby="nav-zingala-tab">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="fw-bold mb-3">JavaScript 工程師養成直播班</p>
+            <h3 class="lh-base">
+              新增銀角零卡分期服務！<br>
+              讓你輕鬆學習不受限！
+            </h3>
+            <p>零卡分期先買後付，適合想專注學習的學生、社會新鮮人！</p>
+            <img src="../images/js-training/zingala.png" alt="zingala logo" class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="times">
+                    <h5 class="mb-3">一次付清</h5>
+                    <p class="mb-0">一次付清</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal mb-0">NT$9,390</h5>
+                    <p class="h5 fw-normal mb-0"><del>原價 NT$19,980</del></p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">3 期</h5>
+                    <p class="payment-fee mb-0">零手續費</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$3,130 <span class="h4 mb-0 ml-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">6 期</h5>
+                    <p class="payment-fee mb-0">零手續費</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$1,565 <span class="h4 mb-0 ml-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">9 期（1.5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$1,044 <span class="h4 mb-0 ml-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">12 期（2.5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$783 <span class="h4 mb-0 ml-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="d-flex align-items-center justify-content-end">
+              <span class="material-icons">
+                emergency
+              </span>
+              以上金額皆不包含銀角額外手續費
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 藍新金流 -->
+      <div class="tab-pane fade" id="nav-newebpay" role="tabpanel" aria-labelledby="nav-newebpay-tab">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="fw-bold mb-3">JavaScript 工程師養成直播班</p>
+            <h3 class="lh-base">
+              信用卡分期零利率！<br>
+              輕鬆買，沒壓力！
+            </h3>
+            <p>信用卡除了可一次性付款也支援分期付款方式，凡在<a href="https://www.hexschool.com/courses/" target="_blank">六角官網</a>購買課程皆可分期付款，一共可分 3、6 期（目前僅支援台新、玉山及中信分期付款）。</p>
+            <img src="../images/js-training/newebpay.png" alt="newebpay logo" class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="times">
+                    <h5 class="mb-3">一次付清</h5>
+                    <p class="mb-0">一次付清</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal mb-0">NT$9,390</h5>
+                    <p class="h5 fw-normal mb-0"><del>原價 NT$19,980</del></p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">3 期</h5>
+                    <p class="payment-fee mb-0">零利率</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$3,130 <span class="h4 mb-0 ml-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">6 期</h5>
+                    <p class="payment-fee mb-0">零利率</p>
+                  </div>
+                  <div class="price text-right">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$1,565 <span class="h4 mb-0 ml-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- 課程報名 -->
-<section class="container my-md-7 my-5 course-tracking-ViewContent" id="recommend" data-name="JavaScript 工程師養成直播班" data-price="9990" data-id="js-training">
+<!-- <section class="container my-md-7 my-5 course-tracking-ViewContent" id="recommend" data-name="JavaScript 工程師養成直播班" data-price="9990" data-id="js-training">
   <div class="row justify-content-center">
     <div class="col-md-8 col-lg-6 pt-md-0 pt-3 mt-md-5 mt-2">
       <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16); border-radius: 16px; overflow: hidden;">
-        <h2 class="font-section-sub-title py-md-5 py-4 bg-dark text-white text-center rounded-top position-relative couse-title-area m-0" style="z-index: 6; font-size: 24px;">JavaScript 工程師養成直播班</h2>
-        <div class>
+        <h2
+          class="font-section-sub-title py-md-5 py-4 bg-dark text-white text-center rounded-top position-relative couse-title-area m-0"
+          style="z-index: 6; font-size: 24px;">JavaScript 工程師養成直播班</h2>
+        <div class="">
           <div class="position-relative combined-works " style="height: 240px">
             <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fproduct-js.svg?alt=media&token=09299024-5913-435f-a2f6-05bbf69419e6) no-repeat; background-position: center center; background-size: cover;
               width: 100%; z-index: 1; position: absolute; left: 0;"></div>
@@ -1150,11 +1298,11 @@
         </div>
         <div class="mt-auto">
           <div class="pb-2 pb-md-3 px-4 text-right text-dark">
-            <!-- <p class="h3 mb-0">NT$9,990<small class="h6 d-block d-md-inline-block text-lineThrough mb-0 ml-2">原價 NT$19,980</small></p> -->
-            <!-- <p class="mb-1"><small>下一次開課日期：2022 秋季</small></p>
+            <p class="h3 mb-0">NT$9,990<small class="h6 d-block d-md-inline-block text-lineThrough mb-0 ml-2">原價 NT$19,980</small></p>
+            <p class="mb-1"><small>下一次開課日期：2022 秋季</small></p>
             <a href="https://r.botbonnie.com/fQgQN" class="btn btn-secondary" target="_blank">可報名時通知我</a>
-            <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://r.botbonnie.com/fQgQN" target="_blank" class="text-primary-secondary mx-1">連結</a>貼到手機版 LINE 訊息</small></p> -->
-            <!-- <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價 NT$ 14,400</del></p>
+            <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://r.botbonnie.com/fQgQN" target="_blank" class="text-primary-secondary mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+            <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價 NT$ 14,400</del></p>
             <p class="mb-0 font-weight-bold font-column-4-button text-danger"> NT$ 7,180</p>
             <hr>
             <div class="text-left">
@@ -1181,10 +1329,10 @@
               itemprop="url" disabled>
               已額滿
               <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i> 
-            </a>-->
+            </a>
           </div> 
-          <a href="https://r.botbonnie.com/FUjem" target="_blank" class="tracking-link btn btn-danger d-block rounded-0 py-4 mb-0" style="font-size: 28px;">免費 Line 預約</a>
-          <!-- <a href="#" title="JavaScript 工程師養成直播班" id="trainingBuyBtn"
+          <a href="https://r.botbonnie.com/FUjem" target="_blank" class="tracking-link btn btn-danger d-block rounded-0 py-4 mb-0" style="font-size: 28px;" target="_blank">免費 Line 預約</a>
+          <a href="#" title="JavaScript 工程師養成直播班" id="trainingBuyBtn"
               class="trainingBuyBtn join-btn-hover btn btn-dark d-block rounded-0 py-4 mb-0 disabled" 
               style="font-size: 28px;"
               data-toggle="modal" data-target="#orderModal"
@@ -1196,166 +1344,68 @@
               data-paylink="#"
               itemprop="url" disabled>
               報名截止
-            </a> -->
-        </div>
-      </div>
-    </div>
-    <!-- <div class="col-md-6 pt-md-0 pt-3 mt-md-5 mt-2">
-      <div class="combinedSolution bg-white h-100 d-flex flex-column" style="box-shadow: 0px 4px 16px rgba(0,0,0,0.16)">
-        <h2
-          class="font-section-sub-title py-3 bg-dark text-white text-center rounded-top position-relative couse-title-area m-0"
-          style="z-index: 6">JavaScript 工程師養成＋ <br> Vue 3 作品實戰直播班</h2>
-        <div class="">
-          <div class="position-relative combined-works " style="height: 200px">
-            <div style="height: 100%; background:url(https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fproduct-js-vue.svg?alt=media&token=a1333a59-9a3f-4914-8d72-9faf68a825ac) no-repeat; background-position: center center; background-size: cover;
-              width: 100%; z-index: 1; position: absolute; left: 0;"></div>
-          </div>
-        </div>
-        <div class="px-lg-4 px-3 pt-5 text-dark">
-          一次學好學滿，手把手帶您打造高辨識度作品，結業就掌握就業必備技能！
-          <small class="text-secondary mb-0 d-block mt-1"> 此組合包含：</small>
-          <ul class="pl-3 mb-0">
-            <li>18 堂直播課程</li>
-            <li>50 支以上 RESTful API</li>
-            <li>100 小時以上的影音教學資源</li>
-            <li>150 道 JS 題目</li>
-            <li>學員專屬 UI 設計稿授權</li>
-            <li>一年時間免費課程錄影回顧</li>
-            <li>期間無次數限制作品程式碼檢視</li>
-          </ul>
-          <p class="mb-0 mt-3">課程共十六週</p>
-          <p class="h4 font-weight-normal">2/19 - 4/7、4/30 - 6/25</p>
-          <a href="/courses/vue-training.html">點我看『Vue 3 作品實戰直播班』介紹</a>
-        </div>
-        <div class="mt-auto">
-          <div class="pb-4 px-4 text-right text-dark">
-            <p class="mb-0 font-weight-bold font-small-for-course-list"><del>原價 NT$ 29,400</del></p>
-            <p class="mb-0 font-weight-bold font-column-4-button text-danger"> NT$ 13,520</p>
-            <hr>
-            <div class="text-left">
-              <p class="mb-1">請勾選以下注意事項，開始報名課程：</p>
-              <ul>
-                <li>本次挑戰你需要每週投入至少 10 小時，你可以辦到嗎？</li>
-              </ul>
-            </div>
-            <div class="form-check d-md-inline-block">
-              <input class="form-check-input training-checked" type="checkbox" id="js-vue-trainingHW" disabled>
-              <label class="form-check-label" for="js-vue-trainingHW">
-                當然，我就是來練功變強的！
-              </label>
-            </div>
-            <a href="#" title="JS + Vue 直播班組合包" disabled
-              class="trainingBuyBtn join-btn-hover btn btn-block btn-danger rounded-0 font-weight-bold font-column-4-button mt-2 mp-click tracking-link d-flex justify-content-center align-items-center disabled disabled"
-              data-toggle="modal" data-target="#orderModal"
-              title="開啟 JS + Vue 直播班組合包支付流程"
-              data-price="7800"
-              data-title="JavaScript 工程師養成直播班"
-              data-paylink=""
-              itemprop="url">
-              活動已結束
-              <i class="material-icons font-column-4-button font-weight-bold">arrow_forward</i>
             </a>
-          </div>
         </div>
-      </div>
-    </div> -->
-  </div>
-</section>
-
-<!-- 銀角零卡分期 -->
-<!-- <section class="zingala text-dark">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <p class="mb-3">JavaScript 工程師養成直播班</p>
-        <h3>
-          新增銀角零卡分期服務！<br>
-          讓你輕鬆學習不受限！
-        </h3>
-        <p>零卡分期先買後付，適合想專注學習的學生、社會新鮮人！九週時間帶你扎穩 JavaScript，接軌業界實務常用語法！</p>
-        <img src="../images/js-training/zingala.png" alt="zingala logo" class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
-        <a href="#" title="JavaScript 工程師養成直播班" id="trainingBuyBtn"
-          class="trainingBuyBtn h3 btn btn-primary-dark d-block rounded py-2 mb-3" 
-          data-toggle="modal" data-target="#orderModal"
-          title="開啟 JavaScript 工程師養成直播班支付流程"
-          data-type="product"
-          data-id="js-training"
-          data-price="9990"
-          data-title="JavaScript 工程師養成直播班"
-          data-paylink="#"
-          itemprop="url">
-          無卡分期上課去！
-        </a>
-      </div>
-      <div class="col-md-6">
-        <ul class="list-unstyled">
-          <li class="zingala-card py-3 px-4 mb-3">
-            <div class="d-flex justify-content-between">
-              <div class="times">
-                <h5 class="mb-3">一次付清</h5>
-                <p class="mb-0">一次付清</p>
-              </div>
-              <div class="price text-right">
-                <h5 class="h3 fw-normal mb-0">NT$9,990</h5>
-                <p class="h5 fw-normal mb-0"><del>原價 NT$19,980</del></p>
-              </div>
-            </div>
-          </li>
-          <li class="zingala-card py-3 px-4 mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="times">
-                <h5 class="mb-3">3 期</h5>
-                <p class="zingala-fee mb-0">零手續費</p>
-              </div>
-              <div class="price text-right">
-                <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$3,330 <span class="h4 mb-0 ml-1">/期</span></h5>
-              </div>
-            </div>
-          </li>
-          <li class="zingala-card py-3 px-4 mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="times">
-                <h5 class="mb-3">6 期</h5>
-                <p class="zingala-fee mb-0">零手續費</p>
-              </div>
-              <div class="price text-right">
-                <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$1,665 <span class="h4 mb-0 ml-1">/期</span></h5>
-              </div>
-            </div>
-          </li>
-          <li class="zingala-card py-3 px-4 mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="times">
-                <h5 class="mb-3">9 期（1.5%）</h5>
-                <p class="zingala-fee mb-0">需另負擔手續費</p>
-              </div>
-              <div class="price text-right">
-                <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$1,110 <span class="h4 mb-0 ml-1">/期</span></h5>
-              </div>
-            </div>
-          </li>
-          <li class="zingala-card py-3 px-4 mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="times">
-                <h5 class="mb-3">12 期（2.5%）</h5>
-                <p class="zingala-fee mb-0">需另負擔手續費</p>
-              </div>
-              <div class="price text-right">
-                <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$833 <span class="h4 mb-0 ml-1">/期</span></h5>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <p class="d-flex align-items-center justify-content-end">
-          <span class="material-icons">
-            emergency
-          </span>
-          以上金額皆不包含銀角額外手續費
-        </p>
       </div>
     </div>
   </div>
 </section> -->
+
+<section class="my-md-7 my-5 course-tracking-ViewContent" id="recommend" data-name="JavaScript 工程師養成直播班" data-price="9990" data-id="js-training">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 mb-5">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fjs-training%2Fproduct-js.svg?alt=media&token=09299024-5913-435f-a2f6-05bbf69419e6" alt="js 直播班圖片">
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <h2 class="course-font-section-title mb-2">JavaScript 工程師養成直播班</h2>
+        <p class="mb-4">適合無經驗程式新手，用九週時間帶你扎穩 JavaScript， <br class="d-none d-md-block">接軌業界實務常用語法！</p>
+        <div class="border-left border-dark border-2px mb-4" style="padding-left: 20px;">
+          <p class="mb-2"> 此組合包含：</p>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1 mb-md-3">9 堂直播課程</li>
+            <li class="mb-1 mb-md-3">10 支專屬 RESTful API</li>
+            <li class="mb-1 mb-md-3">50 小時以上的影音教學資源</li>
+            <li class="mb-1 mb-md-3">100 道 JS 題目</li>
+            <li class="mb-1 mb-md-3">學員專屬 UI 設計稿授權</li>
+            <li class="mb-1 mb-md-3">一年時間免費課程錄影回顧</li>
+            <li>授課期間無次數限制作品程式碼檢視</li>
+          </ul>
+        </div>
+        <p class="h5 mb-3">課程共九週<br><span class="h3">10/6-12/1</span></p>
+        <div class="row justify-content-md-end mb-1">
+          <div class="col-8 col-sm-6">
+            <p class="mb-0 ml-auto" style="font-size: 14px;">課程支援以下支付方式</p>
+            <ul class="list-unstyled row flex-wrap justify-content-end mb-0" style="font-size: 14px;">
+              <li class="col-6">
+                <i class="far fa-credit-card"></i>
+                <span class="gl_fz-t3">信用卡</span>
+              </li>
+              <li class="col-6">
+                <i class="fas fa-store"></i>
+                <span class="gl_fz-t3">超商付款</span>
+              </li>
+              <li class="col-6">
+                <i class="fas fa-money-check-alt"></i>
+                <span class="gl_fz-t3 text-nowrap">ATM 轉帳</span>
+              </li>
+              <li class="col-6">
+                <span class="material-icons align-bottom" style="font-size: 20px;">
+                  local_atm
+                </span>
+                <span class="gl_fz-t3">銀角零卡</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="h3 text-right text-dark mb-3">NT$9,390<small class="h6 d-block d-md-inline-block text-lineThrough mb-0 ml-2">原價 NT$19,980</small></p>
+        <a href="https://shop.hexschool.com/order/create?coupon_code=2023_JAVASCRIPT_TRAINING_FOR_EARLY&order=-MOUKh1jGO3ey6tSrur3&phyProduct%5B%5D=-MOUKh1jGO3ey6tSrur3&phyProductSpec%5B%5D=-NaQg_U5B6yc9momDufi" title="JavaScript 工程師養成直播班" id="trainingBuyBtn" class="trainingBuyBtn tracking-link btn btn-primary-dark d-block py-2 mb-0" style="font-size: 28px;" data-toggle="modal" data-target="#orderModal" data-type="product" data-id="js-training" data-price="9390" data-title="JavaScript 工程師養成直播班" data-paylink="https://shop.hexschool.com/order/create?coupon_code=2023_JAVASCRIPT_TRAINING_FOR_EARLY&order=-MOUKh1jGO3ey6tSrur3&phyProduct%5B%5D=-MOUKh1jGO3ey6tSrur3&phyProductSpec%5B%5D=-NaQg_U5B6yc9momDufi" itemprop="url" target="_blank" rel="noopener">
+          點我註冊享超早鳥 47 折
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- JS 直播班說明會 -->
 <!-- <section class="my-md-7 my-5">
@@ -1528,7 +1578,6 @@
     const interviewQuestionBlockHeight = interviewQuestionBlock.offsetHeight;
 
     let allOffsetTop = foundationBlock.offsetTop - topNavbar.offsetHeight - classNav.offsetHeight;
-    console.log(allOffsetTop);
     window.addEventListener('scroll', (e) => {
       if(window.scrollY >= allOffsetTop && window.scrollY < allOffsetTop+foundationBlockHeight){
         foundationBtn.classList.add('active');
@@ -1593,7 +1642,7 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-center w-100">
       <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-center">JS 直播班｜即將開放報名</span>
+        <span class="mr-md-5 font-weight-bold text-center">限時！超早鳥 47 折</span>
         
         <div class="d-flex justify-content-center justify-content-md-start text-white text-nowrap">
           
@@ -1603,9 +1652,9 @@
       </div>
       <div class="d-flex justify-content-md-start justify-content-end pl-3">
         
-          <a href="https://r.botbonnie.com/FUjem"
+          <a href="/courses/js-training.html#recommend"
             class="btn btn-dark btn-sm rounded-0">
-            免費預約中
+            超早鳥 47 折
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -1614,7 +1663,7 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2023/8/21 21:00">
+  <input type="hidden" id="footer-clock" value="2023/8/23">
 
           
   </div>
@@ -1673,6 +1722,12 @@
     <li class="w-50">
       <i class="fas fa-money-check-alt"></i>
       <span class="gl_fz-t3">ATM 轉帳</span>
+    </li>
+    <li class="w-50">
+      <span class="material-icons align-bottom" style="font-size: 20px;">
+        local_atm
+      </span>
+      <span class="gl_fz-t3">銀角零卡</span>
     </li>
   </ul>
 </div>
@@ -1798,8 +1853,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1692610384660"></script>
-<script src="/js/bs4_all.js?1692610384660"></script>
+<script src="/js/bs4_vendor.js?1692622503406"></script>
+<script src="/js/bs4_all.js?1692622503406"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
