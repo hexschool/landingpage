@@ -44,7 +44,7 @@
   <!-- Global styles START -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/event1000.css?1693204814237">
+  <link rel="stylesheet" href="/stylesheets/event1000.css?1693390531223">
   <!-- Global styles END -->
 
   
@@ -1925,7 +1925,14 @@
     </a>
   </div>
   <!-- FAB End -->
-  
+  <script type="application/javascript">
+  function getIP(json) {
+    window.hexUseIP = json.ip
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP" defer></script>
+
 
 <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
 <!--[if lt IE 9]>
@@ -1934,8 +1941,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1693204814238"></script>
-<script src="/js/bs4_all.js?1693204814238"></script>
+<script src="/js/bs4_vendor.js?1693390531224"></script>
+<script src="/js/bs4_all.js?1693390531224"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
@@ -2095,7 +2102,6 @@ mixpanel.init("75759612e011b856d03c2a78e8219094", {
 
 
 <!-- END INTEGRATIONS -->
-
 </body>
 </html>
 

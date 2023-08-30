@@ -45,7 +45,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-  <link rel="stylesheet" href="/stylesheets/all.css?1693204814934">
+  <link rel="stylesheet" href="/stylesheets/all.css?1693390531881">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -55,13 +55,6 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MH4SWT');</script>
   <!-- End Google Tag Manager -->
-  <script type="application/javascript">
-    function getIP(json) {
-      window.hexUseIP = json.ip
-    }
-  </script>
-  
-  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </head>
 
 <body class="corporate">
@@ -2021,7 +2014,14 @@
   
 
 
-  
+  <script type="application/javascript">
+  function getIP(json) {
+    window.hexUseIP = json.ip
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP" defer></script>
+
 
 <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
 <!--[if lt IE 9]>
@@ -2030,8 +2030,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1693204814943"></script>
-<script src="/js/all.js?1693204814943"></script>
+<script src="/js/vendor.js?1693390531886"></script>
+<script src="/js/all.js?1693390531886"></script>
 <script src="/js/wow.min.js"></script>
 
 
@@ -2218,7 +2218,6 @@ mixpanel.init("75759612e011b856d03c2a78e8219094", {
 
 
 <!-- END INTEGRATIONS -->
-
 </body>
 </html>
 
