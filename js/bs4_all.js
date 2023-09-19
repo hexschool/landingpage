@@ -742,13 +742,13 @@ VueApp = new Vue({
     fetchData: function() {
       var vm;
       vm = this;
-      $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
+      $.getJSON('https://shop.hexschool.com/api/udemydata/getCourseData', function(data) {
         vm.courseData = data;
         return vm.$emit('slideReviewsData', vm.courseData);
       }, function(response) {
         return console.log('error', response);
       });
-      $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
+      $.getJSON('https://shop.hexschool.com/api/udemydata/getCoursesBasicData', function(data) {
         return vm.course = data;
       }, function(response) {
         return console.log('error', response);

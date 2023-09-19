@@ -497,7 +497,7 @@ $(document).ready(function() {
 
 vueApp = function() {
   var CalendarNotification, CalendarRecent, appCourse, appGetFreeCoupon, calendarAjax, checkTrainingStatus, courseEvaluation, getCalendarData, getUseCoupon, getUseUdemyCoupon, h_calendar, h_calendar_time, h_timeMax, h_timeMin, passCalendarData;
-  $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
+  $.getJSON('https://shop.hexschool.com/api/udemydata/getCourseData', function(data) {
     courseEvaluation.course = data;
     appCourse.courseData = [];
     return $.each(data, function(key, courses) {
@@ -508,7 +508,7 @@ vueApp = function() {
       }
     });
   });
-  $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCoursesBasicData', function(data) {
+  $.getJSON('https://shop.hexschool.com/api/udemydata/getCoursesBasicData', function(data) {
     appCourse.course = data;
     return courseEvaluation.course = data;
   });
