@@ -1446,6 +1446,11 @@ $(document).ready(function() {
   $('.lead-click').on('click', function(e) {
     return fbq('track', 'Lead');
   });
+  $('.line-track').on('click', function(e) {
+    return gtag('event', 'conversion', {
+      'send_to': 'AW-926147017/7dFMCNel4OwYEMnDz7kD'
+    });
+  });
 });
 
 $(document).ready(function() {
