@@ -1451,6 +1451,11 @@ $(document).ready(function() {
       'send_to': 'AW-926147017/7dFMCNel4OwYEMnDz7kD'
     });
   });
+  $('.fb-track').on('click', function(e) {
+    return gtag('event', 'conversion', {
+      'send_to': 'AW-926147017/b-sZCLqm1u0YEMnDz7kD'
+    });
+  });
 });
 
 $(document).ready(function() {
