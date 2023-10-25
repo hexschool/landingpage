@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1698221861895">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1698238011621">
   <!-- Global styles END -->
 
   
@@ -848,19 +848,27 @@
       <div class="d-flex justify-content-between align-items-center">
         <div class="text-nowrap mr-4 text-right d-flex flex-lg-row flex-column">
           
-            <span v-if="rightCoupon.course.jsplus" class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
-              12 % off
-            </span>
-            <p v-if="rightCoupon.course.jsplus" class="mb-0 h4 text-danger">NT$ 2,552</p>            <p v-else class="mb-0 h4">NT$ 2900</p>
+            
+              <span class="bg-danger text-white mr-2 pr-2 pl-3 price-special py-1" style="font-size: 14px;">
+                
+                  −25 % off
+                
+              </span>
+            
+            <p class="mb-0 h4 text-danger">
+              
+                NT$ 2175
+              
+            </p>
           
         </div>
         
-          <a :href="'https://shop.hexschool.com/order/create?order=js-plus&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')"
+          <a href="https://shop.hexschool.com/order/create?order=js-plus&coupon_code=2023_LEARING_FESTIVAL_COUPON_SALE"
             class="btn btn-block py-2 w-50 btn-warning font-weight-bold mt-md-0 mt-2 mp-click tracking-link d-flex justify-content-center align-items-center"
             data-toggle="modal" data-target="#orderModal" title="開啟 JavaScript 前端修練全攻略 支付流程"
             data-promotions="現在上課去"
             data-price="2552" data-title="JavaScript 前端修練全攻略"
-            :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+            data-coupon="2023_LEARING_FESTIVAL_COUPON_SALE"
             data-paylink="https://shop.hexschool.com/order/create?order=js-plus" data-type="product"
             data-id="js-plus" itemprop="url">
             現在上課去
@@ -1326,7 +1334,7 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="mr-md-5 font-weight-bold text-left">【Vue 早鳥優惠即將開跑】<br class="d-md-none">2023 Vue 作品實戰班</span>
+        <span class="mr-md-5 font-weight-bold text-left">【限時超早鳥優惠】<br class="d-md-none">2023 Vue 作品實戰班</span>
         
         <div class="d-flex justify-content-start text-white text-nowrap">
           
@@ -1338,7 +1346,7 @@
         
           <a href="/courses/vue-training.html"
             class="btn btn-dark btn-sm rounded-0">
-            點我預約
+            39 折 $9,900
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -1347,7 +1355,7 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2023/10/25 21:00">
+  <input type="hidden" id="footer-clock" value="2023/10/27">
 
         
       
@@ -1548,8 +1556,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1698221861896"></script>
-<script src="/js/bs4_all.js?1698221861896"></script>
+<script src="/js/bs4_vendor.js?1698238011623"></script>
+<script src="/js/bs4_all.js?1698238011623"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
