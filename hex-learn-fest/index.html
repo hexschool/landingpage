@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1698324526193">
+  <link rel="stylesheet" href="/stylesheets/all.css?1698335790742">
   <!-- Global styles END -->
 
   
@@ -140,13 +140,13 @@
   <div class="container">
     <h2 class="fz-title text-white text-center vue-title-deco title-deco mb-4">
       <span class="font-weight-light pr-2">Vue 直播班 </span><br class="d-md-none d-block">
-      <span class="text-highlight fz-title">39<span class="pl-2">折</span></span>超早鳥優惠
+      <span class="text-highlight fz-title">42<span class="pl-2">折</span></span>早鳥優惠
     </h2>
     <div class="text-center">
       <div class="vue-subtitle d-inline-block px-4 py-2">
         <p class="mb-0 text-white">
           <i class="fa fa-arrow-right text-primary"></i> 現在報名最划算 🥹 現省
-          <span class="text-primary font-weight-bold font-family-martian">$15,100</span>
+          <span class="text-primary font-weight-bold font-family-martian">$14,710</span>
         </p>
       </div>
     </div>
@@ -161,14 +161,14 @@
             </div>
             <div class="mt-auto w-100">
               <p class="d-lg-block d-none text-black font-weight-bold mb-0 font-family-martian" style="font-size: 28px">
-                10/25
+                10/27
               </p>
               <div class="w-100 d-flex align-items-center justify-content-between text-black font-weight-bold text-nowrap font-family-martian">
                 <span class="pr-2">
-                  <span class="d-lg-none d-inline-block">10/25</span>
-                  21:00</span>
+                  <span class="d-lg-none d-inline-block">10/27</span>
+                  00:00</span>
                 <span style="width: 80%; height: 2px; background-color: black"></span>
-                <span class="pl-2">10/26 23:59</span>
+                <span class="pl-2">10/29 23:59</span>
               </div>
             </div>
           </div>
@@ -183,8 +183,9 @@
             <p class="text-muted text-right mt-auto mb-0">
               <del>原價 $25,000</del>
             </p>
-            <h4 class="mb-0 text-white text-right d-inline-flex align-items-end">
-              只要<span class="pl-2 fz-title text-primary text-highlight">$9,900</span>
+            <h4 class="mb-0 text-white text-right d-inline-flex align-items-end text-nowrap">
+              只要
+              <span class="pl-2 fz-title text-primary text-highlight">$10,290</span>
             </h4>
           </div>
         </div>
@@ -350,7 +351,12 @@
               <a href="https://www.hexschool.com/courses/vue-training.html" class="btn btn-primary px-5 py-2 disabled" id="first-event-button" target="_blank">立即購買
               </a>
             </div>
-            <div class="course-item-status mt-3 pt-3" id="first-event" data-start-time="2023-10-25T21:00:00" data-end-time="2023-10-27T00:00:00"></div>
+            <div class="course-item-status mt-3 pt-3" id="first-event">
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="../images/hex-learn-fest/countdown.svg" alt width="20"> 
+                <p class="mb-0">優惠結束</p> 
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-3">
@@ -723,28 +729,28 @@
     interval2 = setInterval(() => {
       const now = new Date().getTime();
       const timeDifference2 = endTime - now;
-      if (startTime > now) {
-        clearInterval(interval2);
-        firstEvent.innerHTML = notStartTemplate;
-      }
-      if (endTime <= now) {
-        firstEvent.innerHTML = overTemplate;
-      }
-      if (startTime <= now && endTime >= now) {
-        const list = document.getElementById('first-event-button').classList;
-        list.remove('disabled');
-        const hours = String(Math.floor(timeDifference2 / 3600000)).padStart(
-          2,
-          '0'
-        );
-        const minutes = String(
-          Math.floor((timeDifference2 % 3600000) / 60000)
-        ).padStart(2, '0');
-        const second = String(
-          Math.floor((timeDifference2 % 60000) / 1000)
-        ).padStart(2, '0');
-        firstEvent.innerHTML = countDown(hours, minutes, second);
-      }
+      // if (startTime > now) {
+      //   clearInterval(interval2);
+      //   firstEvent.innerHTML = notStartTemplate;
+      // }
+      // if (endTime <= now) {
+      //   firstEvent.innerHTML = overTemplate;
+      // }
+      // if (startTime <= now && endTime >= now) {
+      //   const list = document.getElementById('first-event-button').classList;
+      //   list.remove('disabled');
+      //   const hours = String(Math.floor(timeDifference2 / 3600000)).padStart(
+      //     2,
+      //     '0'
+      //   );
+      //   const minutes = String(
+      //     Math.floor((timeDifference2 % 3600000) / 60000)
+      //   ).padStart(2, '0');
+      //   const second = String(
+      //     Math.floor((timeDifference2 % 60000) / 1000)
+      //   ).padStart(2, '0');
+      //   firstEvent.innerHTML = countDown(hours, minutes, second);
+      // }
 
       // 第二個
       if (secondStartTime > now) {
@@ -969,8 +975,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1698324526194"></script>
-<script src="/js/bs4_all.js?1698324526194"></script>
+<script src="/js/bs4_vendor.js?1698335790744"></script>
+<script src="/js/bs4_all.js?1698335790744"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
