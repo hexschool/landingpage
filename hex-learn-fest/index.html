@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1698411149619">
+  <link rel="stylesheet" href="/stylesheets/all.css?1698422075293">
   <!-- Global styles END -->
 
   
@@ -381,10 +381,10 @@
             <div class="text-center">
               <a href="https://www.hexschool.com/courses/escape.html" class="btn btn-primary px-5 py-2 disabled" target="_blank" id="second-event-button">立即購買</a>
             </div>
-            <div class="course-item-status mt-3 pt-3" id="second-event" data-start-time="2023-10-26T21:00:00" data-end-time="2023-10-28T00:00:00">
+            <div class="course-item-status mt-3 pt-3" id="second-event">
               <div class="d-flex align-items-center justify-content-center">
-                <img src="../images/hex-learn-fest/countdown.svg" alt width="20">
-                <p class="mb-0">即將開賣</p>
+                <img src="../images/hex-learn-fest/countdown.svg" alt width="20"> 
+                <p class="mb-0">優惠結束</p> 
               </div>
             </div>
           </div>
@@ -466,18 +466,36 @@
   </div>
 </section>
 
-<section class="bg-black position-relative py-md-7 py-5">
-  <img src="../images/hex-learn-fest/escape-1.png" class="img-fluid position-absolute" style="top: 0" alt>
+<!-- <section class="bg-black position-relative py-md-7 py-5">
+  <img
+    src="../images/hex-learn-fest/escape-1.png"
+    class="img-fluid position-absolute"
+    style="top: 0"
+    alt=""
+  />
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 position-relative">
         <picture>
-          <source srcset="../images/hex-learn-fest/escape-2.png" media="(min-width: 768px)">
-          <img src="../images/hex-learn-fest/escape-2-m.png" alt="escape-2" class="img-fluid">
+          <source
+            srcset="../images/hex-learn-fest/escape-2.png"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="../images/hex-learn-fest/escape-2-m.png"
+            alt="escape-2"
+            class="img-fluid"
+          />
         </picture>
-        <div class="position-absolute escape-content" style="top: 50%; transform: translate(-50%, -50%); left: 50%">
-          <h2 class="fz-title text-white text-center vue-title-deco title-deco mb-4">
-            <span class="font-weight-light pr-2">沈浸式密室逃脫 </span><br class="d-md-none d-block">
+        <div
+          class="position-absolute escape-content"
+          style="top: 50%; transform: translate(-50%, -50%); left: 50%"
+        >
+          <h2
+            class="fz-title text-white text-center vue-title-deco title-deco mb-4"
+          >
+            <span class="font-weight-light pr-2">沈浸式密室逃脫 </span
+            ><br class="d-md-none d-block" />
             <span class="fz-title">專為前端量身打造</span>
           </h2>
           <div class="text-center mb-4">
@@ -489,17 +507,22 @@
             </div>
           </div>
           <p class="escape-slogan text-center text-white font-family-martian">
-            “25 道劇情、200 分鐘攻略影片“<br>已超過
+            “25 道劇情、200 分鐘攻略影片“<br />已超過
             <span class="text-highlight escape-slogan">150</span> 人參與
           </p>
           <div class="d-flex justify-content-center">
-            <a class="btn btn-primary px-5 py-2" href="https://www.hexschool.com/courses/escape.html" target="_blank">立即 + 1</a>
+            <a
+              class="btn btn-primary px-5 py-2"
+              href="https://www.hexschool.com/courses/escape.html"
+              target="_blank"
+              >立即 + 1</a
+            >
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="hot-video bg-third-light position-relative overflow-x-hidden">
   <img src="../images/hex-learn-fest/img_hotVideo_l.png" class="hot-video-deco-l d-md-block d-none" alt>
@@ -753,29 +776,29 @@
       }
 
       // 第二個
-      if (secondStartTime > now) {
-        secondEvent.innerHTML = notStartTemplate;
-        return;
-      }
-      if (secondEndTime <= now) {
-        secondEvent.innerHTML = overTemplate;
-        return;
-      }
-      if (secondStartTime <= now && secondEndTime >= now) {
-        const diff = secondEndTime - now;
-        const list = document.getElementById('second-event-button').classList;
-        list.remove('disabled');
-        const hours = String(Math.floor(diff / 3600000)).padStart(2, '0');
-        const minutes = String(Math.floor((diff % 3600000) / 60000)).padStart(
-          2,
-          '0'
-        );
-        const second = String(Math.floor((diff % 60000) / 1000)).padStart(
-          2,
-          '0'
-        );
-        secondEvent.innerHTML = countDown(hours, minutes, second);
-      }
+      // if (secondStartTime > now) {
+      //   secondEvent.innerHTML = notStartTemplate;
+      //   return;
+      // }
+      // if (secondEndTime <= now) {
+      //   secondEvent.innerHTML = overTemplate;
+      //   return;
+      // }
+      // if (secondStartTime <= now && secondEndTime >= now) {
+      //   const diff = secondEndTime - now;
+      //   const list = document.getElementById('second-event-button').classList;
+      //   list.remove('disabled');
+      //   const hours = String(Math.floor(diff / 3600000)).padStart(2, '0');
+      //   const minutes = String(Math.floor((diff % 3600000) / 60000)).padStart(
+      //     2,
+      //     '0'
+      //   );
+      //   const second = String(Math.floor((diff % 60000) / 1000)).padStart(
+      //     2,
+      //     '0'
+      //   );
+      //   secondEvent.innerHTML = countDown(hours, minutes, second);
+      // }
     }, 1000);
   };
 </script>
@@ -975,8 +998,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1698411149620"></script>
-<script src="/js/bs4_all.js?1698411149620"></script>
+<script src="/js/bs4_vendor.js?1698422075296"></script>
+<script src="/js/bs4_all.js?1698422075296"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
