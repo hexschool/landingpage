@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1698422075293">
+  <link rel="stylesheet" href="/stylesheets/all.css?1698497496109">
   <!-- Global styles END -->
 
   
@@ -734,12 +734,12 @@
       thirdEvent.getAttribute('data-end-time')
     ).getTime();
 
-    const secondEvent = document.getElementById('second-event');
-    const secondStartTime = new Date(
-      secondEvent.getAttribute('data-start-time')
+    const fourthEvent = document.getElementById('fourth-event');
+    const fourthStartTime = new Date(
+      fourthEvent.getAttribute('data-start-time')
     ).getTime();
-    const secondEndTime = new Date(
-      secondEvent.getAttribute('data-end-time')
+    const fourthEndTime = new Date(
+      fourthEvent.getAttribute('data-end-time')
     ).getTime();
 
     const notStartTemplate = `<div class="d-flex align-items-center justify-content-center"><img src="../images/hex-learn-fest/countdown.svg" alt="" width="20" /> <p class="mb-0">即將開賣</p> </div>`;
@@ -776,29 +776,29 @@
       }
 
       // 第二個
-      // if (secondStartTime > now) {
-      //   secondEvent.innerHTML = notStartTemplate;
-      //   return;
-      // }
-      // if (secondEndTime <= now) {
-      //   secondEvent.innerHTML = overTemplate;
-      //   return;
-      // }
-      // if (secondStartTime <= now && secondEndTime >= now) {
-      //   const diff = secondEndTime - now;
-      //   const list = document.getElementById('second-event-button').classList;
-      //   list.remove('disabled');
-      //   const hours = String(Math.floor(diff / 3600000)).padStart(2, '0');
-      //   const minutes = String(Math.floor((diff % 3600000) / 60000)).padStart(
-      //     2,
-      //     '0'
-      //   );
-      //   const second = String(Math.floor((diff % 60000) / 1000)).padStart(
-      //     2,
-      //     '0'
-      //   );
-      //   secondEvent.innerHTML = countDown(hours, minutes, second);
-      // }
+      if (fourthStartTime > now) {
+        fourthEvent.innerHTML = notStartTemplate;
+        return;
+      }
+      if (fourthEndTime <= now) {
+        fourthEvent.innerHTML = overTemplate;
+        return;
+      }
+      if (fourthStartTime <= now && fourthEndTime >= now) {
+        const diff = fourthEndTime - now;
+        const list = document.getElementById('fourth-event-button').classList;
+        list.remove('disabled');
+        const hours = String(Math.floor(diff / 3600000)).padStart(2, '0');
+        const minutes = String(Math.floor((diff % 3600000) / 60000)).padStart(
+          2,
+          '0'
+        );
+        const second = String(Math.floor((diff % 60000) / 1000)).padStart(
+          2,
+          '0'
+        );
+        fourthEvent.innerHTML = countDown(hours, minutes, second);
+      }
     }, 1000);
   };
 </script>
@@ -998,8 +998,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1698422075296"></script>
-<script src="/js/bs4_all.js?1698422075296"></script>
+<script src="/js/bs4_vendor.js?1698497496111"></script>
+<script src="/js/bs4_all.js?1698497496111"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
