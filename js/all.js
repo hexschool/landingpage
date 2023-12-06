@@ -538,6 +538,7 @@ vueApp = function() {
       trainingStatus: {
         js: {},
         vue: {},
+        typescript: {},
         web_layout: {},
         ui: {},
         node: {}
@@ -545,6 +546,7 @@ vueApp = function() {
       trainingWait: {
         js: {},
         vue: {},
+        typescript: {},
         web_layout: {},
         ui: {},
         node: {}
