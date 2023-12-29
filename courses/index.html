@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1703661727536">
+  <link rel="stylesheet" href="/stylesheets/all.css?1703835176803">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1236,7 +1236,11 @@
       <div class="col-lg-5 col-md-6 d-flex flex-column flex-wrap align-items-end">
         <div class="d-flex justify-content-md-end justify-content-center text-white w-100"><span class="ad-clock-xl m-r-1"></span></div>
         
-          <a href="/2023/12/18/2023-12-18-8th-anniversary-thanks/" target="_blank" class="btn btn-primary py-3 px-5 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size ">手刀享優惠</a>
+          <button type="button" class="btn btn-primary py-3 px-5 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size " data-toggle="modal" data-target="#customChooseMoal">
+            自選組合
+          </button>
+          <!-- 2022 連至七週年感謝祭頁面 -->
+          <!-- <a href="/2023/12/18/2023-12-18-8th-anniversary-thanks/" target="_blank" class="btn btn-primary py-3 px-5 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size ">自選組合</a> -->
         
       </div>
     </div>
@@ -1251,11 +1255,15 @@
         </div>
         <div class="d-flex justify-content-md-start justify-content-end">
           
-            <a href="/2023/12/18/2023-12-18-8th-anniversary-thanks/"
+            <button type="button" class="btn btn-dark rounded-0" data-toggle="modal" data-target="#customChooseMoal">
+              自選組合 <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+            <!-- 2022 連至七週年感謝祭頁面 -->
+            <!-- <a href="/2023/12/18/2023-12-18-8th-anniversary-thanks/"
               class="btn btn-dark rounded-0">
-              手刀享優惠
+              自選組合
               <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
+            </a> -->
           
         </div>
       </div>
@@ -1268,6 +1276,317 @@
 
 
 <!-- 自選組合 modal -->
+
+<div class="modal fade" id="customChooseMoal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">課程全面 75 折</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="d-flex justify-content-between">
+                <h4>課程組合 </h4>
+                <div>
+                  <a href="#" class="btn btn-sm btn-secondary" id="select-all-course">全選</a>
+                </div>
+              </div>
+              <div style="overflow-y: scroll; height: 300px" id="main-course-2019">
+                <ul class="list-group" id="customCourses">
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="react" id="checkout-react"
+                        data-price="2700"
+                        data-originprice="3600">
+                      <label class="form-check-label" for="checkout-react">React 實戰影音課程</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：3,600</del></small>
+                      
+                        優惠價格：NT 2,700
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="js-plus" id="checkout-js-plus"
+                        data-price="2175"
+                        data-originprice="2900">
+                      <label class="form-check-label" for="checkout-js-plus">JavaScript 前端修練全攻略</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：2,900</del></small>
+                      
+                        優惠價格：NT 2,175
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="vue3" id="checkout-vue3"
+                        data-price="2700"
+                        data-originprice="3600">
+                      <label class="form-check-label" for="checkout-vue3">Vue 3 實戰影音課程</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：3,600</del></small>
+                      
+                        優惠價格：NT 2,700
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="ui" id="checkout-ui"
+                        data-price="2100"
+                        data-originprice="2800">
+                      <label class="form-check-label" for="checkout-ui">UI 設計入門</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：2,800</del></small>
+                      
+                        優惠價格：NT 2,100
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="js-core" id="checkout-js-core"
+                        data-price="2625"
+                        data-originprice="3500">
+                      <label class="form-check-label" for="checkout-js-core">JavaScript 核心篇</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：3,500</del></small>
+                      
+                        優惠價格：NT 2,625
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="bs5" id="checkout-bs5"
+                        data-price="2100"
+                        data-originprice="2800">
+                      <label class="form-check-label" for="checkout-bs5">Bootstrap 5 網頁切版整合術</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：2,800</del></small>
+                      
+                        優惠價格：NT 2,100
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="html" id="checkout-html"
+                        data-price="1200"
+                        data-originprice="1600">
+                      <label class="form-check-label" for="checkout-html">HTML、CSS 開發網站</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：1,600</del></small>
+                      
+                        優惠價格：NT 1,200
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="jqueryAni" id="checkout-jqueryAni"
+                        data-price="1200"
+                        data-originprice="1600">
+                      <label class="form-check-label" for="checkout-jqueryAni">jQuery 打造互動性網頁效果</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：1,600</del></small>
+                      
+                        優惠價格：NT 1,200
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="rwd" id="checkout-rwd"
+                        data-price="1950"
+                        data-originprice="2600">
+                      <label class="form-check-label" for="checkout-rwd">一變應萬變的響應式網頁設計</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：2,600</del></small>
+                      
+                        優惠價格：NT 1,950
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="sass" id="checkout-sass"
+                        data-price="2100"
+                        data-originprice="2800">
+                      <label class="form-check-label" for="checkout-sass">Sass 實戰全攻略</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：2,800</del></small>
+                      
+                        優惠價格：NT 2,100
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="nodejs" id="checkout-nodejs"
+                        data-price="1950"
+                        data-originprice="2600">
+                      <label class="form-check-label" for="checkout-nodejs">Node.js 前後端開發實戰</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：2,600</del></small>
+                      
+                        優惠價格：NT 1,950
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="git" id="checkout-git"
+                        data-price="600"
+                        data-originprice="800">
+                      <label class="form-check-label" for="checkout-git">Git & Github 程式時光機</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：800</del></small>
+                      
+                        優惠價格：NT 600
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="gulp" id="checkout-gulp"
+                        data-price="600"
+                        data-originprice="800">
+                      <label class="form-check-label" for="checkout-gulp">使用 gulp 進行網頁前端自動化</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：800</del></small>
+                      
+                        優惠價格：NT 600
+                      
+                    </div>
+                  </li>
+                  
+                  
+                  
+                  <li class="list-group-item d-flex flex-column justify-content-between align-items-md-start">
+                    <div>
+                      <input type="checkbox" class="selecedCourse" value="vscode" id="checkout-vscode"
+                        data-price="600"
+                        data-originprice="800">
+                      <label class="form-check-label" for="checkout-vscode">VSCode 開發功能大解密</label>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <small><del>原價：800</del></small>
+                      
+                        優惠價格：NT 600
+                      
+                    </div>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mt-3">
+            <p id="condition_true" class="text-success text-right mb-0">已符合<a class="font-weight-bold img-teacher-question-title text-dark" href="/courses/escape.html#lottery" target="_blank">抽奬</a>資格</p>
+            <p id="condition_false" class="text-danger text-right mb-0">只差 <span id="condition"></span> 元就符合<a class="font-weight-bold img-teacher-question-title text-dark" href="/courses/escape.html#lottery" target="_blank">抽奬</a>資格囉</p>
+          </div> -->
+          <div class="h4 text-right mb-0">超值優惠價格：NT$ <span id="selecedTotal">0</span></div>
+          <div class="mb-3 text-right text-success">節省：NT$ <span id="selecedOriginTotal">0</span></div>
+          <button type="button" class="btn btn-primary btn-block mb-4 py-2 join-btn-hover rounded-0 font-column-4-button font-weight-bold" data-coupon="COUPON_2023_THANKS"
+          data-url="https://shop.hexschool.com/order/create" id="choeseCourse">購買這些課程！</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 <section id="course" class="category-courses">
@@ -1362,6 +1681,15 @@
                 <div class="text-center text-md-left w-100">
                   <h3 class="text-white font-ad-title text-md-left text-center mb-0">最狂感謝祭｜買課抽 Mac M2</h3>
                   <p class="text-white text-md-left text-center">每人最多五張抽獎券，全館任一課程享 75 折！滿額再抽 Apple Mac M2 等大禮</p>
+                  
+                  <div class="d-flex flex-md-row flex-column align-items-md-end">
+                    <button type="button" class="btn btn-primary py-2 px-3 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size " data-toggle="modal" data-target="#customChooseMoal">
+                      自選組合
+                    </button>
+                    <a href="/2021/12/16/2021-12-16-free-25/" target="_blank" class="btn btn-link ml-3 mt-md-0 mt-3" style="text-decoration: underline;">
+                      我要試聽
+                    </a>
+                  </div>
                   
                 </div>
                 <div class="w-100 text-center text-md-right text-nowrap mt-md-0 mt-3">
@@ -2938,9 +3266,17 @@
                 <h3 class="text-white font-ad-title text-md-left text-center mb-0">最狂感謝祭｜買課抽 Mac M2</h3>
                 <p class="text-white text-md-left text-center mb-0">每人最多五張抽獎券，全館任一課程享 75 折！滿額再抽 Apple Mac M2 等大禮</p>
                 
-                <a href="/2023/12/18/2023-12-18-8th-anniversary-thanks/" class="btn btn-primary py-2 px-3 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size">
-                  手刀享優惠
-                </a>
+                <div class="d-flex flex-md-row flex-column align-items-md-end">
+                  <button type="button" class="btn btn-primary py-2 px-3 font-weight-bold rounded-0 mt-3 mt-md-2 btn-custom-size" data-toggle="modal" data-target="#customChooseMoal" >
+                    自選組合
+                  </button>
+                  <!-- <a href="/2022/12/16/2022-12-16-7th-anniversary-thanks/" target="_blank" class="btn btn-link ml-3 mt-md-0 mt-3" style="text-decoration: underline;">
+                    七週年感謝祭
+                  </a>
+                  <a href="/courses/react.html" target="_blank" class="btn btn-link ml-3 mt-md-0 mt-3" style="text-decoration: underline;">
+                    React 新課
+                  </a> -->
+                </div>
                 
               </div>
               <div class="w-100 text-center text-md-right text-nowrap mt-md-0 mt-3">
@@ -8945,8 +9281,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1703661727541"></script>
-<script src="/js/all.js?1703661727541"></script>
+<script src="/js/vendor.js?1703835176808"></script>
+<script src="/js/all.js?1703835176808"></script>
 <script src="/js/wow.min.js"></script>
 
 
