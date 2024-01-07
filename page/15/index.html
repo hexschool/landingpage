@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1704424356306">
+  <link rel="stylesheet" href="/stylesheets/all.css?1704642956620">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -2906,7 +2906,7 @@
             活動報名 1/7（日）截止<br>
             1/10 (三) 準時開學
           </p>
-          <a href="/courses/typescript-training.html" target="_blank" class="btn btn-primary d-block mb-3" id="tsBtn">立即解鎖 TypeScript</a>
+          <a href="/courses/typescript-training.html" target="_blank" class="btn btn-primary d-block mb-3 disabled" id="tsBtn" disabled>報名已截止</a>
           <p class="thanks-event-countdown text-primary text-center mb-0" id="tsCountdown" data-endTime="2024-01-08T00:00:00">
             00：00：00：00
           </p>
@@ -2986,6 +2986,7 @@
     }
 
     // TypeScript 倒數計時
+    /*
     const tsCountdownInterval = setInterval(() => {
       // 現在時間 timestamp
       const currentTime = new Date().getTime();
@@ -3003,6 +3004,7 @@
       tsCountdownElement.textContent = tsCountDownDate;
 
     }, 1000);
+    */
 
     // 感謝祭 倒數計時
     const thanksCountdownInterval = setInterval(() => {
@@ -3803,8 +3805,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1704424356311"></script>
-<script src="/js/all.js?1704424356311"></script>
+<script src="/js/vendor.js?1704642956625"></script>
+<script src="/js/all.js?1704642956625"></script>
 <script src="/js/wow.min.js"></script>
 
 
