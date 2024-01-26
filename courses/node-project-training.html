@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1706275701738">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1706279669689">
   <!-- Global styles END -->
 
   
@@ -123,7 +123,8 @@
 
 <!-- Banner -->
 <div class="banner position-relative">
-  <video src class="banner-bgVideo loading"></video>
+  <video src="https://cdn.fs.teachablecdn.com/MG7nTiUyQteV6gEd460V" class="banner-bgVideo desktop d-md-block d-none"></video>
+  <div id="video-container" class="video loading d-md-none d-block"></div>
   <div class="banner-bg">
     <div class="banner-content text-white d-flex flex-column align-items-center align-items-md-stretch">
       <h1 class="fs-3 fs-md-1 fw-700 mb-3 mb-md-4">
@@ -2187,18 +2188,52 @@
 <script type="module">
   import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
+  document.addEventListener("DOMContentLoaded", function() {
+    // 當文檔加載完成後，執行此函數
+
+    // 指定影片URL
+    const videoUrl = 'https://cdn.fs.teachablecdn.com/MG7nTiUyQteV6gEd460V';
+
+    // 獲取影片容器
+    const container = document.getElementById('video-container');
+
+    // 使用Fetch API非同步獲取影片
+    if (window.innerWidth < 1024) {
+      fetch(videoUrl) 
+        .then(response => {
+          console.log('container:', container);
+          return response.blob()
+        })
+        .then(blob => {
+            // 創建一個URL對象
+            const videoObjectUrl = URL.createObjectURL(blob);
+
+            // 創建video元素並設置屬性
+            const videoElement = document.createElement('video');
+            videoElement.classList.add('banner-bgVideo');
+            videoElement.src = videoObjectUrl;
+            videoElement.controls = false;
+            videoElement.muted = true;
+            videoElement.autoplay = true;
+            videoElement.loop = true;
+
+            // 添加video到容器中
+            container.appendChild(videoElement);
+        })
+        .catch(error => {
+            console.error('錯誤加載影片:', error);
+        });
+    }
+    
+});
+
   window.onload = function() {
 
-    const bgVideo = document.querySelector('.banner-bgVideo');
-    setTimeout(() => {
-      bgVideo.src = "https://cdn.fs.teachablecdn.com/5lQ3e9IIS1K11oVxp4rH";
-      bgVideo.classList.remove('loading');
-      bgVideo.play();
-    }, 2000)
-
+    const bgVideo = document.querySelector('.banner-bgVideo.desktop');
     bgVideo.autoplay = true;
     bgVideo.loop = true;
     bgVideo.muted = true;
+    bgVideo.play();
 
     // 歷屆學長姐心得、訪談
     const swiperFeedbackTop = new Swiper('.feedback-top-swiper', {
@@ -2273,9 +2308,9 @@
 
     window.addEventListener('scroll', (e) => {
       let scrollY = window.scrollY;
-      if (scrollY > bgVideo.offsetHeight) {
-        bgVideo.pause();
-      }
+      // if (scrollY > bgVideo.offsetHeight) {
+      //   bgVideo.pause();
+      // }
 
       if (scrollY >= allOffsetTop && scrollY < allOffsetTop+strategyHeight1) {
         strategyBtn1.classList.add('active');
@@ -2602,8 +2637,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1706275701740"></script>
-<script src="/js/bs4_all.js?1706275701740"></script>
+<script src="/js/bs4_vendor.js?1706279669690"></script>
+<script src="/js/bs4_all.js?1706279669690"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
