@@ -1458,6 +1458,11 @@ $(document).ready(function() {
       'send_to': 'AW-926147017/b-sZCLqm1u0YEMnDz7kD'
     });
   });
+  $('.node-gtag-track').on('click', function(e) {
+    return gtag('event', 'conversion', {
+      'send_to': 'AW-926147017/kdSaCMvbio0ZEMnDz7kD'
+    });
+  });
 });
 
 $(document).ready(function() {
