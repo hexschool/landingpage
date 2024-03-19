@@ -1463,6 +1463,11 @@ $(document).ready(function() {
       'send_to': 'AW-926147017/kdSaCMvbio0ZEMnDz7kD'
     });
   });
+  $('.event-2024-gtag-track').on('click', function(e) {
+    return gtag('event', 'conversion', {
+      'send_to': 'AW-926147017/cN2DCKi81p0ZEMnDz7kD'
+    });
+  });
 });
 
 $(document).ready(function() {
