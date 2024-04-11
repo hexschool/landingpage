@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1712655678083">
+  <link rel="stylesheet" href="/stylesheets/all.css?1712808274604">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -267,7 +267,7 @@
         </ul>
         <!-- <a class="reduce-padding py-4 pl-4 font-weight-bold d-md-block d-none" href="#" data-toggle="modal" data-target="#exampleModal"><i class="material-icons text-dark" style="vertical-align: middle;">search</i></a> -->
         <!-- <div class="bg-danger text-dark position-absoulte py-3 px-5 d-flex justify-content-between d-md-none" style="top: 100%">
-          <p class="font-weight-bold m-0">「領取優惠🎁」工程師體驗營</p>
+          <p class="font-weight-bold m-0">千人推薦！工程師體驗營</p>
           <span class="clock m-r-1"></span>
         </div> -->
       </div>
@@ -1573,7 +1573,7 @@
 <li>在系統課程介面上，就會教您如何開始上課！</li>
 </ul>
 
-<a href="https://r.botbonnie.com/px4I2" target="_blank" class="event-2024-gtag-track btn btn-lg btn-primary ani-loop animated pulse" data-forward>免費預約 Line 提醒，即可獲得兩個預約專屬禮 🎁</a>
+<a href="https://shop.hexschool.com/order/create?coupon_code=2023_ENGINEER_CAMP_E4&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NtPUqN27PYYxPXdaB4E" target="_blank" class="event-2024-gtag-track btn btn-lg btn-primary ani-loop animated pulse" data-forward>前往報名</a>
 
 <h3 id="完課獎勵證書"><a href="#完課獎勵證書" class="headerlink" title="完課獎勵證書"></a>完課獎勵證書</h3><ol>
 <li>若有在 6/9 前繳交<b>切版任務作業一 、二與架站任務，共計三道任務</b>，助教審核通過者，則可獲得完課獎勵證書。</li>
@@ -1594,22 +1594,22 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-column flex-md-row text-white align-items-md-center pr-md-3 pr-0">
-        <span class="mr-md-3 font-weight-bold text-left">「領取優惠 🎁」工程師體驗營</span>
-        <span class="mr-3 font-weight-bold text-left">即將開放報名！</span>
+        <span class="mr-md-3 font-weight-bold text-left">千人推薦！工程師體驗營 </span>
+        <span class="mr-3 font-weight-bold text-left">熱烈報名中！</span>
         <div class="d-flex justify-content-start text-white text-nowrap">
           <span class="clock m-r-1 font-weight-bold"></span>
         </div>
       </div>
       <div class="d-flex align-items-center justify-content-md-start justify-content-end pl-md-3 pl-0">
-        <a href="https://r.botbonnie.com/px4I2" class="btn btn-dark btn-sm rounded-0 lead-click" data-forward target="_blank" rel="noopener">
-          立即免費預約
+        <a href="#體驗營報名費用" class="btn btn-dark btn-sm rounded-0 lead-click" data-forward>
+          點我搶名額
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </a>
       </div>
     </div>
   </div>
 </nav>
-<input type="hidden" id="footer-clock" value="2024/04/11 12:00">
+<input type="hidden" id="footer-clock" value="2024/04/29">
 
 <script>
   // 將網址 query 轉換為 object
@@ -1630,12 +1630,30 @@
   // 可用 Domain
   const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
 
+  // 新增折扣文字
+  const discountStr = document.createElement('p');
+  discountStr.setAttribute('class', 'text-danger');
+  discountStr.classList.add('m-0');
+
   // 驗證 domain 並轉網址
   if (allowdm.test(blogUrlQueryObj['h_dm'])) {
-    if (blogUrlQueryObj['h_pt']) {
-      forwardBtn.forEach((item) => {
-        item.setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
-      })
+    switch (blogUrlQueryObj['h_pt']) {
+      case 'lAnAU':
+      case '5THKu':
+        forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+        break;
+      case 'lEdzq':
+        forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+        discountStr.textContent = '點擊上方報名按鈕，即可享有「雷蒙專屬 $699 優惠」';
+        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
+        break;
+      case '83QN5':
+        forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+        discountStr.textContent = '點擊上方報名按鈕，即可享有「預約早鳥 $699 優惠」';
+        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
+        break;
+      default:
+        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_ENGINEER_CAMP_E4&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NtPUqN27PYYxPXdaB4E`);
     }
   }
 </script>
@@ -2383,8 +2401,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1712655678087"></script>
-<script src="/js/all.js?1712655678087"></script>
+<script src="/js/vendor.js?1712808274608"></script>
+<script src="/js/all.js?1712808274608"></script>
 <script src="/js/wow.min.js"></script>
 
 
