@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1713408376999">
+  <link rel="stylesheet" href="/stylesheets/all.css?1714319797135">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1642,7 +1642,7 @@
 <div class="course-tracking-ViewContent" data-id="-NSo7hYkINnj2ONn9Ckf" data-title="軟體工程師體驗營" data-type="product"></div>
 
 
-<a href="https://shop.hexschool.com/order/create?coupon_code=2023_ENGINEER_CAMP_E4&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NtPUqN27PYYxPXdaB4E" target="_blank" class="event-2024-gtag-track btn btn-lg btn-primary ani-loop animated pulse tracking-link" data-id="-NSo7hYkINnj2ONn9Ckf" data-title="軟體工程師體驗營" data-name="軟體工程師體驗營" data-type="product" data-forward>前往報名</a>
+<a href="#" target="_blank" class="event-2024-gtag-track btn btn-lg btn-primary tracking-link disabled" data-id="-NSo7hYkINnj2ONn9Ckf" data-title="軟體工程師體驗營" data-name="軟體工程師體驗營" data-type="product" data-forward disabled>報名截止</a>
 
 <h3 id="完課獎勵證書"><a href="#完課獎勵證書" class="headerlink" title="完課獎勵證書"></a>完課獎勵證書</h3><ol>
 <li>若有在 6/9 前繳交<b>切版任務作業一 、二與架站任務，共計三道任務</b>，助教審核通過者，則可獲得完課獎勵證書。</li>
@@ -1659,7 +1659,7 @@
 <p>Q：文中有提到助教批改，那可以批改完再次提交嗎？<br>A：可以，在活動期間皆可提交。如果您願意投入學習，那我們就全力支援你到底，六角學院有個名言，就是「只要你不放棄你自己，六角學院就永遠線上支持你到底」。</p>
 <p>Q：我是有好幾年工作的前端開發者，60 小時內容教的資源會很淺嗎？<br>A：這次 5 堂直播課程，與 60 小時的影音內容，主要是作業導向，學習目的是「<b>能夠從無到有做出一個多頁式完整網站，獨立打造出自己的 Hexo 個人品牌網站，同時部署到 GitHub Pages 網頁伺服器，後面還有提供 OPEN AI 前後端介接流程</b>」。讓參與體驗營的同學，從這歷程中了解自己是否對軟體工程師抱有興趣。您可以觀看影音課程大綱與直播內容中，有無自己想學習內容。</p>
 
-<nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+<!-- <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-column flex-md-row text-white align-items-md-center pr-md-3 pr-0">
@@ -1670,7 +1670,8 @@
         </div>
       </div>
       <div class="d-flex align-items-center justify-content-md-start justify-content-end pl-md-3 pl-0">
-        <a href="#體驗營報名費用" class="btn btn-dark btn-sm rounded-0 lead-click" data-forward>
+        <a href="#體驗營報名費用"
+          class="btn btn-dark btn-sm rounded-0 lead-click" data-forward>
           點我搶名額
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </a>
@@ -1678,7 +1679,7 @@
     </div>
   </div>
 </nav>
-<input type="hidden" id="footer-clock" value="2024/04/29">
+<input type="hidden" id="footer-clock" value="2024/04/29"> -->
 
 <script>
   // 將網址 query 轉換為 object
@@ -1700,31 +1701,31 @@
   const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
 
   // 新增折扣文字
-  const discountStr = document.createElement('p');
-  discountStr.setAttribute('class', 'text-danger');
-  discountStr.classList.add('m-0');
+  // const discountStr = document.createElement('p');
+  // discountStr.setAttribute('class', 'text-danger');
+  // discountStr.classList.add('m-0');
 
   // 驗證 domain 並轉網址
-  if (allowdm.test(blogUrlQueryObj['h_dm'])) {
-    switch (blogUrlQueryObj['h_pt']) {
-      case 'lAnAU':
-      case '5THKu':
-        forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
-        break;
-      case 'lEdzq':
-        forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
-        discountStr.textContent = '點擊上方報名按鈕，即可享有「雷蒙專屬 $699 優惠」';
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      case '83QN5':
-        forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
-        discountStr.textContent = '點擊上方報名按鈕，即可享有「預約早鳥 $699 優惠」';
-        forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
-        break;
-      default:
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_ENGINEER_CAMP_E4&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NtPUqN27PYYxPXdaB4E`);
-    }
-  }
+  // if (allowdm.test(blogUrlQueryObj['h_dm'])) {
+  //   switch (blogUrlQueryObj['h_pt']) {
+  //     case 'lAnAU':
+  //     case '5THKu':
+  //       forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+  //       break;
+  //     case 'lEdzq':
+  //       forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+  //       discountStr.textContent = '點擊上方報名按鈕，即可享有「雷蒙專屬 $699 優惠」';
+  //       forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
+  //       break;
+  //     case '83QN5':
+  //       forwardBtn[0].setAttribute('href', `https://${blogUrlQueryObj['h_dm']}/${blogUrlQueryObj['h_pt']}`);
+  //       discountStr.textContent = '點擊上方報名按鈕，即可享有「預約早鳥 $699 優惠」';
+  //       forwardBtn[0].parentNode.insertBefore(discountStr, forwardBtn[0].nextSibling);
+  //       break;
+  //     default:
+  //       forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2023_ENGINEER_CAMP_E4&order=-NSo7hYkINnj2ONn9Ckf&phyProduct[]=-NSo7hYkINnj2ONn9Ckf&phyProductSpec[]=-NtPUqN27PYYxPXdaB4E`);
+  //   }
+  // }
 </script>
 
       
@@ -2304,8 +2305,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -2473,8 +2474,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1713408377003"></script>
-<script src="/js/all.js?1713408377003"></script>
+<script src="/js/vendor.js?1714319797139"></script>
+<script src="/js/all.js?1714319797139"></script>
 <script src="/js/wow.min.js"></script>
 
 
