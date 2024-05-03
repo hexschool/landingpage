@@ -71,13 +71,15 @@ $(document).ready(function() {
     }
   });
   $('#select-mobile-combined').on('change', function(e) {
-    var target;
+    var target, targetBtn, trigger;
     target = '#' + e.target.value;
     $('select.combination_select').val(target.replace('#', ''));
     $('#conbined-courses div.tab-pane').each(function(e) {
       return $(this).removeClass('show active');
     });
-    $(target).tab('show');
+    targetBtn = '#menu-' + e.target.value;
+    trigger = new bootstrap.Tab($(targetBtn));
+    trigger.show();
     window.history.replaceState(null, null, window.location.pathname);
     addQueryParam('category', 'conbined-courses');
     return addQueryParam('combind', e.target.value);
@@ -130,14 +132,16 @@ $(document).ready(function() {
     return addQueryParam('combind', target.replace('#', ''));
   });
   $('select.combination_select').on('change', function(e) {
-    var tabTarget, target;
+    var tabTarget, target, targetBtn, trigger;
     target = e.target.value;
     tabTarget = '#' + e.target.value;
     $('select.combination_select').val(target);
     $('#conbined-courses div.tab-pane').each(function(e) {
       return $(this).removeClass('show active');
     });
-    $(tabTarget).tab('show');
+    targetBtn = '#menu-' + e.target.value;
+    trigger = new bootstrap.Tab($(targetBtn));
+    trigger.show();
     window.history.replaceState(null, null, window.location.pathname);
     addQueryParam('category', 'conbined-courses');
     return addQueryParam('combind', target.replace('#', ''));
@@ -724,8 +728,8 @@ vueApp();
 
 $(document).ready(function() {
   var timer;
-  if ($('[data-toggle="tooltip"]').length) {
-    $('[data-toggle="tooltip"]').tooltip();
+  if ($('[data-bs-toggle="tooltip"]').length) {
+    $('[data-bs-toggle="tooltip"]').tooltip();
   }
   if ($('#footer-clock').length) {
     timer = $('#footer-clock').val();
@@ -1052,7 +1056,7 @@ $(document).ready(function() {
       return "<span>" + itemType + "</span>";
     }).join(' / ')) + " </div> " + (item.experience !== 0 ? "<div class='text-dark'>工作經歷 " + item.experience + " 年</div>" : '') + " </div> </div> <div class='col-lg-7 d-flex flex-column align-self-stretch'> <h5 class='card-title font-weight-bold'>" + item.name + "</h5> <div class='profile-location small text-dark'> <i class='fas fa-map-marker-alt'></i> " + (item.location.map(function(itemLocation) {
       return "<span>" + itemLocation + "</span>";
-    }).join(' / ')) + " </div> <div class='text-left font-weight-bold'>" + item.job + "</div> <p class='card-text profile-description text-dark'>" + item.description + "</p> <div class='profile-tags text-dark mt-auto'> " + (item.tags.map(function(itemTages) {
+    }).join(' / ')) + " </div> <div class='text-start font-weight-bold'>" + item.job + "</div> <p class='card-text profile-description text-dark'>" + item.description + "</p> <div class='profile-tags text-dark mt-auto'> " + (item.tags.map(function(itemTages) {
       return "<span class='d-inline-block'>" + itemTages + "</span>";
     }).join(' / ')) + " </div> <div class='profile-connect'> " + (item.profileUrl ? "<a href='" + item.profileUrl + "' class='btn btn-primary rounded-0 btn-block mt-2'>網羅人才</a>" : "<a href='#' class='btn btn-primary rounded-0 btn-block mt-2 disabled' tabindex='-1' role='button' aria-disabled='true'><i class='fab fa-angellist'></i> 成功媒合！</a>") + " </div> </div> </div> </div> </div> </div>";
   };
