@@ -543,6 +543,7 @@ vueApp = function() {
         js: {},
         vue: {},
         typescript: {},
+        react: {},
         web_layout: {},
         ui: {},
         node: {}
@@ -551,6 +552,7 @@ vueApp = function() {
         js: {},
         vue: {},
         typescript: {},
+        react: {},
         web_layout: {},
         ui: {},
         node: {}
@@ -1463,6 +1465,11 @@ $(document).ready(function() {
   $('.fb-track').on('click', function(e) {
     return gtag('event', 'conversion', {
       'send_to': 'AW-926147017/b-sZCLqm1u0YEMnDz7kD'
+    });
+  });
+  $('.webLayout-training-gtag-track').on('click', function(e) {
+    return gtag('event', 'conversion', {
+      'send_to': 'AW-926147017/0c-OCOH54I0ZEMnDz7kD'
     });
   });
   $('.node-gtag-track').on('click', function(e) {
