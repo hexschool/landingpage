@@ -1472,6 +1472,11 @@ $(document).ready(function() {
       'send_to': 'AW-926147017/0c-OCOH54I0ZEMnDz7kD'
     });
   });
+  $('.react-training-gtag-track').on('click', function(e) {
+    return gtag('event', 'conversion', {
+      'send_to': 'AW-926147017/w2BSCJX6irAZEMnDz7kD'
+    });
+  });
   $('.node-gtag-track').on('click', function(e) {
     return gtag('event', 'conversion', {
       'send_to': 'AW-926147017/kdSaCMvbio0ZEMnDz7kD'
