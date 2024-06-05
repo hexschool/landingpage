@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1717598052504">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1717603062014">
   <!-- Global styles END -->
 
   
@@ -812,7 +812,7 @@
               <!-- <a href="https://r.botbonnie.com/htwKV" target="_blank" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link react-training-gtag-track">
                 立即免費 Line 預約
               </a> -->
-              <a href="https://shop.hexschool.com/order/create?coupon_code=2024_JUNIOR_REACT_ALLTRAINING_J4&order=-NwsLovdswMvt0PynSsV&phyProduct[]=-NwsLovdswMvt0PynSsV&phyProductSpec[]=-NwsMbv-JMxvYzOMQTRI" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link react-training-gtag-track" data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48000" data-title="React 前端工程師培訓班" data-paylink="https://shop.hexschool.com/order/create?coupon_code=2024_JUNIOR_REACT_ALLTRAINING_J4&order=-NwsLovdswMvt0PynSsV&phyProduct[]=-NwsLovdswMvt0PynSsV&phyProductSpec[]=-NwsMbv-JMxvYzOMQTRI" itemprop="url" target="_blank" rel="noopener">
+              <a href="https://shop.hexschool.com/order/create?coupon_code=2024_JUNIOR_REACT_ALLTRAINING_J4&order=-NwsLovdswMvt0PynSsV&phyProduct[]=-NwsLovdswMvt0PynSsV&phyProductSpec[]=-NwsMbv-JMxvYzOMQTRI" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link" data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48000" data-title="React 前端工程師培訓班" data-paylink="https://shop.hexschool.com/order/create?coupon_code=2024_JUNIOR_REACT_ALLTRAINING_J4&order=-NwsLovdswMvt0PynSsV&phyProduct[]=-NwsLovdswMvt0PynSsV&phyProductSpec[]=-NwsMbv-JMxvYzOMQTRI" itemprop="url" target="_blank" rel="noopener">
                 立即報名
               </a>
             </div>
@@ -1252,7 +1252,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+        <a v-if="text.forward" v-bind:href="text.paylink" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+        <a v-else v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -1378,8 +1379,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1717598052505"></script>
-<script src="/js/bs4_all.js?1717598052505"></script>
+<script src="/js/bs4_vendor.js?1717603062015"></script>
+<script src="/js/bs4_all.js?1717603062015"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">

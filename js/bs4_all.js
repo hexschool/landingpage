@@ -315,7 +315,8 @@ $(document).ready(function() {
       price: button.data('price'),
       title: button.data('title'),
       paylink: button.data('paylink'),
-      coupon: button.data('coupon')
+      coupon: button.data('coupon'),
+      forward: button.data('forward')
     };
     return orderModalApp.text = data;
   });
