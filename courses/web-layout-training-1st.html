@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1718160563963">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1718178924979">
   <!-- Global styles END -->
 
   
@@ -1257,7 +1257,7 @@
 
   // 將網址 query 轉換為 object
   const queryStringToObject = url => {
-    const urlQueryArr = [...new URLSearchParams((url.split('?')[1]).split('#')[0])]; // [['h_dm', '...'], ['h_pt', '...']]
+    const urlQueryArr = [...new URLSearchParams((url.split('?')[1])?.split('#')[0])]; // [['h_dm', '...'], ['h_pt', '...']]
     return urlQueryArr.reduce((accu, [currentQueryName, currentQueryValue]) => {
         accu[currentQueryName] = currentQueryValue;
         return accu
@@ -1276,25 +1276,38 @@
   // 新增優惠券文字
   const couponText = document.querySelector('#couponText');
 
-  // 金流連結
-  const transShopUrl = (coupon) => `https://shop.hexschool.com/order/create?coupon_code=${coupon}&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf&phyProduct[]=-Nv_XASUiW1ZachQnO7Q&phyProductSpec[]=-Nv__NGozo6A17r28fSD`;
+  // 金流按鈕連結轉址
+  const transUrl = (urlArray) => {
+    forwardBtn.forEach((buttonEl, index) => {
+      buttonEl.setAttribute('href', urlArray[index]);
+      buttonEl.setAttribute('data-paylink', urlArray[index]);
+    })
+  }
+
+  // 特定 KOL 渲染
+  // kolUrlInfo: kol 短網址 path
+  const kolUrlInfo = {
+    thisweb9700: ['thisweb9700'],
+    jayden9700: ['jayden9700'],
+  };
+  const renderForKol = (urlPath) => {
+    const kolUrlArray = [];
+    kolUrlInfo[urlPath].forEach((path) => {
+      kolUrlArray.push(`https://${urlQueryObj['h_dm']}/${path}`);
+    })
+    transUrl(kolUrlArray);
+  }
 
   // 驗證 domain 並轉網址
   if (allowdm.test(urlQueryObj['h_dm'])) {
     switch (urlQueryObj['h_pt']) {
       case 'thisweb9700':
-        forwardBtn[0].setAttribute('href', `https://${urlQueryObj['h_dm']}/${urlQueryObj['h_pt']}`);
-        forwardBtn[0].setAttribute('data-paylink', `https://${urlQueryObj['h_dm']}/${urlQueryObj['h_pt']}`);
-        couponText.classList.remove('d-none');
-        break;
       case 'jayden9700':
-        forwardBtn[0].setAttribute('href', `https://${urlQueryObj['h_dm']}/${urlQueryObj['h_pt']}`);
-        forwardBtn[0].setAttribute('data-paylink', `https://${urlQueryObj['h_dm']}/${urlQueryObj['h_pt']}`);
+        renderForKol(urlQueryObj['h_pt']);
         couponText.classList.remove('d-none');
         break;
       default:
-        forwardBtn[0].setAttribute('href', `https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_4&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf`);
-        forwardBtn[0].setAttribute('data-paylink', `https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_4&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf`);
+        transUrl(['https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_4&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf']);
     }
   }
 </script>
@@ -1573,8 +1586,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1718160563964"></script>
-<script src="/js/bs4_all.js?1718160563964"></script>
+<script src="/js/bs4_vendor.js?1718178924980"></script>
+<script src="/js/bs4_all.js?1718178924980"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
