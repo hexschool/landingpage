@@ -45,7 +45,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/vue.css?1718294203448">
+  <link rel="stylesheet" href="/stylesheets/vue.css?1718898980319">
   <!-- Global styles END -->
 
   
@@ -1126,11 +1126,11 @@
           <div class="pb-4 px-4 text-end text-dark">
             <hr>
             <p class="mb-0 fw-bold font-small-for-course-list text-muted"><small><del>原價 NT$ 15,000 </del></small></p>
-            <p class="mb-0 fw-bold font-column-4-button text-second-dark"> NT$ 9,800 </p>
+            <p class="mb-0 fw-bold font-column-4-button text-second-dark"> NT$ 9,900 </p>
             <!-- <a href="https://r.botbonnie.com/wL4Tb" class="join-btn-hover btn btn-block btn-danger rounded-0 fw-bold font-column-4-button mt-2 mp-click tracking-link d-flex align-items-center justify-content-center webLayout-training-gtag-track" target="_blank">立即預約
               <i class="jion-arrow-icon material-icons font-column-4-button fw-bold">arrow_forward</i></a> -->
             <!-- <a href="#" class="lead-click btn btn-danger" target="_blank">開放報名</a> -->
-            <a href="https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_5&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf" title="網頁切版直播班" id="trainingBuyBtn" class="join-btn-hover btn btn-block btn-danger rounded-0 fw-bold font-column-4-button mt-2 mp-click tracking-link d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#orderModal" data-price="9800" data-title="網頁切版直播班" data-paylink="https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_5&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf" itemprop="url" data-forward="true" target="_blank" rel="noopener">
+            <a href="https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_6&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf" title="網頁切版直播班" id="trainingBuyBtn" class="join-btn-hover btn btn-block btn-danger rounded-0 fw-bold font-column-4-button mt-2 mp-click tracking-link d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#orderModal" data-price="9900" data-title="網頁切版直播班" data-paylink="https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_6&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf" itemprop="url" data-forward="true" target="_blank" rel="noopener">
                 立即報名
               <i class="jion-arrow-icon material-icons font-column-4-button fw-bold">arrow_forward</i>
             </a>
@@ -1287,9 +1287,10 @@
   // 特定 KOL 渲染
   // kolUrlInfo: kol 短網址 path
   const kolUrlInfo = {
-    thisweb9700: ['thisweb9800'],
-    jayden9700: ['jayden9800'],
-    uiuxstone9800: ['uiuxstone9800'],
+    thisweb9700: ['thisweb9900'],
+    jayden9700: ['jayden9900'],
+    uiuxstone9800: ['uiuxstone9900'],
+    tim9900: ['tim9900'],
   };
   const renderForKol = (urlPath) => {
     const kolUrlArray = [];
@@ -1305,11 +1306,12 @@
       case 'thisweb9700':
       case 'jayden9700':
       case 'uiuxstone9800':
+      case 'tim9900':
         renderForKol(urlQueryObj['h_pt']);
         couponText.classList.remove('d-none');
         break;
       default:
-        transUrl(['https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_4&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf']);
+        transUrl(['https://shop.hexschool.com/order/create?coupon_code=2024_COUPON_WEBLAYOUT_6&order=-M21HQ4yLvl9TksaJ18q&phyProduct[]=-M21HQ4yLvl9TksaJ18q&phyProductSpec[]=-Nv_ewsg7123534fOfWf']);
     }
   }
 </script>
@@ -1336,7 +1338,7 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column align-items-md-center text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="fw-bold text-start">6/21 即將漲價<span class="d-none d-md-inline">｜</span><br class="d-md-none">2024 切版直播班</span>
+        <span class="fw-bold text-start">最後報名機會 已破 330 人報名<span class="d-none d-md-inline">｜</span><br class="d-md-none">2024 切版直播班</span>
         
           <!-- <span class="mr-1 text-start" data-toggle="tooltip" data-placement="top" title="每日更新"></span> -->
           <span class="me-3 fw-bold text-start"></span>
@@ -1351,7 +1353,7 @@
         
           <a href="/courses/web-layout-training-1st.html"
             class="btn btn-dark btn-sm rounded-0">
-            現折 $5,200
+            晚鳥 66 折
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -1360,7 +1362,7 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2024/6/21">
+  <input type="hidden" id="footer-clock" value="2024/7/1">
 
         
       
@@ -1369,7 +1371,7 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-center w-100">
       <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
-        <span class="me-md-3 fw-bold text-center">已突破 280 人報名</span>
+        <span class="me-md-3 fw-bold text-center">已突破 330 人報名</span>
         
           <span class="me-md-3 fw-bold text-center">2024 切版直播班</span>
         
@@ -1383,7 +1385,7 @@
         
           <a href="#recommend"
             class="btn btn-dark btn-sm rounded-0">
-            手刀報名
+            手刀搶晚鳥 66 折
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -1392,7 +1394,7 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2024/6/21">
+  <input type="hidden" id="footer-clock" value="2024/7/1">
 
           
   </div>
@@ -1588,8 +1590,8 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/bs4_vendor.js?1718294203449"></script>
-<script src="/js/bs4_all.js?1718294203449"></script>
+<script src="/js/bs4_vendor.js?1718898980320"></script>
+<script src="/js/bs4_all.js?1718898980320"></script>
 <script src="/js/wow.min.js"></script>
 
 <script type="text/javascript">
