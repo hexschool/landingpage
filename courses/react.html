@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1721098423738">
+  <link rel="stylesheet" href="/stylesheets/all.css?1721099380966">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1389,22 +1389,24 @@
           
             <!-- 官網金流的話就開啟 orderModal -->
             
-            <a :href="type === 'training'? 'https://shop.hexschool.com/order/create?order=react': 'https://shop.hexschool.com/order/create?order=react&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank"
-              data-bs-toggle="modal" data-bs-target="#orderModal"
-              title="開啟 React 實戰影音課程 支付流程"
-              data-promotions="現在上課去"
-              class="btn btn-primary w-100 mt-2 mp-click tracking-link"
-              data-price="3168"
-              data-type="product"
-              data-id="react"
-              data-title="React 實戰影音課程"
-              :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
-              data-paylink="https://shop.hexschool.com/order/create?order=react">
-              
-                現在上課去
-              
-              <!-- 立即購買 -->
-            </a>
+            
+              <a :href="'https://shop.hexschool.com/order/create?order=react&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank"
+                data-bs-toggle="modal" data-bs-target="#orderModal"
+                title="開啟 React 實戰影音課程 支付流程"
+                data-promotions="現在上課去"
+                class="btn btn-primary w-100 mt-2 mp-click tracking-link"
+                data-price="3168"
+                data-type="product"
+                data-id="react"
+                data-title="React 實戰影音課程"
+                :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+                data-paylink="https://shop.hexschool.com/order/create?order=react">
+                
+                  現在上課去
+                
+                <!-- 立即購買 -->
+              </a>
+            
             
           
         
@@ -2028,8 +2030,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1721098423743"></script>
-<script src="/js/all.js?1721098423743"></script>
+<script src="/js/vendor.js?1721099380973"></script>
+<script src="/js/all.js?1721099380973"></script>
 <script src="/js/wow.min.js"></script>
 
 

@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1721098423755">
+  <link rel="stylesheet" href="/stylesheets/all.css?1721099380981">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -1354,22 +1354,24 @@
           
             <!-- 官網金流的話就開啟 orderModal -->
             
-            <a :href="type === 'training'? 'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5': 'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank"
-              data-bs-toggle="modal" data-bs-target="#orderModal"
-              title="開啟 網頁切版組合包 支付流程"
-              data-promotions="基礎入門 NT$6,450"
-              class="btn btn-primary w-100 mt-2 mp-click tracking-link"
-              data-price="6450"
-              data-type="product"
-              data-id="z_bs4_html_jquery_rwd"
-              data-title="網頁切版組合包"
-              :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
-              data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5">
-              
-                立即購買
-              
-              <!-- 立即購買 -->
-            </a>
+            
+              <a :href="'https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5&coupon_code=' + (rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank"
+                data-bs-toggle="modal" data-bs-target="#orderModal"
+                title="開啟 網頁切版組合包 支付流程"
+                data-promotions="基礎入門 NT$6,450"
+                class="btn btn-primary w-100 mt-2 mp-click tracking-link"
+                data-price="6450"
+                data-type="product"
+                data-id="z_bs4_html_jquery_rwd"
+                data-title="網頁切版組合包"
+                :data-coupon="rightCoupon.coupon_code || 'COUPON_FOR_NEW_ORIGIN_PRICE'"
+                data-paylink="https://shop.hexschool.com/order/create?order=z_html_jQuery_rwd_bs5">
+                
+                  立即購買
+                
+                <!-- 立即購買 -->
+              </a>
+            
             
           
         
@@ -2034,8 +2036,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1721098423759"></script>
-<script src="/js/all.js?1721098423759"></script>
+<script src="/js/vendor.js?1721099380985"></script>
+<script src="/js/all.js?1721099380985"></script>
 <script src="/js/wow.min.js"></script>
 
 

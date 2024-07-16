@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" href="/stylesheets/all.css?1721098423703">
+  <link rel="stylesheet" href="/stylesheets/all.css?1721099380934">
   <!-- Global styles END -->
 
   <!-- Google Tag Manager -->
@@ -2032,20 +2032,20 @@
           
               
           <div class="row justify-content-center">
-            <div class="col-md-6" v-if="course.html.detail.num_subscribers">
+            <div class="col-md-6" v-if="course.html && course.html.detail.num_subscribers">
               <div class="my-4 text-center">
                 <h6>這門課程目前有</h6>
                 <h2> <strong class="text-success" v-text="course.html.detail.num_subscribers || 0"> </strong> <small>人一起上課</small></h2>
                 <p class="text-muted">實際人數以 Udemy 上為主</p>
               </div>
             </div>
-            <div class="col-md-6" v-if="!course.html.detail">
+            <!-- <div class="col-md-6" v-if="!course.html.detail">
               <div class="my-4 py-5 text-center">
                 <h6>這門課程目前還沒有同學</h6>
                 <h2> <strong class="text-success">此課程正在準備中 :)</strong></h2>
                 <p class="text-muted">可隨時關注六角學院，了解課程開放時間喔</p>
               </div>
-            </div>
+            </div> -->
           </div>
           
           
@@ -3065,8 +3065,8 @@
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
-<script src="/js/vendor.js?1721098423712"></script>
-<script src="/js/all.js?1721098423712"></script>
+<script src="/js/vendor.js?1721099380938"></script>
+<script src="/js/all.js?1721099380938"></script>
 <script src="/js/wow.min.js"></script>
 
 
