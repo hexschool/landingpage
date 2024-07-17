@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <title>RateIt</title>
     <link href="../src/rateit.css" rel="stylesheet" type="text/css">
 
@@ -135,7 +135,8 @@
             <h3>
                 4) More settings</h3>
             <input type="range" value="4" step="0.25" id="backing4">
-            <div class="rateit" data-rateit-backingfld="#backing4" data-rateit-resetable="false" data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="10">
+            <div class="rateit" data-rateit-backingfld="#backing4" data-rateit-resetable="false" data-rateit-ispreset="true"
+                data-rateit-min="0" data-rateit-max="10">
             </div>
             <pre class="brush: xml">
             &lt;input type="range" value="4" step="0.25" id="backing4">
@@ -549,17 +550,17 @@ div.antenna div.rateit-selected
           12) Resizing
         </h3>
         <p>
-          Sometimes we would like to resize the rating controls (perhaps based on screen size). <br>
-          This is as easy as<br>
-          a) adding a class to the rateit control, which would change the background image.<br>
+          Sometimes we would like to resize the rating controls (perhaps based on screen size). <br />
+          This is as easy as<br />
+          a) adding a class to the rateit control, which would change the background image.<br/>
           b) modifying the starwidth and starheigth properties.
-          <br><br>
+          <br /><br />
           The alternative styling is taken from example <a href="#ex_7a">7a) styling</a>.
         </p>
 
         <div class="rateit" id="rateit12">
         </div>
-        <p>Pick a size: <select id="size_12"><option data-class data-size="16" selected>normal</option><option data-class="bigstars" data-size="32">big</option></select></p>
+        <p>Pick a size: <select id="size_12"><option data-class="" data-size="16" selected>normal</option><option data-class="bigstars" data-size="32">big</option></select></p>
 
         <script type="text/javascript">
           $('#size_12').change(function () {
