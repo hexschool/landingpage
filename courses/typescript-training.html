@@ -1,0 +1,1442 @@
+
+
+
+
+
+  <!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-TW">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="Cache-control" content="public">
+  <meta http-equiv="max-age" content="604800" />
+  <title>TypeScript 30 天證書培訓營 | 六角學院</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+  <meta property="og:title" content="TypeScript 30 天證書培訓營 | 六角學院" />
+  <meta property="og:description" content="本課程以「業界案例：旅館訂房網」為成果導向，30 天帶你掌握 TypeScript，打造中大型系統更有信心！" />
+  
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Ftypescript-training%2F1700017426700-thumbnail.png?alt=media&token=a8e1bb29-0627-4fb7-a4c8-90e19dfcdcc7" />
+  
+  <meta property="fb:app_id" content="760173380749493"/>
+  <meta property="og:site_name" content="六角學院" />
+  <meta property="og:locale" content="zh_TW" />
+
+  
+    <link rel="alternative" href="/atom.xml" title="六角學院" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta content="本課程以「業界案例：旅館訂房網」為成果導向，30 天帶你掌握 TypeScript，打造中大型系統更有信心！" name="description">
+  <meta content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript" name="keywords">
+  <meta content="六角學院" name="author">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global styles START -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  
+<link rel="stylesheet" href="/stylesheets/vue.css?1723023774502.css">
+
+  <!-- Global styles END -->
+
+  
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MH4SWT');</script>
+  <!-- End Google Tag Manager -->
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="over-flow-x typescript-training">
+  <div id="app">
+    <nav class="navbar navbar-light navbar-expand text-primary navbar-toggleable fixed-top shadow"
+  style="background-color: rgba(255, 255, 255, .85)">
+  <div class="container">
+    <a href="/" class="navbar-brand d-none d-sm-block">
+      
+      <style>
+
+.reduce-header  .header-logo {
+  height: 28px
+}
+.header-logo {
+  transition: height .3s;
+  height: 36px
+}
+</style>
+<svg class="header-logo" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#00251a"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#00251a"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#00251a"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#00251a"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#00251a"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#00251a"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#00251a"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#00251a"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+      
+    </a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <a href="#recommend"
+        class="btn btn-danger text-white ">
+        
+        別說了，我要上課
+        
+        <i class="far fa-gem"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="pt-md-7 pt-6 position-relative bg-light">
+  <div class="banner bg-cover bg-norepeat">
+  </div>
+</div>
+
+<!-- 在 JavaScript 工程師路上，你是否遇到以下困擾？ -->
+<section class="section troubles">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-5">在 JavaScript 工程師路上，你是否遇到以下困擾？</h3>
+    <ol class="list-unstyled d-flex justify-content-center justify-content-md-between flex-wrap">
+      <li>
+        <div class="troubles-item text-primary position-relative">
+          <span class="num fs-large lh-base position-absolute">01</span>
+          <img src="../images/typescript-training/trouble-1.png" alt="trouble-1" class="mb-3 img-fluid w-100">
+          <h4 class="h5 lh-base text-center mb-0">
+            程式碼變大時，只能放任它變醜
+          </h4>
+        </div>
+      </li>
+      <li>
+        <div class="troubles-item text-primary position-relative">
+          <span class="num fs-large lh-base position-absolute">02</span>
+          <img src="../images/typescript-training/trouble-2.png" alt="trouble-1" class="mb-3 img-fluid w-100">
+          <h4 class="h5 lh-base text-center mb-0">
+            學很多新技術，卻越學越焦慮
+          </h4>
+        </div>
+      </li>
+      <li>
+        <div class="troubles-item text-primary position-relative">
+          <span class="num fs-large lh-base position-absolute">03</span>
+          <img src="../images/typescript-training/trouble-3.png" alt="trouble-1" class="mb-3 img-fluid w-100">
+          <h4 class="h5 lh-base text-center mb-0">
+            年資在提升，但能力沒跟著追上
+          </h4>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 六角幫您找到黃金三角洲，讓職涯走得健全快樂 -->
+<section class="section pb-0">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-5">六角幫您找到黃金三角洲，讓職涯走得健全快樂</h3>
+    <div class="row justify-content-center mb-80">
+      <div class="col-md-10">
+        <img src="../images/typescript-training/golden-triangle.png" alt="黃金三角" class="img-fluid">
+      </div>
+    </div>
+    <div class="triLine mx-auto"></div>
+  </div>
+</section>
+
+<!-- 三個願望一次滿足 -->
+<section class="wishes d-flex align-items-center justify-content-center">
+  <h3 class="wishes-title mb-0">三個願望一次滿足，掌握 TypeScript，展開 30 天證書修練之旅！</h3>
+</section>
+<!-- <section class="wish bg-cover bg-norepeat bg-center d-flex align-items-center position-relative">
+  <div class="w-100 d-flex justify-content-between">
+    <img src="../images/typescript-training/wish-person1.png" alt="person" class="img-fluid wish-person">
+    <img src="../images/typescript-training/wish-person2.png" alt="person" class="img-fluid wish-person">
+    <h3 class="wish-title lh-base fw-700 mb-0 position-absolute">三個願望一次滿足，掌握 TypeScript，<br class="d-none d-sm-block d-md-none">展開 30 天證書修練之旅！</h3>
+  </div>
+</section> -->
+
+<!-- 學習 TypeScript，現在正是時候 -->
+<section class="section keyPoints pb-0">
+  <h3 class="title-primary text-secondary text-center lh-base mb-80">\ 學習 <span class="text-primary fw-700">TypeScript</span>，現在正是時候 /</h3>
+  <div class="keyPoints-point position-relative">
+    <div class="container">
+      <div class="keyPoints-title position-absolute">
+        <h4 class="lh-base text-primary mb-0">
+          <span class="fs-large">01</span><br>
+          透過 TypeScript 讓程式碼更加穩固<br class="d-lg-none">，架構再大也不怕！
+        </h4>
+      </div>
+    </div>
+    <div class="bg-light keyPoints-content">
+      <div class="container-fluid">
+        <div class="d-lg-flex justify-content-center">
+          <div class="compare mb-4">
+            <div class="d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/logo-js.png" alt="JavaScript logo" class="mb-4">
+              <ul class="list-unstyled text-nowrap">
+                <li class="mb-3">
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    型別檢查
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">JS 是動態型別，本身沒有類型檢查功能</p>
+                </li>
+                <li class="mb-3">
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    編譯前錯誤偵測
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">在執行階段才偵測錯誤</p>
+                </li>
+                <li class="mb-3">
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    VS Code 智慧型提示與自動完成
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">需仰賴第三方套件</p>
+                </li>
+                <li>
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    大型專案程式碼規範
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star-outline.svg" alt="star outline icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">有支援但不多，需外部套件或函式庫</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="compare">
+            <div class="d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/logo-ts.png" alt="TypeScript logo" class="mb-4">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    型別檢查
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">TS 提供靜態型別檢查</p>
+                </li>
+                <li class="mb-3">
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    編譯前錯誤偵測
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">編譯階段就捕捉到許多錯誤</p>
+                </li>
+                <li class="mb-3">
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    VS Code 智慧型提示與自動完成
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">內建 IDE 智慧型提示，相較成熟</p>
+                </li>
+                <li>
+                  <p class="compare-list d-flex align-items-center justify-content-center flex-wrap text-primary fw-700 h4 lh-base mb-0">
+                    大型專案程式碼規範
+                    <span class="d-flex align-items-center">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star ms-2">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                      <img src="../images/typescript-training/star.svg" alt="star icon" class="img-fluid star">
+                    </span>
+                  </p>
+                  <p class="text-center mb-0">內建具備模組化特性</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="keyPoints-point position-relative">
+    <div class="container">
+      <div class="keyPoints-title position-absolute">
+        <h4 class="lh-base text-primary mb-0">
+          <span class="fs-large">02</span><br>
+          Stack Overflow 2023 世界排名第 5！
+        </h4>
+      </div>
+    </div>
+    <div class="bg-info keyPoints-content">
+      <div class="container">
+        <p class="text-center mb-2">近 5 年開發者最常用的語言（2019~2023）</p>
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <div class="position-relative">
+              <img src="../images/typescript-training/line-chart.png" alt="5 年使用率折線圖" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="keyPoints-point position-relative mb-0">
+    <div class="container">
+      <div class="keyPoints-title position-absolute">
+        <h4 class="lh-base text-primary mb-0">
+          <span class="fs-large">03</span><br>
+          資深工程師必修項目！
+        </h4>
+      </div>
+    </div>
+    <div class="bg-light keyPoints-content">
+      <div class="container importRate">
+        <p class="importRate-title d-flex align-items-center justify-content-center flex-wrap">
+          <span class="h4 lh-base text-primary me-2 mb-0">TypeScript 導入率</span>
+          經由六角結業學生數據調查
+        </p>
+        <div class="d-flex justify-content-center">
+          <div class="importRate-card text-center">
+            <p class="fs-large mb-4">16%</p>
+            <p class="importRate-cardContent mb-0">年資低於一年<br>導入率</p>
+          </div>
+          <div class="position-relative">
+            <p class="importRate-tag position-absolute mb-0">CP 首選</p>
+            <div class="importRate-card importRate-cp text-center">
+              <p class="fs-large text-primary mb-4">84%</p>
+              <p class="importRate-cardContent text-primary mb-0">年資 2-5 年<br>導入率</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 這堂課你會獲得以下服務 -->
+<section class="section bg-secondary service">
+  <div class="container">
+    <h3 class="title-primary text-white text-center lh-base mb-7">這堂課你會獲得以下服務</h3>
+    <div class="row justify-content-center mb-5 mb-md-7">
+      <div class="col-md-11">
+        <h4 class="h3 lh-base text-white text-center mb-5">豐富教學資源</h4>
+        <ul class="list-unstyled d-flex justify-content-center justify-content-lg-between flex-wrap mb-0">
+          <li class="service-resource mb-3 mb-lg-0">
+            <div class="d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/resource-live.svg" alt="live icon" class="img-fluid">
+              <p class="text-primary mb-0">
+                <span class="align-bottom me-2">4</span>
+                堂直播課
+              </p>
+            </div>
+          </li>
+          <li class="service-resource mb-3 mb-lg-0">
+            <div class="d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/resource-video.svg" alt="video icon" class="img-fluid">
+              <p class="text-primary mb-0">
+                <span class="align-bottom me-2">200</span>
+                分鐘影音課程
+              </p>
+            </div>
+          </li>
+          <li class="service-resource">
+            <div class="d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/resource-practice.svg" alt="video icon" class="img-fluid">
+              <p class="text-primary mb-0">
+                <span class="align-bottom me-2">60</span>
+                道精選練習題
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5 mb-md-7">
+      <div class="col-md-11">
+        <h4 class="h3 lh-base text-white text-center mb-5">系統性學習</h4>
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+          <div class="service-system mb-3 mb-lg-0" style="border-radius: 40px;">
+            <img src="../images/typescript-training/systemLearning.png" alt="系統性學習" class="img-fluid w-100">
+          </div>
+          <div class="service-system">
+            <ul class="list-unstyled mb-0">
+              <li class="service-systemList mb-4">
+                <h5 class="h4 lh-base fw-700 mb-0">30 天由淺入深課程設計</h5>
+                <p class="mb-0">時間花在刀口上，減少自行摸索時間</p>
+              </li>
+              <li class="service-systemList mb-4">
+                <h5 class="h4 lh-base fw-700 mb-0">適合在職進修</h5>
+                <p class="mb-0">每日、主線程式任務設計，每天成長看得見</p>
+              </li>
+              <li class="service-systemList">
+                <h5 class="h4 lh-base fw-700 mb-0">成熟工程師社群</h5>
+                <p class="mb-0">各路大神齊聚一堂，看到資深工程師 Coding 習慣，提升開發視野</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class="h3 lh-base text-white text-center mb-5">作品成果導向</h4>
+    <div class="d-flex align-items-center flex-wrap flex-lg-nowrap justify-content-center">
+      <div class="mb-3 mb-lg-0">
+        <div class="service-workContent">
+          <h5 class="h4 lh-base fw-700 text-white mb-0">30 天可挑戰 3 張證書</h5>
+          <p class="mb-0">初心者證書、前端工程師證書、全端工程師證書</p>
+        </div>
+        <div class="service-workContent">
+          <h5 class="h4 lh-base fw-700 text-white mb-0">挑戰主題</h5>
+          <p class="mb-0">旅館訂房網：享樂酒店</p>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="position-relative">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-workImg">
+                  <img src="../images/typescript-training/work-1.png" alt="作品截圖 1" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-workImg">
+                  <img src="../images/typescript-training/work-2.png" alt="作品截圖 2" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-workImg">
+                  <img src="../images/typescript-training/work-3.png" alt="作品截圖 3" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-4 mt-lg-3 ms-4">
+            <div class="swiper-button-prev me-4 mr-lg-5">
+              <span class="material-symbols-outlined">
+                arrow_circle_left
+              </span>
+            </div>
+            <div class="swiper-button-next">
+              <span class="material-symbols-outlined">
+                arrow_circle_right
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 無論身份與年資，都適合 -->
+<section class="section exp">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-40">無論身份與年資，你都適合參加 TypeScript 30 天 證書培訓營</h3>
+    <div class="row">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <div class="exp-card text-center">
+          <h4 class="exp-title mb-3">Super Junior <br class="d-md-none">初級前端工程師</h4>
+          <p class="mb-0">適合已經掌握三大框架其一的前端求職者，想學得更進階再找工作，立志成為初級前端市場中的佼佼者！</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="exp-card text-center">
+          <h4 class="exp-title mb-3">工作 1~3 年的<br class="d-md-none">中階前端工程師</h4>
+          <p class="mb-0">適合想擺脫程式碼變大就難以管理的窘境，希望找到簡單有效的方式來提升程式碼品質，幫自己加薪！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 由淺入深的課程大綱與時間軸 -->
+<section class="section">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-40">由淺入深的課程大綱與時間軸</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <p class="mb-5 mb-md-7">這門課程，我們是以「旅館訂房網」的主題，來規劃我們的課綱，讓您上完課後，就能夠開始動手打造自己的訂房網站。</p>
+        <div class="row flex-md-row-reverse align-items-center mb-5 mb-md-6">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <img src="../images/typescript-training/week1.png" alt="第一週：TypeScript 環境建立、型別系統" class="img-fluid w-100">
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-secondary fw-700 mb-2">
+              第一週：TypeScript 環境建立、型別系統
+            </h4>
+            <p class="text-secondary mb-2">
+              1/10（三）20:00 ~ 22:00<br>
+              帶您一步步建立起穩定的 TypeScript 開發環境。不僅如此，還將深入探討 TypeScript 的核心概念 - 型別系統。透過實際範例和練習，您將學習如何有效地使用型別來提高程式的可讀性和健壯性。
+            </p>
+            <p class="text-secondary fw-500 mb-0">教學關鍵字：</p>
+            <p class="text-secondary mb-0">原始型別、JSON 物件型別、函式型別、陣列型別、Any、Enum、Union</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-5 mb-md-6">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <img src="../images/typescript-training/week2.png" alt="第二週：介面（interface）與前端框架整合" class="img-fluid w-100">
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-secondary fw-700 mb-2">
+              第二週：介面（Interface）與前端框架整合
+            </h4>
+            <p class="text-secondary mb-2">
+              1/17（三）20:00 ~ 22:00<br>
+              學會如何透過介面設計緊密且一致的資料結構，並精通函式的多樣性與靈活性。確保你能夠在實際開發中，了解框架與 TypeScript 的整合，進以提升程式的可讀性、擴展性和健壯性。
+            </p>
+            <p class="text-secondary fw-500 mb-0">教學關鍵字：</p>
+            <p class="text-secondary mb-0">Interface、前端框架</p>
+          </div>
+        </div>
+        <div class="row flex-md-row-reverse align-items-center mb-5 mb-md-6">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <img src="../images/typescript-training/week3.png" alt="第三週：泛型設計" class="img-fluid w-100">
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-secondary fw-700 mb-2">
+              第三週：泛型設計
+            </h4>
+            <p class="text-secondary mb-2">
+              1/24（三）20:00 ~ 22:00<br>
+              在「TypeScript 中的泛型設計」課程中，我們深入探討泛型，這一強大的工具，它結合了型別的安全性與靈活性。從基礎到實作，學習如何運用泛型創建可重用的組件和函式，並體會其在大型專案中的核心價值。
+            </p>
+            <p class="text-secondary fw-500 mb-0">教學關鍵字：</p>
+            <p class="text-secondary mb-0">泛型（Generics）、可重用組件、大型專案策略</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-5 mb-md-6">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <img src="../images/typescript-training/week4.png" alt="第四週：旅館訂房網 - 模組與命名空間規劃" class="img-fluid w-100">
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-secondary fw-700 mb-2">
+              第四週：旅館訂房網 - 模組與命名空間規劃
+            </h4>
+            <p class="text-secondary mb-2">
+              1/31（三）20:00 ~ 22:00<br>
+              透過旅館訂房的實際案例，將深入探索 TypeScript 中的「模組」和「命名空間」。學習如何組織和封裝程式碼，並體驗如何避免命名衝突和提供清晰結構。
+            </p>
+            <p class="text-secondary fw-500 mb-0">教學關鍵字：</p>
+            <p class="text-secondary mb-0">ES Module、Namespaces、Import</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-11">
+        <img src="../images/typescript-training/calendar.png" alt="行事曆" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 堅強雙講師陣容 -->
+<section class="section teachers">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-40 mb-md-7">堅強雙講師陣容</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-between">
+          <li class="teachers-card d-flex flex-column align-items-center mb-5 mb-lg-0">
+            <p class="teachers-tag mb-0">影音課講師</p>
+            <img src="../images/typescript-training/teacher-洧杰.png" alt="洧杰老師" class="img-fluid mb-3">
+            <h4 class="teachers-name lh-base">廖洧杰</h4>
+            <p class="h5 lh-base mb-3">六角學院校長</p>
+            <ul class="list-unstyled text-center fw-500">
+              <li>影音課授課學生數超過 <span class="text-primary fw-700">30,000</span></li>
+              <li>火箭隊軟體培訓營前端教練</li>
+              <li>Webconf 2023 研討會共同召集人</li>
+              <li>ModernWeb、MOPCON 技術研討會講者</li>
+            </ul>
+          </li>
+          <li class="teachers-card d-flex flex-column align-items-center">
+            <p class="teachers-tag mb-0">直播課講師</p>
+            <img src="../images/typescript-training/teacher-leo.png" alt="Leo 老師" class="img-fluid mb-3">
+            <h4 class="teachers-name lh-base">Leo</h4>
+            <p class="h5 lh-base mb-3">前端工程師</p>
+            <ul class="list-unstyled text-center fw-500">
+              <li>大神來六角 2020~2023 講師</li>
+              <li>DevFest Taipei 2022 講師</li>
+              <li>COSCUP 2023 講師</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 張證書讓你挑戰！（製作中） -->
+<section class="section certification
+bg-light">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-40">3 張證書讓你挑戰！</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <p class="text-secondary text-center mb-40">從初級到高階的證書挑戰，無論你是選擇團隊合作還是單獨挑戰，我們都為你設計了合適的任務，確保每位開發者都能成功取得證書。</p>
+      </div>
+    </div>
+    <ol class="list-unstyled d-flex justify-content-center justify-content-md-between flex-wrap">
+      <li class="certification-item mb-4 mb-md-0">
+        <div class="d-flex flex-column align-items-center">
+          <img src="../images/typescript-training/certification-1.svg" alt="初心者證書" class="img-fluid mb-2">
+          <h4 class="h5 lh-base mb-2 text-secondary">\ TypeScript 初心者證書 /</h4>
+          <p class="certification-tag text-primary mb-0">個人</p>
+          <p class="text-secondary mb-0">LV1：完成與旅館訂房網相關的 30 道 TS 函式</p>
+        </div>
+      </li>
+      <li class="certification-item mb-4 mb-md-0">
+        <div class="d-flex flex-column align-items-center">
+          <img src="../images/typescript-training/certification-2.svg" alt="TypeScript 前端工程師個人證書" class="img-fluid mb-2">
+          <h4 class="h5 lh-base mb-2 text-secondary">\ TypeScript 前端工程師個人證書 /</h4>
+          <p class="certification-tag text-primary mb-0">個人</p>
+          <p class="text-center text-secondary mb-0">LV1：至少切兩個以上的完整 RWD 頁面，且沒有 x 軸，並完成登入、註冊 API 功能</p>
+          <p class="text-center text-secondary mb-0">LV2：完成所有前端旅館訂房服務，使用六角提供的 Node.js 前台 API 來開發</p>
+          <p class="text-center text-secondary mb-0">LV3：完成所有前後端旅館訂房服務，後端需自行開發，不使用六角提供的 Node.js API</p>
+        </div>
+      </li>
+      <li class="certification-item">
+        <div class="d-flex flex-column align-items-center">
+          <img src="../images/typescript-training/certification-3.svg" alt="TypeScript 前端工程師團隊證書" class="img-fluid mb-2">
+          <h4 class="h5 lh-base mb-2 text-secondary">\ TypeScript 前端工程師團隊證書 /</h4>
+          <p class="certification-tag text-primary mb-0">團體</p>
+          <p class="text-center text-secondary mb-0">LV1：完成所有前端旅館訂房服務，使用六角提供的 Node.js 前台 API 來開發</p>
+          <p class="text-center text-secondary mb-0">LV2：完成所有前後端旅館訂房服務，後端需自行開發，不使用六角提供的 Node.js API</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 3 張抽獎券 -->
+<section class="section ticket">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-40">加碼抽獎品！最多可獲得 <span class="ticket-num text-primary fw-700">3</span> 張抽獎券！</h3>
+    <p class="text-secondary text-center mb-40">報名並順利拿到證書挑戰者，再加贈數獎品抽獎券，最多可獲得三張！</p>
+    <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+      <li class="ticket-card">
+        <div class="d-flex flex-column align-items-center">
+          <p class="ticket-tag">贈送一張</p>
+          <div class="ticket-icon mb-2">
+            <span class="material-symbols-outlined">
+              add_reaction
+            </span>
+          </div>
+          <h4 class="ticket-title text-secondary mb-2">註冊本門課程</h4>
+          <p class="ticket-content mb-0">TypeScript & JavaScript 旅館訂房網 - 30 天主題挑戰賽</p>
+        </div>
+      </li>
+      <li class="ticket-card">
+        <div class="d-flex flex-column align-items-center">
+          <p class="ticket-tag">贈送一張</p>
+          <div class="ticket-icon mb-2">
+            <span class="material-symbols-outlined">
+              self_improvement
+            </span>
+          </div>
+          <h4 class="ticket-title text-secondary mb-2">單人證書</h4>
+          <p class="ticket-content mb-0">在期限內完成 30 天主題挑戰賽</p>
+        </div>
+      </li>
+      <li class="ticket-card">
+        <div class="d-flex flex-column align-items-center">
+          <p class="ticket-tag">贈送一張</p>
+          <div class="ticket-icon mb-2">
+            <span class="material-symbols-outlined">
+              groups
+            </span>
+          </div>
+          <h4 class="ticket-title text-secondary mb-2">團體證書</h4>
+          <p class="ticket-content mb-0">在期限內完成 30 天主題挑戰賽</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 獎品列表 -->
+<section class="section reward">
+  <div class="container">
+    <h3 class="d-flex align-items-center justify-content-center title-primary text-center lh-base mb-40">
+      <span class="text-primary material-symbols-outlined me-2" style="font-size: 24px;">
+        flare
+      </span>
+      <span class="text-secondary">獎品列表</span>
+      <span class="text-primary material-symbols-outlined ms-2" style="font-size: 24px;">
+        flare
+      </span>
+    </h3>
+    <div class="row justify-content-center">
+      <div class="col-md-11">
+        <ul class="list-unstyled row mb-0">
+          <li class="col-sm-6 col-md-12">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-1.png" alt="頭獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">頭獎</h4>
+              <p class="text-primary mb-0">Macbook Air M2</p>
+            </div>
+          </li>
+          <li class="col-sm-6">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-2.png" alt="貳獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">貳獎</h4>
+              <p class="text-primary mb-0">AirPods Pro 第 2 代</p>
+            </div>
+          </li>
+          <li class="col-sm-6">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-3.png" alt="參獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">參獎</h4>
+              <p class="text-primary mb-0">Keychron K6</p>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-4.png" alt="肆獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">肆獎</h4>
+              <p class="text-primary mb-0">【OUTDOOR】寶可夢 Pokemon 20 吋行李箱</p>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-5.png" alt="伍獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">伍獎</h4>
+              <p class="text-primary mb-0">Logitech  MX Vertical 垂直滑鼠</p>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-6.png" alt="陸獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">陸獎</h4>
+              <p class="text-primary mb-0">7-11 1000 元禮券</p>
+            </div>
+          </li>
+          <li class="col-sm-6">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-7.png" alt="柒獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">柒獎</h4>
+              <p class="text-primary mb-0">7-11 500 元禮券</p>
+            </div>
+          </li>
+          <li class="col-sm-6">
+            <div class="reward-card d-flex flex-column align-items-center">
+              <img src="../images/typescript-training/reward-8.png" alt="捌獎" class="img-fluid mb-1">
+              <h4 class="text-primary lh-base mb-1">捌獎</h4>
+              <p class="text-primary mb-0">六角學院 666 課程抵用券</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 課程購買 -->
+<section class="section bg-primary purchase" id="recommend" data-name="TypeScript 30 天證書培訓營" data-id="typescript-training">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-6">
+        <div class="card">
+          <div class="purchase-img mb-3">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Ftypescript-training%2F1700017426700-thumbnail.png?alt=media&token=a8e1bb29-0627-4fb7-a4c8-90e19dfcdcc7" alt="TypeScript" class="img-fluid w-100 ">
+          </div>
+          <h2 class="purchase-title text-secondary lh-base mb-2">TypeScript 30 天證書培訓營</h2>
+          <p class="h5 lh-base text-secondary mb-3">以「業界案例：旅館訂房網」為成果導向，30 天帶你掌握 TypeScript，打造中大型系統更有信心！</p>
+          <p class="text-primary mb-0">此組合包含：</p>
+          <ul class="list-unstyled text-secondary mb-3">
+            <li>4 堂直播課程</li>
+            <li>200 分鐘影音課程</li>
+            <li>60 道 TypeScript 題目</li>
+            <li>1 式旅館訂房 UI 設計稿，頁面數超過 10 頁</li>
+            <li>1 份 Node.js + MongoDB RESTful API 程式碼</li>
+          </ul>
+          <p class="text-secondary mb-0"><del>原價 $15,000</del></p>
+          <p class="h4 fw-700 text-secondary"> $7,388</p>
+          <!-- 按鈕 -->
+          <!-- <a
+            href="https://r.botbonnie.com/MXA-t"
+            target="_blank"
+            class="btn btn-block btn-primary mp-click tracking-link py-3">
+            免費預約 Line 通知
+          </a> -->
+          <a
+            href="#"
+            title="TypeScript 30 天證書培訓營"
+            id="trainingBuyBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#orderModal"
+            data-price="7388"
+            data-type="product"
+            data-id="vue-training"
+            data-title="TypeScript 30 天證書培訓營"
+            data-paylink="#"
+            itemprop="url"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-block btn-primary mp-click tracking-link py-3 disabled" disabled>
+            報名截止
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TypeScript 說明會 -->
+<section class="my-md-7 my-5">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-40">
+      TypeScript 說明會
+    </h3>
+    <div class="row justify-content-center">
+      <div class="col-md-10 mb-3">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/nbBkyXX_Z1g?si=FR41KRnln2rRUxNL" title="TypeScript 說明會" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <h5 class="text-center">- 時間軸 -</h5>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">00:00</p>
+      <p class="col-9 col-md-5 mb-0">直播開始</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">04:22</p>
+      <p class="col-9 col-md-5 mb-0">簡單市調 ＋ #typescript 相關數據分享</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">23:12</p>
+      <p class="col-9 col-md-5 mb-0">加入 TypeScript 30 天證書培訓營，你可以獲得什麼？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">45:18</p>
+      <p class="col-9 col-md-5 mb-0">Q&A 回覆</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">56:10</p>
+      <p class="col-9 col-md-5 mb-0">公佈學費＋如何抽 Mac M2</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:08:40</p>
+      <p class="col-9 col-md-5 mb-0">分組名單公佈、一定要分組嗎</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:15:55</p>
+      <p class="col-9 col-md-5 mb-0">Q&A 回覆</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:27:58</p>
+      <p class="col-9 col-md-5 mb-0">直播講師介紹</p>
+    </div>
+  </div>
+</section>
+
+<!-- 常見 Q&A -->
+<section class="section faq">
+  <div class="container">
+    <h3 class="title-primary text-secondary text-center lh-base mb-40">
+      常見 Q&A
+    </h3>
+    <div class="row justify-content-center">
+      <div class="col-md-11 col-lg-8">
+        <div class="accordion p-md-3" id="faq-accordion">
+          
+            <div class="faq-collapse mb-3">
+              <a class="faq-btn d-flex align-items-center justify-content-between p-3 collapsed" data-bs-toggle="collapse" href="#collapse-qa1" role="button" aria-expanded="false" aria-controls="collapse-faq" id="qa1">
+                Ｑ：有幾天直播時段沒辦法配合的話，會有錄影影片嗎？
+                <span class="faq-open material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <span class="faq-close material-symbols-outlined">
+                  stat_1
+                </span>
+              </a>
+              <div class="collapse px-3" id="collapse-qa1">
+                <p class="text-secondary py-3 mb-0">Ａ：有的！我們影片會保留到 2024/6/30，方便學員隨時回平台回顧。</p>
+              </div>
+            </div>
+          
+            <div class="faq-collapse mb-3">
+              <a class="faq-btn d-flex align-items-center justify-content-between p-3 collapsed" data-bs-toggle="collapse" href="#collapse-qa2" role="button" aria-expanded="false" aria-controls="collapse-faq" id="qa2">
+                Ｑ：證書任務繳交截止日是什麼時候？
+                <span class="faq-open material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <span class="faq-close material-symbols-outlined">
+                  stat_1
+                </span>
+              </a>
+              <div class="collapse px-3" id="collapse-qa2">
+                <p class="text-secondary py-3 mb-0">Ａ：繳交截止時間是 2/4（日）</p>
+              </div>
+            </div>
+          
+            <div class="faq-collapse mb-3">
+              <a class="faq-btn d-flex align-items-center justify-content-between p-3 collapsed" data-bs-toggle="collapse" href="#collapse-qa3" role="button" aria-expanded="false" aria-controls="collapse-faq" id="qa3">
+                Ｑ：如果我在最晚 2/4 提交證書任務，但還沒被批改，這樣有抽獎券嗎？
+                <span class="faq-open material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <span class="faq-close material-symbols-outlined">
+                  stat_1
+                </span>
+              </a>
+              <div class="collapse px-3" id="collapse-qa3">
+                <p class="text-secondary py-3 mb-0">Ａ：我們會在 2/18（日）前將任務批改完，若符合通過條件，就擁有抽獎券！</p>
+              </div>
+            </div>
+          
+            <div class="faq-collapse mb-3">
+              <a class="faq-btn d-flex align-items-center justify-content-between p-3 collapsed" data-bs-toggle="collapse" href="#collapse-qa4" role="button" aria-expanded="false" aria-controls="collapse-faq" id="qa4">
+                Ｑ：何時會抽獎呢？
+                <span class="faq-open material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <span class="faq-close material-symbols-outlined">
+                  stat_1
+                </span>
+              </a>
+              <div class="collapse px-3" id="collapse-qa4">
+                <p class="text-secondary py-3 mb-0">Ａ：2/22（四）會進行抽獎</p>
+              </div>
+            </div>
+          
+            <div class="faq-collapse mb-3">
+              <a class="faq-btn d-flex align-items-center justify-content-between p-3 collapsed" data-bs-toggle="collapse" href="#collapse-qa5" role="button" aria-expanded="false" aria-controls="collapse-faq" id="qa5">
+                Ｑ：若因個人因素退費課程，需要在什麼時候前申請？
+                <span class="faq-open material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <span class="faq-close material-symbols-outlined">
+                  stat_1
+                </span>
+              </a>
+              <div class="collapse px-3" id="collapse-qa5">
+                <p class="text-secondary py-3 mb-0">Ａ：報名此培訓營課程，即可獲得「八週年感謝祭 抽獎券一張」，為維護抽獎者權益，2024/1/10 開課後，則無法申請退費</p>
+              </div>
+            </div>
+          
+            <div class="faq-collapse mb-3">
+              <a class="faq-btn d-flex align-items-center justify-content-between p-3 collapsed" data-bs-toggle="collapse" href="#collapse-qa6" role="button" aria-expanded="false" aria-controls="collapse-faq" id="qa6">
+                Ｑ：除了老師直播外，我有問題該怎麼辦？
+                <span class="faq-open material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <span class="faq-close material-symbols-outlined">
+                  stat_1
+                </span>
+              </a>
+              <div class="collapse px-3" id="collapse-qa6">
+                <p class="text-secondary py-3 mb-0">Ａ：我們學習系統會提供作業討論專區，並會提供專屬的 Discord 聊天頻道，來讓您與老師、助教、學生一起互動！</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+      768: {
+        slidesPerView: 1.3,
+        spaceBetween: 24,
+      },
+      991: {
+        slidesPerView: 2.3,
+        spaceBetween: 40,
+      }
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
+
+<div class="text-center my-4 container line-vueTraining">
+  <p>P.S.：六角學院也有 line@ 嘍，歡迎加入隨時獲得六角學院第一手資訊！</p>
+  <!-- 電腦版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/qgbMS" class="m-y-1 mp-click d-none d-md-block"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+  <!-- 行動版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/AmmnC" class="m-y-1 mp-click d-md-none"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+</div>
+
+ <!-- 開啟通用 footer 倒數-->
+    <!-- 如果個別頁面有需要倒數 -->
+    
+      <!-- 非特定頁面使用通用 footer 倒數 -->
+      <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column align-items-md-center text-white justify-content-md-end pr-md-3 pr-0">
+        <span class="fw-bold text-start">2024 JS 直播班 早鳥預約中</span>
+        
+          <!-- <span class="mr-1 text-start" data-toggle="tooltip" data-placement="top" title="每日更新"></span> -->
+          <span class="me-3 fw-bold text-start"></span>
+        
+        <div class="d-flex justify-content-start text-white text-nowrap">
+          
+            <span class="clock m-r-1 fw-bold"></span>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end ps-md-3 ps-0">
+        
+          <a href="/courses/js-training.html"
+            class="btn btn-dark btn-sm rounded-0">
+            預約優惠
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <input type="hidden" id="footer-clock" value="2024/8/22">
+
+      
+  </div>
+  
+<div class="modal fade" id="orderModal" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="
+      position: relative;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      outline: none;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+    ">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          <span>購買 </span>
+          <span v-html="text.title"></span>
+        </h4>
+        <!-- <button type="button" data-bs-dismiss="modal" class="btn-close" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <!-- <img src="/images/marketing/payment_flow.gif" class="img-fluid" alt=""> -->
+        <div class="text-xs-center text-center">
+          <div class="flex flex-center d-flex justify-content-center">
+            <a class="fb-track" href="https://hex.school/P12UP" target="_blank" title="Facebook 客服">
+              <i class="fab fa-facebook-messenger rounded-0 my-3" style="font-size: 40px; color: rgb(0, 132, 255)"></i>
+            </a>
+            <!-- <a href="https://hex.school/P12UP" target="_blank" class="fab fab-facebook mp-click" style="block-center" title="Facebook 客服">
+              <span class="h2">
+                <span class="fa fa-comments-o"></span>
+              </span>
+            </a> -->
+          </div>
+          <p class="m-t-1">
+            <strong>就算是小問題，我們也在線上立即回覆您。</strong><br>
+            <strong>付款後 <span class="text-danger">48hr</span> 內會收到開通課程連結</strong> <br>
+            <span class="text-primary clock"></span>
+          </p>
+        </div>
+        <div class="col-9 mx-auto">
+          <div class="bg-white p-3 mt-3">
+  <p class="mb-2">課程支援以下支付方式</p>
+  <ul class="list-unstyled d-flex flex-wrap mb-0" style="font-size: 14px;">
+    <li class="w-50">
+      <i class="far fa-credit-card"></i>
+      <span class="gl_fz-t3">信用卡</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-store"></i>
+      <span class="gl_fz-t3">超商付款</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-money-check-alt"></i>
+      <span class="gl_fz-t3">ATM 轉帳</span>
+    </li>
+    <li class="w-50">
+      <span class="material-icons align-bottom" style="font-size: 20px;">
+        local_atm
+      </span>
+      <span class="gl_fz-t3">銀角零卡</span>
+    </li>
+  </ul>
+</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a v-if="text.forward" v-bind:href="text.paylink" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+        <a v-else v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <!-- BEGIN PRE-FOOTER -->
+<div class="container my-3 my-5">
+  <div class="overflow">
+    <div class="fb-like" data-href="https://www.hexschool.com" data-layout="standard" data-action="like"
+      data-show-faces="true" data-share="true"></div>
+  </div>
+</div>
+
+
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-11">
+          <address class="d-flex justify-content-between flex-column flex-md-row">
+            <!-- undefined<br>
+          undefined<br>
+          undefined<br> -->
+            <!-- Phone: undefined<br> -->
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-f pe-2"></i>六角學院</a>
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-messenger pe-2"></i>m.me/hexschool</a>
+            <a href="mailto:service@hexschool.com" class="d-flex align-items-center link-white font-link-big py-1"><i
+                class="material-icons pe-2 font-link-big">mail</i>service@hexschool.com</a>
+          </address>
+          <div class="row justify-content-between align-items-end pt-md-6 pt-3">
+            <div class="col-md-5">
+              <ul class="list-unstyled">
+                <li><a href="/calendar/" class="d-block link-white font-link-small font-weight-light py-1">六角行事曆</a>
+                </li>
+                <li><a href="/courses/" class="d-block link-white font-link-small font-weight-light py-1">精選課程</a></li>
+                <li><a href="/archives/" class="d-block link-white font-link-small font-weight-light py-1">部落格</a></li>
+                <li><a href="/business/" class="d-block link-white font-link-small font-weight-light py-1">企業課程方案</a></li>
+                <li><a href="/qa/" class="d-block link-white font-link-small font-weight-light py-1">問與答</a></li>
+                <li><a href="/about/statement.html"
+                    class="d-block link-white font-link-small font-weight-light py-1">免責聲明</a></li>
+                <li><a href="/multi-talent/" class="d-block link-white font-link-small font-weight-light py-1">多角人才顧問有限公司</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 d-flex flex-column align-items-end pb-md-0 pb-5">
+              <a class="pt-4 pb-3 pt-md-1 pb-md-1" href="/" title="六角學院">
+                
+                <svg width="100px" height="24px" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#FFFFFF"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#FFFFFF"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#FFFFFF"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#FFFFFF"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#FFFFFF"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#FFFFFF"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#FFFFFF"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#FFFFFF"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+                
+              </a>
+              <p class="m-0 text-end">Copyright © 2019 HexSchool.<br class="d-block d-md-none">All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB -->
+  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column" id="footerContact">
+    <!-- 電腦版 LINE -->
+    <a href="https://hex.school/qgbMS" target="_blank"
+      class="fab-icon fab fab-line d-none d-md-flex align-items-center justify-content-center mp-click line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <!-- 行動版 LINE -->
+    <a href="https://hex.school/AmmnC" target="_blank"
+      class="fab-icon fab fab-line d-md-none align-items-center justify-content-center mp-click d-flex line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <a href="https://hex.school/P12UP" target="_blank"
+      class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-flex fb-track"
+      title="Facebook 客服">
+      <i class="fab fa-facebook-messenger text-primary rounded-0" style="font-size: 40px;"></i>
+    </a>
+  </div>
+  <!-- FAB End -->
+  <script type="application/javascript">
+  function getIP(json) {
+    window.hexUseIP = json.ip
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP" defer></script>
+
+
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+
+<![endif]-->
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
+
+<script src="/js/bs4_vendor.js?1723023774503.js"></script>
+
+
+<script src="/js/bs4_all.js?1723023774503.js"></script>
+
+
+<script src="/js/wow.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	new WOW().init();
+});
+</script>
+
+<!-- Facebook Like -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      :'760173380749493',
+    xfbml      : true,
+    version    :'v2.7'
+  });
+  // FB.AppEvents.logPageView('index');
+  // FB.AppEvents.logEvent("sentFriendRequestTesting");
+  // var params = {};
+  //   params['Title'] = '首頁';
+  //   FB.AppEvents.logEvent('pageView', null, params);
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook Like -->
+
+<!-- END PAGE-SPECIFIC PLUGINS -->
+
+<!-- BEGIN INTEGRATIONS -->
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+function generateKey(length) {
+  let key = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    key += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return key
+}
+
+function postConversionAPI (data) {
+  // https://shop.hexschool.com/api/tracker
+  $.ajax({
+    url: "https://shop.hexschool.com/api/tracker",
+    type: 'POST',
+    dataType : 'json',
+    contentType : 'application/json; charset=utf-8',
+    data: JSON.stringify(data),
+  });
+}
+
+function parseCookie() {
+  let cookieObj = {};
+  const cookieAry = document.cookie.split(';');
+  let cookie = '';
+  for (var i=0, l=cookieAry.length; i<l; ++i) {
+      cookie = cookieAry[i].trim();
+      cookie = cookie.split('=');
+      cookieObj[cookie[0]] = cookie[1];
+  }
+  return cookieObj;
+}
+
+function getCookieByName(name) {
+  let value = parseCookie()[name];
+  if (value) {
+      value = decodeURIComponent(value);
+  }
+  return value;
+}
+
+var h_event_time = Math.floor(new Date() / 1000);
+var h_event_id = generateKey(10);
+
+var h_all_data = {
+  type: 'facebook',
+  data: {
+    event_name: 'PageView',
+    event_time: h_event_time,
+    event_id: h_event_id,
+    action_source: 'website',
+    event_source_url: location.href,
+    user_data: {
+      fbc: getCookieByName('_fbc'),
+      fbp: getCookieByName('_fbp'),
+      client_user_agent: navigator.userAgent,
+      client_ip_address: window.hexUseIP,
+    },
+  }
+}
+fbq('init', '518325078292779');
+fbq('track', "PageView", {}, {event_id: h_event_id});
+postConversionAPI(h_all_data);
+
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZSWM1LR0P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZSWM1LR0P');
+  gtag('config', 'AW-926147017');
+</script>
+
+
+
+<!-- Google 再营销代码 -->
+<div class="hidden-xs-up d-none">
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 926147017;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;height:0;width:0;">
+  <img height="0" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926147017/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+  <!-- Google 再营销代码 end -->
+</div>
+
+
+
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+var distinct_id = '';
+mixpanel.init("75759612e011b856d03c2a78e8219094", {
+  loaded: function(mixpanel) {
+    // distinct_id = mixpanel.get_distinct_id();
+    // tracker.addDistinct_id(distinct_id)
+  }
+});</script><!-- end Mixpanel -->
+
+
+<!-- END INTEGRATIONS -->
+</body>
+</html>
+

@@ -1,0 +1,2917 @@
+
+
+
+
+
+  <!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-TW">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="Cache-control" content="public">
+  <meta http-equiv="max-age" content="604800" />
+  <title>Node.js 前後端產品專題班 | 六角學院</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+  <meta property="og:title" content="Node.js 前後端產品專題班 | 六角學院" />
+  <meta property="og:description" content="16 週企業專題培訓課，帶你做產品，協助 1~3 年工作經驗的前端工程師職涯加速。" />
+  
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2023%2F01%2F31%2FNode_OG-image.png?alt=media&token=7d6b95da-610e-4731-be76-c58c2b16e937" />
+  
+  <meta property="fb:app_id" content="760173380749493"/>
+  <meta property="og:site_name" content="六角學院" />
+  <meta property="og:locale" content="zh_TW" />
+
+  
+    <link rel="alternative" href="/atom.xml" title="六角學院" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta content="16 週企業專題培訓課，帶你做產品，協助 1~3 年工作經驗的前端工程師職涯加速。" name="description">
+  <meta content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript" name="keywords">
+  <meta content="六角學院" name="author">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global styles START -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  
+<link rel="stylesheet" href="/stylesheets/vue.css?1723023774491.css">
+
+  <!-- Global styles END -->
+
+  
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MH4SWT');</script>
+  <!-- End Google Tag Manager -->
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="over-flow-x node-project-training">
+  <div id="app">
+    <nav class="navbar navbar-light navbar-expand text-primary navbar-toggleable fixed-top shadow"
+  style="background-color: rgba(255, 255, 255, .85)">
+  <div class="container">
+    <a href="/" class="navbar-brand d-none d-sm-block">
+      
+      <style>
+
+.reduce-header  .header-logo {
+  height: 28px
+}
+.header-logo {
+  transition: height .3s;
+  height: 36px
+}
+</style>
+<svg class="header-logo" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#00251a"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#00251a"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#00251a"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#00251a"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#00251a"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#00251a"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#00251a"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#00251a"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+      
+    </a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <a href="#recommend"
+        class="btn btn-danger text-white ">
+        
+        別說了，我要上課
+        
+        <i class="far fa-gem"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Banner -->
+<div class="banner position-relative">
+  <video class="banner-bgVideo loading desktop" playsinline>
+    <source src="https://cdn.fs.teachablecdn.com/MG7nTiUyQteV6gEd460V" type="video/webm">
+    <source src="https://cdn.fs.teachablecdn.com/ZFgitbWTjCyakeR7EfJi" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- <div id="video-container" class="video loading d-md-none d-block"></div> -->
+  <div class="banner-bg">
+    <div class="banner-content text-white d-flex flex-column align-items-center align-items-md-stretch">
+      <h1 class="h1 fw-700 mb-3 mb-md-4">
+        <span class="d-block d-md-inline mb-2">Node.js</span>
+        前後端產品專題班
+      </h1>
+      <p class="h2 fw-700 mb-6 mb-md-7">16 週帶你做企業級產品</p>
+      <ul class="list-unstyled mb-5">
+        <li class="d-flex align-items-center h4 fw-700 mb-s">
+          <div class="dot-md dot-business me-1"></div>
+          企業專題班｜3/1 ~ 7/14
+        </li>
+        <li class="d-flex align-items-center h4 fw-700">
+          <div class="dot-md dot-beginner me-1"></div>
+          入門班｜4/10 ~ 6/30
+        </li>
+      </ul>
+      <!-- <p class="fs-md-4 mb-80 fw-700 mb-md-5">課程售價｜$32,000</p> -->
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-end">
+        <!-- <a href="#recommend" class="btn btn-primary mb-2 mb-md-0 mr-md-4">入門班熱烈報名中</a> -->
+        <div class="d-flex align-items-center">
+          <i class="bi bi-collection-play fs-5 fs-md-4 mr-s"></i>
+          <a href="https://drive.google.com/file/d/1zP1T6MwLkwgiyqGqSu4WlSTcBahhYZLO/view" target="_blank" class="infoLink">觀看課程介紹影片</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 身為工程師，你也有這些困擾嗎？ -->
+<div class="section">
+  <div class="container">
+    <h2 class="text-center h2 mb-5 mb-md-7">身為工程師<span class="d-none d-md-inline">，</span><br class="d-md-none">你也有這些困擾嗎？</h2>
+    <ul class="list-unstyled row">
+      <li class="col-md-4 mb-4 mb-md-5">
+        <img loading="lazy" src="../images/node-project-training/trouble-1.png" alt="trouble-1" class="mb-3 img-fluid w-100">
+        <p class="text-center h5 fw-700">長年單打獨鬥<br>嚮往團隊協作開發</p>
+      </li>
+      <li class="col-md-4 mb-4 mb-md-5">
+        <img loading="lazy" src="../images/node-project-training/trouble-2.png" alt="trouble-2" class="mb-3 img-fluid w-100">
+        <p class="text-center h5 fw-700">想找事業第二春<br>卻沒有好的作品</p>
+      </li>
+      <li class="col-md-4 mb-4 mb-md-5">
+        <img loading="lazy" src="../images/node-project-training/trouble-3.png" alt="trouble-3" class="mb-3 img-fluid w-100">
+        <p class="text-center h5 fw-700">想做自己的東西<br>卻不知從何下手</p>
+      </li>
+      <li class="col-md-4 mb-4 mb-md-5">
+        <img loading="lazy" src="../images/node-project-training/trouble-4.png" alt="trouble-4" class="mb-3 img-fluid w-100">
+        <p class="text-center h5 fw-700">空有年資<br>但薪水卻上不去</p>
+      </li>
+      <li class="col-md-4 mb-4 mb-md-5">
+        <img loading="lazy" src="../images/node-project-training/trouble-5.png" alt="trouble-5" class="mb-3 img-fluid w-100">
+        <p class="text-center h5 fw-700">很多技術都想學<br>越學越迷茫</p>
+      </li>
+      <li class="col-md-4 mb-4 mb-md-5">
+        <img loading="lazy" src="../images/node-project-training/trouble-6.png" alt="trouble-6" class="mb-3 img-fluid w-100">
+        <p class="text-center h5 fw-700">感覺都在做重複事情<br>成就感很低</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- 六大策略，提升專業力 -->
+<div class="strategies section position-relative">
+  <div class="bg-grid"></div>
+  <div class="container position-relative z-1">
+    <h2 class="text-center mb-4 mb-md-3">六大策略提升專業力</h2>
+    <p class="text-gray text-center h4 fw-700 mb-4 mb-md-7">
+      您的首款全方位技能提升課<span class="d-none d-md-inline">，</span><br class="d-md-none">整體性增強軟硬實力
+    </p>
+    <ul class="list-unstyled row mb-0">
+      <li class="col-md-6 mb-3 mb-md-5">
+        <div class="strategies-card">
+          <div class="strategies-icon" style="background-color: #FFF0DE;">
+            <i class="bi bi-play-btn-fill h4 mb-0" style="color: #E9A048;"></i>
+          </div>
+          <div class="strategies-content">
+            <h3 class="h4 fw-700 mb-1">程式教學</h3>
+            <p class="fw-500 mb-0">前端的影片、後端的直播課，完整補足技能上的拼圖缺口。</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-md-6 mb-3 mb-md-5">
+        <div class="strategies-card">
+          <div class="strategies-icon" style="background-color: #F1F8FE;">
+            <i class="bi bi-briefcase-fill h4 mb-0" style="color: #61A8DF;"></i>
+          </div>
+          <div class="strategies-content">
+            <h3 class="h4 fw-700 mb-1">商務主題</h3>
+            <p class="fw-500 mb-0">多人組隊，並從商務主題中挑選其一進行開發。</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-md-6 mb-3 mb-md-5">
+        <div class="strategies-card">
+          <div class="strategies-icon" style="background-color: #FCF3F3;">
+            <i class="bi bi-list-check h4 mb-0" style="color: #DF6262;"></i>
+          </div>
+          <div class="strategies-content">
+            <h3 class="h4 fw-700 mb-1">產品規劃</h3>
+            <p class="fw-500 mb-0">將由專屬教練帶您逐一完成七大里程碑，讓您學會如何「拆解流程」。</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-md-6 mb-3 mb-md-5">
+        <div class="strategies-card">
+          <div class="strategies-icon" style="background-color: #F2F8F2;">
+            <i class="bi bi-people-fill h4 mb-0" style="color: #79C482;"></i>
+          </div>
+          <div class="strategies-content">
+            <h3 class="h4 fw-700 mb-1">教學團隊</h3>
+            <p class="fw-500 mb-0">課程中除了講師外，也會有各領域教練及 UI 設計師一同參與。</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-md-6 mb-3 mb-md-5">
+        <div class="strategies-card">
+          <div class="strategies-icon" style="background-color: #F4F1FE;">
+            <i class="bi bi-arrow-left-right h4 mb-0" style="color: #9B7CFF;"></i>
+          </div>
+          <div class="strategies-content">
+            <h3 class="h4 fw-700 mb-1">企業合作</h3>
+            <p class="fw-500 mb-0">與企業主締結三大合作意向，強化學習者的技術與商業整合力。</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-md-6 mb-0 mb-md-5">
+        <div class="strategies-card">
+          <div class="strategies-icon" style="background-color: #E7EFFF;">
+            <i class="bi bi-person-arms-up h4 mb-0" style="color: #48659D;"></i>
+          </div>
+          <div class="strategies-content">
+            <h3 class="h4 fw-700 mb-1">人才媒合</h3>
+            <p class="fw-500 mb-0">我們會成為合作企業與學員間的橋樑，了解彼此需求進行媒合</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- 六大策略：分別介紹 -->
+<div class="strategy">
+  <!-- 策略選單 -->
+  <div class="strategy-menu sticky-top bg-primary">
+    <div class="container-fluid">
+      <ul class="list-unstyled row flex-wrap justify-content-center align-items-center mb-0">
+        <li class="col-4 col-lg-auto strategy-list mb-2 mb-lg-0">
+          <a href="#strategy-1" class="strategy-link" id="strategyBtn1">程式教學</a>
+        </li>
+        <li class="col-4 col-lg-auto strategy-list mb-2 mb-lg-0">
+          <a href="#strategy-2" class="strategy-link" id="strategyBtn2">商務主題</a>
+        </li>
+        <li class="col-4 col-lg-auto strategy-list mb-2 mb-lg-0">
+          <a href="#strategy-3" class="strategy-link" id="strategyBtn3">產品規劃</a>
+        </li>
+        <li class="col-4 col-lg-auto strategy-list">
+          <a href="#strategy-4" class="strategy-link" id="strategyBtn4">教學團隊</a>
+        </li>
+        <li class="col-4 col-lg-auto strategy-list">
+          <a href="#strategy-5" class="strategy-link" id="strategyBtn5">企業合作</a>
+        </li>
+        <li class="col-4 col-lg-auto strategy-list">
+          <a href="#strategy-6" class="strategy-link" id="strategyBtn6">人才媒合</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 策略一 -->
+  <div id="strategy-1">
+    <div class="section">
+      <div class="container">
+        <h2 class="text-center text-md-start mb-3 mb-md-4">策略一：程式教學</h2>
+        <p class="text-center text-md-start text-gray-light h4 fw-700 mb-5 mb-md-6">
+          前端的影片、後端的直播課<span class="d-none d-md-inline">，</span><br class="d-md-none">完整補足技能上的拼圖缺口。
+        </p>
+        <div class="row pt-4 mb-4">
+          <div class="col-md-6 mb-6 mb-md-0">
+            <div class="strategy-descriptionCard h-100">
+              <h3 class="h5 mb-0">16 週期間影音課看到飽</h3>
+              <p class="h-100 text-center h5 fw-500 mb-0">六角影音全部都能觀看(全組合包+React+去年 Node 直播班錄影)，6/18 截止觀看。</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="strategy-descriptionCard h-100">
+              <h3 class="h5 mb-0">8 堂 Node.js 直播課</h3>
+              <p class="h-100 text-center h5 fw-500 mb-0">4/10~6/7 期間，週三、五 20:00~22:30 線上傳授 Node.js 後端技術，自己開 API 不求人。授課期間同時對齊專題進度，總計 32 小時，並提供錄影檔</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-2">
+          <p class="me-3 mb-0">
+            <span class="d-inline-block dot-sm dot-beginner me-1"></span>
+            入門班
+          </p>
+          <p class="mb-0">
+            <span class="d-inline-block dot-sm dot-business me-1"></span>
+            企業專題班
+          </p>
+        </div>
+        <ul class="list-unstyled strategy-learningList mb-5 mb-md-6">
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">4/10(三)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">MongoDB 資料庫管理</span>
+            <!-- <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 mr-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div> -->
+            <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+            <span class="d-inline-block dot-sm dot-business"></span>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">4/12(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">Node.js NPM 整合 MongoDB</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">4/17(三)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">從 express MVC 架構建立 RESTful API</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">4/19(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">打造全端 (Full Stack) 網站架構</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">4/26(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">Express middleware 異常狀態處理</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">5/3(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">JWT 身份驗證機制</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">5/10(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">Imgur 第三方圖床服務 API 介接</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">5/17(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">實作一個 FB、IG 牆吧！ 專題牆</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-beginner me-1 me-md-2"></span>
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">5/24(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">Docker 基本運用</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">5/31(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">雲服務知識</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center">
+            <span class="strategy-learningList-date fs-md-5 fw-700 me-3 me-md-5">6/7(五)</span>
+            <span class="fs-md-5 fw-700 me-1 me-md-3">雲服務與 Docker 部署</span>
+            <div class="d-flex">
+              <span class="d-inline-block dot-sm dot-business"></span>
+            </div>
+          </li>
+        </ul>
+        <!-- 技能樹 -->
+        <div class="strategy-skillTree">
+          <h4 class="strategy-skillTreeTitle bg-info-dark text-center mb-3">Node.js 前後端產品專題班</h4>
+          <div class="d-flex gx-m mb-3">
+            <div class="strategy-skillTreeBackend">
+              <p class="strategy-skillTreeTitle bg-info-light text-center fs-md-5 fw-700 mb-3">
+                後端應用程式
+              </p>
+              <div class="strategy-skillTreeCard mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-center">
+                  <img loading="lazy" src="../images/node-project-training/icon-nodejs.svg" alt="Node.js" class="img-fluid me-2 d-none d-md-block">
+                  <p class="fs-md-5 fw-700 mb-0">Node.js</p>
+                </div>
+              </div>
+              <div class="strategy-skillTreeCard mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-center">
+                  <img loading="lazy" src="../images/node-project-training/icon-mongodb.svg" alt="Node.js" class="img-fluid me-2 d-none d-md-block">
+                  <p class="fs-md-5 fw-700 mb-0">MongoDB</p>
+                </div>
+              </div>
+              <div class="strategy-skillTreeCard mb-3">
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="fs-md-5 fw-700 mb-0">Express</p>
+                </div>
+              </div>
+              <p class="strategy-skillTreeTitle bg-info-light text-center fs-md-5 fw-700 mb-3">
+                伺服器部署
+              </p>
+              <div class="strategy-skillTreeCard mb-3">
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="fs-md-5 fw-700 mb-0">Render</p>
+                </div>
+              </div>
+              <div class="strategy-skillTreeCard">
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="text-center fs-md-5 fw-700 mb-0">MongoDB Atlas</p>
+                </div>
+              </div>
+            </div>
+            <div class="strategy-skillTreeApp h-100">
+              <p class="strategy-skillTreeTitle bg-info-light text-center fs-md-5 fw-700 mb-3">
+                應用場景
+              </p>
+              <div class="d-flex gx-m">
+                <div class="w-50">
+                  <div class="strategy-skillTreeCard mb-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <p class="text-center fs-md-5 fw-700 mb-0">RESTful API 設計</p>
+                    </div>
+                  </div>
+                  <div class="strategy-skillTreeCard mb-3">
+                    <div class="d-flex flex-wrap flex-column align-items-center justify-content-center">
+                      <img src="../images/node-project-training/icon-google.svg" alt="google" class="img-fluid mb-2 d-none d-md-block">
+                      <p class="text-center fs-md-5 fw-700 mb-0">Google 第三方登入</p>
+                    </div>
+                  </div>
+                  <div class="strategy-skillTreeCard mb-3">
+                    <div class="d-flex flex-wrap flex-column align-items-center justify-content-center">
+                      <img loading="lazy" src="../images/node-project-training/icon-websocket.svg" alt="websocket" class="img-fluid mb-2 d-none d-md-block">
+                      <p class="text-center fs-md-5 fw-700 mb-0">WebSocket 即時訊息設計</p>
+                    </div>
+                  </div>
+                  <div class="strategy-skillTreeCard">
+                    <div class="d-flex flex-wrap flex-column align-items-center justify-content-center">
+                      <img loading="lazy" src="../images/node-project-training/icon-firebase.svg" alt="firebase" class="img-fluid mb-2 d-none d-md-block">
+                      <p class="text-center fs-md-5 fw-700 mb-0">Firebase Storage</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-50">
+                  <div class="strategy-skillTreeCard mb-3">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center">
+                      <p class="text-center fs-md-5 fw-700 mb-0">middleware</p>
+                    </div>
+                  </div>
+                  <div class="strategy-skillTreeCard mb-3">
+                    <div class="d-flex flex-wrap flex-column align-items-center justify-content-center">
+                      <img src="../images/node-project-training/icon-google.svg" alt="google" class="img-fluid mb-2 d-none d-md-block">
+                      <p class="text-center fs-md-5 fw-700 mb-0">Google API Email 發送</p>
+                    </div>
+                  </div>
+                  <div class="strategy-skillTreeCard mb-3">
+                    <div class="d-flex flex-wrap flex-column align-items-center justify-content-center">
+                      <img src="../images/node-project-training/icon-jwt.svg" alt="JWT" class="img-fluid mb-2 d-none d-md-block">
+                      <p class="text-center fs-md-5 fw-700 mb-0">JWT 身份權限限制</p>
+                    </div>
+                  </div>
+                  <div class="strategy-skillTreeCard">
+                    <div class="d-flex flex-wrap flex-column align-items-center justify-content-center">
+                      <div class="d-flex">
+                        <img src="../images/node-project-training/icon-neweb.svg" alt="neweb" class="img-fluid mb-2 d-none d-md-block me-2">
+                        <img src="../images/node-project-training/icon-ecpay.svg" alt="ecpay" class="img-fluid mb-2 d-none d-md-block">
+                      </div>
+                      <p class="text-center fs-md-5 fw-700 mb-0">第三方金流 藍新、綠界金流</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="strategy-skillTreeTitle bg-secondary text-center text-white mb-3">容器化、雲服務（企業專題班專屬）</h5>
+          <div class="d-flex gx-m">
+            <div class="w-50">
+              <div class="strategy-skillTreeCard mb-3">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <img src="../images/node-project-training/icon-docker.svg" alt="docker" class="img-fluid mb-2 d-none d-md-block">
+                  <p class="text-center fs-md-5 fw-700 mb-0">Docker</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-50">
+              <div class="strategy-skillTreeCard mb-3">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  <img src="../images/node-project-training/icon-cloud.svg" alt="cloud" class="img-fluid mb-2 d-none d-md-block">
+                  <p class="text-center fs-md-5 fw-700 mb-0">雲服務 CI/CD 部署</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 策略二 -->
+  <div id="strategy-2">
+    <div class="section bg-gray-lighter">
+      <div class="container">
+        <h2 class="text-center text-md-start mb-3 mb-md-4">策略二：商務主題</h2>
+        <div class="d-flex flex-column align-items-center flex-md-row justify-content-md-between mb-2 mb-md-6">
+          <p class="text-gray fs-md-4 fw-700 mb-3 mb-md-0">多人組隊，並從各商務主題中挑選其一進行開發</p>
+          <ul class="list-unstyled align-self-end d-flex text-gray fs-md-4 fw-700 mb-0">
+            <li class="d-flex align-items-center me-4">
+              <div class="dot-md dot-beginner me-1"></div>
+              入門班
+            </li>
+            <li class="d-flex align-items-center">
+              <div class="dot-md dot-business me-1"></div>
+              企業專題班
+            </li>
+          </ul>
+        </div>
+        <ol class="list-unstyled row flex-nowrap flex-md-wrap gy-normal mb-0 overflow-auto">
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">01</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-beginner me-2"></div>
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">網路社交平台</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>社交性設計</li>
+                  <li>追蹤功能</li>
+                  <li>即時聊天室</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">02</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-beginner me-2"></div>
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">電商交易平台</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>產品訂單設計</li>
+                  <li>第三方金流串接</li>
+                  <li>購物車</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">03</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-beginner me-2"></div>
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">資料檢索網站</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>資料結構設計</li>
+                  <li>資料儀表板</li>
+                  <li>搜尋功能強化</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">04</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">影音課程平台</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>影音串流技術</li>
+                  <li>影音播放介面</li>
+                  <li>課程管理架構</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">05</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">活動票務系統</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>票務交易</li>
+                  <li>第三方支付</li>
+                  <li>行動取票介面</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">06</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">群眾募資網站</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>SEO</li>
+                  <li>資金數據計算</li>
+                  <li>產品交付流程</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">07</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">專業人才媒合網站</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>大量的人才資料建構</li>
+                  <li>複雜的搜尋功能</li>
+                  <li>大量的表單介面優化</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-4 col-9">
+            <div class="strategy-themeCard">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <p class="text-primary h2 fw-900 mb-0">08</p>
+                <div class="d-flex">
+                  <div class="dot-md dot-business"></div>
+                </div>
+              </div>
+              <h3 class="fw-700">知識內容訂閱服務</h3>
+              <div class="strategy-themeTags">
+                <p class="text-gray-light fs-md-5 fw-500">主題挑戰</p>
+                <ul class="list-unstyled d-flex flex-column align-items-start fs-md-5 fw-500 mb-0">
+                  <li>易用的頁面編輯器</li>
+                  <li>訂閱制服務設計</li>
+                  <li>會員管理機制</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- 策略三 -->
+  <div id="strategy-3">
+    <div class="section">
+      <div class="container">
+        <h2 class="text-center text-md-start mb-3 mb-md-4">策略三：產品規劃</h2>
+        <p class="text-center text-md-start text-gray-light fs-md-4 fw-700 mb-5 mb-md-6">
+          六角學院兩年來引導超過 500 人次專題開發，從而歸納出合適的團隊協作流程。<br>
+          在此，我們將會指派專屬的專題教練，並透過里程碑的方式逐一完成。
+        </p>
+        <div class="row pt-4 mb-4">
+          <div class="col-md-6 mb-6 mb-md-0">
+            <div class="strategy-descriptionCard h-100">
+              <h3 class="h5 mb-0">專題教練</h3>
+              <p class="h-100 text-center h5 fw-500 mb-0">成員包含業界三年以上的工程師、創業中的技術長、上一梯血淚完課的學長姐</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="strategy-descriptionCard h-100">
+              <h3 class="h5 mb-0">里程碑</h3>
+              <p class="h-100 text-center h5 fw-500 mb-0">要成為高手需要學會「拆解流程」，因此我們提供各大里程碑，引導同學們 “辛苦但順暢” 的方式完成專題作品。</p>
+            </div>
+          </div>
+        </div>
+        <img src="../images/node-project-training/milestone-pc.png" alt="七大里程碑" class="img-fluid d-md-block d-none">
+        <img src="../images/node-project-training/milestone-mobile.png" alt="七大里程碑" class="img-fluid d-md-none">
+      </div>
+    </div>
+  </div>
+
+  <!-- 策略四 -->
+  <div id="strategy-4">
+    <div class="section strategy-team">
+      <div class="container">
+        <h2 class="text-center text-md-start mb-3 mb-md-4">策略四：教學團隊</h2>
+        <p class="text-center text-md-start text-gray-light fs-md-4 fw-700 mb-5 mb-md-6">
+          六角最多的就是人…。課程中除了專業講師外，也會包含各領域教練一同參與，<br>
+          你想要專精雲服務、專案管理、系統規劃、創業知識等，在這邊都有不同的人能與您開槓。
+        </p>
+        <h3 class="strategy-teamTitle d-flex align-items-center justify-content-center bg-secondary-light">
+          <span class="h3 fw-700 mr-s mb-0">授課老師</span>
+          <span class="text-gray h5 fw-700 mb-0">2人</span>
+        </h3>
+        <div class="row justify-content-center mb-5 mb-md-6">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card strategy-teamTeacher">
+              <img loading="lazy" src="../images/node-project-training/teacher-gonsakon.png" alt="洧杰老師" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h5 class="card-title d-flex align-items-center h4 fw-700 mb-3">洧杰 <span class="teamTag teamTag-node">Node</span></h5>
+                <ul class="list-unstyled text-gray mb-0">
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    影音課授課學生數超過 30,000
+                  </li>
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    火箭隊軟體培訓營前端教練
+                  </li>
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    Webconf 2023 研討會共同召集人
+                  </li>
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    ModernWeb、MOPCON 技術研討會講者
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card strategy-teamTeacher">
+              <img loading="lazy" src="../images/node-project-training/teacher-casper.png" alt="卡斯伯老師" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h5 class="card-title d-flex align-items-center h4 fw-700 mb-3">卡斯伯 <span class="teamTag teamTag-cloud">Cloud</span></h5>
+                <ul class="list-unstyled text-gray mb-0">
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    2021 {Laravel x Vue} Conf 技術講者
+                  </li>
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    Modern Web 研討會講者
+                  </li>
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    連續六屆 IT 鐵人邦獲選紀錄
+                  </li>
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    線上課程超過萬人註冊
+                  </li>
+                  <li class="d-flex">
+                    <span class="material-symbols-outlined mt-1 me-1">
+                      play_arrow
+                    </span>
+                    JavaScript 技術書籍：2022/12 繁體中文書銷售排行第 1 名
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="strategy-teamTitle d-flex align-items-center justify-content-center bg-secondary-light">
+          <span class="h3 fw-700 mr-s mb-0">
+            <span class="text-primary">入門班</span>專題教練
+          </span>
+          <span class="text-gray h5 fw-700 mb-0">約 6人</span>
+        </h3>
+        <img src="../images/node-project-training/team-coachBeginner.png" alt="入門班專題教練" class="img-fluid w-100 mb-5 mb-md-6">
+        <h3 class="strategy-teamTitle d-flex align-items-center justify-content-center bg-secondary-light">
+          <span class="h3 fw-700 mr-s mb-0">
+            <span class="text-primary">企業專題班</span>專題教練
+          </span>
+          <span class="text-gray h5 fw-700 mb-0">約 14人</span>
+        </h3>
+        <div class="mb-5 mb-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="strategy-teamCoachCard d-flex">
+                <img src="../images/node-project-training/coach-Yuanlin.png" alt="Yuanlin" class="img-fluid me-3">
+                <div class="media-body">
+                  <h5 class="h4 fw-700 mt-0">Yuanlin</h5>
+                  <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                    <li>・Zeabur 雲端部署平台創辦人</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="strategy-teamCoachCard d-flex">
+                <img loading="lazy" src="../images/node-project-training/coach-小麥.png" alt="小麥" class="img-fluid me-3">
+                <div class="media-body">
+                  <h5 class="h4 fw-700 mt-0">小麥</h5>
+                  <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                    <li>・電獺前端工程師</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="strategy-teamCoachCard d-flex">
+                <img loading="lazy" src="../images/node-project-training/coach-Ryder.png" alt="Ryder" class="img-fluid me-3">
+                <div class="media-body">
+                  <h5 class="h4 fw-700 mt-0">Ryder</h5>
+                  <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                    <li>・駐點 1111 前端工程師</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="strategy-teamCoachCard d-flex">
+                <img loading="lazy" src="../images/node-project-training/coach-Erik.png" alt="Erik" class="img-fluid me-3">
+                <div class="media-body">
+                  <h5 class="h4 fw-700 mt-0">Erik</h5>
+                  <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                    <li>・PyCon 2022 講者</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="coachBtn">
+            <button class="btn strategy-teamBtn d-block mx-auto collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoach" aria-expanded="false" aria-controls="collapseCoach">
+              <i class="bi bi-chevron-down text-secondary"></i>
+            </button>
+          </div>
+          <div class="collapse w-100" id="collapseCoach">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img src="../images/node-project-training/coach-Ruta.png" alt="Ruta Yu" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">Ruta Yu</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・AI 新創前端工程師</li>
+                      <li>・上櫃公司產品經理</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-阿劍.png" alt="阿劍" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">阿劍</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・凱鈿行動科技前端工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-Tim.png" alt="Tim" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">Tim</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・龍騰文化前端工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-Yifang.png" alt="Yifang" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">Yifang</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・前端工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-Brook.png" alt="Brook" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">Brook</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・法人機構專案管理</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-鉛筆.png" alt="鉛筆" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">鉛筆</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・前端接案工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-rChinnnn.png" alt="rChinnnn" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">rChinnnn</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・Web ERP 全端工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-黃士桓.png" alt="黃士桓" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">黃士桓</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・前端工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-kimn.png" alt="kimn" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">kimn</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・前端工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="strategy-teamCoachCard d-flex">
+                  <img loading="lazy" src="../images/node-project-training/coach-Alpha.png" alt="Alpha" class="img-fluid me-3">
+                  <div class="media-body">
+                    <h5 class="h4 fw-700 mt-0">Alpha</h5>
+                    <ul class="list-unstyled text-gray fs-md-5 mb-0">
+                      <li>・交易所前端工程師</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="strategy-teamTitle d-flex align-items-center justify-content-center bg-secondary-light">
+          <span class="h3 fw-700 mr-s mb-0">
+            UI 設計師團隊
+          </span>
+          <span class="text-gray h5 fw-700 mb-0">約 15人</span>
+        </h3>
+        <img src="../images/node-project-training/team-ui.png" alt="UI 設計師團隊" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+
+  <!-- 策略五 -->
+  <div id="strategy-5">
+    <div class="section bg-primary-light">
+      <div class="container">
+        <h2 class="text-center text-md-start mb-3 mb-md-4">策略五：企業合作</h2>
+        <p class="text-center text-md-start text-gray-light fs-md-4 fw-700 mb-5 mb-md-6">
+          強大的能力就需要在強大的企業前展示<br>
+          我們將與企業主們締結三大合作意向，強化學習者的技術與商業整合力。
+        </p>
+        <ol class="list-unstyled row gy-sm mb-5">
+          <li class="col-md-4">
+            <div class="strategy-cooperationCard">
+              <p class="text-primary h2 fw-900 mb-3">01</p>
+              <h3 class="fw-700 mb-3 mb-md-4">企業分享</h3>
+              <p class="fs-md-5 fw-500">
+                除了課程內容外，<span class="text-secondary">我們將邀請企業講師六月每週三於六角頻道分享相關議題</span>（錄影影片僅提供給予本課程及特定付費學員）。
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="strategy-cooperationCard">
+              <p class="text-primary h2 fw-900 mb-3">02</p>
+              <h3 class="fw-700 mb-3 mb-md-4">優先推薦</h3>
+              <p class="fs-md-5 fw-500">
+                我們將與廠商簽訂<span class="text-secondary">人才媒合合約</span>，當廠商有人才需求時，將會優先提供合適的人才。
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="strategy-cooperationCard">
+              <p class="text-primary h2 fw-900 mb-3">03</p>
+              <h3 class="fw-700 mb-3 mb-md-4">評審建議</h3>
+              <p class="fs-md-5 fw-500">
+                在發表會當天，<span class="text-secondary">會邀請這些廠商一同參與各位的專題介紹</span>，並給予同學們在執行上的技術或商業建議。
+              </p>
+            </div>
+          </li>
+        </ol>
+        <ul class="list-unstyled row gy-normal mb-0">
+          <li class="col-6 col-md-4">
+            <div class="strategy-cooperateBusiness">
+              <img src="../images/node-project-training/hahow.svg" alt="Hahow" class="img-fluid mb-s">
+              <p class="fs-md-5 fw-700 mb-0">Hahow</p>
+            </div>
+          </li>
+          <li class="col-6 col-md-4">
+            <div class="strategy-cooperateBusiness">
+              <img src="../images/node-project-training/zeabur.svg" alt="Zeabur" class="img-fluid mb-s" width="60">
+              <p class="fs-md-5 fw-700 mb-0">Zeabur</p>
+            </div>
+          </li>
+          <li class="col-6 col-md-4">
+            <div class="strategy-cooperateBusiness">
+              <img src="../images/node-project-training/凱鈿.svg" alt="凱鈿" class="img-fluid mb-s">
+              <p class="text-center fs-md-5 fw-700 mb-0">凱鈿<br class="d-lg-none">行動科技</p>
+            </div>
+          </li>
+          <li class="col-6 col-md-4">
+            <div class="strategy-cooperateBusiness">
+              <img src="../images/node-project-training/凌誠科技.svg" alt="凌誠科技" class="img-fluid mb-s">
+              <p class="fs-md-5 fw-700 mb-0">凌誠科技</p>
+            </div>
+          </li>
+          <li class="col-6 col-md-4">
+            <div class="strategy-cooperateBusiness">
+              <img src="../images/node-project-training/funliday.svg" alt="Funliday" class="img-fluid mb-s">
+              <p class="fs-md-5 fw-700 mb-0">Funliday</p>
+            </div>
+          </li>
+          <li class="col-6 col-md-4">
+            <div class="strategy-cooperateBusiness">
+              <img src="../images/node-project-training/titansoft.svg" alt="Titansoft" class="img-fluid mb-s">
+              <p class="fs-md-5 fw-700 mb-0">新加坡商<br class="d-md-none">鈦坦科技</p>
+            </div>
+          </li>
+          <li class="col-6 col-md-4">
+            <div class="strategy-cooperateBusiness">
+              <img src="../images/node-project-training/frontier.svg" alt="Frontier" class="img-fluid mb-s">
+              <p class="fs-md-5 fw-700 mb-0">Frontier</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 策略六 -->
+  <div id="strategy-6">
+    <div class="section strategy-match">
+      <div class="container">
+        <h2 class="text-center text-md-start mb-3 mb-md-4">策略六：人才媒合</h2>
+        <p class="text-center text-md-start text-gray-light fs-md-4 fw-700 mb-5 mb-md-6">
+          不一定是公司不好，而是公司不適合自己。
+        </p>
+        <div class="strategy-matchInterest text-center mb-5 mb-md-6">
+          <h3 class="mb-s">對於合作的企業職缺有興趣嗎？</h3>
+          <p class="text-gray fs-md-5 fw-500 mb-1">我們會深度的作為企業與學員間的橋樑</p>
+          <p class="text-gray fs-md-5 fw-500 mb-0">了解彼此需求與能力進行媒合，讓員工與企業找到合適的彼此。</p>
+        </div>
+        <div class="d-flex">
+          <div class="strategy-matchCard strategy-matchTalent position-relative">
+            <div class="strategy-matchIcon bg-info">
+              <i class="bi bi-person-check-fill"></i>
+            </div>
+            <img src="../images/node-project-training/match-arrow.svg" alt="match arrow" class="arrow arrow-talent">
+            <h4 class="text-center h3 mb-4 mb-md-6">中高階人才</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="reqList d-flex align-items-start">
+                <div class="reqIcon me-5">
+                  <i class="bi bi-wrench-adjustable fs-4"></i>
+                </div>
+                <div class="reqContent">
+                  <h5 class="mb-1 mb-md-2">技能</h5>
+                  <p class="text-gray fs-md-5">具備 Node.js 前後端開發經驗、團隊協作、雲服務部署、專案經驗</p>
+                </div>
+              </li>
+              <li class="reqList d-flex align-items-start">
+                <div class="reqIcon me-5">
+                  <i class="bi bi-briefcase-fill fs-4"></i>
+                </div>
+                <div class="reqContent">
+                  <h5 class="mb-1 mb-md-2">工作年資</h5>
+                  <p class="text-gray fs-md-5">2 年以上</p>
+                </div>
+              </li>
+              <li class="reqList d-flex align-items-start">
+                <div class="reqIcon me-5">
+                  <i class="bi bi-mortarboard-fill fs-4"></i>
+                </div>
+                <div class="reqContent">
+                  <h5 class="mb-1 mb-md-2">學歷</h5>
+                  <p class="text-gray fs-md-5">大學以上</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="strategy-matchCard strategy-matchBusiness position-relative">
+            <div class="strategy-matchIcon bg-info">
+              <i class="bi bi-building-fill"></i>
+            </div>
+            <img src="../images/node-project-training/match-arrow.svg" alt="match arrow" class="arrow arrow-business">
+            <h4 class="text-center h3 mb-4 mb-md-6">徵才企業</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="reqList d-flex align-items-start">
+                <div class="reqIcon me-5">
+                  <i class="bi bi-currency-dollar fs-4"></i>
+                </div>
+                <div class="reqContent">
+                  <h5 class="mb-1 mb-md-2">薪資</h5>
+                  <p class="text-gray fs-md-5">年薪 80 萬起</p>
+                </div>
+              </li>
+              <li class="reqList d-flex align-items-start">
+                <div class="reqIcon me-5">
+                  <i class="bi bi-buildings-fill fs-4"></i>
+                </div>
+                <div class="reqContent">
+                  <h5 class="mb-1 mb-md-2">產業</h5>
+                  <p class="text-gray fs-md-5">網際網路相關業</p>
+                </div>
+              </li>
+              <li class="reqList d-flex align-items-start">
+                <div class="reqIcon me-5">
+                  <i class="bi bi-geo-alt-fill fs-4"></i>
+                </div>
+                <div class="reqContent">
+                  <h5 class="mb-1 mb-md-2">位置</h5>
+                  <p class="text-gray fs-md-5">台北市</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 用深厚的實力，打造落地等級的實戰網站 -->
+<div class="section">
+  <div class="container">
+    <h2 class="text-center mb-3 mb-md-4">用深厚的實力<span class="d-none d-md-inline">，</span><br class="d-md-none">打造落地等級的實戰網站</h2>
+    <div class="text-center mb-5 mb-md-7">
+      <a href="https://works.hexschool.io/#/?tag=Node" target="_blank" class="btn btn-primary text-white fs-5">觀看歷屆學長姐作品</a>
+    </div>
+  </div>
+  <!-- 歷屆作品 -->
+  <div class="workWebsite overflow-hidden">
+    <!-- 上層 -->
+    <div class="d-flex">
+      <div class="workWebsite-swiper">
+        <a target="_blank" rel="noopener" href="https://superhandy-frontend.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work1"></div>
+          <p class="workWebsite-title fw-700 mb-0">超人幫手</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://true-salary-story-client.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work2"></div>
+          <p class="workWebsite-title fw-700 mb-0">真薪話</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://kerickkkkk.github.io/love_in_no_words_front_end/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work3"></div>
+          <p class="workWebsite-title fw-700 mb-0">傲嬌甜點 POS 系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://hookloop-client.onrender.com/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work4"></div>
+          <p class="workWebsite-title fw-700 mb-0">HookLoop</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://www.cine-pos.com/intro/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work5"></div>
+          <p class="workWebsite-title fw-700 mb-0">CinePOS 影城系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://wowcho-ui.onrender.com/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work6"></div>
+          <p class="workWebsite-title fw-700 mb-0">渦潮 WowCho</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://rabbitfund-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work7"></div>
+          <p class="workWebsite-title fw-700 mb-0">倍而兔募資平台</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://lunar-sigma.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work8"></div>
+          <p class="workWebsite-title fw-700 mb-0">Lunar 生產力工具</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://tripplus.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work9"></div>
+          <p class="workWebsite-title fw-700 mb-0">TripPlus 旅行加</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://point-pro-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work10"></div>
+          <p class="workWebsite-title fw-700 mb-0">PointPro 餐飲 POS 系統</p>
+        </a>
+      </div>
+      <div class="workWebsite-swiper">
+        <a target="_blank" rel="noopener" href="https://superhandy-frontend.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work1"></div>
+          <p class="workWebsite-title fw-700 mb-0">超人幫手</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://true-salary-story-client.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work2"></div>
+          <p class="workWebsite-title fw-700 mb-0">真薪話</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://kerickkkkk.github.io/love_in_no_words_front_end/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work3"></div>
+          <p class="workWebsite-title fw-700 mb-0">傲嬌甜點 POS 系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://hookloop-client.onrender.com/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work4"></div>
+          <p class="workWebsite-title fw-700 mb-0">HookLoop</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://www.cine-pos.com/intro/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work5"></div>
+          <p class="workWebsite-title fw-700 mb-0">CinePOS 影城系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://wowcho-ui.onrender.com/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work6"></div>
+          <p class="workWebsite-title fw-700 mb-0">渦潮 WowCho</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://rabbitfund-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work7"></div>
+          <p class="workWebsite-title fw-700 mb-0">倍而兔募資平台</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://lunar-sigma.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work8"></div>
+          <p class="workWebsite-title fw-700 mb-0">Lunar 生產力工具</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://tripplus.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work9"></div>
+          <p class="workWebsite-title fw-700 mb-0">TripPlus 旅行加</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://point-pro-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work10"></div>
+          <p class="workWebsite-title fw-700 mb-0">PointPro 餐飲 POS 系統</p>
+        </a>
+      </div>
+    </div>
+    <!-- 下層 -->
+    <div class="d-none d-md-flex">
+      <div class="workWebsite-swiper">
+        <a target="_blank" rel="noopener" href="https://rabbitfund-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work7"></div>
+          <p class="workWebsite-title fw-700 mb-0">倍而兔募資平台</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://lunar-sigma.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work8"></div>
+          <p class="workWebsite-title fw-700 mb-0">Lunar 生產力工具</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://tripplus.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work9"></div>
+          <p class="workWebsite-title fw-700 mb-0">TripPlus 旅行加</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://point-pro-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work10"></div>
+          <p class="workWebsite-title fw-700 mb-0">PointPro 餐飲 POS 系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://superhandy-frontend.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work1"></div>
+          <p class="workWebsite-title fw-700 mb-0">超人幫手</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://true-salary-story-client.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work2"></div>
+          <p class="workWebsite-title fw-700 mb-0">真薪話</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://kerickkkkk.github.io/love_in_no_words_front_end/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work3"></div>
+          <p class="workWebsite-title fw-700 mb-0">傲嬌甜點 POS 系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://hookloop-client.onrender.com/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work4"></div>
+          <p class="workWebsite-title fw-700 mb-0">HookLoop</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://www.cine-pos.com/intro/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work5"></div>
+          <p class="workWebsite-title fw-700 mb-0">CinePOS 影城系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://wowcho-ui.onrender.com/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work6"></div>
+          <p class="workWebsite-title fw-700 mb-0">渦潮 WowCho</p>
+        </a>
+      </div>
+      <div class="workWebsite-swiper">
+        <a target="_blank" rel="noopener" href="https://rabbitfund-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work7"></div>
+          <p class="workWebsite-title fw-700 mb-0">倍而兔募資平台</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://lunar-sigma.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work8"></div>
+          <p class="workWebsite-title fw-700 mb-0">Lunar 生產力工具</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://tripplus.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work9"></div>
+          <p class="workWebsite-title fw-700 mb-0">TripPlus 旅行加</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://point-pro-frontend.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work10"></div>
+          <p class="workWebsite-title fw-700 mb-0">PointPro 餐飲 POS 系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://superhandy-frontend.zeabur.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work1"></div>
+          <p class="workWebsite-title fw-700 mb-0">超人幫手</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://true-salary-story-client.vercel.app/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work2"></div>
+          <p class="workWebsite-title fw-700 mb-0">真薪話</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://kerickkkkk.github.io/love_in_no_words_front_end/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work3"></div>
+          <p class="workWebsite-title fw-700 mb-0">傲嬌甜點 POS 系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://hookloop-client.onrender.com/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work4"></div>
+          <p class="workWebsite-title fw-700 mb-0">HookLoop</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://www.cine-pos.com/intro/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work5"></div>
+          <p class="workWebsite-title fw-700 mb-0">CinePOS 影城系統</p>
+        </a>
+        <a target="_blank" rel="noopener" href="https://wowcho-ui.onrender.com/#/" class="workWebsite-card">
+          <div class="workWebsite-img workWebsite-work6"></div>
+          <p class="workWebsite-title fw-700 mb-0">渦潮 WowCho</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 活動時間軸 -->
+<div class="section timeline">
+  <div class="container">
+    <h2 class="timeline-title bg-secondary text-white d-flex align-items-center justify-content-center h3 fw-700 mb-4">
+      <i class="bi bi-file-earmark-text-fill me-3"></i>
+      活動時間軸
+    </h2>
+    <ul class="list-unstyled d-flex text-gray fw-700 mb-2">
+      <li class="d-flex align-items-center me-3">
+        <div class="dot-sm dot-beginner me-1"></div>
+        入門班
+      </li>
+      <li class="d-flex align-items-center">
+        <div class="dot-sm dot-business me-1"></div>
+        企業專題班
+      </li>
+    </ul>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5 mb-2">
+            <div class="dot-sm dot-business me-1"></div>
+            2/19(一)~2/29(四)
+          </div>
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-beginner me-1"></div>
+            2/19(一)~3/24(日)
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            開放報名
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">你沒看錯，報名時間不到兩週，為了避免找到雷隊友，我們要篩選最積極、有決心想改變的開發者。</p>
+          <!-- <p class="text-gray fs-md-5 mb-0">入門班報名倒數中，歡迎想學好 Node.js 技能的開發者加入我們。</p> -->
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-business me-1"></div>
+            2/19(一)~3/1(五) 
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            填寫能力分組表單
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">幫你尋找神隊友，協助找能力相近的軟體工程師組隊</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-business me-1"></div>
+            3/8(五) 
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            協助分組完畢
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">5 人一組，共計 30 組，開始展開組隊任務</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-business me-1"></div>
+            3/16(六)
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            台中、高雄、海外場實體聚會
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">10:00~17:00 線下專題工作坊，組員、專題教練線下相見歡</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-business me-1"></div>
+            3/17(日)
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            台北場實體聚會
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">10:00~17:00 線下專題工作坊，組員、專題教練線下相見歡</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-beginner me-1"></div>
+            3/28（四）
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            入門班線上開學典禮
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">組員、專題教練線上相見歡</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-business me-1"></div>
+            3/18(一)~4/3(三)
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            培養團隊默契
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">提供小組任務，鍛鍊非同步遠端開發團隊協作流程</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-business me-1"></div>
+            3/18(一)~7/5(六)
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            專題教練陪跑
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">總計 16 週，每週各組會與專題教練挑一天對齊專題進度</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-beginner me-1"></div>
+            4/10(三)~5/17(五)
+          </div>
+          <div class="d-flex align-items-center fw-700 fs-md-5 mb-2">
+            <div class="dot-sm dot-business me-1"></div>
+            4/10(三)~6/7(五)
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            Node.js 直播授課
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">分享產品團隊常見工作流程，與常見業界技術介紹</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-business me-1"></div>
+            4/10(三) 前
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            確認企業題目範圍
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">確認專題範圍，交接 UI 設計師進行設計</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-beginner me-1"></div>
+            6/30(日)
+          </div>
+          <div class="d-flex align-items-center fw-700 fs-md-5 mb-2">
+            <div class="dot-sm dot-business me-1"></div>
+            7/14(日)
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center text-secondary h4 mb-2 mb-md-3">
+            線上專題成果發表會
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">邀請協辦招募廠商，線上參與成果發表會</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-card mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="timeline-date">
+          <div class="d-flex align-items-center fw-700 fs-md-5">
+            <div class="dot-sm dot-beginner me-1"></div>
+            <div class="dot-sm dot-business me-1"></div>
+            7/15(一) 後
+          </div>
+        </div>
+        <div class="timeline-description">
+          <h3 class="d-flex align-items-center h4 mb-2 mb-md-3">
+            協助人才媒合
+          </h3>
+          <p class="text-gray fs-md-5 mb-0">進行人才能力評估，協助您媒合理想職缺</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 挑選適合你的後端課 -->
+<div class="section compare">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="text-center text-md-start  mb-3 mb-md-4">挑選適合你的後端課</h2>
+        <p class="text-center text-md-start text-gray-light fs-md-4 fw-700 mb-5 mb-md-6">
+          Node.js 入門班提供多樣化課程內容、服務，滿足你的學習需求！
+        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="text-gray">Node.js 入門班</th>
+              <th class="text-gray">Node.js 企業專題班</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="text-gray fw-500">結業人才媒合</th>
+              <td class="text-primary-dark">有</td>
+              <td class="text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">直播課程</th>
+              <td class="text-primary-dark">8 堂</td>
+              <td class="text-secondary">11 堂（含雲端、Docker）</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">作業批改</th>
+              <td class="text-primary-dark">有</td>
+              <td class="text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">專題開發</th>
+              <td class="text-primary-dark">非必要</td>
+              <td class="text-secondary">必要，需 5 人一組</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">專題教練</th>
+              <td class="text-primary-dark">1 位</td>
+              <td class="text-secondary">2 位</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">教練 Discord 諮詢</th>
+              <td class="text-primary-dark">有</td>
+              <td class="text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">題目選擇</th>
+              <td class="text-primary-dark">3 選 1</td>
+              <td class="text-secondary">8 選 1</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">UI 設計稿服務</th>
+              <td class="text-primary-dark">需申請</td>
+              <td class="text-secondary fw-700">5 頁</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">線上成果發表會</th>
+              <td class="text-primary-dark">有</td>
+              <td class="text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">實體專題工作坊</th>
+              <td style="color: #CCCCCC;">無</td>
+              <td class="text-secondary fs-5 fw-700">
+                <span class="highlight">有</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">每週一次 Zoom 進度會議</th>
+              <td style="color: #CCCCCC;">無</td>
+              <td class="text-secondary fs-5 fw-700">
+                <span class="highlight">有</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">實體成果發表會</th>
+              <td style="color: #CCCCCC;">無</td>
+              <td class="text-secondary fs-5 fw-700">
+                <span class="highlight">有</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">課程時間軸</th>
+              <td class="text-primary-dark">4/10~6/21</td>
+              <td class="text-secondary fw-700">4/10~7/11</td>
+            </tr>
+            <tr>
+              <th class="text-gray fw-500">上課門檻</th>
+              <td class="text-primary-dark">有 JS 基礎，無工作經驗可</td>
+              <td class="text-secondary">三個月公司介接 API 經驗</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 這個班最適合誰？ -->
+<div class="section">
+  <div class="container">
+    <div class="suitable bg-info py-5 py-md-6 mb-5 mb-md-6">
+      <h2 class="text-center mb-5 mb-md-6">這個班最適合誰？</h2>
+      <ul class="suitable-list list-unstyled d-flex flex-wrap justify-content-center">
+        <li class="suitable-card">
+          <img src="../images/node-project-training/suitable-1.png" alt="突破薪水天花板" class="img-fluid w-100 mb-3">
+          <p class="text-center fs-md-5 mb-0">月薪區間在 <span class="text-secondary">3~5 萬</span>的前、後端工程師，強烈希望突破薪水天花板</p>
+        </li>
+        <li class="suitable-card">
+          <img src="../images/node-project-training/suitable-2.png" alt="三大框架" class="img-fluid w-100 mb-3">
+          <p class="text-center fs-md-5 mb-0">
+            需要 <span class="text-secondary">3 個月</span>以上，使用<span class="text-secondary">三大框架 Vue、React、Angular</span> 介接 API 經驗
+          </p>
+        </li>
+        <li class="suitable-card">
+          <img src="../images/node-project-training/suitable-3.png" alt="協作經驗" class="img-fluid w-100 mb-3">
+          <p class="text-center fs-md-5 mb-0">
+            <span class="text-secondary">沒有 5~10 人以上團隊協作經驗</span>的開發者
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="d-flex align-items-center justify-content-center mb-3">
+          <i class="bi bi-exclamation-triangle-fill mr-s"></i>
+          哪些人不適合？
+        </h2>
+        <ul class="fs-md-5 mb-0">
+          <li class="mb-s">尚未掌握 JS 三大框架 (Vue、React、Angular) 其一，沒實做過 SPA 單頁式網站經驗的開發者</li>
+          <li>這個班級很虐，如果一週拿不出 25 小時練習建議不要來</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 歷屆 Node.js 班學長姐感想 -->
+<div class="feedback section bg-gray-lighter">
+  <div class="container">
+    <h2 class="text-center mb-5 mb-md-7">歷屆 Node.js 班學長姐感想</h2>
+    <div class="feedback-top">
+      <h3 class="d-flex align-items-center h4 mb-3">
+        <i class="bi bi-award-fill mr-s"></i>
+        精選心得
+      </h3>
+      <!-- 精選心得 swiper -->
+      <div class="position-relative">
+        <div class="swiper feedback-top-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-top-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-Alpha.png" alt="Alpha" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">Alpha</h4>
+                </div>
+                <p class="fs-md-5 mb-3">你們不會是盲目的去做專題，課程中有安排了各個里程碑如同真的實際跑專案一樣，而且這邊要講三遍很重要的事情就是，每一組都有一個專題教練指引你！</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://hackmd.io/@jJElBUQnRxqHUZ4avmd0Qw/Sy7uLZEYh" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-top-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-Christina.png" alt="Christina" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">Christina</h4>
+                </div>
+                <p class="fs-md-5 mb-3">團隊要如何在每項里程碑中取得共識，讓專案能夠順利向前邁前，是這個專題班中最困難的地方。</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://medium.com/@christinachen149/%E5%85%AD%E8%A7%92-node-js-%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E4%BC%81%E6%A5%AD%E5%B0%88%E9%A1%8C%E7%8F%AD-85f1254b25a7" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-top-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-person.svg" alt="Pencil" class="mr-s">
+                  <h4 class="h5 fw-700 mb-0">Pencil</h4>
+                </div>
+                <p class="fs-md-5 mb-3">謝謝六角學院的課程，讓我有幸能在這 120 天的專題課程中，與組員們和專題教練 Ray，經歷了一段極為濃縮的 MVP（最小可行性產品，Minimum Viable Product）建立過程。</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://zoeguava.github.io/2023/07/04/%E5%9C%A8%20120%20%E5%A4%A9%E7%9A%84%E5%B0%88%E9%A1%8C%E8%AA%B2%E7%A8%8B%E4%B8%AD%EF%BC%8C%E5%85%B1%E5%90%8C%E7%87%9F%E9%80%A0%E5%87%BA%E5%9C%98%E9%9A%8A%E7%9A%84%E6%96%87%E5%8C%96/" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-top-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-person.svg" alt="yuyu" class="mr-s" >
+                  <h4 class="h5 fw-700 mb-0">yuyu</h4>
+                </div>
+                <p class="fs-md-5 mb-3">去年開始就跟了一路六角的前端直播班，剛好課程開始推動專題計畫，除了原先的直播課、作業外，還需要額外花時間做出屬於自己的作品( 很肝 )，不過也因為這些作品而獲得更好的工作～</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://medium.com/@yuyu009005/2023%E6%98%A5%E5%AD%A3node-js-%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E4%BC%81%E6%A5%AD%E5%B0%88%E9%A1%8C%E7%8F%AD-ea65f261d9df" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-top-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-Erik.png" alt="Erik Ho" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">Erik Ho</h4>
+                </div>
+                <p class="fs-md-5 mb-3">有多少人會記得在每年年初自己訂下的目標，而年底的時候能真的完成與實踐呢？我覺得能做到這點的人不多。因此，參加一門規劃好的課程，依照進度按表操課，並且有一群夥伴互相提醒切磋，我認為...</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://medium.com/@erikho_51835/%E9%97%9C%E6%96%BC%E6%88%91%E5%8F%83%E5%8A%A0%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E5%B0%88%E9%A1%8C%E7%8F%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B-52d8e2280307" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-feedback-top">
+          <i class="bi bi-chevron-compact-left"></i>
+        </div>
+        <div class="swiper-button-next swiper-button-next-feedback-top">
+          <i class="bi bi-chevron-compact-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="feedback-interview">
+      <h3 class="d-flex align-items-center h4 mb-3">
+        <i class="bi bi-chat-dots-fill mr-s"></i>
+        學員訪談
+      </h3>
+      <!-- 學員訪談 swiper -->
+      <div class="position-relative">
+        <div class="swiper feedback-interview-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-interview-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-上竣.png" alt="上竣" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">上竣</h4>
+                </div>
+                <p class="fs-md-5 mb-3">組員們都非常友善並願意分享知識。」甚至專題班結束，大家還是會保持聯絡，就在訪談的隔天還安排了「線上讀書會」，彼此交流、相互鼓勵。</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://www.hexschool.com/2023/10/24/2023-10-24-overcome-weakness/" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-interview-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-小麥.png" alt="小麥" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">小麥</h4>
+                </div>
+                <p class="fs-md-5 mb-3">我其實蠻喜歡「六角的學習社群」，當學習上遇到問題就可以在課程平台發問或私訊請教老師。在社群中，有很多同學、助教會互相幫忙回覆解答問題</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://www.hexschool.com/2023/07/13/2023-07-13-past-experience-useful/" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-interview-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-Sylvia.png" alt="Sylvia" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">Sylvia</h4>
+                </div>
+                <p class="fs-md-5 mb-3">在準備轉職的過程中，曾因「轉職門檻 35 歲」的說法，充滿不安和焦慮，雖然說也有很多中年轉職成功的案例，但在自己沒有成功前，都會覺得那是倖存者偏差；在 Node.js 直播班完課後，一投遞...</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://www.hexschool.com/2023/04/25/2023-04-25-work-hard-and-get-the-harvest/" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-interview-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-佾闈.png" alt="佾闈" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">佾闈</h4>
+                </div>
+                <p class="fs-md-5 mb-3">Node.js 專題直播班，讓自己的後端知識量更加充足，雖然工作還是以前端為主，但能更好的站在雙方的角度思考問題，與後端溝通更加順暢。</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://www.hexschool.com/2023/03/06/2023-03-06-code-will-not-betray-you/" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feedback-card">
+                <div class="d-flex justify-content-end mb-s">
+                  <img src="../images/node-project-training/feedback-interview-mark.svg" alt="quotation marks">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <img src="../images/node-project-training/feedback-伯任.png" alt="伯任" class="mr-s" width="60" height="60" style="object-fit: cover">
+                  <h4 class="h5 fw-700 mb-0">許伯任</h4>
+                </div>
+                <p class="fs-md-5 mb-3">在學習時還蠻感謝六角的助教系統，每當他有問題的時候，課程往下拉，就會發現有很多同學已經問了他想問的問題，助教的回答也很詳細，因此他有問題的時候就會看其他同學的問題，相互對比自己...</p>
+                <div class="d-flex justify-content-end mt-auto">
+                  <a href="https://www.hexschool.com/2022/11/29/2022-11-29-learning-never-end/" target="_blank" class="link-primary">看完整心得</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-feedback-interview">
+          <i class="bi bi-chevron-compact-left"></i>
+        </div>
+        <div class="swiper-button-next swiper-button-next-feedback-interview">
+          <i class="bi bi-chevron-compact-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 付款方式介紹 -->
+<!-- <section class="payment section">
+  <div class="container">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link w-50 active" id="nav-zingala-tab" data-bs-toggle="tab" data-bs-target="#nav-zingala" type="button" role="tab" aria-controls="nav-zingala" aria-selected="true">零卡分期</button>
+        <button class="nav-link w-50" id="nav-newebpay-tab" data-bs-toggle="tab" data-bs-target="#nav-newebpay" type="button" role="tab" aria-controls="nav-newebpay" aria-selected="false">信用卡付款</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <-- 銀角 --
+      <div class="tab-pane fade show active" id="nav-zingala" role="tabpanel" aria-labelledby="nav-zingala-tab">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="fw-bold mb-3">Node.js 前後端產品專題班 - 入門班</p>
+            <h3 class="lh-base">
+              新增銀角零卡分期服務！<br>
+              讓你輕鬆學習不受限！
+            </h3>
+            <p>零卡分期先買後付，適合想專注學習的學生、社會新鮮人！</p>
+            <img src="../images/js-training/zingala.png" alt="zingala logo" class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="times">
+                    <h5 class="mb-3">一次付清</h5>
+                    <p class="mb-0">一次付清</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal mb-0">NT$16,000</h5>
+                    <p class="h5 fw-normal mb-0"><del>原價 NT$34,999</del></p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">3 期</h5>
+                    <p class="payment-fee mb-0">零手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$5,333 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">6 期</h5>
+                    <p class="payment-fee mb-0">零手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$2,666 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">9 期（1.5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$1,778 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">12 期（2.5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$1,333 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="d-flex align-items-center justify-content-end">
+              <span class="material-icons">
+                emergency
+              </span>
+              以上金額皆不包含銀角額外手續費
+            </p>
+          </div>
+        </div>
+      </div>
+      <-- 藍新金流 --
+      <div class="tab-pane fade" id="nav-newebpay" role="tabpanel" aria-labelledby="nav-newebpay-tab">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="fw-bold mb-3">Node.js 前後端產品專題班 - 入門班</p>
+            <h3 class="lh-base">
+              信用卡分期零利率！<br>
+              輕鬆買，沒壓力！
+            </h3>
+            <p>信用卡除了可一次性付款也支援分期付款方式，凡在<a href="https://www.hexschool.com/courses/" target="_blank">六角官網</a>購買課程皆可分期付款，一共可分 3、6 期（目前僅支援台新、玉山及中信分期付款）。</p>
+            <img src="../images/js-training/newebpay.png" alt="newebpay logo" class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="times">
+                    <h5 class="mb-3">一次付清</h5>
+                    <p class="mb-0">一次付清</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal mb-0">NT$16,000</h5>
+                    <p class="h5 fw-normal mb-0"><del>原價 NT34,999</del></p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">3 期</h5>
+                    <p class="payment-fee mb-0">零利率</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$5,333 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">6 期</h5>
+                    <p class="payment-fee mb-0">零利率</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$2,666 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- 課程購買 -->
+<div class="section purchase bg-primary-light course-tracking-ViewContent" id="recommend" data-name="Node.js 前後端產品專題班" data-id="node-project-training">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <div class="card purchase-beginner">
+          <div class="mb-2">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Fblog%2F1705647946642-node.png?alt=media&token=12f6e612-0c5b-4ecf-86b7-9405e15f4db4" alt="Node.js 前後端產品專題班 - 入門班" class="img-fluid w-100 purchase-img">
+          </div>
+          <h2 class="purchase-title titleBeginner mb-2">Node.js 前後端產品專題班 - <br class="d-none d-lg-block">入門班</h2>
+          <p class="fs-md-5 mb-4">適合有 JS 基礎、想要了解 Node.js 該如何實戰操作的同學，我們將用 16 週時間帶運用這些知識點製作專屬作品。</p>
+          <div class="purchase-include includeBeginner">
+            <p class="text-secondary mb-0">此組合包含：</p>
+            <ul class="list-unstyled mb-0">
+              <li>8 堂直播課</li>
+              <li>3 大專題主題</li>
+              <li>六角影音無限制觀看（6/18 截止）</li>
+            </ul>
+          </div>
+          <p class="text-secondary mb-4">上課時間：4/10~6/21</p>
+          <div class="mt-auto mb-s">
+            <p class="mb-0"><del>原價 $34,999</del></p>
+            <!-- <p class="fs-4 fw-700">$16,000</p> -->
+            <p class="fs-4 fw-700">$16,000</p>
+          </div>
+          <!-- <a target="_blank" rel="noopener" href="https://hexschool.tw/hBPyk" class="lead-click node-gtag-track btn btn-outline-secondary fs-5 py-3">訂閱並免費試閱課程 👆🏻</a> -->
+          <a 
+            href="#" 
+            title="Node.js 前後端產品專題班 - 入門班"
+            id="trainingBuyBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#orderModal"
+            data-price="16000"
+            data-type="product"
+            data-id="node-training"
+            data-title="Node.js 前後端產品專題班 - 入門班"
+            data-paylink="#"
+            itemprop="url"
+            target="_blank"
+            rel="noopener"
+            class="node-gtag-track lead-click mp-click tracking-link btn btn-primary text-white fs-5 py-3 disabled" disabled>
+            報名截止
+          </a>
+          <!-- <div class="d-md-none text-center mt-3">
+            <span class="clock-beginner m-r-1 font-weight-bold text-primary"></span>
+            <input type="hidden" id="footer-clock-beginner" value="2024/3/25">
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card purchase-business">
+          <div class="mb-2">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2023%2F01%2F31%2FNode_OG-image.png?alt=media&token=7d6b95da-610e-4731-be76-c58c2b16e937" alt="Node.js 前後端產品專題班 - 企業專題班" class="img-fluid w-100 purchase-img">
+          </div>
+          <h2 class="purchase-title titleBusiness d-flex align-items-start mb-2">
+            <img src="../images/node-project-training/purchase-business.svg" alt="icon" class="mr-s">
+            Node.js 前後端產品專題班 - <br class="d-none d-xl-block">企業專題班
+          </h2>
+          <p class="fs-md-5 mb-4">以「透過團隊協作」為導向，同學們將五人一組，搭配專題教練的引導，我們將用 16 週時間帶領同學從零開始，製作出<span class="text-secondary fw-900">企業級產品</span>。</p>
+          <div class="purchase-include includeBusiness">
+            <p class="text-secondary mb-0">此組合包含：</p>
+            <ul class="list-unstyled mb-0">
+              <li><span class="text-secondary fw-700">11</span> 堂直播課</li>
+              <li><span class="text-secondary fw-700">8</span> 大專題主題</li>
+              <li class="text-secondary fw-700">5 人團隊專題開發</li>
+              <li class="text-secondary fw-700">每組專屬專題教練</li>
+              <li class="text-secondary fw-700">實體見面會工作坊</li>
+              <li class="text-secondary fw-700">六角影音無限制觀看（6/18 截止）</li>
+            </ul>
+          </div>
+          <p class="text-secondary mb-4">上課時間：3/1~7/11</p>
+          <div class="mt-auto mb-s">
+            <p class="mb-0"><del>原價 $132,000</del></p>
+            <p class="fs-4 fw-700">$32,000</p>
+          </div>
+          <!-- <a target="_blank" rel="noopener" href="https://hexschool.tw/hBPyk" class="node-gtag-track lead-click btn btn-primary fs-5 py-3">訂閱並免費試閱課程 👆🏻</a> -->
+          <a 
+            href="#" 
+            title="Node.js 前後端產品專題班 - 企業專題班"
+            id="trainingBuyBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#orderModal"
+            data-price="32000"
+            data-type="product"
+            data-id="node-training"
+            data-title="Node.js 前後端產品專題班 - 企業專題班"
+            data-paylink="#"
+            itemprop="url"
+            target="_blank"
+            rel="noopener"
+            class="node-gtag-track lead-click mp-click tracking-link btn btn-primary text-white fs-5 py-3 disabled" disabled>
+            報名截止
+          </a>
+          <!-- <p class="font-weight-bold text-primary text-center businessStudents mb-0 mt-3">招收人數：80／150</p> -->
+          <!-- <div class="d-md-none text-center">
+            <span class="clock m-r-1 font-weight-bold text-primary"></span>
+            <input type="hidden" id="footer-clock" value="2024/3/1">
+          </div> -->
+        </div>
+        <!-- <p class="font-weight-bold text-primary text-center d-none d-md-block mb-0 mt-3">招收人數：70／150</p> -->
+      </div>
+    </div>    
+    <!-- <div class="text-center mt-3">
+      <a href="#" target="_blank" class="btn btn-primary">和老師一對一諮詢</a>
+    </div> -->
+  </div>
+</div>
+
+<!-- 說明會 -->
+<!-- <div class="section">
+  <div class="container">
+    <h2 class="text-center fs-4 fs-md-2 mb-5 mb-md-7">Node.js 前後端產品專題班說明會</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10 mb-3">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/4w2_tM9edfs?si=SH4_sN5i2mO7KWgG" title="TypeScript 說明會" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <h5 class="text-center">- 時間軸 -</h5>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">00:00</p>
+      <p class="col-9 col-md-5 mb-0">活動開始</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">01:48</p>
+      <p class="col-9 col-md-5 mb-0">為什麼開這班？讓前端工程師變得更加專業</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">10:08</p>
+      <p class="col-9 col-md-5 mb-0">🌟 10 分鐘上屆學長姐專題經驗分享</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">22:23</p>
+      <p class="col-9 col-md-5 mb-0">課程大綱</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">24:59</p>
+      <p class="col-9 col-md-5 mb-0">可挑選八大主題，來做自己的產品</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">34:40</p>
+      <p class="col-9 col-md-5 mb-0">分享上屆學長題目 - 做了一個 Trello</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">40:50</p>
+      <p class="col-9 col-md-5 mb-0">12,000 獎學金申請方式</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">44:20</p>
+      <p class="col-9 col-md-5 mb-0">16 週如果分階段進行產品推進</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">53:40</p>
+      <p class="col-9 col-md-5 mb-0">🌟 入門班與企業專題班差異</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:16:20</p>
+      <p class="col-9 col-md-5 mb-0">🌟 公布學費</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:32:20</p>
+      <p class="col-9 col-md-5 mb-0">🌟 六角如何進行能力分組</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:46:36</p>
+      <p class="col-9 col-md-5 mb-0">🌟 上屆學長姐建議的學習時間分配</p>
+    </div>
+    <div class="text-center mt-3">
+      <a href="https://chalk-freedom-ec6.notion.site/Node-js-4a2987480aac4cecbd9c2aa9bc3f4e98" target="_blank" class="btn btn-primary">和老師一對一諮詢</a>
+    </div>
+  </div>
+</div> -->
+
+<!-- 常見 QA -->
+<div class="section">
+  <div class="container">
+    <h2 class="text-center mb-5 mb-md-7">常見 QA</h2>
+    <ul class="list-unstyled mb-0 faq">
+      
+        <li class="faq-list">
+          <h3 class="text-secondary h4 fw-700 mb-s">Q：今年只有這一班嗎？</h3>
+          <p class="fs-md-5 mb-0">目前只有規劃這一班，因為我們有觀察到，通常在職開發者，在年底的專案開發量會較大。所以較適合的進修時間，坐落在 2~6 月會比較合適。</p>
+        </li>
+      
+        <li class="faq-list">
+          <h3 class="text-secondary h4 fw-700 mb-s">Q：這堂課是線上課還是線下？</h3>
+          <p class="fs-md-5 mb-0">入門班為純線上直播課程。</p>
+        </li>
+      
+        <li class="faq-list">
+          <h3 class="text-secondary h4 fw-700 mb-s">Q：我是在職的開發者，適合參加嗎？</h3>
+          <p class="fs-md-5 mb-0">適合參加，在上面任務我們有提供每週在線上預期要投入的時間。六角學院有超過 80% 以上都是在職學習者，擁有豐富安排階段性任務經驗，讓你透過一步步能力養成，帶你達到你理想的目標。</p>
+        </li>
+      
+        <li class="faq-list">
+          <h3 class="text-secondary h4 fw-700 mb-s">Q：你們會如何分組？</h3>
+          <p class="fs-md-5 mb-0">報名後我們會提供能力分組表單，會將年資相近的開發者盡可能分組在一起，協助小組內溝通順暢。</p>
+        </li>
+      
+        <li class="faq-list">
+          <h3 class="text-secondary h4 fw-700 mb-s">Q：我正準備踏入前端工程師，這課程適合我嗎？</h3>
+          <p class="fs-md-5 mb-0">這門課程適合有半年 ~ 3 年經驗，有三大框架經驗的開發者(Vue、React、Angular)。如果你有在其他程式培訓營有結訓，但沒有個人的代表作，那麼也歡迎參加。如果你是小萌新，歡迎先透過影音課程先自主進修，5 月會開設新手向 30 天軟體工程師程式體驗營，到時會超過 1,000 位學員共同線上培訓，一個月時間帶你做出網頁作品。</p>
+        </li>
+      
+        <li class="faq-list">
+          <h3 class="text-secondary h4 fw-700 mb-s">Q：有分期付款機制嗎？</h3>
+          <p class="fs-md-5 mb-0">有的，藍新金流提供 6 期 0 利率的分期付款，支援銀行有玉山銀行、台新商銀、中國信託銀行。除此之外還有提供銀角無卡分期，讓您不需要任何信用卡也能享有分期服務。</p>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+  window.onload = function() {
+
+    const bgVideo = document.querySelector('.banner-bgVideo');
+    bgVideo.autoplay = true;
+    bgVideo.loop = true;
+    bgVideo.muted = true;
+    bgVideo.classList.remove('loading')
+    bgVideo.play();
+
+    // 歷屆學長姐心得、訪談
+    const swiperFeedbackTop = new Swiper('.feedback-top-swiper', {
+      // Optional parameters
+      slidesPerView: 1.4,
+      spaceBetween: 16,
+      autoplay: {
+        delay: 3000,
+      },
+      loop: false,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next-feedback-top',
+        prevEl: '.swiper-button-prev-feedback-top',
+      },
+    });
+    const swiperFeedbackInterview = new Swiper('.feedback-interview-swiper', {
+      // Optional parameters
+      slidesPerView: 1.4,
+      spaceBetween: 16,
+      autoplay: {
+        delay: 3000,
+      },
+      loop: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next-feedback-interview',
+        prevEl: '.swiper-button-prev-feedback-interview',
+      },
+    });
+
+    /*** 六大策略選單 ***/
+    // navbar DOM
+    const topNavbar = document.querySelector('.navbar');
+    const strategyMenu = document.querySelector('.strategy-menu');
+
+    // 六大策略按鈕 DOM
+    const strategyBtn1 = document.querySelector('#strategyBtn1');
+    const strategyBtn2 = document.querySelector('#strategyBtn2');
+    const strategyBtn3 = document.querySelector('#strategyBtn3');
+    const strategyBtn4 = document.querySelector('#strategyBtn4');
+    const strategyBtn5 = document.querySelector('#strategyBtn5');
+    const strategyBtn6 = document.querySelector('#strategyBtn6');
+
+    // 六大策略區塊 DOM、高度
+    const strategy1 = document.querySelector('#strategy-1');
+    const strategy2 = document.querySelector('#strategy-2');
+    const strategy3 = document.querySelector('#strategy-3');
+    const strategy4 = document.querySelector('#strategy-4');
+    const strategy5 = document.querySelector('#strategy-5');
+    const strategy6 = document.querySelector('#strategy-6');
+    const strategyHeight1 = strategy1.offsetHeight;
+    const strategyHeight2 = strategy2.offsetHeight;
+    const strategyHeight3 = strategy3.offsetHeight;
+    const strategyHeight4 = strategy4.offsetHeight;
+    const strategyHeight5 = strategy5.offsetHeight;
+    const strategyHeight6 = strategy6.offsetHeight;
+
+    let allOffsetTop = strategy1.offsetTop - topNavbar.offsetHeight - strategyMenu.offsetHeight;
+
+    window.addEventListener('scroll', (e) => {
+      let scrollY = window.scrollY;
+      // if (scrollY > bgVideo.offsetHeight) {
+      //   bgVideo.pause();
+      // }
+
+      if (scrollY >= allOffsetTop && scrollY < allOffsetTop+strategyHeight1) {
+        strategyBtn1.classList.add('active');
+      } else {
+        strategyBtn1.classList.remove('active');
+      }
+      if (scrollY >= allOffsetTop+strategyHeight1 && scrollY < allOffsetTop+strategyHeight1+strategyHeight2) {
+        strategyBtn2.classList.add('active');
+      } else {
+        strategyBtn2.classList.remove('active');
+      }
+      if (scrollY >= allOffsetTop+strategyHeight1+strategyHeight2 && scrollY < allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3) {
+        strategyBtn3.classList.add('active');
+      } else {
+        strategyBtn3.classList.remove('active');
+      }
+      if (scrollY >= allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3 && scrollY < allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3+strategyHeight4) {
+        strategyBtn4.classList.add('active');
+      } else {
+        strategyBtn4.classList.remove('active');
+      }
+      if (scrollY >= allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3+strategyHeight4 && scrollY < allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3+strategyHeight4+strategyHeight5) {
+        strategyBtn5.classList.add('active');
+      } else {
+        strategyBtn5.classList.remove('active');
+      }
+      if (scrollY >= allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3+strategyHeight4+strategyHeight5 && scrollY < allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3+strategyHeight4+strategyHeight5+strategyHeight6) {
+        strategyBtn6.classList.add('active');
+      } else {
+        strategyBtn6.classList.remove('active');
+      }
+    })
+
+    strategyBtn1.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: allOffsetTop,
+        behavior: "smooth"
+      }); 
+    })
+    strategyBtn2.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: allOffsetTop+strategyHeight1,
+        behavior: "smooth"
+      }); 
+    })
+    strategyBtn3.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: allOffsetTop+strategyHeight1+strategyHeight2,
+        behavior: "smooth"
+      }); 
+    })
+    strategyBtn4.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3,
+        behavior: "smooth"
+      }); 
+    })
+    strategyBtn5.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3+strategyHeight4,
+        behavior: "smooth"
+      }); 
+    })
+    strategyBtn6.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: allOffsetTop+strategyHeight1+strategyHeight2+strategyHeight3+strategyHeight4+strategyHeight5,
+        behavior: "smooth"
+      }); 
+    })
+
+    // 專題教練展開按鈕
+    const coachBtnBlock = document.querySelector('#coachBtn');
+    const teamBtn = document.querySelector('.strategy-teamBtn');
+    teamBtn.addEventListener('click', (e) => {
+      coachBtnBlock.classList.add('d-none');
+    })
+
+    // 手機版入門班倒數
+    // if ($('#footer-clock-beginner').length) {
+    //   const timer = $('#footer-clock-beginner').val();
+    //   $('.clock-beginner').countdown(timer, function(event) {
+    //     return $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
+    //   });
+    // }
+  }
+</script>
+
+
+
+<div class="text-center my-4 container line-vueTraining">
+  <p>P.S.：六角學院也有 line@ 嘍，歡迎加入隨時獲得六角學院第一手資訊！</p>
+  <!-- 電腦版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/qgbMS" class="m-y-1 mp-click d-none d-md-block"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+  <!-- 行動版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/AmmnC" class="m-y-1 mp-click d-md-none"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+</div>
+
+ <!-- 開啟通用 footer 倒數-->
+    <!-- 如果個別頁面有需要倒數 -->
+    
+      <!-- 非特定頁面使用通用 footer 倒數 -->
+      <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column align-items-md-center text-white justify-content-md-end pr-md-3 pr-0">
+        <span class="fw-bold text-start">2024 JS 直播班 早鳥預約中</span>
+        
+          <!-- <span class="mr-1 text-start" data-toggle="tooltip" data-placement="top" title="每日更新"></span> -->
+          <span class="me-3 fw-bold text-start"></span>
+        
+        <div class="d-flex justify-content-start text-white text-nowrap">
+          
+            <span class="clock m-r-1 fw-bold"></span>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end ps-md-3 ps-0">
+        
+          <a href="/courses/js-training.html"
+            class="btn btn-dark btn-sm rounded-0">
+            預約優惠
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <input type="hidden" id="footer-clock" value="2024/8/22">
+
+      
+  </div>
+  
+<div class="modal fade" id="orderModal" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="
+      position: relative;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      outline: none;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+    ">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          <span>購買 </span>
+          <span v-html="text.title"></span>
+        </h4>
+        <!-- <button type="button" data-bs-dismiss="modal" class="btn-close" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <!-- <img src="/images/marketing/payment_flow.gif" class="img-fluid" alt=""> -->
+        <div class="text-xs-center text-center">
+          <div class="flex flex-center d-flex justify-content-center">
+            <a class="fb-track" href="https://hex.school/P12UP" target="_blank" title="Facebook 客服">
+              <i class="fab fa-facebook-messenger rounded-0 my-3" style="font-size: 40px; color: rgb(0, 132, 255)"></i>
+            </a>
+            <!-- <a href="https://hex.school/P12UP" target="_blank" class="fab fab-facebook mp-click" style="block-center" title="Facebook 客服">
+              <span class="h2">
+                <span class="fa fa-comments-o"></span>
+              </span>
+            </a> -->
+          </div>
+          <p class="m-t-1">
+            <strong>就算是小問題，我們也在線上立即回覆您。</strong><br>
+            <strong>付款後 <span class="text-danger">48hr</span> 內會收到開通課程連結</strong> <br>
+            <span class="text-primary clock"></span>
+          </p>
+        </div>
+        <div class="col-9 mx-auto">
+          <div class="bg-white p-3 mt-3">
+  <p class="mb-2">課程支援以下支付方式</p>
+  <ul class="list-unstyled d-flex flex-wrap mb-0" style="font-size: 14px;">
+    <li class="w-50">
+      <i class="far fa-credit-card"></i>
+      <span class="gl_fz-t3">信用卡</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-store"></i>
+      <span class="gl_fz-t3">超商付款</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-money-check-alt"></i>
+      <span class="gl_fz-t3">ATM 轉帳</span>
+    </li>
+    <li class="w-50">
+      <span class="material-icons align-bottom" style="font-size: 20px;">
+        local_atm
+      </span>
+      <span class="gl_fz-t3">銀角零卡</span>
+    </li>
+  </ul>
+</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a v-if="text.forward" v-bind:href="text.paylink" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+        <a v-else v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <!-- BEGIN PRE-FOOTER -->
+<div class="container my-3 my-5">
+  <div class="overflow">
+    <div class="fb-like" data-href="https://www.hexschool.com" data-layout="standard" data-action="like"
+      data-show-faces="true" data-share="true"></div>
+  </div>
+</div>
+
+
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-11">
+          <address class="d-flex justify-content-between flex-column flex-md-row">
+            <!-- undefined<br>
+          undefined<br>
+          undefined<br> -->
+            <!-- Phone: undefined<br> -->
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-f pe-2"></i>六角學院</a>
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-messenger pe-2"></i>m.me/hexschool</a>
+            <a href="mailto:service@hexschool.com" class="d-flex align-items-center link-white font-link-big py-1"><i
+                class="material-icons pe-2 font-link-big">mail</i>service@hexschool.com</a>
+          </address>
+          <div class="row justify-content-between align-items-end pt-md-6 pt-3">
+            <div class="col-md-5">
+              <ul class="list-unstyled">
+                <li><a href="/calendar/" class="d-block link-white font-link-small font-weight-light py-1">六角行事曆</a>
+                </li>
+                <li><a href="/courses/" class="d-block link-white font-link-small font-weight-light py-1">精選課程</a></li>
+                <li><a href="/archives/" class="d-block link-white font-link-small font-weight-light py-1">部落格</a></li>
+                <li><a href="/business/" class="d-block link-white font-link-small font-weight-light py-1">企業課程方案</a></li>
+                <li><a href="/qa/" class="d-block link-white font-link-small font-weight-light py-1">問與答</a></li>
+                <li><a href="/about/statement.html"
+                    class="d-block link-white font-link-small font-weight-light py-1">免責聲明</a></li>
+                <li><a href="/multi-talent/" class="d-block link-white font-link-small font-weight-light py-1">多角人才顧問有限公司</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 d-flex flex-column align-items-end pb-md-0 pb-5">
+              <a class="pt-4 pb-3 pt-md-1 pb-md-1" href="/" title="六角學院">
+                
+                <svg width="100px" height="24px" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#FFFFFF"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#FFFFFF"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#FFFFFF"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#FFFFFF"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#FFFFFF"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#FFFFFF"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#FFFFFF"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#FFFFFF"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+                
+              </a>
+              <p class="m-0 text-end">Copyright © 2019 HexSchool.<br class="d-block d-md-none">All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB -->
+  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column" id="footerContact">
+    <!-- 電腦版 LINE -->
+    <a href="https://hex.school/qgbMS" target="_blank"
+      class="fab-icon fab fab-line d-none d-md-flex align-items-center justify-content-center mp-click line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <!-- 行動版 LINE -->
+    <a href="https://hex.school/AmmnC" target="_blank"
+      class="fab-icon fab fab-line d-md-none align-items-center justify-content-center mp-click d-flex line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <a href="https://hex.school/P12UP" target="_blank"
+      class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-flex fb-track"
+      title="Facebook 客服">
+      <i class="fab fa-facebook-messenger text-primary rounded-0" style="font-size: 40px;"></i>
+    </a>
+  </div>
+  <!-- FAB End -->
+  <script type="application/javascript">
+  function getIP(json) {
+    window.hexUseIP = json.ip
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP" defer></script>
+
+
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+
+<![endif]-->
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
+
+<script src="/js/bs4_vendor.js?1723023774492.js"></script>
+
+
+<script src="/js/bs4_all.js?1723023774492.js"></script>
+
+
+<script src="/js/wow.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	new WOW().init();
+});
+</script>
+
+<!-- Facebook Like -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      :'760173380749493',
+    xfbml      : true,
+    version    :'v2.7'
+  });
+  // FB.AppEvents.logPageView('index');
+  // FB.AppEvents.logEvent("sentFriendRequestTesting");
+  // var params = {};
+  //   params['Title'] = '首頁';
+  //   FB.AppEvents.logEvent('pageView', null, params);
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook Like -->
+
+<!-- END PAGE-SPECIFIC PLUGINS -->
+
+<!-- BEGIN INTEGRATIONS -->
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+function generateKey(length) {
+  let key = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    key += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return key
+}
+
+function postConversionAPI (data) {
+  // https://shop.hexschool.com/api/tracker
+  $.ajax({
+    url: "https://shop.hexschool.com/api/tracker",
+    type: 'POST',
+    dataType : 'json',
+    contentType : 'application/json; charset=utf-8',
+    data: JSON.stringify(data),
+  });
+}
+
+function parseCookie() {
+  let cookieObj = {};
+  const cookieAry = document.cookie.split(';');
+  let cookie = '';
+  for (var i=0, l=cookieAry.length; i<l; ++i) {
+      cookie = cookieAry[i].trim();
+      cookie = cookie.split('=');
+      cookieObj[cookie[0]] = cookie[1];
+  }
+  return cookieObj;
+}
+
+function getCookieByName(name) {
+  let value = parseCookie()[name];
+  if (value) {
+      value = decodeURIComponent(value);
+  }
+  return value;
+}
+
+var h_event_time = Math.floor(new Date() / 1000);
+var h_event_id = generateKey(10);
+
+var h_all_data = {
+  type: 'facebook',
+  data: {
+    event_name: 'PageView',
+    event_time: h_event_time,
+    event_id: h_event_id,
+    action_source: 'website',
+    event_source_url: location.href,
+    user_data: {
+      fbc: getCookieByName('_fbc'),
+      fbp: getCookieByName('_fbp'),
+      client_user_agent: navigator.userAgent,
+      client_ip_address: window.hexUseIP,
+    },
+  }
+}
+fbq('init', '518325078292779');
+fbq('track', "PageView", {}, {event_id: h_event_id});
+postConversionAPI(h_all_data);
+
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZSWM1LR0P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZSWM1LR0P');
+  gtag('config', 'AW-926147017');
+</script>
+
+
+
+<!-- Google 再营销代码 -->
+<div class="hidden-xs-up d-none">
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 926147017;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;height:0;width:0;">
+  <img height="0" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926147017/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+  <!-- Google 再营销代码 end -->
+</div>
+
+
+
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+var distinct_id = '';
+mixpanel.init("75759612e011b856d03c2a78e8219094", {
+  loaded: function(mixpanel) {
+    // distinct_id = mixpanel.get_distinct_id();
+    // tracker.addDistinct_id(distinct_id)
+  }
+});</script><!-- end Mixpanel -->
+
+
+<!-- END INTEGRATIONS -->
+</body>
+</html>
+
