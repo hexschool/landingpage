@@ -543,7 +543,7 @@ vueApp = function() {
         js: {},
         vue: {},
         typescript: {},
-        react: {},
+        js_react: {},
         web_layout: {},
         ui: {},
         node: {}
@@ -552,7 +552,7 @@ vueApp = function() {
         js: {},
         vue: {},
         typescript: {},
-        react: {},
+        js_react: {},
         web_layout: {},
         ui: {},
         node: {}
