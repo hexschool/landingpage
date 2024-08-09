@@ -51,7 +51,7 @@
  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/all.css?1723105916639.css">
+<link rel="stylesheet" href="/stylesheets/all.css?1723198418938.css">
 
   <!-- Global styles END -->
 
@@ -2038,7 +2038,7 @@
           
               
           <div class="row justify-content-center">
-            <div class="col-md-6" v-if="course.jqueryAni && course.jqueryAni.detail.num_subscribers">
+            <div class="col-md-6" v-if="course?.jqueryAni && course.jqueryAni.detail.num_subscribers">
               <div class="my-4 text-center">
                 <h6>這門課程目前有</h6>
                 <h2> <strong class="text-success" v-text="course.jqueryAni.detail.num_subscribers || 0"> </strong> <small>人一起上課</small></h2>
@@ -2220,7 +2220,7 @@
                   <div class="d-flex flex-fill flex-column justify-content-center align-items-center text-center py-4">
                     <!-- <h5>原價 <del>1600</del></h5> -->
                     
-                      <h2 class="d-flex flex-column justify-content-end align-items-end" v-if="rightCoupon.course.jqueryAni">
+                      <h2 class="d-flex flex-column justify-content-end align-items-end" v-if="rightCoupon?.course?.jqueryAni">
                         <div class="d-flex flex-wrap align-items-center">
                           <span class="mb-2 text-end text-muted d-md-block d-none" style="font-size: 14px;">
                             <del>原價：NT$ 1600 </del>
@@ -3072,10 +3072,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/vendor.js?1723105916640.js"></script>
+<script src="/js/vendor.js?1723198418939.js"></script>
 
 
-<script src="/js/all.js?1723105916640.js"></script>
+<script src="/js/all.js?1723198418939.js"></script>
 
 
 <script src="/js/wow.min.js"></script>

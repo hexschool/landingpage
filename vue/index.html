@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1723105916688.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1723198418998.css">
 
   <!-- Global styles END -->
 
@@ -906,8 +906,8 @@
               </div>
               <span class="bg-dark rounded-0 px-4 py-2 fw-bold text-white"
                 style="transform: translateY(-50%); position: absolute; z-index: 2;"
-                v-if="course.vue3 && (course.vue3.detail.hasOwnProperty('num_subscribers') || course.vue3.teachableData.hasOwnProperty('enrolled'))">
-                <strong class="text-primary" v-if="course.vue3.teachableData.enrolled" v-text="course.vue3.detail.hasOwnProperty('num_subscribers')? course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled : course.vue3.teachableData.enrolled"> 300 </strong>
+                v-if="course?.vue3 && (course.vue3.detail.hasOwnProperty('num_subscribers') || course.vue3.teachableData.hasOwnProperty('enrolled'))">
+                <strong class="text-primary" v-if="course?.vue3?.teachableData.enrolled" v-text="course.vue3.detail.hasOwnProperty('num_subscribers')? course.vue3.detail.num_subscribers + course.vue3.teachableData.enrolled : course.vue3.teachableData.enrolled"> 300 </strong>
                 <strong class="text-primary" v-else v-text="course.vue3.detail.num_subscribers"> 300 </strong> 人
                 <small class="text-white">參與本課程</small>
               </span>
@@ -920,7 +920,7 @@
             
               <div class="mt-auto">
                 <div class="pb-4 px-4 text-end text-dark">
-                  <span v-if="rightCoupon.course.vue3" class="mb-2 text-muted d-md-block d-none" style="font-size: 14px;">
+                  <span v-if="rightCoupon?.course?.vue3" class="mb-2 text-muted d-md-block d-none" style="font-size: 14px;">
                     <del>原價：NT$ 3600 </del>
                   </span>
                   <p class="mb-0 fw-bold font-small-for-course-list">
@@ -928,10 +928,10 @@
                     <!-- 
                       <p class="mb-0 fw-bold d-none d-lg-block">−12 % off：NT$ 432</p>
                      -->
-                    <span v-if="rightCoupon.course.vue3" class="bg-danger text-white me-2 pe-2 ps-3 price-special py-1" style="font-size: 14px;">
+                    <span v-if="rightCoupon?.course?.vue3" class="bg-danger text-white me-2 pe-2 ps-3 price-special py-1" style="font-size: 14px;">
                       12 % off
                     </span>
-                    <p v-if="rightCoupon.course.vue3" class="mb-3 mb-md-0 fw-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 3,168</p>                    <p v-else class="mb-0 fw-bold font-column-4-button">NT$ 3600</p>
+                    <p v-if="rightCoupon?.course?.vue3" class="mb-3 mb-md-0 fw-bold font-column-4-button text-danger font-title-size price-font text-nowrap mt-lg-0 mt-2 mt-0">NT$ 3,168</p>                    <p v-else class="mb-0 fw-bold font-column-4-button">NT$ 3600</p>
                   
                   <meta itemprop="price" content="3168">
                   <meta itemprop="priceCurrency" content="TWD">
@@ -1701,10 +1701,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1723105916688.js"></script>
+<script src="/js/bs4_vendor.js?1723198419000.js"></script>
 
 
-<script src="/js/bs4_all.js?1723105916688.js"></script>
+<script src="/js/bs4_all.js?1723198419000.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
