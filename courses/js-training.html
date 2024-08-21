@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1724244976337.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1724255785738.css">
 
   <!-- Global styles END -->
 
@@ -1743,22 +1743,23 @@
           <div class="pb-4 px-4 text-end text-dark">
             <hr>
             <p class="mb-0 fw-bold font-small-for-course-list text-muted"><small><del>原價 NT$ 19,800 </del></small></p>
-            <p class="mb-0 fw-bold font-column-4-button text-second-dark"> NT$ 9,700 </p>
+            <p class="mb-0 fw-bold font-column-4-button text-second-dark" id="couponPrice"> NT$ 9,800 </p>
             <!-- <a href="https://hexschool.tw/56u8Z" class="join-btn-hover btn btn-block btn-primary-dark rounded-0 fw-bold font-column-4-button mt-2 mp-click tracking-link d-flex align-items-center justify-content-center js-training-gtag-track" target="_blank">立即預約
               <i class="jion-arrow-icon material-icons font-column-4-button fw-bold">arrow_forward</i>
             </a> -->
             <!-- <a href="#" class="lead-click btn btn-danger" target="_blank">開放報名</a> -->
-            <a href="https://shop.hexschool.com/order/create?coupon_code=2024_JAVASCRIPT_TRAINING_COUPON_3&order=-MOUKh1jGO3ey6tSrur3&phyProduct[]=-MOUKh1jGO3ey6tSrur3&phyProductSpec[]=-O31tj4OHGqkxIWHX8cf" title="JavaScript 工程師養成直播班" id="trainingBuyBtn"
+            <a href="https://shop.hexschool.com/order/create?coupon_code=2024_JAVASCRIPT_TRAINING_COUPON_4&order=-MOUKh1jGO3ey6tSrur3&phyProduct[]=-MOUKh1jGO3ey6tSrur3&phyProductSpec[]=-O31tj4OHGqkxIWHX8cf" title="JavaScript 工程師養成直播班" id="trainingBuyBtn"
               class="join-btn-hover btn btn-block btn-primary-dark rounded-0 fw-bold font-column-4-button mt-2 mp-click tracking-link d-flex align-items-center justify-content-center"
               data-bs-toggle="modal" data-bs-target="#orderModal"
               title="開啟 JavaScript 工程師養成直播班支付流程"
-              data-price="9700"
+              data-price="9800"
               data-title="JavaScript 工程師養成直播班"
-              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2024_JAVASCRIPT_TRAINING_COUPON_3&order=-MOUKh1jGO3ey6tSrur3&phyProduct[]=-MOUKh1jGO3ey6tSrur3&phyProductSpec[]=-O31tj4OHGqkxIWHX8cf"
-              itemprop="url">
+              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2024_JAVASCRIPT_TRAINING_COUPON_4&order=-MOUKh1jGO3ey6tSrur3&phyProduct[]=-MOUKh1jGO3ey6tSrur3&phyProductSpec[]=-O31tj4OHGqkxIWHX8cf"
+              itemprop="url" data-forward="true">
                 立即報名
               <i class="jion-arrow-icon material-icons font-column-4-button fw-bold">arrow_forward</i>
             </a>
+            <p class="text-center d-none mt-1 text-danger fw-bold"  style="margin-bottom: -24px;" id="couponText"></p>
           </div>
         </div>
       </div>
@@ -2020,18 +2021,6 @@
       }else {
         logicBtn.classList.remove('active');
       }
-      // 邏輯測驗
-      // if(window.scrollY >= allOffsetTop+foundationBlockHeight && window.scrollY < allOffsetTop+foundationBlockHeight+logicBlockHeight){
-      //   logicBtn.classList.add('active');
-      // }else {
-      //   logicBtn.classList.remove('active');
-      // }
-      // 面試考題
-      // if(window.scrollY >= allOffsetTop+foundationBlockHeight+logicBlockHeight && window.scrollY < allOffsetTop+foundationBlockHeight+logicBlockHeight+interviewQuestionBlockHeight){
-      //   interviewBtn.classList.add('active');
-      // }else {
-      //   interviewBtn.classList.remove('active');
-      // }
     })
 
     foundationBtn.addEventListener('click', (e) => {
@@ -2055,20 +2044,67 @@
         behavior: "smooth"
       }); 
     })
-    // logicBtn.addEventListener('click', (e) => {
-    //   e.preventDefault();
-    //   window.scrollTo({
-    //     top: allOffsetTop+foundationBlockHeight,
-    //     behavior: "smooth"
-    //   }); 
-    // })
-    // interviewBtn.addEventListener('click', (e) => {
-    //   e.preventDefault();
-    //   window.scrollTo({
-    //     top: allOffsetTop+foundationBlockHeight+logicBlockHeight,
-    //     behavior: "smooth"
-    //   }); 
-    // })
+  }
+
+  // 將網址 query 轉換為 object
+  const queryStringToObject = url => {
+    const urlQueryArr = [...new URLSearchParams((url.split('?')[1])?.split('#')[0])]; // [['h_dm', '...'], ['h_pt', '...']]
+    return urlQueryArr.reduce((accu, [currentQueryName, currentQueryValue]) => {
+        accu[currentQueryName] = currentQueryValue;
+        return accu
+      },
+      {}
+    );
+  }
+
+  const urlQueryObj = queryStringToObject(window.location.href); // { h_dm: ..., h_pt: ..., }
+
+  // 欲跳轉按鈕
+  const forwardBtn = document.querySelectorAll('[data-forward]');
+
+  // 可用 Domain
+  const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
+
+  // 新增優惠券文字、金額
+  const couponText = document.querySelector('#couponText');
+  const couponPrice = document.querySelector('#couponPrice');
+
+  // 金流按鈕連結轉址
+  const transUrl = (urlArray) => {
+    forwardBtn.forEach((buttonEl, index) => {
+      if (buttonEl.dataset.forward === 'true') {
+        buttonEl.setAttribute('href', urlArray[index]);
+        buttonEl.setAttribute('data-paylink', urlArray[index]);
+      }
+    })
+  }
+
+  // 特定 KOL 渲染
+  // kolUrlInfo: kol 短網址 path
+  const kolUrlInfo = {
+    vivian: ['9QfNT'],
+  };
+  const renderForKol = (urlPath) => {
+    const kolUrlArray = [];
+    kolUrlInfo[urlPath].forEach((path) => {
+      kolUrlArray.push(`https://${urlQueryObj['h_dm']}/${path}`);
+    })
+    transUrl(kolUrlArray);
+  }
+
+  // 驗證 domain 並轉網址
+  if (allowdm.test(urlQueryObj['h_dm'])) {
+    switch (urlQueryObj['h_pt']) {
+      case '9QfNT':
+        renderForKol('vivian');
+        couponPrice.textContent = 'NT$ 9,700';
+        couponText.classList.remove('d-none');
+        couponText.classList.add('d-block');
+        couponText.textContent = '8/22 ~ 8/27 Vivian 專屬優惠';
+        break;
+      default:
+        transUrl(['https://shop.hexschool.com/order/create?coupon_code=2024_JAVASCRIPT_TRAINING_COUPON_4&order=-MOUKh1jGO3ey6tSrur3&phyProduct[]=-MOUKh1jGO3ey6tSrur3&phyProductSpec[]=-O31tj4OHGqkxIWHX8cf']);
+    }
   }
 </script>
 
@@ -2092,9 +2128,9 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-center w-100">
       <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
-        <span class="me-md-3 fw-bold text-center">全檔期最低價</span>
+        <span class="me-md-3 fw-bold text-center">班級人數已破 300 人</span>
         
-          <span class="me-md-3 fw-bold text-center">超早鳥 49 折</span>
+          <span class="me-md-3 fw-bold text-center"></span>
         
         <div class="d-flex justify-content-center justify-content-md-start text-nowrap">
           
@@ -2106,7 +2142,7 @@
         
           <a href="#recommend"
             class="btn btn-dark btn-sm rounded-0">
-            手刀報名 👆🏻
+            手刀報名
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -2115,7 +2151,7 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2024/8/22">
+  <input type="hidden" id="footer-clock" value="2024/9/16">
 
   
   
@@ -2315,10 +2351,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1724244976337.js"></script>
+<script src="/js/bs4_vendor.js?1724255785738.js"></script>
 
 
-<script src="/js/bs4_all.js?1724244976337.js"></script>
+<script src="/js/bs4_all.js?1724255785738.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
