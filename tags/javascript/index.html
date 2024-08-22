@@ -51,7 +51,7 @@
  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/all.css?1724295222904.css">
+<link rel="stylesheet" href="/stylesheets/all.css?1724320175700.css">
 
   <!-- Global styles END -->
 
@@ -1261,25 +1261,25 @@
 
   <div class="">
     <div class="container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item"><a href="/archives">Blog</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Tagged: javascript</li>
+  <nav aria-label="breadcrumb" class="blog-breadcrumb">
+    <ol class="breadcrumb mt-3">
+      <!-- <li class="breadcrumb-item"><a href="/">Home</a></li> -->
+      <li class="breadcrumb-item"><a href="/archives">所有文章</a></li>
+      <li class="breadcrumb-item active" aria-current="page">javascript</li>
     </ol>
   </nav>
 
 <section id="main">
-  <h1>Tagged: javascript</h1>
-  <div class="row">
+  <!-- <h1>Tagged: javascript</h1> -->
+  <div class="row justify-content-center gx-6">
   
-  <div class="blog-posts">
+  <div class="blog-posts col-lg-11">
     
       
       <section class="archives-wrap">
         <div class="archives">
           
-          <div itemscope itemtype="http://schema.org/Article">
+          <div itemscope itemtype="http://schema.org/Article" class="position-relative">
   <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
     <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
       <meta itemprop="url" content="https://www.hexschool.com/images/logo.png">
@@ -1290,64 +1290,85 @@
   </div>
   
   
-    <div class="mb-3">
+    <div>
       <a href="https://www.hexschool.com/2017/09/01/2017-09-01-javascript-for/">
-        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2FArray_method.png?alt=media&token=787a891f-345c-4927-98b0-70ff34a2a73b" class="img-fluid">
+        <!-- <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2FArray_method.png?alt=media&token=787a891f-345c-4927-98b0-70ff34a2a73b" class="img-fluid"> -->
         <meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2FArray_method.png?alt=media&token=787a891f-345c-4927-98b0-70ff34a2a73b">
       </a>
     </div>
   
-
-    
-    <h2 class="m-t-0">
-      <meta content="JavaScript 陣列處理方法 [filter(), find(), forEach(), map(), every(), some(), reduce()]">
-      <a class="archive-article-title" href="/2017/09/01/2017-09-01-javascript-for/">JavaScript 陣列處理方法 [filter(), find(), forEach(), map(), every(), some(), reduce()]</a>
-    </h2>
+  
+  <meta itemprop="author" content="casper">
+  <time datetime="2017-09-01T00:00:00.000Z" itemprop="datePublished" class="blog-time mb-2 d-inline-block">2017/09/01</time>
 
 
-    <ul class="blog-info">
-        <meta itemprop="author" content="casper">
+  <!-- <ul class="blog-info">
+      <meta itemprop="author" content="casper">
+      
         
-          
-            <li>
-              <i class="fa fa-user"></i>
-              卡斯伯
-            </li>
-          
+          <li>
+            <i class="fa fa-user"></i>
+            卡斯伯
+          </li>
         
-          
+      
         
-          
+      
         
-          
+      
         
+      
 
-      <li>
-      	<i class="fa fa-calendar"></i>
-        <time datetime="2017-09-01T00:00:00.000Z" itemprop="datePublished">2017/09/01</time>
+    <li>
+      <i class="fa fa-calendar"></i>
+      <time datetime="2017-09-01T00:00:00.000Z" itemprop="datePublished" class="blog-time mb-2 d-inline-block">2017/09/01</time>
 
-      </li>
-      <!-- <li><i class="fa fa-comments"></i>
-        <a href="https://www.hexschool.com/2017/09/01/2017-09-01-javascript-for/#disqus_thread" class="article-comment-link">Comments</a>
-      </li> -->
-      <li>
-	<i class="fa fa-tags"></i>
-	
+    </li>
+    <li>
+      <i class="fa fa-tags"></i>
+      
   
     <a href="/tags/javascript/" title="javascript">javascript</a>
   
 
 
-      </li>
-    </ul>
-    <div class="blog-item">
+    </li>
+  </ul> -->
+  <div class="row blog-post-card mb-3 mb-md-0">
+    <div class="col-md-9">
       
-	陣列處理技巧是 JavaScript 中非常重要的一塊，現在框架大亂鬥的時代，框架基本上對於 DOM 的處理都有屬於自己一套良好的方法。只要能夠對於陣列資料操作熟悉，配合框架就能夠將開發效率更上層樓。
-      
+    <h2 class="m-t-0">
+      <meta content="JavaScript 陣列處理方法 [filter(), find(), forEach(), map(), every(), some(), reduce()]">
+      <a class="archive-article-title stretched-link" href="/2017/09/01/2017-09-01-javascript-for/">JavaScript 陣列處理方法 [filter(), find(), forEach(), map(), every(), some(), reduce()]</a>
+    </h2>
+
+
+      <div class="blog-description">
+        
+          陣列處理技巧是 JavaScript 中非常重要的一塊，現在框架大亂鬥的時代，框架基本上對於 DOM 的處理都有屬於自己一套良好的方法。只要能夠對於陣列資料操作熟悉，配合框架就能夠將開發效率更上層樓。
+        
+      </div>
     </div>
-    <div class="text-end mt-3">
-      <a href="https://www.hexschool.com/2017/09/01/2017-09-01-javascript-for/" class="more btn btn-primary">Read more <i class="fa fa-angle-right"></i></a>
-    </div>
+    
+      <div class="col-md-3 blog-post-card-img">
+        <a href="https://www.hexschool.com/2017/09/01/2017-09-01-javascript-for/">
+          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2FArray_method.png?alt=media&token=787a891f-345c-4927-98b0-70ff34a2a73b" class="img-fluid">
+          <meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F09%2FArray_method.png?alt=media&token=787a891f-345c-4927-98b0-70ff34a2a73b">
+        </a>
+      </div>
+    
+  </div>
+  <!-- <div class="text-end mt-3">
+    <a href="https://www.hexschool.com/2017/09/01/2017-09-01-javascript-for/" class="more btn btn-primary">Read more <i class="fa fa-angle-right"></i></a>
+  </div> -->
+</div>
+<div class="blog-tags">
+  
+  
+    <a href="/tags/javascript/" title="javascript">javascript</a>
+  
+
+
 </div>
 <hr class="blog-post-sep">
 
@@ -1656,10 +1677,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/vendor.js?1724295222904.js"></script>
+<script src="/js/vendor.js?1724320175700.js"></script>
 
 
-<script src="/js/all.js?1724295222904.js"></script>
+<script src="/js/all.js?1724320175700.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
