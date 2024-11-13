@@ -51,7 +51,7 @@
  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/all.css?1731487716199.css">
+<link rel="stylesheet" href="/stylesheets/all.css?1731513433461.css">
 
   <!-- Global styles END -->
 
@@ -273,7 +273,7 @@
         </ul>
         <!-- <a class="reduce-padding py-4 pl-4 fw-bold d-md-block d-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="material-icons text-dark" style="vertical-align: middle;">search</i></a> -->
         <!-- <div class="bg-danger text-dark position-absoulte py-3 px-5 d-flex justify-content-between d-md-none" style="top: 100%">
-          <p class="fw-bold m-0">【熱烈報名中】</p>
+          <p class="fw-bold m-0">【預約享優惠】</p>
           <span class="clock m-r-1"></span>
         </div> -->
       </div>
@@ -1567,7 +1567,7 @@
   data-type="product"></div>
 
 
-<a href="https://shop.hexschool.com/order/create?coupon_code=2024_BACKEND_ENGINEER_DBMS_TRAINING_B1&order=-O7CIHI2vuo1c9310aLa&phyProduct[]=-O7CIHI2vuo1c9310aLa&phyProductSpec[]=-O7CIQtBu8HNPqdyuLTz" target="_blank" class="btn btn-lg btn-primary ani-loop animated pulse tracking-link mb-2" data-id="2024-backend-database-camping" data-title="後端工程師 - 資料庫體驗營" data-name="後端工程師 - 資料庫體驗營" data-type="product" data-forward="true">立即報名</a>
+<a href="#" target="_blank" class="btn btn-lg btn-primary tracking-link mb-2 disabled" data-id="2024-backend-database-camping" data-title="後端工程師 - 資料庫體驗營" data-name="後端工程師 - 資料庫體驗營" data-type="product" data-forward="true" disabled>報名截止</a>
 <p id="couponText" class="d-none text-danger fw-bold my-0" style="font-size: 16px;"></p>
 
 <h3 id="完課獎勵證書"><a href="#完課獎勵證書" class="headerlink" title="完課獎勵證書"></a>完課獎勵證書</h3><ol>
@@ -1582,7 +1582,7 @@
 <p>Q：作業寫不出來時，線上有人問嗎？<br>A：有的，你能透過線上學習社群 Discord，來詢問大家，同時您也能觀看其它同學的作業，瞭解自己能精進之處。</p>
 <p>Q：文中有提到助教批改，那可以批改完再次提交嗎？<br>A：可以，在活動期間皆可提交。如果您願意投入學習，那我們就全力支援你到底，六角學院有個名言，就是「只要你不放棄你自己，六角學院就永遠線上支持你到底」。</p>
 
-<nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+<!-- <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-column flex-md-row text-white align-items-md-center pr-md-3 pr-0">
@@ -1602,7 +1602,7 @@
     </div>
   </div>
 </nav>
-<input type="hidden" id="footer-clock" value="2024/11/14">
+<input type="hidden" id="footer-clock" value="2024/11/14"> -->
 
 <script>
   window.onload = function() {
@@ -1621,7 +1621,6 @@
 
     // 欲跳轉按鈕
     const forwardBtn = document.querySelectorAll('[data-forward]');
-    console.log(forwardBtn)
 
     // 可用 Domain
     const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
@@ -1655,23 +1654,23 @@
     }
 
     // 驗證 domain 並轉網址
-    if (allowdm.test(urlQueryObj['h_dm'])) {
-      switch (urlQueryObj['h_pt']) { 
-        // 官網網址參數
-        case 'Qpgou':
-          renderForKol('reserve');
-          couponText.textContent = '立即報名，享有「預約早鳥 $799 優惠」';
-          break;
-        case 'fPjm7':
-          renderForKol('betweenGos');
-          couponText.textContent = '立即報名，享有「BetweenGos $799  專屬優惠」';
-          break;
-        default:
-          transUrl(['https://shop.hexschool.com/order/create?coupon_code=2024_BACKEND_ENGINEER_DBMS_TRAINING_B1&order=-O7CIHI2vuo1c9310aLa&phyProduct[]=-O7CIHI2vuo1c9310aLa&phyProductSpec[]=-O7CIQtBu8HNPqdyuLTz']);
-      }
-      couponText.classList.remove('d-none');
-      couponText.classList.add('d-block');
-    }
+    // if (allowdm.test(urlQueryObj['h_dm'])) {
+    //   switch (urlQueryObj['h_pt']) { 
+    //     // 官網網址參數
+    //     case 'Qpgou':
+    //       renderForKol('reserve');
+    //       couponText.textContent = '立即報名，享有「預約早鳥 $799 優惠」';
+    //       break;
+    //     case 'fPjm7':
+    //       renderForKol('betweenGos');
+    //       couponText.textContent = '立即報名，享有「BetweenGos $799  專屬優惠」';
+    //       break;
+    //     default:
+    //       transUrl(['#']);
+    //   }
+    //   couponText.classList.remove('d-none');
+    //   couponText.classList.add('d-block');
+    // }
   }
 </script>
 
@@ -2548,10 +2547,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/vendor.js?1731487716199.js"></script>
+<script src="/js/vendor.js?1731513433462.js"></script>
 
 
-<script src="/js/all.js?1731487716200.js"></script>
+<script src="/js/all.js?1731513433462.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
