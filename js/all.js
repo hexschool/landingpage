@@ -544,20 +544,20 @@ vueApp = function() {
         vue: {},
         typescript: {},
         nuxt3: {},
-        js_react: {},
+        react: {},
         web_layout: {},
         ui: {},
-        node: {}
+        backend: {}
       },
       trainingWait: {
         js: {},
         vue: {},
         typescript: {},
         nuxt3: {},
-        js_react: {},
+        react: {},
         web_layout: {},
         ui: {},
-        node: {}
+        backend: {}
       }
     },
     methods: {

@@ -1,0 +1,1236 @@
+
+
+
+
+
+  <!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-TW">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="Cache-control" content="public">
+  <meta http-equiv="max-age" content="604800" />
+  <title>React 作品實戰班 | 六角學院</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+  <meta property="og:title" content="React 作品實戰班 | 六角學院" />
+  <meta property="og:description" content="本課程以「接近業界實戰」為導向，並提供專題一對一服務，手把手帶您成為 React 前端工程師！" />
+  
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Flanding-page%2F1730273456403-thumbnail.png?alt=media&token=fcf91271-8972-4e6a-8bf0-28cf6d3c64f4" />
+  
+  <meta property="fb:app_id" content="760173380749493"/>
+  <meta property="og:site_name" content="六角學院" />
+  <meta property="og:locale" content="zh_TW" />
+
+  
+    <link rel="alternative" href="/atom.xml" title="六角學院" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta content="本課程以「接近業界實戰」為導向，並提供專題一對一服務，手把手帶您成為 React 前端工程師！" name="description">
+  <meta content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript" name="keywords">
+  <meta content="六角學院" name="author">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global styles START -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  
+<link rel="stylesheet" href="/stylesheets/vue.css?1731467189252.css">
+
+  <!-- Global styles END -->
+
+  
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MH4SWT');</script>
+  <!-- End Google Tag Manager -->
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="over-flow-x react-training">
+  <div id="app">
+    <nav class="navbar navbar-light navbar-expand text-primary navbar-toggleable fixed-top shadow"
+  style="background-color: rgba(255, 255, 255, .85)">
+  <div class="container">
+    <a href="/" class="navbar-brand d-none d-sm-block">
+      
+      <style>
+
+.reduce-header  .header-logo {
+  height: 28px
+}
+.header-logo {
+  transition: height .3s;
+  height: 36px
+}
+</style>
+<svg class="header-logo" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#00251a"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#00251a"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#00251a"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#00251a"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#00251a"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#00251a"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#00251a"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#00251a"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+      
+    </a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <a href="#recommend"
+        class="btn btn-danger text-white ">
+        
+        別說了，我要上課
+        
+        <i class="far fa-gem"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="bg-balls-primary">
+  <!-- Banner -->
+  <section class="banner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img src="../images/react-training/react-banner.png" alt="React 作品實戰班 Banner" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 雖然前端工程師如此受到求職者歡迎，但是．．． -->
+  <section class="worries">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-6">雖然前端工程師如此受到求職者歡迎，但是．．．</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <img src="../images/react-training/react-worries-lg.png" alt="worries" class="img-fluid w-100 d-none d-md-block">
+          <img src="../images/react-training/react-worries.png" alt="worries" class="img-fluid w-100 d-md-none">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- 學習不是一個人的事情 -->
+<section class="py-md-7 py-5">
+  <div class="container">
+    <div class="row justify-content-center flex-md-row flex-column-reverse align-items-center">
+      <div class="col-md-6 col-xl-5 mt-xl-0 mt-3">
+        <img
+          src="../images/react-training/react-learn.png"
+          alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-md-6 col-xl-5 mt-md-0 d-flex flex-column justify-content-center">
+        <h2 class=" mb-2 text-md-start text-center">學習不是一個人的事情<br>你需要找人來幫你 <i
+            class="far fa-smile-wink"></i></h2>
+        <p class="text-md-start text-center mb-2">網路上的 React 教學資源非常多，但卻常常讓人看的霧煞煞。</p>
+        <p class="mb-0">
+          這堂課會教你 React 的基礎，一直到怎麼寫好元件，以及建構完整應用作品。<br>
+          最棒的是，我們還有讓大家一起討論的社群學習方式。你可以和同學們互相討論、互相學習，保證讓你學得又快又紮實。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JS 設計模式打通新維度 -->
+<section class="bg-light py-md-7 py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col">
+        <h3 class="text-center course-font-section-title">JS 設計模式打通新維度
+          <span class="d-xl-inline-block d-none">，</span>
+          <br class="d-block d-xl-none">
+          練出不被面試官打槍的技術底
+        </h3>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-xl-6 mt-3">
+      <div class="col-md-6 col-xl-5 col-11">
+        <img
+          src="../images/react-training/react-skill.png"
+          alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-md-4 col-xl-3 col-11 mt-xl-0 mt-3 d-flex flex-column justify-content-center">
+        <p class="mb-0 text-dark mt-2">
+          課程不僅專注於語法教學，還會分享程式語言的經典設計模式和實戰經驗。<br>
+          我們的目標是讓學員不只能建立網站，更能掌握問題分析和前端架構的能力。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 美感與實力兼具 -->
+<section>
+  <div class="bg-primary  text-white py-5">
+    <div class="container">
+      <h3 class="text-center course-font-section-title mb-3">美感與實力兼具
+        <span class="d-md-inline-block d-none">，</span>
+        <br class="d-block d-md-none">
+        做出人見人愛的漂亮網站
+      </h3>
+      <p class="text-center mb-0">
+        「React 作品實戰班」重實作更勝於理論。我們不只提供免費電商 API，還會手把手帶你打造專屬作品網站。<br>
+        這份實戰經驗，絕對能讓你在求職道路上如虎添翼。
+      </p>
+    </div>
+  </div>
+  <!-- 作品網站 -->
+  <div class="workWebsite overflow-hidden">
+    <!-- 上層輪播 -->
+    <div class="d-flex">
+      <div class="workWebsite-swiper workWebsite-swiper-first">
+        <!-- 上 -->
+        <a target="_blank" rel="noopener" href="https://hsuan777.github.io/JSWeek8-Final/#/" class="workWebsite-link workWebsite-work1"></a>
+        <a target="_blank" rel="noopener" href="https://jedchang.github.io/ClocksStore/#/" class="workWebsite-link workWebsite-work2 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://yiren-liou.github.io/AboriginalShop/#/" class="workWebsite-link workWebsite-work3"></a>
+        <a target="_blank" rel="noopener" href="https://jim821011.github.io/SleepLife/#/" class="workWebsite-link workWebsite-work4"></a>
+        <a target="_blank" rel="noopener" href="https://gretema.github.io/ShimazuV2/#/" class="workWebsite-link workWebsite-work5 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://chiayutsai.github.io/RingShop/#/" class="workWebsite-link workWebsite-work6"></a>
+        <a target="_blank" rel="noopener" href="https://recall131477.github.io/doublebrunch/#/" class="workWebsite-link workWebsite-work7 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://carol-yang09.github.io/Adagio/#/" class="workWebsite-link workWebsite-work8"></a>
+      </div>
+      <div class="workWebsite-swiper workWebsite-swiper-second">
+        <!-- 上 -->
+        <a target="_blank" rel="noopener" href="https://hsuan777.github.io/JSWeek8-Final/#/" class="workWebsite-link workWebsite-work1"></a>
+        <a target="_blank" rel="noopener" href="https://jedchang.github.io/ClocksStore/#/" class="workWebsite-link workWebsite-work2 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://yiren-liou.github.io/AboriginalShop/#/" class="workWebsite-link workWebsite-work3"></a>
+        <a target="_blank" rel="noopener" href="https://jim821011.github.io/SleepLife/#/" class="workWebsite-link workWebsite-work4"></a>
+        <a target="_blank" rel="noopener" href="https://gretema.github.io/ShimazuV2/#/" class="workWebsite-link workWebsite-work5 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://chiayutsai.github.io/RingShop/#/" class="workWebsite-link workWebsite-work6"></a>
+        <a target="_blank" rel="noopener" href="https://recall131477.github.io/doublebrunch/#/" class="workWebsite-link workWebsite-work7 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://carol-yang09.github.io/Adagio/#/" class="workWebsite-link workWebsite-work8"></a>
+      </div>
+    </div>
+    <!-- 下層輪播 -->
+    <div class="d-flex">
+      <div class="workWebsite-swiper workWebsite-swiper-first">
+        <!-- 下 -->
+        <a target="_blank" rel="noopener" href="https://cross1469.github.io/RelaxWine/#/" class="workWebsite-link workWebsite-work9"></a>
+        <a target="_blank" rel="noopener" href="https://daisychen776.github.io/HBakery/#/" class="workWebsite-link workWebsite-work10 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://ericacadu.github.io/panya/#/" class="workWebsite-link workWebsite-work11"></a>
+        <a target="_blank" rel="noopener" href="https://eric840906.github.io/vuecli3Project1/#/home" class="workWebsite-link workWebsite-work12"></a>
+        <a target="_blank" rel="noopener" href="https://lionms200789.github.io/haseiyo-SPA/#/" class="workWebsite-link workWebsite-work13 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://yunnei.github.io/vue_final/#/" class="workWebsite-link workWebsite-work14"></a>
+        <a target="_blank" rel="noopener" href="https://popeye-ux.github.io/moment/#/" class="workWebsite-link workWebsite-work15 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://hsuifang.github.io/ec-meimaij/#/" class="workWebsite-link workWebsite-work16"></a>
+      </div>
+      <div class="workWebsite-swiper workWebsite-swiper-second">
+        <!-- 下 -->
+        <a target="_blank" rel="noopener" href="https://cross1469.github.io/RelaxWine/#/" class="workWebsite-link workWebsite-work9"></a>
+        <a target="_blank" rel="noopener" href="https://daisychen776.github.io/HBakery/#/" class="workWebsite-link workWebsite-work10 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://ericacadu.github.io/panya/#/" class="workWebsite-link workWebsite-work11"></a>
+        <a target="_blank" rel="noopener" href="https://eric840906.github.io/vuecli3Project1/#/home" class="workWebsite-link workWebsite-work12"></a>
+        <a target="_blank" rel="noopener" href="https://lionms200789.github.io/haseiyo-SPA/#/" class="workWebsite-link workWebsite-work13 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://yunnei.github.io/vue_final/#/" class="workWebsite-link workWebsite-work14"></a>
+        <a target="_blank" rel="noopener" href="https://popeye-ux.github.io/moment/#/" class="workWebsite-link workWebsite-work15 d-none d-lg-block"></a>
+        <a target="_blank" rel="noopener" href="https://hsuifang.github.io/ec-meimaij/#/" class="workWebsite-link workWebsite-work16"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 卡斯伯簡介 -->
+<div class="introTeacher py-5 py-md-7">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-11 col-xl-8">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+          <div class="flex-shrink-0">
+            <img src="../images/react-training/react-teacher-casper.png" alt="卡斯伯老師" class="img-fluid d-block mx-auto mb-3 mb-md-0">
+          </div>
+          <div class="">
+            <p class="bg-primary text-center text-white introTeacher-title">六角學院卡斯伯親自授課</p>
+            <h5 class="h3 fw-700">卡斯伯</h5>
+            <ul class="list-unstyled">
+              <li class="d-flex mb-2">
+                <span class="material-symbols-outlined fill text-dark me-2">
+                  play_arrow
+                </span>
+                <p class="h5 fw-normal mb-0">2021 {Laravel x Vue} Conf 技術講者</p>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-symbols-outlined fill text-dark me-2">
+                  play_arrow
+                </span>
+                <p class="h5 fw-normal mb-0">Modern Web 研討會講者</p>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-symbols-outlined fill text-dark me-2">
+                  play_arrow
+                </span>
+                <p class="h5 fw-normal mb-0">連續六屆 IT 鐵人邦獲選紀錄</p>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-symbols-outlined fill text-dark me-2">
+                  play_arrow
+                </span>
+                <p class="h5 fw-normal mb-0">線上課程超過萬人註冊</p>
+              </li>
+              <li class="d-flex mb-2">
+                <span class="material-symbols-outlined fill text-dark me-2">
+                  play_arrow
+                </span>
+                <p class="h5 fw-normal mb-0">JavaScript 技術書籍：2022/12 繁體中文書銷售排行<span class="text-primary fw-500">第 1 名</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 八週主題 -->
+<div class="bg-light py-5 py-md-7">
+  <div class="container">
+    <!-- 標題 -->
+    <h3 class="course-font-section-title text-dark fw-700 text-center">由淺入深的課程大綱</h3>
+    <p class="text-dark text-md-center text-start mb-0">這門課程，我們是以「 求職面試作品 」為導向，來規劃我們的課綱，讓您上完課後，就能開發屬於自己的網站作品。</p>
+    <!-- 第一週 -->
+    <div class="row flex-md-row flex-column-reverse mt-md-6 mt-5 justify-content-center  align-items-center">
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第一週：重新打造 JavaScript 思維，從拆解認識設計模式</h4>
+        <p class="mb-3">學了許多 JS 語法，但實戰中依然覺得卡卡嗎？本課程會介紹目前最主流的設計模式，接觸框架的同時瞭解為什麼框架這麼做，以及框架有什麼優勢</p>
+        <p class="mb-0">2024/12/27（五）20:00~22:30，2.5 小時</p>
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3">
+        <img
+          src="../images/react-training/react-w1.png"
+          alt="week1" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- 第二週 -->
+    <div class="row mt-md-6 mt-5 justify-content-center">
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3 ">
+        <img
+          src="../images/react-training/react-w2.png"
+          alt="week2" class="img-fluid w-100">
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第二週：RESTful API 串接</h4>
+        <p class="mb-3">身為一個前端工程師，串接 API 的技能一定要有。為了經營出具個人風格的獨立作品，本課程前期就可開始串接專屬 API，同時瞭解如何與 React 進行整合。</p>
+        <p class="mb-0">2025/1/3（五）20:00~22:30，2.5 小時</p>
+      </div>
+    </div>
+    <!-- 第三週 -->
+    <div class="row flex-md-row flex-column-reverse mt-md-6 mt-5 justify-content-center align-items-center">
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第三週：開始熟練 React.js</h4>
+        <p class="mb-3">打開許多框架文件不知如何入手嗎？前幾週先帶大家輕鬆接觸 React.js，本週開始將會更深入的學習重要的 80% 語法，加速接下來的開發熟練度！</p>
+        <p class="mb-0">2025/1/10（五）20:00~22:30，2.5 小時</p>
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3 ">
+        <img
+          src="../images/react-training/react-w3.png"
+          alt="week3" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- 第四週 -->
+    <div class="row mt-md-6 mt-5 justify-content-center">
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3 ">
+        <img
+          src="../images/react-training/react-w4.png"
+          alt="week4" class="img-fluid w-100">
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第四週：元件化</h4>
+        <p class="mb-3">一個專業的開發者，開發的過程中一定會掌握「DRY」 的觀念（don't repeat yourself），精準的拆分模組並增加每段程式碼的可用性，邁向專業開發者的道路吧</p>
+        <p class="mb-0">2025/1/17（五）20:00~22:30，2.5 小時</p>
+      </div>
+    </div>
+    <!-- 第五週 -->
+    <div class="row flex-md-row flex-column-reverse mt-md-6 mt-5 justify-content-center align-items-center">
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第五週：進階語法介紹</h4>
+        <p class="mb-3">前幾章節已經介紹了 React 的大部分運用方法，掌握後已經足以應對大部分的開發情境，本段將回到觀念的介紹，讓你更能了解框架是如何運作以及遇到問題是如何排除！</p>
+        <p class="mb-0">2025/1/24（五）20:00~22:30，2.5 小時</p>
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3 ">
+        <img
+          src="../images/react-training/react-w5.png"
+          alt="week5" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- 第六週 -->
+    <div class="row mt-md-6 mt-5 justify-content-center">
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3 ">
+        <img
+          src="../images/react-training/react-w6.png"
+          alt="week6" class="img-fluid w-100">
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第六週：Vite、React Router</h4>
+        <p class="mb-3">單頁式應用程式現在已經成為顯學，不僅可以改善開發上的效率更能增加使用者的體驗，透過 React 與前端 Router 的觀念讓開發 SPA 變得輕而易舉。</p>
+        <p class="mb-0">2025/2/7（五）20:00~22:30，2.5 小時</p>
+      </div>
+    </div>
+    <!-- 第七週 -->
+    <div class="row flex-md-row flex-column-reverse mt-md-6 mt-5 justify-content-center align-items-center">
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第七週：Redux 與 Redux Toolkit</h4>
+        <p class="mb-3">隨著專案越來越複雜，單一元件的狀態管理以及無法滿足團隊開發上的需求，因此在多人團隊開發中，更會建議導入 Redux Toolkit 來管理專案的狀態變化。</p>
+        <p class="mb-0">2025/2/14（五）20:00~22:30，2.5 小時</p>
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3 ">
+        <img
+          src="../images/react-training/react-w7.png"
+          alt="week7" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- 第八週 -->
+    <div class="row mt-md-6 mt-5 justify-content-center">
+      <div class="col-xl-4 col-md-5 col-11 mt-md-0 mt-3 ">
+        <img
+          src="../images/react-training/react-w8.png"
+          alt="week8" class="img-fluid w-100">
+      </div>
+      <div class="col-xl-4 col-md-5 col-11 d-flex flex-column justify-content-center">
+        <h4 class="text-dark lh-base mt-md-0 mt-3 mb-3">第八週：React 實戰全攻略</h4>
+        <p class="mb-3">本課程會提供專屬實戰 API（全新開發），示範該如何運用實戰 API 打造出獨一無二的電商網站！</p>
+        <p class="mb-0">2025/2/21（五）20:00~22:30，2.5 小時</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 上課行事曆 -->
+<section class="calendar py-md-7 py-5">
+  <h3 class="text-center course-font-section-title py-3 mb-6" style="line-height: 1.5;">
+    上課行事曆<br>
+    <span class="h6 d-inline-block mt-2">不只要學好技術、還要做出好作品！</span>
+  </h3>
+  <div class="container">
+    <div class="row justify-content-center position-relative">
+      <img src="../images/web-layout-training/calendar-assistantDiscord.png" alt="助教" class="img-fluid position-absolute d-none d-lg-block" style="width: 306px; bottom: 100%; left: 8%;">
+      <img src="../images/web-layout-training/calendar-casperZoom.png" alt="卡斯伯" class="img-fluid position-absolute d-none d-lg-block" style="width: 306px; bottom: 100%; right: 8%;">
+      <div class="col-lg-10 col-md-11 bg-light py-4 px-lg-5">
+        <div class="row justify-content-between sticky-top top-md-navbar">
+          <div class="col-6">
+            <div class="card h-100 border-0 border-radius-0 bg-light calendar-day">
+              <h4 class="bg-secondary text-white text-center py-3 mb-2">每週一堂</h4>
+              <p class="text-primary text-center mb-0 mb-lg-1">助教直播講解作業與解題攻略</p>
+              <div class="calendar-arrow arrow-primary mx-auto mb-2 mt-auto"></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card border-0 border-radius-0 bg-light calendar-day">
+              <h4 class="text-center text-white bg-primary py-3 mb-2">週五</h4>
+              <p class="text-primary text-center mb-0 mb-lg-1">從基礎到進階，<br class="d-xl-none"><span>Vue 框架帶你學到會（&#x1F31F）</span></p>
+              <div class="calendar-arrow arrow-primary mx-auto mb-2"></div>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled row flex-wrap justify-content-between gy-2 gy-md-3">
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 justify-content-center align-items-center">
+              <p class="text-primary mb-0">尚未開課</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第一週：</h5>
+              <h5 class="mb-1">重新打造 JavaScript 思維，<br>從拆解認識設計模式</h5>
+              <p class="mb-0">2024/12/27（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第一週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第二週：</h5>
+              <h5 class="mb-1">RESTful API 串接</h5>
+              <p class="mb-0 mt-auto">2025/1/3（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第二週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第三週：</h5>
+              <h5 class="mb-1">開始熟練 React.js</h5>
+              <p class="mb-0 mt-auto">2025/1/10（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第三週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第四週：</h5>
+              <h5 class="mb-1">元件化</h5>
+              <p class="mb-0 mt-auto">2025/1/17（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第四週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第五週：</h5>
+              <h5 class="mb-1">進階語法介紹</h5>
+              <p class="mb-0 mt-auto">2025/1/24（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第五週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第六週：</h5>
+              <h5 class="mb-1">Vite、React Router</h5>
+              <p class="mb-0 mt-auto">2025/2/7（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第六週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第七週：</h5>
+              <h5 class="mb-1">Redux 與 Redux Toolkit</h5>
+              <p class="mb-0 mt-auto">2025/2/14（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第七週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第八週：</h5>
+              <h5 class="mb-1">React 實戰全攻略</h5>
+              <p class="mb-0 mt-auto">2025/2/21（五）20:00~22:30<span class="d-none d-md-inline">，2.5 小時</span></p>
+            </div>
+          </li>
+          <li class="col-6">
+            <div class="card h-100 border-0 border-radius-0 p-2 p-md-3">
+              <h5 class="mb-2 mb-md-3">第八週：</h5>
+              <h5 class="mb-1">作業與解題攻略講解</h5>
+              <p class="mt-auto mb-0">1 小時</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 豐富的課程活動 -->
+<section class="bg-light py-md-7 py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-11">
+        <h3 class="text-center course-font-section-title">豐富的課程活動</h3>
+        <p class="text-md-center text-start">除此之外，本次直播課程新增許多學習活動，讓你就算在線上，也有超越實體活動的學習體驗</p>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-4 col-11">
+        <img
+          src="../images/react-training/react-course-activity-1.png"
+          alt="" class="img-fluid w-100">
+        <p class="mb-0 mt-2">過程中會為每個人進行分組，一同挑戰團隊共同的開發任務，讓學習的過程不再孤單～<br>（任務範例：Git 協作，大家一起來 commit）</p>
+      </div>
+      <div class="col-md-4 col-11 mt-md-0 mt-3">
+        <img
+          src="../images/react-training/react-course-activity-2.png"
+          alt="" class="img-fluid w-100">
+        <p class="mb-0 mt-2">課程目標是讓學員都可完成「具個人風格的網頁作品」，將會提供線上作品牆呈現學員們的成果，在線展示屬於大家的優秀作品。</p>
+      </div>
+      <div class="col-md-4 col-11 mt-md-0 mt-3">
+        <img
+          src="../images/react-training/react-course-activity-3.png"
+          alt="" class="img-fluid w-100">
+        <p class="mb-0 mt-2">每個人都花費大量的心力經營自己的作品，其中也埋藏了許多充滿趣味的秘密，課後將會舉辦發表會讓大家盡情的展現吧！</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 這堂課適合 ... -->
+<section class="container my-md-7 my-5">
+  <div class="row flex-md-row flex-column-reverse justify-content-center align-items-center">
+    <div class="col-md-6 col-xl-5 col-11">
+      <h3 class="mt-md-0 mt-3 course-font-section-title">這堂課適合 ...</h3>
+      <p class="mt-3 mb-1">本門課程適合具有基礎 JavaScript 經驗的開發者：</p>
+      <ul>
+        <li>想尋找前端工作，但還沒有作品者</li>
+        <li>對於函式有基礎的概念，並清楚如何撰寫函式（function）</li>
+        <li>正在開始學習任一種 JavaScript 框架（Angular、React、Vue）</li>
+      </ul>
+      <p>你也可以參考<a target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLScDdDi6A3BAwToUbdjhFVuSlPqZ--xDebZOwSKasNvR2wyojw/viewform" class="link-primary">本測驗</a>，只要對七題以上即可參加本課程。</p>
+      <p class="mt-3 mb-1">本課程適合的職缺：</p>
+      <ul>
+        <li>前端設計師</li>
+        <li>前端工程師</li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-xl-3 col-11">
+      <img
+        src="../images/react-training/react-suitable.png"
+        alt="" class="img-fluid w-100">
+    </div>
+  </div>
+</section>
+
+<!-- 學完這門課，你將會獲得 -->
+<section class="willGet bg-light pt-md-7 pt-5">
+  <h3 class="text-center mb-4">學完這門課，你將會獲得</h3>
+  <div class="willGet-bgImage d-none d-md-flex align-items-end">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="d-flex">
+            <div class="willGet-description p-4">
+              <h4 class="mb-0">獨一無二面試作品</h4>
+              <p class="mb-0">課程會引導學員做出個人風格的作品，搭配課程 API 自行建立具風格的作品，與人撞衫機率降為 0 %</p>
+            </div>
+            <div class="willGet-description p-4">
+              <h4 class="mb-0">穩固 JS/React 實作經驗</h4>
+              <p class="mb-0">課程不僅教你怎麼做，更引導你實戰中如何運用。讓你具備框架開發的能力，課程後也能再應用。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="willGet-works border-bottom border-white d-flex align-items-end d-md-none">
+    <div class="container pb-3">
+      <div class="willGet-description p-4">
+        <h4 class="mb-0">獨一無二面試作品</h4>
+        <p class="mb-0">課程會引導學員做出個人風格的作品，搭配課程 API 自行建立具風格的作品，與人撞衫機率降為 0 %</p>
+      </div>
+    </div>
+  </div>
+  <div class="willGet-code d-flex align-items-end d-md-none">
+    <div class="container pb-3">
+      <div class="willGet-description p-4">
+        <h4 class="mb-0">穩固 JS/React 實作知識</h4>
+        <p class="mb-0">課程不僅教你怎麼做，更引導你實戰中如何運用。讓你具備框架開發的能力，課程後也能再應用。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 用八週的時間 ...-->
+<section class="py-md-7 py-5">
+  <div class="container">
+    <h3 class="text-center course-font-section-title">React 作品實戰班</h3>
+    <h5 class="h6 text-center">用八週的時間，帶你做出兼具美感與實力的好作品</h5>
+    <div class="row flex-column mt-4 justify-content-center align-items-center">
+      <div class="col-md-6 col-11">
+        <img
+          src="../images/react-training/react-live.png"
+          alt="" class="img-fluid w-100">
+      </div>
+      <div class="col-md-6 col-11 mt-5">
+        <h4 class="ms-md-4 ms-0">授課內容：</h4>
+        <ul>
+          <li>開課日期：2024/12/27（五）</li>
+          <li>教學日期：2024/12/27 ~ 2025/2/21 每週五，共 8 堂</li>
+          <li>授課時段：各授課堂數的 20:00~22:30</li>
+          <li>授課堂數：每堂 2.5 小時，共 8 堂，總計 20 小時</li>
+          <li>直播教室：使用 <a href="https://www.zoom.com/zh-tw" target="_blank" class="link-primary">ZOOM</a> 進行直播教學 </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 獨一無二的作品展示區 -->
+<section class="uniqueWorkArea mb-md-7 mb-5 position-relative bg-light">
+  <div class="container position-absolute uniqueWorkArea-position">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="uniqueWorkArea-title">
+          <h3 class="text-center">獨一無二的作品展示區</h3>
+          <p class="text-center mb-0">真的可以做出作品嗎？我們有大量的案例供您做參考～</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uniqueWorkArea-description">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <p class="text-white">
+            作品牆上，每一個都是同學們的心血結晶，都花上半至一個月以上的時間製作，慢慢打磨出可大聲說出「這是我做的」獨立作品！ 我們提供了許多不同資源，包含設計、原始碼檢視、內容審核，確保學員們可以完成一定水準的作品。這些作品：
+            <br><br>
+            絕對獨一無二，不會在其它地方看到相同內容、版型，都經過六角講師、助教審核，設計、程式碼皆有一定的水準，屬於每個作者的結晶，在面試上更能充滿信心地介紹它，本課程也將引導你完成夠水準的獨立作品！
+          </p>
+          <div class="text-center">
+            <a href="https://works.hexschool.io/#/" target="_blank" class="uniqueWorkArea-link px-8 py-3 d-inline-block">作品牆</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 學長姐心得 -->
+<section class="my-5 my-md-7">
+  <div class="container">
+    <h3 class="text-center course-font-section-title mb-5 mb-md-7">超多學長姊心得，進一步了解課程內容</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <img src="../images/vue-training/students-feedback.png" alt="各學員心得" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Q&A -->
+<section class="bg-light py-md-7 py-5">
+  <div class="container">
+    <h3 class="text-center">常見 Q & A</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-11">
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q： React 作品實戰班是預錄的嗎？</p>
+          <p class="mb-0">A：不是哦，每次課程都會是老師直接 Live 教學，這樣才能提升互動性，增強學員吸收知識體驗</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：有幾天直播時段沒辦法配合的話，會有錄影影片嗎？</p>
+          <p class="mb-0">A：有的！我們直播影片都會保留一年時間，至 2025/12，方便學員隨時回平台回顧。</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：我看到你們有影音課程（ex: <a class="link-primary" target="_blank" href="/courses/react.html">React 實戰影音課程</a>）跟 React 作品實戰班，到底該選哪個好？</p>
+          <p class="mb-0">A：如果你有迫切性想學好 JavaScript 及一個框架，建議你選本頁面的直播課程，直播的參與互動性高，並藉由老師們獨創的前端教材，學習效果更好。</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：那影音課程（ex: <a class="link-primary" target="_blank" href="/courses/react.html">React 實戰影音課程</a>）有什麼特色呢？</p>
+          <p class="mb-0">A：在影音課程（ex: <a class="link-primary" target="_blank" href="/courses/react.html">React 實戰影音課程</a>）設計上，我們一小節都設計成 5~20 分鐘，方便時間較碎片，沒辦法抽出一小時以上觀看直播課程的學員來選擇。</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：但是我有你們的影音課程（ex: <a class="link-primary" target="_blank" href="/courses/react.html">React 實戰影音課程</a>），還需要參加 React 作品實戰班嗎？</p>
+          <p class="mb-0"> A：影音課程的設計上，理論和實作都是 5:5，而 React 作品實戰班則是實作機會比較多，互動性也高。如果你是迫切想掌握好一門技術的學員。建議是參與 React 作品實戰班，並藉由影音課程來提升知識量</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：本課程使用的 React 版本是？</p>
+          <p class="mb-0">A：本課程是使用主流的 React 18 版本。</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：我可以只上 React 作品實戰班嗎？</p>
+          <p class="mb-0">A：當然可以，只要具有符合基礎 JS 開發能力並跟上直播班的內容，也會有足夠的知識量來做最終實戰作業。</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：除了老師直播外，我有問題該怎麼辦？</p>
+          <p class="mb-0">A：我們課程系統會提供問答專區，線上的助教都會在發問後 24 小時內回覆，並且也會提供專屬的 Discord 聊天頻道，來讓您與助教一起互動！</p>
+        </div>
+        <div class="my-3">
+          <p class="mb-1 fw-bold">Q：如果無法參與，可以申請退費嗎？</p>
+          <p class="mb-0">A： 退費前請先詳閱 <a href="/qa/#直播班退費規定" target="_blank" class="link-primary"> 退費規定</a>。若不符合需求仍欲退款，可寄信至 service@hexschool.com，將會有小幫手協助進行退款。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 課程購買 -->
+<div class="container purchase course-tracking-ViewContent py-md-7 py-5" id="recommend" data-name="React 作品實戰班" data-id="react-training">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6 mb-3">
+      <div class="card p-4 purchase-card">
+        <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Flanding-page%2F1730273456403-thumbnail.png?alt=media&token=fcf91271-8972-4e6a-8bf0-28cf6d3c64f4" alt="React 作品實戰班" class="img-fluid w-100 mb-3">
+        <h2 class="purchase-title text-dark lh-base mb-2">React 作品實戰班</h2>
+        <p class="h5 lh-base mb-3">以「 求職面試作品 」為導向，八週帶你做出面試專用作品，成為 JS 實戰小能手。</p>
+        <p class="text-dark mb-0">此組合包含：</p>
+        <ul class="list-unstyled mb-3">
+          <li>8 堂直播課程</li>
+          <li>30 小時以上的影音教學資源</li>
+          <li>30 支專屬 RESTful API</li>
+          <li>完成專屬獨立的面試作品</li>
+        </ul>
+        <!-- <p class="text-dark mb-0"><del>原價 $27,904</del></p>
+        <p class="h2 fw-700 text-dark"> $11,799</p> -->
+        <!-- 按鈕 -->
+        <a href="https://r.botbonnie.com/neZ67" target="_blank" class="btn btn-block btn-dark mp-click tracking-link py-3">
+          立即預約
+        </a>
+        <!-- <a href="#" title="Vue 作品實戰班" id="trainingBuyBtn" data-bs-toggle="modal" data-bs-target="#orderModal" data-price="" data-type="product" data-id="vue-training" data-title="React 作品實戰班" data-paylink="#" itemprop="url" target="_blank" rel="noopener" class="btn btn-block btn-dark mp-click tracking-link py-3 disabled" disabled>
+          報名截止
+        </a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="text-center my-4 container line-vueTraining">
+  <p>P.S.：六角學院也有 line@ 嘍，歡迎加入隨時獲得六角學院第一手資訊！</p>
+  <!-- 電腦版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/qgbMS" class="m-y-1 mp-click d-none d-md-block"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+  <!-- 行動版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/AmmnC" class="m-y-1 mp-click d-md-none"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+</div>
+
+ <!-- 開啟通用 footer 倒數-->
+   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
+    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column align-items-md-center text-white justify-content-md-end pr-md-3 pr-0">
+        <span class="fw-bold text-start me-3">【熱烈報名中】</span>
+        
+          <!-- <span class="mr-1 text-start" data-toggle="tooltip" data-placement="top" title="每日更新">後端工程師-資料庫體驗營</span> -->
+          <span class="me-3 fw-bold text-start">後端工程師-資料庫體驗營</span>
+        
+        <div class="d-flex justify-content-start text-white text-nowrap">
+          
+            <span class="clock m-r-1 fw-bold"></span>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end ps-md-3 ps-0">
+        
+          <a href="/2024/10/02/2024-10-02-backend-database-camping/"
+            class="btn btn-dark btn-sm rounded-0">
+            🙋‍♀️ 立即享優惠
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <input type="hidden" id="footer-clock" value="2024/11/14">
+
+  
+  
+  </div>
+  
+<div class="modal fade" id="orderModal" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="
+      position: relative;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      outline: none;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+    ">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          <span>購買 </span>
+          <span v-html="text.title"></span>
+        </h4>
+        <!-- <button type="button" data-bs-dismiss="modal" class="btn-close" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <!-- <img src="/images/marketing/payment_flow.gif" class="img-fluid" alt=""> -->
+        <div class="text-xs-center text-center">
+          <div class="flex flex-center d-flex justify-content-center">
+            <a class="fb-track" href="https://hex.school/P12UP" target="_blank" title="Facebook 客服">
+              <i class="fab fa-facebook-messenger rounded-0 my-3" style="font-size: 40px; color: rgb(0, 132, 255)"></i>
+            </a>
+            <!-- <a href="https://hex.school/P12UP" target="_blank" class="fab fab-facebook mp-click" style="block-center" title="Facebook 客服">
+              <span class="h2">
+                <span class="fa fa-comments-o"></span>
+              </span>
+            </a> -->
+          </div>
+          <p class="m-t-1">
+            <strong>就算是小問題，我們也在線上立即回覆您。</strong><br>
+            <strong>付款後 <span class="text-danger">48hr</span> 內會收到開通課程連結</strong> <br>
+            <span class="text-primary clock"></span>
+          </p>
+        </div>
+        <div class="col-9 mx-auto">
+          <div class="bg-white p-3 mt-3">
+  <p class="mb-2">課程支援以下支付方式</p>
+  <ul class="list-unstyled d-flex flex-wrap mb-0" style="font-size: 14px;">
+    <li class="w-50">
+      <i class="far fa-credit-card"></i>
+      <span class="gl_fz-t3">信用卡</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-store"></i>
+      <span class="gl_fz-t3">超商付款</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-money-check-alt"></i>
+      <span class="gl_fz-t3">ATM 轉帳</span>
+    </li>
+    <li class="w-50">
+      <span class="material-icons align-bottom" style="font-size: 20px;">
+        local_atm
+      </span>
+      <span class="gl_fz-t3">銀角零卡</span>
+    </li>
+  </ul>
+</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a v-if="text.forward" v-bind:href="text.paylink" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+        <a v-else v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_NEW_ORIGIN_PRICE')" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="連接到智付寶付款">立即註冊</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <!-- BEGIN PRE-FOOTER -->
+<div class="container my-3 my-5">
+  <div class="overflow">
+    <div class="fb-like" data-href="https://www.hexschool.com" data-layout="standard" data-action="like"
+      data-show-faces="true" data-share="true"></div>
+  </div>
+</div>
+
+
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-11">
+          <address class="d-flex justify-content-between flex-column flex-md-row">
+            <!-- undefined<br>
+          undefined<br>
+          undefined<br> -->
+            <!-- Phone: undefined<br> -->
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-f pe-2"></i>六角學院</a>
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-messenger pe-2"></i>m.me/hexschool</a>
+            <a href="mailto:service@hexschool.com" class="d-flex align-items-center link-white font-link-big py-1"><i
+                class="material-icons pe-2 font-link-big">mail</i>service@hexschool.com</a>
+          </address>
+          <div class="row justify-content-between align-items-end pt-md-6 pt-3">
+            <div class="col-md-5">
+              <ul class="list-unstyled">
+                <li><a href="/calendar/" class="d-block link-white font-link-small font-weight-light py-1">六角行事曆</a>
+                </li>
+                <li><a href="/courses/" class="d-block link-white font-link-small font-weight-light py-1">精選課程</a></li>
+                <li><a href="/archives/" class="d-block link-white font-link-small font-weight-light py-1">部落格</a></li>
+                <li><a href="/business/" class="d-block link-white font-link-small font-weight-light py-1">企業課程方案</a></li>
+                <li><a href="/qa/" class="d-block link-white font-link-small font-weight-light py-1">問與答</a></li>
+                <li><a href="/about/statement.html"
+                    class="d-block link-white font-link-small font-weight-light py-1">免責聲明</a></li>
+                <li><a href="/multi-talent/" class="d-block link-white font-link-small font-weight-light py-1">多角人才顧問有限公司</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 d-flex flex-column align-items-end pb-md-0 pb-5">
+              <a class="pt-4 pb-3 pt-md-1 pb-md-1" href="/" title="六角學院">
+                
+                <svg width="100px" height="24px" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#FFFFFF"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#FFFFFF"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#FFFFFF"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#FFFFFF"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#FFFFFF"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#FFFFFF"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#FFFFFF"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#FFFFFF"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+                
+              </a>
+              <p class="m-0 text-end">Copyright © 2019 HexSchool.<br class="d-block d-md-none">All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB -->
+  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column" id="footerContact">
+    <!-- 電腦版 LINE -->
+    <a href="https://hex.school/qgbMS" target="_blank"
+      class="fab-icon fab fab-line d-none d-md-flex align-items-center justify-content-center mp-click line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <!-- 行動版 LINE -->
+    <a href="https://hex.school/AmmnC" target="_blank"
+      class="fab-icon fab fab-line d-md-none align-items-center justify-content-center mp-click d-flex line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <a href="https://hex.school/P12UP" target="_blank"
+      class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-flex fb-track"
+      title="Facebook 客服">
+      <i class="fab fa-facebook-messenger text-primary rounded-0" style="font-size: 40px;"></i>
+    </a>
+  </div>
+  <!-- FAB End -->
+  <script type="application/javascript">
+  function getIP(json) {
+    window.hexUseIP = json.ip
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP" defer></script>
+
+
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+
+<![endif]-->
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
+
+<script src="/js/bs4_vendor.js?1731467189252.js"></script>
+
+
+<script src="/js/bs4_all.js?1731467189252.js"></script>
+
+
+<script src="/js/wow.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	new WOW().init();
+});
+</script>
+
+<!-- Facebook Like -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      :'760173380749493',
+    xfbml      : true,
+    version    :'v2.7'
+  });
+  // FB.AppEvents.logPageView('index');
+  // FB.AppEvents.logEvent("sentFriendRequestTesting");
+  // var params = {};
+  //   params['Title'] = '首頁';
+  //   FB.AppEvents.logEvent('pageView', null, params);
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook Like -->
+
+<!-- END PAGE-SPECIFIC PLUGINS -->
+
+<!-- BEGIN INTEGRATIONS -->
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+function generateKey(length) {
+  let key = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    key += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return key
+}
+
+function postConversionAPI (data) {
+  // https://shop.hexschool.com/api/tracker
+  $.ajax({
+    url: "https://shop.hexschool.com/api/tracker",
+    type: 'POST',
+    dataType : 'json',
+    contentType : 'application/json; charset=utf-8',
+    data: JSON.stringify(data),
+  });
+}
+
+function parseCookie() {
+  let cookieObj = {};
+  const cookieAry = document.cookie.split(';');
+  let cookie = '';
+  for (var i=0, l=cookieAry.length; i<l; ++i) {
+      cookie = cookieAry[i].trim();
+      cookie = cookie.split('=');
+      cookieObj[cookie[0]] = cookie[1];
+  }
+  return cookieObj;
+}
+
+function getCookieByName(name) {
+  let value = parseCookie()[name];
+  if (value) {
+      value = decodeURIComponent(value);
+  }
+  return value;
+}
+
+var h_event_time = Math.floor(new Date() / 1000);
+var h_event_id = generateKey(10);
+
+var h_all_data = {
+  type: 'facebook',
+  data: {
+    event_name: 'PageView',
+    event_time: h_event_time,
+    event_id: h_event_id,
+    action_source: 'website',
+    event_source_url: location.href,
+    user_data: {
+      fbc: getCookieByName('_fbc'),
+      fbp: getCookieByName('_fbp'),
+      client_user_agent: navigator.userAgent,
+      client_ip_address: window.hexUseIP,
+    },
+  }
+}
+fbq('init', '518325078292779');
+fbq('track', "PageView", {}, {event_id: h_event_id});
+postConversionAPI(h_all_data);
+
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZSWM1LR0P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZSWM1LR0P');
+  gtag('config', 'AW-926147017');
+</script>
+
+
+
+<!-- Google 再营销代码 -->
+<div class="hidden-xs-up d-none">
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 926147017;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;height:0;width:0;">
+  <img height="0" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926147017/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+  <!-- Google 再营销代码 end -->
+</div>
+
+
+
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+var distinct_id = '';
+mixpanel.init("75759612e011b856d03c2a78e8219094", {
+  loaded: function(mixpanel) {
+    // distinct_id = mixpanel.get_distinct_id();
+    // tracker.addDistinct_id(distinct_id)
+  }
+});</script><!-- end Mixpanel -->
+
+
+<!-- END INTEGRATIONS -->
+</body>
+</html>
+
