@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1733822108028.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1734075189401.css">
 
   <!-- Global styles END -->
 
@@ -1652,6 +1652,231 @@
   </div>
 </section>
 
+<!-- 付款方式介紹 -->
+<section class="payment">
+  <div class="container">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link w-50 active" id="nav-zingala-tab" data-bs-toggle="tab" data-bs-target="#nav-zingala" type="button" role="tab" aria-controls="nav-zingala" aria-selected="true">零卡分期</button>
+        <button class="nav-link w-50" id="nav-newebpay-tab" data-bs-toggle="tab" data-bs-target="#nav-newebpay" type="button" role="tab" aria-controls="nav-newebpay" aria-selected="false">信用卡付款</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-zingala" role="tabpanel" aria-labelledby="nav-zingala-tab">
+        <div class="row align-items-start">
+          <div class="col-md-6">
+            <p class="fw-bold mb-3">Node.js 後端工程師培訓營 & 專題班</p>
+            <h3 class="lh-base">
+              新增銀角零卡分期服務！<br>
+              讓你輕鬆學習不受限！
+            </h3>
+            <p>零卡分期先買後付，適合想專注學習的學生、社會新鮮人！</p>
+            <img src="../images/js-training/zingala.png" alt="zingala logo" class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="times">
+                    <h5 class="mb-3">一次付清</h5>
+                    <p class="mb-0">一次付清</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal mb-0">NT$60,000</h5>
+                    <p class="h5 fw-normal mb-0"><del>原價 NT$132,000</del></p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">3 期</h5>
+                    <p class="payment-fee mb-0">零手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$20,000 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">6 期</h5>
+                    <p class="payment-fee mb-0">零手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$10,000 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">9 期（1.5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$6,767 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">12 期（2.5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$5,125 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">18 期（5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$3,500 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">24 期（7.5%）</h5>
+                    <p class="payment-fee mb-0">需另負擔手續費</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$2,678 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="d-flex align-items-center justify-content-end">
+              <span class="material-icons">
+                emergency
+              </span>
+              以上金額皆不包含銀角額外手續費
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-newebpay" role="tabpanel" aria-labelledby="nav-newebpay-tab">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="fw-bold mb-3">Node.js 後端工程師培訓營 & 專題班</p>
+            <h3 class="lh-base">
+              信用卡分期零利率！<br>
+              輕鬆買，沒壓力！
+            </h3>
+            <p>信用卡除了可一次性付款也支援分期付款方式，凡在<a href="https://www.hexschool.com/courses/" target="_blank">六角官網</a>購買課程皆可分期付款，一共可分 3、6 期（目前僅支援台新、玉山及中信分期付款）。</p>
+            <img src="../images/js-training/newebpay.png" alt="newebpay logo" class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between">
+                  <div class="times">
+                    <h5 class="mb-3">一次付清</h5>
+                    <p class="mb-0">一次付清</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal mb-0">NT$60,000</h5>
+                    <p class="h5 fw-normal mb-0"><del>原價 NT$132,000</del></p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">3 期</h5>
+                    <p class="payment-fee mb-0">零利率</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$20,000 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+              <li class="payment-card py-3 px-4 mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="times">
+                    <h5 class="mb-3">6 期</h5>
+                    <p class="payment-fee mb-0">零利率</p>
+                  </div>
+                  <div class="price text-end">
+                    <h5 class="h3 fw-normal d-flex align-items-center mb-0">NT$10,000 <span class="h4 mb-0 ms-1">/期</span></h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JS 直播班說明會 -->
+<section class="my-md-7 my-5">
+  <div class="container">
+    <h4 class="text-center mb-4">說明會</h4>
+    <div class="row justify-content-center">
+      <div class="col-md-10 mb-3">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/RwggnHjebuA?si=_U7BtrXgGsbcW017" title="說明會" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <h5 class="text-center">時間軸</h5>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">12:06</p>
+      <p class="col-9 col-md-5 mb-0">後端工程師為什麼這麼熱門、目前台灣薪水？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">21:40</p>
+      <p class="col-9 col-md-5 mb-0">限額 200 位🔥 課程的每日任務是什麼？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">23:23</p>
+      <p class="col-9 col-md-5 mb-0">課程時間軸一次看！有哪些課程服務？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">49:25</p>
+      <p class="col-9 col-md-5 mb-0">實體課、培訓營、專題班的差別？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">53:20</p>
+      <p class="col-9 col-md-5 mb-0">怎麼報名，最划算？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:06:50</p>
+      <p class="col-9 col-md-5 mb-0">比你還瘋狂的洧杰校長</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:13:07</p>
+      <p class="col-9 col-md-5 mb-0">求職秘笈：六角如何幫助「非本科轉職工程師的同學」</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:16:15</p>
+      <p class="col-9 col-md-5 mb-0">開放 Q&A</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0"></p>
+      <p class="col-9 col-md-5 mb-0">年紀 30+ 在轉職上會遇到很多阻礙嗎？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0"></p>
+      <p class="col-9 col-md-5 mb-0">AI 出來還會需要工程師嗎？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0"></p>
+      <p class="col-9 col-md-5 mb-0">擔心註冊後，沒時間體力參加專題，老師如何建議？</p>
+    </div>
+  </div>
+</section>
+
 <!-- 常見 QA -->
 <section class="faq">
   <div class="container">
@@ -2266,10 +2491,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1733822108028.js"></script>
+<script src="/js/bs4_vendor.js?1734075189401.js"></script>
 
 
-<script src="/js/bs4_all.js?1733822108028.js"></script>
+<script src="/js/bs4_all.js?1734075189401.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
