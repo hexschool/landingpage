@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1734883038247.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1735228539268.css">
 
   <!-- Global styles END -->
 
@@ -207,11 +207,11 @@
     </div>
     <img src="../images/backend-training/six-month.png" alt="6 個月課程" class="img-fluid d-none d-lg-block">
     <img src="../images/backend-training/six-month-sm.png" alt="6 個月課程" class="img-fluid d-lg-none">
-    <div class="sixMonth-btn row justify-content-center">
+    <!-- <div class="sixMonth-btn row justify-content-center">
       <div class="col-lg-3">
         <a href="#recommend" class="btn btn-primary w-100 fs-8 py-4">立即預約</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -1582,7 +1582,7 @@
               </h5>
               <small class="text-light mb-3"><del>NT$ 37,000</del></small>
               <!-- <a href="#" target="_blank" class="btn fs-8 w-100 btn-secondary py-3 mt-auto">立即免費預約</a> -->
-              <a href="https://shop.hexschool.com/order/create?coupon_code=2025_NODEJS_ENGINEER_TRAINING_N4&order=-OA1TndmxKtEOayDuG6K&phyProduct[]=-OA1TndmxKtEOayDuG6K&phyProductSpec[]=-OA1U6ip0Vw5mHqay4sJ"
+              <a href="#"
               title="Node.js 後端工程師培訓營"
               id="trainingBuyBtn"
               data-bs-toggle="modal"
@@ -1591,12 +1591,12 @@
               data-type="product"
               data-id="backend-training"
               data-title="Node.js 後端工程師培訓營"
-              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_NODEJS_ENGINEER_TRAINING_N4&order=-OA1TndmxKtEOayDuG6K&phyProduct[]=-OA1TndmxKtEOayDuG6K&phyProductSpec[]=-OA1U6ip0Vw5mHqay4sJ"
+              data-paylink="#"
               itemprop="url"
               target="_blank"
               rel="noopener"
-              class="btn fs-8 w-100 btn-secondary py-3 mp-click tracking-link" data-forward="true">
-                立即報名
+              class="btn fs-8 w-100 btn-secondary py-3 mp-click tracking-link disabled" data-forward="false" disabled>
+                報名截止
               </a>
               <p id="couponText" class="d-none text-danger text-center fw-bold mt-1 mb-0" style="font-size: 16px;"></p>
             </div>
@@ -1627,7 +1627,7 @@
               </h5>
               <small class="text-light mb-3"><del>NT$ 132,000</del></small>
               <!-- <a href="#" target="_blank" class="btn fs-8 w-100 btn-primary py-3">立即免費預約</a> -->
-              <a href="https://shop.hexschool.com/order/create?coupon_code=2025_NODEJS_ENGINEER_TRAINING_AND_WORKSHOP_W4&order=-OA1TndmxKtEOayDuG6K&phyProduct[]=-OA1TndmxKtEOayDuG6K&phyProductSpec[]=-OA1U6ip0Vw5mHqay4sJ&phyProduct[]=-OA1UVticEI2T2jUKyH9&phyProductSpec[]=-OA1Un78QZajZs2cbnG6"
+              <a href="#"
               title="Node.js 後端工程師培訓營&專題班"
               id="trainingBuyBtn"
               data-bs-toggle="modal"
@@ -1636,12 +1636,12 @@
               data-type="product"
               data-id="backend-training"
               data-title="Node.js 後端工程師培訓營&專題班"
-              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_NODEJS_ENGINEER_TRAINING_AND_WORKSHOP_W4&order=-OA1TndmxKtEOayDuG6K&phyProduct[]=-OA1TndmxKtEOayDuG6K&phyProductSpec[]=-OA1U6ip0Vw5mHqay4sJ&phyProduct[]=-OA1UVticEI2T2jUKyH9&phyProductSpec[]=-OA1Un78QZajZs2cbnG6"
+              data-paylink="#"
               itemprop="url"
               target="_blank"
               rel="noopener"
-              class="btn fs-8 w-100 btn-primary py-3 mp-click tracking-link" data-forward="true">
-                立即報名
+              class="btn fs-8 w-100 btn-primary py-3 mp-click tracking-link disabled" data-forward="false" disabled>
+                報名截止
               </a>
               <p id="couponText-project" class="d-none text-danger text-center fw-bold mt-1 mb-0" style="font-size: 16px;"></p>
             </div>
@@ -2216,8 +2216,8 @@
       kolUrlInfo[urlPath].forEach((path) => {
         kolUrlArray.push(`https://${urlQueryObj['h_dm']}/${path}`);
       })
-      couponText.textContent = '立即報名「全檔期現在最優惠」';
-      couponTextProject.textContent = '立即報名「全檔期現在最優惠」';
+      // couponText.textContent = '立即報名「全檔期現在最優惠」';
+      // couponTextProject.textContent = '立即報名「全檔期現在最優惠」';
       transUrl(kolUrlArray);
     }
 
@@ -2241,7 +2241,7 @@
           renderForKol('techjobntalk');
           break;
         default:
-          transUrl(['https://shop.hexschool.com/order/create?coupon_code=2025_NODEJS_ENGINEER_TRAINING_N4&order=-OA1TndmxKtEOayDuG6K&phyProduct[]=-OA1TndmxKtEOayDuG6K&phyProductSpec[]=-OA1U6ip0Vw5mHqay4sJ', 'https://shop.hexschool.com/order/create?coupon_code=2025_NODEJS_ENGINEER_TRAINING_AND_WORKSHOP_W4&order=-OA1TndmxKtEOayDuG6K&phyProduct[]=-OA1TndmxKtEOayDuG6K&phyProductSpec[]=-OA1U6ip0Vw5mHqay4sJ&phyProduct[]=-OA1UVticEI2T2jUKyH9&phyProductSpec[]=-OA1Un78QZajZs2cbnG6']);
+          transUrl(['#', '#']);
       }
       couponText.classList.remove('d-none');
       couponText.classList.add('d-block');
@@ -2263,39 +2263,7 @@
       src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
 </div>
 
- <!-- 開啟通用 footer 倒數-->
-    <!-- 如果個別頁面有需要倒數 -->
-    
-    <!-- 特定頁面倒數 -->
-    <nav class="navbar-fixed-bottom text-center fixed-bottom bg-danger text-white py-2">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
-      <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
-        <span class="me-md-3 fw-bold text-start">【即將開班】</span>
-        
-          <span class="me-md-3 fw-bold text-start">後端工程師培訓營 熱烈報名中！</span>
-        
-        <div class="d-flex justify-content-md-center  text-nowrap">
-          
-            <span class="clock m-r-1 fw-bold"></span>
-          
-        </div>
-      </div>
-      <div class="d-flex justify-content-md-start justify-content-end ps-md-3">
-        
-          <a href="#recommend"
-            class="btn btn-dark btn-sm rounded-0">
-            限時 5 折
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
-        
-      </div> 
-    </div>
-  </div>
-</nav>
-
-  <input type="hidden" id="footer-clock" value="2024/12/27">
-
+ <!-- 只需要個別頁面的倒數 -->
   
   
   </div>
@@ -2380,8 +2348,8 @@
 </div>
 
 
-<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
-  
+  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
+    
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -2495,10 +2463,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1734883038247.js"></script>
+<script src="/js/bs4_vendor.js?1735228539269.js"></script>
 
 
-<script src="/js/bs4_all.js?1734883038247.js"></script>
+<script src="/js/bs4_all.js?1735228539269.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
