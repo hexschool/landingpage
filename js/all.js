@@ -547,7 +547,8 @@ vueApp = function() {
         react: {},
         web_layout: {},
         ui: {},
-        backend: {}
+        backend: {},
+        camping: {}
       },
       trainingWait: {
         js: {},
@@ -557,7 +558,8 @@ vueApp = function() {
         react: {},
         web_layout: {},
         ui: {},
-        backend: {}
+        backend: {},
+        camping: {}
       }
     },
     methods: {
