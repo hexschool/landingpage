@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1744165662725.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1744257097758.css">
 
   <!-- Global styles END -->
 
@@ -110,15 +110,13 @@
       <a href="#recommend"
         class="btn btn-danger text-white ">
         
-        立即預約，領優惠
+        立即享優惠
         
         <i class="far fa-gem"></i>
       </a>
     </div>
   </div>
 </nav>
-
-
 
 
 <div class="pt-sm-7 pt-6">
@@ -764,39 +762,40 @@
 
             <h5 class="d-flex align-items-center text-primary fw-semibold mb-0 mt-auto">
               <span class="fs-6 me-1">NT$</span>
-              <span class="fs-2 fs-lg-1" id="couponPrice-project">822</span>
+              <span class="fs-2 fs-lg-1" id="couponPrice">822</span>
             </h5>
             <p class="text-secondary"><del>NT$ 999</del><br>
               僅收取基本系統營運費</p>
-            <a 
+            <!-- <a 
               href="https://r.botbonnie.com/mqEx-" 
               target="_blank" 
               class="lead-click btn fs-8 w-100 btn-primary py-3">
               立即預約，領優惠
-            </a>
-
-            <!-- <a 
-            href="#" 
-            title="30 天軟體工程師體驗營" 
-            id="trainingBuyBtn" 
-            data-bs-toggle="modal" 
-            data-bs-target="#orderModal"
-            data-price="999" 
-            data-type="product" 
-            data-id="software-engineer-camping" 
-            data-title="30 天軟體工程師體驗營" 
-            data-paylink="#"
-            itemprop="url" 
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary fs-8 w-100 py-3 mp-click tracking-link" 
-            data-forward="false">
-              立即免費預約課程 Line 提醒
             </a> -->
+
+            <a 
+              href="https://shop.hexschool.com/order/create?coupon_code=2025_30DAY_ENGINEER_CAMP&order=-OKjQ1kYDzijsVrTdMQo&phyProduct[]=-OKjQ1kYDzijsVrTdMQo&phyProductSpec[]=-OKjQDOYAsEGsqanarUw" 
+              title="30 天軟體工程師體驗營" 
+              id="trainingBuyBtn" 
+              data-bs-toggle="modal" 
+              data-bs-target="#orderModal"
+              data-price="999" 
+              data-type="product" 
+              data-id="software-engineer-camping" 
+              data-title="30 天軟體工程師體驗營"
+              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_30DAY_ENGINEER_CAMP&order=-OKjQ1kYDzijsVrTdMQo&phyProduct[]=-OKjQ1kYDzijsVrTdMQo&phyProductSpec[]=-OKjQDOYAsEGsqanarUw"
+              itemprop="url" 
+              target="_blank" 
+              rel="noopener"
+              class="btn btn-primary fs-8 w-100 py-3 mp-click tracking-link" 
+              data-forward="true">
+              立即報名
+            </a>
+            <p id="couponText" class="d-none text-danger text-center fw-bold mt-1 mb-0" style="font-size: 16px;"></p>
             <p class="fs-lg-6 fw-bold text-primary text-center mt-3">報名時間： 4/10(四)中午 12:00 ~ 4/27(日) 晚上 11:59</p>
             <hr class="purchase-divider-down">
             <p class="text-secondary">
-              <b>歡迎先點擊上方「立即預約，領優惠」按鈕，開賣可再現折 $123 元優惠🎁</b><br>
+              <!-- <b>歡迎先點擊上方「立即預約，領優惠」按鈕，開賣可再現折 $123 元優惠🎁</b><br> -->
               報名隔天，會收到課程開通 Email，引導您進入程式勇者村 - 學習輔助平台，在系統課程介面上，就會教您如何開始上課！
             </p>
           </div>
@@ -1044,7 +1043,7 @@
             </div>
           </div>
         </div>
-       
+
         <div class="faq-item mb-3">
           <h4 class="fs-8 fw-semibold mb-0">
             <a href="#faq-10" role="button"
@@ -1061,7 +1060,8 @@
           <div class="collapse" id="faq-10">
             <div class="faq-a">
               <hr class="faq-divider">
-              <p class="text-secondary mb-0">成功購買課程後，六角學院將會使用 Email 進行開課通知，包含需開通的課程平台說明，請確保您的信箱能收取來自 hexschool@service.com 的信件。</p>
+              <p class="text-secondary mb-0">成功購買課程後，六角學院將會使用 Email 進行開課通知，包含需開通的課程平台說明，請確保您的信箱能收取來自
+                hexschool@service.com 的信件。</p>
             </div>
           </div>
         </div>
@@ -1085,7 +1085,8 @@
               <ul class="mb-0">
                 <li>退費需於 <b>2025/4/29 23:59</b> 前申請，可全額退費，請聯繫六角學院客服團隊。</li>
                 <li>如於退費期限後完成報名，將不受理退費，請同學報名前務必確認課程內容與時間。</li>
-                <li>若<b>因您的個人因素無法獲取課程資訊</b>（例如：無法收信、未開通課程、未加入 Discord 課程頻道……等）<b>而未能如期參與本活動</b>，六角學院將不承擔因此所生之任何損害賠償，亦不得以此為由申請退費、要求延期或轉讓。</li>
+                <li>若<b>因您的個人因素無法獲取課程資訊</b>（例如：無法收信、未開通課程、未加入 Discord
+                  課程頻道……等）<b>而未能如期參與本活動</b>，六角學院將不承擔因此所生之任何損害賠償，亦不得以此為由申請退費、要求延期或轉讓。</li>
               </ul>
             </div>
           </div>
@@ -1094,6 +1095,131 @@
     </div>
   </div>
 </section>
+
+<script>
+  /*
+     * 特定優惠連結轉址
+  */
+  window.onload = function () {
+    // /courses/software-engineer-camping.html?h_dm=shop.hexschool.com&h_pt=gipi
+    // 將網址 query 轉換為 object
+    const queryStringToObject = url => {
+      const urlQueryArr = [...new URLSearchParams((url.split('?')[1])?.split('#')[0])]; // [['h_dm', '...'], ['h_pt', '...']]
+      return urlQueryArr.reduce((accu, [currentQueryName, currentQueryValue]) => {
+        accu[currentQueryName] = currentQueryValue;
+        return accu
+      },
+        {}
+      );
+    }
+
+    const urlQueryObj = queryStringToObject(window.location.href); // { h_dm: ..., h_pt: ..., }
+
+    // 欲跳轉按鈕
+    const forwardBtn = document.querySelectorAll('[data-forward]');
+
+    // 可用 Domain
+    const allowdm = 'hexschool.tw';
+
+    // 新增優惠券文字、金額
+    const couponText = document.querySelector('#couponText');
+    const couponPrice = document.querySelector('#couponPrice');
+
+    // 金流按鈕連結轉址
+    const transUrl = (urlArray) => {
+      forwardBtn.forEach((buttonEl, index) => {
+        if (buttonEl.dataset.forward === 'true') {
+          buttonEl.setAttribute('href', urlArray[index]);
+          buttonEl.setAttribute('data-paylink', urlArray[index]);
+        }
+      })
+    }
+
+    // 特定 KOL 渲染
+    // kolUrlInfo: kol 短網址轉址 path
+
+    const kolUrlInfo = {
+      'reserve': ['LJ1zK'],
+      'gipi': ['62GLJ'],
+      'leethi': ['rBkhI'],
+      'alan': ['ASGrM'],
+      'bear_bear_dream': ['TfHhT'],
+      'chacha': ['YINSy'],
+      'raymond': ['Yu0Mi'],
+      'zoey': ['VCZVb'],
+      'betweenGos': ['Wmkxe'],
+      'miulaviewpoint': ['NzUNT'],
+    };
+    const renderForKol = (urlPath) => {
+      const kolUrlArray = [];
+      kolUrlInfo[urlPath].forEach((path) => {
+        kolUrlArray.push(`https://${urlQueryObj['h_dm']}/${path}`);
+      })
+      transUrl(kolUrlArray);
+    }
+
+    // 驗證 domain 並轉網址
+    if (urlQueryObj['h_dm'] === allowdm) {
+      switch (urlQueryObj['h_pt']) {
+        // 官網網址參數
+        case 'reserve':
+          renderForKol('reserve');
+          couponText.textContent = '您目前正在使用預約專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'gipi':
+          renderForKol('gipi');
+          couponText.textContent = '您目前正在使用 游舒帆 Gipi 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'leethi':
+          renderForKol('leethi');
+          couponText.textContent = '您目前正在使用 海馬家游程式 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'alan':
+          renderForKol('alan');
+          couponText.textContent = '您目前正在使用 ALaN 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'bear_bear_dream':
+          renderForKol('bear_bear_dream');
+          couponText.textContent = '您目前正在使用 熊熊 Bear 的療癒生活 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'chacha':
+          renderForKol('chacha');
+          couponText.textContent = '您目前正在使用 ChaCha 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'raymond':
+          renderForKol('raymond');
+          couponText.textContent = '您目前正在使用 雷蒙三十 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'zoey':
+          renderForKol('zoey');
+          couponText.textContent = '您目前正在使用 佐編茶水間 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'betweenGos':
+          renderForKol('betweenGos');
+          couponText.textContent = '您目前正在使用 BetweenGos 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        case 'miulaviewpoint':
+          renderForKol('miulaviewpoint');
+          couponText.textContent = '您目前正在使用 M 觀點 的專屬優惠';
+          couponPrice.textContent = '699';
+          break;
+        default:
+          transUrl(['https://shop.hexschool.com/order/create?coupon_code=2025_30DAY_ENGINEER_CAMP&order=-OKjQ1kYDzijsVrTdMQo&phyProduct[]=-OKjQ1kYDzijsVrTdMQo&phyProductSpec[]=-OKjQDOYAsEGsqanarUw', '#']);
+      }
+      couponText.classList.remove('d-none');
+      couponText.classList.add('d-block');
+    }
+  }
+</script>
 
 
 
@@ -1115,7 +1241,7 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
-        <span class="me-md-3 fw-bold text-start">【立即預約，領優惠】<br class="d-sm-none"><span class="ms-1 ms-md-3">軟體工程師體驗營</span></span>
+        <span class="me-md-3 fw-bold text-start">【開放報名中】<span class="ms-1 ms-md-3">30 天軟體工程師體驗營</span></span>
         
         <div class="d-flex justify-content-md-center  text-nowrap">
           
@@ -1125,9 +1251,9 @@
       </div>
       <div class="d-flex justify-content-md-start justify-content-end ps-md-3">
         
-          <a target="_blank" rel="noopener" href="https://r.botbonnie.com/mqEx-"
+          <a href="#recommend"
             class="btn btn-dark btn-sm rounded-0 lead-click">
-            🙋‍♀️ 立即預約，領優惠
+            🙋‍♀️ 立即享優惠
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -1136,7 +1262,7 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2025/4/10 12:00">
+  <input type="hidden" id="footer-clock" value="2025/4/28">
 
   
   
@@ -1337,10 +1463,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1744165662725.js"></script>
+<script src="/js/bs4_vendor.js?1744257097758.js"></script>
 
 
-<script src="/js/bs4_all.js?1744165662725.js"></script>
+<script src="/js/bs4_all.js?1744257097758.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
