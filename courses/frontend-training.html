@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1745828856784.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1747152083132.css">
 
   <!-- Global styles END -->
 
@@ -110,7 +110,7 @@
       <a href="#recommend"
         class="btn btn-danger text-white ">
         
-        別說了，我要上課
+        免費預約中
         
         <i class="far fa-gem"></i>
       </a>
@@ -118,133 +118,166 @@
   </div>
 </nav>
 
+
 <!-- 原始版本 - 前端工程師培訓班 -->
-<div class="bg-balls-primary">
-  <!-- Banner -->
-  <section class="banner">
+<!-- Banner -->
+<section class="banner">
+  <div class="d-sm-none">
+    <img src="../images/react-training/banner-sm.png" alt="React 前端工程師培訓班 Banner" class="img-fluid w-100">
+  </div>
+  <div class="d-none d-sm-block">
+    <img src="../images/react-training/banner.png" alt="React 前端工程師培訓班 Banner" class="img-fluid w-100">
+  </div>
+</section>
+<!-- 為何那麼多人想轉職工程師？ -->
+<section class="whyToEngineer py-80">
+  <div class="container">
+    <h2 class="h1 text-center fw-bold mb-4 mb-md-6">為何那麼多人想轉職工程師？</h2>
+    <ul class="list-unstyled row justify-content-center text-center mb-0">
+      <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
+        <div class="whyToEngineer-reason">
+          <div class="mb-3">
+            <img src="../images/react-training/why-1.png" alt="平均薪資高於市場平均值" class="img-fluid w-100">
+          </div>
+          <h3 class="whyToEngineer-title title-underline title-underline-secondary h4 fw-bold">平均薪資高於市場平均值</h3>
+          <p class="mb-0">
+            台灣職位平均月薪超過 NT 54,000<br>
+            新人薪資可 4 萬起
+          </p>
+        </div>
+      </li>
+      <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
+        <div class="whyToEngineer-reason">
+          <div class="mb-3">
+            <img src="../images/react-training/why-2.png" alt="工作自由、彈性高" class="img-fluid w-100">
+          </div>
+          <h3 class="whyToEngineer-title title-underline title-underline-secondary h4 fw-bold">工作自由、彈性高</h3>
+          <p class="mb-0">
+            不受地域限制，除了在公司上班外，<br>
+            工程師只要有筆電和網路，也能在家遠端工作
+          </p>
+        </div>
+      </li>
+      <li class="col-md-8 col-lg-4">
+        <div class="whyToEngineer-reason">
+          <div class="mb-3">
+            <img src="../images/react-training/why-3.png" alt="易於入門" class="img-fluid w-100">
+          </div>
+          <h3 class="whyToEngineer-title title-underline title-underline-secondary h4 fw-bold">易於上手</h3>
+          <p class="text-center mb-0">
+            前端技術是以畫面呈現為主，<br>
+            新手容易上手，未來也可轉其他進階軟體職位
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="bg-primary-lighter">
+  <section class="py-80">
     <div class="container">
+      <h2 class="h1 text-center fw-bold mb-4 mb-md-6">成為前端工程師後，<br class="d-md-none" />職涯選擇更靈活</h2>
+      <img src="../images/react-training/career.png" alt="成為前端工程師後，職涯選擇更靈活" class="img-fluid d-none d-md-block">
+      <img src="../images/react-training/career-sm.png" alt="timeline" class="img-fluid w-100 d-md-none">
+    </div>
+  </section>
+  <!-- 想當前端工程師，但又怕... -->
+  <section class="worries position-relative z-1">
+    <div class="container">
+      <h2 class="h1 text-center fw-bold mb-4 mb-md-6">想當前端工程師，但又怕...</h2>
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <img src="../images/react-training/banner.png" alt="React 前端工程師培訓班 Banner" class="img-fluid w-100">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="worries-item mb-4 mb-md-5">
+                <img src="../images/react-training/worries-1.png" alt="自學時，卡關找不到人問" class="img-fluid rounded-top-4">
+                <h3 class="worries-title fw-bold mb-0">自學時，卡關找不到人問</h3>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="worries-item mb-4 mb-md-5">
+                <img src="../images/react-training/worries-2.png" alt="面試時，擔心被面試官問倒" class="img-fluid rounded-top-4">
+                <h3 class="worries-title h5 fw-bold mb-0">面試時，擔心被面試官問倒</h3>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="worries-item mb-4 mb-md-0">
+                <img src="../images/react-training/worries-3.png" alt="求職時，才發現缺乏像樣作品" class="img-fluid rounded-top-4">
+                <h3 class="worries-title h5 fw-bold mb-0">求職時，才發現缺乏像樣作品</h3>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="worries-item">
+                <img src="../images/react-training/worries-4.png" alt="上工時，怕能力達不到公司要求" class="img-fluid rounded-top-4">
+                <h3 class="worries-title h5 fw-bold mb-0">上工時，怕能力達不到公司要求</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- 為何那麼多人想轉職工程師？ -->
-  <section class="whyToEngineer py-6">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-6">為何那麼多人想轉職工程師？</h2>
-      <ul class="list-unstyled row justify-content-center">
-        <li class="col-md-8 col-lg-4 mb-5">
-          <div class="whyToEngineer-reason position-relative">
-            <h3 class="whyToEngineer-title h4 fw-bold position-absolute">平均薪資高於市場平均值</h3>
-            <div class="mb-3">
-              <img src="../images/react-training/why-1.png" alt="平均薪資高於市場平均值" class="img-fluid w-100">
-            </div>
-            <p class="text-center fw-bold mb-0">
-              台灣職位平均月薪超過 NT 50,000<br>
-              新人薪資可 4 萬起
-            </p>
-          </div>
-        </li>
-        <li class="col-md-8 col-lg-4 mb-5">
-          <div class="whyToEngineer-reason position-relative">
-            <h3 class="whyToEngineer-title h4 fw-bold position-absolute">工作自由、彈性高</h3>
-            <div class="mb-3">
-              <img src="../images/react-training/why-2.png" alt="工作自由、彈性高" class="img-fluid w-100">
-            </div>
-            <p class="text-center fw-bold mb-0">
-              不受地域限制，除了在公司上班外，<br>
-              工程師只要有筆電和網路，也能在家遠端工作
-            </p>
-          </div>
-        </li>
-        <li class="col-md-8 col-lg-4">
-          <div class="whyToEngineer-reason position-relative">
-            <h3 class="whyToEngineer-title h4 fw-bold position-absolute">易於入門</h3>
-            <div class="mb-3">
-              <img src="../images/react-training/why-3.png" alt="易於入門" class="img-fluid w-100">
-            </div>
-            <p class="text-center fw-bold mb-0">
-              前端技術是以畫面呈現為主，<br>
-              新手容易上手，未來也可轉其他進階軟體職位
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- 雖然前端工程師如此受到求職者歡迎，但是．．． -->
-  <section class="worries pt-6">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-6">雖然前端工程師如此受到求職者歡迎，但是．．．</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <img src="../images/react-training/worries-lg.png" alt="worries" class="img-fluid w-100 d-none d-md-block">
-          <img src="../images/react-training/worries.png" alt="worries" class="img-fluid w-100 d-md-none">
-        </div>
-      </div>
+    <div class="position-absolute bottom-0 z-n1">
+      <img src="../images/react-training/bg-half-circle.svg" class="img-fluid">
     </div>
   </section>
 </div>
 
 <!-- 3 大知識、2 大專題（時程圖） -->
-<section class="bg-primary-lighter py-6">
+<section class="timeline py-80">
   <div class="container">
-    <h2 class="text-center fw-bold mb-3">
-      我們用 
-      <span class="border-8 border-bottom border-secondary lh-1 d-inline-block">3 大知識</span>、
-      <span class="border-8 border-bottom border-info lh-1 d-inline-block">2 大專題</span>
-      ，手把手帶你轉職前端工程師
+    <h2 class="h1 text-center fw-bold mb-2 mb-md-3 position-relative">
+      <span class="position-absolute top-0 start-100 translate-middle d-none d-lg-block">
+        <img src="../images/react-training/bubble-blue.svg">
+      </span>
+      我們用 3 大知識、2 大專題，<br class="d-lg-none" />手把手帶你轉職前端工程師
     </h2>
-    <p class="text-center fw-bold mb-4 mb-md-7">我們將透過九個月的時間，不僅帶你學會前端開發技術，更同時完成具有求職競爭力的獨立作品。</p>
+    <p class="h5 text-center text-dark fw-bold mb-5 mb-md-7">我們將透過九個月的時間，<br class="d-lg-none" />不僅帶你學會前端開發技術，<br
+        class="d-lg-none" />更同時完成具有求職競爭力的獨立作品。</p>
     <img src="../images/react-training/timeline.png" alt="timeline" class="img-fluid w-100 d-none d-md-block">
     <img src="../images/react-training/timeline-sm.png" alt="timeline" class="img-fluid w-100 d-md-none">
-    <p class="text-center mt-3 mb-0">
-      <a href="#trainingContentModal" type="button" class="btn btn-outline-secondary fw-medium text-decoration-none" data-bs-toggle="modal" data-bs-target="#trainingContentModal">前端工程師培訓班包含項目</a>
-    </p>
+    <!-- <p class="text-center mt-3 mb-0">
+      <a href="#trainingContentModal" type="button" class="btn btn-outline-secondary fw-medium text-decoration-none"
+        data-bs-toggle="modal" data-bs-target="#trainingContentModal">前端工程師培訓班包含項目</a>
+    </p> -->
   </div>
 </section>
 
 <!-- 學習知識（3 大知識） -->
 <div class="knowledge">
-  <h2 class="bg-secondary text-white text-center py-3 py-md-4 sticky-top top-md-navbar mb-0 sticky-secondary">
-    學習知識
-  </h2>
-  <div class="bg-secondary-light py-7">
+  <div class="bg-primary-lighter py-80">
     <div class="container">
-      <h2 class="text-center fw-bold mb-3">3 大知識學什麼？</h2>
-      <p class="text-center fw-bold mb-6">九個月課程分為三個階段，有系統地培養您掌握前端開發三大核心領域。</p>
+      <h3
+        class="text-label text-label-primary text-center text-white bg-primary fw-bold py-3 mb-5 mb-md-7 rounded-4 position-relative">
+        學技術
+      </h3>
+      <h2 class="h1 text-center fw-bold mb-3">3 大知識學什麼？</h2>
+      <p class="h5 text-center text-dark fw-bold mb-4 mb-md-6">九個月課程分為三個階段，<br class="d-md-none" />有系統地培養您掌握前端開發三大核心領域。
+      </p>
       <ul class="list-unstyled row justify-content-center mb-7">
         <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
           <div class="knowledge-course h-100">
-            <h3 class="text-secondary text-center fw-bold mb-1">網頁切版學程</h3>
+            <h3 class="h4 text-primary text-center fw-bold mb-1">網頁切版學程</h3>
             <div class="knowledge-courseHour text-secondary-dark text-center mb-3">
-              <p class="d-inline-block mb-0">課程時數 40 小時</p>
+              <p class="text-dark mb-0">課程時數 40 小時</p>
             </div>
             <ul class="list-unstyled">
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 HTML、CSS
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 RWD、SCSS
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 Bootstrap
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 Tailwind
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
-                GSAP、AOS
+                AOS
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 Swiper
               </li>
             </ul>
@@ -252,33 +285,27 @@
         </li>
         <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
           <div class="knowledge-course h-100">
-            <h3 class="text-secondary text-center fw-bold mb-1">JavaScript 邏輯學程</h3>
+            <h3 class="h4 text-primary text-center fw-bold mb-1">JavaScript 邏輯學程</h3>
             <div class="knowledge-courseHour text-secondary-dark text-center mb-3">
-              <p class="d-inline-block mb-0">課程時數 40 小時</p>
+              <p class="text-dark mb-0">課程時數 40 小時</p>
             </div>
             <ul class="list-unstyled">
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 JS 程式邏輯養成
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 RESTful API 開發
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 AJAX OPEN API
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
-                C3、D3.js 圖表
+                JS 圖表套件
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 Codewars 刷題
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 JSON Server
               </li>
             </ul>
@@ -286,76 +313,109 @@
         </li>
         <li class="col-md-8 col-lg-4">
           <div class="knowledge-course h-100">
-            <h3 class="text-secondary text-center fw-bold mb-1">React 前端框架學程</h3>
+            <h3 class="h4 text-primary text-center fw-bold mb-1">React 前端框架學程</h3>
             <div class="knowledge-courseHour text-secondary-dark text-center mb-3">
-              <p class="d-inline-block mb-0">課程時數 40 小時</p>
+              <p class="text-dark mb-0">課程時數 40 小時</p>
             </div>
             <ul class="list-unstyled">
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 ES6、JSX 樣版
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 Redux 狀態管理
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 Vite 開發工貝
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 React Router 路由
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 Hooks 整合
               </li>
               <li class="knowledge-courseSkill text-secondary-dark fw-bold mb-2">
-                <i class="bi bi-layers-fill"></i>
                 React Hook Form
               </li>
             </ul>
           </div>
         </li>
       </ul>
-      <h2 class="text-center fw-bold mb-6">在課程中，你會怎麼學習？</h2>
+    </div>
+    <!-- 本屆加碼 -->
+    <div class="bonus bg-primary text-center py-5 py-md-7">
+      <div class="container">
+        <div class="bonus-bg bg-white rounded-4 px-4 py-6 p-md-6">
+          <span class="bonus-label d-none d-lg-block">
+            <img src="../images/react-training/tag.png" alt="Bonus" class="img-fluid">
+          </span>
+          <div class="bonus-title">
+            <img src="../images/react-training/sparkle-left.png" class="img-fluid sparkle-left">
+            <img src="../images/react-training/sparkle-right.png" class="img-fluid sparkle-right">
+            <h3 class="h1 fw-bold">本屆加碼</h3>
+            <p class="h5 text-dark">AI+ 程式力一起掌握</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="bonus-item mb-4">
+              <h4 class="text-primary fw-bold">GitHub Copilot 程式極速開發</h4>
+              <p class="text-dark mb-0">10/22 (三)，2hr</p>
+            </div>
+            <div class="bonus-item">
+              <h4 class="text-primary fw-bold">用程式打造專屬 AI 助理</h4>
+              <p class="text-dark mb-0">11/12 (三)，2hr</p>
+            </div>
+          </div>
+          <img src="../images/react-training/bonus-1.png" class="img-fluid d-none d-lg-block person-left">
+          <img src="../images/react-training/bonus-2.png" class="img-fluid d-none d-lg-block person-right">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="h1 text-center fw-bold mt-5 mb-4 my-md-6">在課程中，你會怎麼學習？</h2>
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <ul class="list-unstyled">
             <li class="row justify-content-center align-items-center mb-5">
-              <div class="col-md-8 col-lg-6 mb-4">
+              <div class="col-8 col-md-6 mb-4 mb-md-0">
                 <img src="../images/react-training/learn-1.png" alt="01 直播、影音教學" class="img-fluid w-100">
               </div>
-              <div class="col-md-8 col-lg-6">
-                <h3 class="h2 fw-bold mb-5">直播、影音教學雙管齊下</h3>
-                <h4 class="knowledge-learn d-inline-block text-white fw-bold mb-2">預習課程</h4>
+              <div class="col-md-6">
+                <h3 class="h4 fw-bold mb-3 mb-md-5">✦ 直播、影音教學雙管齊下</h3>
+                <h4 class="knowledge-learn title-underline title-underline-primary text-primary h5 fw-bold mb-2">預習課程
+                </h4>
                 <p class="mb-3">報名課程即可獲得課前預習，提早註冊直接贏在起跑點</p>
-                <h4 class="knowledge-learn d-inline-block text-white fw-bold mb-2">直播互動</h4>
-                <p class="mb-0">除了看老師 Live Coding，還能隨時在直播間發問，即時獲得解答</p>
+                <h4 class="knowledge-learn title-underline title-underline-primary text-primary h5 fw-bold mb-2">直播互動
+                </h4>
+                <p class="mb-0">除了看老師 Live Coding，還能隨時在直播間發問，即時獲得解答!</p>
               </div>
             </li>
             <li class="row justify-content-center flex-lg-row-reverse align-items-center mb-5">
-              <div class="col-md-8 col-lg-6 mb-4">
+              <div class="col-8 col-md-6 mb-4 mb-md-0">
                 <img src="../images/react-training/learn-2.png" alt="02 每日、每週任務" class="img-fluid w-100">
               </div>
-              <div class="col-md-8 col-lg-6">
-                <h3 class="h2 fw-bold mb-5">每日、每週任務</h3>
-                <h4 class="knowledge-learn d-inline-block text-white fw-bold mb-2">每日任務</h4>
+              <div class="col-md-6">
+                <h3 class="h4 fw-bold mb-3 mb-md-5">✦ 每日、每週任務</h3>
+                <h4 class="knowledge-learn title-underline title-underline-primary text-primary h5 fw-bold mb-2">每日任務
+                </h4>
                 <p class="mb-3">每天一個小任務，無痛養成你的原子習慣</p>
-                <h4 class="knowledge-learn d-inline-block text-white fw-bold mb-2">每週任務</h4>
+                <h4 class="knowledge-learn title-underline title-underline-primary text-primary h5 fw-bold mb-2">每週任務
+                </h4>
                 <p class="mb-0">接近實戰的作業設計，另有真人助教批改並給予實戰回饋</p>
               </div>
             </li>
             <li class="row justify-content-center align-items-center mb-5">
-              <div class="col-md-8 col-lg-6 mb-4">
+              <div class="col-8 col-md-6 mb-4 mb-md-0">
                 <img src="../images/react-training/learn-3.png" alt="03 助教服務" class="img-fluid w-100">
               </div>
-              <div class="col-md-8 col-lg-6">
-                <h3 class="h2 fw-bold mb-5">助教服務</h3>
-                <h4 class="knowledge-learn d-inline-block text-white fw-bold mb-2">程式卡關抱大腿</h4>
+              <div class="col-md-6">
+                <h3 class="h4 fw-bold mb-3 mb-md-5">✦ 助教服務</h3>
+                <h4 class="knowledge-learn title-underline title-underline-primary text-primary h5 fw-bold mb-2">任務陪跑助教
+                </h4>
+                <p class="mb-3">每週手把手分享任務關鍵知識</p>
+                <h4 class="knowledge-learn title-underline title-underline-primary text-primary h5 fw-bold mb-2">程式卡關抱大腿
+                </h4>
                 <p class="mb-3">提供線上程式助教發問，幫助學習不卡關</p>
-                <h4 class="knowledge-learn d-inline-block text-white fw-bold mb-2">作業批改服務</h4>
+                <h4 class="knowledge-learn title-underline title-underline-primary text-primary h5 fw-bold mb-2">作業批改服務
+                </h4>
                 <p class="mb-0">每週都有課程作業，提交後 3~7 天內獲得批改回饋</p>
               </div>
             </li>
@@ -368,156 +428,181 @@
 
 <!-- 作品製作（2 大作品） -->
 <div class="project">
-  <h2 class="bg-info text-white text-center py-3 py-md-4 sticky-top top-md-navbar mb-0 sticky-info">作品製作</h2>
-  <div class="bg-info-light py-7">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-3">2 大作品該怎麼做？</h2>
-      <p class="text-center fw-bold mb-4 mb-md-7">我們會為同學引入業界開發專案的流程，透過專題教練引導透過五大步驟，完成團隊獨立作品。</p>
-      <ul class="list-unstyled row justify-content-center">
-        <li class="col-lg-8 mb-4 mb-md-5">
-          <div class="project-step">
-            <div class="row flex-column flex-md-row">
-              <div class="col-md-7">
-                <div class="position-relative h-100">
-                  <img src="../images/react-training/step-1.jpeg" alt="Step 01" class="img-fluid w-100 h-100 object-cover">
-                  <p class="project-stepTag bg-info text-white fw-bold mb-0 position-absolute">Discord 實際討論狀況</p>
+  <div class="bg-secondary-lighter py-80">
+    <div class="pb-md-7">
+      <div class="container">
+        <h3
+          class="text-label text-label-secondary text-center text-secondary fw-bold py-3 mb-5 mb-md-7 rounded-4 position-relative">
+          做作品
+        </h3>
+        <h2 class="h1 text-center fw-bold mb-3">2 大作品該怎麼做？</h2>
+        <p class="h5 text-center text-dark mb-4 mb-md-7">我們會為同學引入業界開發專案的流程，<br />透過專題教練引導和五大步驟，<br
+            class="d-md-none" />完成團隊獨立作品。</p>
+        <ul class="list-unstyled row flex-nowrap flex-md-wrap justify-content-md-center">
+          <li class="col-11 col-lg-8 mb-4 mb-md-5">
+            <div class="project-step">
+              <div class="row flex-column flex-md-row">
+                <div class="col-md-7">
+                  <div class="position-relative h-100">
+                    <img src="../images/react-training/step-1.png" alt="Step 01"
+                      class="img-fluid w-100 h-100 object-cover">
+                    <p class="project-stepTag fw-bold mb-0 position-absolute">小組討論狀況</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-5 align-self-center">
-                <div class="px-4 px-md-0 py-4">
-                  <p class="text-info fw-bold mb-0">STEP 01</p>
-                  <h3 class="h4 fw-bold mb-2">作品主題思考</h3>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-1">規劃使用者故事</li>
-                    <li class="mb-1">規劃網站地圖</li>
-                    <li class="mb-1">繪製線稿、流程圖</li>
-                    <li>審核，重新調整</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col-lg-8 mb-4 mb-md-5">
-          <div class="project-step">
-            <div class="row flex-column flex-md-row h-100">
-              <div class="col-md-7">
-                <div class="position-relative h-100">
-                  <img src="../images/react-training/step-2.jpeg" alt="Step 02" class="img-fluid w-100 h-100 object-cover">
-                  <p class="project-stepTag bg-info text-white fw-bold mb-0 position-absolute">專題教練協助管理</p>
-                </div>
-              </div>
-              <div class="col-md-5 align-self-center">
-                <div class="px-4 px-md-0 py-4">
-                  <p class="text-info fw-bold mb-0">STEP 02</p>
-                  <h3 class="h4 fw-bold mb-2">進度追蹤</h3>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-1">專題教練透過 Discord 對齊進度</li>
-                    <li class="mb-1">Notion 管理專題里程碑</li>
-                  </ul>
+                <div class="col-md-5 align-self-center">
+                  <div class="px-4 px-md-0 py-4">
+                    <p class="text-secondary-light fw-bold mb-0">STEP 01</p>
+                    <h3 class="text-secondary h4 fw-bold mb-2">作品主題思考</h3>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-1">規劃使用者故事</li>
+                      <li class="mb-1">規劃網站地圖</li>
+                      <li class="mb-1">繪製線稿、流程圖</li>
+                      <li>審核，重新調整</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="col-lg-8 mb-4 mb-md-5">
-          <div class="project-step">
-            <div class="row flex-column flex-md-row h-100">
-              <div class="col-md-7">
-                <div class="position-relative h-100">
-                  <img src="../images/react-training/step-3.jpeg" alt="Step 03" class="img-fluid w-100 h-100 object-cover">
-                  <p class="project-stepTag bg-info text-white fw-bold mb-0 position-absolute">外部設計服務</p>
+          </li>
+          <li class="col-11 col-lg-8 mb-4 mb-md-5">
+            <div class="project-step">
+              <div class="row flex-column flex-md-row">
+                <div class="col-md-7">
+                  <div class="position-relative h-100">
+                    <img src="../images/react-training/step-2.png" alt="Step 02"
+                      class="img-fluid w-100 h-100 object-cover">
+                    <p class="project-stepTag fw-bold mb-0 position-absolute">專題教練協助管理</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-5 align-self-center">
-                <div class="px-4 px-md-0 py-4">
-                  <p class="text-info fw-bold mb-0">STEP 03</p>
-                  <h3 class="h4 fw-bold mb-2">與外部設計師合作</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="col-lg-8 mb-4 mb-md-5">
-          <div class="project-step">
-            <div class="row flex-column flex-md-row h-100">
-              <div class="col-md-7">
-                <div class="position-relative h-100">
-                  <img src="../images/react-training/step-4.jpeg" alt="Step 04" class="img-fluid w-100 h-100 object-cover">
-                  <p class="project-stepTag bg-info text-white fw-bold mb-0 position-absolute">版面製作</p>
-                </div>
-              </div>
-              <div class="col-md-5 align-self-center">
-                <div class="px-4 px-md-0 py-4">
-                  <p class="text-info fw-bold mb-0">STEP 04</p>
-                  <h3 class="h4 fw-bold mb-2">網站開發</h3>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-1">動態效果</li>
-                    <li class="mb-1">API 串接</li>
-                    <li class="mb-1">版面製作</li>
-                    <li>細節優化</li>
-                  </ul>
+                <div class="col-md-5 align-self-center">
+                  <div class="px-4 px-md-0 py-4">
+                    <p class="text-secondary-light fw-bold mb-0">STEP 02</p>
+                    <h3 class="h4 text-secondary fw-bold mb-2">進度追蹤</h3>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-1">專題教練每週 Discord 對齊進度</li>
+                      <li class="mb-1">Notion 管理專題里程碑</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="col-lg-8">
-          <div class="project-step">
-            <div class="row flex-column flex-md-row h-100">
-              <div class="col-md-7">
-                <div class="position-relative h-100">
-                  <img src="../images/react-training/step-5.jpeg" alt="Step 05" class="img-fluid w-100 h-100 object-cover">
-                  <p class="project-stepTag bg-info text-white fw-bold mb-0 position-absolute">專題發表會</p>
+          </li>
+          <li class="col-11 col-lg-8 mb-4 mb-md-5">
+            <div class="project-step">
+              <div class="row flex-column flex-md-row">
+                <div class="col-md-7">
+                  <div class="position-relative h-100">
+                    <img src="../images/react-training/step-3.png" alt="Step 03"
+                      class="img-fluid w-100 h-100 object-cover">
+                    <p class="project-stepTag fw-bold mb-0 position-absolute">外部設計服務</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-5 align-self-center">
-                <div class="px-4 px-md-0 py-4">
-                  <p class="text-info fw-bold mb-0">STEP 05</p>
-                  <h3 class="h4 fw-bold mb-2">作品發表</h3>
-                  <ul class="list-unstyled mb-0">
-                    <li class="mb-1">簡報製作</li>
-                    <li class="mb-1">專題發表</li>
-                    <li>準備求職</li>
-                  </ul>
+                <div class="col-md-5 align-self-center">
+                  <div class="px-4 px-md-0 py-4">
+                    <p class="text-secondary-light fw-bold mb-0">STEP 03</p>
+                    <h3 class="h4 text-secondary fw-bold mb-2">與外部設計師合作</h3>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+          <li class="col-11 col-lg-8 mb-4 mb-md-5">
+            <div class="project-step">
+              <div class="row flex-column flex-md-row">
+                <div class="col-md-7">
+                  <div class="position-relative h-100">
+                    <img src="../images/react-training/step-4.png" alt="Step 04"
+                      class="img-fluid w-100 h-100 object-cover">
+                    <p class="project-stepTag fw-bold mb-0 position-absolute">版面製作</p>
+                  </div>
+                </div>
+                <div class="col-md-5 align-self-center">
+                  <div class="px-4 px-md-0 py-4">
+                    <p class="text-secondary-light fw-bold mb-0">STEP 04</p>
+                    <h3 class="h4 text-secondary fw-bold mb-2">網站開發</h3>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-1">版面製作</li>
+                      <li class="mb-1">API 串接</li>
+                      <li class="mb-1">動態效果</li>
+                      <li>細節優化</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-11 col-lg-8 mb-4 mb-md-0">
+            <div class="project-step">
+              <div class="row flex-column flex-md-row">
+                <div class="col-md-7">
+                  <div class="position-relative h-100">
+                    <img src="../images/react-training/step-5.png" alt="Step 05"
+                      class="img-fluid w-100 h-100 object-cover">
+                    <p class="project-stepTag fw-bold mb-0 position-absolute">專題發表會</p>
+                  </div>
+                </div>
+                <div class="col-md-5 align-self-center">
+                  <div class="px-4 px-md-0 py-4">
+                    <p class="text-secondary-light fw-bold mb-0">STEP 05</p>
+                    <h3 class="h4 text-secondary fw-bold mb-2">作品發表</h3>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-1">簡報製作</li>
+                      <li class="mb-1">專題發表</li>
+                      <li>準備求職</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="bg-info-light py-6">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-3">我們還提供什麼？</h2>
-      <p class="text-center fw-bold mb-4 mb-md-7">專業人士全程陪跑，從 0 到 1 完成實戰級作品</p>
-      <div class="row">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <div class="project-helper">
-            <div class="text-center">
-              <h3 class="h2 bg-info d-inline-block fw-bold text-white mb-4">專題教練</h3>
+    <div class="py-5 py-md-7">
+      <div class="container">
+        <!-- <h2 class="text-center fw-bold mb-3">我們還提供什麼？</h2> -->
+        <h2 class="h1 text-center fw-bold mb-4 mb-lg-7">專業人士全程陪跑，<br class="d-lg-none" />從 0 到 1 完成實戰級作品</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-10 position-relative z-1">
+            <div class="row">
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="project-helper">
+                  <img src="../images/react-training/project-coach.png" alt="專題教練"
+                    class="img-fluid w-100 rounded-top-4">
+                  <div class="project-body">
+                    <h3 class="h4 fw-bold mb-4">✦ 專題教練</h3>
+                    <p class="text-dark mb-0">課程期間包含專題教練諮詢，讓有程式工作經驗的老司機教練引導你，從主題發想、撰寫文件、繪製草圖、發包設計稿、開發方向指引，最終一步步完成獨立專題
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="project-helper">
+                  <img src="../images/react-training/project-uiDesigner.png" alt="UI 設計師"
+                    class="img-fluid w-100 rounded-top-4">
+                  <div class="project-body">
+                    <h3 class="h4 fw-bold mb-4">✦ UI 設計師</h3>
+                    <p class="text-dark mb-0">六角學院與 20 多位 UI 設計師合作，將會為兩個強化專題設計出美美的網頁介面，讓您透過精美作品在履歷海中脫穎而出</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <img src="../images/react-training/project-coach.png" alt="專題教練" class="img-fluid w-100 mb-4">
-            <p class="mb-0">課程期間包含專題教練諮詢，讓有程式工作經驗的老司機教練引導你，從發想、撰寫文件、繪製草圖、發包設計稿、開發方向指引，最終一步步完成獨立專題</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="project-helper">
-            <div class="text-center">
-              <h3 class="h2 bg-info d-inline-block fw-bold text-white mb-4">UI 設計師</h3>
-            </div>
-            <img src="../images/react-training/project-uiDesigner.png" alt="UI 設計師" class="img-fluid w-100 mb-4">
-            <p class="mb-0">兩個強化專題，將會由六角學院合作，超過 20 位的 UI 設計師團隊，設計出美美的網頁介面，讓您在履歷海中，透過精美作品帶您脫穎而出</p>
+            <span class="position-absolute top-0 start-0 d-none d-lg-block" style="transform: translate(-90%, -60%)">
+              <img src="../images/react-training/bubble-green.svg">
+            </span>
+            <img src="../images/react-training/bg-vector.svg"
+              class="position-absolute top-100 start-100 translate-middle z-n1">
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-info-light project-worksWall">
+  <div class="project-worksWall py-80">
     <div class="container">
-      <h2 class="text-center fw-bold mb-3">美感與實力兼具，做出人見人愛的漂亮網站</h2>
-      <p class="text-center fw-bold mb-4 mb-md-7">我們透過線上教學的形式，已經協助學員完成上千份的獨立作品，課程將依據不同的學員特質給予不同建議，藉此完成獨一無二的實戰網站。</p>
+      <h2 class="h1 text-center fw-bold mb-3">美感與實力兼具，<br class="d-md-none" />做出人見人愛的漂亮網站</h2>
+      <p class="text-dark text-center fw-bold mb-4 mb-md-7">
+        我們透過線上教學的形式，<br class="d-md-none" />已經協助學員完成上千份的獨立作品，<br />課程將依據不同的學員特質給予不同建議，<br
+          class="d-md-none" />藉此完成獨一無二的實戰網站。</p>
     </div>
     <!-- 作品網站 -->
     <div class="workWebsite overflow-hidden">
@@ -526,23 +611,29 @@
         <div class="workWebsite-swiper workWebsite-swiper-first">
           <!-- 上 -->
           <a target="_blank" rel="noopener" href="https://hsuan777.github.io/JSWeek8-Final/#/" class="workWebsite-link workWebsite-work1"></a>
-          <a target="_blank" rel="noopener" href="https://jedchang.github.io/ClocksStore/#/" class="workWebsite-link workWebsite-work2 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://jedchang.github.io/ClocksStore/#/"
+            class="workWebsite-link workWebsite-work2 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://yiren-liou.github.io/AboriginalShop/#/" class="workWebsite-link workWebsite-work3"></a>
           <a target="_blank" rel="noopener" href="https://jim821011.github.io/SleepLife/#/" class="workWebsite-link workWebsite-work4"></a>
-          <a target="_blank" rel="noopener" href="https://gretema.github.io/ShimazuV2/#/" class="workWebsite-link workWebsite-work5 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://gretema.github.io/ShimazuV2/#/"
+            class="workWebsite-link workWebsite-work5 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://chiayutsai.github.io/RingShop/#/" class="workWebsite-link workWebsite-work6"></a>
-          <a target="_blank" rel="noopener" href="https://recall131477.github.io/doublebrunch/#/" class="workWebsite-link workWebsite-work7 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://recall131477.github.io/doublebrunch/#/"
+            class="workWebsite-link workWebsite-work7 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://carol-yang09.github.io/Adagio/#/" class="workWebsite-link workWebsite-work8"></a>
         </div>
         <div class="workWebsite-swiper workWebsite-swiper-second">
           <!-- 上 -->
           <a target="_blank" rel="noopener" href="https://hsuan777.github.io/JSWeek8-Final/#/" class="workWebsite-link workWebsite-work1"></a>
-          <a target="_blank" rel="noopener" href="https://jedchang.github.io/ClocksStore/#/" class="workWebsite-link workWebsite-work2 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://jedchang.github.io/ClocksStore/#/"
+            class="workWebsite-link workWebsite-work2 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://yiren-liou.github.io/AboriginalShop/#/" class="workWebsite-link workWebsite-work3"></a>
           <a target="_blank" rel="noopener" href="https://jim821011.github.io/SleepLife/#/" class="workWebsite-link workWebsite-work4"></a>
-          <a target="_blank" rel="noopener" href="https://gretema.github.io/ShimazuV2/#/" class="workWebsite-link workWebsite-work5 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://gretema.github.io/ShimazuV2/#/"
+            class="workWebsite-link workWebsite-work5 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://chiayutsai.github.io/RingShop/#/" class="workWebsite-link workWebsite-work6"></a>
-          <a target="_blank" rel="noopener" href="https://recall131477.github.io/doublebrunch/#/" class="workWebsite-link workWebsite-work7 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://recall131477.github.io/doublebrunch/#/"
+            class="workWebsite-link workWebsite-work7 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://carol-yang09.github.io/Adagio/#/" class="workWebsite-link workWebsite-work8"></a>
         </div>
       </div>
@@ -551,23 +642,29 @@
         <div class="workWebsite-swiper workWebsite-swiper-first">
           <!-- 下 -->
           <a target="_blank" rel="noopener" href="https://cross1469.github.io/RelaxWine/#/" class="workWebsite-link workWebsite-work9"></a>
-          <a target="_blank" rel="noopener" href="https://daisychen776.github.io/HBakery/#/" class="workWebsite-link workWebsite-work10 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://daisychen776.github.io/HBakery/#/"
+            class="workWebsite-link workWebsite-work10 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://ericacadu.github.io/panya/#/" class="workWebsite-link workWebsite-work11"></a>
           <a target="_blank" rel="noopener" href="https://eric840906.github.io/vuecli3Project1/#/home" class="workWebsite-link workWebsite-work12"></a>
-          <a target="_blank" rel="noopener" href="https://lionms200789.github.io/haseiyo-SPA/#/" class="workWebsite-link workWebsite-work13 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://lionms200789.github.io/haseiyo-SPA/#/"
+            class="workWebsite-link workWebsite-work13 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://yunnei.github.io/vue_final/#/" class="workWebsite-link workWebsite-work14"></a>
-          <a target="_blank" rel="noopener" href="https://popeye-ux.github.io/moment/#/" class="workWebsite-link workWebsite-work15 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://popeye-ux.github.io/moment/#/"
+            class="workWebsite-link workWebsite-work15 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://hsuifang.github.io/ec-meimaij/#/" class="workWebsite-link workWebsite-work16"></a>
         </div>
         <div class="workWebsite-swiper workWebsite-swiper-second">
           <!-- 下 -->
           <a target="_blank" rel="noopener" href="https://cross1469.github.io/RelaxWine/#/" class="workWebsite-link workWebsite-work9"></a>
-          <a target="_blank" rel="noopener" href="https://daisychen776.github.io/HBakery/#/" class="workWebsite-link workWebsite-work10 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://daisychen776.github.io/HBakery/#/"
+            class="workWebsite-link workWebsite-work10 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://ericacadu.github.io/panya/#/" class="workWebsite-link workWebsite-work11"></a>
           <a target="_blank" rel="noopener" href="https://eric840906.github.io/vuecli3Project1/#/home" class="workWebsite-link workWebsite-work12"></a>
-          <a target="_blank" rel="noopener" href="https://lionms200789.github.io/haseiyo-SPA/#/" class="workWebsite-link workWebsite-work13 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://lionms200789.github.io/haseiyo-SPA/#/"
+            class="workWebsite-link workWebsite-work13 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://yunnei.github.io/vue_final/#/" class="workWebsite-link workWebsite-work14"></a>
-          <a target="_blank" rel="noopener" href="https://popeye-ux.github.io/moment/#/" class="workWebsite-link workWebsite-work15 d-none d-lg-block"></a>
+          <a target="_blank" rel="noopener" href="https://popeye-ux.github.io/moment/#/"
+            class="workWebsite-link workWebsite-work15 d-none d-lg-block"></a>
           <a target="_blank" rel="noopener" href="https://hsuifang.github.io/ec-meimaij/#/" class="workWebsite-link workWebsite-work16"></a>
         </div>
       </div>
@@ -575,398 +672,640 @@
   </div>
 </div>
 
-<div class="bg-balls-primary-light">
-  <!-- 學習小卡 -->
-  <section class="py-7">
-    <div class="container">
-      <h2 class="text-center fw-bold mb-3">課程學習小卡</h2>
-      <p class="text-center fw-bold mb-5 mb-md-7">報名本班將會寄送乙式實體學分卡，讓培訓成果實體化，成長看得見</p>
-      <img src="../images/react-training/scoreCard.png" alt="學習小卡" class="img-fluid w-100">
+<!-- 講者名單 -->
+<section class="teachers bg-light">
+  <div class="container">
+    <h2 class="h1 text-center fw-bold mb-5 mb-md-7">講者名單</h2>
+    <ul class="row justify-content-center list-unstyled">
+      <li class="col-10 col-lg-4 mb-4 mb-lg-0">
+        <div class="teachers-info position-relative z-1">
+          <div class="teachers-img">
+            <img src="../images/react-training/teacher-casper.png" alt="卡斯伯" class="img-fluid w-100 rounded-top-4">
+          </div>
+          <div class="p-4">
+            <h3 class="h4 fw-bold d-flex align-items-center mb-3">
+              卡斯伯
+              <span class="teachers-tag">切版、React</span>
+            </h3>
+            <ul class="list-unstyled">
+              <li class="mb-1">・2021 {Laravel x Vue} Conf 技術講者</li>
+              <li class="mb-1">・ModernWeb 研討會講者</li>
+              <li class="mb-1">・連續六屆 IT 鐵人邦獲選紀錄</li>
+              <li class="mb-1">・線上課程超過萬人註冊</li>
+              <li>・Javascript 技術書籍：2022/12 繁體中文書銷售排行第 1 名</li>
+            </ul>
+          </div>
+          <img src="../images/react-training/bg-logo.svg" class="position-absolute top-0 start-0 translate-middle z-n1">
+        </div>
+      </li>
+      <li class="col-10 col-lg-4 mb-4 mb-lg-0">
+        <div class="teachers-info">
+          <div class="teachers-img">
+            <img src="../images/react-training/teacher-yinmin.png" alt="穎旻" class="img-fluid w-100 rounded-top-4">
+          </div>
+          <div class="p-4">
+            <h3 class="h4 fw-bold d-flex align-items-center mb-3">
+              穎旻
+              <span class="teachers-tag">JavaScript</span>
+            </h3>
+            <ul class="list-unstyled">
+              <li class="mb-1">・六角學院資歷三年前端工程師</li>
+              <li class="mb-1">・2023 國泰產險教育訓練講師</li>
+              <li class="mb-1">・2023 高雄火箭隊軟體培訓營前端教練</li>
+              <li class="mb-1">・2022 金龍國小教育訓練講師</li>
+              <li>・六角培訓直播班助教長</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="col-10 col-lg-4">
+        <div class="teachers-info">
+          <div class="teachers-img">
+            <img src="../images/react-training/teacher-gonsakon.png" alt="洧杰" class="img-fluid w-100 rounded-top-4">
+          </div>
+          <div class="p-4">
+            <h3 class="h4 fw-bold d-flex align-items-center mb-3">
+              洧杰
+              <span class="teachers-tag">AI 加碼</span>
+            </h3>
+            <ul class="list-unstyled">
+              <li class="mb-1">・影音課授課學生數超過 30,000</li>
+              <li class="mb-1">・火箭隊軟體培訓營前端教練</li>
+              <li class="mb-1">・Webconf 2023 研討會共同召集人</li>
+              <li class="mb-1">・ModernWeb、MOPCON 技術研討會共同講者</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- 與他牌實體學習做比較 -->
+<section class="compare">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <h2 class="h1 text-center fw-bold py-3">與他牌實體學習做比較</h2>
+        <table class="table text-center align-middle rounded-4 mb-0">
+          <thead>
+            <th width="33%" class="border-end rounded-top-left-16 bg-lighter"></th>
+            <th width="33%" class="fw-normal border-end bg-lighter">實體培訓班</th>
+            <th width="33%" class="rounded-top-right-16" style="background-color: #CFEC8F;">六角學院 - 前端培訓班</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">適合學生背景</th>
+              <td class="border-end">全職學習</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">在職、在學、全職都可上！</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">授課環境</th>
+              <td class="border-end">需在特定地點</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">可在任何地點</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">提早釋出學習資源</th>
+              <td class="border-end">不一定</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">提供預習課程</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">上課時間</th>
+              <td class="border-end">平日白天全天</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">每週平日 1~2 天晚上直播授課</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">可兩倍速上課</th>
+              <td class="border-end">無</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">程式批改服務</th>
+              <td class="border-end">無</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">專屬專題教練</th>
+              <td class="border-end">無</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">程式助教解惑</th>
+              <td class="border-end">無</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">有</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end bg-lighter">培訓時間</th>
+              <td class="border-end">3~6 個月</td>
+              <td class="fw-bold bg-secondary-lighter text-secondary">9 個月</td>
+            </tr>
+            <tr>
+              <th class="fw-normal border-end rounded-bottom-left-16 bg-lighter">學費</th>
+              <td class="border-end">10~15 萬</td>
+              <td class="fw-bold rounded-bottom-right-16 bg-secondary-lighter text-primary">\ 不到 5 萬 /</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </section>
-  <!-- 講者名單 -->
-  <section class="teachers">
+  </div>
+</section>
+
+<div class="bg-primary-lighter">
+  <!-- 誰適合此培訓？ -->
+  <section class="fit py-3 py-md-5">
     <div class="container">
-      <h2 class="text-center fw-bold mb-5 mb-md-7">講者名單</h2>
-      <div class="row justify-content-center">
-        <ul class="col-lg-8">
-          <li class="row flex-column flex-md-row align-items-center mb-5">
-            <div class="col-5 col-md-3 mb-4 mb-md-0">
-              <div class="teachers-img">
-                <img src="../images/react-training/teacher-casper.png" alt="卡斯伯" class="img-fluid w-100">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="teachers-info">
-                <h3 class="h4 fw-bold d-flex align-items-center mb-3">
-                  卡斯伯
-                  <span class="teachers-tag">切版</span>
-                </h3>
-                <ul class="list-unstyled">
-                  <li class="mb-1">・2021 {Laravel x Vue} Conf 技術講者</li>
-                  <li class="mb-1">・Modern web 研討會講者</li>
-                  <li class="mb-1">・連續六屆 IT 鐵人邦獲選紀錄</li>
-                  <li class="mb-1">・線上課程超過萬人註冊</li>
-                  <li>・Javascript 技術書籍：2022/12 繁體中文書銷售排行第 1 名</li>
-                </ul>
-              </div>
+      <div class="fit-bg bg-white text-center rounded-4 p-6 p-md-7">
+        <h2 class="h1 fw-bold position-relative d-inline-block mb-5 mb-md-5">誰適合此培訓？
+          <img src="../images/react-training/sparkle-left.png" class="img-fluid sparkle-left">
+          <img src="../images/react-training/sparkle-right.png" class="img-fluid sparkle-right">
+        </h2>
+        <ul class="list-unstyled row justify-content-center">
+          <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
+            <div class="fit-card">
+              <h3 class="h4 fw-bold mb-3 title-underline title-underline-secondary">零經驗</h3>
+              <p class="text-center mb-0">本課程從零開始教<br>零基礎也能上手</p>
             </div>
           </li>
-          <li class="row flex-column flex-md-row align-items-center mb-5">
-            <div class="col-5 col-md-3 mb-4 mb-md-0">
-              <div class="teachers-img">
-                <img src="../images/react-training/teacher-yinmin.png" alt="穎旻" class="img-fluid w-100">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="teachers-info">
-                <h3 class="h4 fw-bold d-flex align-items-center mb-3">
-                  江穎旻
-                  <span class="teachers-tag">JavaScript</span>
-                </h3>
-                <ul class="list-unstyled">
-                  <li class="mb-1">・六角學院資歷三年前端工程師</li>
-                  <li class="mb-1">・2023 國泰產險教育訓練講師</li>
-                  <li class="mb-1">・2023 高雄火箭隊軟體培訓營前端教練</li>
-                  <li class="mb-1">・2022 金龍國小教育訓練講師</li>
-                  <li>・六角培訓直播班助教長</li>
-                </ul>
-              </div>
+          <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
+            <div class="fit-card">
+              <h3 class="h4 fw-bold mb-3 title-underline title-underline-secondary">想轉換跑道</h3>
+              <p class="text-center mb-0">所在領域充滿了不安<br>想嘗試其他領域</p>
             </div>
           </li>
-          <li class="row flex-column flex-md-row align-items-center">
-            <div class="col-5 col-md-3 mb-4 mb-md-0">
-              <div class="teachers-img">
-                <img src="../images/react-training/teacher-gonsakon.png" alt="洧杰" class="img-fluid w-100">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="teachers-info">
-                <h3 class="h4 fw-bold d-flex align-items-center mb-3">
-                  洧杰
-                  <span class="teachers-tag">React</span>
-                </h3>
-                <ul class="list-unstyled">
-                  <li class="mb-1">・影音課授課學生數超過 30,000</li>
-                  <li class="mb-1">・火箭隊軟體培訓營前端教練</li>
-                  <li class="mb-1">・Webconf 2023 研討會共同召集人</li>
-                  <li class="mb-1">・Modernweb、MOPCON 技術研討會講者</li>
-                </ul>
-              </div>
+          <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
+            <div class="fit-card">
+              <h3 class="h4 fw-bold mb-3 title-underline title-underline-secondary">其他領域工程師</h3>
+              <p class="text-center mb-0">本身具備程式背景<br>但也想透過前端做出美美畫面</p>
             </div>
           </li>
         </ul>
       </div>
     </div>
   </section>
-  <!-- 與他牌實體學習做比較 -->
-  <section class="compare">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8">
-          <h2 class="bg-info-dark text-center text-white py-3">與他牌實體學習做比較</h2>
-          <table class="table text-center align-middle mb-0">
-            <thead>
-              <th width="33%" class="border-end rounded-top-left-16 bg-light"></th>
-              <th width="33%" class="fw-normal border-end bg-light">實體培訓班</th>
-              <th width="33%" class="rounded-top-right-16 bg-danger">六角學院 - 前端培訓班</th>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="fw-normal border-end bg-light">適合學生背景</th>
-                <td class="border-end">全職學習</td>
-                <td class="fw-medium bg-danger-light">在職、在學、全職都可上！</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">授課環境</th>
-                <td class="border-end">需在特定地點</td>
-                <td class="fw-medium bg-danger-light">可在任何地點</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">上課時間</th>
-                <td class="border-end">平日白天全天</td>
-                <td class="fw-medium bg-danger-light">每週五 20:00 直播教學</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">提早釋出全部課鋼</th>
-                <td class="border-end">僅會提供預習課程</td>
-                <td class="fw-medium bg-danger-light">有，開課當天獲得全部訓練內容</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">可兩倍速上課</th>
-                <td class="border-end">無</td>
-                <td class="fw-medium bg-danger-light">有</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">程式批改服務</th>
-                <td class="border-end">無</td>
-                <td class="fw-medium bg-danger-light">有</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">專屬專題教練</th>
-                <td class="border-end">無</td>
-                <td class="fw-medium bg-danger-light">有</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">程式助教解惑</th>
-                <td class="border-end">無</td>
-                <td class="fw-medium bg-danger-light">有</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end bg-light">培訓時間</th>
-                <td class="border-end">3~6 個月</td>
-                <td class="fw-medium bg-danger-light">9 個月</td>
-              </tr>
-              <tr>
-                <th class="fw-normal border-end rounded-bottom-left-16 bg-light">學費</th>
-                <td class="border-end">10~15 萬</td>
-                <td class="fw-medium rounded-bottom-right-16 bg-danger-light">只需一半</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
 </div>
 
-<div class="bg-primary-dark">
-  <!-- 誰適合此培訓？ -->
-  <section class="fit py-7">
-    <h2 class="fw-bold text-center mb-5 mb-md-7">誰適合此培訓？</h2>
-    <div class="container">
-      <ul class="list-unstyled row justify-content-center">
-        <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
-          <div class="fit-card">
-            <h3 class="mb-3">零經驗</h3>
-            <p class="text-center mb-0">本課程從零開始教<br>零基礎也能上手</p>
-          </div>
-        </li>
-        <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
-          <div class="fit-card">
-            <h3 class="mb-3">想轉換跑道</h3>
-            <p class="text-center mb-0">所在領域充滿了不安<br>想嘗試其他領域</p>
-          </div>
-        </li>
-        <li class="col-md-8 col-lg-4 mb-4 mb-lg-0">
-          <div class="fit-card">
-            <h3 class="mb-3">其他領域工程師</h3>
-            <p class="text-center mb-0">本身具備程式背景<br>但也想透過前端做出美美畫面</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <div class="container mb-5 mb-md-7">
+<!-- <div class="container mb-5 mb-md-7">
     <div class="row justify-content-center">
       <div class="col-md-10">
         <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/IT83Yhh9V3c?si=ulnu3DvuDLX1D9yT" title="React 培訓班說明會" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/IT83Yhh9V3c?si=ulnu3DvuDLX1D9yT" title="React 培訓班說明會"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- 購買 -->
-  <div class="product course-tracking-ViewContent" id="recommend" data-name="React 前端工程師培訓班" data-price="48000" data-id="react-training">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="card product-card border-0">
-            <img src="../images/react-training/thumbnail.png" class="card-img-top img-fluid w-100" alt="React 前端工程師培訓班">
-            <div class="card-body px-4 py-5">
-              <h2 class="fw-bold mb-3">React 前端工程師培訓班</h2>
-              <p class="mb-3">以「接近業界實戰」為導向，並提供專題一對一服務，手把手帶您成為 React 前端工程師，7/5（五）將進行第一堂直播課！</p>
-              <p class="mb-3">此服務包含：</p>
-              <ul class="list-unstyled mb-3">
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  52 小時的課程預習教材
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  25 堂直播教學，共 62.5 小時
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  40 支專屬 RESTful API
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  課程時間：2024/7/5 ～ 2025/2/21
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  作品製作時間：2024/7/5 ~ 2025/3/14
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  2 式首頁 UI 專題設計稿（每組別獨立設計）
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  一張學習小卡
-                </li>
-                <li class="d-flex align-items-center mb-2">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  課程期間包含專題教練諮詢
-                </li>
-                <li class="d-flex align-items-center">
-                  <img src="../images/react-training/bling.svg" alt="bling icon" width="14" class="me-2">
-                  專題教練引導團隊完成獨立 “切版作品” + “框架作品“
-                </li>
-              </ul>
-              <p class="text-center mb-2">
-                <a href="#trainingContentModal" type="button" class="link-trainingContent fw-medium text-decoration-none" data-bs-toggle="modal" data-bs-target="#trainingContentModal">前端工程師培訓班包含項目</a>
-              </p>
-              <p class="mb-1"><del>原價 $95,733</del></p>
-              <p class="h2 text-warning fw-bold mb-3">$48,000</p>
-              <!-- <a href="https://r.botbonnie.com/htwKV" target="_blank" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link react-training-gtag-track">
-                立即免費 Line 預約
-              </a> -->
-              <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
-              data-bs-toggle="modal" data-bs-target="#orderModal"
-              title="開啟 React 前端工程師培訓班支付流程"
-              data-price="48000"
-              data-title="React 前端工程師培訓班"
-              data-paylink="#"
-              itemprop="url" disabled>
-                報名截止
+<!-- 購買 -->
+<section class="bg-primary-lighter py-80">
+  <div class="container">
+    <h2 class="h1 fw-bold text-center">如何報名？</h2>
+    <p class="h5 fw-bold text-dark text-center mb-5">6/4(三) 21:00～6/22 開放報名！<br class="d-md-none" /><span
+        class="title-underline title-underline-secondary text-black">名額有限</span></p>
+    <div class="product course-tracking-ViewContent" id="recommend" data-name="React 前端工程師培訓班" data-price="48000"
+      data-id="react-training">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="card product-card mb-4">
+              <div class="card-header border-0 bg-primary py-3">
+                <h2 class="h5 text-center text-white fw-bold mb-0">React 前端工程師培訓班</h2>
+              </div>
+              <div class="card-body p-4">
+                <p class="mb-4">以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為 React 前端工程師。</p>
+                <p class="mb-3 text-dark">此服務包含：</p>
+                <ul class="mb-3 fw-bold list-unstyled">
+                  <li class="d-flex align-items-center mb-2">
+                    • 25 堂直播教學
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    • 100 小時的影音內容
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    • 10 個業界熱門主題設計稿，頁面數量超過 40 頁
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    • 2 式首頁 UI 專題設計稿
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    • 課程期間無次數限制的助教程式批改、專題教練諮詢
+                  </li>
+                  <li class="d-flex align-items-center mb-2 text-primary text-decoration-underline" id="link-to-faq6" style="cursor:pointer">
+                    • 結業後提供求職輔導（履歷健檢、廠商推薦）
+                  </li>
+                </ul>
+                <p class="text-center mb-2">
+                  <!-- <a href="#trainingContentModal" type="button"
+                      class="link-trainingContent fw-medium text-decoration-none" data-bs-toggle="modal"
+                      data-bs-target="#trainingContentModal">前端工程師培訓班包含項目</a> -->
+                </p>
+                <!-- <hr> -->
+                <!-- <p class="mb-2 text-end text-dark"><del>原價 $95,733</del></p>
+                  <p class="mb-0 text-end">優惠價<span class="h2 text-primary fw-bold ms-2">$48,600</span></p> -->
+
+                <!-- <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
+                    data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48000"
+                    data-title="React 前端工程師培訓班" data-paylink="#" itemprop="url" disabled>
+                    報名截止
+                  </a> -->
+              </div>
+            </div>
+            <div class="col-12 mx-auto">
+              <a href="https://r.botbonnie.com/gu4Xy" target="_blank"
+                class="lead-click btn btn-primary rounded-pill fw-bold py-3 w-100 mp-click d-flex align-items-center justify-content-center">
+                立即免費預約 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <!-- <nav>
+      <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+        <button class="nav-link active w-50 fw-bold border-0 rounded-top-left-16 rounded-top-right-16" id="nav-home-tab"
+          data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+          aria-selected="true">立即註冊</button>
+        <button class="nav-link w-50 fw-bold border-0 rounded-top-left-16 rounded-top-right-16" id="nav-profile-tab"
+          data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+          aria-selected="false">每個月只要 2,177 元起</button>
+      </div>
+    </nav> -->
+    <!-- <div class="tab-content p-5 position-relative rounded-bottom-left-16 rounded-bottom-right-16" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div class="product course-tracking-ViewContent" id="recommend" data-name="React 前端工程師培訓班" data-price="48000"
+          data-id="react-training">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="card product-card mb-4">
+                  <div class="card-header border-0 bg-primary py-3">
+                    <h2 class="h5 text-center text-white fw-bold mb-0">React 前端工程師培訓班</h2>
+                  </div>
+                  <div class="card-body p-4">
+                    <p class="mb-4">以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為 React 前端工程師。</p>
+                    <p class="mb-3 text-dark">此服務包含：</p>
+                    <ul class="mb-3 fw-bold list-unstyled">
+                      <li class="d-flex align-items-center mb-2">
+                        • 25 堂直播教學
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        • 100 小時的影音內容
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        • 10 個業界熱門主題設計稿，頁面數量超過 40 頁
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        • 2 式首頁 UI 專題設計稿
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        • 課程期間無次數限制的助教程式批改、專題教練諮詢
+                      </li>
+                      <li class="d-flex align-items-center mb-2 text-primary text-decoration-underline">
+                        • 結業後提供求職輔導（履歷健檢、廠商推薦）
+                      </li>
+                    </ul>
+                    <p class="text-center mb-2">
+                      <a href="#trainingContentModal" type="button"
+                        class="link-trainingContent fw-medium text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#trainingContentModal">前端工程師培訓班包含項目</a>
+                    </p>
+                    <hr>
+                    <p class="mb-2 text-end text-dark"><del>原價 $95,733</del></p>
+                    <p class="mb-0 text-end">優惠價<span class="h2 text-primary fw-bold ms-2">$48,600</span></p>
 
-<!-- QA -->
-<section class="qa bg-primary-light">
-  <h2 class="text-center fw-bold mb-6 mb-md-7">常見 QA</h2>
-  <div class="container">
+                    <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
+                      data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48000"
+                      data-title="React 前端工程師培訓班" data-paylink="#" itemprop="url" disabled>
+                      報名截止
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 mx-auto">
+                  <a href="https://r.botbonnie.com/gu4Xy" target="_blank" class="btn btn-primary rounded-pill fw-bold py-3 w-100 mp-click tracking-link react-training-gtag-track d-flex align-items-center justify-content-center">
+                    立即手刀報名 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="../images/react-training/bonus-1.png" class="img-fluid d-none d-lg-block person-left">
+        <img src="../images/react-training/bonus-2.png" class="img-fluid d-none d-lg-block person-right">
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="fw-bold mb-3">
+              使用銀角零卡分期服務！<br>
+              讓你輕鬆學習不受限！
+            </h3>
+            <p class="h5 fw-bold text-dark">零卡分期先買後付，適合想專注學習的學生、社會新鮮人！</p>
+            <img src="../images/js-training/zingala.png" alt="zingala logo"
+              class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+          </div>
+          <div class="col-md-8">
+            <table class="table text-center align-middle rounded-4 mb-0">
+              <thead>
+                <th width="33%" class="border-end rounded-top-left-16 bg-lighter">付款方式</th>
+                <th width="33%" class="border-end" style="background-color: #CFEC8F;">銀角</th>
+                <th width="33%" class="bg-lighter rounded-top-right-16">信用卡</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">原價</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$96,333</td>
+                  <td class="">NT$96,333</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">一次付清</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$48,600 </td>
+                  <td class="">NT$48,600 </td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">3期(零利率)</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$16,200</td>
+                  <td class="">NT$16,200</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">6期(零利率)</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$8,100</td>
+                  <td class="">NT$8,100</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">9期（1.5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$5,481</td>
+                  <td class="">x</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">12 期（2.5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$4,154</td>
+                  <td class="">x</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">18 期（5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$2,835</td>
+                  <td class="">x</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter rounded-bottom-left-16">24 期（7.5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$2,177</td>
+                  <td class="rounded-bottom-right-16">x</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="mt-3 mb-4 text-end"><span class="text-primary">＊</span>以上金額皆不包含銀角額外手續費</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
+                      data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48000"
+                      data-title="React 前端工程師培訓班" data-paylink="#" itemprop="url" disabled>
+                      報名截止
+                    </a>
+            <div class="col-6 mx-auto">
+              <a href="https://r.botbonnie.com/gu4Xy" target="_blank"
+                class="btn btn-primary rounded-pill fw-bold py-3 w-100 mp-click tracking-link react-training-gtag-track d-flex align-items-center justify-content-center">
+                立即手刀報名 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- 線上說明會 -->
+<section class="bg-primary py-80 text-center">
+  <div class="container position-relative">
     <div class="row justify-content-center">
-      <div class="col-11 col-md-10 col-lg-8">
-        <ul class="list-unstyled mb-0">
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              今年只有這一班嗎？
-            </h3>
-            <p class="qa-answer mb-0">目前只有規劃這一班，今年將全心投入在有強烈動機轉職的開發者。</p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              這堂課是線上課還是線下？
-            </h3>
-            <p class="qa-answer mb-0">為純線上直播課程。</p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              我目前在職和在學，適合參加嗎？
-            </h3>
-            <p class="qa-answer mb-0">
-              適合參加，原因有二：<br>
-              一、直播時間為週五晚上 20:00，並會提供直播錄影<br>
-              二、所有教學資源在開課當天，就會全部釋出，你不用等到我們上課時間，自己就能開始進行預習
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              你們會如何專題團隊分組？
-            </h3>
-            <p class="qa-answer mb-0">
-              報名後我們會提供能力分組表單，會將年資相近的開發者盡可能分組在一起，協助小組內溝通順暢。
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              有分期付款機制嗎？
-            </h3>
-            <p class="qa-answer mb-0">
-              有的，藍新金流提供 6 期 0 利率的分期付款，支援銀行有玉山銀行、台新商銀、中國信託銀行。除此之外還有提供銀角無卡分期，讓您不需要任何信用卡也能享有分期服務。
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              請問開通後相關影片有觀看期限嗎？
-            </h3>
-            <p class="qa-answer mb-0">
-              預習影音與直播影音的觀看期限一致，<br>
-              切版直播學程、切版專題學程期限至 2025/06<br>
-              JavaScript 學程期限至 2025/09<br>
-              React 學程、框架專題學程期限至 2025/12
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              本課程是預錄的嗎？
-            </h3>
-            <p class="qa-answer mb-0">
-              不是哦，除了課前的預習影音之外，老師也會 Live 教學，這樣才能提升互動性，增強學員吸收知識體驗
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              有幾天直播時段沒辦法配合的話，會有錄影影片嗎？
-            </h3>
-            <p class="qa-answer mb-0">
-              有的！我們會在課後的隔天上傳影片，讓同學可以隨時回顧課程的內容
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              除了老師直播外，我有問題該怎麼辦？
-            </h3>
-            <p class="qa-answer mb-0">
-              六角教學系統會提供問答專區，線上的助教都會在發問後 48 小時工作日內回覆，並且也會提供專屬的 Discord 聊天頻道，來讓您與助教一起互動！
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              請問學習卡使用方法和功能？
-            </h3>
-            <p class="qa-answer mb-0">
-              註冊 “切版直播班” 相關課程，可以獲得實體學習小卡，該卡片是採用刮刮卡的形式，當你完成特定課程挑戰時，即可將該刮刮卡刮開，並統計該分數，增加個人學習成就感。
-            </p>
-          </li>
-          <li class="mb-5 mb-md-7">
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              請問我可以使用平板電腦或是智慧型手機上課嗎？
-            </h3>
-            <p class="qa-answer mb-0">
-              我們提供影片及直播的形式上課，直播的內容則是使用 Zoom 服務，因此在手機上也能正常運行。<br>
-              但在此也額外提醒，由於課程包含許多程式碼，使用行動裝置可能會顯得程式碼較小的狀況哦。
-            </p>
-          </li>
-          <li>
-            <h3 class="qa-question fw-bold">
-              <span class="qa-q">Ｑ</span>
-              請問完課證明領取資格？
-            </h3>
-            <p class="qa-answer mb-0">
-              每週的直播課後都會提供作業，在課程結束之前提交所有作業並交由助教審核成功，即可拿到完課程證明喔。
-            </p>
-          </li>
-        </ul>
+      <div class="col-md-10">
+        <h2 class="h1 fw-bold text-white mb-5">線上說明會</h2>
+        <img src="../images/react-training/calendar.png" alt="calendar" class="img-fluid mb-5 d-none d-md-block">
+        <img src="../images/react-training/calendar-sm.png" alt="calendar" class="img-fluid mb-5 d-md-none">
+        <img src="../images/react-training/forum.png" class="d-none d-lg-block position-absolute bottom-0 start-0"
+          style="width:250px;transform: translate(0px, 94px);">
+        <div class="col-md-2 mx-auto">
+          <a href="https://r.botbonnie.com/gu4Xy" target="_blank"
+            class="lead-click btn btn-light link-primary fw-semibold rounded-pill fw-bold px-4 py-2 mp-click react-training-gtag-track d-flex align-items-center justify-content-center">
+            預約場次 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
+          </a>
+          <!-- <button
+            class="rounded-pill btn btn-light px-4 py-2 link-primary fw-semibold mb-3 d-flex align-items-center">預約場次<i
+              class="bi bi-arrow-right-short fs-4 ms-1"></i></button> -->
+        </div>
+        <!-- <p class="text-white">觀看先前場次：6/4 說明會</p> -->
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- QA -->
+<section class="faq py-80 position-relative z-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2 class="h1 text-center fw-bold mb-4 mb-md-7">常見 QA</h2>
+      </div>
+      <div class="col-lg-9">
+        <div class="faq-item active mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq1" role="button" class="faq-btn w-100 d-flex align-items-center justify-content-between"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">今年只有這一班嗎？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse show" id="faq1">
+            <div class="faq-a">
+              <p class="mb-0">今年只有規劃這一班，我們將全心投入在有強烈動機學習的開發者。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq2" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">這堂課是線上課還是線下課？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq2">
+            <div class="faq-a">
+              <p class="mb-0">為純線上直播課程。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq3" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">我目前在職 / 在學，適合參加嗎？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq3">
+            <div class="faq-a">
+              <p class="mb-0">適合參加，原因有二：</p>
+              <ul class="list-unstyled mb-0">
+                <li>一、直播時間為每週平日 1~2 天的晚上 20:00，並會提供直播錄影。</li>
+                <li>二、所有教學資源在開課當天就會全部釋出，你不用等到我們上課時間，自己就能開始進行預習。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq4" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">你們會如何進行專題團隊分組？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq4">
+            <div class="faq-a">
+              <p class="mb-0">報名後我們會提供能力分組表單，會將年資相近的開發者盡可能分組在一起，協助小組內溝通順暢。</p>
+            </div>
+          </div>
+        </div>
+        <div id="faq-item5" class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq5" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">請問直播課有錄影嗎？錄影有觀看時間限制嗎？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq5">
+            <div class="faq-a">
+              <p class="mb-0">
+                每堂直播課程都有錄影，並會收錄放到本次課程影音課程列表內。直播課錄影和預習影音都可以觀看到 2026/06/30。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq6" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">求職輔導是什麼？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq6">
+            <div class="faq-a">
+              <p class="mb-0">
+                求職輔導是為參加「React 前端工程師培訓班」並且完成指定條件的同學提供的服務，其中包含履歷健檢、廠商推薦，需完成「框架專題班」的專案且參加助教的程式碼批改方可申請。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq7" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">我要怎麼開始上課？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq7">
+            <div class="faq-a">
+              <p class="mb-0">成功購買課程後，六角學院將會使用 Email 進行開課通知，包含需開通的課程平台說明，請確保您的信箱能收取來自<a class="p-0 link-primary"
+                  href="mailto:service@hexschool.com">service@hexschool.com</a> 的信件。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq-8" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">有分期付款機制嗎？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq-8">
+            <div class="faq-a">
+              <p class="mb-0">
+                有的，藍新金流提供 6 期 0 利率的分期付款，支援銀行有玉山銀行、台新商銀、中國信託銀行。除此之外還有提供銀角無卡分期，讓您不需要任何信用卡也能享有分期服務。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item mb-3">
+          <h4 class="fs-8 fw-semibold mb-0">
+            <a href="#faq-10" role="button"
+              class="faq-btn w-100 d-flex align-items-center justify-content-between collapsed"
+              data-bs-toggle="collapse">
+              <div class="faq-q d-flex align-items-center fs-5">
+                <div class="faq-iconQ  mb-1 mb-lg-0">Q</div>
+                <p class="mb-0">有什麼退費規定？</p>
+              </div>
+              <i class="bi bi-dash-lg fs-5 fs-lg-3"></i>
+              <i class="bi bi-plus-lg fs-5 fs-lg-3"></i>
+            </a>
+          </h4>
+          <div class="collapse" id="faq-10">
+            <div class="faq-a">
+              <p class="mb-0">各方案的詳細退費規定請見<a href="/qa/#直播班退費規定" target="_blank" class="p-0 link-primary">直播班退費規定</a>。
+              </p>
+              <p class="mb-0">若因個人因素導致無法獲取課程資訊，進而影響課程參與（例如：信箱無法收信、未開通課程、未加入 Discord
+                頻道等），本課程恕無法因此提供退費、延期或轉讓。六角學院將不負相關責任，亦無法因此提供額外補償。</p>
+              <p class="mb-0">建議報名後務必確認課程通知信件及加入相關平台，若有問題請儘早聯繫客服，我們將協助您完成設定。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="../images/react-training/bg-half-circle-gray.png"
+    class="img-fluid position-absolute bottom-0 z-n1 w-100 d-none d-lg-block">
+</section>
+
 <!-- 前端工程師培訓班包含項目 Modal -->
-<div class="modal fade" id="trainingContentModal" tabindex="-1" aria-labelledby="trainingContentModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="trainingContentModal" tabindex="-1" aria-labelledby="trainingContentModalLabel"
+  aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-body">
@@ -1154,8 +1493,29 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const trigger = document.querySelector("#link-to-faq6");
+    trigger.addEventListener("click", function () {
+      // 滾動
+      const target = document.querySelector("#faq-item5");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+
+      // 展開 collapse
+      const collapseTarget = document.querySelector("#faq6");
+      if (collapseTarget && !collapseTarget.classList.contains("show")) {
+        new bootstrap.Collapse(collapseTarget, {
+          toggle: true,
+        });
+      }
+    });
+  });
+
+</script>
 
 
 
@@ -1169,7 +1529,37 @@
       src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
 </div>
 
- <!-- 只需要個別頁面的倒數 -->
+ <!-- 開啟通用 footer 倒數-->
+    <!-- 如果個別頁面有需要倒數 -->
+    
+    <!-- 特定頁面倒數 -->
+    <nav class="navbar-fixed-bottom text-center fixed-bottom bg-danger text-white py-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
+        <span class="me-md-3 fw-bold text-start">【🙋‍♀️ 轉職前端工程師】<br class="d-sm-none"><span class="ms-1 ms-md-3">培訓班即將開放報名！</span></span>
+        
+        <div class="d-flex justify-content-md-center  text-nowrap">
+          
+            <span class="clock m-r-1 fw-bold"></span>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end ps-md-3">
+        
+          <a href="#recommend"
+            class="btn btn-dark btn-sm rounded-0 lead-click">
+            立即預約
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
+      </div> 
+    </div>
+  </div>
+</nav>
+
+  <input type="hidden" id="footer-clock" value="2025/6/4 21:00">
+
   
   
   </div>
@@ -1254,8 +1644,8 @@
 </div>
 
 
-  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
-    
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1369,10 +1759,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1745828856784.js"></script>
+<script src="/js/bs4_vendor.js?1747152083132.js"></script>
 
 
-<script src="/js/bs4_all.js?1745828856784.js"></script>
+<script src="/js/bs4_all.js?1747152083132.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
