@@ -548,7 +548,8 @@ vueApp = function() {
         web_layout: {},
         ui: {},
         backend: {},
-        camping: {}
+        camping: {},
+        frontend_training: {}
       },
       trainingWait: {
         js: {},
@@ -559,7 +560,8 @@ vueApp = function() {
         web_layout: {},
         ui: {},
         backend: {},
-        camping: {}
+        camping: {},
+        frontend_training: {}
       }
     },
     methods: {
