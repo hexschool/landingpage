@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1749609763679.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1749793675285.css">
 
   <!-- Global styles END -->
 
@@ -106,7 +106,8 @@
   </svg>
       
     </a>
-    <div class="collapse navbar-collapse justify-content-end">
+    <div class="collapse navbar-collapse justify-content-end align-items-center">
+      <div class="bg-light rounded-pill px-4 py-2 me-3">剩餘 45 名額</div>
       <a href="#recommend"
         class="btn btn-danger text-white ">
         
@@ -239,7 +240,8 @@
     <img src="../images/react-training/timeline.png" alt="timeline" class="img-fluid w-100 d-none d-md-block">
     <img src="../images/react-training/timeline-sm.png" alt="timeline" class="img-fluid w-100 d-md-none">
     <p class="d-flex align-items-center justify-content-center mt-5">
-      <a href="https://hexschool.tw/tHGHp" target="_blank" type="button" class="btn btn-primary fw-bold py-3 px-6 rounded-pill">點我看詳細介紹</a>
+      <a href="https://hexschool.tw/tHGHp" target="_blank" type="button"
+        class="btn btn-primary fw-bold py-3 px-6 rounded-pill">點我看詳細介紹</a>
     </p>
   </div>
 </section>
@@ -858,13 +860,13 @@
   </div> -->
 
 <!-- 購買 -->
-<section class="bg-primary-lighter py-80">
+<section class="bg-primary-lighter py-80" id="recommend">
   <div class="container">
     <h2 class="h1 fw-bold text-center">如何報名？</h2>
     <p class="h5 fw-bold text-dark text-center mb-5">6/4(三) 21:00～6/22 開放報名！<br class="d-md-none" /><span
         class="title-underline title-underline-secondary text-black">名額有限</span></p>
 
-    <nav>
+    <!-- <nav>
       <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
         <button class="nav-link active w-50 fw-bold border-0 rounded-top-left-16 rounded-top-right-16" id="nav-home-tab"
           data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
@@ -873,190 +875,257 @@
           data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
           aria-selected="false">選擇分期方案</button>
       </div>
-    </nav>
-    <div class="tab-content p-5 position-relative rounded-bottom-left-16 rounded-bottom-right-16" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-        <div class="product course-tracking-ViewContent" id="recommend" data-name="React 前端工程師培訓班" data-price="48000"
-          data-id="react-training">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-8 col-lg-6">
-                <div class="card product-card mb-4">
-                  <div class="card-header border-0 bg-primary py-3">
-                    <h2 class="h5 text-center text-white fw-bold mb-0">React 前端工程師培訓班</h2>
-                  </div>
-                  <div class="card-body p-4">
-                    <p class="mb-4">以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為 React 前端工程師。</p>
-                    <p class="mb-3 text-dark">此服務包含：</p>
-                    <ul class="mb-3 fw-bold list-unstyled">
-                      <li class="d-flex align-items-center mb-2">
-                        • 25 堂直播教學
-                      </li>
-                      <li class="d-flex align-items-center mb-2">
-                        • 100 小時的影音內容
-                      </li>
-                      <li class="d-flex align-items-center mb-2">
-                        • 10 個業界熱門主題設計稿，頁面數量超過 40 頁
-                      </li>
-                      <li class="d-flex align-items-center mb-2">
-                        • 2 式首頁 UI 專題設計稿
-                      </li>
-                      <li class="d-flex align-items-center mb-2">
-                        • 課程期間無次數限制的助教程式批改、專題教練諮詢
-                      </li>
-                      <li class="d-flex align-items-center mb-2 text-primary text-decoration-underline">
-                        • 結業後提供求職輔導（履歷健檢、廠商推薦）
-                      </li>
-                    </ul>
-                    <!-- <p class="text-center mb-2">
+    </nav> -->
+    <div class="mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="fw-bold mb-3">
+            使用銀角零卡分期<br>
+            讓你輕鬆學習不受限！
+          </h3>
+          <p class="h5 fw-bold text-dark">每個月只要 2,177 元，輕鬆學習無負擔</p>
+          <p class="h5 fw-bold text-primary">本次活動加碼！ 使用「銀角無卡分期」：</p>
+          <ul class="h5 fw-bold text-primary">
+            <li>3、6 期零利率</li>
+            <li>9 期以上，最高現折 $1,200（限消費四萬以上）</li>
+          </ul>
+          <img src="../images/js-training/zingala.png" alt="zingala logo"
+            class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
+        </div>
+        <div class="col-md-8">
+          <div class="table-responsive">
+            <table class="table text-center align-middle rounded-4 mb-0">
+              <thead>
+                <th width="33%" class="border-end rounded-top-left-16 bg-lighter">付款方式</th>
+                <th width="33%" class="border-end" style="background-color: #CFEC8F;">銀角無卡</th>
+                <th width="33%" class="bg-lighter rounded-top-right-16">信用卡</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">原價</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$96,333</td>
+                  <td class="">NT$96,333</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">一次付清</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$48,600 </td>
+                  <td class="">NT$48,600 </td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">3期(零利率)</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$16,200</td>
+                  <td class="">NT$16,200</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">6期(零利率)</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$8,100</td>
+                  <td class="">NT$8,100</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">9期（1.5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$5,481</td>
+                  <td class="">x</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">12 期（2.5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$4,154</td>
+                  <td class="">x</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter">18 期（5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$2,835</td>
+                  <td class="">x</td>
+                </tr>
+                <tr>
+                  <th class="fw-normal border-end bg-lighter rounded-bottom-left-16">24 期（7.5%）</th>
+                  <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$2,177</td>
+                  <td class="rounded-bottom-right-16">x</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-3 mb-4 text-end"><span class="text-primary">＊</span>以上金額皆不包含銀角額外手續費</p>
+        </div>
+      </div>
+      <!-- <div class="row justify-content-center">
+        <div class="col-12 col-lg-6 mx-auto">
+          <a href="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
+            class="btn btn-primary fw-bold py-3 w-100 mp-click tracking-link rounded-pill d-flex align-items-center justify-content-center"
+            data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48600"
+            data-title="React 前端工程師培訓班"
+            data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
+            itemprop="url">
+            立即手刀報名 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
+          </a>
+        </div>
+      </div> -->
+    </div>
+    <div class="position-relative">
+      <div class="product course-tracking-ViewContent" data-name="React 前端工程師培訓班" data-price="48000"
+        data-id="react-training">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              <div class="card product-card mb-4">
+                <div class="card-header border-0 bg-primary py-3">
+                  <h2 class="h5 text-center text-white fw-bold mb-0">React 前端工程師培訓班</h2>
+                </div>
+                <div class="card-body p-4">
+                  <p class="mb-4">以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為 React 前端工程師。</p>
+                  <p class="mb-3 text-dark">此服務包含：</p>
+                  <ul class="mb-3 fw-bold list-unstyled">
+                    <li class="d-flex align-items-center mb-2">
+                      • 25 堂直播教學
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      • 100 小時的影音內容
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      • 10 個業界熱門主題設計稿，頁面數量超過 40 頁
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      • 2 式首頁 UI 專題設計稿
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      • 課程期間無次數限制的助教程式批改、專題教練諮詢
+                    </li>
+                    <li class="d-flex align-items-center mb-2 text-primary text-decoration-underline">
+                      • 結業後提供求職輔導（履歷健檢、廠商推薦）
+                    </li>
+                  </ul>
+                  <!-- <p class="text-center mb-2">
                       <a href="#trainingContentModal" type="button"
                         class="link-trainingContent fw-medium text-decoration-none" data-bs-toggle="modal"
                         data-bs-target="#trainingContentModal">前端工程師培訓班包含項目</a>
                     </p> -->
-                    <hr>
-                    <p class="mb-2 text-end text-dark"><del>原價 $95,733</del></p>
-                    <p class="mb-0 text-end">優惠價<span class="h2 text-primary fw-bold ms-2">$48,600</span></p>
+                  <hr>
+                  <p class="mb-2 text-end text-dark"><del>原價 $95,733</del></p>
+                  <p class="mb-0 text-end">優惠價<span class="h2 text-primary fw-bold ms-2">$48,600</span></p>
 
-                    <!-- <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
+                  <!-- <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
                       data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48000"
                       data-title="React 前端工程師培訓班" data-paylink="#" itemprop="url" disabled>
                       報名截止 -->
-                    </a>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <a href="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
-                    class="btn btn-primary fw-bold py-3 w-100 mp-click tracking-link rounded-pill d-flex align-items-center justify-content-center"
-                    data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48600"
-                    data-title="React 前端工程師培訓班"
-                    data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
-                    itemprop="url">
-                    立即手刀報名 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
                   </a>
                 </div>
+              </div>
+              <div class="col-12">
+                <a href="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
+                  class="btn btn-primary fw-bold py-3 w-100 mp-click tracking-link rounded-pill d-flex align-items-center justify-content-center"
+                  data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48600"
+                  data-title="React 前端工程師培訓班"
+                  data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
+                  itemprop="url">
+                  立即手刀報名 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <img src="../images/react-training/bonus-1.png" class="img-fluid d-none d-lg-block person-left">
-        <img src="../images/react-training/bonus-2.png" class="img-fluid d-none d-lg-block person-right">
+      </div>
+      <img src="../images/react-training/bonus-1.png" class="img-fluid d-none d-lg-block person-left">
+      <img src="../images/react-training/bonus-2.png" class="img-fluid d-none d-lg-block person-right">
+    </div>
+    <!-- <div class="tab-content p-5 position-relative rounded-bottom-left-16 rounded-bottom-right-16" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-        <div class="row">
-          <div class="col-md-4">
-            <h3 class="fw-bold mb-3">
-              使用銀角零卡分期<br>
-              讓你輕鬆學習不受限！
-            </h3>
-            <p class="h5 fw-bold text-dark">每個月只要 2,177 元，輕鬆學習無負擔</p>
-            <p class="h5 fw-bold text-primary">本次活動加碼！ 使用「銀角無卡分期」：</p>
-            <ul class="h5 fw-bold text-primary">
-              <li>3、6 期零利率</li>
-              <li>9 期以上，最高現折 $1,200（限消費四萬以上）</li>
-            </ul>
-            <img src="../images/js-training/zingala.png" alt="zingala logo"
-              class="img-fluid w-50 mb-4 d-block mx-auto mx-md-0">
-          </div>
-          <div class="col-md-8">
-            <div class="table-responsive">
-              <table class="table text-center align-middle rounded-4 mb-0">
-                <thead>
-                  <th width="33%" class="border-end rounded-top-left-16 bg-lighter">付款方式</th>
-                  <th width="33%" class="border-end" style="background-color: #CFEC8F;">銀角無卡</th>
-                  <th width="33%" class="bg-lighter rounded-top-right-16">信用卡</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter">原價</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$96,333</td>
-                    <td class="">NT$96,333</td>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter">一次付清</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$48,600 </td>
-                    <td class="">NT$48,600 </td>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter">3期(零利率)</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$16,200</td>
-                    <td class="">NT$16,200</td>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter">6期(零利率)</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$8,100</td>
-                    <td class="">NT$8,100</td>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter">9期（1.5%）</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$5,481</td>
-                    <td class="">x</td>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter">12 期（2.5%）</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$4,154</td>
-                    <td class="">x</td>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter">18 期（5%）</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$2,835</td>
-                    <td class="">x</td>
-                  </tr>
-                  <tr>
-                    <th class="fw-normal border-end bg-lighter rounded-bottom-left-16">24 期（7.5%）</th>
-                    <td class="border-end fw-bold bg-secondary-lighter text-secondary">NT$2,177</td>
-                    <td class="rounded-bottom-right-16">x</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="mt-3 mb-4 text-end"><span class="text-primary">＊</span>以上金額皆不包含銀角額外手續費</p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-6 mx-auto">
-            <a href="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
-              class="btn btn-primary fw-bold py-3 w-100 mp-click tracking-link rounded-pill d-flex align-items-center justify-content-center"
-              data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48600"
-              data-title="React 前端工程師培訓班"
-              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_REACT_ALLTRAINING&order=-NwsLovdswMvt0PynSsV&phyProduct%5B%5D=-NwsLovdswMvt0PynSsV&phyProductSpec%5B%5D=-OPdL30XMlHE42z_xGIp"
-              itemprop="url">
-              立即手刀報名 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
-            </a>
-          </div>
-        </div>
+
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
+<div class="bg-primary-lighter">
+  <div class="container border-bottom"></div>
+</div>
+
 <!-- 線上說明會 -->
-<section class="bg-primary py-80 text-center">
+<section class="bg-primary-lighter py-80 text-center">
   <div class="container position-relative">
     <div class="row justify-content-center">
       <div class="col-md-10 mb-8">
         <!-- <h2 class="h1 fw-bold text-white mb-5">線上說明會</h3> -->
-          <h2 class="h1 fw-bold text-white mb-7">還有疑問嗎？<br class="d-lg-none" />我們提供兩個方案讓你瞭解更多！</h2>
-          <h3 class="fw-bold text-white mb-6">1. 線上說明會</h3>
-          <img src="../images/react-training/calendar.png" alt="calendar" class="img-fluid mb-5 d-none d-md-block">
-          <img src="../images/react-training/calendar-sm.png" alt="calendar" class="img-fluid mb-5 d-md-none">
-          <img src="../images/react-training/forum.png" class="d-none d-lg-block position-absolute bottom-0 start-0"
-            style="width:250px;transform: translate(0px, 94px);">
-          <div class="col-6 col-md-4 col-lg-2 mx-auto">
-            <a href="https://r.botbonnie.com/gu4Xy" target="_blank"
-              class="lead-click btn btn-light link-primary fw-semibold rounded-pill fw-bold px-4 py-2 mp-click react-training-gtag-track d-flex align-items-center justify-content-center">
-              提醒我 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
-            </a>
-            <!-- <button
+        <h2 class="h1 fw-bold mb-7">還有疑問嗎？<br class="d-lg-none" />我們提供兩個方案讓你瞭解更多！</h2>
+        <h3 class="fw-bold mb-6">1. 線上說明會</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="fw-bold text-start">➤ 觀看下一場說明會</p>
+            <img src="../images/react-training/calendar.png" alt="calendar" class="img-fluid mb-5 d-none d-md-block">
+            <img src="../images/react-training/calendar-sm.png" alt="calendar" class="img-fluid mb-5 d-md-none">
+            <img src="../images/react-training/forum.png" class="d-none d-lg-block position-absolute bottom-0 start-0"
+              style="width:250px;transform: translate(0px, 94px);">
+            <div class="col-6 mx-auto mb-3 mb-sm-0">
+              <a href="https://r.botbonnie.com/gu4Xy" target="_blank"
+                class="lead-click btn btn-light link-primary fw-semibold rounded-pill fw-bold px-4 py-2 mp-click react-training-gtag-track d-flex align-items-center justify-content-center">
+                提醒我 <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
+              </a>
+              <!-- <button
             class="rounded-pill btn btn-light px-4 py-2 link-primary fw-semibold mb-3 d-flex align-items-center">預約場次<i
               class="bi bi-arrow-right-short fs-4 ms-1"></i></button> -->
+            </div>
           </div>
+          <div class="col-md-6">
+            <p class="fw-bold text-start">➤ 直接看重播</p>
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe src="https://www.youtube.com/embed/nH9weRHYl2Q?si=7U4T0zcIcQeKLKrQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h5 class="text-center">- 時間軸 -</h5>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:00:50</p>
+              <p class="col-9 col-md-5 mb-0 text-start">多場線上說明會、諮詢任你選</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:03:50</p>
+              <p class="col-9 col-md-5 mb-0 text-start">課程時間軸介紹</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:12:20</p>
+              <p class="col-9 col-md-5 mb-0 text-start">三大直播班一次看</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:20:27</p>
+              <p class="col-9 col-md-5 mb-0 text-start">主線任務、助教批改</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:29:40</p>
+              <p class="col-9 col-md-5 mb-0 text-start">加碼：AI 課、助教直播課-帶你做作業</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:42:40</p>
+              <p class="col-9 col-md-5 mb-0 text-start">專題製作一次看</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:56:40</p>
+              <p class="col-9 col-md-5 mb-0 text-start">作品牆</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">00:58:30</p>
+              <p class="col-9 col-md-5 mb-0 text-start">九個月包含哪些課程？</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">01:09:39</p>
+              <p class="col-9 col-md-5 mb-0 text-start">分期分案，每個月只需要 $2,177</p>
+            </div>
+            <div class="row justify-content-center">
+              <p class="col-3 text-end mb-0">01:12:34</p>
+              <p class="col-9 col-md-5 mb-0 text-start">同學Q&A <br />⋆ 有正職時間，該怎麼安排時間學習？<br />⋆ 總共會做幾個作品？都會分組嗎？<br />⋆
+                學到什麼程度可以接案、發展副業？</p>
+            </div>
+
+          </div>
+        </div>
       </div>
       <div class="col-md-10">
-        <h3 class="fw-bold text-white mb-0">2. 安排 60 分鐘諮詢，詳細解答你的疑惑</h3>
+        <h3 class="fw-bold mb-4 mb-sm-0">2. 安排 60 分鐘諮詢，詳細解答你的疑惑</h3>
         <div class="calendly-inline-widget" data-url="https://calendly.com/hexschool/landingpage-one-on-one"
           style="min-width:320px;height:700px;"></div>
       </div>
-      <!-- <p class="text-white">觀看先前場次：6/4 說明會</p> -->
+
     </div>
   </div>
 </section>
@@ -1717,10 +1786,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1749609763679.js"></script>
+<script src="/js/bs4_vendor.js?1749793675285.js"></script>
 
 
-<script src="/js/bs4_all.js?1749609763679.js"></script>
+<script src="/js/bs4_all.js?1749793675285.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
