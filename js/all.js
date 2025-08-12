@@ -549,7 +549,8 @@ vueApp = function() {
         ui: {},
         backend: {},
         camping: {},
-        frontend_training: {}
+        frontend_training: {},
+        js_react_training_2025: {}
       },
       trainingWait: {
         js: {},
@@ -561,7 +562,8 @@ vueApp = function() {
         ui: {},
         backend: {},
         camping: {},
-        frontend_training: {}
+        frontend_training: {},
+        js_react_training_2025: {}
       }
     },
     methods: {
@@ -610,7 +612,7 @@ vueApp = function() {
   checkTrainingStatus = (function(_this) {
     return function() {
       var today;
-      today = moment().format('YYYY-MM-DD');
+      today = moment().format('YYYY-MM-DD HH:mm:ss');
       return $.each(appCourse.trainingDate, function(i, data) {
         var dateData;
         dateData = data.date;

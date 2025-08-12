@@ -51,7 +51,7 @@
  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/all.css?1753631774814.css">
+<link rel="stylesheet" href="/stylesheets/all.css?1754965923940.css">
 
   <!-- Global styles END -->
 
@@ -273,7 +273,7 @@
         </ul>
         <!-- <a class="reduce-padding py-4 pl-4 fw-bold d-md-block d-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="material-icons text-dark" style="vertical-align: middle;">search</i></a> -->
         <!-- <div class="bg-danger text-dark position-absoulte py-3 px-5 d-flex justify-content-between d-md-none" style="top: 100%">
-          <p class="fw-bold m-0">已破 150 人報名 確定開班｜<br class="d-sm-none"><span class="ms-1 ms-md-3">Vue3 前端新手營</span></p>
+          <p class="fw-bold m-0">【2025 JS 直播班】<span class="d-block d-md-inline">超早鳥預約現省一萬一</span></p>
           <span class="clock m-r-1"></span>
         </div> -->
       </div>
@@ -1070,7 +1070,37 @@
             
           
             
+          
+            
+            <a href="/courses/js-react-training-2025.html" class="drop-click link-white d-block py-1 font-weight-light">2025 JS + React 前端工程師培訓班 </a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
             <a href="/courses/frontend-training.html" class="drop-click link-white d-block py-1 font-weight-light">React 前端工程師培訓班 </a>
+            
+          
             
           
         
@@ -1079,6 +1109,8 @@
           
             
             <a href="/courses/web-layout-training-1st.html" class="drop-click link-white d-block py-1 font-weight-light">網頁切版直播班 </a>
+            
+          
             
           
             
@@ -1125,6 +1157,8 @@
           
             
           
+            
+          
         
           
             
@@ -1135,6 +1169,8 @@
           
             
             <a href="/courses/typescript-training.html" class="drop-click link-white d-block py-1 font-weight-light">TypeScript 30 天證書培訓營 </a>
+            
+          
             
           
             
@@ -1177,6 +1213,8 @@
           
             
           
+            
+          
         
           
             
@@ -1191,6 +1229,8 @@
           
             
             <a href="/courses/react-training.html" class="drop-click link-white d-block py-1 font-weight-light">React 作品實戰班 </a>
+            
+          
             
           
             
@@ -1229,6 +1269,8 @@
           
             
           
+            
+          
         
           
             
@@ -1255,10 +1297,14 @@
           
             
           
+            
+          
         
           
             
             <a href="/courses/ui-training.html" class="drop-click link-white d-block py-1 font-weight-light">UI 設計觀念必修直播班 </a>
+            
+          
             
           
             
@@ -1303,6 +1349,8 @@
           
             
             <a href="/courses/software-engineer-camping.html" class="drop-click link-white d-block py-1 font-weight-light">30 天軟體工程師體驗營 </a>
+            
+          
             
           
             
@@ -8075,6 +8123,75 @@
                   
                     <!-- 先移除 UI 直播班 -->
                     
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                      <li class="col-lg-4 col-md-6 mt-lg-4 mt-3 nav-item">
+                        <div class="course-area-link h-100 bg-white card border-0 rounded-0" data-url="/courses/js-react-training-2025.html">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Ftypescript-training%2F1753863106673-js-react-og.png?alt=media&token=51ed3807-9e18-4ab4-8e2f-65809ef04c5c" alt="" class="img-fluid card-img-top">
+                          <div class="card-body border-0 rounded-0">
+                            <h5 class="text-dark mt-2 mb-1">2025 JS + React 前端工程師培訓班</h5>
+                            <span class="badge text-bg-warning rounded-0">適合無經驗</span>
+                            <p class="mt-2 text-dark">以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為 React 前端工程師。</p>
+                            
+                              <div class="mb-2" v-if="trainingStatus.js_react_training_2025.status">
+                                <p class="text-dark mb-1"><small>開課日期：{{ trainingStatus.js_react_training_2025.day.courses_start_at }}</small></p>
+                                <a href="/courses/js-react-training-2025.html" target="_blank" class="btn btn-primary">開放報名中！</a>
+                                <!-- 
+                                  <a href="/courses/js-react-training-2025.html" target="_blank" class="btn btn-primary">開放報名中！</a>
+                                 -->
+                              </div>
+                              <div class="mb-2" v-else>
+                                <p class="mb-1" v-if="trainingWait.js_react_training_2025.notOpen_day && trainingWait.js_react_training_2025.notOpen_day.courses_start_at"><small>下一次開課日期：{{ trainingWait.js_react_training_2025.notOpen_day.courses_title }}</small></p>
+                                <p class="mb-1" v-else><small>下一次開課日期：尚未訂定</small></p>
+                                <div v-if="trainingWait.js_react_training_2025.notOpen_day && trainingWait.js_react_training_2025.notOpen_day.start_subscribe">
+                                  <a href="https://r.botbonnie.com/30EsC" class="btn btn-primary" target="_blank">開放預約中</a>
+                                  <p class="mb-0"><small>如無法訂閱通知，可把<a href="https://rpg.hexschool.com/line/webhook" target="_blank" class="text-dark mx-1">連結</a>貼到手機版 LINE 訊息</small></p>
+                                </div>
+                                <div v-else>
+                                  <a href="#" class="btn btn-secondary disabled" target="_blank" disabled>未開放訂閱</a>
+                                </div>
+                              </div>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    
+                  
+                
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
                       <li class="col-lg-4 col-md-6 mt-lg-4 mt-3 nav-item">
                         <div class="course-area-link h-100 bg-white card border-0 rounded-0" data-url="/courses/frontend-training.html">
                           <img src="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Flanding-page%2F1747195346005-frontend-training.png?alt=media&token=5f535459-0f6c-4047-a113-4ffdf6f8b2a6" alt="" class="img-fluid card-img-top">
@@ -8105,6 +8222,9 @@
                           </div>
                         </div>
                       </li>
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
                     
                   
                 
@@ -8144,6 +8264,9 @@
                           </div>
                         </div>
                       </li>
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
                     
                   
                     <!-- 先移除 UI 直播班 -->
@@ -8239,6 +8362,9 @@
                     <!-- 先移除 UI 直播班 -->
                     
                   
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
                 
                   
                     <!-- 先移除 UI 直播班 -->
@@ -8282,6 +8408,9 @@
                           </div>
                         </div>
                       </li>
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
                     
                   
                     <!-- 先移除 UI 直播班 -->
@@ -8371,6 +8500,9 @@
                     <!-- 先移除 UI 直播班 -->
                     
                   
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
                 
                   
                     <!-- 先移除 UI 直播班 -->
@@ -8420,6 +8552,9 @@
                           </div>
                         </div>
                       </li>
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
                     
                   
                     <!-- 先移除 UI 直播班 -->
@@ -8503,6 +8638,9 @@
                     <!-- 先移除 UI 直播班 -->
                     
                   
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
                 
                   
                     <!-- 先移除 UI 直播班 -->
@@ -8569,7 +8707,13 @@
                     <!-- 先移除 UI 直播班 -->
                     
                   
+                    <!-- 先移除 UI 直播班 -->
+                    
+                  
                 
+                  
+                    <!-- 先移除 UI 直播班 -->
+                    
                   
                     <!-- 先移除 UI 直播班 -->
                     
@@ -8665,6 +8809,9 @@
                           </div>
                         </div>
                       </li>
+                    
+                  
+                    <!-- 先移除 UI 直播班 -->
                     
                   
                     <!-- 先移除 UI 直播班 -->
@@ -9192,8 +9339,8 @@
 </div>
 
 
-  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
-    
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -9365,10 +9512,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/vendor.js?1753631774815.js"></script>
+<script src="/js/vendor.js?1754965923941.js"></script>
 
 
-<script src="/js/all.js?1753631774815.js"></script>
+<script src="/js/all.js?1754965923941.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
