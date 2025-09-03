@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1756342338748.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1756904238313.css">
 
   <!-- Global styles END -->
 
@@ -111,7 +111,7 @@
       <a href="#recommend"
         class="btn btn-danger text-white ">
         
-        立即免費預約
+        立即報名
         
         <i class="far fa-gem"></i>
       </a>
@@ -786,9 +786,9 @@
   </div> -->
 
 <!-- 購買 -->
-<section class="bg-primary-lighter py-80" id="recommend">
+<section class="bg-primary-lighter py-80">
   <div class="container">
-    <!-- <h2 class="h1 fw-bold text-center">如何報名？</h2>
+    <h2 class="h1 fw-bold text-center">如何報名？</h2>
     <p class="h5 fw-bold text-dark text-center mb-5">9/3(三)21:00～9/17(三) 23:59 開放報名！<br class="d-md-none" /><span
         class="title-underline title-underline-secondary text-black">名額有限</span></p>
     <div class="mb-5">
@@ -862,7 +862,7 @@
           <p class="mt-3 mb-4 text-end"><span class="text-primary">＊</span>以上金額皆不包含銀角額外手續費</p>
         </div>
       </div>
-    </div> -->
+    </div>
     
     <div class="position-relative">
       <div class="product course-tracking-ViewContent" data-name="JS+React 前端工程師培訓班" data-price="48000"
@@ -908,18 +908,18 @@
                         class="link-trainingContent fw-medium text-decoration-none" data-bs-toggle="modal"
                         data-bs-target="#trainingContentModal">前端工程師培訓班包含項目</a>
                     </p> -->
-                  <!-- <hr> -->
-                  <!-- <p class="mb-2 text-end text-dark"><del>原價 $65,885</del></p>
+                  <hr>
+                  <p class="mb-2 text-end text-dark"><del>原價 $65,885</del></p>
                   <p class="mb-0 text-end">
                     優惠價
                     <span class="h2 text-primary fw-bold ms-2">$36,600</span>
-                  </p> -->
-
-                  <!-- <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
+                  </p>
+<!-- 
+                  <a href="#" class="btn btn-danger text-dark fw-bold py-3 w-100 mp-click tracking-link disabled"
                       data-bs-toggle="modal" data-bs-target="#orderModal" title="開啟 React 前端工程師培訓班支付流程" data-price="48000"
                       data-title="React 前端工程師培訓班" data-paylink="#" itemprop="url" disabled>
-                      報名截止 -->
-                  </a>
+                      報名截止
+                  </a> -->
                 </div>
               </div>
               <div class="col-12">
@@ -931,14 +931,14 @@
                   itemprop="url">
                   立即報名
                   <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
-                </a> -->
+                </a>
                 <a target="_blank" rel="noopener" href="https://r.botbonnie.com/30EsC"
                   class="btn btn-primary fw-bold py-3 w-100 mp-click tracking-link rounded-pill d-flex align-items-center justify-content-center lead-click"
                   title="JS + React 前端工程師培訓班課程免費 LINE 預約"
                   data-title="JS + React 前端工程師培訓班 前端工程師培訓班">
                   課程免費 LINE 預約 
                   <i class="bi bi-arrow-right-short fs-4 ms-1"></i>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -960,7 +960,7 @@
 
 <!-- 加碼區塊 -->
 <!-- TODO: 隨著銷售期時間不同，調整張數 -->
-<!-- <section class="bg-primary-lighter py-80 text-center" style="background-image: url(&quot;../images/js-react-training-2025/coupon_bg.png&quot;);background-size: cover;background-repeat: no-repeat;">
+<section class="bg-primary-lighter py-80 text-center" style="background-image: url(&quot;../images/js-react-training-2025/coupon_bg.png&quot;);background-size: cover;background-repeat: no-repeat;" id="recommend">
   <div class="container ">
     <div class="row justify-content-center">
       <div class="col-md-10 mb-8">
@@ -977,14 +977,21 @@
             <h2 class="h1 fw-bold mb-5 text-primary-500">$1000 折價券</h2>
             <hr class="border-2" style="border-style: dashed;">
             <p class="title-underline title-underline-primary">數量有限， 把握機會先搶先贏👇</p>
-            <div class="progress my-3 position-relative" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 48px">
-              <div class="progress-bar" style="width: 25%; background-color: #00FFF7;"></div>
-              <p class="fs-5 m-0 position-center text-nowrap">剩下 <span class="text-primary fw-bold">49</span> 張 / 100 張</p>
+            <div class="progress my-3 position-relative" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 48px">
+              <!-- TODO: 隨著時間減少剩餘數量以及 Width -->
+              <div class="progress-bar" style="width: 100%; background-color: #00FFF7;"></div>
+              <p class="fs-5 m-0 position-center text-nowrap">剩下 <span class="text-primary fw-bold">100</span> 張 / 100 張</p>
             </div>
             <div class="d-flex justify-content-center mt-4">
-              <button class="btn btn-primary d-flex justify-content-center align-items-center fs-5 rounded-5" style="width: 327px; height:48px" type="button">
+              <a href="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_JS_AND_REACT_TRAINING_JR1&order=-O31KqGNX6yzFxkiVEbN&phyProduct[]=-O31KqGNX6yzFxkiVEbN&phyProductSpec[]=-OWUZchhkzpVuH3MA5xv" class="btn btn-primary d-flex justify-content-center align-items-center fs-5 rounded-5 track-click" style="width: 327px; height:48px"
+              title="開啟 JS & React 前端工程師培訓班支付流程"
+              data-bs-toggle="modal" data-bs-target="#orderModal"
+              data-price="36000"
+              data-title="JS & React 前端工程師培訓班"
+              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_JUNIOR_JS_AND_REACT_TRAINING_JR1&order=-O31KqGNX6yzFxkiVEbN&phyProduct[]=-O31KqGNX6yzFxkiVEbN&phyProductSpec[]=-OWUZchhkzpVuH3MA5xv"
+              type="button">
                 立即點擊 領優惠 <span class="material-symbols-outlined">arrow_forward</span>
-              </button>
+              </a>
             </div>
           </div>
           </div>
@@ -992,14 +999,16 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <!-- 線上說明會 -->
 <section class="bg-primary-lighter py-80 text-center">
   <div class="container position-relative">
     <div class="row justify-content-center">
       <div class="col-md-10 mb-8">
-        <h2 class="h1 fw-bold mb-5">線上說明會</h2>
+        <h2 class="h1 fw-bold">還有疑問嗎？我們提供兩個方案讓你瞭解更多！</h2>
+        <p class="h5 fw-bold text-dark text-center">1. 線上說明會</p>
+        <p class="h5 fw-bold text-dark text-center mb-5">2. <span class="title-underline title-underline-secondary text-black">安排 60 分鐘諮詢</span>，詳細解答你的疑惑</p>
         <div class="row">
           <div class="col-md-12">
             <p class="fw-bold text-start">➤ 觀看下一場說明會</p>
@@ -1007,6 +1016,18 @@
             <img src="../images/js-react-training-2025/calendar-sm.png" alt="calendar" class="img-fluid mb-5 d-lg-none">
             <img src="../images/react-training/forum.png" class="d-none d-lg-block position-absolute bottom-0 start-0"
               style="width:250px;transform: translate(0px, 94px);">
+              <div class="d-flex align-items-center justify-content-center mt-4">
+                <a target="_blank" rel="noopener" href="https://r.botbonnie.com/GsocI" class="btn btn-primary d-flex justify-content-center align-items-center fs-5 rounded-5 lead-click" style="width: 327px; height:48px" type="button">
+                  提醒我觀看說明會 <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+              <div class="mt-5">
+                <p class="fw-bold text-start">➤ 預約 60 分鐘諮詢</p>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/hexschool/landingpage-one-on-one" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+              </div>
           </div>
           <!-- <div class="col-md-12">
             <p class="fw-bold text-start">➤ 直接看重播</p>
@@ -1482,7 +1503,7 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
-        <span class="me-md-3 fw-bold text-start">【🙋‍♀️ 轉職前端工程師】<span class="d-block d-md-inline">培訓班即將開放報名！</span></span>
+        <span class="me-md-3 fw-bold text-start">【🙋‍♀️手刀享55折】<span class="d-block d-md-inline">培訓班 熱烈報名中！</span></span>
         
         <div class="d-flex justify-content-md-center  text-nowrap">
           
@@ -1494,7 +1515,7 @@
         
           <a href="#recommend"
             class="btn btn-dark btn-sm rounded-0 lead-click">
-            立即預約
+            立即報名
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -1503,7 +1524,7 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2025/09/03 21:00">
+  <input type="hidden" id="footer-clock" value="2025/09/17 23:59">
 
   
   
@@ -1704,10 +1725,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1756342338748.js"></script>
+<script src="/js/bs4_vendor.js?1756904238313.js"></script>
 
 
-<script src="/js/bs4_all.js?1756342338748.js"></script>
+<script src="/js/bs4_all.js?1756904238313.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
