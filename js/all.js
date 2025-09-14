@@ -744,7 +744,7 @@ $(document).ready(function() {
   if ($('#footer-clock').length) {
     timer = $('#footer-clock').val();
     $('.clock').countdown(timer, function(event) {
-      return $(this).html(event.strftime('優惠倒數： %D 天 %H 時 %M 分 %S 秒'));
+      return $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
     });
   }
   if ($('[data-countdown-course]').length) {
