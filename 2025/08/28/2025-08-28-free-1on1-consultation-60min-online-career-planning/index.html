@@ -51,7 +51,7 @@
  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/all.css?1759283631277.css">
+<link rel="stylesheet" href="/stylesheets/all.css?1759457858681.css">
 
   <!-- Global styles END -->
 
@@ -1587,44 +1587,6 @@
 <p><div class="calendly-inline-widget" data-url="https://calendly.com/hexschool/landingpage-one-on-one" style="min-width:320px;height:700px;"></div></p>
 <p><script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script><br><!-- Calendly inline widget end --></p>
 
-<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-
-<script>
-    const people = document.querySelectorAll('.people');
-    const linkBtn = document.querySelectorAll('.linkBtn');
-
-    const apiUrl = 'https://script.google.com/macros/s/AKfycbzarD6qKC7ecNwHtU_S2lOO1uark869g6o2xZlK7uG5McD3rlNRszI2eXa6RQU3ISOM/exec';
-    const id = '1on1-btn';
-    const page = '/2025/08/28/2025-08-28-free-1on1-consultation-60min-online-career-planning/';
-    // 取得現在時間 YYYY/MM/DD HH:mm:ss
-    const now = dayjs().format('YYYY/MM/DD HH:mm:ss');
-
-    fetch(`${apiUrl}?id=${id}&page=${page}`, {
-        method: "GET",
-    })
-    .then((response) => response.json())
-    .then((result) => {
-        const data = result.data.filter((item) => item.id === id && item.page === page);
-        // 如果 datetime 超過現在時間，按鈕維持 disabled 狀態
-       const dateTime = data[0].datetime;
-        if (dayjs(dateTime).isBefore(dayjs(now))) {
-            return;
-        }
-
-        linkBtn.forEach((btn) => {
-            btn.href = data.length > 0 ? data[0].link : '#';
-            btn.classList.remove('disabled');
-            btn.attributes.removeNamedItem('disabled');
-        });
-
-        people.forEach((person) => {
-            person.textContent = `限時開放中，剩餘名額： ${data.length > 0 ? data[0].people : 0}`;
-        });
-    })
-    .catch((error) => console.error(error));
-</script>
-
-
           
         </div>
         <div class="blog-tags mt-4 py-3 mb-3" style="border-bottom: 1px solid #F4F4F4;">
@@ -1640,6 +1602,15 @@
           
 
 <nav id="article-nav" class="text-dark mb-4">
+  
+    <a href="/2025/10/03/2025-10-03-vide-coding-camp/" id="article-nav-newer" class="article-nav-link-wrap">
+      上一則<br>
+      <div class="article-nav-title">
+        
+          Vibe Coding 公益程式體驗營
+        
+      </div>
+    </a>
   
   
     <a href="/2025/07/25/2025-07-25-ecommerce-assistant-to-frontend-non-cs-background-success/" id="article-nav-older" class="article-nav-link-wrap text-end">
@@ -2169,6 +2140,8 @@
   
     
   
+    
+  
 </div> -->
 <!-- END FEATURED POSTS -->
 
@@ -2177,6 +2150,16 @@
         <h3 class="mb-3">其他類似文章</h3>
         <ul class="list-unstyled">
           
+          
+            
+            
+              <li class="mb-3">
+                <a href="/2025/10/03/2025-10-03-vide-coding-camp/" class="blog-sidebar-link">
+                  Vibe Coding 公益程式體驗營
+                </a>
+              </li>
+            
+            
           
             
             
@@ -2197,16 +2180,6 @@
               <li class="mb-3">
                 <a href="/2024/10/02/2024-10-02-backend-database-camping/" class="blog-sidebar-link">
                   【後端工程師 - 資料庫體驗營】 進入後端前的必備知識
-                </a>
-              </li>
-            
-            
-          
-            
-            
-              <li class="mb-3">
-                <a href="/2024/07/22/2024-07-22-js-clean-code-tutor-training/" class="blog-sidebar-link">
-                  JS Clean Code 前端家教師資培訓班
                 </a>
               </li>
             
@@ -2518,10 +2491,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/vendor.js?1759283631278.js"></script>
+<script src="/js/vendor.js?1759457858682.js"></script>
 
 
-<script src="/js/all.js?1759283631278.js"></script>
+<script src="/js/all.js?1759457858682.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
