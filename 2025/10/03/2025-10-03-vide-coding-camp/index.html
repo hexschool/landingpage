@@ -51,7 +51,7 @@
  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/all.css?1761642967156.css">
+<link rel="stylesheet" href="/stylesheets/all.css?1761663950571.css">
 
   <!-- Global styles END -->
 
@@ -1700,15 +1700,20 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script>
 
 <script>
+    dayjs.extend(window.dayjs_plugin_utc);
+    dayjs.extend(window.dayjs_plugin_timezone);
+
     const linkBtn = document.querySelectorAll('.linkBtn');
 
     const apiUrl = 'https://script.google.com/macros/s/AKfycbzhura-T5QExnXAxl_xK-Jbn66TmJ8cxet3QN6RowLVNCcnhYQLqrqyrZfy5tARQTgp/exec';
     const id = 'vibe-coding-2025-btn';
     const page = '/2025/10/03/2025-10-03-vide-coding-camp/';
-    // 取得現在時間 YYYY/MM/DD HH:mm:ss
-    const now = dayjs().format('YYYY/MM/DD HH:mm:ss');
+    // 取得現在時間 YYYY/MM/DD HH:mm:ss (台灣時區)
+    const now = dayjs().tz('Asia/Taipei').format('YYYY/MM/DD HH:mm:ss');
 
     fetch(`${apiUrl}?id=${id}&page=${page}`, {
         method: "GET",
@@ -1726,12 +1731,12 @@
         const reservationLink = data[0].reservation_link;
         const registrationLink = data[0].registration_link;
 
-        // 判斷當前時間狀態
-        const nowTime = dayjs(now);
-        const resStart = dayjs(reservationStart);
-        const resEnd = dayjs(reservationEnd);
-        const regStart = dayjs(registrationStart);
-        const regEnd = dayjs(registrationEnd);
+        // 判斷當前時間狀態（所有時間都以台灣時區解析）
+        const nowTime = dayjs.tz(now, 'Asia/Taipei');
+        const resStart = dayjs.tz(reservationStart, 'Asia/Taipei');
+        const resEnd = dayjs.tz(reservationEnd, 'Asia/Taipei');
+        const regStart = dayjs.tz(registrationStart, 'Asia/Taipei');
+        const regEnd = dayjs.tz(registrationEnd, 'Asia/Taipei');
 
         if (nowTime.isBefore(resStart)) {
             // 1. 預約尚未開始
@@ -2678,10 +2683,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/vendor.js?1761642967156.js"></script>
+<script src="/js/vendor.js?1761663950573.js"></script>
 
 
-<script src="/js/all.js?1761642967156.js"></script>
+<script src="/js/all.js?1761663950573.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
