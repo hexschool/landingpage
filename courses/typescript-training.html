@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1762617495197.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1762650640354.css">
 
   <!-- Global styles END -->
 
@@ -915,20 +915,19 @@
                   </span>
                 </a> -->
                 <a
-                  class="align-items-center bg-white btn btn-lg d-flex fw-700 h4 justify-content-center px-4 py-3 text-center text-primary-dark w-100 starter-plan tracking-link disabled"
+                  class="align-items-center bg-white btn btn-lg d-flex fw-700 h4 justify-content-center px-4 py-3 text-center text-primary-dark w-100 starter-plan tracking-link"
                   style="font-size: 24px;"
                   title="開啟 TypeScript 實戰課：打造工程師型別思維 支付流程"
-                  href="#"
-                  data-paylink="#"
+                  href="https://shop.hexschool.com/order/create?coupon_code=2025_COUPON_TYPESCRIPT_TRAINING_LATETIME&order=-OacqHOm9tTSEIV8PhNe&phyProduct[]=-OacqHOm9tTSEIV8PhNe&phyProductSpec[]=-OacqRHTul_TZDZ9Tr39"
+                  data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_COUPON_TYPESCRIPT_TRAINING_LATETIME&order=-OacqHOm9tTSEIV8PhNe&phyProduct[]=-OacqHOm9tTSEIV8PhNe&phyProductSpec[]=-OacqRHTul_TZDZ9Tr39"
                   data-price="7700"
                   data-bs-toggle="modal"
                   data-bs-target="#orderModal"
                   data-title="TypeScript 實戰課：打造工程師型別思維"
                   data-forward="true"
                   itemprop="url"
-                  disabled
                 >
-                  報名截止
+                  立即報名
                   <span class="material-symbols-outlined">
                     arrow_forward
                   </span>
@@ -1008,20 +1007,19 @@
                   </span>
                 </a> -->
                  <a
-                  class="align-items-center bg-white btn btn-lg d-flex fw-700 h4 justify-content-center px-4 py-3 text-center text-primary-dark w-100 premium-plan tracking-link disabled"
+                  class="align-items-center bg-white btn btn-lg d-flex fw-700 h4 justify-content-center px-4 py-3 text-center text-primary-dark w-100 premium-plan tracking-link"
                   style="font-size: 24px;"
                   title="開啟 TypeScript 實戰課：打造工程師型別思維 支付流程"
-                  href="#"
-                  data-paylink="#"
+                  href="https://shop.hexschool.com/order/create?coupon_code=2025_COUPON_TYPESCRIPT_AND_REACT_TRAINING_LATETIME&order=-OAN3NY2y8kbBLUjh1wy&phyProduct[]=-OacqHOm9tTSEIV8PhNe&phyProductSpec[]=-OacqRHTul_TZDZ9Tr39&phyProduct[]=-OAN3NY2y8kbBLUjh1wy&phyProductSpec[]=-O_Pa7iPOInPRsXcpZEF"
+                  data-paylink="https://shop.hexschool.com/order/create?coupon_code=2025_COUPON_TYPESCRIPT_AND_REACT_TRAINING_LATETIME&order=-OAN3NY2y8kbBLUjh1wy&phyProduct[]=-OacqHOm9tTSEIV8PhNe&phyProductSpec[]=-OacqRHTul_TZDZ9Tr39&phyProduct[]=-OAN3NY2y8kbBLUjh1wy&phyProductSpec[]=-O_Pa7iPOInPRsXcpZEF"
                   data-price="18240"
                   data-bs-toggle="modal"
                   data-bs-target="#orderModal"
                   data-title="TypeScript 實戰課：打造工程師型別思維"
                   data-forward="true"
                   itemprop="url"
-                  disabled
                  >
-                  報名截止
+                  立即報名
                   <span class="material-symbols-outlined">
                     arrow_forward
                   </span>
@@ -1304,91 +1302,91 @@
   });
 
 
-  // window.onload = function () {
-  //   // 將網址 query 轉換為 object
-  //   const queryStringToObject = url => Object.fromEntries(new URLSearchParams(url.split('?')[1]?.split('#')[0]));
+  window.onload = function () {
+    // 將網址 query 轉換為 object
+    const queryStringToObject = url => Object.fromEntries(new URLSearchParams(url.split('?')[1]?.split('#')[0]));
 
-  //   const urlQueryObj = queryStringToObject(window.location.href); // { h_dm: ..., h_pt: ..., }
+    const urlQueryObj = queryStringToObject(window.location.href); // { h_dm: ..., h_pt: ..., }
 
-  //   // 欲跳轉按鈕
-  //   const forwardBtn = document.querySelectorAll('[data-forward]');
+    // 欲跳轉按鈕
+    const forwardBtn = document.querySelectorAll('[data-forward]');
 
-  //   // 可用 Domain
-  //   // const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
-  //   const allowdm = /^(.*\.)?hexschool\.(com|io|tw)$|^(.*\.)?hex\.school$/;
+    // 可用 Domain
+    // const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
+    const allowdm = /^(.*\.)?hexschool\.(com|io|tw)$|^(.*\.)?hex\.school$/;
 
-  //   // 新增優惠券文字、金額
-  //   const couponText = document.querySelector('.couponText');
-  //   const couponPriceStarter = document.querySelector('#coupon-price-starter');
-  //   const couponPricePremium = document.querySelector('#coupon-price-premium');
+    // 新增優惠券文字、金額
+    const couponText = document.querySelector('.couponText');
+    const couponPriceStarter = document.querySelector('#coupon-price-starter');
+    const couponPricePremium = document.querySelector('#coupon-price-premium');
 
-  //   // 金流按鈕連結轉址
-  //   const transUrl = (urlArray) => {
-  //     forwardBtn.forEach((buttonEl, index) => {
-  //       if (buttonEl.dataset.forward === 'true') {
-  //         buttonEl.setAttribute('href', urlArray[index]);
-  //         buttonEl.setAttribute('data-paylink', urlArray[index]);
-  //       }
-  //     })
-  //   }
+    // 金流按鈕連結轉址
+    const transUrl = (urlArray) => {
+      forwardBtn.forEach((buttonEl, index) => {
+        if (buttonEl.dataset.forward === 'true') {
+          buttonEl.setAttribute('href', urlArray[index]);
+          buttonEl.setAttribute('data-paylink', urlArray[index]);
+        }
+      })
+    }
 
-  //   // 特定 KOL 渲染
-  //   // kolUrlInfo: kol 短網址轉址 path
-  //   const kolUrlInfo = {
-  //     kyleMo: ['MLc1B', 'r3sfp'], // 老莫
-  //     mike: ['iIvnl', '2GKUA'], // Mike
-  //     techporn: ['u09wE', 'fHNUg'], // 程人頻道
-  //     leo:['sAHNK', 'T04nC'], // Leo
-  //     ssuyuke: ['AvfVC', 'O3rEM'], // 葛思宇
-  //   };
-  //   const renderForKol = (urlPath) => {
-  //     // 只在允許的網域下執行
-  //     if (!allowdm.test(urlQueryObj['h_dm'])) {
-  //       return;
-  //     }
-  //     const kolUrlArray = [];
-  //     kolUrlInfo[urlPath].forEach((path) => {
-  //       kolUrlArray.push(`https://${urlQueryObj['h_dm']}/${path}`);
-  //     })
-  //     transUrl(kolUrlArray);
-  //   }
+    // 特定 KOL 渲染
+    // kolUrlInfo: kol 短網址轉址 path
+    const kolUrlInfo = {
+      kyleMo: ['MLc1B', 'r3sfp'], // 老莫
+      mike: ['iIvnl', '2GKUA'], // Mike
+      techporn: ['u09wE', 'fHNUg'], // 程人頻道
+      leo:['sAHNK', 'T04nC'], // Leo
+      ssuyuke: ['AvfVC', 'O3rEM'], // 葛思宇
+    };
+    const renderForKol = (urlPath) => {
+      // 只在允許的網域下執行
+      if (!allowdm.test(urlQueryObj['h_dm'])) {
+        return;
+      }
+      const kolUrlArray = [];
+      kolUrlInfo[urlPath].forEach((path) => {
+        kolUrlArray.push(`https://${urlQueryObj['h_dm']}/${path}`);
+      })
+      transUrl(kolUrlArray);
+    }
 
-  //   // 驗證 domain 並轉網址
-  //   if (allowdm.test(urlQueryObj['h_dm'])) {
-  //     switch (urlQueryObj['h_pt']) {
-  //       // 官網網址參數
-  //       case 'kyleMo':
-  //         renderForKol('kyleMo');
-  //         couponPriceStarter.innerHTML = '💥 老莫專屬優惠 $7,400';
-  //         couponPricePremium.innerHTML = '💥 老莫專屬優惠 $18,240';
-  //         break;
-  //       case 'mike':
-  //         renderForKol('mike');
-  //         couponPriceStarter.innerHTML = '💥 Mike 專屬優惠 $7,400';
-  //         couponPricePremium.innerHTML = '💥 Mike 專屬優惠 $18,240';
-  //         break;
-  //       case 'techporn':
-  //         renderForKol('techporn');
-  //         couponPriceStarter.innerHTML = '💥 程人頻道專屬優惠 $7,400';
-  //         couponPricePremium.innerHTML = '💥 程人頻道專屬優惠 $18,240';
-  //         break;
-  //       case 'leo':
-  //         renderForKol('leo');
-  //         couponPriceStarter.innerHTML = '💥 Leo 專屬優惠 $7,400';
-  //         couponPricePremium.innerHTML = '💥 Leo 專屬優惠 $18,240';
-  //         break;
-  //       case 'ssuyuke':
-  //         renderForKol('ssuyuke');
-  //         couponPriceStarter.innerHTML = '💥 葛思宇專屬優惠 $7,400';
-  //         couponPricePremium.innerHTML = '💥 葛思宇專屬優惠 $18,240';
-  //         break;
-  //       default:
-  //         // transUrl(['#', '#']);
-  //     }
-  //     // couponText.classList.remove('d-none');
-  //     // couponText.classList.add('d-block');
-  //   }
-  // }
+    // 驗證 domain 並轉網址
+    if (allowdm.test(urlQueryObj['h_dm'])) {
+      switch (urlQueryObj['h_pt']) {
+        // 官網網址參數
+        case 'kyleMo':
+          renderForKol('kyleMo');
+          couponPriceStarter.innerHTML = '💥 老莫專屬優惠 $7,400';
+          couponPricePremium.innerHTML = '💥 老莫專屬優惠 $18,240';
+          break;
+        case 'mike':
+          renderForKol('mike');
+          couponPriceStarter.innerHTML = '💥 Mike 專屬優惠 $7,400';
+          couponPricePremium.innerHTML = '💥 Mike 專屬優惠 $18,240';
+          break;
+        case 'techporn':
+          renderForKol('techporn');
+          couponPriceStarter.innerHTML = '💥 程人頻道專屬優惠 $7,400';
+          couponPricePremium.innerHTML = '💥 程人頻道專屬優惠 $18,240';
+          break;
+        case 'leo':
+          renderForKol('leo');
+          couponPriceStarter.innerHTML = '💥 Leo 專屬優惠 $7,400';
+          couponPricePremium.innerHTML = '💥 Leo 專屬優惠 $18,240';
+          break;
+        case 'ssuyuke':
+          renderForKol('ssuyuke');
+          couponPriceStarter.innerHTML = '💥 葛思宇專屬優惠 $7,400';
+          couponPricePremium.innerHTML = '💥 葛思宇專屬優惠 $18,240';
+          break;
+        default:
+          // transUrl(['#', '#']);
+      }
+      // couponText.classList.remove('d-none');
+      // couponText.classList.add('d-block');
+    }
+  }
 </script>
 
 
@@ -1403,7 +1401,37 @@
       src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
 </div>
 
- <!-- 只需要個別頁面的倒數 -->
+ <!-- 開啟通用 footer 倒數-->
+    <!-- 如果個別頁面有需要倒數 -->
+    
+    <!-- 特定頁面倒數 -->
+    <nav class="navbar-fixed-bottom text-center fixed-bottom bg-danger text-white py-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
+        <span class="me-md-3 fw-bold text-start">【最後報名機會】下週三開學 晚鳥 43折</span>
+        
+        <div class="d-flex justify-content-md-center  text-nowrap">
+          
+            <span class="clock m-r-1 fw-bold"></span>
+          
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end ps-md-3">
+        
+          <a href="#recommend"
+            class="btn btn-dark btn-sm rounded-0 lead-click">
+            立刻報名
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        
+      </div> 
+    </div>
+  </div>
+</nav>
+
+  <input type="hidden" id="footer-clock" value="2025/11/09 23:59">
+
   
   
   </div>
@@ -1488,8 +1516,8 @@
 </div>
 
 
-  <div class="footer bg-dark text-white pt-md-6 pt-4 pb-7">
-    
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-11">
@@ -1603,10 +1631,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1762617495197.js"></script>
+<script src="/js/bs4_vendor.js?1762650640355.js"></script>
 
 
-<script src="/js/bs4_all.js?1762617495197.js"></script>
+<script src="/js/bs4_all.js?1762650640355.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
