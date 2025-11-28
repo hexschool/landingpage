@@ -550,7 +550,8 @@ vueApp = function() {
         backend: {},
         camping: {},
         frontend_training: {},
-        js_react_training_2025: {}
+        js_react_training_2025: {},
+        backend_camp: {}
       },
       trainingWait: {
         js: {},
@@ -563,7 +564,8 @@ vueApp = function() {
         backend: {},
         camping: {},
         frontend_training: {},
-        js_react_training_2025: {}
+        js_react_training_2025: {},
+        backend_camp: {}
       }
     },
     methods: {
