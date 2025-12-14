@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1765421839346.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1765727837949.css">
 
   <!-- Global styles END -->
 
@@ -807,9 +807,9 @@
             <img src="../images/backend-camp/enroll-now.png" alt="立即報名" class="img-fluid rounded-5" style="max-height: 440px;">
           </div>
           <div class="col-xl-6 bg-white enroll-now-section__body">
-            <h2 class="enroll-now-section__body--title">體驗營報名費用</h2>
+            <h2 class="enroll-now-section__body--title" id="coupon-price-text">體驗營報名費用</h2>
             <p class="m-0 d-flex align-items-center">
-              <!-- <span class="text-primary enroll-now-section__body--price">$899</span>
+              <!-- <span class="text-primary enroll-now-section__body--price" id="coupon-price">$799</span>
               <span class="text-medium text-decoration-line-through ms-2 enroll-now-section__body--original-price">$3,200</span> -->
             </p>
             <div class="enroll-now-section__describe">
@@ -820,6 +820,21 @@
                 <li>在系統課程介面上，就會教您如何開始上課！</li>
               </ul>
             </div>
+            <!-- <a
+              class="btn enroll-now-section__btn tracking-link"
+              style="font-size: 24px;"
+              title="開啟 2026 後端工程師體驗營 支付流程"
+              href="https://shop.hexschool.com/order/create?coupon_code=2026_BACKEND_ENGINEER_TRAINING_E1&order=-Og5wvLKOX_jZNpjLuMT&phyProduct[]=-Og5wvLKOX_jZNpjLuMT&phyProductSpec[]=-Og5xBPzlHsGHM9HpXCp"
+              data-paylink="https://shop.hexschool.com/order/create?coupon_code=2026_BACKEND_ENGINEER_TRAINING_E1&order=-Og5wvLKOX_jZNpjLuMT&phyProduct[]=-Og5wvLKOX_jZNpjLuMT&phyProductSpec[]=-Og5xBPzlHsGHM9HpXCp"
+              data-price="799"
+              data-bs-toggle="modal"
+              data-bs-target="#orderModal"
+              data-title="2026 後端工程師體驗營"
+              data-forward="true"
+              itemprop="url"
+            >
+              手刀報名
+            </a> -->
             <a target="_blank" rel="noopener" href="https://r.botbonnie.com/0wWh-" class="btn enroll-now-section__btn lead-click">
               <span>立即免費預約 Line 提醒</span>
               <img src="../images/backend-camp/notifications.svg" alt="Line Icon" width="20" height="20">
@@ -1164,6 +1179,85 @@
       }
     });
   });
+  window.onload = function () {
+    // 將網址 query 轉換為 object
+    const queryStringToObject = url => Object.fromEntries(new URLSearchParams(url.split('?')[1]?.split('#')[0]));
+
+    const urlQueryObj = queryStringToObject(window.location.href); // { h_dm: ..., h_pt: ..., }
+
+    // 欲跳轉按鈕
+    const forwardBtn = document.querySelectorAll('[data-forward]');
+
+    // 可用 Domain
+    // const allowdm = /.*hexschool.(com|io|tw)|hex\.school/;
+    const allowdm = /^(.*\.)?hexschool\.(com|io|tw)$|^(.*\.)?hex\.school$/;
+
+    // 新增優惠券文字、金額
+    const couponPrice = document.querySelector('#coupon-price');
+    const couponText = document.querySelector('#coupon-price-text');
+
+    // 金流按鈕連結轉址
+    const transUrl = (urlArray) => {
+      forwardBtn.forEach((buttonEl, index) => {
+        if (buttonEl.dataset.forward === 'true') {
+          buttonEl.setAttribute('href', urlArray[index]);
+          buttonEl.setAttribute('data-paylink', urlArray[index]);
+        }
+      })
+    }
+
+    // 特定 KOL 渲染
+    // kolUrlInfo: kol 短網址轉址 path
+    const kolUrlInfo = {
+      weimeng: ['2NfNa'], // 崴崴孟孟
+      kelly: ['iBCrU'], // Kelly
+      withJackyWang: ['pfPfd'], // 電扶梯走左邊
+      betweenGos:['Jch4m'], // BetweenGos
+    };
+    const renderForKol = (urlPath) => {
+      // 只在允許的網域下執行
+     
+      if (!allowdm.test(urlQueryObj['h_dm'])) {
+        return;
+      }
+      const kolUrlArray = [];
+      kolUrlInfo[urlPath].forEach((path) => {
+        kolUrlArray.push(`https://${urlQueryObj['h_dm']}/${path}`);
+      })
+      transUrl(kolUrlArray);
+    }
+
+     console.log(allowdm.test(urlQueryObj['h_dm']));
+    // 驗證 domain 並轉網址
+    if (allowdm.test(urlQueryObj['h_dm'])) {
+      console.log(urlQueryObj['h_pt'])
+      switch (urlQueryObj['h_pt']) {
+        // 官網網址參數
+        case 'weimeng':
+          renderForKol('weimeng');
+          couponText.innerHTML = '崴崴孟孟專屬優惠';
+          couponPrice.innerHTML = '$799';
+          break;
+        case 'kelly':
+          renderForKol('kelly');
+          couponText.innerHTML = 'Kelly 專屬優惠';
+          couponPrice.innerHTML = '$799';
+          break;
+        case 'withJackyWang':
+          renderForKol('withJackyWang');
+          couponText.innerHTML = '電扶梯走左邊 專屬優惠';
+          couponPrice.innerHTML = '$799';
+          break;
+        case 'betweenGos':
+          renderForKol('betweenGos');
+          couponText.innerHTML = 'BetweenGos 專屬優惠';
+          couponPrice.innerHTML = '$799';
+          break;
+        default:
+          // transUrl(['#', '#']);
+      }
+    }
+  }
 </script>
 
 
@@ -1179,14 +1273,12 @@
 </div>
 
  <!-- 開啟通用 footer 倒數-->
-    <!-- 如果個別頁面有需要倒數 -->
-    
-      <!-- 非特定頁面使用通用 footer 倒數 -->
-      <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
+   <!-- 如果不需要個別頁面的倒數，都用『通用 footer 倒數』 -->
+    <nav class="navbar-fixed-bottom text-center text-white fixed-bottom bg-danger py-2">
   <div class="container">
     <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
       <div class="d-flex flex-md-row flex-column align-items-md-center text-white justify-content-md-end pr-md-3 pr-0">
-        <span class="fw-bold text-start me-3">【晚鳥 43 折】下週五開學 最後報名機會｜React 作品實戰班</span>
+        <span class="fw-bold text-start me-3">即將開放報名｜後端工程師體驗營</span>
         
           <!-- <span class="mr-1 text-start" data-toggle="tooltip" data-placement="top" title="每日更新"></span> -->
           <span class="me-3 fw-bold text-start"></span>
@@ -1199,9 +1291,9 @@
       </div>
       <div class="d-flex justify-content-md-start justify-content-end ps-md-3 ps-0">
         
-          <a href="/courses/react-training.html"
+          <a href="/courses/backend-camp.html"
             class="btn btn-dark btn-sm rounded-0">
-            立刻報名
+            預約提醒
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         
@@ -1210,9 +1302,10 @@
   </div>
 </nav>
 
-  <input type="hidden" id="footer-clock" value="2025/12/14 23:59">
+  <input type="hidden" id="footer-clock" value="2025/12/17 11:59">
 
-      
+  
+  
   </div>
   
 <div class="modal fade" id="orderModal" tabindex="-1">
@@ -1410,10 +1503,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1765421839346.js"></script>
+<script src="/js/bs4_vendor.js?1765727837949.js"></script>
 
 
-<script src="/js/bs4_all.js?1765421839346.js"></script>
+<script src="/js/bs4_all.js?1765727837949.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
