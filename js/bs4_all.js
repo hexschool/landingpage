@@ -1,14 +1,11 @@
-var VueApp, helper, orderModalApp, tracker;
-
-helper = {
+var helper = {
   getParameterByName: function(name, url) {
-    var regex, results;
     if (!url) {
       url = window.location.href;
     }
     name = name.replace(/[\[\]]/g, '\\$&');
-    regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)', 'i');
-    results = regex.exec(url);
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)', 'i');
+    var results = regex.exec(url);
     if (!results) {
       return null;
     }
@@ -20,80 +17,91 @@ helper = {
 };
 
 $(document).ready(function() {
-  var counter, isTimeToUpdate, mouse, moveImg, moveImgS, onMouseEnterHandler, onMouseLeaveHandler, onMouseMoveHandler, perspectiveWall, update, updateRate, updateTransformStyle;
-  perspectiveWall = document.getElementById('perspectiveWall');
-  moveImg = document.getElementById('moveImg');
-  moveImgS = document.getElementById('moveImgS');
+  var perspectiveWall = document.getElementById('perspectiveWall');
+  var moveImg = document.getElementById('moveImg');
+  var moveImgS = document.getElementById('moveImgS');
+
   if (perspectiveWall) {
-    mouse = {
+    var mouse = {
       _x: 0,
       _y: 0,
       x: 0,
       y: 0,
       updatePosition: function(event) {
-        var e;
-        e = event || window.event;
+        var e = event || window.event;
         this.x = e.clientX - this._x;
-        return this.y = (e.clientY - this._y) * -1;
+        this.y = (e.clientY - this._y) * -1;
       },
       setOrigin: function(e) {
         this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-        return this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+        this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
       },
       show: function() {
         return "(" + this.x + ", " + this.y + ")";
       }
     };
+
     mouse.setOrigin(perspectiveWall);
-    counter = 0;
-    updateRate = 10;
-    isTimeToUpdate = function() {
+
+    var counter = 0;
+    var updateRate = 10;
+    var isTimeToUpdate = function() {
       return counter++ % updateRate === 0;
     };
-    onMouseEnterHandler = function(event) {
-      return update(event);
+
+    var onMouseEnterHandler = function(event) {
+      update(event);
     };
-    onMouseLeaveHandler = function() {
+
+    var onMouseLeaveHandler = function() {
       moveImg.style = "";
-      return moveImgS.style = "";
+      moveImgS.style = "";
     };
-    onMouseMoveHandler = function(event) {
+
+    var onMouseMoveHandler = function(event) {
       if (isTimeToUpdate()) {
-        return update(event);
+        update(event);
       }
     };
-    update = function(event) {
+
+    var update = function(event) {
       mouse.updatePosition(event);
-      return updateTransformStyle((mouse.y / moveImg.offsetHeight / 2).toFixed(2), (mouse.x / moveImg.offsetWidth / 2).toFixed(2));
+      updateTransformStyle(
+        (mouse.y / moveImg.offsetHeight / 2).toFixed(2),
+        (mouse.x / moveImg.offsetWidth / 2).toFixed(2)
+      );
     };
-    updateTransformStyle = function(x, y) {
-      var style, styleS;
-      style = "translateX(" + (-37 * Number(x) * Number(y)) + "px) rotate(" + Number(x) * Number(y) + "deg)";
-      styleS = "translateX(" + (37 * Number(x) * Number(y)) + "px) rotate(" + -Number(x) * Number(y) + "deg)";
+
+    var updateTransformStyle = function(x, y) {
+      var style = "translateX(" + (-37 * Number(x) * Number(y)) + "px) rotate(" + Number(x) * Number(y) + "deg)";
+      var styleS = "translateX(" + (37 * Number(x) * Number(y)) + "px) rotate(" + -Number(x) * Number(y) + "deg)";
+
       moveImg.style.transform = style;
       moveImg.style.webkitTransform = style;
       moveImg.style.mozTransform = style;
       moveImg.style.msTransform = style;
       moveImg.style.oTransform = style;
+
       moveImgS.style.transform = styleS;
       moveImgS.style.webkitTransform = styleS;
       moveImgS.style.mozTransform = styleS;
       moveImgS.style.msTransform = styleS;
-      return moveImgS.style.oTransform = styleS;
+      moveImgS.style.oTransform = styleS;
     };
+
     perspectiveWall.onmouseenter = onMouseEnterHandler;
     perspectiveWall.onmouseleave = onMouseLeaveHandler;
-    return perspectiveWall.onmousemove = onMouseMoveHandler;
+    perspectiveWall.onmousemove = onMouseMoveHandler;
   }
 });
 
 $(document).ready(function() {
-  var changeActice, nowPage;
-  changeActice = function(target) {
+  var changeActice = function(target) {
     $('.bookmark').removeClass('active');
-    return $(target).addClass('active');
+    $(target).addClass('active');
   };
-  nowPage = 1;
+  var nowPage = 1;
+
   $('#firstLabel').on('click', function(event) {
     changeActice('#firstLabel');
     $('#third').css('visibility', 'visible');
@@ -119,7 +127,7 @@ $(document).ready(function() {
       $('#six').css('webkitTransform', 'rotateY(0deg)');
       $('#six').css('transform', 'rotateY(0deg)');
     }
-    return nowPage = 1;
+    nowPage = 1;
   });
   $('#secondLabel').on('click', function(event) {
     changeActice('#secondLabel');
@@ -145,7 +153,7 @@ $(document).ready(function() {
       $('#sixth').css('webkitTransform', 'rotateY(0deg)');
       $('#sixth').css('transform', 'rotateY(0deg)');
     }
-    return nowPage = 2;
+    nowPage = 2;
   });
   $('#thirdLabel').on('click', function(event) {
     changeActice('#thirdLabel');
@@ -178,7 +186,7 @@ $(document).ready(function() {
       $('#sixth').css('webkitTransform', 'rotateY(0)');
       $('#sixth').css('transform', 'rotateY(0)');
     }
-    return nowPage = 3;
+    nowPage = 3;
   });
   $('#fourthLabel').on('click', function(event) {
     changeActice('#fourthLabel');
@@ -200,117 +208,138 @@ $(document).ready(function() {
       $('#sixth').css('webkitTransform', 'rotateY(-180deg)');
       $('#sixth').css('transform', 'rotateY(-180deg)');
     }
-    return nowPage = 4;
+    nowPage = 4;
   });
+
   $('.landing-combined.z_js-js_core-react').hide();
   $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').hide();
   $('.landing-combined-select.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').on('change', function(event) {
-    var target;
-    target = event.target.value;
+    var target = event.target.value;
     if (target === 'z_html_jQuery_rwd_bs5_js-plus_js-core_react') {
       $('.landing-combined.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').hide();
-      return $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').fadeIn();
+      $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').fadeIn();
     } else if (target === 'z_html_jQuery_rwd_bs4_js-plus_js-core_vue3') {
       $('.landing-combined.z_html_jQuery_rwd_bs5_js-plus_js-core_react').hide();
-      return $('.landing-combined.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').fadeIn();
+      $('.landing-combined.z_html_jQuery_rwd_bs4_js-plus_js-core_vue3').fadeIn();
     }
   });
   $('.landing-combined-select.z_js-plus_js-core_vue3').on('change', function(event) {
-    var target;
-    target = event.target.value;
+    var target = event.target.value;
     if (target === 'z_js-js_core-react') {
       $('.landing-combined.z_js-plus_js-core_vue3').hide();
-      return $('.landing-combined.z_js-js_core-react').fadeIn();
+      $('.landing-combined.z_js-js_core-react').fadeIn();
     } else if (target === 'z_js-plus_js-core_vue3') {
       $('.landing-combined.z_js-js_core-react').hide();
-      return $('.landing-combined.z_js-plus_js-core_vue3').fadeIn();
+      $('.landing-combined.z_js-plus_js-core_vue3').fadeIn();
     }
   });
+  return;
 });
 
+// getData = function() {
+//   firebase.initializeApp(firebase_config)
+//   database = firebase.database()
+//
+//   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
+//     console.log(data)
+//   })
+// }
+//
+// getData()
+
 $(document).ready(function() {
-  var counter, isTimeToUpdate, mouse, moveImg, moveImg2, moveImgS, onMouseEnterHandler, onMouseLeaveHandler, onMouseMoveHandler, perspectiveWall, update, updateRate, updateTransformStyle;
-  perspectiveWall = document.getElementById('perspectiveWallgit');
-  moveImg = document.getElementById('moveImggit');
-  moveImg2 = document.getElementById('moveImggit2');
-  moveImgS = document.getElementById('moveImgSgit');
+  var perspectiveWall = document.getElementById('perspectiveWallgit');
+  var moveImg = document.getElementById('moveImggit');
+  var moveImg2 = document.getElementById('moveImggit2');
+  var moveImgS = document.getElementById('moveImgSgit');
+
   if (perspectiveWall) {
-    mouse = {
+    var mouse = {
       _x: 0,
       _y: 0,
       x: 0,
       y: 0,
       updatePosition: function(event) {
-        var e;
-        e = event || window.event;
+        var e = event || window.event;
         this.x = e.clientX - this._x;
-        return this.y = (e.clientY - this._y) * -1;
+        this.y = (e.clientY - this._y) * -1;
       },
       setOrigin: function(e) {
         this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-        return this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+        this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
       },
       show: function() {
         return "(" + this.x + ", " + this.y + ")";
       }
     };
+
     mouse.setOrigin(perspectiveWall);
-    counter = 0;
-    updateRate = 10;
-    isTimeToUpdate = function() {
+
+    var counter = 0;
+    var updateRate = 10;
+    var isTimeToUpdate = function() {
       return counter++ % updateRate === 0;
     };
-    onMouseEnterHandler = function(event) {
-      return update(event);
+
+    var onMouseEnterHandler = function(event) {
+      update(event);
     };
-    onMouseLeaveHandler = function() {
+
+    var onMouseLeaveHandler = function() {
       moveImg.style.transform = "";
       moveImg2.style.transform = "";
-      return moveImgS.style.transform = "translateY(25px)";
+      moveImgS.style.transform = "translateY(25px)";
     };
-    onMouseMoveHandler = function(event) {
+
+    var onMouseMoveHandler = function(event) {
       if (isTimeToUpdate()) {
-        return update(event);
+        update(event);
       }
     };
-    update = function(event) {
+
+    var update = function(event) {
       mouse.updatePosition(event);
-      return updateTransformStyle((mouse.y / moveImg.offsetHeight / 2).toFixed(2), (mouse.x / moveImg.offsetWidth / 2).toFixed(2));
+      updateTransformStyle(
+        (mouse.y / moveImg.offsetHeight / 2).toFixed(2),
+        (mouse.x / moveImg.offsetWidth / 2).toFixed(2)
+      );
     };
-    updateTransformStyle = function(x, y) {
-      var style, style2, styleS;
-      style = "translateX(" + (-100 * Number(x) * Number(y)) + "px)";
-      styleS = "translateX(" + (500 * Number(x) * Number(y)) + "px) translateY(25px)";
-      style2 = "translateX(" + (300 * Number(x) * Number(y)) + "px) rotate(" + (30 * Number(x) * Number(y)) + "deg) translateY( " + 50 * Number(y) + "px)";
+
+    var updateTransformStyle = function(x, y) {
+      var style = "translateX(" + (-100 * Number(x) * Number(y)) + "px)";
+      var styleS = "translateX(" + (500 * Number(x) * Number(y)) + "px) translateY(25px)";
+      var style2 = "translateX(" + (300 * Number(x) * Number(y)) + "px) rotate(" + (30 * Number(x) * Number(y)) + "deg) translateY(" + 50 * Number(y) + "px)";
+
       moveImg.style.transform = style;
       moveImg.style.webkitTransform = style;
       moveImg.style.mozTransform = style;
       moveImg.style.msTransform = style;
       moveImg.style.oTransform = style;
+
       moveImg2.style.transform = style2;
       moveImg2.style.webkitTransform = style2;
       moveImg2.style.mozTransform = style2;
       moveImg2.style.msTransform = style2;
       moveImg2.style.oTransform = style2;
+
       moveImgS.style.transform = styleS;
       moveImgS.style.webkitTransform = styleS;
       moveImgS.style.mozTransform = styleS;
       moveImgS.style.msTransform = styleS;
-      return moveImgS.style.oTransform = styleS;
+      moveImgS.style.oTransform = styleS;
     };
+
     perspectiveWall.onmouseenter = onMouseEnterHandler;
     perspectiveWall.onmouseleave = onMouseLeaveHandler;
-    return perspectiveWall.onmousemove = onMouseMoveHandler;
+    perspectiveWall.onmousemove = onMouseMoveHandler;
   }
 });
 
 $(document).ready(function() {
-  var arr, intervalId, mediaQuery, sassSwiper, swiper, swiperUI;
   $('#orderModal').on('show.bs.modal', function(event) {
-    var button, data;
-    button = $(event.relatedTarget);
+    var button = $(event.relatedTarget);
     $('#myModal').removeData('bs.modal');
-    data = {
+    var data = {
       promotionsTerms: button.data('promotions'),
       price: button.data('price'),
       title: button.data('title'),
@@ -318,9 +347,11 @@ $(document).ready(function() {
       coupon: button.data('coupon'),
       forward: button.data('forward')
     };
-    return orderModalApp.text = data;
+    orderModalApp.text = data;
   });
-  swiper = new Swiper('.carousel-comic', {
+
+  // 1000Days Swiper
+  var swiper = new Swiper('.carousel-comic', {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -332,7 +363,8 @@ $(document).ready(function() {
     },
     effect: 'fade'
   });
-  swiperUI = new Swiper('.carousel-ui', {
+  // UI Swiper
+  var swiperUI = new Swiper('.carousel-ui', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
@@ -354,8 +386,10 @@ $(document).ready(function() {
       }
     }
   });
-  arr = ['6F', '5F', '4F', '3F', '2F', '1F', 'B1'];
-  sassSwiper = new Swiper('.sass-floor', {
+
+  // Sass Course
+  var arr = ['6F', '5F', '4F', '3F', '2F', '1F', 'B1'];
+  var sassSwiper = new Swiper('.sass-floor', {
     direction: 'vertical',
     initialSlide: 7,
     autoplay: {
@@ -375,7 +409,7 @@ $(document).ready(function() {
       transitionEnd: function() {
         if (this.currentBreakpoint === '768') {
           if (this.activeIndex === 6 || this.activeIndex === 0) {
-            return sassSwiper.allowTouchMove = false;
+            sassSwiper.allowTouchMove = false;
           }
         }
       }
@@ -398,63 +432,64 @@ $(document).ready(function() {
       }
     }
   });
-  mediaQuery = window.matchMedia("(min-width: 767px)");
-  intervalId = '';
+  var mediaQuery = window.matchMedia("(min-width: 767px)");
+  var intervalId = '';
   $('.sass-slide').mouseover(function() {
     if (mediaQuery.matches) {
-      return sassSwiper.autoplay.stop();
+      sassSwiper.autoplay.stop();
     }
   });
   $('.sass-slide').mouseout(function() {
     if (mediaQuery.matches) {
-      return sassSwiper.autoplay.start();
+      sassSwiper.autoplay.start();
     }
   });
   $(window).scroll(function() {
-    return $('.sass-floor').each(function() {
-      var scrollPos, target, targetHeight, targetPos;
-      scrollPos = $(window).scrollTop();
-      target = $(this);
-      targetPos = $(target).offset().top;
-      targetHeight = $(target).outerHeight();
+    $('.sass-floor').each(function() {
+      var scrollPos = $(window).scrollTop();
+      var target = $(this);
+      var targetPos = $(target).offset().top;
+      var targetHeight = $(target).outerHeight();
       if (targetPos - 1 <= scrollPos && (targetPos + targetHeight) > scrollPos) {
-        return sassSwiper.allowTouchMove = true;
+        sassSwiper.allowTouchMove = true;
       }
     });
   });
+  return;
 });
 
-orderModalApp = new Vue({
+var orderModalApp = new Vue({
   el: '#orderModal',
   data: {
     text: {}
   }
 });
 
+// 導覽列
 $(document).ready(function() {
-  return $(window).scroll(function() {
-    var navTarget, navtargetPos, scrollPos, windowHeight;
-    scrollPos = $(window).scrollTop();
-    windowHeight = $(window).height();
-    navTarget = $('#thanks-2019-salary');
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var navTarget = $('#thanks-2019-salary');
     if (navTarget.length > 0) {
-      navtargetPos = $(navTarget).offset().top;
+      var navtargetPos = $(navTarget).offset().top;
       if (navtargetPos - 200 <= scrollPos) {
-        return $('.progress-bar').addClass('animate');
+        $('.progress-bar').addClass('animate');
       }
     }
   });
 });
 
 $(document).ready(function() {
-  var swiper, vue_review_swiper;
-  swiper = new Swiper('.swiper-training', {
+  // student works Swiper
+  var swiper = new Swiper('.swiper-training', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
   });
-  vue_review_swiper = new Swiper('.swiper-vue-training-review', {
+  // Vue 直播班學長姐心得
+  var vue_review_swiper = new Swiper('.swiper-vue-training-review', {
     direction: 'vertical',
     mousewheelControl: true,
     slidesPerView: 4,
@@ -466,7 +501,7 @@ $(document).ready(function() {
       pauseOnMouseEnter: true
     }
   });
-  swiper = new Swiper('.swiper-js-training-1st-student-works', {
+  var swiper = new Swiper('.swiper-js-training-1st-student-works', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
@@ -488,7 +523,7 @@ $(document).ready(function() {
       }
     }
   });
-  swiper = new Swiper('.ui-training-works', {
+  var swiper = new Swiper('.ui-training-works', {
     effect: 'coverflow',
     loop: true,
     grabCursor: true,
@@ -517,7 +552,7 @@ $(document).ready(function() {
       }
     }
   });
-  swiper = new Swiper('.ui-training-comment', {
+  var swiper = new Swiper('.ui-training-comment', {
     freeMode: true,
     loop: true,
     slidesPerView: 4.2,
@@ -548,28 +583,53 @@ $(document).ready(function() {
       }
     }
   });
+
   $('#trainingHW').on('click', function(event) {
-    var checkValue;
-    checkValue = $(this)[0].checked;
+    var checkValue = $(this)[0].checked;
     if (checkValue) {
-      return $('#trainingBuyBtn').removeClass('disabled');
+      $('#trainingBuyBtn').removeClass('disabled');
     } else {
-      return $('#trainingBuyBtn').addClass('disabled');
+      $('#trainingBuyBtn').addClass('disabled');
     }
   });
+
   $('.training-checked').on('click', function(event) {
-    var checkValue;
-    checkValue = $(this)[0].checked;
+    var checkValue = $(this)[0].checked;
     if (checkValue) {
-      return $(this).parent().next().removeClass('disabled');
+      $(this).parent().next().removeClass('disabled');
     } else {
-      return $(this).parent().next().addClass('disabled');
+      $(this).parent().next().addClass('disabled');
     }
   });
+
+  return;
 });
 
 Vue.component('slide-reviews', {
-  template: "<div>\n  <div style=\"height: 250px; overflow: hidden;\" class=\"swiper-container slide-reviews\">\n    <div style=\"font-size: 1.5em;\" class=\"centered text-xs-center\"><span class=\"loading loading-primary\"></span></div>\n    <div class=\"swiper-pagination\"></div>\n    <div class=\"swiper-wrapper\">\n      <div v-for=\"(item, index) in vue3Data\" style=\"width: 98%;\" class=\"swiper-slide b-3\" v-if=\"vue3\">\n        <div class=\"text-xs-left\">\n          <blockquote class=\"m-0\">\n            <div><strong>{{ item.user.display_name }}</strong><span class=\"text-warning ms-2\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></span></div>\n            <div>{{ item.content }}</div>\n          </blockquote>\n        </div>\n      </div>\n      <div v-for=\"(item, index) in courseData\" style=\"width: 98%;\" class=\"swiper-slide b-3\">\n        <div class=\"text-xs-left\">\n          <blockquote class=\"m-0\">\n            <div><strong>{{ item.user.display_name }}</strong><span class=\"text-warning ms-2\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></span></div>\n            <div>{{ item.content }}</div>\n          </blockquote>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+  template: '<div>' +
+    '<div style="height: 250px; overflow: hidden;" class="swiper-container slide-reviews">' +
+      '<div style="font-size: 1.5em;" class="centered text-xs-center"><span class="loading loading-primary"></span></div>' +
+      '<div class="swiper-pagination"></div>' +
+      '<div class="swiper-wrapper">' +
+        '<div v-for="(item, index) in vue3Data" style="width: 98%;" class="swiper-slide b-3" v-if="vue3">' +
+          '<div class="text-xs-left">' +
+            '<blockquote class="m-0">' +
+              '<div><strong>{{ item.user.display_name }}</strong><span class="text-warning ms-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>' +
+              '<div>{{ item.content }}</div>' +
+            '</blockquote>' +
+          '</div>' +
+        '</div>' +
+        '<div v-for="(item, index) in courseData" style="width: 98%;" class="swiper-slide b-3">' +
+          '<div class="text-xs-left">' +
+            '<blockquote class="m-0">' +
+              '<div><strong>{{ item.user.display_name }}</strong><span class="text-warning ms-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></div>' +
+              '<div>{{ item.content }}</div>' +
+            '</blockquote>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>',
   props: ['vue3'],
   data: function() {
     return {
@@ -581,89 +641,99 @@ Vue.component('slide-reviews', {
             display_name: '陳清誠'
           },
           content: '老師上課簡單易懂，課程架構清楚且邏輯清晰，相當推薦！（建議語速可以調至1.25/1.5）'
-        }, {
+        },
+        {
           user: {
             display_name: '張志銘'
           },
           content: '老師和助教講解非常詳細'
-        }, {
+        },
+        {
           user: {
             display_name: 'Daisord Isord'
           },
           content: '整個學習中漸進的熟悉 Vue 的使用，且作業題目安排適切，更加深對 Vue 的使用'
-        }, {
+        },
+        {
           user: {
             display_name: '奕濡 藍'
           },
           content: '完整的解說 Vue 強大之處以及應用，非常推薦'
-        }, {
+        },
+        {
           user: {
             display_name: 'yihao chang'
           },
           content: '課程講解的很詳盡，課程問題也很盡心盡力為學員回覆，很有耐心~受益良多'
-        }, {
+        },
+        {
           user: {
             display_name: 'Lynn Huang'
           },
           content: '教材準備很充足，老師講解清晰，不會拖泥帶水。'
-        }, {
+        },
+        {
           user: {
             display_name: '蔡名彥'
           },
           content: '內容多樣，從淺至深，老師非常用心，很適合想學 Vue 的人來上'
-        }, {
+        },
+        {
           user: {
             display_name: 'Su 蘇'
           },
           content: '老師的講解都非常到位，很迅速就能掌握基本的重點，而且課程中能大量串接 api 設計屬於自己的作品，不過 JavaScript 還是要熟悉一些會比較好上手，學完之後真的受益良多。'
-        }, {
+        },
+        {
           user: {
             display_name: 'Jia-Wei Liang'
           },
           content: '非常充實，即使目前是邊做邊學的狀態，也能及時補上很多書本及網路教學沒補充到的知識'
-        }, {
+        },
+        {
           user: {
             display_name: '宇軒 蔡'
           },
           content: '本課程不太適合初心者，但如果你是具備一些 JavaScript 觀念的人，這門課程很適合你，這門課程具備了相當程度的實作課程，相當划算！'
-        }, {
+        },
+        {
           user: {
             display_name: '黃英鳴 Huang'
           },
           content: '老師手把手的由淺入深講講解每個重要的觀念， 在學習完每個章節後都可以透過範例跟著練習， 有出一些作業幫助學習者檢視是不是真的知道如何把學到的觀念運用在實作上， 除了能了解與後端在串接資料上的細節與驗證權限外， 還提供客製化的 API 讓每個人都能做出專屬於自己的作品， 可以看出一定花了非常多的心思與時間在準備這堂課程！'
-        }, {
+        },
+        {
           user: {
             display_name: 'Anna Huang'
           },
-          content: '第一次上志誠老師的課，想不到課堂解說“超級清楚”，非常有條理！之前曾經零零碎碎地學了一些Vue的課程，但這堂課是最清楚也最完整的！這堂課跟之前的”JavaScript入門“一樣精彩，六角學院的教學真的很厲害，總是能將複雜的概念解說地讓人容易理解。很開心買到這堂課，推薦給還在猶豫的同學！'
+          content: '第一次上志誠老師的課，想不到課堂解說"超級清楚"，非常有條理！之前曾經零零碎碎地學了一些Vue的課程，但這堂課是最清楚也最完整的！這堂課跟之前的"JavaScript入門"一樣精彩，六角學院的教學真的很厲害，總是能將複雜的概念解說地讓人容易理解。很開心買到這堂課，推薦給還在猶豫的同學！'
         }
       ]
     };
   },
   methods: {
     getCourseData: function() {
-      var vm;
-      vm = this;
+      var vm = this;
       vm.courseData = [];
       $.each(vm.data, function(key, courses) {
         if (courses.review.count) {
-          return $.each(courses.review.results, function(i, review) {
-            return vm.courseData.push(review);
+          $.each(courses.review.results, function(i, review) {
+            vm.courseData.push(review);
           });
         }
       });
-      return vm.renderReviewSwiper();
+      vm.renderReviewSwiper();
     },
     renderReviewSwiper: function() {
-      return setTimeout(function() {
-        var swiper;
-        return swiper = new Swiper('.slide-reviews', {
+      setTimeout(function() {
+        var swiper = new Swiper('.slide-reviews', {
           pagination: '.swiper-pagination',
-          paginationType: 'progress',
-          direction: 'vertical',
-          mousewheelControl: true,
-          spaceBetween: 15,
-          slidesPerView: 'auto',
+          paginationType: 'progress', // 側欄選項
+          direction: 'vertical', // 垂直
+          mousewheelControl: true, // 可用滑鼠
+          spaceBetween: 15, // 間隔
+          slidesPerView: 'auto', // 每頁數量
+          // autoplay: 2000, // 自動播放
           slideClass: 'swiper-slide',
           autoplayDisableOnInteraction: false,
           autoplay: {
@@ -674,24 +744,24 @@ Vue.component('slide-reviews', {
     }
   },
   mounted: function() {
-    var vm;
-    vm = this;
-    return vm.$parent.$on('slideReviewsData', function(data) {
+    // this.fetchData()
+    var vm = this;
+    vm.$parent.$on('slideReviewsData', function(data) {
       vm.data = data;
-      return vm.getCourseData();
+      vm.getCourseData();
     });
   }
 });
 
-VueApp = new Vue({
+var VueApp = new Vue({
   el: '#app',
   data: function() {
     return {
       rightCoupon: {
         course: {},
         coupon_code: ''
-      },
-      udemyRightCoupon: {},
+      }, // 目前的 Coupon 使用
+      udemyRightCoupon: {}, // Udemy 目前的 Coupon
       udemyCouponData: {},
       couponData: {},
       courseData: {
@@ -706,127 +776,125 @@ VueApp = new Vue({
   },
   methods: {
     getUseCoupon: function() {
-      var originPriceCoupon, priceCoupon, today, vm;
-      vm = this;
-      priceCoupon = vm.couponData.price;
-      originPriceCoupon = vm.couponData.origin_price;
-      today = moment().format('YYYY-MM-DD');
+      var vm = this;
+      var priceCoupon = vm.couponData.price;
+      var originPriceCoupon = vm.couponData.origin_price;
+      var today = moment().format('YYYY-MM-DD');
+
       $.each(priceCoupon, function(i, data) {
-        var dateData;
-        dateData = data.date;
-        return $.each(dateData, function(i, day) {
+        var dateData = data.date;
+        $.each(dateData, function(i, day) {
           if (moment(today).isAfter(day.start_at) && moment(today).isBefore(day.ended_at)) {
             vm.rightCoupon = data;
+            return;
           }
         });
       });
       if (Object.keys(vm.rightCoupon).length === 0) {
-        return vm.rightCoupon = originPriceCoupon;
+        vm.rightCoupon = originPriceCoupon;
       }
     },
-    getUseUdemyCoupon: function() {
-      var priceCoupon, today, vm;
-      vm = this;
-      priceCoupon = vm.udemyCouponData.price;
-      today = moment().format('YYYY-MM-DD');
+    getUseUdemyCoupon: function() { // Udemy Coupon
+      var vm = this;
+      var priceCoupon = vm.udemyCouponData.price;
+      var today = moment().format('YYYY-MM-DD');
+
       $.each(priceCoupon, function(i, data) {
-        var dateData;
-        dateData = data.date;
+        var dateData = data.date;
         if (moment(today).isAfter(dateData.start_at) && moment(today).isBefore(dateData.ended_at)) {
           vm.udemyRightCoupon = data;
+          return;
         }
       });
       if (Object.keys(vm.udemyRightCoupon).length === 0) {
-        return vm.udemyRightCoupon = '';
+        vm.udemyRightCoupon = '';
       }
     },
-    fetchData: function() {
-      var vm;
-      vm = this;
+    fetchData: function() { // 載入資料
+      var vm = this;
       $.getJSON('https://shop.hexschool.com/api/udemydata/getCourseData', function(data) {
         vm.courseData = data;
-        return vm.$emit('slideReviewsData', vm.courseData);
+        vm.$emit('slideReviewsData', vm.courseData);
       }, function(response) {
-        return console.log('error', response);
+        console.log('error', response);
       });
       $.getJSON('https://shop.hexschool.com/api/udemydata/getCoursesBasicData', function(data) {
-        return vm.course = data;
+        vm.course = data;
       }, function(response) {
-        return console.log('error', response);
+        console.log('error', response);
       });
       $.getJSON('../coupon-data.json', function(data) {
         vm.couponData = data;
-        return vm.getUseCoupon();
+        vm.getUseCoupon();
       }, function(response) {
-        return console.log('error', response);
+        console.log('error', response);
       });
-      return $.getJSON('../udemy-coupon-data.json', function(data) {
+      $.getJSON('../udemy-coupon-data.json', function(data) {
         vm.udemyCouponData = data;
         vm.getUseUdemyCoupon();
+        return;
       });
     }
   },
   mounted: function() {
-    return this.fetchData();
+    this.fetchData();
   }
 });
 
-tracker = {
+// 追蹤
+var tracker = {
   addDistinct_id: function(distinct_id) {
+    // 如果有 mixpanel 統一加上對 herokuapp 交易的追蹤碼
     if (distinct_id) {
-      return $('[href*="herokuapp.com/order"]').each(function() {
-        var newHref, thisHref;
-        thisHref = $(this).attr('href');
-        newHref = thisHref + "&distinct_id=" + distinct_id;
+      $('[href*="herokuapp.com/order"]').each(function() {
+        var thisHref = $(this).attr('href');
+        var newHref = thisHref + "&distinct_id=" + distinct_id;
         $(this).attr('href', newHref);
-        return $(this).attr('data-paylink', newHref);
+        $(this).attr('data-paylink', newHref);
       });
     }
   },
   addUTM: function() {
-    var utm_campaignLink, utm_mediumLink, utm_sourceLink;
-    utm_sourceLink = '';
-    utm_mediumLink = '';
-    utm_campaignLink = '';
+    var utm_sourceLink = '';
+    var utm_mediumLink = '';
+    var utm_campaignLink = '';
     if ($.cookie('utm_source')) {
-      utm_sourceLink = "&utm_source=" + ($.cookie('utm_source'));
+      utm_sourceLink = "&utm_source=" + $.cookie('utm_source');
     }
     if ($.cookie('utm_medium')) {
-      utm_mediumLink = "&utm_medium=" + ($.cookie('utm_medium'));
+      utm_mediumLink = "&utm_medium=" + $.cookie('utm_medium');
     }
     if ($.cookie('utm_campaign')) {
-      utm_campaignLink = "&utm_campaign=" + ($.cookie('utm_campaign'));
-      return $('[href*="herokuapp.com/order"]').each(function() {
-        var newHref, thisHref;
-        thisHref = $(this).attr('href');
-        newHref = "" + thisHref + utm_sourceLink + utm_mediumLink + utm_campaignLink;
+      utm_campaignLink = "&utm_campaign=" + $.cookie('utm_campaign');
+      $('[href*="herokuapp.com/order"]').each(function() {
+        var thisHref = $(this).attr('href');
+        var newHref = thisHref + utm_sourceLink + utm_mediumLink + utm_campaignLink;
         $(this).attr('href', newHref);
-        return $(this).attr('data-paylink', newHref);
+        $(this).attr('data-paylink', newHref);
       });
     }
   }
 };
 
 $(document).ready(function() {
-  var $win, ViewContentScrollTracking, adsource, dimensionValue, generateData, generateKey, generate_callback, getCookieByName, getUTM, landingViewContentScroll, mixpanelPageView, pageTitle, parseCookie, postConversionAPI, setCookie;
-  setCookie = function(name, value) {
-    return $.cookie(name, value, {
-      expires: 1 / 24,
-      path: '/'
-    });
+  var setCookie = function(name, value) {
+    $.cookie(name, value, { expires: 1 / 24, path: '/' });
   };
-  adsource = helper.getParameterByName('adsource');
-  pageTitle = $('title').text();
+
+  // mixpanel
+  // Page View
+  var adsource = helper.getParameterByName('adsource');
+  var pageTitle = $('title').text();
   if (adsource && !$.cookie('adsource')) {
     setCookie('adsource', adsource);
   } else if ($.cookie('adsource') && !adsource) {
     adsource = $.cookie('adsource');
   }
-  getUTM = function() {
-    var utm_campaign, utm_medium, utm_source;
-    utm_source = helper.getParameterByName('utm_source');
-    utm_medium = helper.getParameterByName('utm_medium');
-    utm_campaign = helper.getParameterByName('utm_campaign');
+
+  var getUTM = function() {
+    var utm_source = helper.getParameterByName('utm_source');
+    var utm_medium = helper.getParameterByName('utm_medium');
+    var utm_campaign = helper.getParameterByName('utm_campaign');
     if (utm_source) {
       setCookie('utm_source', utm_source);
     }
@@ -836,57 +904,67 @@ $(document).ready(function() {
     if (utm_campaign) {
       setCookie('utm_campaign', utm_campaign);
     }
-    return tracker.addUTM();
+    tracker.addUTM();
   };
   getUTM();
-  mixpanelPageView = function() {
-    return mixpanel.track('PageView', {
+
+  var mixpanelPageView = function() {
+    mixpanel.track('PageView', {
       'adsource': adsource || '',
       'pageTitle': pageTitle
     });
   };
   mixpanelPageView();
+
+  // 點擊
   $('a.mp-click').click(function(event) {
-    var link, title;
-    link = $(this).attr('href');
-    title = $(this).attr('title');
-    return mixpanel.track('Click a link', {
+    var link = $(this).attr('href');
+    var title = $(this).attr('title');
+    mixpanel.track('Click a link', {
       'link': link,
       'title': title,
       'adsource': adsource || '',
       'pageTitle': pageTitle
     });
   });
+
   $('.dropdown-course').one('mouseenter', function(e) {
-    return mixpanel.track('openDropdown');
+    mixpanel.track('openDropdown');
   });
+
+  // 點擊下拉式選單的項目
   $('a.drop-click').click(function(event) {
-    var link, title;
-    link = $(this).attr('href');
-    title = $(this).attr('title');
-    return mixpanel.track('Click a link', {
+    var link = $(this).attr('href');
+    var title = $(this).attr('title');
+    mixpanel.track('Click a link', {
       'link': link,
       'title': title,
       'target': 'dropdownLink'
     });
   });
+
+  // 點擊下拉式選單的倒數廣告
   $('a.dropdown-clock-banner').click(function(event) {
-    var link, title;
-    link = $(this).attr('href');
-    title = $(this).attr('title');
-    return mixpanel.track('Click a link', {
+    var link = $(this).attr('href');
+    var title = $(this).attr('title');
+    mixpanel.track('Click a link', {
       'link': link,
       'title': title,
       'target': 'dropdown-clock-banner'
     });
   });
-  generate_callback = function(a) {
+
+  // Facebook Tracking
+  var generate_callback = function(a) {
     return function() {
       window.location = a.attr('href');
+      return;
     };
   };
+
+  // 訂單成功
   if ($('#orderSuccess').length) {
-    dimensionValue = {
+    var dimensionValue = {
       'message': '支付 ' + helper.getParameterByName('msg') || '',
       'amount': helper.getParameterByName('amt') || '',
       'amountPaid': helper.getParameterByName('amountPaid') || '',
@@ -894,43 +972,49 @@ $(document).ready(function() {
       'mail': helper.getParameterByName('mail') || '',
       'adsource': adsource || ''
     };
+
     fbq('track', 'Purchase', {
       content_type: 'product',
       value: helper.getParameterByName('amt') || 880,
       currency: 'TWD'
     });
-    mixpanel.track('orderSuccess', dimensionValue);
-    ga('set', 'dimension2', dimensionValue);
-    $('#orderMsg').text(dimensionValue.message);
+
+    mixpanel.track('orderSuccess', dimensionValue); // Mixpanel
+
+    ga('set', 'dimension2', dimensionValue); // Google analytics
+    $('#orderMsg').text(dimensionValue.message); // 付款訊息
   }
+
   if ($('#orderFail').length) {
-    dimensionValue = {
+    var dimensionValue = {
       'message': '支付失敗 ' + helper.getParameterByName('msg') || '',
       'amount': helper.getParameterByName('amt') || '',
       'name': helper.getParameterByName('name') || '',
       'mail': helper.getParameterByName('mail') || '',
       'adsource': adsource || ''
     };
-    mixpanel.track('orderFail', dimensionValue);
-    $('#orderMsg').text(dimensionValue.message);
+
+    mixpanel.track('orderFail', dimensionValue); // Mixpanel
+    $('#orderMsg').text(dimensionValue.message); // 付款訊息
   }
-  generateKey = function() {
-    var characters, charactersLength, j, key, x;
-    key = '';
-    characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    charactersLength = characters.length;
-    for (x = j = 1; j <= 10; x = ++j) {
+
+  var generateKey = function() {
+    var key = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for (var x = 1; x <= 10; x++) {
       key += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return key;
   };
-  parseCookie = function() {
-    var cookie, cookieAry, cookieObj, i, l;
-    cookieObj = {};
-    cookieAry = document.cookie.split(';');
-    cookie = void 0;
-    i = 0;
-    l = cookieAry.length;
+
+  // 取得 cookie 中的 _fbp 和 _fbc
+  var parseCookie = function() {
+    var cookieObj = {};
+    var cookieAry = document.cookie.split(';');
+    var cookie;
+    var i = 0;
+    var l = cookieAry.length;
     while (i < l) {
       cookie = cookieAry[i].trim();
       cookie = cookie.split('=');
@@ -939,25 +1023,29 @@ $(document).ready(function() {
     }
     return cookieObj;
   };
-  getCookieByName = function(name) {
-    var value;
-    value = parseCookie()[name];
+
+  var getCookieByName = function(name) {
+    var value = parseCookie()[name];
     if (value) {
       value = decodeURIComponent(value);
     }
     return value;
   };
-  postConversionAPI = function(data) {
+
+  // 送出 conversion
+  var postConversionAPI = function(data) {
+    // https://shop.hexschool.com/api/tracker
     $.ajax('https://shop.hexschool.com/api/tracker', {
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify(data)
     });
+    return;
   };
-  generateData = function(eventTime, eventId, productID) {
-    var obj;
-    obj = {
+
+  var generateData = function(eventTime, eventId, productID) {
+    var obj = {
       type: 'facebook',
       data: {
         event_name: 'ViewContent',
@@ -978,41 +1066,42 @@ $(document).ready(function() {
     };
     return obj;
   };
-  landingViewContentScroll = false;
+
+  // landingPage 組合
+  var landingViewContentScroll = false;
   if ($('.landing-track-start').length) {
-    $win = $(window).scroll(function(e) {
-      var contentTop, eventTime, event_id, landingViewContentData, winTop, windowHieght;
-      windowHieght = $(window).height() / 2;
-      winTop = $($win).scrollTop() + windowHieght;
-      contentTop = $('.landing-track-start').offset().top;
+    var $win = $(window).scroll(function(e) {
+      var windowHieght = $(window).height() / 2;
+      var winTop = $($win).scrollTop() + windowHieght;
+      var contentTop = $('.landing-track-start').offset().top;
       if (winTop > contentTop && !landingViewContentScroll) {
         landingViewContentScroll = true;
-        event_id = generateKey(10);
-        eventTime = Math.floor(new Date() / 1000);
-        fbq('track', 'ViewContent', {}, {
-          event_id: event_id
-        });
+        var event_id = generateKey(10);
+        var eventTime = Math.floor(new Date() / 1000);
+        fbq('track', 'ViewContent', {}, {event_id: event_id});
         gtag('event', 'view_item');
-        landingViewContentData = generateData(eventTime, event_id, 'landingCourse');
+        var landingViewContentData = generateData(eventTime, event_id, 'landingCourse');
         postConversionAPI(landingViewContentData);
-        return mixpanel.track('ViewContent', {
+        mixpanel.track('ViewContent', {
           'target': 'landingCourse'
         });
       }
     });
   }
-  ViewContentScrollTracking = false;
+
+  // viewContent 看完主要內容在可購買區塊出現後，則發送 viewContent 事件
+  // viewContent 需要 price, id
+  var ViewContentScrollTracking = false;
   if ($('.course-tracking-ViewContent').length) {
-    $win = $(window).scroll(function(e) {
-      var contentTop, eventTime, event_id, viewContentData, winTop, windowHieght;
-      windowHieght = $(window).height() / 2;
-      winTop = $($win).scrollTop() + windowHieght;
-      contentTop = $('.course-tracking-ViewContent').offset().top;
+    var $win = $(window).scroll(function(e) {
+      var windowHieght = $(window).height() / 2;
+      var winTop = $($win).scrollTop() + windowHieght;
+      var contentTop = $('.course-tracking-ViewContent').offset().top;
       if (winTop > contentTop && !ViewContentScrollTracking) {
         ViewContentScrollTracking = true;
-        event_id = generateKey(10);
-        eventTime = Math.floor(new Date() / 1000);
-        viewContentData = {
+        var event_id = generateKey(10);
+        var eventTime = Math.floor(new Date() / 1000);
+        var viewContentData = {
           type: 'facebook',
           data: {
             event_name: 'ViewContent',
@@ -1048,25 +1137,34 @@ $(document).ready(function() {
           eventID: event_id
         });
         postConversionAPI(viewContentData);
+
+        return;
       }
     });
   }
+
+  // 事件：AddToCart
   $('.tracking-link').on('click', function(e) {
-    var addToCartData, eventTime, event_id, fbqValue, link, productID, productName, productPrice, productType, title;
-    link = $(this).attr('href');
-    title = $(this).attr('title') || '';
-    dimensionValue = {
+    var link = $(this).attr('href');
+    var title = $(this).attr('title') || '';
+    var dimensionValue = {
       'message': 'addToCart',
       'link': link,
       'title': title
     };
-    event_id = generateKey(10);
-    eventTime = Math.floor(new Date() / 1000);
-    productID = $(this).data('id') || '';
-    productName = $(this).data('title');
-    productType = $(this).data('type') || '';
-    productPrice = $(this).data('price') || '';
-    fbqValue = {
+
+    // 追蹤需要的資料
+    var event_id = generateKey(10);
+    var eventTime = Math.floor(new Date() / 1000);
+
+    // 產品資料
+    var productID = $(this).data('id') || '';
+    var productName = $(this).data('title');
+    var productType = $(this).data('type') || '';
+    var productPrice = $(this).data('price') || '';
+
+    // pixel
+    var fbqValue = {
       content_type: productType,
       contents: [
         {
@@ -1077,7 +1175,9 @@ $(document).ready(function() {
       ],
       content_ids: productID
     };
-    addToCartData = {
+
+    // facebook conversion
+    var addToCartData = {
       type: 'facebook',
       data: {
         event_name: 'AddToCart',
@@ -1106,126 +1206,132 @@ $(document).ready(function() {
         }
       }
     };
-    mixpanel.track('AddToCart', dimensionValue);
-    gtag('event', 'add_to_cart');
-    fbq('track', 'AddToCart', fbqValue, {
-      event_id: event_id
-    });
+
+    // ga('set', 'dimension1', dimensionValue) // Google analytics
+    mixpanel.track('AddToCart', dimensionValue); // Mixpanel
+    gtag('event', 'add_to_cart'); // GA, Gtag
+    fbq('track', 'AddToCart', fbqValue, { event_id: event_id }); // Facebook
     postConversionAPI(addToCartData);
+    return;
   });
+
+  // AddToWishlist - 點擊後就可以觸發 "加到願望清單" 的事件
+  // 使用方法：class 加上 addToWishlist，同個元素加上 data-wishlist="要傳送的事件名稱"
   $('.addToWishlist').on('click', function(e) {
-    var eventName;
-    eventName = $(this).data('wishlist');
-    return fbq('track', 'AddToWishlist');
+    var eventName = $(this).data('wishlist');
+    fbq('track', 'AddToWishlist');
   });
+
+  // Lead - 淺在客戶事件
   $('.lead-click').on('click', function(e) {
-    return fbq('track', 'Lead');
+    fbq('track', 'Lead');
   });
+
+  // SubmitApplication - 提交申請事件
   $('.submitApp-click').on('click', function(e) {
-    return fbq('track', 'SubmitApplication');
+    fbq('track', 'SubmitApplication');
   });
+
   $('.line-track').on('click', function(e) {
-    return gtag('event', 'conversion', {
-      'send_to': 'AW-926147017/7dFMCNel4OwYEMnDz7kD'
-    });
+    gtag('event', 'conversion', {'send_to': 'AW-926147017/7dFMCNel4OwYEMnDz7kD'});
   });
+
   $('.fb-track').on('click', function(e) {
-    return gtag('event', 'conversion', {
-      'send_to': 'AW-926147017/b-sZCLqm1u0YEMnDz7kD'
-    });
+    gtag('event', 'conversion', {'send_to': 'AW-926147017/b-sZCLqm1u0YEMnDz7kD'});
   });
+
   $('.webLayout-training-gtag-track').on('click', function(e) {
-    return gtag('event', 'conversion', {
-      'send_to': 'AW-926147017/0c-OCOH54I0ZEMnDz7kD'
-    });
+    gtag('event', 'conversion', {'send_to': 'AW-926147017/0c-OCOH54I0ZEMnDz7kD'});
   });
+
   $('.react-training-gtag-track').on('click', function(e) {
-    return gtag('event', 'conversion', {
-      'send_to': 'AW-926147017/w2BSCJX6irAZEMnDz7kD'
-    });
+    gtag('event', 'conversion', {'send_to': 'AW-926147017/w2BSCJX6irAZEMnDz7kD'});
   });
+
   $('.node-gtag-track').on('click', function(e) {
-    return gtag('event', 'conversion', {
-      'send_to': 'AW-926147017/kdSaCMvbio0ZEMnDz7kD'
-    });
+    gtag('event', 'conversion', {'send_to': 'AW-926147017/kdSaCMvbio0ZEMnDz7kD'});
   });
+
   $('.event-2024-gtag-track').on('click', function(e) {
-    return gtag('event', 'conversion', {
-      'send_to': 'AW-926147017/cN2DCKi81p0ZEMnDz7kD'
-    });
+    gtag('event', 'conversion', {'send_to': 'AW-926147017/cN2DCKi81p0ZEMnDz7kD'});
   });
+
   $('.one-on-one-gtag-track').on('click', function(e) {
-    return gtag('event', 'conversion', {
-      'send_to': 'AW-926147017/7PsYCJj9i6cZEMnDz7kD'
-    });
+    gtag('event', 'conversion', {'send_to': 'AW-926147017/7PsYCJj9i6cZEMnDz7kD'});
   });
+
+  return;
 });
 
 $(document).ready(function() {
-  var timer;
   if ($('[data-bs-toggle="tooltip"]').length) {
     $('[data-bs-toggle="tooltip"]').tooltip();
   }
+
   if ($('#footer-clock').length) {
-    timer = $('#footer-clock').val();
+    var timer = $('#footer-clock').val();
     $('.clock').countdown(timer, function(event) {
-      return $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
+      // $(this).html(event.strftime('Node.js 預購倒數 %D天 %H時 %M分 %S秒'))
+      $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
+      // $(this).html(event.strftime('JS超狂早鳥票 %D天 %H時 %M分 %S秒'))
     });
   }
+
   if ($('[data-countdown-course]').length) {
     $('[data-countdown-course]').each(function(i, item) {
-      var course;
-      course = $(item).data('countdown-course');
-      timer = $(item).val();
-      return $('[data-course-countdown=' + course + ']').countdown(timer, function(event) {
-        return $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
+      var course = $(item).data('countdown-course');
+      var timer = $(item).val();
+      $('[data-course-countdown=' + course + ']').countdown(timer, function(event) {
+        $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
       });
     });
   }
+  return;
 });
 
+// 活動
 $(document).ready(function() {
-  var checkCourse, checkGodtohex, countPrice;
   $('#choeseCourse').on('click', function() {
-    var coupon, leadCourse, param, selectedCourses, totalUrl, url;
-    coupon = $(this).data('coupon');
-    url = $(this).data('url');
-    selectedCourses = [];
-    leadCourse = '';
+    var coupon = $(this).data('coupon');
+    var url = $(this).data('url');
+    var selectedCourses = [];
+    var leadCourse = '';
     $('#customCourses .selecedCourse:checked').each(function(i, item) {
-      return selectedCourses.push($(this).val());
+      selectedCourses.push($(this).val());
     });
+
     leadCourse = selectedCourses[0];
     selectedCourses.splice(0, 1);
-    param = $.param({
+
+    var param = $.param({
       order: leadCourse,
       coupon_code: coupon,
       selectedCourses: selectedCourses
     });
-    totalUrl = url + '?' + param;
+    var totalUrl = url + '?' + param;
+    // console.log(totalUrl, decodeURIComponent(totalUrl))
     if (leadCourse) {
-      return location.href = decodeURIComponent(totalUrl + '#addProducts');
+      location.href = decodeURIComponent(totalUrl + '#addProducts');
     }
   });
-  countPrice = function() {
-    var conditionText, originTotal, total, value;
-    total = 0;
-    originTotal = 0;
-    value = '';
-    conditionText = '';
+
+  var countPrice = function() {
+    var total = 0;
+    var originTotal = 0;
+    var value = '';
+    var conditionText = '';
     $('#customCourses .selecedCourse:checked').each(function(i, item) {
-      var originPrice, price;
       value = item.value;
-      price = parseInt($(this).data('price'));
-      originPrice = parseInt($(this).data('originprice'));
+      var price = parseInt($(this).data('price'));
+      var originPrice = parseInt($(this).data('originprice'));
       total = total + price;
-      return originTotal = originTotal + originPrice;
+      originTotal = originTotal + originPrice;
     });
     $('#selecedTotal').text(total);
     $('#selecedOriginTotal').text(originTotal - total);
     if (value === 'god2020year' || total > 5999) {
       $('#condition_false').hide();
-      return $('#condition_true').show();
+      $('#condition_true').show();
     } else {
       if (value !== 'god2020year') {
         $('#condition_false').hide();
@@ -1236,43 +1342,52 @@ $(document).ready(function() {
       }
       $('#condition').html(conditionText);
       $('#condition_false').show();
-      return $('#condition_true').hide();
+      $('#condition_true').hide();
     }
   };
+
   countPrice();
+  // 暫存總價
   $('#customCourses .selecedCourse').on('change', function() {
-    return countPrice();
+    countPrice();
   });
-  checkCourse = false;
-  checkGodtohex = false;
+
+  var checkCourse = false;
+  var checkGodtohex = false;
+
   $('#select-all-course').on('click', function(e) {
     e.preventDefault();
     if (!checkCourse) {
       $('#main-course-2019 .selecedCourse').each(function(i, item) {
         item.checked = !checkCourse;
+        return;
       });
       checkCourse = !checkCourse;
     } else {
       $('#main-course-2019 .selecedCourse').each(function(i, item) {
         item.checked = !checkCourse;
+        return;
       });
       checkCourse = !checkCourse;
     }
-    return countPrice();
+    countPrice();
   });
-  return $('#select-all-godtohex').on('click', function(e) {
+
+  $('#select-all-godtohex').on('click', function(e) {
     e.preventDefault();
     if (!checkGodtohex) {
       $('#godtohex-2019 .selecedCourse').each(function(i, item) {
         item.checked = !checkGodtohex;
+        return;
       });
       checkGodtohex = !checkGodtohex;
     } else {
       $('#godtohex-2019 .selecedCourse').each(function(i, item) {
         item.checked = !checkGodtohex;
+        return;
       });
       checkGodtohex = !checkGodtohex;
     }
-    return countPrice();
+    countPrice();
   });
 });
