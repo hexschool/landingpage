@@ -779,12 +779,12 @@ var VueApp = new Vue({
       var vm = this;
       var priceCoupon = vm.couponData.price;
       var originPriceCoupon = vm.couponData.origin_price;
-      var today = moment().format('YYYY-MM-DD');
+      var today = dayjs().format('YYYY-MM-DD');
 
       $.each(priceCoupon, function(i, data) {
         var dateData = data.date;
         $.each(dateData, function(i, day) {
-          if (moment(today).isAfter(day.start_at) && moment(today).isBefore(day.ended_at)) {
+          if (dayjs(today).isAfter(day.start_at) && dayjs(today).isBefore(day.ended_at)) {
             vm.rightCoupon = data;
             return;
           }
@@ -797,11 +797,11 @@ var VueApp = new Vue({
     getUseUdemyCoupon: function() { // Udemy Coupon
       var vm = this;
       var priceCoupon = vm.udemyCouponData.price;
-      var today = moment().format('YYYY-MM-DD');
+      var today = dayjs().format('YYYY-MM-DD');
 
       $.each(priceCoupon, function(i, data) {
         var dateData = data.date;
-        if (moment(today).isAfter(dateData.start_at) && moment(today).isBefore(dateData.ended_at)) {
+        if (dayjs(today).isAfter(dateData.start_at) && dayjs(today).isBefore(dateData.ended_at)) {
           vm.udemyRightCoupon = data;
           return;
         }

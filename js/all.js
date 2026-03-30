@@ -721,12 +721,12 @@ var vueApp = function() {
   var getUseCoupon = function() {
     var priceCoupon = appCourse.couponData.price;
     var originPriceCoupon = appCourse.couponData.origin_price;
-    var today = moment().format('YYYY-MM-DD');
+    var today = dayjs().format('YYYY-MM-DD');
 
     $.each(priceCoupon, function(i, data) {
       var dateData = data.date;
       $.each(dateData, function(i, day) {
-        if (moment(today).isAfter(day.start_at) && moment(today).isBefore(day.ended_at)) {
+        if (dayjs(today).isAfter(day.start_at) && dayjs(today).isBefore(day.ended_at)) {
           appCourse.rightCoupon = data;
           return;
         }
@@ -739,11 +739,11 @@ var vueApp = function() {
 
   var getUseUdemyCoupon = function() { // Udemy Coupon
     var priceCoupon = appCourse.udemyCouponData.price;
-    var today = moment().format('YYYY-MM-DD');
+    var today = dayjs().format('YYYY-MM-DD');
 
     $.each(priceCoupon, function(i, data) {
       var dateData = data.date;
-      if (moment(today).isAfter(dateData.start_at) && moment(today).isBefore(dateData.ended_at)) {
+      if (dayjs(today).isAfter(dateData.start_at) && dayjs(today).isBefore(dateData.ended_at)) {
         appCourse.udemyRightCoupon = data;
         return;
       }
@@ -754,12 +754,12 @@ var vueApp = function() {
   };
 
   var checkTrainingStatus = function() { // 確認直播班當前的開賣狀態
-    var today = moment().format('YYYY-MM-DD HH:mm:ss');
+    var today = dayjs().format('YYYY-MM-DD HH:mm:ss');
 
     $.each(appCourse.trainingDate, function(i, data) {
       var dateData = data.date;
       $.each(dateData, function(i, day) {
-        if (moment(today).isAfter(day.canbuy_start_at) && moment(today).isBefore(day.canbuy_ended_at)) {
+        if (dayjs(today).isAfter(day.canbuy_start_at) && dayjs(today).isBefore(day.canbuy_ended_at)) {
           appCourse.trainingStatus[data.id] = data;
           appCourse.trainingStatus[data.id]['day'] = day;
           appCourse.trainingStatus[data.id]['status'] = true;
@@ -767,7 +767,7 @@ var vueApp = function() {
         return;
       });
       $.each(dateData, function(i, day) {
-        if (moment(today).isBefore(day.canbuy_start_at)) {
+        if (dayjs(today).isBefore(day.canbuy_start_at)) {
           appCourse.trainingWait[data.id] = data;
           appCourse.trainingWait[data.id]['notOpen_day'] = day;
         }
