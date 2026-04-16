@@ -524,13 +524,7 @@ $(document).ready(function() {
         $('.ad-sm').css('display', 'none');
       }
     });
-    var adtimer = $('#courses-ad-clock').val();
-    $('.ad-clock-xl').countdown(adtimer, function(event) {
-      $(this).html(event.strftime('<div class="text-md-white font-ad-title font-weight-md-bold"><span class="text-primary">%D</span> 天 <span class="text-primary">%H</span>  時 <span class="text-primary">%M</span>  分 <span class="text-primary">%S</span>  秒</div>'));
-    });
-    $('.ad-clock-sm').countdown(adtimer, function(event) {
-      $(this).html(event.strftime('<div class="text-md-white text-dark font-clock-size font-weight-md-bold"><span class="text-md-primary text-dark">%D</span> 天 <span class="text-md-primary text-dark">%H</span>  時 <span class="text-md-primary text-dark">%M</span>  分 <span class="text-md-primary text-dark">%S</span>  秒</div>'));
-    });
+    // .ad-clock-xl / .ad-clock-sm 改由 promotions-runtime.js 初始化與維護（同 footer-clock 原因）
 
     $('#choeseCourse').on('click', function() {
       var coupon = $(this).data('coupon');
@@ -895,14 +889,8 @@ $(document).ready(function() {
     $('[data-bs-toggle="tooltip"]').tooltip();
   }
 
-  if ($('#footer-clock').length) {
-    var timer = $('#footer-clock').val();
-    $('.clock').countdown(timer, function(event) {
-      // $(this).html(event.strftime('Node.js 預購倒數 %D天 %H時 %M分 %S秒'))
-      $(this).html(event.strftime('%D 天 %H 時 %M 分 %S 秒'));
-      // $(this).html(event.strftime('JS超狂早鳥票 %D天 %H時 %M分 %S秒'))
-    });
-  }
+  // .clock countdown 改由 promotions-runtime.js 初始化與維護，避免 plugin 拿到字串時
+  // 把 ISO UTC 中的 '-' 換成 '/' 產生 Invalid Date，導致顯示 "NaN 天 NaN 時"。
 
   if ($('[data-countdown-course]').length) {
     $('[data-countdown-course]').each(function(i, item) {
