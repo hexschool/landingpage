@@ -1,0 +1,1385 @@
+
+
+
+
+
+  <!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-TW">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="Cache-control" content="public">
+  <meta http-equiv="max-age" content="604800" />
+  <title>【後端工程師學程】Node.js 直播班 | 六角學院</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+  <meta property="og:title" content="【後端工程師學程】Node.js 直播班 | 六角學院" />
+  <meta property="og:description" content="讓擅長化繁為簡的洧杰老師帶你建立完整的系統架構思維，你將學會親手設計伺服器運行邏輯，並挑戰業界主流的資料庫架構與效能優化。這也是銜接 AWS 雲端架構的關鍵必修站，讓你具備獨立交付專業專案的實戰力，一起踏上展開後端技能樹之路！" />
+  
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-courses.appspot.com/o/hex-website%2Flanding-page%2F1776303758915-2026%20Node.js%E7%9B%B4%E6%92%AD%E7%8F%AD%E4%B8%BB%E8%A6%96%E8%A6%BA(1200x628).png?alt=media&token=31baf7dd-41cd-4e7d-bffb-c66584f45232" />
+  
+  <meta property="fb:app_id" content="760173380749493"/>
+  <meta property="og:site_name" content="六角學院" />
+  <meta property="og:locale" content="zh_TW" />
+
+  
+    <link rel="alternative" href="/atom.xml" title="六角學院" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <meta content="讓擅長化繁為簡的洧杰老師帶你建立完整的系統架構思維，你將學會親手設計伺服器運行邏輯，並挑戰業界主流的資料庫架構與效能優化。這也是銜接 AWS 雲端架構的關鍵必修站，讓你具備獨立交付專業專案的實戰力，一起踏上展開後端技能樹之路！" name="description">
+  <meta content="線上課程, 網頁設計, 前端, HTML, CSS, jQuery, javascript" name="keywords">
+  <meta content="六角學院" name="author">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global styles START -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  
+<link rel="stylesheet" href="/stylesheets/vue.css?1777337443678.css">
+
+  <!-- Global styles END -->
+
+  
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MH4SWT');</script>
+  <!-- End Google Tag Manager -->
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="over-flow-x nodejs-training">
+  <div id="app">
+    <nav class="navbar navbar-light navbar-expand text-primary navbar-toggleable fixed-top shadow"
+  style="background-color: rgba(255, 255, 255, .85)">
+  <div class="container">
+    <a href="/" class="navbar-brand d-none d-sm-block">
+      
+      <style>
+
+.reduce-header  .header-logo {
+  height: 28px
+}
+.header-logo {
+  transition: height .3s;
+  height: 36px
+}
+</style>
+<svg class="header-logo" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#00251a"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#00251a"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#00251a"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#00251a"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#00251a"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#00251a"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#00251a"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#00251a"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+      
+    </a>
+    <div class="collapse navbar-collapse justify-content-end align-items-center">
+      
+      
+      <a id="cta-btn" href="#recommend"
+        class="btn btn-danger text-white ">
+        
+        立即免費預約
+        
+        <i class="far fa-gem"></i>
+      </a>
+      
+    </div>
+  </div>
+</nav>
+
+
+<!-- banner -->
+<div class="banner bg-primary-light">
+  <img src="../images/nodejs-training/banner.png" alt="【後端工程師學程】Node.js 直播班" class="img-fluid w-100 d-md-block d-none">
+  <img src="../images/nodejs-training/banner-sm.png" alt="【後端工程師學程】Node.js 直播班" class="img-fluid w-100 d-md-none d-block">
+</div>
+
+<!-- 你是不是有過這些困擾... -->
+<section class="bg-primary-light pain-points">
+  <div class="container">
+    <h2 class="title-light text-center">你是不是有過這些困擾...</h2>
+    <div class="row pain-points__list">
+      <div class="col-md-4">
+        <img src="../images/nodejs-training/api.png" alt="會串 API，卻看不懂資料在伺服器發生什麼事？" class="pain-points--images img-fluid">
+        <div class="pain-points__description">
+          <p class="m-0 text-center">會串 API，卻看不懂資料</p>
+          <p class="text-center mb-0">在伺服器發生什麼事？</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="../images/nodejs-training/crud.png" alt="只會基礎的 CRUD，真的能符合實務需求嗎？" class="pain-points--images img-fluid">
+        <div class="pain-points__description">
+          <p class="m-0 text-center">只會基礎的 CRUD，</p>
+          <p class="text-center mb-0">真的能符合實務需求嗎？</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="../images/nodejs-training/deploy.png" alt="本地端運行都沒問題，但部署時總不順利？" class="pain-points--images img-fluid">
+        <div class="pain-points__description">
+          <p class="m-0 text-center">本地端運行都沒問題，</p>
+          <p class="text-center mb-0">但部署時總不順利？</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 課程核心價值 -->
+<section class="course-core-values bg-primary-light-2 position-relative">
+  <svg xmlns="http://www.w3.org/2000/svg" width="359" height="235" viewBox="0 0 359 235" fill="none" class="position-absolute top-0 start-0 d-none d-xl-block">
+    <path d="M-22 169.435C-21.5658 173.028 -18.4474 184.038 -9.92849 197.315C-2.43582 208.993 11.6304 218.066 24.3715 224.79C34.1399 229.946 48.277 231.066 64.0527 232.737C75.3362 233.931 87.552 230.954 101.637 225.998C113.922 221.676 133.245 208.197 158.086 190.894C175.862 178.512 184.063 167.909 188.314 160.593C196.015 147.342 190.857 131.927 185.919 122.494C182.202 115.393 175.167 112.514 170.584 111.463C164.551 110.08 159.665 111.93 157.116 114.241C153.404 117.607 152.639 126.066 153.895 136.364C156.109 154.509 168.879 163.486 179.305 171.121C185.695 175.801 193.7 176.327 200.739 176.593C220.802 177.351 240.488 161.353 257.143 148.523C266.331 141.445 275.683 131.567 285.492 120.347C295.301 109.127 304.942 96.4435 315.941 78.3946C326.939 60.3456 339.002 37.3153 345.637 24.2724C353.114 8.8719 354.442 2.61391 355.348 -4.743C355.793 -8.27097 356.207 -11.382 357 -16" stroke="#FFCC00" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="401" height="270" viewBox="0 0 401 270" fill="none" class="position-absolute bottom-0 end-0 z-0 course-core-values__deco-1920">
+    <path d="M1.69342 289.204C-1.10942 252.154 27.1031 212.442 51.3151 187.06C60.0074 177.947 78.2669 159.311 92.5882 159.278C103.646 159.252 109.978 174.234 113.152 183.056C117.317 194.632 114.469 202.399 104.649 210.133C100.65 213.283 99.4235 208.994 98.4551 205.433C96.1511 196.961 99.0184 189.002 103.15 181.574C116.814 157.008 144.393 134.315 170.608 124.511C179.965 121.012 194.582 115.948 199.574 128.639C204.386 140.872 200.427 146.907 191.775 156.386C188.359 160.129 182.242 163.54 184.783 154.283C189.613 136.685 212.238 119.165 224.212 106.612C238.125 92.0256 252.201 80.6072 271.276 73.7445C281.793 69.9607 298.857 62.1747 308.111 73.4247C310.378 76.18 315.717 88.2644 313.006 91.5242C311.631 93.1775 301.994 100.504 303.699 93.2561C305.693 84.7777 317.7 77.5417 323.895 72.3647C339.118 59.6443 353.737 47.7832 371.058 37.8454C396.208 23.4166 421.758 11.2913 448.972 1.50041" stroke="#FFCC00" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+  <img src="../images/nodejs-training/rectangle.png" alt="課程核心價值" class="position-absolute bottom-0 start-0 course-core-values__deco-1920" style="max-height: 324px;">
+  <div class="container z-1 position-relative">
+    <h2 class="title-light text-center">課程核心價值</h2>
+    <div class="row justify-content-center course-core-values__tagline-wrapper">
+      <div class="col-xl-8">
+        <div class="course-core-values__tagline">
+          <span class="course-core-values__arrow course-core-values__arrow--left">▶</span>
+          <div class="py-4">
+            <p class="m-0 text-center">
+              不需要重新學習新語言，也能成為<br>
+              具備企業級系統開發思維的後端工程師
+            </p>
+          </div>
+          <span class="course-core-values__arrow course-core-values__arrow--right">◀</span>
+        </div>
+      </div>
+    </div>
+    <div class="row gy-4 course-core-values__list">
+      <div class="col-xl-4 d-flex justify-content-center">
+        <div class="course-core-values-description">
+          <h3 class="course-core-values-description__title text-center mb-4">\\ 不再盲目串接 //</h3>
+          <p class="course-core-values-description__content text-center">不只會接收資料，這門課帶你親手設計架構、理解伺服器運作邏輯。</p>
+        </div>
+      </div>
+      <div class="col-xl-4 d-flex justify-content-center">
+        <div class="course-core-values-description">
+          <h3 class="course-core-values-description__title text-center mb-4">\\ 深耕資料結構 //</h3>
+          <p class="course-core-values-description__content text-center">程式會動是基礎，更要學會設計足以支撐高併發、大數據的穩定架構。</p>
+        </div>
+      </div>
+      <div class="col-xl-4 d-flex justify-content-center">
+        <div class="course-core-values-description">
+          <h3 class="course-core-values-description__title text-center mb-4">\\ 掌握交付能力 //</h3>
+          <p class="course-core-values-description__content text-center">從程式碼開發到 Docker 容器化部署，帶你走完後端開發的最後一哩路。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 系統化學習路徑 -->
+<section class="system-lean bg-primary-dark position-relative">
+  <div class="container system-lean__container">
+    <h2 class="title-light text-center mb-4">系統化學習路徑</h2>
+    <p class="system-lean__sub-title text-center">我們提供豐富的陪跑資源，給你充實的線上學習體驗、真正學會 Node.js 後端！</p>
+
+    <!-- 上半部份 -->
+    <div class="row gy-4">
+      <div class="col-xl-4">
+        <div class="system-lean__card">
+          <p class="system-lean__card__title mb-0">12+ <span class="system-lean__card__title-unit">小時</span></p>
+          <p class="system-lean__card__subtitle">預習影音課程</p>
+          <p class="system-lean__card__content">基礎先備知識、環境建置說明，報名後就能觀看，幫你在上課前預先打底。</p>
+          <hr class="system-lean__card__divider">
+          <p class="system-lean__card__conclusion">
+            <img src="../images/nodejs-training/star-2.svg" alt="star" class="img-fluid me-2">
+            課前充足預習讓學習成效 UPUP !
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="system-lean__card">
+          <p class="system-lean__card__title mb-0">11 <span class="system-lean__card__title-unit">堂</span></p>
+          <p class="system-lean__card__subtitle">講師直播教學</p>
+          <p class="system-lean__card__content">6 月～8 月中每週一堂，線上直播與講師即時互動，不把問題帶回家。</p>
+          <hr class="system-lean__card__divider">
+          <p class="system-lean__card__conclusion">
+            <img src="../images/nodejs-training/star-2.svg" alt="star" class="img-fluid me-2">
+            還有錄影可以重複觀看！
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="system-lean__card">
+          <p class="system-lean__card__title mb-0">46 <span class="system-lean__card__title-unit">個</span></p>
+          <p class="system-lean__card__subtitle">每日任務</p>
+          <p class="system-lean__card__content">將知識量拆成好吸收的每日任務練習，養成學習習慣與解題手感。</p>
+          <hr class="system-lean__card__divider">
+          <p class="system-lean__card__conclusion">
+            <img src="../images/nodejs-training/star-2.svg" alt="star" class="img-fluid me-2">
+            輕鬆升級有成就感！
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4">
+        <div class="system-lean__card">
+          <p class="system-lean__card__title mb-0">10 <span class="system-lean__card__title-unit">份</span></p>
+          <p class="system-lean__card__subtitle">實戰作業</p>
+          <p class="system-lean__card__content">藉由課後的實作練習，確保知識學習後也能輸出通暢。</p>
+          <hr class="system-lean__card__divider">
+          <p class="system-lean__card__conclusion">
+            <img src="../images/nodejs-training/star-2.svg" alt="star" class="img-fluid me-2">
+            用作業練習驗證所學 !
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="system-lean__card">
+          <p class="system-lean__card__title mb-0">6 <span class="system-lean__card__title-unit">場</span></p>
+          <p class="system-lean__card__subtitle">助教直播講解作業</p>
+          <p class="system-lean__card__content">助教現場示範作業怎麼做，也能學習助教的解題思維。</p>
+          <hr class="system-lean__card__divider">
+          <p class="system-lean__card__conclusion">
+            <img src="../images/nodejs-training/star-2.svg" alt="star" class="img-fluid me-2">
+            完成作業的一大助力！
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="system-lean__card">
+          <p class="system-lean__card__title mb-0">100 <span class="system-lean__card__title-unit">％</span></p>
+          <p class="system-lean__card__subtitle">回覆的助教支援</p>
+          <p class="system-lean__card__content">任務由真人助教批改並給予回饋，DC 線上討論區也有助教駐點回覆問題。</p>
+          <hr class="system-lean__card__divider">
+          <p class="system-lean__card__conclusion">
+            <img src="../images/nodejs-training/star-2.svg" alt="star" class="img-fluid me-2">
+            遇到卡關也不用擔心！
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="../images/nodejs-training/system-lean.png" alt="system-lean" class="img-fluid position-absolute bottom-0 end-0 d-none d-lg-block" style="max-height: 431px;">
+</section>
+
+<!-- 課程直播 -->
+<section class="courses-live position-relative">
+  <img src="../images/nodejs-training/deco.png" alt="" class="img-fluid position-absolute top-0 start-0 courses-live__deco" style="max-width: 600px">
+  <img src="../images/nodejs-training/deco.png" alt="" class="img-fluid position-absolute bottom-0 end-0 courses-live__deco" style="max-width: 600px">
+  <div class="container z-1 position-relative">
+    <div class="courses-live__title-wrapper text-center">
+      <div class="courses-live__title">
+        <img src="../images/nodejs-training/course-live.png" alt="" class="courses-live__title-bg img-fluid">
+        <h2 class="courses-live__title-text">課程直播</h2>
+      </div>
+    </div>
+    <div class="courses-live__content mt-60">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="courses-live__list">
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">00</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/06/05 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">開學典禮</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">01</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/06/12 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第一堂：Node.js 基礎（內建模組操作）</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">02</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/06/17 (三) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第二堂：NPM 與套件管理</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">03</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/06/26 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第三堂：Express.js 基礎</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">04</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/07/03 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第四堂：Node.js 進階操作（Cookie / Header / Axios）</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">05</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/07/10 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第五堂：PostgreSQL 資料庫基礎概念 1</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="courses-live__list">
+            <li class="courses-live__item courses-live__item--spacer" aria-hidden="true">
+              <div class="courses-live__item-line">
+                <span class="courses-live__item-connector courses-live__item-connector--dashed"></span>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">06</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/07/17 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第六堂：PostgreSQL 資料庫基礎概念 2</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">07</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/07/24 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第七堂：資料庫進階概念與效能</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">08</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/07/31 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第八堂：TypeORM Migration / Seeding</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">09</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/08/07 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第九堂：Node.js 與 PostgreSQL 整合</div>
+              </div>
+            </li>
+            <li class="courses-live__item">
+              <div class="courses-live__item-line">
+                <img src="../images/nodejs-training/sparkle.svg" alt="" class="courses-live__item-star">
+                <span class="courses-live__item-connector"></span>
+              </div>
+              <div class="courses-live__item-number">10</div>
+              <div class="courses-live__item-body">
+                <div class="courses-live__item-date">2026/08/14 (五) 20:00 ~ 22:30</div>
+                <div class="courses-live__item-title">第十堂：伺服器部署與容器化挑戰</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 專業講師 -->
+<section class="teachers bg-primary-light position-relative overflow-hidden">
+  <div class="container position-relative z-1">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-12">
+        <div class="teachers__heading">
+          <h2 class="title-light teachers__title d-flex flex-column position-relative m-0 d-none d-lg-block">
+            專業講師
+            <img src="../images/nodejs-training/title-underline.png" alt="" class="teachers__underline d-none d-lg-block">
+          </h2>
+          <h2 class="title-light text-center d-lg-none">
+            專業講師
+          </h2>
+        </div>
+
+        <div class="teachers__card">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="teachers__info">
+                <div class="teachers__name-row">
+                  <div class="teachers__name-group">
+                    <img src="../images/nodejs-training/star.svg" alt="" class="teachers__star">
+                    <span class="teachers__name">洧杰</span>
+                  </div>
+                  <span class="teachers__badge">六角學院校長</span>
+                </div>
+                <hr class="teachers__divider">
+                <ul class="teachers__bio">
+                  <li>影音課授課學生數超過 30,000</li>
+                  <li>火箭隊軟體培訓營前端教練</li>
+                  <li>Webconf 2025 研討會共同召集人</li>
+                  <li>ModernWeb、MOPCON 技術研討會講者</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <img src="../images/nodejs-training/teacher-yu.png" alt="洧杰" class="teachers__photo d-none d-lg-block">
+          <img src="../images/nodejs-training/teacher_sm.png" alt="洧杰" class="d-lg-none d-block img-fluid position-absolute bottom-0 end-0 teachers__photo-sm">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 誰適合這門課 -->
+<section class="target-audience bg-primary-dark">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="target-audience__heading d-flex justify-content-center align-items-center gap-3">
+          <img src="../images/nodejs-training/star.svg" alt="" class="target-audience__star">
+          <h2 class="title-light m-0">誰適合這門課</h2>
+          <img src="../images/nodejs-training/star.svg" alt="" class="target-audience__star">
+        </div>
+        <div class="row g-4 mt-0">
+          <div class="col-md-6">
+            <div class="target-audience__card">
+              <img src="../images/nodejs-training/target-avatar-1.png" alt="" class="target-audience__avatar">
+              <p class="target-audience__text m-0">已掌握 JavaScript 基礎的前端工程師</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="target-audience__card">
+              <img src="../images/nodejs-training/target-avatar-2.png" alt="" class="target-audience__avatar">
+              <p class="target-audience__text m-0">想學習雲端架構部署的前、後端工程師</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 這堂課不適合新手 -->
+<section class="not-for-beginner">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="not-for-beginner__heading text-center">
+          <h2 class="not-for-beginner__title m-0 position-relative">
+            <img src="../images/nodejs-training/alert-note.png" alt="注意!" class="not-for-beginner__alert">
+            <span class="not-for-beginner__title-text">這堂課不適合「</span><span class="not-for-beginner__highlight">新手</span><span class="not-for-beginner__bracket-end">」</span>
+          </h2>
+          <p class="not-for-beginner__subtitle mt-3 m-0">建議您對 JS 已有掌握，再來挑戰這門後端課，學習體驗更佳！</p>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="not-for-beginner__card">
+              <p class="m-0">略懂 HTML、CSS 或只有 VibeCoding 經驗的初心者</p>
+              <img src="../images/nodejs-training/x-mark.svg" alt="" class="not-for-beginner__x">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="not-for-beginner__card">
+              <p class="m-0">正在研究 JavaScript、沒接過 API 的小萌新</p>
+              <img src="../images/nodejs-training/x-mark.svg" alt="" class="not-for-beginner__x">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="not-for-beginner__card">
+              <p class="m-0">還在學三大框架，不熟悉元件設計的半入職者</p>
+              <img src="../images/nodejs-training/x-mark.svg" alt="" class="not-for-beginner__x">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 挑選適合你的課 -->
+<section id="recommend" class="recommend position-relative overflow-hidden">
+  <img src="../images/nodejs-training/recommend-deco-bg-left.svg" alt="" class="recommend__deco recommend__deco--bg-left d-none d-lg-block">
+  <img src="../images/nodejs-training/recommend-deco-star-right.svg" alt="" class="recommend__deco recommend__deco--star-right d-none d-lg-block">
+  <img src="../images/nodejs-training/recommend-deco-star-left.svg" alt="" class="recommend__deco recommend__deco--star-left d-none d-lg-block">
+  <img src="../images/nodejs-training/recommend-deco-swoosh-right.svg" alt="" class="recommend__deco recommend__deco--swoosh-right d-none d-lg-block">
+  <div class="container position-relative z-1">
+    <h2 class="title-dark text-center m-0">挑選適合你的課</h2>
+    <div class="row g-4 justify-content-center recommend__list">
+      <div class="col-lg-6">
+        <div class="recommend__card">
+          <img src="../images/nodejs-training/recommend-card-1.png" alt="【後端工程師學程】Node.js 直播班" class="recommend__banner">
+          <h3 class="recommend__course-title">【後端工程師學程】Node.js 直播班</h3>
+          <div class="recommend__services">
+            <span class="recommend__services-tag">服務包含</span>
+            <ul class="recommend__services-list">
+              <li>10+1 堂直播課程（含開學典禮，2026/06/05~08/14）</li>
+              <li>12 小時以上的後端影音課程</li>
+              <li>10 個主線任務練習題</li>
+              <li>46 天每日任務練習題</li>
+              <li>6 場助教直播講解作業</li>
+              <li>課程期間無次數限制的作業程式碼批改</li>
+             <li>一年時間課程錄影無限次數觀看</li>
+            </ul>
+          </div>
+          <!-- <div class="recommend__pricing">
+            <p class="recommend__price m-0">
+              <span class="recommend__price-currency">NT$</span>
+              <span class="recommend__price-amount">14,500</span>
+            </p>
+            <p class="recommend__price-original m-0">NT$ 40,257</p>
+          </div> -->
+          <a
+            class="recommend__cta lead-click mt-auto"
+            style="font-size: 24px;"
+            target="_blank" rel="noopener" href="https://r.botbonnie.com/tGYw6"
+            >立即免費預約</a>
+          <!-- <a
+            class="recommend__cta tracking-link"
+            style="font-size: 24px;"
+            title="開啟【後端工程師學程】Node.js 直播班支付流程"
+            href="#"
+            data-price="8000"
+            data-bs-toggle="modal"
+            data-bs-target="#orderModal"
+            data-title="【後端工程師學程】Node.js 直播班"
+            data-type="product"
+            data-id="nodejs-training"
+            data-forward="true"
+            itemprop="url"
+            >免費預約，享早鳥優惠！</a> -->
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="recommend__card">
+          <img src="../images/nodejs-training/recommend-card-2.png" alt="Node.js+雲端：後端就業培訓班＆專題班" class="recommend__banner">
+          <h3 class="recommend__course-title">Node.js+雲端：後端就業培訓班＆專題班</h3>
+          <div class="recommend__services">
+            <span class="recommend__services-tag">服務包含</span>
+            <ul class="recommend__services-list">
+              <li>2 門培訓課程（Node.js、雲端架構部署）+ 1 門專題課程</li>
+              <li>共 22 堂直播課程（2026/06/12~2026/12/02）</li>
+              <li>25 小時以上的後端影音內容</li>
+              <li>額外 124 小時六角前端影音（全組合包+TypeScript 影音課程）</li>
+              <li>專題作品製作時間：2026/12/04~2027/03/05</li>
+              <li>課程期間無次數限制的助教程式批改、專題教練諮詢</li>
+              <li>各門課皆有一年時間課程錄影無限次數觀看</li>
+            </ul>
+          </div>
+          <!-- <div class="recommend__pricing">
+            <p class="recommend__price m-0">
+              <span class="recommend__price-currency">NT$</span>
+              <span class="recommend__price-amount">48,500</span>
+            </p>
+            <p class="recommend__price-original m-0">NT$ 127,456</p>
+          </div> -->
+          <a
+            class="recommend__cta lead-click mt-auto"
+            style="font-size: 24px;"
+            target="_blank" rel="noopener" href="https://r.botbonnie.com/BVuXI"
+            >立即免費預約</a>
+          <!-- <a
+            class="recommend__cta tracking-link"
+            style="font-size: 24px;"
+            title="開啟【後端工程師學程】Node.js 直播班支付流程"
+            href="#"
+            data-price="8000"
+            data-bs-toggle="modal"
+            data-bs-target="#orderModal"
+            data-title="【後端工程師學程】Node.js 直播班"
+            data-type="product"
+            data-id="nodejs-training"
+            data-forward="true"
+            itemprop="url"
+            >免費預約，享早鳥優惠！</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 銀角零卡 -->
+<!-- <section class="zingala">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-4">
+      <div class="col-lg-4">
+        <div class="zingala__intro">
+          <img src="../images/nodejs-training/zingala-logo.png" alt="zingala 銀角零卡" class="zingala__logo">
+          <h2 class="zingala__title m-0">
+            <span class="zingala__title-yellow">銀角零卡</span>
+            <span class="zingala__title-white">分期</span>
+          </h2>
+          <p class="zingala__subtitle m-0">讓你輕鬆學習不受限！</p>
+          <div class="zingala__note">
+            <p class="m-0">銀角無卡選擇 12 期(含)以上</p>
+            <p class="m-0">滿 $40,000，享<strong class="zingala__note-highlight">現折 $1000</strong> （限量 30 位）</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="zingala__table-wrapper">
+          <table class="zingala__table">
+            <thead>
+              <tr>
+                <th class="zingala__table-head zingala__table-head--method">付款方式</th>
+                <th class="zingala__table-head zingala__table-head--basic">
+                  銀角零卡
+                </th>
+                <th class="zingala__table-head zingala__table-head--advanced">
+                  信用卡
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="zingala__table-method">原價</td>
+                <td class="zingala__table-price">NT$14,500</td>
+                <td class="zingala__table-price">NT$14,500</td>
+              </tr>
+              <tr>
+                <td class="zingala__table-method">一次付清</td>
+                <td class="zingala__table-price">NT$14,500</td>
+                <td class="zingala__table-price">NT$14,500</td>
+              </tr>
+              <tr>
+                <td class="zingala__table-method">3 期（零利率）</td>
+                <td class="zingala__table-price">NT$4,834</td>
+                <td class="zingala__table-price">NT$4,834</td>
+              </tr>
+              <tr>
+                <td class="zingala__table-method">6 期（零利率）</td>
+                <td class="zingala__table-price">NT$2,417</td>
+                <td class="zingala__table-price">NT$2,417</td>
+              </tr>
+              <tr>
+                <td class="zingala__table-method">9 期（1.5%）</td>
+                <td class="zingala__table-price">NT$1,638</td>
+                <td class="zingala__table-price">X</td>
+              </tr>
+              <tr>
+                <td class="zingala__table-method">12 期（2.5%）</td>
+                <td class="zingala__table-price">NT$1,239</td>
+                <td class="zingala__table-price">X</td>
+              </tr>
+              <tr>
+                <td class="zingala__table-method">18 期（5%）</td>
+                <td class="zingala__table-price">NT$846</td>
+                <td class="zingala__table-price">X</td>
+              </tr>
+              <tr>
+                <td class="zingala__table-method">24 期（7.5%）</td>
+                <td class="zingala__table-price">NT$650</td>
+                <td class="zingala__table-price">X</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zingala__footnotes mt-3">
+          <p class="m-0">＊實際金額請參考上方優惠價</p>
+          <p class="m-0">＊以上金額皆不包含銀角額外手續費</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- 免費說明會 -->
+<!-- <section class="briefing">
+  <div class="container">
+    <div class="briefing__heading text-center">
+      <h2 class="title-dark m-0">免費課程說明會</h2>
+      <p class="briefing__subtitle m-0 mt-3">還想了解更多課程內容嗎？來看看免費課程說明會吧！</p>
+    </div>
+    <div class="ratio ratio-16x9 my-4">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VZrhpiMJmSk?si=FqqVpPtGxBV0X7-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <h5 class="text-center">｜時間軸｜</h5>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">04:13</p>
+      <p class="col-9 col-md-5 mb-0">我適合上這門課嗎？完全沒寫過程式也能參加嗎？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">08:32</p>
+      <p class="col-9 col-md-5 mb-0">10 小時預習影音內容</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">10:05</p>
+      <p class="col-9 col-md-5 mb-0">3 堂直播課的教學方式</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">17:46</p>
+      <p class="col-9 col-md-5 mb-0">核心專案實作：接手做到一半的系統，模擬「健身房平台開發情境」</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">24:36</p>
+      <p class="col-9 col-md-5 mb-0">新手卡關怎麼辦？Discord 專屬社群、每日任務來幫你</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">28:38</p>
+      <p class="col-9 col-md-5 mb-0">【加碼實體活動】北中南實體同學會（免費參加）</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">29:24</p>
+      <p class="col-9 col-md-5 mb-0">【課程費用】超殺 29 折！千元有找，砍到骨折</p>
+    </div>
+    <h5 class="text-center mt-2">｜精選 QA 問答｜（轉職/薪資/職涯）</h5>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">46:31</p>
+      <p class="col-9 col-md-5 mb-0">新手入行，該選前端還是後端？哪個比較好切入？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">53:30</p>
+      <p class="col-9 col-md-5 mb-0">想進大公司或半導體業，需要補資管/資工碩士學歷嗎？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">56:56</p>
+      <p class="col-9 col-md-5 mb-0">後端語言選擇困難：PHP、Node.js、Python、Java 該學哪一個？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:09:45</p>
+      <p class="col-9 col-md-5 mb-0">現在才學程式會不會太晚？會不會被 AI 取代？</p>
+    </div>
+    <div class="row justify-content-center">
+      <p class="col-2 text-end mb-0">1:20:20</p>
+      <p class="col-9 col-md-5 mb-0">30~40歲以上轉職還有機會嗎？校長的真心話與數據分享</p>
+    </div>
+  </div>
+</section> -->
+
+<!-- Q＆A -->
+<section class="faq">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h2 class="faq__title title-light m-0">常見問題 FAQ</h2>
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion faq__accordion" id="faqAccordion">
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header m-0">
+              <button class="accordion-button faq__button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
+                <span class="faq__mark">?</span>
+                <span class="faq__question">這門課建議要有 JavaScript 基礎，什麼樣的程度適合參加？</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                <p class="m-0">本課程聚焦在「後端系統建構」，不會著墨於 JavaScript 基礎說明，為了在課程中有較好的吸收與學習體驗，我們預期您已具備以下 JavaScript 基礎：</p>
+                <ul class="m-0">
+                  <li>基礎語法：熟悉變數宣告 (const/let)、解構賦值、陣列操作。</li>
+                  <li>流程控制：理解 if/else、for 迴圈。</li>
+                  <li>物件導向：了解物件（Object）與函式（Function）的基本用法。</li>
+                  <li>非同步初步概念：聽過或曾使用過 AJAX、Promise。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header m-0">
+              <button class="accordion-button faq__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                <span class="faq__mark">?</span>
+                <span class="faq__question">我目前在職和在學，適合參加嗎？</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                <p class="m-0">非常適合！課程採 <strong>線上陪跑式學習</strong>，無論您是在職、在學或者全職學習，都能根據時間安排進度：</p>
+                <ul class="m-0">
+                  <li><strong>平日晚上 20:00 直播課</strong>（大多為週五、部分週三，並提供完整錄影，可隨時回看）。</li>
+                  <li><strong>影音教學資源開課當天全部釋出</strong>，可先行預習，依照自己的節奏學習。</li>
+                  <li><strong>每日小任務（20～30 分鐘即可完成）</strong>，幫助持續累積學習進度。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header m-0">
+              <button class="accordion-button faq__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+                <span class="faq__mark">?</span>
+                <span class="faq__question">請問該課程的直播課時間是什麼時候？</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                <p class="m-0">以下為「【後端工程師學程】Node.js 直播班」的直播日期，皆為晚上 20:00~22:30：</p>
+                <ul class="m-0">
+                  <li>開學典禮：2026/6/5 (五)</li>
+                  <li>直播課程：2026/6/12 (五)、6/17 (三)、6/26 (五)、7/3 (五)、7/10 (五)、7/17 (五)、7/24 (五)、7/31 (五)、8/7 (五)、8/14 (五)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header m-0">
+              <button class="accordion-button faq__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
+                <span class="faq__mark">?</span>
+                <span class="faq__question">有幾天直播時段沒辦法配合的話，會有錄影影片嗎？觀看期限到何時？</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                <p class="m-0">有的！我們直播錄影跟預習課程檔案都會保留在課程影音平台，方便學員在觀看期限內隨時回平台回顧。本課程開放觀看至 2027/06/13 (日) 23:59。</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header m-0">
+              <button class="accordion-button faq__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+                <span class="faq__mark">?</span>
+                <span class="faq__question">除了老師直播外，我有問題該怎麼辦？</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                <p class="m-0">我們的系統會提供課程問答專區，線上的助教都會在發問後 48 小時工作日內回覆；同時也會提供專屬的 Discord 作業討論頻道，讓您與助教、同學一起互動交流！</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header m-0">
+              <button class="accordion-button faq__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">
+                <span class="faq__mark">?</span>
+                <span class="faq__question">我要怎麼開始上課？</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                <p class="m-0">成功購買課程後，六角學院將會使用 Email 進行開課通知，包含需開通的課程平台說明，請確保您的信箱能收取來自 <a href="mailto:service@hexschool.com">service@hexschool.com</a> 的信件。</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq__item">
+            <h3 class="accordion-header m-0">
+              <button class="accordion-button faq__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7">
+                <span class="faq__mark">?</span>
+                <span class="faq__question">請問「【後端工程師學程】Node.js 直播班」的退費標準？</span>
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq__body">
+                <p>本課程之開課日為 2026/06/12 (五)，請依照下列規範進行退費申請：</p>
+                <ol>
+                  <li>
+                    培訓班開課日一個月前（～2026/05/12）要求退費者，全額退費。
+                    <ul>
+                      <li>若已觀看預習影音課程達 10% 以上，僅能退 90% 費用。</li>
+                      <li>未觀看預習影音課程可全額退費。</li>
+                    </ul>
+                  </li>
+                  <li>
+                    培訓班開課七日前（2026/05/13～06/04）申請退費者，退費 90%。
+                    <ul>
+                      <li>若已觀看預習影音課程達 10% 以上，僅能退 70% 費用。</li>
+                      <li>未觀看預習影音課程可退費 90%。</li>
+                    </ul>
+                  </li>
+                  <li>
+                    培訓班開課前七日至開課前（2026/06/05～06/11），退費 80%。
+                    <ul>
+                      <li>若已觀看預習影音課程達 10% 以上，僅能退 60% 費用。</li>
+                      <li>未觀看預習影音課程可退費 80%。</li>
+                    </ul>
+                  </li>
+                  <li>
+                    培訓班開課日 15 天內（2026/06/12～06/26）申請退費者，退費用 50%。
+                    <ul>
+                      <li>若已觀看預習影音課程達 10% 以上，不予退費。</li>
+                      <li>未觀看預習影音課程可退費 50%。</li>
+                    </ul>
+                  </li>
+                  <li>開課日 15 天始（2026/06/27 起）申請退費者，不得申請退費。</li>
+                  <li>學院因故未能開班上課，應全額退還學員已繳費用。</li>
+                </ol>
+                <p>若因個人因素導致無法獲取課程資訊，進而影響課程參與（例如：信箱無法收信、未開通課程、未加入 Discord 頻道等），本課程恕無法因此提供退費、延期或轉讓。六角學院將不受理此申請，亦無法因此提供額外補償。</p>
+                <p>建議報名後務必確認課程通知信件及加入相關平台，若有問題請儘早聯繫客服，我們將協助您完成設定。</p>
+                <p>退費工作流程約 3~5 工作日，請來信告知要退費的直播課程並寄信至<a href="mailto:service@hexschool.com">六角客服信箱</a>，信件請附上<strong>註冊 mail、訂單編號、購買時間</strong>，會有小幫手協助進行退款。請注意，如果你是 ATM 轉帳、分期或是超商交易，請一併附上個人銀行帳戶，會以匯款方式退回原繳款人帳戶；如果是信用卡一次付清，則退回原信用卡帳戶。其他退費說明請見<a href="https://www.hexschool.com/qa/#%E7%9B%B4%E6%92%AD%E7%8F%AD%E9%80%80%E8%B2%BB%E8%A6%8F%E5%AE%9A" target="_blank" rel="noopener noreferrer">直播班退費規定</a>。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="text-center my-4 container line-vueTraining">
+  <p>P.S.：六角學院也有 line@ 嘍，歡迎加入隨時獲得六角學院第一手資訊！</p>
+  <!-- 電腦版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/qgbMS" class="m-y-1 mp-click d-none d-md-block"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+  <!-- 行動版 LINE -->
+  <a target="_blank" rel="noopener" href="https://hex.school/AmmnC" class="m-y-1 mp-click d-md-none"><img height="36" border="0" alt="加入好友"
+      src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
+</div>
+
+
+
+  <nav data-promotions-root="page-footer-clock"
+     data-promotions-classes="page-footer-clock"
+     data-page-id="nodejs-training"
+     class="navbar-fixed-bottom text-center fixed-bottom py-2"
+     hidden>
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-md-center justify-content-between w-100">
+      <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-end pr-md-3 pr-0">
+        <span class="me-md-3 fw-bold text-start" data-promotions-slot="page-footer-clock-words"></span>
+        <span class="me-md-3 fw-bold text-start" data-promotions-group="page-footer-clock-slogan" hidden>
+          <span data-promotions-slot="page-footer-clock-slogan"></span>
+        </span>
+        <div class="d-flex justify-content-md-center text-nowrap">
+          <span data-promotions-group="page-footer-clock-time" hidden>
+            <span class="clock m-r-1 fw-bold"></span>
+          </span>
+        </div>
+      </div>
+      <div class="d-flex justify-content-md-start justify-content-end ps-md-3">
+        <a href="#" class="btn btn-dark btn-sm rounded-0 lead-click" data-promotions-slot="page-footer-clock-event-link">
+          <span data-promotions-slot="page-footer-clock-event-link-text"></span>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<input type="hidden" id="footer-clock" value="">
+
+
+
+  </div>
+  
+<div class="modal fade" id="orderModal" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="
+      position: relative;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      outline: none;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+    ">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          <span>購買 </span>
+          <span v-html="text.title"></span>
+        </h4>
+        <!-- <button type="button" data-bs-dismiss="modal" class="btn-close" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <!-- <img src="/images/marketing/payment_flow.gif" class="img-fluid" alt=""> -->
+        <div class="text-xs-center text-center">
+          <div class="flex flex-center d-flex justify-content-center">
+            <a class="fb-track" href="https://hex.school/P12UP" target="_blank" title="Facebook 客服">
+              <i class="fab fa-facebook-messenger rounded-0 my-3" style="font-size: 40px; color: rgb(0, 132, 255)"></i>
+            </a>
+            <!-- <a href="https://hex.school/P12UP" target="_blank" class="fab fab-facebook mp-click" style="block-center" title="Facebook 客服">
+              <span class="h2">
+                <span class="fa fa-comments-o"></span>
+              </span>
+            </a> -->
+          </div>
+          <p class="m-t-1">
+            <strong>就算是小問題，我們也在線上立即回覆您。</strong><br>
+            <strong>付款後 <span class="text-danger">48hr</span> 內會收到開通課程連結</strong> <br>
+            <strong class="text-primary">優惠倒數：</strong><span class="text-primary clock"></span>
+          </p>
+        </div>
+        <div class="col-9 mx-auto">
+          <div class="bg-white p-3 mt-3">
+  <p class="mb-2">課程支援以下支付方式</p>
+  <ul class="list-unstyled d-flex flex-wrap mb-0" style="font-size: 14px;">
+    <li class="w-50">
+      <i class="far fa-credit-card"></i>
+      <span class="gl_fz-t3">信用卡</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-store"></i>
+      <span class="gl_fz-t3">超商付款</span>
+    </li>
+    <li class="w-50">
+      <i class="fas fa-money-check-alt"></i>
+      <span class="gl_fz-t3">ATM 轉帳</span>
+    </li>
+    <li class="w-50">
+      <span class="material-icons align-bottom" style="font-size: 20px;">
+        local_atm
+      </span>
+      <span class="gl_fz-t3">銀角零卡</span>
+    </li>
+  </ul>
+</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a v-if="text.forward" v-bind:href="text.paylink" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="前往付款">立即註冊</a>
+        <a v-else v-bind:href="text.paylink + '&coupon_code=' + (text.coupon || 'COUPON_FOR_HEXNEW_ORIGIN_PRICE')" target="_blank" class="btn w-100 btn-danger text-white btn-shadow-danger btn-radius btn-lg btn-thin" title="前往付款">立即註冊</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <!-- BEGIN PRE-FOOTER -->
+<div class="container my-3 my-5">
+  <div class="overflow">
+    <div class="fb-like" data-href="https://www.hexschool.com" data-layout="standard" data-action="like"
+      data-show-faces="true" data-share="true"></div>
+  </div>
+</div>
+
+
+<div class="footer bg-dark text-white pt-md-6 pt-4 pb-8">
+  
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-11">
+          <address class="d-flex justify-content-between flex-column flex-md-row">
+            <!-- undefined<br>
+          undefined<br>
+          undefined<br> -->
+            <!-- Phone: undefined<br> -->
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-f pe-2"></i>六角學院</a>
+            <a href="https://www.facebook.com/hexschool" target="_blank" class="d-block link-white font-link-big py-1"><i
+                class="fab fa-facebook-messenger pe-2"></i>m.me/hexschool</a>
+            <a href="mailto:service@hexschool.com" class="d-flex align-items-center link-white font-link-big py-1"><i
+                class="material-icons pe-2 font-link-big">mail</i>service@hexschool.com</a>
+          </address>
+          <div class="row justify-content-between align-items-end pt-md-6 pt-3">
+            <div class="col-md-5">
+              <ul class="list-unstyled">
+                <li><a href="/calendar/" class="d-block link-white font-link-small font-weight-light py-1">六角行事曆</a>
+                </li>
+                <li><a href="/courses/" class="d-block link-white font-link-small font-weight-light py-1">精選課程</a></li>
+                <li><a href="/archives/" class="d-block link-white font-link-small font-weight-light py-1">部落格</a></li>
+                <li><a href="/business/" class="d-block link-white font-link-small font-weight-light py-1">企業課程方案</a></li>
+                <li><a href="/qa/" class="d-block link-white font-link-small font-weight-light py-1">問與答</a></li>
+                <li><a href="/about/statement.html"
+                    class="d-block link-white font-link-small font-weight-light py-1">免責聲明</a></li>
+                <li><a href="/contract/" class="d-block link-white font-link-small font-weight-light py-1">網際網路服務契約</a></li>
+                <li><a href="/multi-talent/" class="d-block link-white font-link-small font-weight-light py-1">多角人才顧問有限公司</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 d-flex flex-column align-items-end pb-md-0 pb-5">
+              <a class="pt-4 pb-3 pt-md-1 pb-md-1" href="/" title="六角學院">
+                
+                <svg width="100px" height="24px" style="display: block" xmlns="http://www.w3.org/2000/svg" width="150.061" height="36" viewBox="0 0 150.061 36">
+    <title>六角學院</title>
+    <desc>六角學院</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polyline>
+        <polygon id="path-3" points="0 0.136333333 163.993313 0.136333333 163.993313 39 0 39"></polygon>
+    </defs>
+    <g id="logo-hexschool" transform="translate(80 19.192)">
+      <g id="logo-hexschool-2" data-name="logo-hexschool" transform="translate(-80 -19.192)">
+        <g id="天瓏">
+          <g id="hexschool-logo">
+            <path id="Fill-12" d="M34.691,18.688,27.469,31.844a1.8,1.8,0,0,1-1.133.687H11.893a1.8,1.8,0,0,1-1.133-.687L3.538,18.688a2.006,2.006,0,0,1,0-1.376L10.76,4.156a1.8,1.8,0,0,1,1.133-.687H26.336a1.8,1.8,0,0,1,1.133.687l7.221,13.156a2.006,2.006,0,0,1,0,1.376m3.084-2.694L30.1,2.005A4.2,4.2,0,0,0,26.794,0H11.436a4.2,4.2,0,0,0-3.3,2.005L.454,15.995a4.655,4.655,0,0,0,0,4.011L8.132,33.995A4.194,4.194,0,0,0,11.434,36H26.792a4.194,4.194,0,0,0,3.3-2.005l7.679-13.989a4.655,4.655,0,0,0,0-4.011" transform="translate(0)" fill="#FFFFFF"/>
+            <path id="Fill-13" d="M17.525,42.254H28.937V39.81H17.525Z" transform="translate(-9.822 -21.519)" fill="#FFFFFF"/>
+            <path id="Fill-14" d="M22.616,52.228H31.79V49.784H22.616Z" transform="translate(-12.675 -26.91)" fill="#FFFFFF"/>
+            <path id="Fill-15" d="M27.706,62.2h6.937V59.758H27.706Z" transform="translate(-15.528 -32.302)" fill="#FFFFFF"/>
+            <path id="Fill-16" d="M118.871,26.811a99.016,99.016,0,0,1,4.7,10.014.628.628,0,0,1,.036.5.565.565,0,0,1-.341.348l-.871.4a.494.494,0,0,1-.461.022.558.558,0,0,1-.3-.377,100.043,100.043,0,0,0-4.464-9.9.609.609,0,0,1-.09-.5.562.562,0,0,1,.31-.38l.7-.4a.5.5,0,0,1,.45-.072.545.545,0,0,1,.334.332m-6.816.923a39.046,39.046,0,0,1-4.443,10.014.556.556,0,0,1-.363.29.519.519,0,0,1-.442-.1l-.675-.4a.539.539,0,0,1-.31-.383.581.581,0,0,1,.114-.493A39.832,39.832,0,0,0,109.987,27a.548.548,0,0,1,.274-.406.477.477,0,0,1,.466,0l.958.355a.531.531,0,0,1,.358.3.6.6,0,0,1,.012.486M123.945,22.9v.047a.59.59,0,0,1-.146.478.5.5,0,0,1-.442.161H105.936a.5.5,0,0,1-.442-.161.59.59,0,0,1-.146-.478V22.9a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h7.6V18.5a.59.59,0,0,1,.146-.478.5.5,0,0,1,.442-.161h1.047a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478v3.764h7.6a.5.5,0,0,1,.442.161.59.59,0,0,1,.146.478" transform="translate(-56.801 -10.008)" fill="#FFFFFF"/>
+            <path id="Fill-17" d="M175.208,31.119h5.1V27.608h-5.1Zm0-4.643h5.1V23.13h-5.1Zm-6.467-4.548h4.987a30.962,30.962,0,0,0,2.374-2.663h-5.6a22.083,22.083,0,0,1-1.764,2.663Zm-.109,4.548h4.442V23.13h-4.443Zm-.22,4.643h4.659V27.608h-4.44a34.726,34.726,0,0,1-.22,3.511Zm3-13.716c-.088.189-.176.424-.305.707h6.576a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476v.047a1.281,1.281,0,0,1-.24.8,26.236,26.236,0,0,1-2.069,2.333h5.9a.5.5,0,0,1,.442.161.586.586,0,0,1,.146.476V34.913c0,2.5-.283,2.828-2.874,2.828-.261,0-1.154-.047-2.635-.094a.578.578,0,0,1-.61-.636c-.022-.4.2-.613.61-.589,1.393.047,2.178.118,2.4.118.936,0,.958-.024.958-1.555v-2.71H168.24a14.014,14.014,0,0,1-2,5.4.518.518,0,0,1-.38.3.493.493,0,0,1-.448-.159l-.632-.566a.627.627,0,0,1-.246-.4.659.659,0,0,1,.094-.47c1.328-2.357,1.851-5.161,1.851-10.016V24.45l-.914.8a.45.45,0,0,1-.455.163.484.484,0,0,1-.35-.352l-.22-.471a.675.675,0,0,1,.176-.872,19.281,19.281,0,0,0,4.769-6.881.594.594,0,0,1,.74-.4l.806.165a.481.481,0,0,1,.415.277.551.551,0,0,1-.023.524Z" transform="translate(-88.687 -9.197)" fill="#FFFFFF"/>
+            <path id="Fill-18" d="M230.691,21.485a26.556,26.556,0,0,1,2.352,1.321,11.159,11.159,0,0,0,1.437-1.534c-.392-.283-.827-.637-1.372-1.038a15.406,15.406,0,0,1-2.418,1.251m4.747-3.232a13.715,13.715,0,0,1-1.219,1.156l1.176.873a.548.548,0,0,1,.275.417.571.571,0,0,1-.166.479l-.261.354.022.024a.482.482,0,0,1,.2.849,11.339,11.339,0,0,1-1.241,1.18l1.176.873a.56.56,0,0,1,.268.418.582.582,0,0,1-.159.478l-.065.094a.539.539,0,0,1-.4.27.521.521,0,0,1-.446-.175c-.653-.519-1.154-.9-1.481-1.156a15,15,0,0,1-2.242,1.18.655.655,0,0,1-.806-.165c-.283-.283-.2-.59.22-.779a16.379,16.379,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.534.534,0,0,1-.2-.873l.176-.236-.261-.26a.489.489,0,0,1,.153-.873,10.807,10.807,0,0,0,1.7-.991c-.632-.4-1.154-.731-1.568-.944a.514.514,0,0,1-.325-.378.554.554,0,0,1,.129-.5.526.526,0,0,1,.342-.237.5.5,0,0,1,.4.1,19.886,19.886,0,0,1,2.09,1.133,12.045,12.045,0,0,0,1.132-1.133.61.61,0,0,1,.806-.212l.261.118c.414.189.5.519.2.849m-10.8.519c1.241-.142,2.7-.425,4.377-.779a.486.486,0,0,1,.458.05.562.562,0,0,1,.239.422.583.583,0,0,1-.076.481.5.5,0,0,1-.4.226c-.98.212-1.981.378-2.94.543l.044,1.274h2.722a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476q0,.283-.588.283h-2.678l.065,1.722h2.613a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.189-.2.307-.588.307h-2.57l.065,1.793h12.581l.044-1.793h-2.549a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.189.2-.307.588-.307h2.593l.044-1.722h-2.635a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476q0-.283.588-.283h2.678l.065-1.652h-2.874a.5.5,0,0,1-.442-.161.586.586,0,0,1-.145-.476c0-.307.2-.472.588-.472h4.506a.507.507,0,0,1,.45.17.594.594,0,0,1,.138.49l-.3,7.479h.7a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476v2.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-.98a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476V27.454H225.268V29.6a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161H223.7a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476v-2.6a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.675l-.283-6.913a.625.625,0,0,1,.126-.476.538.538,0,0,1,.418-.208m14.611,10.9a.8.8,0,0,1-.392.755,34.063,34.063,0,0,1-5.2,2.808H242.1a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.476c0,.354-.2.543-.588.543h-7.819v2.407c0,1.368-.327,1.6-2.853,1.6-.871,0-1.872-.024-3.027-.094a.555.555,0,0,1-.422-.183.642.642,0,0,1-.166-.454c-.022-.4.2-.613.61-.59,1.415.047,2.33.118,2.766.118.958,0,.849.118.849-.967v-1.84h-8.449a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.354.2-.543.588-.543h8.449v-.448a.587.587,0,0,1,.146-.476.5.5,0,0,1,.442-.161h.61a39.622,39.622,0,0,0,3.68-1.911h-9.886a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.476c0-.283.2-.448.588-.448H238.66c.392,0,.588.189.588.519" transform="translate(-120.2 -9.646)" fill="#FFFFFF"/>
+            <path id="Fill-19" d="M299.889,24.162a.579.579,0,0,1-.152.463.494.494,0,0,1-.435.151H293.27a.5.5,0,0,1-.442-.161.587.587,0,0,1-.146-.477q0-.567.588-.567H299.3a.527.527,0,0,1,.588.59m2.549-3.542v3.164a.587.587,0,0,1-.146.477.5.5,0,0,1-.442.161h-1a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-2.6h-7.993v2.6a.588.588,0,0,1-.146.477.5.5,0,0,1-.442.161h-.936a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477V20.621a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h4.2V18a.587.587,0,0,1,.146-.477.5.5,0,0,1,.442-.161h1.045a.5.5,0,0,1,.442.161.588.588,0,0,1,.146.477v1.983h4.681a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477m-.305,7.886a.587.587,0,0,1-.146.476.5.5,0,0,1-.442.161h-2.983v6.588c0,1.086-.153,1.063,1.067,1.063.7,0,.806,0,1.023-.638a17.833,17.833,0,0,0,.22-3c.022-.449.24-.661.632-.614l.849.094a.54.54,0,0,1,.418.209.628.628,0,0,1,.127.476c-.022.708-.022,1.133-.088,1.842a3.281,3.281,0,0,1-.784,2.479,2.209,2.209,0,0,1-.98.331,13.693,13.693,0,0,1-1.481.071c-2.722,0-3.157-.283-3.157-1.724V29.145h-1.263c-.044,4.935-1.459,7.225-5.923,9.067a.547.547,0,0,1-.447.033.6.6,0,0,1-.337-.317l-.065-.142a.556.556,0,0,1-.09-.5.5.5,0,0,1,.352-.347c3.2-1.393,4.312-3.377,4.4-7.792h-2.026a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477.579.579,0,0,1,.153-.463.493.493,0,0,1,.435-.151h10.539a.493.493,0,0,1,.435.151.579.579,0,0,1,.153.463M289.851,20.1c-1.154,3.188-1.677,4.321-2.09,5.454a7.613,7.613,0,0,1,1.96,5.242c0,1.983-.871,3-3.049,3a.535.535,0,0,1-.4-.152.618.618,0,0,1-.185-.414c-.065-.378.132-.614.545-.614h-.176c.936,0,1.306-.425,1.306-2.172a7.017,7.017,0,0,0-1.589-4.463.8.8,0,0,1-.109-.874,46.87,46.87,0,0,0,1.982-5.6h-2.593V37.716a.587.587,0,0,1-.145.477.5.5,0,0,1-.442.161h-.74a.5.5,0,0,1-.442-.161.588.588,0,0,1-.146-.477v-18.7a.588.588,0,0,1,.146-.477.5.5,0,0,1,.442-.161h5.291a.5.5,0,0,1,.442.161.587.587,0,0,1,.146.477V19.3a2.184,2.184,0,0,1-.152.8" transform="translate(-152.842 -9.728)" fill="#FFFFFF"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+                
+              </a>
+              <p class="m-0 text-end">Copyright © 2019 HexSchool.<br class="d-block d-md-none">All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB -->
+  <div class="fab-fixed-wrap with-navbar-bottom d-flex flex-column" id="footerContact">
+    <!-- 電腦版 LINE -->
+    <a href="https://hex.school/qgbMS" target="_blank"
+      class="fab-icon fab fab-line d-none d-md-flex align-items-center justify-content-center mp-click line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <!-- 行動版 LINE -->
+    <a href="https://hex.school/AmmnC" target="_blank"
+      class="fab-icon fab fab-line d-md-none align-items-center justify-content-center mp-click d-flex line-track"
+      title="LINE 客服">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/version_2019%2Fic-line.svg?alt=media&token=3d8841dd-406a-4026-ad2d-28488b8850dd"
+        alt="">
+    </a>
+    <a href="https://hex.school/P12UP" target="_blank"
+      class="fab-icon fab-facebook d-md-flex align-items-center justify-content-center mp-click d-flex fb-track"
+      title="Facebook 客服">
+      <i class="fab fa-facebook-messenger text-primary rounded-0" style="font-size: 40px;"></i>
+    </a>
+  </div>
+  <!-- FAB End -->
+  <script type="application/javascript">
+  function getIP(json) {
+    window.hexUseIP = json.ip
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP" defer></script>
+
+
+<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+
+<![endif]-->
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
+
+<script src="/js/bs4_vendor.js?1777337443678.js"></script>
+
+<script>window.__PROMOTIONS__ = {"footer_clock_campaigns":[{"start_time":"2026-04-17 00:00","end_time":"2026-05-03 23:59","words":"【新手友善】軟體工程師體驗營，即將開課！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/software-engineer-camping.html","event_link_text":"立即報名"},{"start_time":"2026-04-28 09:00","end_time":"2026-05-11 23:59","words":"【掌握後端趁現在】年度大課，即將開放報名！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/backend-training.html","event_link_text":"免費預約"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","words":"【早鳥 39 折】後端培訓班，熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/backend-training.html","event_link_text":"立即報名"}],"footer_clock_on_courses":false,"ad_campaigns":[{"start_time":"2026-04-17 00:00","end_time":"2026-05-03 23:59","title":"【新手友善】軟體工程師體驗營，即將開課！","description":null,"slogan_display":true,"clock":true,"btn_slogan":"立即報名","event_link":"/courses/software-engineer-camping.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"},{"start_time":"2026-04-28 09:00","end_time":"2026-05-11 23:59","title":"【掌握後端趁現在】年度大課，即將開放報名！","description":null,"slogan_display":true,"clock":true,"btn_slogan":"免費預約","event_link":"/courses/backend-training.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","title":"【早鳥 39 折】後端培訓班，熱烈報名中！","description":null,"slogan_display":true,"clock":true,"btn_slogan":"立即報名","event_link":"/courses/backend-training.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"}],"footer_dropdown_campaigns":[{"start_time":"2026-04-16 00:00","end_time":"2026-04-16 23:55","same_as_footer":false,"img":"https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/tutorials%2Fescape%2Fog.png?alt=media&token=c21fa06b-3510-44c3-9133-9e1cf3e5dd9a","title":"前端密室逃脫限時優惠","event_link":"/courses/escape.html","slogan":null}],"page_footer_clock_target":{"backend_training":[{"start_time":"2026-04-28 09:00","end_time":"2026-05-13 21:00","words":"【掌握後端趁現在】年度大課，即將開放報名！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"免費預約"},{"start_time":"2026-05-13 21:00","end_time":"2026-05-14 23:59","words":"【超早鳥優惠】快閃 3 小時，搶下最優價格！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-14 00:00","end_time":"2026-05-24 23:59","words":"【🙋‍♀️早鳥 38 折】熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","words":"【享 39 折】即將開學，熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"立即報名"}],"nodejs-training":[{"start_time":"2026-04-28 09:00","end_time":"2026-05-13 21:00","words":"【🙋‍♀️ 轉職後端工程師】即將開放報名","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"免費預約"},{"start_time":"2026-05-13 21:00","end_time":"2026-05-14 23:59","words":"【超早鳥優惠】快閃 3 小時，搶下最優價格！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-14 00:00","end_time":"2026-05-24 23:59","words":"【🙋‍♀️早鳥 38 折】熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","words":"【享 39 折】即將開學，熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"立即報名"}],"software-engineer-camping":[{"start_time":"2026-04-17 00:00","end_time":"2026-05-03 23:59","words":"【即將開學】千人推薦的軟體工程師入門課！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"點我報名"}]}};</script>
+
+<script src="/js/promotions-runtime.js?1777337443678.js"></script>
+
+
+<script src="/js/bs4_all.js?1777337443678.js"></script>
+
+
+<script src="/js/wow.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	new WOW().init();
+});
+</script>
+
+<!-- Facebook Like -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      :'760173380749493',
+    xfbml      : true,
+    version    :'v2.7'
+  });
+  // FB.AppEvents.logPageView('index');
+  // FB.AppEvents.logEvent("sentFriendRequestTesting");
+  // var params = {};
+  //   params['Title'] = '首頁';
+  //   FB.AppEvents.logEvent('pageView', null, params);
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook Like -->
+
+<!-- END PAGE-SPECIFIC PLUGINS -->
+
+<!-- BEGIN INTEGRATIONS -->
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+function generateKey(length) {
+  let key = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    key += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return key
+}
+
+function postConversionAPI (data) {
+  // https://shop.hexschool.com/api/tracker
+  $.ajax({
+    url: "https://shop.hexschool.com/api/tracker",
+    type: 'POST',
+    dataType : 'json',
+    contentType : 'application/json; charset=utf-8',
+    data: JSON.stringify(data),
+  });
+}
+
+function parseCookie() {
+  let cookieObj = {};
+  const cookieAry = document.cookie.split(';');
+  let cookie = '';
+  for (var i=0, l=cookieAry.length; i<l; ++i) {
+      cookie = cookieAry[i].trim();
+      cookie = cookie.split('=');
+      cookieObj[cookie[0]] = cookie[1];
+  }
+  return cookieObj;
+}
+
+function getCookieByName(name) {
+  let value = parseCookie()[name];
+  if (value) {
+      value = decodeURIComponent(value);
+  }
+  return value;
+}
+
+var h_event_time = Math.floor(new Date() / 1000);
+var h_event_id = generateKey(10);
+
+var h_all_data = {
+  type: 'facebook',
+  data: {
+    event_name: 'PageView',
+    event_time: h_event_time,
+    event_id: h_event_id,
+    action_source: 'website',
+    event_source_url: location.href,
+    user_data: {
+      fbc: getCookieByName('_fbc'),
+      fbp: getCookieByName('_fbp'),
+      client_user_agent: navigator.userAgent,
+      client_ip_address: window.hexUseIP,
+    },
+  }
+}
+fbq('init', '518325078292779');
+fbq('track', "PageView", {}, {event_id: h_event_id});
+postConversionAPI(h_all_data);
+
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZSWM1LR0P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZSWM1LR0P');
+  gtag('config', 'AW-926147017');
+</script>
+
+
+
+<!-- Google 再营销代码 -->
+<div class="hidden-xs-up d-none">
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 926147017;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;height:0;width:0;">
+  <img height="0" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/926147017/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+  <!-- Google 再营销代码 end -->
+</div>
+
+
+
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+var distinct_id = '';
+mixpanel.init("75759612e011b856d03c2a78e8219094", {
+  loaded: function(mixpanel) {
+    // distinct_id = mixpanel.get_distinct_id();
+    // tracker.addDistinct_id(distinct_id)
+  }
+});</script><!-- end Mixpanel -->
+
+
+<!-- END INTEGRATIONS -->
+</body>
+</html>
+

@@ -687,7 +687,8 @@ var vueApp = function() {
         frontend_training: {},
         js_react_training_2025: {},
         backend_camp: {},
-        ai_year_upgrade: {}
+        ai_year_upgrade: {},
+        nodejs_training: {}
       },
       trainingWait: {
         js: {},
@@ -702,7 +703,8 @@ var vueApp = function() {
         frontend_training: {},
         js_react_training_2025: {},
         backend_camp: {},
-        ai_year_upgrade: {}
+        ai_year_upgrade: {},
+        nodejs_training: {}
       }
     },
     methods: {
