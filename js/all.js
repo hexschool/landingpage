@@ -143,13 +143,15 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('.course-area-link').on("click", function(event) {
+  // delegate 在 document 上：直播班卡片用 v-if 動態進出 DOM（_courses/category-training.ejs），
+  // 直接綁在 .course-area-link 會讓篩選後新建的卡片沒有 handler，整張卡點不到、只剩裡面的 <a>
+  $(document).on('click', '.course-area-link', function(event) {
     if (event.target.nodeName !== 'A' && event.target.nodeName !== 'I') {
       var url = $(this).data('url');
       window.open(url);
     }
   });
-  $('.course-area-link').on("auxclick", function(event) {
+  $(document).on('auxclick', '.course-area-link', function(event) {
     if (event.target.nodeName !== 'A' && event.target.nodeName !== 'I') {
       var url = $(this).data('url');
       window.open(url);
@@ -633,6 +635,16 @@ var vueApp = function() {
   //   console.log(snapshot.val())
   // })
 
+  // 動態建立 trainingState 的 key 佔位
+  // 來源：theme.training 的 keys（由 _courses/category-training.ejs 注入 window.__TRAINING_KEYS__）
+  // Vue 2 對未在 data 預宣告的 key 不 reactive，所以必須在 new Vue() 之前先把 keys 填好
+  // 每筆預設為 closed（即將開放／已結束），實際狀態由 checkTrainingStatus() 依 date 區間判定
+  var trainingKeys = (typeof window !== 'undefined' && window.__TRAINING_KEYS__) || [];
+  var trainingState = {};
+  for (var ki = 0; ki < trainingKeys.length; ki++) {
+    trainingState[trainingKeys[ki]] = { state: 'closed', day: null };
+  }
+
   $.getJSON('https://shop.hexschool.com/api/udemydata/getCourseData', function(data) {
     courseEvaluation.course = data;
     appCourse.courseData = [];
@@ -664,6 +676,23 @@ var vueApp = function() {
     }, 1500);
   });
 
+  // 直播班 meta（tags 等），由 _courses/category-training.ejs 注入
+  var trainingMeta = (typeof window !== 'undefined' && window.__TRAINING_META__) || {};
+
+  // 從 URL params 還原 filter 狀態
+  var initFilter = { tags: [], status: 'all', teacher: 'all' };
+  try {
+    var sp = new URLSearchParams(window.location.search);
+    var paramTags = sp.getAll('tag');
+    if (paramTags.length) initFilter.tags = paramTags;
+    var paramStatus = sp.get('status');
+    if (paramStatus && ['onsale', 'waiting', 'running', 'closed'].indexOf(paramStatus) !== -1) {
+      initFilter.status = paramStatus;
+    }
+    var paramTeacher = sp.get('teacher');
+    if (paramTeacher) initFilter.teacher = paramTeacher;
+  } catch (e) { /* URLSearchParams 不支援時降級為預設 */ }
+
   var appCourse = new Vue({
     el: '#course',
     data: {
@@ -674,42 +703,221 @@ var vueApp = function() {
       udemyCouponData: {},
       udemyRightCoupon: {}, // Udemy 目前的 Coupon
       trainingDate: {},
-      trainingStatus: {
-        js: {},
-        vue: {},
-        typescript: {},
-        nuxt3: {},
-        react: {},
-        web_layout: {},
-        ui: {},
-        backend: {},
-        camping: {},
-        frontend_training: {},
-        js_react_training_2025: {},
-        backend_camp: {},
-        ai_year_upgrade: {},
-        nodejs_training: {}
+      trainingState: trainingState,
+      trainingMeta: trainingMeta,
+      trainingFilter: initFilter,
+      // Filter chip styles（inline style objects，避免 CSS class 沒被套到）
+      chipStyle: {
+        display: 'inline-flex', alignItems: 'center', gap: '6px',
+        padding: '7px 14px', borderRadius: '999px', border: '1px solid #e2e8f0',
+        background: '#fff', color: '#475569', fontSize: '13px', fontWeight: '600',
+        lineHeight: '1.2', cursor: 'pointer', transition: 'all 180ms ease'
       },
-      trainingWait: {
-        js: {},
-        vue: {},
-        typescript: {},
-        nuxt3: {},
-        react: {},
-        web_layout: {},
-        ui: {},
-        backend: {},
-        camping: {},
-        frontend_training: {},
-        js_react_training_2025: {},
-        backend_camp: {},
-        ai_year_upgrade: {},
-        nodejs_training: {}
+      activeChipStyle: {
+        display: 'inline-flex', alignItems: 'center', gap: '6px',
+        padding: '7px 14px', borderRadius: '999px', border: '1px solid #0f172a',
+        background: '#0f172a', color: '#fff', fontSize: '13px', fontWeight: '600',
+        lineHeight: '1.2', cursor: 'pointer', transition: 'all 180ms ease'
+      },
+      activeOnsaleChipStyle: {
+        display: 'inline-flex', alignItems: 'center', gap: '6px',
+        padding: '7px 14px', borderRadius: '999px', border: '1px solid #16a34a',
+        background: '#f0fdf4', color: '#15803d', fontSize: '13px', fontWeight: '600',
+        lineHeight: '1.2', cursor: 'pointer', transition: 'all 180ms ease'
+      },
+      activeWaitingChipStyle: {
+        display: 'inline-flex', alignItems: 'center', gap: '6px',
+        padding: '7px 14px', borderRadius: '999px', border: '1px solid #fbbf24',
+        background: '#fffbeb', color: '#b45309', fontSize: '13px', fontWeight: '600',
+        lineHeight: '1.2', cursor: 'pointer', transition: 'all 180ms ease'
+      },
+      activeRunningChipStyle: {
+        display: 'inline-flex', alignItems: 'center', gap: '6px',
+        padding: '7px 14px', borderRadius: '999px', border: '1px solid #0ea5e9',
+        background: '#f0f9ff', color: '#0369a1', fontSize: '13px', fontWeight: '600',
+        lineHeight: '1.2', cursor: 'pointer', transition: 'all 180ms ease'
+      },
+      countStyle: {
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        minWidth: '20px', height: '18px', padding: '0 6px', borderRadius: '999px',
+        background: '#f1f5f9', color: '#64748b', fontSize: '11px', fontWeight: '700',
+        marginLeft: '2px'
+      },
+      activeCountStyle: {
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        minWidth: '20px', height: '18px', padding: '0 6px', borderRadius: '999px',
+        background: 'rgba(255,255,255,.2)', color: '#fff', fontSize: '11px', fontWeight: '700',
+        marginLeft: '2px'
+      },
+      activeCountStyleOnsale: {
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        minWidth: '20px', height: '18px', padding: '0 6px', borderRadius: '999px',
+        background: '#dcfce7', color: '#15803d', fontSize: '11px', fontWeight: '700',
+        marginLeft: '2px'
+      },
+      activeCountStyleWaiting: {
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        minWidth: '20px', height: '18px', padding: '0 6px', borderRadius: '999px',
+        background: '#fef3c7', color: '#b45309', fontSize: '11px', fontWeight: '700',
+        marginLeft: '2px'
+      },
+      activeCountStyleRunning: {
+        display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+        minWidth: '20px', height: '18px', padding: '0 6px', borderRadius: '999px',
+        background: '#e0f2fe', color: '#0369a1', fontSize: '11px', fontWeight: '700',
+        marginLeft: '2px'
+      }
+    },
+    computed: {
+      // 一張卡的真實狀態：'onsale' | 'waiting' | 'running' | 'closed'
+      trainingActualStatus: function() {
+        var st = this.trainingState;
+        var result = {};
+        Object.keys(this.trainingMeta).forEach(function(k) {
+          result[k] = (st[k] && st[k].state) || 'closed';
+        });
+        return result;
+      },
+      // 各狀態的計數，給 filter chip 顯示
+      trainingStatusCounts: function() {
+        var counts = { onsale: 0, waiting: 0, running: 0, closed: 0 };
+        var actual = this.trainingActualStatus;
+        Object.keys(actual).forEach(function(k) { counts[actual[k]]++; });
+        return counts;
+      },
+      // 通過 filter 的 keys，並按狀態優先序排序：開放註冊中 > 開放預約中 > 課程進行中 > 即將開放
+      filteredTrainingKeys: function() {
+        var meta = this.trainingMeta;
+        var f = this.trainingFilter;
+        var actual = this.trainingActualStatus;
+        var selectedTags = f.tags;
+        var STATE_ORDER = { onsale: 1, waiting: 2, running: 3, closed: 4 };
+        return Object.keys(meta).filter(function(k) {
+          if (selectedTags.length > 0) {
+            var courseTags = meta[k].tags || [];
+            // OR 篩選：只要命中任一選中的 tag 就通過
+            var hit = selectedTags.some(function(tag) { return courseTags.indexOf(tag) !== -1; });
+            if (!hit) return false;
+          }
+          if (f.status !== 'all' && actual[k] !== f.status) return false;
+          if (f.teacher !== 'all' && meta[k].teacher !== f.teacher) return false;
+          return true;
+        }).sort(function(a, b) {
+          return (STATE_ORDER[actual[a]] || 99) - (STATE_ORDER[actual[b]] || 99);
+        });
+      }
+    },
+    watch: {
+      trainingFilter: {
+        deep: true,
+        handler: function() { this.syncTrainingFilterUrl(); }
       }
     },
     methods: {
       checkCouponType: function(id) {
         return this.rightCoupon.course.includes(id);
+      },
+      toggleTrainingTag: function(tag) {
+        var i = this.trainingFilter.tags.indexOf(tag);
+        if (i === -1) this.trainingFilter.tags.push(tag);
+        else this.trainingFilter.tags.splice(i, 1);
+      },
+      resetTrainingFilter: function() {
+        this.trainingFilter.tags = [];
+        this.trainingFilter.status = 'all';
+        this.trainingFilter.teacher = 'all';
+      },
+      isTrainingVisible: function(k) {
+        return this.filteredTrainingKeys.indexOf(k) !== -1;
+      },
+      // 開放註冊中=1（置頂）、開放預約中=2、課程進行中=3、即將開放=4，給 CSS flex `order` 使用
+      getTrainingOrder: function(k) {
+        var s = this.trainingActualStatus[k];
+        if (s === 'onsale') return 1;
+        if (s === 'waiting') return 2;
+        if (s === 'running') return 3;
+        return 4;
+      },
+      getCardStatusClass: function(k) {
+        return 'training-card--' + this.trainingActualStatus[k];
+      },
+      getStripClass: function(k) {
+        return 'training-card__strip--' + this.trainingActualStatus[k];
+      },
+      getStatusPillStyle: function(k) {
+        var s = this.trainingActualStatus[k];
+        if (s === 'onsale') return { background: '#16a34a' }; // 綠
+        if (s === 'waiting') return { background: '#ca8a04' }; // 黃
+        if (s === 'running') return { background: '#0ea5e9' }; // 藍
+        return { background: '#6c757d' }; // 灰
+      },
+      getStatusDotStyle: function(k) {
+        var s = this.trainingActualStatus[k];
+        if (s === 'onsale') return { background: '#fff', boxShadow: '0 0 0 3px rgba(255,255,255,.25)' };
+        if (s === 'waiting' || s === 'running') return { background: '#fff' };
+        return { background: 'transparent' };
+      },
+      getStatusLabel: function(k) {
+        var s = this.trainingActualStatus[k];
+        if (s === 'onsale') return '開放註冊中';
+        if (s === 'waiting') return '開放預約中';
+        if (s === 'running') return '課程進行中';
+        return '即將開放';
+      },
+      // 使用全站既有 Bootstrap btn class（btn-primary 是 Hexschool 綠色品牌色）
+      getTrainingCtaBtnClass: function(k) {
+        var s = this.trainingActualStatus[k];
+        if (s === 'onsale') return 'btn-primary'; // 綠色（品牌主色）
+        if (s === 'waiting') return 'btn-warning'; // 黃色
+        if (s === 'running') return 'btn-info'; // 藍色
+        return 'btn-secondary'; // 灰色（即將開放，不強調）
+      },
+      getCtaHref: function(k, pageLink) {
+        // 所有狀態統一導向 landing page（subscribe_link 已從 config 移除）
+        return pageLink;
+      },
+      getCtaLabel: function(k) {
+        var s = this.trainingActualStatus[k];
+        if (s === 'onsale') return '立即註冊';
+        if (s === 'waiting') return '手刀預約';
+        if (s === 'running') return '課程進行中';
+        return '即將開放';
+      },
+      // 依狀態決定要顯示哪個時間區間：
+      //   waiting → 預約期間 (subscribe_*)
+      //   onsale  → 註冊期間 (canbuy_*)
+      //   running → 課程期間 (courses_*)
+      //   closed  → 課程期間 (courses_*) — 但模板層通常不會走到這（會顯示「即將公布」）
+      // 來源含時間（'2026-03-04 20:00:00'）時自動截掉時間部分，只留 YYYY-MM-DD
+      formatTrainingRange: function(state, day) {
+        if (!day) return '';
+        var startField, endField;
+        if (state === 'waiting') {
+          startField = 'subscribe_start_at';
+          endField = 'subscribe_ended_at';
+        } else if (state === 'onsale') {
+          startField = 'canbuy_start_at';
+          endField = 'canbuy_ended_at';
+        } else {
+          startField = 'courses_start_at';
+          endField = 'courses_ended_at';
+        }
+        if (!day[startField]) return '';
+        var start = String(day[startField]).slice(0, 10);
+        var end = day[endField] ? String(day[endField]).slice(0, 10) : '';
+        return end ? start + ' ~ ' + end : start;
+      },
+      syncTrainingFilterUrl: function() {
+        try {
+          var url = new URL(window.location.href);
+          url.searchParams.delete('tag');
+          this.trainingFilter.tags.forEach(function(t) { url.searchParams.append('tag', t); });
+          if (this.trainingFilter.status === 'all') url.searchParams.delete('status');
+          else url.searchParams.set('status', this.trainingFilter.status);
+          if (this.trainingFilter.teacher === 'all') url.searchParams.delete('teacher');
+          else url.searchParams.set('teacher', this.trainingFilter.teacher);
+          window.history.replaceState({}, '', url.toString());
+        } catch (e) { /* noop */ }
       }
     }
   });
@@ -749,25 +957,34 @@ var vueApp = function() {
     }
   };
 
-  var checkTrainingStatus = function() { // 確認直播班當前的開賣狀態
+  // 依今日落入哪個時間區間，決定卡片狀態
+  // 優先序：開放註冊中 > 開放預約中 > 課程進行中 > 即將開放／已結束（closed）
+  // 為 Vue 2 reactivity 用 $set 賦值
+  var checkTrainingStatus = function() {
     var today = dayjs().format('YYYY-MM-DD HH:mm:ss');
 
+    var inRange = function(start, end) {
+      return start && end && dayjs(today).isAfter(start) && dayjs(today).isBefore(end);
+    };
+
     $.each(appCourse.trainingDate, function(i, data) {
-      var dateData = data.date;
-      $.each(dateData, function(i, day) {
-        if (dayjs(today).isAfter(day.canbuy_start_at) && dayjs(today).isBefore(day.canbuy_ended_at)) {
-          appCourse.trainingStatus[data.id] = data;
-          appCourse.trainingStatus[data.id]['day'] = day;
-          appCourse.trainingStatus[data.id]['status'] = true;
+      var dateData = data.date || [];
+      var resolved = { state: 'closed', day: null };
+
+      for (var j = 0; j < dateData.length; j++) {
+        var d = dateData[j];
+        if (inRange(d.canbuy_start_at, d.canbuy_ended_at)) {
+          resolved = { state: 'onsale', day: d };
+          break;
         }
-        return;
-      });
-      $.each(dateData, function(i, day) {
-        if (dayjs(today).isBefore(day.canbuy_start_at)) {
-          appCourse.trainingWait[data.id] = data;
-          appCourse.trainingWait[data.id]['notOpen_day'] = day;
+        if (resolved.state === 'closed' && inRange(d.subscribe_start_at, d.subscribe_ended_at)) {
+          resolved = { state: 'waiting', day: d };
+        } else if (resolved.state === 'closed' && inRange(d.courses_start_at, d.courses_ended_at)) {
+          resolved = { state: 'running', day: d };
         }
-      });
+      }
+
+      appCourse.$set(appCourse.trainingState, data.id, resolved);
     });
   };
 
@@ -783,12 +1000,12 @@ var vueApp = function() {
     getUseUdemyCoupon();
   });
 
-  // 取得 training-date.json
-  $.getJSON('../training-date.json', function(data) {
-    appCourse.trainingDate = data;
+  // 直播班銷售排程資料：由 _courses/category-training.ejs 從 theme.training 注入
+  // 沒注入時 (其他頁面) 直接 skip — 這些頁面沒 #course / 直播班卡片，不需要狀態判定
+  if (window.__TRAINING_SCHEDULE__) {
+    appCourse.trainingDate = window.__TRAINING_SCHEDULE__;
     checkTrainingStatus();
-    return;
-  });
+  }
 
   // 取得 calendar 資料
   var CalendarNotification = new Vue({
