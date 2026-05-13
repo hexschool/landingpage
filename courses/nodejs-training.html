@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   
-<link rel="stylesheet" href="/stylesheets/vue.css?1778652713013.css">
+<link rel="stylesheet" href="/stylesheets/vue.css?1778676651229.css">
 
   <!-- Global styles END -->
 
@@ -112,7 +112,7 @@
       <a id="cta-btn" href="#recommend"
         class="btn btn-danger text-white ">
         
-        立即免費預約
+        立即報名
         
         <i class="far fa-gem"></i>
       </a>
@@ -579,32 +579,36 @@
              <li>一年時間課程錄影無限次數觀看</li>
             </ul>
           </div>
-          <!-- <div class="recommend__pricing">
+          <div class="recommend__pricing">
             <p class="recommend__price m-0">
               <span class="recommend__price-currency">NT$</span>
-              <span class="recommend__price-amount">14,500</span>
+              <span class="recommend__price-amount" id="couponPrice">40,257</span>
             </p>
-            <p class="recommend__price-original m-0">NT$ 40,257</p>
-          </div> -->
-          <a
+            <p class="recommend__price-original m-0 d-none">NT$ 40,257</p>
+          </div>
+          <!-- <a
             class="recommend__cta lead-click mt-auto"
             style="font-size: 24px;"
             target="_blank" rel="noopener" href="https://r.botbonnie.com/tGYw6"
-            >立即免費預約</a>
-          <!-- <a
-            class="recommend__cta tracking-link"
-            style="font-size: 24px;"
+            >立即免費預約</a> -->
+            <a href="https://shop2.hexschool.com/carts?coupon_code=2026_BACKEND_ENGINEER_NODEJS_COUPON&order=1776843097288_lxrvynyj7&sales_channel_code=official"
             title="開啟【後端工程師學程】Node.js 直播班支付流程"
-            href="#"
-            data-price="8000"
+            id="trainingBuyBtn"
             data-bs-toggle="modal"
             data-bs-target="#orderModal"
-            data-title="【後端工程師學程】Node.js 直播班"
+            data-price="40257"
             data-type="product"
             data-id="nodejs-training"
-            data-forward="true"
+            data-title="【後端工程師學程】Node.js 直播班"
+            data-paylink="https://shop2.hexschool.com/carts?coupon_code=2026_BACKEND_ENGINEER_NODEJS_COUPON&order=1776843097288_lxrvynyj7&sales_channel_code=official"
+            data-coupon="2026_BACKEND_ENGINEER_NODEJS_COUPON"
             itemprop="url"
-            >免費預約，享早鳥優惠！</a> -->
+            target="_blank"
+            rel="noopener"
+            class="recommend__cta tracking-link"
+            data-forward="true"
+            style="font-size: 24px;"
+            >立即報名</a>
         </div>
       </div>
       <div class="col-lg-6">
@@ -623,32 +627,24 @@
               <li>各門課皆有一年時間課程錄影無限次數觀看</li>
             </ul>
           </div>
-          <!-- <div class="recommend__pricing">
+          <div class="recommend__pricing">
             <p class="recommend__price m-0">
               <span class="recommend__price-currency">NT$</span>
-              <span class="recommend__price-amount">48,500</span>
+              <span class="recommend__price-amount" id="couponPrice-project">127,456</span>
             </p>
-            <p class="recommend__price-original m-0">NT$ 127,456</p>
-          </div> -->
-          <a
+            <p class="recommend__price-original m-0 d-none">NT$ 127,456</p>
+          </div>
+          <!-- <a
             class="recommend__cta lead-click mt-auto"
             style="font-size: 24px;"
             target="_blank" rel="noopener" href="https://r.botbonnie.com/BVuXI"
-            >立即免費預約</a>
-          <!-- <a
-            class="recommend__cta tracking-link"
+            >立即免費預約</a> -->
+          <a
+            class="recommend__cta"
             style="font-size: 24px;"
             title="開啟【後端工程師學程】Node.js 直播班支付流程"
-            href="#"
-            data-price="8000"
-            data-bs-toggle="modal"
-            data-bs-target="#orderModal"
-            data-title="【後端工程師學程】Node.js 直播班"
-            data-type="product"
-            data-id="nodejs-training"
-            data-forward="true"
-            itemprop="url"
-            >免費預約，享早鳥優惠！</a> -->
+            href="/courses/backend-training.html"
+            >前往觀看</a>
         </div>
       </div>
     </div>
@@ -656,7 +652,7 @@
 </section>
 
 <!-- 銀角零卡 -->
-<!-- <section class="zingala">
+<section class="zingala d-none" data-payment-section>
   <div class="container">
     <div class="row align-items-center justify-content-center g-4">
       <div class="col-lg-4">
@@ -675,7 +671,7 @@
       </div>
       <div class="col-lg-8">
         <div class="zingala__table-wrapper">
-          <table class="zingala__table">
+          <table class="zingala__table" data-zingala-table="nodejs">
             <thead>
               <tr>
                 <th class="zingala__table-head zingala__table-head--method">付款方式</th>
@@ -690,42 +686,42 @@
             <tbody>
               <tr>
                 <td class="zingala__table-method">原價</td>
-                <td class="zingala__table-price">NT$14,500</td>
-                <td class="zingala__table-price">NT$14,500</td>
+                <td class="zingala__table-price"></td>
+                <td class="zingala__table-price"></td>
               </tr>
               <tr>
                 <td class="zingala__table-method">一次付清</td>
-                <td class="zingala__table-price">NT$14,500</td>
-                <td class="zingala__table-price">NT$14,500</td>
+                <td class="zingala__table-price"></td>
+                <td class="zingala__table-price"></td>
               </tr>
               <tr>
                 <td class="zingala__table-method">3 期（零利率）</td>
-                <td class="zingala__table-price">NT$4,834</td>
-                <td class="zingala__table-price">NT$4,834</td>
+                <td class="zingala__table-price"></td>
+                <td class="zingala__table-price"></td>
               </tr>
               <tr>
                 <td class="zingala__table-method">6 期（零利率）</td>
-                <td class="zingala__table-price">NT$2,417</td>
-                <td class="zingala__table-price">NT$2,417</td>
+                <td class="zingala__table-price"></td>
+                <td class="zingala__table-price"></td>
               </tr>
               <tr>
                 <td class="zingala__table-method">9 期（1.5%）</td>
-                <td class="zingala__table-price">NT$1,638</td>
+                <td class="zingala__table-price"></td>
                 <td class="zingala__table-price">X</td>
               </tr>
               <tr>
                 <td class="zingala__table-method">12 期（2.5%）</td>
-                <td class="zingala__table-price">NT$1,239</td>
+                <td class="zingala__table-price"></td>
                 <td class="zingala__table-price">X</td>
               </tr>
               <tr>
                 <td class="zingala__table-method">18 期（5%）</td>
-                <td class="zingala__table-price">NT$846</td>
+                <td class="zingala__table-price"></td>
                 <td class="zingala__table-price">X</td>
               </tr>
               <tr>
                 <td class="zingala__table-method">24 期（7.5%）</td>
-                <td class="zingala__table-price">NT$650</td>
+                <td class="zingala__table-price"></td>
                 <td class="zingala__table-price">X</td>
               </tr>
             </tbody>
@@ -738,7 +734,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <!-- 免費說明會 -->
 <!-- <section class="briefing">
@@ -965,6 +961,91 @@
     </div>
   </div>
 </section>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const couponPrice = document.querySelector('#couponPrice');
+    const couponPriceProject = document.querySelector('#couponPrice-project');
+
+    // 依時間切換顯示金額（同步更新同卡片內買鈕的 data-price，並顯示原價刪除線）
+    const updatePriceByTime = (el, schedule) => {
+      if (!el) return;
+      const now = new Date();
+      const matched = schedule.find(({ start, end }) => new Date(start) <= now && now <= new Date(end));
+      if (!matched) return;
+      el.textContent = matched.price;
+      const card = el.closest('.recommend__card');
+      const buyBtn = card?.querySelector('a[data-price]');
+      if (buyBtn) buyBtn.setAttribute('data-price', matched.price.replace(/,/g, ''));
+      card?.querySelector('.recommend__price-original')?.classList.remove('d-none');
+    };
+
+    // 【後端工程師學程】Node.js 直播班（台灣時區 UTC+8）
+    updatePriceByTime(couponPrice, [
+      { start: '2026-05-13T21:00:00+08:00', end: '2026-05-13T23:59:59+08:00', price: '14,500' },
+      { start: '2026-05-14T00:00:00+08:00', end: '2026-05-24T23:59:59+08:00', price: '15,000' },
+      { start: '2026-05-25T00:00:00+08:00', end: '2026-05-31T23:59:59+08:00', price: '15,700' },
+    ]);
+
+    // Node.js+雲端：後端就業培訓班＆專題班（台灣時區 UTC+8）
+    updatePriceByTime(couponPriceProject, [
+      { start: '2026-05-13T21:00:00+08:00', end: '2026-05-13T23:59:59+08:00', price: '48,500' },
+      { start: '2026-05-14T00:00:00+08:00', end: '2026-05-24T23:59:59+08:00', price: '49,000' },
+      { start: '2026-05-25T00:00:00+08:00', end: '2026-05-31T23:59:59+08:00', price: '49,700' },
+    ]);
+
+    // 銀角零卡分期表：依時間切換各列金額並決定 section 是否顯示
+    // （信用卡欄為 X 的列僅更新銀角欄；命中任一段時程即顯示 section）
+    const updateZingalaTableByTime = (schedule) => {
+      const now = new Date();
+      const matched = schedule.find(({ start, end }) => new Date(start) <= now && now <= new Date(end));
+      if (!matched) return false;
+      document.querySelectorAll('[data-zingala-table]').forEach((table) => {
+        const key = table.getAttribute('data-zingala-table');
+        const prices = matched.tables[key];
+        if (!prices) return;
+        table.querySelectorAll('tbody tr').forEach((tr, i) => {
+          if (prices[i] === undefined) return;
+          const priceCells = tr.querySelectorAll('.zingala__table-price');
+          const formatted = `NT$${prices[i].toLocaleString()}`;
+          if (priceCells[0]) priceCells[0].textContent = formatted;
+          if (priceCells[1] && priceCells[1].textContent.trim().toLowerCase() !== 'x') {
+            priceCells[1].textContent = formatted;
+          }
+        });
+      });
+      return true;
+    };
+
+    const isZingalaScheduleActive = updateZingalaTableByTime([
+      {
+        start: '2026-05-13T21:00:00+08:00',
+        end: '2026-05-13T23:59:59+08:00',
+        tables: {
+          nodejs: [14500, 14500, 4834, 2417, 1638, 1239, 846, 650],
+        },
+      },
+      {
+        start: '2026-05-14T00:00:00+08:00',
+        end: '2026-05-24T23:59:59+08:00',
+        tables: {
+          nodejs: [15000, 15000, 5000, 2500, 1692, 1284, 875, 672],
+        },
+      },
+      {
+        start: '2026-05-25T00:00:00+08:00',
+        end: '2026-05-31T23:59:59+08:00',
+        tables: {
+          nodejs: [15700, 15700, 5234, 2617, 1771, 1342, 916, 709],
+        },
+      },
+    ]);
+
+    if (isZingalaScheduleActive) {
+      document.querySelector('[data-payment-section]')?.classList.remove('d-none');
+    }
+  });
+</script>
 
 
 
@@ -1209,14 +1290,14 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js" ></script>
 
-<script src="/js/bs4_vendor.js?1778652713013.js"></script>
+<script src="/js/bs4_vendor.js?1778676651229.js"></script>
 
 <script>window.__PROMOTIONS__ = {"footer_clock_campaigns":[{"start_time":"2026-04-17 00:00","end_time":"2026-05-03 23:59","words":"【新手友善】軟體工程師體驗營，即將開課！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/software-engineer-camping.html","event_link_text":"立即報名"},{"start_time":"2026-04-28 09:00","end_time":"2026-05-11 23:59","words":"【掌握後端趁現在】年度大課，即將開放報名！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/backend-training.html","event_link_text":"免費預約"},{"start_time":"2026-05-12 00:00","end_time":"2026-05-17 23:59","words":"限時優惠 44 折 5/27 即將開課｜AI 開發進化營","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/ai-year-upgrade.html","event_link_text":"立刻報名"},{"start_time":"2026-05-18 00:00","end_time":"2026-05-24 23:59","words":"【已超過 450+ 人報名】 下週開課｜AI 開發進化營","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/ai-year-upgrade.html","event_link_text":"立刻報名"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","words":"【早鳥 39 折】後端培訓班，熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger","img":null,"event_link":"/courses/backend-training.html","event_link_text":"立即報名"}],"footer_clock_on_courses":false,"ad_campaigns":[{"start_time":"2026-04-17 00:00","end_time":"2026-05-03 23:59","title":"【新手友善】軟體工程師體驗營，即將開課！","description":null,"slogan_display":true,"clock":true,"btn_slogan":"立即報名","event_link":"/courses/software-engineer-camping.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"},{"start_time":"2026-04-28 09:00","end_time":"2026-05-11 23:59","title":"【掌握後端趁現在】年度大課，即將開放報名！","description":null,"slogan_display":true,"clock":true,"btn_slogan":"免費預約","event_link":"/courses/backend-training.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"},{"start_time":"2026-05-12 00:00","end_time":"2026-05-17 23:59","title":"限時優惠 44 折 5/27 即將開課｜AI 開發進化營","description":null,"slogan_display":true,"clock":true,"btn_slogan":"立刻報名","event_link":"/courses/ai-year-upgrade.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"},{"start_time":"2026-05-18 00:00","end_time":"2026-05-24 23:59","title":"【已超過 450+ 人報名】 下週開課｜AI 開發進化營","description":null,"slogan_display":true,"clock":true,"btn_slogan":"立刻報名","event_link":"/courses/ai-year-upgrade.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","title":"【早鳥 39 折】後端培訓班，熱烈報名中！","description":null,"slogan_display":true,"clock":true,"btn_slogan":"立即報名","event_link":"/courses/backend-training.html","custom_modal":false,"custom_modal_coupon":"COUPON_2023_THANKS"}],"footer_dropdown_campaigns":[],"page_footer_clock_target":{"ai-year-upgrade":[{"start_time":"2026-05-04 00:00","end_time":"2026-05-11 23:59","words":"現省 $10,200，5/18 即將漲價","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"立刻報名"},{"start_time":"2026-05-12 00:00","end_time":"2026-05-17 23:59","words":"現省 $10,200，5/18 即將漲價","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"立刻報名"},{"start_time":"2026-05-18 00:00","end_time":"2026-05-24 23:59","words":"現省 $10,000，下週開學","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"立刻報名"}],"backend_training":[{"start_time":"2026-04-28 09:00","end_time":"2026-05-13 21:00","words":"【掌握後端趁現在】年度大課，即將開放報名！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"免費預約"},{"start_time":"2026-05-13 21:00","end_time":"2026-05-14 23:59","words":"【超早鳥優惠】快閃 3 小時，搶下最優價格！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-14 00:00","end_time":"2026-05-24 23:59","words":"【🙋‍♀️早鳥 38 折】熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","words":"【享 39 折】即將開學，熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"立即報名"}],"nodejs-training":[{"start_time":"2026-04-28 09:00","end_time":"2026-05-13 21:00","words":"【🙋‍♀️ 轉職後端工程師】即將開放報名","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"免費預約"},{"start_time":"2026-05-13 21:00","end_time":"2026-05-14 23:59","words":"【超早鳥優惠】快閃 3 小時，搶下最優價格！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-14 00:00","end_time":"2026-05-24 23:59","words":"【🙋‍♀️早鳥 38 折】熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"搶先報名"},{"start_time":"2026-05-25 00:00","end_time":"2026-05-31 23:59","words":"【享 39 折】即將開學，熱烈報名中！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"立即報名"}],"software-engineer-camping":[{"start_time":"2026-04-17 00:00","end_time":"2026-05-03 23:59","words":"【即將開學】千人推薦的軟體工程師入門課！","slogan":null,"slogan_display":true,"time_display":true,"class":"bg-danger text-white","event_link":"#recommend","event_link_text":"點我報名"}]}};</script>
 
-<script src="/js/promotions-runtime.js?1778652713013.js"></script>
+<script src="/js/promotions-runtime.js?1778676651229.js"></script>
 
 
-<script src="/js/bs4_all.js?1778652713013.js"></script>
+<script src="/js/bs4_all.js?1778676651230.js"></script>
 
 
 <script src="/js/wow.min.js"></script>
