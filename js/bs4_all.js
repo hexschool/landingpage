@@ -236,17 +236,6 @@ $(document).ready(function() {
   return;
 });
 
-// getData = function() {
-//   firebase.initializeApp(firebase_config)
-//   database = firebase.database()
-//
-//   $.getJSON('https://hexschool-api.herokuapp.com/api/udemydata/getCourseData', function(data) {
-//     console.log(data)
-//   })
-// }
-//
-// getData()
-
 $(document).ready(function() {
   var perspectiveWall = document.getElementById('perspectiveWallgit');
   var moveImg = document.getElementById('moveImggit');
@@ -812,17 +801,12 @@ var VueApp = new Vue({
     },
     fetchData: function() { // 載入資料
       var vm = this;
-      $.getJSON('https://shop.hexschool.com/api/udemydata/getCourseData', function(data) {
-        vm.courseData = data;
-        vm.$emit('slideReviewsData', vm.courseData);
-      }, function(response) {
-        console.log('error', response);
-      });
-      $.getJSON('https://shop.hexschool.com/api/udemydata/getCoursesBasicData', function(data) {
-        vm.course = data;
-      }, function(response) {
-        console.log('error', response);
-      });
+      // 評論／課程資料來自 build time 注入的 window.__UDEMY_SNAPSHOT__
+      // （原本是打 shop.hexschool.com/api/udemydata/{getCourseData,getCoursesBasicData}，已停用）
+      var snapshot = window.__UDEMY_SNAPSHOT__ || { courseData: {}, basicData: {} };
+      vm.courseData = snapshot.courseData;
+      vm.$emit('slideReviewsData', vm.courseData);
+      vm.course = snapshot.basicData;
       $.getJSON('../coupon-data.json', function(data) {
         vm.couponData = data;
         vm.getUseCoupon();
@@ -1284,13 +1268,13 @@ $(document).ready(function() {
 });
 
 // 活動
-$(document).ready(function() {
-  $('#choeseCourse').on('click', function() {
+$(document).ready(function () {
+  $('#choeseCourse').on('click', function () {
     var coupon = $(this).data('coupon');
     var url = $(this).data('url');
     var selectedCourses = [];
     var leadCourse = '';
-    $('#customCourses .selecedCourse:checked').each(function(i, item) {
+    $('#customCourses .selecedCourse:checked').each(function (i, item) {
       selectedCourses.push($(this).val());
     });
 
@@ -1309,13 +1293,11 @@ $(document).ready(function() {
     }
   });
 
-  var countPrice = function() {
+  var countPrice = function () {
     var total = 0;
     var originTotal = 0;
-    var value = '';
     var conditionText = '';
-    $('#customCourses .selecedCourse:checked').each(function(i, item) {
-      value = item.value;
+    $('#customCourses .selecedCourse:checked').each(function (i, item) {
       var price = parseInt($(this).data('price'));
       var originPrice = parseInt($(this).data('originprice'));
       total = total + price;
@@ -1323,14 +1305,10 @@ $(document).ready(function() {
     });
     $('#selecedTotal').text(total);
     $('#selecedOriginTotal').text(originTotal - total);
-    if (value === 'god2020year' || total > 5999) {
+    if (total > 5999) {
       $('#condition_false').hide();
       $('#condition_true').show();
     } else {
-      if (value !== 'god2020year') {
-        $('#condition_false').hide();
-        $('#condition_true').show();
-      }
       if (total < 6000) {
         conditionText = 6000 - total;
       }
@@ -1342,45 +1320,26 @@ $(document).ready(function() {
 
   countPrice();
   // 暫存總價
-  $('#customCourses .selecedCourse').on('change', function() {
+  $('#customCourses .selecedCourse').on('change', function () {
     countPrice();
   });
 
   var checkCourse = false;
-  var checkGodtohex = false;
 
-  $('#select-all-course').on('click', function(e) {
+  $('#select-all-course').on('click', function (e) {
     e.preventDefault();
     if (!checkCourse) {
-      $('#main-course-2019 .selecedCourse').each(function(i, item) {
+      $('#main-course-2019 .selecedCourse').each(function (i, item) {
         item.checked = !checkCourse;
         return;
       });
       checkCourse = !checkCourse;
     } else {
-      $('#main-course-2019 .selecedCourse').each(function(i, item) {
+      $('#main-course-2019 .selecedCourse').each(function (i, item) {
         item.checked = !checkCourse;
         return;
       });
       checkCourse = !checkCourse;
-    }
-    countPrice();
-  });
-
-  $('#select-all-godtohex').on('click', function(e) {
-    e.preventDefault();
-    if (!checkGodtohex) {
-      $('#godtohex-2019 .selecedCourse').each(function(i, item) {
-        item.checked = !checkGodtohex;
-        return;
-      });
-      checkGodtohex = !checkGodtohex;
-    } else {
-      $('#godtohex-2019 .selecedCourse').each(function(i, item) {
-        item.checked = !checkGodtohex;
-        return;
-      });
-      checkGodtohex = !checkGodtohex;
     }
     countPrice();
   });

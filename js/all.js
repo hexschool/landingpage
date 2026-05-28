@@ -585,7 +585,6 @@ $(document).ready(function() {
     });
 
     var checkCourse = false;
-    var checkGodtohex = false;
 
     $('#select-all-course').on('click', function(e) {
       e.preventDefault();
@@ -601,24 +600,6 @@ $(document).ready(function() {
           return;
         });
         checkCourse = !checkCourse;
-      }
-      countPrice();
-    });
-
-    $('#select-all-godtohex').on('click', function(e) {
-      e.preventDefault();
-      if (!checkGodtohex) {
-        $('#godtohex-2019 .selecedCourse').each(function(i, item) {
-          item.checked = !checkGodtohex;
-          return;
-        });
-        checkGodtohex = !checkGodtohex;
-      } else {
-        $('#godtohex-2019 .selecedCourse').each(function(i, item) {
-          item.checked = !checkGodtohex;
-          return;
-        });
-        checkGodtohex = !checkGodtohex;
       }
       countPrice();
     });
@@ -645,36 +626,9 @@ var vueApp = function() {
     trainingState[trainingKeys[ki]] = { state: 'closed', day: null };
   }
 
-  $.getJSON('https://shop.hexschool.com/api/udemydata/getCourseData', function(data) {
-    courseEvaluation.course = data;
-    appCourse.courseData = [];
-    $.each(data, function(key, courses) {
-      if (courses.review.count) {
-        $.each(courses.review.results, function(i, review) {
-          appCourse.courseData.push(review);
-        });
-      }
-    });
-  });
-
-  $.getJSON('https://shop.hexschool.com/api/udemydata/getCoursesBasicData', function(data) {
-    appCourse.course = data;
-    courseEvaluation.course = data;
-
-    setTimeout(function() {
-      var swiper = new Swiper('.slide-reviews', {
-        pagination: '.swiper-pagination',
-        paginationType: 'progress', // 側欄選項
-        direction: 'vertical', // 垂直
-        // mousewheelControl: true, // 可用滑鼠
-        spaceBetween: 15, // 間隔
-        slidesPerView: 'auto', // 每頁數量
-        autoplay: 2000, // 自動播放
-        slideClass: 'swiper-slide',
-        autoplayDisableOnInteraction: false
-      });
-    }, 1500);
-  });
+  // Udemy 評論／課程資料：來自 build time 注入的 window.__UDEMY_SNAPSHOT__
+  // （原本是打 shop.hexschool.com/api/udemydata/{getCourseData,getCoursesBasicData}，已停用）
+  // 消費邏輯搬到本檔最後（appCourse / courseEvaluation 建立之後）執行，見 consumeUdemySnapshot()
 
   // 直播班 meta（tags 等），由 _courses/category-training.ejs 注入
   var trainingMeta = (typeof window !== 'undefined' && window.__TRAINING_META__) || {};
@@ -1080,6 +1034,34 @@ var vueApp = function() {
       courseData: []
     }
   });
+
+  // 消費 build time 注入的 udemy snapshot：填入 appCourse / courseEvaluation 並起 Swiper
+  // 原本是兩支 $.getJSON 的 callback，現在 snapshot 同步可用，但需 Vue 實例先 ready，故延後到此處
+  (function consumeUdemySnapshot() {
+    var snapshot = window.__UDEMY_SNAPSHOT__ || { courseData: {}, basicData: {} };
+    appCourse.courseData = [];
+    $.each(snapshot.courseData, function(key, courses) {
+      if (courses && courses.review && courses.review.count) {
+        $.each(courses.review.results, function(i, review) {
+          appCourse.courseData.push(review);
+        });
+      }
+    });
+    appCourse.course = snapshot.basicData;
+    courseEvaluation.course = snapshot.basicData;
+    setTimeout(function() {
+      new Swiper('.slide-reviews', {
+        pagination: '.swiper-pagination',
+        paginationType: 'progress',
+        direction: 'vertical',
+        spaceBetween: 15,
+        slidesPerView: 'auto',
+        autoplay: 2000,
+        slideClass: 'swiper-slide',
+        autoplayDisableOnInteraction: false
+      });
+    }, 1500);
+  })();
 
   /* Facebook 登入領獎 */
   var appGetFreeCoupon = new Vue({
