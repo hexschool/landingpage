@@ -827,10 +827,10 @@ var VueApp = new Vue({
 
 // 追蹤
 var tracker = {
-  addDistinct_id: function(distinct_id) {
+  addDistinct_id: function (distinct_id) {
     // 如果有 mixpanel 統一加上對 herokuapp 交易的追蹤碼
     if (distinct_id) {
-      $('[href*="herokuapp.com/order"]').each(function() {
+      $('[href*="herokuapp.com/order"]').each(function () {
         var thisHref = $(this).attr('href');
         var newHref = thisHref + "&distinct_id=" + distinct_id;
         $(this).attr('href', newHref);
@@ -838,7 +838,7 @@ var tracker = {
       });
     }
   },
-  addUTM: function() {
+  addUTM: function () {
     var utm_sourceLink = '';
     var utm_mediumLink = '';
     var utm_campaignLink = '';
@@ -850,7 +850,7 @@ var tracker = {
     }
     if ($.cookie('utm_campaign')) {
       utm_campaignLink = "&utm_campaign=" + $.cookie('utm_campaign');
-      $('[href*="herokuapp.com/order"]').each(function() {
+      $('[href*="herokuapp.com/order"]').each(function () {
         var thisHref = $(this).attr('href');
         var newHref = thisHref + utm_sourceLink + utm_mediumLink + utm_campaignLink;
         $(this).attr('href', newHref);
@@ -860,8 +860,8 @@ var tracker = {
   }
 };
 
-$(document).ready(function() {
-  var setCookie = function(name, value) {
+$(document).ready(function () {
+  var setCookie = function (name, value) {
     $.cookie(name, value, { expires: 1 / 24, path: '/' });
   };
 
@@ -875,7 +875,7 @@ $(document).ready(function() {
     adsource = $.cookie('adsource');
   }
 
-  var getUTM = function() {
+  var getUTM = function () {
     var utm_source = helper.getParameterByName('utm_source');
     var utm_medium = helper.getParameterByName('utm_medium');
     var utm_campaign = helper.getParameterByName('utm_campaign');
@@ -892,7 +892,7 @@ $(document).ready(function() {
   };
   getUTM();
 
-  var mixpanelPageView = function() {
+  var mixpanelPageView = function () {
     mixpanel.track('PageView', {
       'adsource': adsource || '',
       'pageTitle': pageTitle
@@ -901,7 +901,7 @@ $(document).ready(function() {
   mixpanelPageView();
 
   // 點擊
-  $('a.mp-click').click(function(event) {
+  $('a.mp-click').click(function (event) {
     var link = $(this).attr('href');
     var title = $(this).attr('title');
     mixpanel.track('Click a link', {
@@ -912,12 +912,12 @@ $(document).ready(function() {
     });
   });
 
-  $('.dropdown-course').one('mouseenter', function(e) {
+  $('.dropdown-course').one('mouseenter', function (e) {
     mixpanel.track('openDropdown');
   });
 
   // 點擊下拉式選單的項目
-  $('a.drop-click').click(function(event) {
+  $('a.drop-click').click(function (event) {
     var link = $(this).attr('href');
     var title = $(this).attr('title');
     mixpanel.track('Click a link', {
@@ -928,7 +928,7 @@ $(document).ready(function() {
   });
 
   // 點擊下拉式選單的倒數廣告
-  $('a.dropdown-clock-banner').click(function(event) {
+  $('a.dropdown-clock-banner').click(function (event) {
     var link = $(this).attr('href');
     var title = $(this).attr('title');
     mixpanel.track('Click a link', {
@@ -939,8 +939,8 @@ $(document).ready(function() {
   });
 
   // Facebook Tracking
-  var generate_callback = function(a) {
-    return function() {
+  var generate_callback = function (a) {
+    return function () {
       window.location = a.attr('href');
       return;
     };
@@ -982,7 +982,7 @@ $(document).ready(function() {
     $('#orderMsg').text(dimensionValue.message); // 付款訊息
   }
 
-  var generateKey = function() {
+  var generateKey = function () {
     var key = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var charactersLength = characters.length;
@@ -993,7 +993,7 @@ $(document).ready(function() {
   };
 
   // 取得 cookie 中的 _fbp 和 _fbc
-  var parseCookie = function() {
+  var parseCookie = function () {
     var cookieObj = {};
     var cookieAry = document.cookie.split(';');
     var cookie;
@@ -1008,7 +1008,7 @@ $(document).ready(function() {
     return cookieObj;
   };
 
-  var getCookieByName = function(name) {
+  var getCookieByName = function (name) {
     var value = parseCookie()[name];
     if (value) {
       value = decodeURIComponent(value);
@@ -1017,54 +1017,42 @@ $(document).ready(function() {
   };
 
   // 送出 conversion
-  var postConversionAPI = function(data) {
-    // https://shop.hexschool.com/api/tracker
-    $.ajax('https://shop.hexschool.com/api/tracker', {
+  var postConversionAPI = function (data) {
+    // https://shop2.hexschool.com/api/v1/track/official
+    $.ajax('https://shop2.hexschool.com/api/v1/track/official', {
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json; charset=utf-8',
-      data: JSON.stringify(data)
+      data: JSON.stringify(data),
+      xhrFields: { withCredentials: true }
     });
     return;
   };
 
-  var generateData = function(eventTime, eventId, productID) {
-    var obj = {
-      type: 'facebook',
-      data: {
-        event_name: 'ViewContent',
-        event_time: eventTime,
-        event_id: eventId,
-        action_source: 'website',
-        event_source_url: location.href,
-        user_data: {
-          fbc: getCookieByName('_fbc'),
-          fbp: getCookieByName('_fbp'),
-          client_user_agent: navigator.userAgent,
-          client_ip_address: window.hexUseIP
-        },
-        custom_data: {
-          content_ids: productID
-        }
+  var generateData = function (eventId, productID) {
+    return {
+      event_name: 'ViewContent',
+      event_id: eventId,
+      event_source_url: location.href,
+      custom_data: {
+        content_ids: [productID]
       }
     };
-    return obj;
   };
 
   // landingPage 組合
   var landingViewContentScroll = false;
   if ($('.landing-track-start').length) {
-    var $win = $(window).scroll(function(e) {
+    var $win = $(window).scroll(function (e) {
       var windowHieght = $(window).height() / 2;
       var winTop = $($win).scrollTop() + windowHieght;
       var contentTop = $('.landing-track-start').offset().top;
       if (winTop > contentTop && !landingViewContentScroll) {
         landingViewContentScroll = true;
         var event_id = generateKey(10);
-        var eventTime = Math.floor(new Date() / 1000);
-        fbq('track', 'ViewContent', {}, {event_id: event_id});
+        fbq('track', 'ViewContent', {}, { event_id: event_id });
         gtag('event', 'view_item');
-        var landingViewContentData = generateData(eventTime, event_id, 'landingCourse');
+        var landingViewContentData = generateData(event_id, 'landingCourse');
         postConversionAPI(landingViewContentData);
         mixpanel.track('ViewContent', {
           'target': 'landingCourse'
@@ -1077,40 +1065,30 @@ $(document).ready(function() {
   // viewContent 需要 price, id
   var ViewContentScrollTracking = false;
   if ($('.course-tracking-ViewContent').length) {
-    var $win = $(window).scroll(function(e) {
+    var $win = $(window).scroll(function (e) {
       var windowHieght = $(window).height() / 2;
       var winTop = $($win).scrollTop() + windowHieght;
       var contentTop = $('.course-tracking-ViewContent').offset().top;
       if (winTop > contentTop && !ViewContentScrollTracking) {
         ViewContentScrollTracking = true;
         var event_id = generateKey(10);
-        var eventTime = Math.floor(new Date() / 1000);
+        var vcPrice = Number($('.course-tracking-ViewContent').data('price')) || 0;
+        var vcId = String($('.course-tracking-ViewContent').data('id') || '');
         var viewContentData = {
-          type: 'facebook',
-          data: {
-            event_name: 'ViewContent',
-            event_time: eventTime,
-            event_id: event_id,
-            action_source: 'website',
-            event_source_url: location.href,
-            user_data: {
-              fbc: getCookieByName('_fbc'),
-              fbp: getCookieByName('_fbp'),
-              client_user_agent: navigator.userAgent,
-              client_ip_address: window.hexUseIP
-            },
-            custom_data: {
-              currency: 'TWD',
-              value: $('.course-tracking-ViewContent').data('price'),
-              contents: [
-                {
-                  id: $('.course-tracking-ViewContent').data('id'),
-                  quantity: 1,
-                  item_price: $('.course-tracking-ViewContent').data('price')
-                }
-              ],
-              content_type: 'product'
-            }
+          event_name: 'ViewContent',
+          event_id: event_id,
+          event_source_url: location.href,
+          custom_data: {
+            currency: 'TWD',
+            value: vcPrice,
+            contents: [
+              {
+                id: vcId,
+                quantity: 1,
+                item_price: vcPrice
+              }
+            ],
+            content_type: 'product'
           }
         };
         fbq('track', 'ViewContent', {
@@ -1128,7 +1106,7 @@ $(document).ready(function() {
   }
 
   // 事件：AddToCart
-  $('.tracking-link').on('click', function(e) {
+  $('.tracking-link').on('click', function (e) {
     var link = $(this).attr('href');
     var title = $(this).attr('title') || '';
     var dimensionValue = {
@@ -1139,13 +1117,13 @@ $(document).ready(function() {
 
     // 追蹤需要的資料
     var event_id = generateKey(10);
-    var eventTime = Math.floor(new Date() / 1000);
 
     // 產品資料
-    var productID = $(this).data('id') || '';
+    var productID = String($(this).data('id') || '');
     var productName = $(this).data('title');
     var productType = $(this).data('type') || '';
-    var productPrice = $(this).data('price') || '';
+    var productPrice = Number($(this).data('price')) || 0;
+    var capiContentType = productType === 'product_group' ? 'product_group' : 'product';
 
     // pixel
     var fbqValue = {
@@ -1162,32 +1140,21 @@ $(document).ready(function() {
 
     // facebook conversion
     var addToCartData = {
-      type: 'facebook',
-      data: {
-        event_name: 'AddToCart',
-        event_time: eventTime,
-        event_id: event_id,
-        action_source: 'website',
-        event_source_url: location.href,
-        user_data: {
-          fbc: getCookieByName('_fbc'),
-          fbp: getCookieByName('_fbp'),
-          client_user_agent: navigator.userAgent,
-          client_ip_address: window.hexUseIP
-        },
-        custom_data: {
-          currency: 'TWD',
-          value: productPrice,
-          content_ids: productID,
-          content_type: productType,
-          contents: [
-            {
-              id: productID,
-              quantity: 1,
-              item_price: productPrice
-            }
-          ]
-        }
+      event_name: 'AddToCart',
+      event_id: event_id,
+      event_source_url: location.href,
+      custom_data: {
+        currency: 'TWD',
+        value: productPrice,
+        content_ids: [productID],
+        content_type: capiContentType,
+        contents: [
+          {
+            id: productID,
+            quantity: 1,
+            item_price: productPrice
+          }
+        ]
       }
     };
 
@@ -1201,47 +1168,53 @@ $(document).ready(function() {
 
   // AddToWishlist - 點擊後就可以觸發 "加到願望清單" 的事件
   // 使用方法：class 加上 addToWishlist，同個元素加上 data-wishlist="要傳送的事件名稱"
-  $('.addToWishlist').on('click', function(e) {
+  $('.addToWishlist').on('click', function (e) {
     var eventName = $(this).data('wishlist');
     fbq('track', 'AddToWishlist');
   });
 
   // Lead - 淺在客戶事件
-  $('.lead-click').on('click', function(e) {
-    fbq('track', 'Lead');
+  $('.lead-click').on('click', function (e) {
+    var event_id = generateKey(10);
+    fbq('track', 'Lead', {}, { eventID: event_id });
+    postConversionAPI({
+      event_name: 'Lead',
+      event_id: event_id,
+      event_source_url: location.href
+    });
   });
 
   // SubmitApplication - 提交申請事件
-  $('.submitApp-click').on('click', function(e) {
+  $('.submitApp-click').on('click', function (e) {
     fbq('track', 'SubmitApplication');
   });
 
-  $('.line-track').on('click', function(e) {
-    gtag('event', 'conversion', {'send_to': 'AW-926147017/7dFMCNel4OwYEMnDz7kD'});
+  $('.line-track').on('click', function (e) {
+    gtag('event', 'conversion', { 'send_to': 'AW-926147017/7dFMCNel4OwYEMnDz7kD' });
   });
 
-  $('.fb-track').on('click', function(e) {
-    gtag('event', 'conversion', {'send_to': 'AW-926147017/b-sZCLqm1u0YEMnDz7kD'});
+  $('.fb-track').on('click', function (e) {
+    gtag('event', 'conversion', { 'send_to': 'AW-926147017/b-sZCLqm1u0YEMnDz7kD' });
   });
 
-  $('.webLayout-training-gtag-track').on('click', function(e) {
-    gtag('event', 'conversion', {'send_to': 'AW-926147017/0c-OCOH54I0ZEMnDz7kD'});
+  $('.webLayout-training-gtag-track').on('click', function (e) {
+    gtag('event', 'conversion', { 'send_to': 'AW-926147017/0c-OCOH54I0ZEMnDz7kD' });
   });
 
-  $('.react-training-gtag-track').on('click', function(e) {
-    gtag('event', 'conversion', {'send_to': 'AW-926147017/w2BSCJX6irAZEMnDz7kD'});
+  $('.react-training-gtag-track').on('click', function (e) {
+    gtag('event', 'conversion', { 'send_to': 'AW-926147017/w2BSCJX6irAZEMnDz7kD' });
   });
 
-  $('.node-gtag-track').on('click', function(e) {
-    gtag('event', 'conversion', {'send_to': 'AW-926147017/kdSaCMvbio0ZEMnDz7kD'});
+  $('.node-gtag-track').on('click', function (e) {
+    gtag('event', 'conversion', { 'send_to': 'AW-926147017/kdSaCMvbio0ZEMnDz7kD' });
   });
 
-  $('.event-2024-gtag-track').on('click', function(e) {
-    gtag('event', 'conversion', {'send_to': 'AW-926147017/cN2DCKi81p0ZEMnDz7kD'});
+  $('.event-2024-gtag-track').on('click', function (e) {
+    gtag('event', 'conversion', { 'send_to': 'AW-926147017/cN2DCKi81p0ZEMnDz7kD' });
   });
 
-  $('.one-on-one-gtag-track').on('click', function(e) {
-    gtag('event', 'conversion', {'send_to': 'AW-926147017/7PsYCJj9i6cZEMnDz7kD'});
+  $('.one-on-one-gtag-track').on('click', function (e) {
+    gtag('event', 'conversion', { 'send_to': 'AW-926147017/7PsYCJj9i6cZEMnDz7kD' });
   });
 
   return;
