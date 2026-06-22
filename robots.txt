@@ -6,6 +6,7 @@
 # llms-full.txt: https://www.hexschool.com/llms-full.txt
 
 User-agent: *
+Content-Signal: search=yes, ai-train=yes, ai-input=yes
 Allow: /
 Disallow: /order
 
