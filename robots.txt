@@ -1,3 +1,78 @@
+# 六角學院 robots.txt
+# 自動產生自 build/scripts/generate-llms.js，請勿手動編輯 public/robots.txt
+# 策略：開放主要 AI 爬蟲與搜尋引擎索引（AEO / GEO / SEO），
+#       /order 結帳頁對所有爬蟲一律禁止索引（價格浮動、無 LLM 引用價值）
+# llms.txt:      https://www.hexschool.com/llms.txt
+# llms-full.txt: https://www.hexschool.com/llms-full.txt
+
 User-agent: *
-Disallow: /order
 Allow: /
+Disallow: /order
+
+# === AI / LLM 爬蟲（明確允許，便於 AEO / GEO 揭露） ===
+
+User-agent: GPTBot
+Allow: /
+Disallow: /order
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /order
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /order
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /order
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /order
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /order
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /order
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /order
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /order
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /order
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /order
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /order
+
+User-agent: Bytespider
+Allow: /
+Disallow: /order
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /order
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /order
+
+User-agent: CCBot
+Allow: /
+Disallow: /order
+
+Sitemap: https://www.hexschool.com/sitemap.xml

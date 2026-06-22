@@ -1,0 +1,362 @@
+# 六角學院
+
+> 六角學院是一個以實戰作品與陪伴式學習為核心的線上程式學校，幫助想轉職、進修或強化開發能力的人，從基礎觀念一路練到能做出真正可展示的專案。
+
+網站首頁：https://www.hexschool.com/
+
+課程總數：34
+
+
+# 影音課程
+
+> 可自學的線上影音課程
+
+---
+## React 實戰影音課程
+- URL：https://www.hexschool.com/courses/react.html
+- 講師：卡斯伯
+- 觀看期限：保證觀看期限一年：六角每多營運一年，你就獲得多一年的觀看期
+
+從 React 基礎開始體驗，不只教你各項常用語法，還會透過「步驟拆解」、「作業練習」、「實作示範」，一步步帶你完成 React 的完整作品。
+
+---
+## Bootstrap 5 網頁切版整合術
+- URL：https://www.hexschool.com/courses/bootstrap5.html
+- 講師：卡斯伯
+
+學習使用 Bootstrap 5 快速開發網頁版型及了解其進階使用方法，並掌握自訂各種網站所需的設計樣式技巧。
+
+---
+## JavaScript 前端修練全攻略
+- URL：https://www.hexschool.com/courses/js-plus.html
+- 講師：廖洧杰
+
+課程將具備紮實且全面性的 JS ES6 觀念，大量的 JS 題庫讓每章節融會貫通，並以大型最終作業，驗證學習成效
+
+將具備紮實並全面性的 JS ES6 觀念
+大量的 JS 題庫讓每章節融會貫通
+大型最終作業，驗證學習成效
+
+---
+## Vue 3 實戰影音課程
+- URL：https://www.hexschool.com/courses/vue3.html
+- 講師：卡斯伯
+
+學會如何使用 Vue.js 開發前端網站，並熟悉相關工具的運用，最終完成電子商務類型的網站。
+
+---
+## HTML、CSS 開發網站
+- URL：https://www.hexschool.com/courses/html_css.html
+- 講師：廖洧杰
+
+從無到有學會網頁設計，帶你做出具專業、語意化、美觀的網頁設計，專業工程師為你檢視網頁程式碼
+
+從無到有學會網頁設計
+帶你做出具專業、語意化、美觀的網頁設計
+專業工程師為你檢視網頁程式碼
+
+---
+## jQuery 打造互動性網頁效果
+- URL：https://www.hexschool.com/courses/jquery_ani.html
+- 講師：廖洧杰
+
+輕鬆了解互動式網頁技巧，每週三線上傳授業界實務心法，專業工程師為你檢視網頁程式碼
+
+輕鬆了解互動式網頁技巧
+每週三線上傳授業界實務心法
+專業工程師為你檢視網頁程式碼
+
+---
+## 一變應萬變的響應式網頁設計
+- URL：https://www.hexschool.com/courses/responsive.html
+- 講師：廖洧杰
+
+輕易掌握手機版網頁設計，透過動畫帶你理解抽象原理，專業工程師為你檢視網頁程式碼
+
+輕易掌握手機版網頁設計
+透過動畫帶你理解抽象原理
+專業工程師為你檢視網頁程式碼
+
+---
+## Sass 實戰全攻略
+- URL：https://www.hexschool.com/courses/sass.html
+- 講師：廖洧杰
+
+Sass 實戰指南教您打造出易擴充、易維護的高品質 CSS 架構，了解業界管理規範，成為 1% 的 CSS 頂尖好手！
+
+---
+## UI 設計入門
+- URL：https://www.hexschool.com/courses/ui.html
+- 講師：吳俊儀
+
+從底層觀念到實務操作，教你畫出有程式邏輯的電商 UI 設計稿
+
+從底層觀念到實務操作，教你畫出有程式邏輯的電商 UI 設計稿。
+
+---
+## JavaScript 核心篇
+- URL：https://www.hexschool.com/courses/js-core.html
+- 講師：卡斯伯
+
+深入了解 JS 核心運作，輕鬆破解各路奇怪問題，大量測驗，驗證運作觀念
+
+深入了解 JS 核心運作
+輕鬆破解各路奇怪問題
+大量測驗，驗證運作觀念
+
+---
+## Git & Github 程式時光機
+- URL：https://courses.hexschool.com/p/git-github
+- 講師：廖洧杰
+
+基礎 Git 心法，各平台的 Command Line 教學，團隊合作的 Git 使用方法
+
+基礎 Git 心法
+各平台的 Command Line 教學
+團隊合作的 Git 使用方法
+
+---
+## 使用 gulp 進行網頁前端自動化
+- URL：https://hexschool.github.io/gulp-demo/
+- 講師：卡斯伯
+
+最佳化你的流程，將你寶貴的時間專注在重要的開發上，課程將會教你怎樣製作自己的自動化工具。
+
+---
+## VSCode 開發功能大解密
+- URL：https://courses.hexschool.com/p/vscode
+- 講師：卡斯伯
+
+身為工程師，編寫程式碼最重要的工具就是使用的電腦及開啟的文字編輯器，而 Visual Studio Code 是這幾年的首選文字編輯器。 VSCode 開發功能大解密教你掌握前端工程師必備技能。
+
+
+# 免費課程
+
+> 免費影音課程，可直接觀看
+
+---
+## Chrome 網頁除錯功能大解密
+- URL：https://www.udemy.com/chrome-devtools/
+- 講師：廖洧杰
+
+長達 2 小時並達 20 部完整線上影音課程
+提供基本除錯技巧及業界開發心法
+
+---
+## 一小時上手 Sublime Text 3
+- URL：https://www.udemy.com/sublime-text-3/
+- 講師：廖洧杰
+
+長達 1 小時並達 10 部完整線上影音課程
+提供基本操作與熱門插件分享
+
+---
+## 一套用到底的文字編輯器 Atom
+- URL：https://www.udemy.com/atom-hexschool/
+- 講師：卡斯伯
+
+長達 1 小時並達 10 部完整線上影音課程
+提供基本操作與與實用套件分享
+
+
+# 直播班 / 培訓班
+
+> 具開課期程的直播訓練班
+
+---
+## 網頁切版直播班
+- URL：https://www.hexschool.com/courses/web-layout-training-1st.html
+- 講師：卡斯伯
+- 程度：新手向
+- 標籤：前端、HTML、CSS
+
+以「 業界常見版型主題 」為導向，八週帶你做出面試專用作品，成為切版小能手。
+
+以「業界常見版型主題」為核心，六週帶你做出面試專用作品，成為切版小能手。
+
+---
+## 【後端工程師學程】JavaScript 直播班
+- URL：https://www.hexschool.com/courses/backend-javascript.html
+- 講師：廖洧杰
+- 程度：適合無經驗程式新手
+- 標籤：前端、JavaScript
+
+用九週時間帶你扎穩 JavaScript，接軌業界實務常用語法！
+
+零基礎後端 JavaScript 陪跑訓練，八週帶你從入門到實作，打好銜接 Node.js 的基礎！
+
+---
+## TypeScript 實戰課：打造工程師型別思維
+- URL：https://www.hexschool.com/courses/typescript-training.html
+- 講師：MIKE
+- 程度：有基礎的開發者
+- 標籤：TypeScript、JavaScript
+
+4 週陪跑跨越 JavaScript → TypeScript，升級你的開發思維，寫出更可靠、更好維護的程式碼！
+
+---
+## React 作品實戰班
+- URL：https://www.hexschool.com/courses/react-training.html
+- 講師：卡斯伯
+- 程度：有基礎的開發者
+- 標籤：React、JavaScript、前端
+
+本課程以「接近業界實戰」為導向，並提供專題一對一服務，手把手帶您成為 React 前端工程師！
+
+---
+## Vue 作品實戰班
+- URL：https://www.hexschool.com/courses/vue-training.html
+- 講師：卡斯伯
+- 程度：需有 CSS、JS 底子
+- 標籤：Vue、前端
+
+以「 求職面試作品 」為導向，八週帶你做出面試專用作品，成為 JS 實戰小能手。
+
+學會如何使用 Vue.js 開發前端網站，並熟悉相關工具的運用，最終完成電子商務類型的網站。
+
+---
+## Node.js+雲端：後端就業培訓班&專題班
+- URL：https://www.hexschool.com/courses/backend-training.html
+- 講師：廖洧杰
+- 程度：有基礎的開發者
+- 標籤：後端、Node.js、JavaScript、雲端
+
+想要進入後端工程師的領域嗎？讓六角學院來助你一臂之力。從 Node.js 養成後端能力，再掌握雲端架構部署技術，最後將所學集大成做出一份企業級專題作品，用 9 個月的紮實訓練換 20 年職涯主導權！
+
+---
+## 30 天軟體工程師體驗營
+- URL：https://www.hexschool.com/courses/software-engineer-camping.html
+- 講師：廖洧杰
+- 程度：新手向
+- 標籤：前端、HTML、CSS
+
+從 CSS 到 AI，一條龍帶你做出個人品牌網站！
+
+---
+## 前端工程師培訓班＆專題班
+- URL：https://www.hexschool.com/courses/frontend-training.html
+- 講師：卡斯伯
+- 程度：新手向
+- 標籤：前端、HTML、CSS、JavaScript、Vue
+
+除了一身好技術，還想擁有好作品！以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為前端工程師。
+
+---
+## 後端工程師體驗營
+- URL：https://www.hexschool.com/courses/backend-camp.html
+- 講師：廖洧杰
+- 程度：新手向
+- 標籤：後端、Node.js、PostgreSQL
+
+帶你解鎖後端工程師的世界！透過任務挑戰，你將會啟動並運行一個完整的前後端專案、理解前後端如何互動，並且在 Vibe Coding 時更有系統性地建立開發環境！
+
+---
+## AI 開發進化營
+- URL：https://www.hexschool.com/courses/ai-year-upgrade.html
+- 講師：卡斯伯
+- 程度：有基礎的開發者
+- 標籤：AI
+
+年度陪跑模式給你「6 場深度主題線上講座 + 持續更新影音 + Discord 實戰社群」，讓你掌握一整年度的 AI 開發能力！本課程重點在於「透過 AI 提升開發品質與效率」，將深入討論 Git 流程、測試驅動、CI/CD 與 AI Coding Agent 協作，適合具有一定的程式基礎的學員參與。
+
+---
+## 【後端工程師學程】Node.js 直播班
+- URL：https://www.hexschool.com/courses/nodejs-training.html
+- 講師：廖洧杰
+- 程度：新手向
+- 標籤：後端、Node.js、JavaScript
+
+讓擅長化繁為簡的洧杰老師帶你建立完整的系統架構思維，你將學會親手設計伺服器運行邏輯，並挑戰業界主流的資料庫架構與效能優化。這也是銜接 AWS 雲端架構的關鍵必修站，讓你具備獨立交付專業專案的實戰力，一起踏上展開後端技能樹之路！
+
+
+# 課程組合包
+
+> 多門課組合的方案
+
+---
+## 高 CP 新手包
+- 包含課程：使用 HTML、CSS 開發一個網站、JavaScript 前端修練全攻略
+
+新手設計包，帶你學會網頁排版與 JavaScript，讓你上架網頁在伺服器上。
+
+4 個業界熱門主題設計稿，頁面數量超過 10 頁
+30 份程式碼作業
+100 道線上習題
+2700 分鐘影音課程
+
+---
+## 網頁切版組合包 (HTML + jQuery + RWD + Bootstrap)
+- URL：https://www.hexschool.com/courses/web-design-combined-courses.html
+- 觀看期限：保證觀看期限一年：六角每多營運一年，你就獲得多一年的觀看期
+- 包含課程：使用 HTML、CSS 開發一個網站、jQuery 網頁互動效果、一變應萬變的響應式網頁設計、Bootstrap 5 網頁切版整合術
+
+新手設計包，帶你學會網頁排版，讓你上架網頁在伺服器上。
+
+5 個業界熱門主題設計稿，頁面數量超過 12 頁
+30 份程式碼作業
+1800 分鐘影音課程
+大型最終作業程式碼檢核
+
+---
+## JS 全攻略, JS 核心, React 實戰影音課程
+- URL：https://www.hexschool.com/2022/01/14/2022-01-14-js-course-intro/
+- 包含課程：React 實戰影音課程、JavaScript 前端修練全攻略、JavaScript - 核心篇
+
+基礎到進階一次學到會。
+
+20 份程式碼作業
+180 道線上習題
+3300 分鐘影音課程
+專業 UI 講師檢視作品
+30 支以上專屬 RESTful API 做出獨立作品
+
+---
+## JS 全攻略, JS 核心, Vue 組合包
+- URL：https://www.hexschool.com/2022/01/14/2022-01-14-js-course-intro/
+- 包含課程：Vue 3 實戰影音課程、JavaScript 前端修練全攻略、JavaScript - 核心篇
+
+基礎到進階一次學到會。
+
+20 份程式碼作業
+180 道線上習題
+3300 分鐘影音課程
+專業 UI 講師檢視作品
+30 支以上專屬 RESTful API 做出獨立作品
+
+---
+## 前端全組合 (不含加購品)
+- 包含課程：使用 HTML、CSS 開發一個網站、jQuery 網頁互動效果、JavaScript 前端修練全攻略、JavaScript 核心篇、一變應萬變的響應式網頁設計、Bootstrap 5 網頁切版整合術、Vue 3 實戰影音課程
+
+前端必備技能一次學好學滿。
+
+7 個業界熱門主題設計稿，頁面數量超過 14 頁
+50 份程式碼作業
+200 道線上習題
+5100 分鐘影音課程
+專業 UI 講師檢視作品
+30 支以上專屬 RESTful API 做出獨立作品
+
+---
+## 前端全組合 (不含加購品)
+- 包含課程：使用 HTML、CSS 開發一個網站、jQuery 網頁互動效果、JavaScript 前端修練全攻略、JavaScript 核心篇、一變應萬變的響應式網頁設計、Bootstrap 5 網頁切版整合術、React 實戰影音課程
+
+前端必備技能一次學好學滿。
+
+7 個業界熱門主題設計稿，頁面數量超過 14 頁
+50 份程式碼作業
+200 道線上習題
+5100 分鐘影音課程
+專業 UI 講師檢視作品
+30 支以上專屬 RESTful API 做出獨立作品
+
+---
+## CSS 框架組合包 (BS5 + Sass + 直播講座 Sass)
+- 包含課程：Bootstrap 5 網頁切版整合術、Sass 實戰全攻略
+
+從 SCSS 基礎到 Bootstrap 框架，實戰必備招式一把抓。
+
+20 份程式碼作業
+180 道線上習題
+3300 分鐘影音課程
+專業 UI 講師檢視作品
+30 支以上專屬 RESTful API 做出獨立作品
