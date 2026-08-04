@@ -4,7 +4,7 @@
 
 網站首頁：https://www.hexschool.com/
 
-課程總數：34
+課程總數：35
 
 
 # 影音課程
@@ -233,11 +233,11 @@ Sass 實戰指南教您打造出易擴充、易維護的高品質 CSS 架構，�
 從 CSS 到 AI，一條龍帶你做出個人品牌網站！
 
 ---
-## 前端工程師培訓班＆專題班
+## JS+Vue 前端工程師培訓班＆專題班
 - URL：https://www.hexschool.com/courses/frontend-training.html
 - 講師：卡斯伯
 - 程度：新手向
-- 標籤：前端、HTML、CSS、JavaScript、Vue
+- 標籤：JavaScript、前端、Vue
 
 除了一身好技術，還想擁有好作品！以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為前端工程師。
 
@@ -267,6 +267,15 @@ Sass 實戰指南教您打造出易擴充、易維護的高品質 CSS 架構，�
 - 標籤：後端、Node.js、JavaScript
 
 讓擅長化繁為簡的洧杰老師帶你建立完整的系統架構思維，你將學會親手設計伺服器運行邏輯，並挑戰業界主流的資料庫架構與效能優化。這也是銜接 AWS 雲端架構的關鍵必修站，讓你具備獨立交付專業專案的實戰力，一起踏上展開後端技能樹之路！
+
+---
+## 【前端】JavaScript 工程師養成直播班
+- URL：https://www.hexschool.com/courses/js-training.html
+- 講師：桂 Gui
+- 程度：適合無經驗程式新手
+- 標籤：JavaScript、前端
+
+本課程以「 業界實務 JS 技能 」為導向，全程以 ES6 語法來教學，從基本觀念、資料處理邏輯到第三方套件整合，帶你扎穩 JavaScript，接軌業界實務常用語法。
 
 
 # 課程組合包

@@ -39,10 +39,11 @@
 - [Vue 作品實戰班](https://www.hexschool.com/courses/vue-training.html)：以「 求職面試作品 」為導向，八週帶你做出面試專用作品，成為 JS 實戰小能手。
 - [Node.js+雲端：後端就業培訓班&專題班](https://www.hexschool.com/courses/backend-training.html)：想要進入後端工程師的領域嗎？讓六角學院來助你一臂之力。從 Node.js 養成後端能力，再掌握雲端架構部署技術，最後將所學集大成做出一份企業級專題作品，用 9 個月的紮實訓練換 20 年職涯主導權！
 - [30 天軟體工程師體驗營](https://www.hexschool.com/courses/software-engineer-camping.html)：從 CSS 到 AI，一條龍帶你做出個人品牌網站！
-- [前端工程師培訓班＆專題班](https://www.hexschool.com/courses/frontend-training.html)：除了一身好技術，還想擁有好作品！以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為前端工程師。
+- [JS+Vue 前端工程師培訓班＆專題班](https://www.hexschool.com/courses/frontend-training.html)：除了一身好技術，還想擁有好作品！以「接近業界實戰」為導向，並提供團隊一對一專題引導服務，手把手帶您成為前端工程師。
 - [後端工程師體驗營](https://www.hexschool.com/courses/backend-camp.html)：帶你解鎖後端工程師的世界！透過任務挑戰，你將會啟動並運行一個完整的前後端專案、理解前後端如何互動，並且在 Vibe Coding 時更有系統性地建立開發環境！
 - [AI 開發進化營](https://www.hexschool.com/courses/ai-year-upgrade.html)：年度陪跑模式給你「6 場深度主題線上講座 + 持續更新影音 + Discord 實戰社群」，讓你掌握一整年度的 AI 開發能力！本課程重點在於「透過 AI 提升開發品質與效率」，將深入討論 Git 流程、測試驅動、CI/CD 與 AI Coding Agent 協作，適合具有一定的程式基礎的學員參與。
 - [【後端工程師學程】Node.js 直播班](https://www.hexschool.com/courses/nodejs-training.html)：讓擅長化繁為簡的洧杰老師帶你建立完整的系統架構思維，你將學會親手設計伺服器運行邏輯，並挑戰業界主流的資料庫架構與效能優化。這也是銜接 AWS 雲端架構的關鍵必修站，讓你具備獨立交付專業專案的實戰力，一起踏上展開後端技能樹之路！
+- [【前端】JavaScript 工程師養成直播班](https://www.hexschool.com/courses/js-training.html)：本課程以「 業界實務 JS 技能 」為導向，全程以 ES6 語法來教學，從基本觀念、資料處理邏輯到第三方套件整合，帶你扎穩 JavaScript，接軌業界實務常用語法。
 
 ## 課程組合包
 > 多門課組合的方案
