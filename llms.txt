@@ -44,6 +44,7 @@
 - [AI 開發進化營](https://www.hexschool.com/courses/ai-year-upgrade.html)：年度陪跑模式給你「6 場深度主題線上講座 + 持續更新影音 + Discord 實戰社群」，讓你掌握一整年度的 AI 開發能力！本課程重點在於「透過 AI 提升開發品質與效率」，將深入討論 Git 流程、測試驅動、CI/CD 與 AI Coding Agent 協作，適合具有一定的程式基礎的學員參與。
 - [【後端工程師學程】Node.js 直播班](https://www.hexschool.com/courses/nodejs-training.html)：讓擅長化繁為簡的洧杰老師帶你建立完整的系統架構思維，你將學會親手設計伺服器運行邏輯，並挑戰業界主流的資料庫架構與效能優化。這也是銜接 AWS 雲端架構的關鍵必修站，讓你具備獨立交付專業專案的實戰力，一起踏上展開後端技能樹之路！
 - [【前端】JavaScript 工程師養成直播班](https://www.hexschool.com/courses/js-training.html)：本課程以「 業界實務 JS 技能 」為導向，全程以 ES6 語法來教學，從基本觀念、資料處理邏輯到第三方套件整合，帶你扎穩 JavaScript，接軌業界實務常用語法。
+- [【後端工程師學程】雲端架構部署直播班](https://www.hexschool.com/courses/cloud_training.html)：別讓程式只跑在本地端！帶你學會親手搭建可上線的系統。這是專為開發者設計的雲端思維實戰，讓你不只能寫好程式，還能讓程式在雲端穩定運行，成為系統工程師！
 
 ## 課程組合包
 > 多門課組合的方案

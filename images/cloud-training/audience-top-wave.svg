@@ -1,0 +1,18 @@
+<svg width="1920" height="112" viewBox="0 0 1920 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Desktop-1920">
+<g id="Frame 7" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="120" transform="matrix(1 0 0 -1 0 120)" fill="#131188"/>
+<path id="Union" d="M1962.79 -111L1788.26 -72.25H1968V0.669922H1459.82L959.5 111.75L459.184 0.669922H-49V-72.25H130.744L-43.79 -111H1962.79Z" fill="url(#paint0_linear_0_1)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="960" y1="-283.75" x2="959.5" y2="111.75" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E91E63" stop-opacity="0.1"/>
+<stop stop-color="#20D9F4" stop-opacity="0.6"/>
+<stop offset="1" stop-color="#20D9F4" stop-opacity="0.9"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="120" fill="white" transform="matrix(1 0 0 -1 0 120)"/>
+</clipPath>
+</defs>
+</svg>

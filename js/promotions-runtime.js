@@ -209,7 +209,9 @@
       var pid = pageRoot.getAttribute('data-page-id');
       pageHasActive = !!pickActive((PROMOTIONS.page_footer_clock_target || {})[pid], now);
     }
-    if (!active) {
+    // 優先權：單頁活動命中時，全站 footer 讓位（隱藏），交給 applyPageFooterClock 顯示單頁 footer；
+    // 單頁未命中（或該頁無單頁設定）時，才 fallback 顯示全站 footer。
+    if (pageHasActive || !active) {
       hide('[data-promotions-root="footer-clock"]');
       hide('[data-promotions-root="footer-clock-on-courses"]');
       show('[data-promotions-root="on-courses-default"]');
