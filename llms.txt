@@ -45,6 +45,7 @@
 - [【後端工程師學程】Node.js 直播班](https://www.hexschool.com/courses/nodejs-training.html)：讓擅長化繁為簡的洧杰老師帶你建立完整的系統架構思維，你將學會親手設計伺服器運行邏輯，並挑戰業界主流的資料庫架構與效能優化。這也是銜接 AWS 雲端架構的關鍵必修站，讓你具備獨立交付專業專案的實戰力，一起踏上展開後端技能樹之路！
 - [【前端】JavaScript 工程師養成直播班](https://www.hexschool.com/courses/js-training.html)：本課程以「 業界實務 JS 技能 」為導向，全程以 ES6 語法來教學，從基本觀念、資料處理邏輯到第三方套件整合，帶你扎穩 JavaScript，接軌業界實務常用語法。
 - [【後端工程師學程】雲端架構部署直播班](https://www.hexschool.com/courses/cloud_training.html)：別讓程式只跑在本地端！帶你學會親手搭建可上線的系統。這是專為開發者設計的雲端思維實戰，讓你不只能寫好程式，還能讓程式在雲端穩定運行，成為系統工程師！
+- [40 天高效職場英文班](https://www.hexschool.com/courses/cln-40-days-english.html)：進外商的第一步，從聽懂英文開始。六角學院 × CLN 外語培訓品牌，用多益題型架構帶你從「聽懂」與「讀懂」重新建立英文力，6 堂直播課 + 每日跟讀打卡 + 專屬社群，40 天低壓力重啟職場英文。
 
 ## 課程組合包
 > 多門課組合的方案
