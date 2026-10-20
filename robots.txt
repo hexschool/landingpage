@@ -24,6 +24,10 @@ User-agent: OAI-SearchBot
 Allow: /
 Disallow: /order
 
+User-agent: OAI-AdsBot
+Allow: /
+Disallow: /order
+
 User-agent: ClaudeBot
 Allow: /
 Disallow: /order
