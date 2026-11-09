@@ -1713,8 +1713,8 @@ $(document).ready(function () {
     var l = cookieAry.length;
     while (i < l) {
       cookie = cookieAry[i].trim();
-      cookie = cookie.split('=');
-      cookieObj[cookie[0]] = cookie[1];
+      var separatorIndex = cookie.indexOf('=');
+      cookieObj[cookie.slice(0, separatorIndex)] = cookie.slice(separatorIndex + 1);
       ++i;
     }
     return cookieObj;
@@ -1728,10 +1728,103 @@ $(document).ready(function () {
     return value;
   };
 
+  // OpenAI 廣告追蹤：integrations.js 的 openai_pixel 留空時 window.oaiq 不存在，以下全部不動作
+  var isOpenaiEnabled = function () {
+    return typeof window.oaiq === 'function';
+  };
+
+  var SHOP_HOSTNAME = 'shop2.hexschool.com';
+
+  // 商城 oppref、obref 的長度上限，超過會整包回 400，連帶 Meta 補送失敗
+  var REF_MAX_LENGTH = 2048;
+
+  var isUsableRef = function (value) {
+    return !!value && value.length <= REF_MAX_LENGTH;
+  };
+
+  var getOppref = function () {
+    var sdkOppref = getCookieByName('__oppref');
+    if (isUsableRef(sdkOppref)) {
+      return sdkOppref;
+    }
+    var hexOppref = getCookieByName('hex_oppref');
+    return isUsableRef(hexOppref) ? hexOppref : '';
+  };
+
+  // 追蹤絕不擋購買：所有送出都吞錯
+  var measureOpenai = function (eventName, data, eventId) {
+    if (!isOpenaiEnabled()) {
+      return;
+    }
+    try {
+      window.oaiq('measure', eventName, data, { event_id: eventId });
+    } catch (err) {
+      // 不影響後續流程
+    }
+  };
+
+  // 伺服器補送用：跨網域請求帶不到 www 網域的 cookie，只能放 body。
+  // 商城 schema 是 strict，沒有值就不帶欄位。
+  var withOpenaiRefs = function (data) {
+    if (!isOpenaiEnabled()) {
+      return data;
+    }
+    try {
+      var oppref = getOppref();
+      var obref = getCookieByName('__obref');
+      if (oppref) {
+        data.oppref = oppref;
+      }
+      if (isUsableRef(obref)) {
+        data.obref = obref;
+      }
+    } catch (err) {
+      // 不影響 Meta 的補送
+    }
+    return data;
+  };
+
+  // 付款連結在點擊當下才帶 oppref：Vue :href、時間切換、購買 modal 都會在載入後改寫 href，
+  // 頁面載入時改寫會被蓋掉。pointerdown 涵蓋中鍵、右鍵另開，click 涵蓋鍵盤與程式觸發。
+  var addOpprefToShopLink = function (event) {
+    try {
+      var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+      if (!link || link.hostname !== SHOP_HOSTNAME) {
+        return;
+      }
+      var href = link.getAttribute('href');
+      var oppref = getOppref();
+      if (!oppref || /[?&]oppref=/.test(href)) {
+        return;
+      }
+      var hashIndex = href.indexOf('#');
+      var base = hashIndex === -1 ? href : href.slice(0, hashIndex);
+      var hash = hashIndex === -1 ? '' : href.slice(hashIndex);
+      var separator = base.indexOf('?') === -1 ? '?' : '&';
+      link.setAttribute('href', base + separator + 'oppref=' + encodeURIComponent(oppref) + hash);
+    } catch (err) {
+      // 不影響點擊
+    }
+  };
+
+  if (isOpenaiEnabled()) {
+    // 備援：追蹤碼被擋時沒有 __oppref，自己存一份，效期比照 __oppref
+    var landingOppref = helper.getParameterByName('oppref');
+    if (landingOppref) {
+      $.cookie('hex_oppref', landingOppref, { expires: 30, path: '/' });
+    }
+    document.addEventListener('pointerdown', addOpprefToShopLink, true);
+    document.addEventListener('click', addOpprefToShopLink, true);
+  }
+
+  // 預覽站（*.pages.dev）的補送打 dev 商城，不進正式商城
+  var TRACK_API_ORIGIN = /\.pages\.dev$/.test(location.hostname)
+    ? 'https://dev-shop2.hexschool.io'
+    : 'https://shop2.hexschool.com';
+
   // 送出 conversion
   var postConversionAPI = function (data) {
-    // https://shop2.hexschool.com/api/v1/track/official
-    $.ajax('https://shop2.hexschool.com/api/v1/track/official', {
+    $.ajax(TRACK_API_ORIGIN + '/api/v1/track/official', {
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json; charset=utf-8',
@@ -1874,7 +1967,24 @@ $(document).ready(function () {
     mixpanel.track('AddToCart', dimensionValue); // Mixpanel
     gtag('event', 'add_to_cart'); // GA, Gtag
     fbq('track', 'AddToCart', fbqValue, { event_id: event_id }); // Facebook
-    postConversionAPI(addToCartData);
+    // OpenAI 金額是整數、以幣別最小單位計，TWD 小數 2 位所以乘 100；contents[].amount 是單價
+    var openaiAmount = Math.round(productPrice * 100);
+    measureOpenai('items_added', {
+      type: 'contents',
+      amount: openaiAmount,
+      currency: 'TWD',
+      contents: [
+        {
+          id: productID,
+          name: String(productName || title),
+          content_type: capiContentType,
+          quantity: 1,
+          amount: openaiAmount,
+          currency: 'TWD'
+        }
+      ]
+    }, event_id);
+    postConversionAPI(withOpenaiRefs(addToCartData));
     return;
   });
 
@@ -1889,11 +1999,12 @@ $(document).ready(function () {
   $('.lead-click').on('click', function (e) {
     var event_id = generateKey(10);
     fbq('track', 'Lead', {}, { eventID: event_id });
-    postConversionAPI({
+    measureOpenai('lead_created', { type: 'customer_action' }, event_id);
+    postConversionAPI(withOpenaiRefs({
       event_name: 'Lead',
       event_id: event_id,
       event_source_url: location.href
-    });
+    }));
   });
 
   // SubmitApplication - 提交申請事件
