@@ -1143,7 +1143,7 @@ $(document).ready(function () {
       if (winTop > contentTop && !landingViewContentScroll) {
         landingViewContentScroll = true;
         var event_id = generateKey(10);
-        fbq('track', 'ViewContent', {}, { event_id: event_id });
+        fbq('track', 'ViewContent', {}, { eventID: event_id });
         gtag('event', 'view_item');
         var landingViewContentData = generateData(event_id, 'landingCourse');
         postConversionAPI(landingViewContentData);
@@ -1254,7 +1254,7 @@ $(document).ready(function () {
     // ga('set', 'dimension1', dimensionValue) // Google analytics
     mixpanel.track('AddToCart', dimensionValue); // Mixpanel
     gtag('event', 'add_to_cart'); // GA, Gtag
-    fbq('track', 'AddToCart', fbqValue, { event_id: event_id }); // Facebook
+    fbq('track', 'AddToCart', fbqValue, { eventID: event_id }); // Facebook
     // OpenAI 金額是整數、以幣別最小單位計，TWD 小數 2 位所以乘 100；contents[].amount 是單價
     var openaiAmount = Math.round(productPrice * 100);
     measureOpenai('items_added', {
